@@ -1,10 +1,14 @@
-const CACHE_NAME = "easytechnomed-pwa-v7";
+const CACHE_NAME = "easytechnomed-pwa-v8";
+const OFFLINE_URL = "/offline.html";
 const OFFLINE_PRINT_URL = "/offline-print.html";
 const APP_SHELL_KEY = "/__app_shell__";
 
-// Static assets to precache on install
+// Static assets and essential routes to precache on install
 const PRECACHE_ASSETS = [
+  OFFLINE_URL,
   OFFLINE_PRINT_URL,
+  "/",
+  "/auth/login",
   "/favicon.ico",
   "/apple-touch-icon.png",
   "/android-chrome-192x192.png",
@@ -20,18 +24,18 @@ function isHtmlResponse(res) {
   return ct.includes("text/html");
 }
 
-// Install event: cache offline fallback assets
+// Install event: cache offline fallback assets and app shell
 self.addEventListener("install", (event) => {
   event.waitUntil(
     caches
       .open(CACHE_NAME)
       .then(async (cache) => {
-        console.log("[Service Worker] Pre-caching core offline assets...");
+        console.log("[Service Worker] Pre-caching core offline assets & App Shell...");
         await Promise.allSettled(
           PRECACHE_ASSETS.map((asset) =>
-            fetch(asset, { cache: "reload" })
+            fetch(asset, { cache: "reload", headers: { Accept: "text/html,*/*" } })
               .then((res) => {
-                if (res && res.ok) {
+                if (res && res.status === 200) {
                   return cache.put(asset, res);
                 }
               })
@@ -45,7 +49,7 @@ self.addEventListener("install", (event) => {
   );
 });
 
-// Activate event: delete old caches (including poisoned RSC payloads) and claim clients immediately
+// Activate event: purge old caches and claim all open tabs immediately
 self.addEventListener("activate", (event) => {
   event.waitUntil(
     caches
@@ -73,7 +77,7 @@ self.addEventListener("fetch", (event) => {
   // Ignore non-http schemes (e.g. chrome-extension, data:)
   if (url.protocol !== "http:" && url.protocol !== "https:") return;
 
-  // 1. Handle Print Routes (/api/print-report/, /api/print-bill/, /api/print-subscription-invoice/)
+  // 1. Handle Print Document Routes (/api/print-report/, /api/print-bill/, /api/print-subscription-invoice/)
   const isPrintRequest =
     url.pathname.startsWith("/api/print-report/") ||
     url.pathname.startsWith("/api/print-bill/") ||
@@ -99,12 +103,12 @@ self.addEventListener("fetch", (event) => {
     return;
   }
 
-  // 2. Bypass standard data APIs (offline data is managed via IndexedDB)
+  // 2. Bypass standard data APIs (all persistent offline data managed via IndexedDB)
   if (url.pathname.startsWith("/api/") || url.pathname.startsWith("/adminstration/api/")) {
     return;
   }
 
-  // 3. Next.js React Server Component (RSC) requests (NEVER overwrite plain HTML pathname cache with RSC payload!)
+  // 3. Next.js React Server Component (RSC) requests
   const isRSCRequest =
     url.searchParams.has("_rsc") ||
     event.request.headers.get("RSC") === "1" ||
@@ -117,7 +121,7 @@ self.addEventListener("fetch", (event) => {
           if (networkResponse && networkResponse.status === 200) {
             const clone = networkResponse.clone();
             caches.open(CACHE_NAME).then((cache) => {
-              // ONLY store under exact request (which includes _rsc query param)
+              // ONLY store under exact request URL (including _rsc query params)
               cache.put(event.request, clone).catch(() => {});
             }).catch(() => {});
           }
@@ -139,7 +143,6 @@ self.addEventListener("fetch", (event) => {
   }
 
   // 4. Full Page HTML Navigation Requests (mode: 'navigate')
-  // ALWAYS return a genuine text/html response (App Shell) so React hydrates offline from IndexedDB
   if (event.request.mode === "navigate") {
     event.respondWith(
       fetch(event.request)
@@ -159,23 +162,23 @@ self.addEventListener("fetch", (event) => {
           return networkResponse;
         })
         .catch(async () => {
-          console.log("[Service Worker] Offline navigation (App Shell) for:", url.pathname);
+          console.log("[Service Worker] Offline navigation (Serving App Shell) for:", url.pathname);
           try {
             const cache = await caches.open(CACHE_NAME);
 
-            // 1. Try exact HTML request
+            // 1. Exact request match
             const cachedExact = await cache.match(event.request, { ignoreSearch: true });
             if (isHtmlResponse(cachedExact)) return cachedExact;
 
-            // 2. Try pathname HTML
+            // 2. Exact pathname match
             const pathnameCached = await cache.match(url.pathname);
             if (isHtmlResponse(pathnameCached)) return pathnameCached;
 
-            // 3. Try global App Shell
+            // 3. Global App Shell
             const appShell = await cache.match(APP_SHELL_KEY);
             if (isHtmlResponse(appShell)) return appShell;
 
-            // 4. Try any core dashboard page
+            // 4. Any core dashboard route
             const allDashboardRoutes = [
               "/dashboard",
               "/registration",
@@ -195,23 +198,24 @@ self.addEventListener("fetch", (event) => {
               if (isHtmlResponse(fallback)) return fallback;
             }
 
-            // 5. Try any cached HTML in storage
+            // 5. Any cached HTML entry in storage
             const keys = await cache.keys();
             for (const key of keys) {
               const item = await cache.match(key);
               if (isHtmlResponse(item)) return item;
             }
+
+            // 6. Offline fallback page
+            const offlineFallback = await cache.match(OFFLINE_URL);
+            if (offlineFallback) return offlineFallback;
           } catch (e) {
             console.warn("[Service Worker] Navigation cache match error:", e);
           }
 
-          return new Response(
-            "<!DOCTYPE html><html><head><meta charset='utf-8'><title>EasyTechnoMed</title><script>window.location.reload();</script></head><body>Loading EasyTechnoMed App...</body></html>",
-            {
-              status: 200,
-              headers: { "Content-Type": "text/html; charset=utf-8" },
-            }
-          );
+          return new Response("Offline Dashboard Shell", {
+            status: 200,
+            headers: { "Content-Type": "text/html; charset=utf-8" },
+          });
         })
     );
     return;
@@ -236,7 +240,6 @@ self.addEventListener("fetch", (event) => {
     event.respondWith(
       caches.match(event.request, { ignoreSearch: true }).then((cachedResponse) => {
         if (cachedResponse) {
-          // Revalidate in background if online
           fetch(event.request)
             .then((networkResponse) => {
               if (networkResponse && networkResponse.status === 200) {
