@@ -95,6 +95,7 @@ import SyncStatusIcon from "@/components/offline/SyncStatusIcon";
 import { useSync } from "@/hooks/useSync";
 import { syncManager } from "@/lib/offline/sync/syncManager";
 import db from "@/lib/offline/db";
+import { printReportOffline } from "@/lib/offline/offlinePrint";
 
 
 const menuButtonStyle = {
@@ -417,6 +418,16 @@ export default function TestReportPage() {
       showToast("Please select at least one test to print", "warning");
       return;
     }
+
+    if (typeof navigator !== "undefined" && !navigator.onLine) {
+      printReportOffline(selectedReg.id || selectedReg.regNo, {
+        withFrame,
+        testIds: selectedTestIdsForPrint,
+      });
+      setPrintDialogOpen(false);
+      return;
+    }
+
     const testIdsQuery = `&testIds=${selectedTestIdsForPrint.join(",")}`;
     window.open(`/api/print-report/${selectedReg.regNo || selectedReg.id}?withFrame=${withFrame}${testIdsQuery}`, "_blank");
     setPrintDialogOpen(false);

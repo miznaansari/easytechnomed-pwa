@@ -36,6 +36,7 @@ import {
   Print as PrintIcon
 } from "@mui/icons-material";
 import db from "@/lib/offline/db";
+import { printBillOffline } from "@/lib/offline/offlinePrint";
 import MoneyReciptMobile from "./MoneyReciptMobile";
 
 export default function MoneyRecipt({ open, onClose, selectedReg, onSaveSuccess, canWrite }) {
@@ -228,6 +229,10 @@ export default function MoneyRecipt({ open, onClose, selectedReg, onSaveSuccess,
 
   const handlePrintReceipt = (reg) => {
     if (!reg) return;
+    if (typeof navigator !== "undefined" && !navigator.onLine) {
+      printBillOffline(reg.id);
+      return;
+    }
     window.open(`/api/print-bill/${reg.id}`, "_blank");
   };
 

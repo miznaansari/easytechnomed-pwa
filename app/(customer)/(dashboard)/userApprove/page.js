@@ -6,25 +6,35 @@ import UserApproveTable from "./UserApproveTable";
 export const dynamic = "force-dynamic";
 
 export default async function AdminUserApprovePage() {
-  // Ensure user is authenticated and has admin privileges
-  await requireAdmin("APPROVAL_READ");
+  let safeUsers = [];
+  let roles = [];
 
-  // Fetch all registered users
-  const users = await prisma.user.findMany({
-    orderBy: { createdAt: "desc" },
-    include: {
-      role: true,
-    },
-  });
+  try {
+    // Ensure user is authenticated and has admin privileges
+    await requireAdmin("APPROVAL_READ");
 
-  // Strip password fields before rendering client-side
-  const safeUsers = users.map((user) => {
-    const { password, verificationToken, ...safe } = user;
-    return safe;
-  });
+    // Fetch all registered users
+    const users = await prisma.user.findMany({
+      orderBy: { createdAt: "desc" },
+      include: {
+        role: true,
+      },
+    });
 
-  // Fetch all roles
-  const roles = await prisma.userRole.findMany();
+    // Strip password fields before rendering client-side
+    safeUsers = users.map((user) => {
+      const { password, verificationToken, ...safe } = user;
+      return safe;
+    });
+
+    // Fetch all roles
+    roles = await prisma.userRole.findMany();
+  } catch (err) {
+    if (err?.digest?.startsWith("NEXT_REDIRECT")) {
+      throw err;
+    }
+    console.warn("[UserApprove] Offline or SSR fallback:", err?.message);
+  }
 
   return (
     <div className="flex-1 bg-mesh py-12 px-6">

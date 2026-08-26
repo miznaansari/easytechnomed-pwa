@@ -33,6 +33,7 @@ import {
   Assignment as AssignmentIcon
 } from "@mui/icons-material";
 import db from "@/lib/offline/db";
+import { printReportOffline } from "@/lib/offline/offlinePrint";
 import ShowResultMobile from "./showResultMobile";
 
 const getReferenceRange = (param, reg) => {
@@ -427,7 +428,13 @@ export default function ShowResult({ open, onClose, selectedReg }) {
               color="primary"
               size="small"
               startIcon={<DownloadIcon />}
-              onClick={() => window.open(`/api/print-report/${previewData.regNo || previewData.id}?withFrame=false`, "_blank")}
+              onClick={() => {
+                if (typeof navigator !== "undefined" && !navigator.onLine) {
+                  printReportOffline(previewData.id || previewData.regNo, { withFrame: false });
+                  return;
+                }
+                window.open(`/api/print-report/${previewData.regNo || previewData.id}?withFrame=false`, "_blank");
+              }}
             >
               Download Without Frame
             </Button>
@@ -436,7 +443,13 @@ export default function ShowResult({ open, onClose, selectedReg }) {
               color="primary"
               size="small"
               startIcon={<DownloadIcon />}
-              onClick={() => window.open(`/api/print-report/${previewData.regNo || previewData.id}?withFrame=true`, "_blank")}
+              onClick={() => {
+                if (typeof navigator !== "undefined" && !navigator.onLine) {
+                  printReportOffline(previewData.id || previewData.regNo, { withFrame: true });
+                  return;
+                }
+                window.open(`/api/print-report/${previewData.regNo || previewData.id}?withFrame=true`, "_blank");
+              }}
             >
               Download With Frame
             </Button>

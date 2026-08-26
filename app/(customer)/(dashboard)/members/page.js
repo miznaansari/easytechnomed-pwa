@@ -31,6 +31,7 @@ import {
 import { Add as AddIcon, People as PeopleIcon } from "@mui/icons-material";
 import { toast } from "sonner";
 import db from "@/lib/offline/db";
+import { useAdminPermissions } from "@/lib/clientAuth";
 
 export default function WorkspaceMembersPage() {
   const { hasPermission } = useAdminPermissions();
