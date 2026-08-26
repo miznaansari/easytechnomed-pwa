@@ -36,7 +36,6 @@ import {
   Print as PrintIcon
 } from "@mui/icons-material";
 import MoneyReciptMobile from "./MoneyReciptMobile";
-import { openOfflinePrint } from "@/lib/offline/offlinePrint";
 
 export default function MoneyRecipt({ open, onClose, selectedReg, onSaveSuccess, canWrite }) {
   const theme = useTheme();
@@ -215,11 +214,7 @@ export default function MoneyRecipt({ open, onClose, selectedReg, onSaveSuccess,
 
   const handlePrintReceipt = (reg) => {
     if (!reg) return;
-    if (typeof navigator !== "undefined" && !navigator.onLine) {
-      openOfflinePrint({ type: "bill", idOrRegNo: reg.id || reg.regNo });
-    } else {
-      window.open(`/api/print-bill/${reg.id || reg.regNo}`, "_blank");
-    }
+    window.open(`/api/print-bill/${reg.id}`, "_blank");
   };
 
   if (!open) return null;

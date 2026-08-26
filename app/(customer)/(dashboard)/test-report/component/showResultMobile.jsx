@@ -20,7 +20,6 @@ import {
   Download as DownloadIcon,
   Assignment as AssignmentIcon
 } from "@mui/icons-material";
-import { openOfflinePrint } from "@/lib/offline/offlinePrint";
 
 const getReferenceRange = (param, reg) => {
   const isBaby = reg.ageUnit !== "Year" || reg.age < 12;
@@ -497,14 +496,7 @@ export default function ShowResultMobile({ open, onClose, previewLoading, previe
               size="small"
               fullWidth
               startIcon={<DownloadIcon fontSize="small" />}
-              onClick={() => {
-                const idOrRegNo = previewData.regNo || previewData.id;
-                if (typeof navigator !== "undefined" && !navigator.onLine) {
-                  openOfflinePrint({ type: "report", idOrRegNo, withFrame: false });
-                } else {
-                  window.open(`/api/print-report/${idOrRegNo}?withFrame=false`, "_blank");
-                }
-              }}
+              onClick={() => window.open(`/api/print-report/${previewData.regNo || previewData.id}?withFrame=false`, "_blank")}
               sx={{ py: 1, borderRadius: 2, fontWeight: 700, fontSize: "0.78rem", textTransform: "none" }}
             >
               Plain PDF
@@ -515,14 +507,7 @@ export default function ShowResultMobile({ open, onClose, previewLoading, previe
               size="small"
               fullWidth
               startIcon={<DownloadIcon fontSize="small" />}
-              onClick={() => {
-                const idOrRegNo = previewData.regNo || previewData.id;
-                if (typeof navigator !== "undefined" && !navigator.onLine) {
-                  openOfflinePrint({ type: "report", idOrRegNo, withFrame: true });
-                } else {
-                  window.open(`/api/print-report/${idOrRegNo}?withFrame=true`, "_blank");
-                }
-              }}
+              onClick={() => window.open(`/api/print-report/${previewData.regNo || previewData.id}?withFrame=true`, "_blank")}
               sx={{ py: 1, borderRadius: 2, fontWeight: 800, fontSize: "0.78rem", textTransform: "none" }}
             >
               Letterhead PDF

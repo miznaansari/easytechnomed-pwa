@@ -342,27 +342,13 @@ export default function PdfSettingsClient() {
       const formData = new FormData();
       formData.append("file", file);
 
-      // Read local file as base64 for instant offline caching
-      const localBase64 = await new Promise((resolve) => {
-        const reader = new FileReader();
-        reader.onloadend = () => resolve(reader.result);
-        reader.onerror = () => resolve(null);
-        reader.readAsDataURL(file);
-      });
-
       const res = await fetch("/api/settings/upload-frame", {
         method: "POST",
         body: formData,
       }).then((r) => r.json());
       if (res.success && res.url) {
         handleInputChange("framePdfUrl", res.url);
-        if (localBase64) {
-          await db.workspacePdf.update(1, {
-            framePdfUrl: res.url,
-            framePdfData: localBase64,
-          }).catch(() => {});
-        }
-        showToast("Letterhead frame PDF uploaded and cached locally for offline use!", "success");
+        showToast("Letterhead frame PDF uploaded successfully!", "success");
       } else {
         showToast(res.error || "Failed to upload file.", "error");
       }
@@ -373,9 +359,8 @@ export default function PdfSettingsClient() {
     }
   };
 
-  const handleClearFrame = async () => {
+  const handleClearFrame = () => {
     handleInputChange("framePdfUrl", "");
-    await db.workspacePdf.update(1, { framePdfUrl: "", framePdfData: null }).catch(() => {});
     showToast("Template frame URL cleared. Click Save to apply changes.", "info");
   };
 
@@ -387,15 +372,6 @@ export default function PdfSettingsClient() {
         ...settings,
         columnOrder: JSON.stringify(settings.columnOrder),
       };
-
-      // Save locally into IndexedDB immediately
-      await db.workspacePdf.put({
-        ...settings,
-        id: 1,
-        isDirty: false,
-        isModified: false,
-        isError: false,
-      }).catch(() => {});
 
       const res = await fetch("/api/settings/pdf", {
         method: "POST",
@@ -469,7 +445,7 @@ export default function PdfSettingsClient() {
       <Card variant="outlined" sx={{ borderRadius: 3, mb: 2, overflow: "hidden" }}>
         <CardContent sx={{ p: { xs: 1.5, sm: 2.5 } }}>
           <Grid container spacing={3}>
-            
+
             {/* ── LEFT COLUMN: STICKY LIVE PDF PREVIEW ────────────────────────── */}
             <Grid size={{ xs: 12, lg: 6 }}>
               <Paper

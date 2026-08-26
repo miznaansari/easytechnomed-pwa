@@ -95,7 +95,6 @@ import SyncStatusIcon from "@/components/offline/SyncStatusIcon";
 import { useSync } from "@/hooks/useSync";
 import { syncManager } from "@/lib/offline/sync/syncManager";
 import db from "@/lib/offline/db";
-import { openOfflinePrint } from "@/lib/offline/offlinePrint";
 
 
 const menuButtonStyle = {
@@ -418,18 +417,8 @@ export default function TestReportPage() {
       showToast("Please select at least one test to print", "warning");
       return;
     }
-    const idOrRegNo = selectedReg.regNo || selectedReg.id;
-    if (typeof navigator !== "undefined" && !navigator.onLine) {
-      openOfflinePrint({
-        type: "report",
-        idOrRegNo,
-        withFrame,
-        testIds: selectedTestIdsForPrint
-      });
-    } else {
-      const testIdsQuery = `&testIds=${selectedTestIdsForPrint.join(",")}`;
-      window.open(`/api/print-report/${idOrRegNo}?withFrame=${withFrame}${testIdsQuery}`, "_blank");
-    }
+    const testIdsQuery = `&testIds=${selectedTestIdsForPrint.join(",")}`;
+    window.open(`/api/print-report/${selectedReg.regNo || selectedReg.id}?withFrame=${withFrame}${testIdsQuery}`, "_blank");
     setPrintDialogOpen(false);
   };
 
@@ -518,7 +507,7 @@ export default function TestReportPage() {
         let localData = await db.registrations.filter((r) => !r.isDeleted).toArray();
         setRegistrations(localData);
         setTotal(localData.length);
-      } catch (dbErr) {}
+      } catch (dbErr) { }
     } finally {
       setLoading(false);
     }

@@ -56,7 +56,6 @@ import AddDoctorDrawer from "@/components/AddDoctorDrawer";
 import { useSync } from "@/hooks/useSync";
 import { syncManager } from "@/lib/offline/sync/syncManager";
 import db from "@/lib/offline/db";
-import { openOfflinePrint } from "@/lib/offline/offlinePrint";
 
 export default function DoctorSummaryPage() {
   const [openAddDocDrawer, setOpenAddDocDrawer] = useState(false);
@@ -294,20 +293,20 @@ export default function DoctorSummaryPage() {
 
           const parsedTests = Array.isArray(r.tests)
             ? r.tests.map((t) => {
-                const tPrice = Number(t.price) || 0;
-                const tExpense = Number(t.expense) || 0;
-                const tBase = tPrice - tExpense;
-                const tInc = (tBase * incRate) / 100;
-                return {
-                  ...t,
-                  name: t.name || t.test?.name || "Test",
-                  price: tPrice,
-                  expense: tExpense,
-                  netBase: tBase,
-                  incentivePercent: incRate,
-                  incentiveAmount: tInc,
-                };
-              })
+              const tPrice = Number(t.price) || 0;
+              const tExpense = Number(t.expense) || 0;
+              const tBase = tPrice - tExpense;
+              const tInc = (tBase * incRate) / 100;
+              return {
+                ...t,
+                name: t.name || t.test?.name || "Test",
+                price: tPrice,
+                expense: tExpense,
+                netBase: tBase,
+                incentivePercent: incRate,
+                incentiveAmount: tInc,
+              };
+            })
             : [];
 
           return {
@@ -1095,37 +1094,25 @@ export default function DoctorSummaryPage() {
                                             {getStatusChip(reg.status)}
                                           </TableCell>
                                           <TableCell align="center" sx={{ whiteSpace: "nowrap" }}>
-                                             <Tooltip title="Print / View Bill">
-                                               <IconButton
-                                                 size="small"
-                                                 color="primary"
-                                                 onClick={() => {
-                                                   if (typeof navigator !== "undefined" && !navigator.onLine) {
-                                                     openOfflinePrint({ type: "bill", idOrRegNo: reg.id || reg.regNo });
-                                                   } else {
-                                                     window.open(`/api/print-bill/${reg.id}`, "_blank");
-                                                   }
-                                                 }}
-                                                 sx={{ mr: 0.5 }}
-                                               >
-                                                 <ReceiptIcon fontSize="small" />
-                                               </IconButton>
-                                             </Tooltip>
-                                             <Tooltip title="Print / View Test Report">
-                                               <IconButton
-                                                 size="small"
-                                                 color="success"
-                                                 onClick={() => {
-                                                   if (typeof navigator !== "undefined" && !navigator.onLine) {
-                                                     openOfflinePrint({ type: "report", idOrRegNo: reg.regNo || reg.id, withFrame: true });
-                                                   } else {
-                                                     window.open(`/api/print-report/${reg.regNo}?withFrame=true`, "_blank");
-                                                   }
-                                                 }}
-                                               >
-                                                 <ReportIcon fontSize="small" />
-                                               </IconButton>
-                                             </Tooltip>
+                                            <Tooltip title="Print / View Bill">
+                                              <IconButton
+                                                size="small"
+                                                color="primary"
+                                                onClick={() => window.open(`/api/print-bill/${reg.id}`, "_blank")}
+                                                sx={{ mr: 0.5 }}
+                                              >
+                                                <ReceiptIcon fontSize="small" />
+                                              </IconButton>
+                                            </Tooltip>
+                                            <Tooltip title="Print / View Test Report">
+                                              <IconButton
+                                                size="small"
+                                                color="success"
+                                                onClick={() => window.open(`/api/print-report/${reg.regNo}?withFrame=true`, "_blank")}
+                                              >
+                                                <ReportIcon fontSize="small" />
+                                              </IconButton>
+                                            </Tooltip>
                                           </TableCell>
                                         </TableRow>
                                       ))}

@@ -33,7 +33,6 @@ import {
   Assignment as AssignmentIcon
 } from "@mui/icons-material";
 import ShowResultMobile from "./showResultMobile";
-import { openOfflinePrint } from "@/lib/offline/offlinePrint";
 
 const getReferenceRange = (param, reg) => {
   const isBaby = reg.ageUnit !== "Year" || reg.age < 12;
@@ -400,14 +399,7 @@ export default function ShowResult({ open, onClose, selectedReg }) {
               color="primary"
               size="small"
               startIcon={<DownloadIcon />}
-              onClick={() => {
-                const idOrRegNo = previewData.regNo || previewData.id;
-                if (typeof navigator !== "undefined" && !navigator.onLine) {
-                  openOfflinePrint({ type: "report", idOrRegNo, withFrame: false });
-                } else {
-                  window.open(`/api/print-report/${idOrRegNo}?withFrame=false`, "_blank");
-                }
-              }}
+              onClick={() => window.open(`/api/print-report/${previewData.regNo || previewData.id}?withFrame=false`, "_blank")}
             >
               Download Without Frame
             </Button>
@@ -416,14 +408,7 @@ export default function ShowResult({ open, onClose, selectedReg }) {
               color="primary"
               size="small"
               startIcon={<DownloadIcon />}
-              onClick={() => {
-                const idOrRegNo = previewData.regNo || previewData.id;
-                if (typeof navigator !== "undefined" && !navigator.onLine) {
-                  openOfflinePrint({ type: "report", idOrRegNo, withFrame: true });
-                } else {
-                  window.open(`/api/print-report/${idOrRegNo}?withFrame=true`, "_blank");
-                }
-              }}
+              onClick={() => window.open(`/api/print-report/${previewData.regNo || previewData.id}?withFrame=true`, "_blank")}
             >
               Download With Frame
             </Button>
