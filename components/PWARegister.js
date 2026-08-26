@@ -7,8 +7,7 @@ export default function PWARegister() {
   useEffect(() => {
     if (
       typeof window !== "undefined" &&
-      "serviceWorker" in navigator &&
-      process.env.NODE_ENV === "production"
+      "serviceWorker" in navigator
     ) {
       const showUpdateToast = () => {
         // Prevent showing PWA update toast on customer-facing attraction pages

@@ -567,12 +567,12 @@ export default function DoctorSummaryPage() {
   };
 
   // Sum calculations
-  const totalCount = summaryData.reduce((sum, item) => sum + item.count, 0);
-  const totalAmount = summaryData.reduce((sum, item) => sum + item.amount, 0);
-  const totalDiscount = summaryData.reduce((sum, item) => sum + item.discount, 0);
-  const totalNetAmount = summaryData.reduce((sum, item) => sum + item.netAmount, 0);
-  const totalIncentive = summaryData.reduce((sum, item) => sum + item.incentiveAmount, 0);
-  const totalCollection = summaryData.reduce((sum, item) => sum + item.collection, 0);
+  const totalCount = summaryData.reduce((sum, item) => sum + (Number(item.count) || 0), 0);
+  const totalAmount = summaryData.reduce((sum, item) => sum + (Number(item.amount) || 0), 0);
+  const totalDiscount = summaryData.reduce((sum, item) => sum + (Number(item.discount) || 0), 0);
+  const totalNetAmount = summaryData.reduce((sum, item) => sum + (Number(item.netAmount) || 0), 0);
+  const totalIncentive = summaryData.reduce((sum, item) => sum + (Number(item.incentiveAmount) || 0), 0);
+  const totalCollection = summaryData.reduce((sum, item) => sum + (Number(item.collection) || 0), 0);
 
   const areAllExpanded = summaryData.length > 0 && summaryData.every((item) => expandedRows[item.id]);
 
@@ -907,16 +907,16 @@ export default function DoctorSummaryPage() {
 
                                 <Stack direction="row" spacing={2} sx={{ fontSize: "0.8rem", color: "text.secondary" }}>
                                   <Box>
-                                    Gross: <strong>₹{item.amount.toFixed(2)}</strong>
+                                    Gross: <strong>₹{(Number(item.amount) || 0).toFixed(2)}</strong>
                                   </Box>
                                   <Box>
-                                    Net: <strong>₹{item.netAmount.toFixed(2)}</strong>
+                                    Net: <strong>₹{(Number(item.netAmount) || 0).toFixed(2)}</strong>
                                   </Box>
                                   <Box sx={{ color: "primary.dark" }}>
-                                    Doc. Incentive: <strong>₹{item.incentiveAmount.toFixed(2)}</strong>
+                                    Doc. Incentive: <strong>₹{(Number(item.incentiveAmount) || 0).toFixed(2)}</strong>
                                   </Box>
                                   <Box sx={{ color: "success.main" }}>
-                                    Received: <strong>₹{item.collection.toFixed(2)}</strong>
+                                    Received: <strong>₹{(Number(item.collection) || 0).toFixed(2)}</strong>
                                   </Box>
                                 </Stack>
                               </Box>
