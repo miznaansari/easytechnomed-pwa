@@ -245,73 +245,72 @@ export default function RegistrationPage() {
     loadData();
   }, []);
 
-  // Load registration data for editing if editId is active
+  // Load registration data for editing if editId is active from IndexedDB
   useEffect(() => {
     if (!editId || doctors.length === 0 || tests.length === 0) return;
 
     async function fetchReg() {
       setLoading(true);
       try {
-        const res = await fetch(`/api/registrations/${parseInt(editId)}`).then((r) => r.json());
-        if (res.success) {
-          const reg = res.registration;
-          setBillOn(reg.billOn);
-          setMobileNo(reg.mobileNo);
-          setRegDate(getLocalIsoString(new Date(reg.date)).substring(0, 10));
-          setTitle(reg.title);
-          setName(reg.name);
+        let reg = await db.registrations.get(parseInt(editId));
+
+        if (reg) {
+          setBillOn(reg.billOn || "Patient Rate");
+          setMobileNo(reg.mobileNo || "");
+          setRegDate(reg.date ? getLocalIsoString(new Date(reg.date)).substring(0, 10) : getLocalIsoString(new Date()).substring(0, 10));
+          setTitle(reg.title || "Mr.");
+          setName(reg.name || "");
           setCity(reg.city === "-NA-" ? "" : reg.city || "");
-          setAge(reg.age);
-          setAgeUnit(reg.ageUnit);
-          setGender(reg.gender);
+          setAge(reg.age || "");
+          setAgeUnit(reg.ageUnit || "Year");
+          setGender(reg.gender || "Male");
           setRemark(reg.remark || "");
-          setColType(reg.colType);
+          setColType(reg.colType || "Lab");
           if (reg.expRptDate) setExpRptDate(getLocalIsoString(new Date(reg.expRptDate)));
           if (reg.sampleDate) setSampleDate(getLocalIsoString(new Date(reg.sampleDate)));
           setSampleNo(reg.sampleNo || "");
-          setSampleBy(reg.sampleBy);
-          setPaymentMode(reg.paymentMode);
+          setSampleBy(reg.sampleBy || "-NA-");
+          setPaymentMode(reg.paymentMode || "Cash");
           setPaymentRefNo(reg.paymentRefNo || "");
-          setCollectionCharge(Number(reg.collectionCharge));
-          setDiscountPercent(Number(reg.discountPercent));
-          setDiscountAmount(Number(reg.discountAmount));
-          setReceivedAmount(Number(reg.receivedAmount));
-          setStickerCount(reg.stickerCount);
+          setCollectionCharge(Number(reg.collectionCharge) || 0);
+          setDiscountPercent(Number(reg.discountPercent) || 0);
+          setDiscountAmount(Number(reg.discountAmount) || 0);
+          setReceivedAmount(Number(reg.receivedAmount) || 0);
+          setStickerCount(reg.stickerCount || 1);
 
           if (reg.refById) {
             const doc = doctors.find((d) => d.id === reg.refById);
             if (doc) setRefBy(doc);
           }
-          if (reg.secondRefId) {
-            const doc = doctors.find((d) => d.id === reg.secondRefId);
+          if (reg.secondRefId || reg.secondRefById) {
+            const doc = doctors.find((d) => d.id === (reg.secondRefId || reg.secondRefById));
             if (doc) setSecondRef(doc);
           }
 
-          const mappedTests = reg.tests.map((rt) => {
-            let match = tests.find((t) => t.id === rt.testId);
-            if (!match && rt.test) {
-              match = tests.find((t) =>
-                (rt.test.code && t.code === rt.test.code) ||
-                (t.name.toLowerCase() === rt.test.name.toLowerCase())
-              );
-            }
-            if (match) {
-              return {
-                ...match,
-                price: rt.price !== undefined ? Number(rt.price) : Number(match.price),
-                outsourceCost: rt.expense !== undefined ? Number(rt.expense) : (match.outsourceCost || 0),
-                specialIncentivePercent: rt.specialIncentivePercent !== undefined && rt.specialIncentivePercent !== null ? Number(rt.specialIncentivePercent) : match.specialIncentivePercent,
-              };
-            }
-            return null;
-          }).filter(Boolean);
-          setSelectedTests(mappedTests);
-        } else {
-          showNotification(res.message, "error");
+          if (Array.isArray(reg.tests)) {
+            const mappedTests = reg.tests.map((rt) => {
+              let match = tests.find((t) => t.id === (rt.testId || rt.id));
+              if (!match && rt.test) {
+                match = tests.find((t) =>
+                  (rt.test.code && t.code === rt.test.code) ||
+                  (t.name.toLowerCase() === rt.test.name.toLowerCase())
+                );
+              }
+              if (match) {
+                return {
+                  ...match,
+                  price: rt.price !== undefined ? Number(rt.price) : Number(match.price),
+                  outsourceCost: rt.expense !== undefined ? Number(rt.expense) : (match.outsourceCost || 0),
+                  specialIncentivePercent: rt.specialIncentivePercent !== undefined && rt.specialIncentivePercent !== null ? Number(rt.specialIncentivePercent) : match.specialIncentivePercent,
+                };
+              }
+              return null;
+            }).filter(Boolean);
+            setSelectedTests(mappedTests);
+          }
         }
       } catch (err) {
-        console.error(err);
-        showNotification("Failed to load registration details", "error");
+        console.error("Error loading registration from IndexedDB:", err);
       } finally {
         setLoading(false);
       }
@@ -442,7 +441,7 @@ export default function RegistrationPage() {
     }
   };
 
-  // Create test on the fly
+  // Create test on the fly (100% IndexedDB First)
   const handleCreateTest = async () => {
     if (!newTestName.trim()) {
       showNotification("Test name is required.", "error");
@@ -455,46 +454,43 @@ export default function RegistrationPage() {
 
     setIsSavingTest(true);
     try {
-      const res = await fetch("/api/tests", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-          name: newTestName.trim(),
-          code: newTestCode.trim() || null,
-          price: parseFloat(newTestPrice),
-          outsourceCost: newTestOutsourceCost !== "" ? parseFloat(newTestOutsourceCost) || 0 : 0,
-          specialIncentivePercent: newTestSpecialIncentive !== "" && !isNaN(parseFloat(newTestSpecialIncentive)) ? parseFloat(newTestSpecialIncentive) : null,
-        }),
-      }).then((r) => r.json());
+      const parsedPrice = parseFloat(newTestPrice);
+      const parsedOutsource = newTestOutsourceCost !== "" ? parseFloat(newTestOutsourceCost) || 0 : 0;
+      const parsedIncentive = newTestSpecialIncentive !== "" && !isNaN(parseFloat(newTestSpecialIncentive)) ? parseFloat(newTestSpecialIncentive) : null;
 
-      if (res.success) {
-        showNotification("Test added successfully!", "success");
+      const newTestData = {
+        name: newTestName.trim(),
+        code: newTestCode.trim() || null,
+        price: parsedPrice,
+        outsourceCost: parsedOutsource,
+        specialIncentivePercent: parsedIncentive,
+      };
 
-        const parsedTest = {
-          ...res.test,
-          price: Number(res.test.price) || 0,
-          outsourceCost: res.test.outsourceCost !== undefined && res.test.outsourceCost !== null ? Number(res.test.outsourceCost) : 0,
-          specialIncentivePercent: res.test.specialIncentivePercent !== undefined && res.test.specialIncentivePercent !== null ? Number(res.test.specialIncentivePercent) : null,
-        };
+      // 1. Save directly into local IndexedDB
+      const savedTest = await db.insertOffline("tests", newTestData);
 
-        // Update the master test catalog list
-        setTests((prev) => {
-          const updated = [...prev, parsedTest];
-          return updated.sort((a, b) => a.name.localeCompare(b.name));
-        });
+      showNotification("Test added successfully!", "success");
 
-        // Automatically select/add it to the registration form
-        handleAddTest(parsedTest);
+      // 2. Update local test catalog list
+      setTests((prev) => {
+        const updated = [...prev, savedTest];
+        return updated.sort((a, b) => a.name.localeCompare(b.name));
+      });
 
-        // Reset state & close dialog
-        setOpenAddTestDialog(false);
-        setNewTestName("");
-        setNewTestCode("");
-        setNewTestPrice("");
-        setNewTestOutsourceCost("0");
-        setNewTestSpecialIncentive("");
-      } else {
-        showNotification(res.message || "Failed to add test.", "error");
+      // 3. Automatically select/add it to the registration form
+      handleAddTest(savedTest);
+
+      // 4. Reset state & close dialog
+      setOpenAddTestDialog(false);
+      setNewTestName("");
+      setNewTestCode("");
+      setNewTestPrice("");
+      setNewTestOutsourceCost("0");
+      setNewTestSpecialIncentive("");
+
+      // 5. Trigger background auto-sync if online
+      if (typeof navigator !== "undefined" && navigator.onLine) {
+        import("@/lib/offline/sync/syncManager").then(({ syncManager }) => syncManager.sync()).catch(() => {});
       }
     } catch (err) {
       console.error(err);
@@ -514,7 +510,7 @@ export default function RegistrationPage() {
     setOpenEditTestDialog(true);
   };
 
-  // Update Test Details
+  // Update Test Details (100% IndexedDB First)
   const handleUpdateTest = async () => {
     if (!editingTest) return;
     if (!editingTestName.trim()) {
@@ -528,53 +524,51 @@ export default function RegistrationPage() {
 
     setIsSavingTest(true);
     try {
-      const res = await fetch("/api/tests", {
-        method: "PUT",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-          testId: editingTest.id,
-          name: editingTestName.trim(),
-          price: parseFloat(editingTestPrice),
-          outsourceCost: editingTestOutsourceCost !== "" ? parseFloat(editingTestOutsourceCost) || 0 : 0,
-          specialIncentivePercent: editingTestSpecialIncentive !== "" && !isNaN(parseFloat(editingTestSpecialIncentive)) ? parseFloat(editingTestSpecialIncentive) : null,
-        }),
-      }).then((r) => r.json());
+      const parsedPrice = parseFloat(editingTestPrice);
+      const parsedOutsource = editingTestOutsourceCost !== "" ? parseFloat(editingTestOutsourceCost) || 0 : 0;
+      const parsedIncentive = editingTestSpecialIncentive !== "" && !isNaN(parseFloat(editingTestSpecialIncentive)) ? parseFloat(editingTestSpecialIncentive) : null;
 
-      if (res.success) {
-        showNotification("Test updated successfully!", "success");
+      const updateData = {
+        name: editingTestName.trim(),
+        price: parsedPrice,
+        outsourceCost: parsedOutsource,
+        specialIncentivePercent: parsedIncentive,
+      };
 
-        const parsedTest = {
-          ...res.test,
-          price: Number(res.test.price) || 0,
-          outsourceCost: res.test.outsourceCost !== undefined && res.test.outsourceCost !== null ? Number(res.test.outsourceCost) : 0,
-          specialIncentivePercent: res.test.specialIncentivePercent !== undefined && res.test.specialIncentivePercent !== null ? Number(res.test.specialIncentivePercent) : null,
-        };
+      // 1. Update in local IndexedDB
+      await db.updateOffline("tests", editingTest.id, updateData);
 
-        // Update test in master tests list
-        setTests((prev) => {
-          return prev.map((t) => (t.id === parsedTest.id ? parsedTest : t))
-            .sort((a, b) => a.name.localeCompare(b.name));
-        });
+      const updatedTest = { ...editingTest, ...updateData };
 
-        // Update test inside selectedTests array if it was selected and adjust totals
-        setSelectedTests((prev) => {
-          const updated = prev.map((t) => (t.id === parsedTest.id ? parsedTest : t));
-          const totalAmt = updated.reduce((sum, t) => sum + t.price, 0);
-          if (discountPercent > 0) {
-            const amt = parseFloat(((totalAmt * discountPercent) / 100).toFixed(2));
-            setDiscountAmount(amt);
-          }
-          return updated;
-        });
+      showNotification("Test updated successfully!", "success");
 
-        setOpenEditTestDialog(false);
-        setEditingTest(null);
-        setEditingTestName("");
-        setEditingTestPrice("");
-        setEditingTestOutsourceCost("0");
-        setEditingTestSpecialIncentive("");
-      } else {
-        showNotification(res.message || "Failed to update test.", "error");
+      // 2. Update test in master tests list
+      setTests((prev) => {
+        return prev.map((t) => (t.id === updatedTest.id ? updatedTest : t))
+          .sort((a, b) => a.name.localeCompare(b.name));
+      });
+
+      // 3. Update test inside selectedTests array if it was selected and adjust totals
+      setSelectedTests((prev) => {
+        const updated = prev.map((t) => (t.id === updatedTest.id ? updatedTest : t));
+        const totalAmt = updated.reduce((sum, t) => sum + t.price, 0);
+        if (discountPercent > 0) {
+          const amt = parseFloat(((totalAmt * discountPercent) / 100).toFixed(2));
+          setDiscountAmount(amt);
+        }
+        return updated;
+      });
+
+      setOpenEditTestDialog(false);
+      setEditingTest(null);
+      setEditingTestName("");
+      setEditingTestPrice("");
+      setEditingTestOutsourceCost("0");
+      setEditingTestSpecialIncentive("");
+
+      // 4. Trigger background auto-sync if online
+      if (typeof navigator !== "undefined" && navigator.onLine) {
+        import("@/lib/offline/sync/syncManager").then(({ syncManager }) => syncManager.sync()).catch(() => {});
       }
     } catch (err) {
       console.error(err);
@@ -613,7 +607,7 @@ _Thank you for choosing us for your health diagnostics!_`;
     return `https://api.whatsapp.com/send?phone=${phone}&text=${encodeURIComponent(text)}`;
   };
 
-  // Save Registration
+  // Save Registration (100% IndexedDB First - 0ms UI Latency)
   const handleSave = async () => {
     if (!mobileNo || mobileNo.length < 10) {
       showNotification("Please enter a valid 10-digit mobile number", "error");
@@ -666,164 +660,114 @@ _Thank you for choosing us for your health diagnostics!_`;
           price: t.price,
           expense: t.outsourceCost !== undefined ? Number(t.outsourceCost) : (t.expense !== undefined ? Number(t.expense) : 0),
           specialIncentivePercent: t.specialIncentivePercent !== undefined && t.specialIncentivePercent !== null ? Number(t.specialIncentivePercent) : null,
+          test: t,
         })),
       };
 
-      // If offline, save directly to IndexedDB
-      if (typeof navigator !== "undefined" && !navigator.onLine) {
-        const localSeq = Date.now().toString().slice(-4);
-        const labId = `OFFL-${localSeq}`;
-        const regNo = `ETM-OFFL-${Date.now().toString().slice(-6)}`;
-        const localRecord = {
-          ...payload,
-          labId,
-          regNo,
-          date: new Date().toISOString(),
-          status: payload.dueAmount > 0 ? "Pending" : "Completed",
-          tests: selectedTests.map((t) => ({
-            testId: t.id,
-            price: t.price,
-            test: t,
-          })),
-        };
+      const localSeq = Date.now().toString().slice(-4);
+      const labId = `OFFL-${localSeq}`;
+      const regNo = `ETM-OFFL-${Date.now().toString().slice(-6)}`;
+      const localRecord = {
+        ...payload,
+        labId,
+        regNo,
+        date: new Date().toISOString(),
+        status: payload.dueAmount > 0 ? "Pending" : "Completed",
+      };
 
-        if (editId) {
-          await db.updateOffline("registrations", parseInt(editId), localRecord);
-          showNotification("Registration updated locally (Offline)! Will sync when connected.", "success");
-          setTimeout(() => router.push("/test-report"), 1000);
-        } else {
-          await db.insertOffline("registrations", localRecord);
-          showNotification("Registration saved locally (Offline)! Will sync automatically when connected.", "success");
-          handleReset();
-        }
-        return;
-      }
-
-      let res;
-      try {
-        res = editId
-          ? await fetch(`/api/registrations/${parseInt(editId)}`, {
-            method: "PUT",
-            headers: { "Content-Type": "application/json" },
-            body: JSON.stringify(payload),
-          }).then((r) => r.json())
-          : await fetch("/api/registrations", {
-            method: "POST",
-            headers: { "Content-Type": "application/json" },
-            body: JSON.stringify(payload),
-          }).then((r) => r.json());
-      } catch (netErr) {
-        // Network failed mid-request: save offline
-        console.warn("[Registration] Online request failed, saving offline fallback:", netErr);
-        const localSeq = Date.now().toString().slice(-4);
-        const labId = `OFFL-${localSeq}`;
-        const regNo = `ETM-OFFL-${Date.now().toString().slice(-6)}`;
-        const localRecord = {
-          ...payload,
-          labId,
-          regNo,
-          date: new Date().toISOString(),
-          status: payload.dueAmount > 0 ? "Pending" : "Completed",
-          tests: selectedTests.map((t) => ({
-            testId: t.id,
-            price: t.price,
-            test: t,
-          })),
-        };
-
-        if (editId) {
-          await db.updateOffline("registrations", parseInt(editId), localRecord);
-          showNotification("Connection lost. Updated locally (Offline).", "warning");
-          setTimeout(() => router.push("/test-report"), 1000);
-        } else {
-          await db.insertOffline("registrations", localRecord);
-          showNotification("Connection lost. Registration saved locally (Offline).", "warning");
-          handleReset();
-        }
-        return;
-      }
-
-      if (res.success) {
-        showNotification(res.message, "success");
-
-        // Cache authoritative record in IndexedDB
-        if (res.registration && res.registration.id) {
-          await db.registrations.put({
-            ...res.registration,
-            isDirty: false,
-            isModified: false,
-            isError: false,
-          });
-        }
-
-        // Automatically open WhatsApp with prefilled message & report link if enabled
-        if (sendWhatsapp && res.registration) {
-          const waUrl = getRegistrationWhatsappUrl(res.registration, labName);
-          if (waUrl) {
-            window.open(waUrl, "_blank");
-          }
-        }
-
-        if (editId) {
-          setTimeout(() => router.push("/test-report"), 1000);
-        } else {
-          handleReset();
-        }
+      let savedRecord;
+      if (editId) {
+        savedRecord = await db.updateOffline("registrations", parseInt(editId), localRecord);
+        showNotification("Registration updated successfully!", "success");
       } else {
-        showNotification(res.message, "error");
+        savedRecord = await db.insertOffline("registrations", localRecord);
+
+        // Record initial payment in IndexedDB if received
+        if (payload.receivedAmount > 0 && savedRecord && savedRecord.id) {
+          try {
+            await db.insertOffline("registrationPayments", {
+              registrationId: savedRecord.id,
+              amount: payload.receivedAmount,
+              paymentMode: payload.paymentMode,
+              paymentRefNo: payload.paymentRefNo || null,
+              date: new Date().toISOString(),
+            });
+          } catch (e) {}
+        }
+
+        showNotification("Registration saved successfully!", "success");
+      }
+
+      // Automatically open WhatsApp with prefilled message & report link if enabled
+      if (sendWhatsapp && savedRecord) {
+        const waUrl = getRegistrationWhatsappUrl(savedRecord, labName);
+        if (waUrl) {
+          window.open(waUrl, "_blank");
+        }
+      }
+
+      if (editId) {
+        setTimeout(() => router.push("/test-report"), 500);
+      } else {
+        handleReset();
+      }
+
+      // Background auto-sync trigger (fire and forget)
+      if (typeof navigator !== "undefined" && navigator.onLine) {
+        import("@/lib/offline/sync/syncManager").then(({ syncManager }) => syncManager.sync()).catch(() => {});
       }
     } catch (err) {
-      console.error(err);
+      console.error("[Registration] Save error:", err);
       showNotification("An unexpected error occurred while saving", "error");
     } finally {
       setSubmitting(false);
     }
   };
 
+  // Add Doctor (100% IndexedDB First)
   const handleAddDoctorSave = async () => {
     if (!newDocName.trim()) return;
     setIsAddingDoc(true);
     try {
-      const res = await fetch("/api/doctors", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-          name: newDocName.trim(),
-          code: newDocCode.trim() || null,
-          degree: newDocDegree.trim() || null,
-          address: newDocAddress.trim() || null,
-          clinicName: newDocClinicName.trim() || null,
-          incentivePercent: parseFloat(newDocIncentive) || 0,
-        }),
-      }).then((r) => r.json());
+      const docData = {
+        name: newDocName.trim(),
+        code: newDocCode.trim() || null,
+        degree: newDocDegree.trim() || null,
+        address: newDocAddress.trim() || null,
+        clinicName: newDocClinicName.trim() || null,
+        incentivePercent: parseFloat(newDocIncentive) || 0,
+      };
 
-      if (res.success) {
-        showNotification(res.message || "Doctor added successfully!", "success");
+      // 1. Insert into local IndexedDB
+      const createdDoctor = await db.insertOffline("doctors", docData);
 
-        // Add new doctor to doctors option list
-        const createdDoctor = res.doctor;
-        setDoctors((prev) => {
-          const updated = [...prev, createdDoctor];
-          return updated.sort((a, b) => a.name.localeCompare(b.name));
-        });
+      showNotification("Doctor added successfully!", "success");
 
-        // Set selected doctor for the triggering field
-        if (addDocTarget === "refBy") {
-          setRefBy(createdDoctor);
-        } else if (addDocTarget === "secondRef") {
-          setSecondRef(createdDoctor);
-        }
+      // 2. Add new doctor to doctors option list
+      setDoctors((prev) => {
+        const updated = [...prev, createdDoctor];
+        return updated.sort((a, b) => a.name.localeCompare(b.name));
+      });
 
-        // Reset dialog states
-        setOpenAddDocDialog(false);
-        setNewDocName("");
-        setNewDocCode("");
-        setNewDocDegree("");
-        setNewDocAddress("");
-        setNewDocClinicName("");
-        setNewDocIncentive("0");
-      } else {
-        showNotification(res.message || "Failed to add doctor", "error");
+      // 3. Set selected doctor for the triggering field
+      if (addDocTarget === "refBy") {
+        setRefBy(createdDoctor);
+      } else if (addDocTarget === "secondRef") {
+        setSecondRef(createdDoctor);
+      }
+
+      // 4. Reset dialog states
+      setOpenAddDocDialog(false);
+      setNewDocName("");
+      setNewDocCode("");
+      setNewDocDegree("");
+      setNewDocAddress("");
+      setNewDocClinicName("");
+      setNewDocIncentive("0");
+
+      // 5. Trigger background sync if online
+      if (typeof navigator !== "undefined" && navigator.onLine) {
+        import("@/lib/offline/sync/syncManager").then(({ syncManager }) => syncManager.sync()).catch(() => {});
       }
     } catch (err) {
       console.error(err);
@@ -882,18 +826,6 @@ _Thank you for choosing us for your health diagnostics!_`;
         }
 
         let patients = Array.from(patientsMap.values());
-
-        // 2. If not in local IndexedDB and online, fallback to API
-        if (patients.length === 0 && typeof navigator !== "undefined" && navigator.onLine) {
-          try {
-            const res = await fetch(`/api/registrations/by-mobile?mobileNo=${val}`).then((r) => r.json());
-            if (res.success && Array.isArray(res.patients) && res.patients.length > 0) {
-              patients = res.patients;
-            }
-          } catch (fetchErr) {
-            console.warn("Mobile API lookup fallback error:", fetchErr);
-          }
-        }
 
         if (patients.length === 1) {
           // Exactly one patient, prefill immediately

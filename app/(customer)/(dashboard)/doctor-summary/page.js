@@ -87,55 +87,31 @@ export default function DoctorSummaryPage() {
 
   const handleSaveEdit = async () => {
     if (!editingDoc) return;
-    if (editIncentiveInput === "" || isNaN(parseFloat(editIncentiveInput))) {
-      showToast("Please enter a valid incentive percentage.", "error");
+    const newIncentive = parseFloat(editIncentiveInput);
+    if (isNaN(newIncentive) || newIncentive < 0 || newIncentive > 100) {
+      showToast("Please enter a valid percentage between 0 and 100", "error");
       return;
     }
+
     setSavingEdit(true);
-    const newIncentive = parseFloat(editIncentiveInput);
-
     try {
-      if (typeof navigator !== "undefined" && !navigator.onLine) {
-        await db.updateOffline("doctors", editingDoc.id, {
-          incentivePercent: newIncentive,
-        });
-        showToast("Doctor incentive updated locally (Offline)! Will sync when connected.", "success");
-        setOpenEditDialog(false);
-        setEditingDoc(null);
-        loadData();
-        return;
-      }
+      // 1. Update directly in local IndexedDB (0ms UI latency)
+      await db.updateOffline("doctors", editingDoc.id, {
+        incentivePercent: newIncentive,
+      });
 
-      const res = await fetch("/api/doctors", {
-        method: "PUT",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-          doctorId: editingDoc.id,
-          incentivePercent: newIncentive,
-        }),
-      }).then((r) => r.json());
+      showToast("Doctor incentive updated successfully!", "success");
+      setOpenEditDialog(false);
+      setEditingDoc(null);
+      loadData();
 
-      if (res.success) {
-        showToast("Doctor incentive updated successfully!", "success");
-        setOpenEditDialog(false);
-        setEditingDoc(null);
-        loadData();
-      } else {
-        showToast(res.message || "Failed to update incentive.", "error");
+      // 2. Trigger background auto-sync if online
+      if (typeof navigator !== "undefined" && navigator.onLine) {
+        import("@/lib/offline/sync/syncManager").then(({ syncManager }) => syncManager.sync()).catch(() => {});
       }
     } catch (err) {
       console.error(err);
-      try {
-        await db.updateOffline("doctors", editingDoc.id, {
-          incentivePercent: newIncentive,
-        });
-        showToast("Network failed: Updated locally (Offline).", "warning");
-        setOpenEditDialog(false);
-        setEditingDoc(null);
-        loadData();
-      } catch (dbErr) {
-        showToast("An unexpected error occurred.", "error");
-      }
+      showToast("An unexpected error occurred.", "error");
     } finally {
       setSavingEdit(false);
     }
@@ -150,38 +126,21 @@ export default function DoctorSummaryPage() {
     if (!deletingDoc) return;
     setDeleting(true);
     try {
-      if (typeof navigator !== "undefined" && !navigator.onLine) {
-        await db.deleteOffline("doctors", deletingDoc.id);
-        showToast("Doctor deleted locally (Offline)! Will sync when connected.", "success");
-        setOpenDeleteDialog(false);
-        setDeletingDoc(null);
-        loadData();
-        return;
-      }
+      // 1. Delete directly in local IndexedDB (0ms UI latency)
+      await db.deleteOffline("doctors", deletingDoc.id);
 
-      const res = await fetch(`/api/doctors?doctorId=${deletingDoc.id}`, {
-        method: "DELETE",
-      }).then((r) => r.json());
+      showToast("Doctor deleted successfully!", "success");
+      setOpenDeleteDialog(false);
+      setDeletingDoc(null);
+      loadData();
 
-      if (res.success) {
-        showToast("Doctor deleted successfully!", "success");
-        setOpenDeleteDialog(false);
-        setDeletingDoc(null);
-        loadData();
-      } else {
-        showToast(res.message || "Failed to delete doctor.", "error");
+      // 2. Trigger background auto-sync if online
+      if (typeof navigator !== "undefined" && navigator.onLine) {
+        import("@/lib/offline/sync/syncManager").then(({ syncManager }) => syncManager.sync()).catch(() => {});
       }
     } catch (err) {
       console.error(err);
-      try {
-        await db.deleteOffline("doctors", deletingDoc.id);
-        showToast("Network failed: Deleted locally (Offline).", "warning");
-        setOpenDeleteDialog(false);
-        setDeletingDoc(null);
-        loadData();
-      } catch (dbErr) {
-        showToast("An unexpected error occurred.", "error");
-      }
+      showToast("An unexpected error occurred.", "error");
     } finally {
       setDeleting(false);
     }

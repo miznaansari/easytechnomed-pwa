@@ -82,25 +82,8 @@ export default function MoneyRecipt({ open, onClose, selectedReg, onSaveSuccess,
         setPaymentRefNoInput(localReg.paymentRefNo || "");
         setRemarkInput("");
       }
-
-      if (typeof navigator !== "undefined" && navigator.onLine && selectedReg?.id) {
-        const res = await fetch(`/api/registrations/${selectedReg.id}`).then((r) => r.json());
-        if (res.success && res.registration) {
-          setSelectedRegistration(res.registration);
-          const total = parseFloat(res.registration.totalAmount || 0) + parseFloat(res.registration.collectionCharge || 0);
-          const discount = parseFloat(res.registration.discountAmount || 0);
-          const alreadyPaid = parseFloat(res.registration.receivedAmount || 0);
-          const remainingDue = Math.max(0, total - discount - alreadyPaid);
-
-          setDiscountInput(discount);
-          setDiscountPercentInput(parseFloat(res.registration.discountPercent || 0));
-          setReceivedInput(remainingDue);
-          setPaymentModeInput(res.registration.paymentMode || "Cash");
-          setPaymentRefNoInput(res.registration.paymentRefNo || "");
-        }
-      }
     } catch (err) {
-      console.error(err);
+      console.error("Error loading receipt details from IndexedDB:", err);
       if (!selectedRegistration && selectedReg) {
         setSelectedRegistration(selectedReg);
       }
@@ -203,7 +186,7 @@ export default function MoneyRecipt({ open, onClose, selectedReg, onSaveSuccess,
     const regId = selectedRegistration.id;
 
     try {
-      // 1. Record payment in local IndexedDB stores
+      // 1. Record payment directly in local IndexedDB stores (0ms latency)
       if (enteredReceived > 0) {
         await db.insertOffline("registrationPayments", {
           registrationId: regId,
@@ -211,6 +194,7 @@ export default function MoneyRecipt({ open, onClose, selectedReg, onSaveSuccess,
           mode: paymentModeInput,
           refNo: paymentRefNoInput,
           remark: remarkInput,
+          date: new Date().toISOString(),
         });
       }
 
@@ -219,45 +203,28 @@ export default function MoneyRecipt({ open, onClose, selectedReg, onSaveSuccess,
         discountAmount: currentDiscount,
         discountPercent: parseFloat(discountPercentInput) || 0,
         dueAmount: newDue,
+        status: newDue === 0 ? "Completed" : "Pending",
         paymentMode: paymentModeInput,
         paymentRefNo: paymentRefNoInput,
       });
 
-      if (typeof navigator !== "undefined" && !navigator.onLine) {
-        showToast("Payment recorded locally (Offline)! Will sync when connected.", "success");
-        setTimeout(() => {
-          onClose();
-          if (onSaveSuccess) onSaveSuccess();
-        }, 800);
-        return;
-      }
+      showToast("Payment recorded successfully!", "success");
+      setTimeout(() => {
+        onClose();
+        if (onSaveSuccess) onSaveSuccess();
+      }, 500);
 
-      const res = await fetch(`/api/registrations/${selectedRegistration.id}/payment`, {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-          received: enteredReceived,
-          discountPercent: parseFloat(discountPercentInput) || 0,
-          discountAmount: currentDiscount,
-          paymentMode: paymentModeInput,
-          paymentRefNo: paymentRefNoInput,
-          remark: remarkInput,
-        })
-      }).then((r) => r.json());
-
-      if (res.success) {
-        showToast("Payment recorded successfully!", "success");
-        setTimeout(() => {
-          onClose();
-          if (onSaveSuccess) onSaveSuccess();
-        }, 800);
-      } else {
-        showToast("Payment saved locally.", "info");
-        setTimeout(() => {
-          onClose();
-          if (onSaveSuccess) onSaveSuccess();
-        }, 800);
+      // 2. Trigger background auto-sync if online
+      if (typeof navigator !== "undefined" && navigator.onLine) {
+        import("@/lib/offline/sync/syncManager").then(({ syncManager }) => syncManager.sync()).catch(() => {});
       }
+    } catch (err) {
+      console.error("Save payment error:", err);
+      showToast("An error occurred while saving payment", "error");
+    } finally {
+      setSavingPayment(false);
+    }
+  };
     } catch (err) {
       console.warn("Payment network request failed, saved locally:", err);
       showToast("Saved payment locally (Offline).", "warning");

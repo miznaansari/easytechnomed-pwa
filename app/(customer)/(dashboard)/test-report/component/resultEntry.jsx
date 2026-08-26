@@ -268,110 +268,48 @@ export default function ResultEntry({ open, onClose, selectedReg, onSaveSuccess,
           value: resultValues[paramId] !== undefined && resultValues[paramId] !== null ? String(resultValues[paramId]) : ""
         }));
 
-      // Offline handler
-      if (typeof navigator !== "undefined" && !navigator.onLine) {
-        for (const item of resultsData) {
-          const existing = await db.patientResults
-            .filter((r) => r.registrationId === resultRegDetails.id && r.testParameterId === item.testParameterId)
-            .first();
+      // 1. Always save results to IndexedDB directly (0ms UI latency)
+      for (const item of resultsData) {
+        const existing = await db.patientResults
+          .filter((r) => r.registrationId === resultRegDetails.id && r.testParameterId === item.testParameterId)
+          .first();
 
-          if (existing) {
-            await db.updateOffline("patientResults", existing.id, {
-              value: item.value,
-            });
-          } else {
-            await db.insertOffline("patientResults", {
-              registrationId: resultRegDetails.id,
-              testParameterId: item.testParameterId,
-              value: item.value,
-            });
-          }
+        if (existing) {
+          await db.updateOffline("patientResults", existing.id, { value: item.value });
+        } else {
+          await db.insertOffline("patientResults", {
+            registrationId: resultRegDetails.id,
+            testParameterId: item.testParameterId,
+            value: item.value,
+          });
         }
-
-        const newStatus = isDraft ? (resultRegDetails.status || "Pending") : "Completed";
-        await db.updateOffline("registrations", resultRegDetails.id, {
-          remark: reportNotes,
-          status: newStatus,
-        });
-
-        const now = new Date();
-        const timeStr = now.toLocaleTimeString([], { hour: "2-digit", minute: "2-digit", second: "2-digit" });
-        setLastSavedTime(timeStr);
-        setAutoSaveStatus("saved");
-
-        if (!isDraft) {
-          showToast("Results saved locally (Offline)! Will sync when connected.", "success");
-          setIsSaved(true);
-          if (onSaveSuccess) onSaveSuccess();
-        } else if (!isSilent) {
-          showToast("Draft saved locally (Offline)", "success");
-          if (onSaveSuccess) onSaveSuccess();
-        }
-        return;
       }
 
-      const apiUrl = isDraft
-        ? `/api/registrations/${resultRegDetails.id}/results/draft`
-        : `/api/registrations/${resultRegDetails.id}/results`;
-
-      const response = await fetch(apiUrl, {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-          resultsData,
-          reportNotes,
-        }),
-        signal: abortController.signal,
+      const newStatus = isDraft ? (resultRegDetails.status || "Pending") : "Completed";
+      await db.updateOffline("registrations", resultRegDetails.id, {
+        remark: reportNotes,
+        status: newStatus,
       });
 
-      const res = await response.json();
+      const now = new Date();
+      const timeStr = now.toLocaleTimeString([], { hour: "2-digit", minute: "2-digit", second: "2-digit" });
+      setLastSavedTime(timeStr);
+      setAutoSaveStatus("saved");
 
-      if (res.success) {
-        // Cache results into IndexedDB
-        for (const item of resultsData) {
-          const existing = await db.patientResults
-            .filter((r) => r.registrationId === resultRegDetails.id && r.testParameterId === item.testParameterId)
-            .first();
-
-          if (existing) {
-            await db.patientResults.update(existing.id, {
-              value: item.value,
-              isDirty: false,
-              isModified: false,
-              isError: false,
-            });
-          } else {
-            await db.patientResults.add({
-              registrationId: resultRegDetails.id,
-              testParameterId: item.testParameterId,
-              value: item.value,
-              isDirty: false,
-              isModified: false,
-              isError: false,
-            });
-          }
-        }
-
-        const now = new Date();
-        const timeStr = now.toLocaleTimeString([], { hour: "2-digit", minute: "2-digit", second: "2-digit" });
-        setLastSavedTime(timeStr);
-        setAutoSaveStatus("saved");
-
-        if (!isDraft) {
-          showToast(res.message || "Results saved and completed successfully", "success");
-          setIsSaved(true);
-          if (onSaveSuccess) onSaveSuccess();
-        } else if (!isSilent) {
-          showToast("Draft saved successfully", "success");
-          if (onSaveSuccess) onSaveSuccess();
-        }
-      } else {
-        if (isSilent) {
-          setAutoSaveStatus("error");
-        } else {
-          showToast(res.message || "Failed to save results", "error");
-        }
+      if (!isDraft) {
+        showToast("Results saved and completed successfully!", "success");
+        setIsSaved(true);
+        if (onSaveSuccess) onSaveSuccess();
+      } else if (!isSilent) {
+        showToast("Draft saved successfully", "success");
+        if (onSaveSuccess) onSaveSuccess();
       }
+
+      // 2. Trigger background auto-sync if online (fire-and-forget)
+      if (typeof navigator !== "undefined" && navigator.onLine) {
+        import("@/lib/offline/sync/syncManager").then(({ syncManager }) => syncManager.sync()).catch(() => {});
+      }
+      return;
     } catch (err) {
       // If request was aborted by a newer draft request, silently ignore
       if (err.name === "AbortError" || abortController.signal.aborted) {
@@ -647,22 +585,30 @@ export default function ResultEntry({ open, onClose, selectedReg, onSaveSuccess,
 
   const handleSaveConfigParameters = async () => {
     try {
-      const res = await fetch(`/api/registrations/${configTest.id}/parameters`, {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ parametersList: configParams }),
-      }).then((r) => r.json());
+      if (configTest && Array.isArray(configParams)) {
+        const testId = configTest.id;
+        const formatted = configParams.map((p, idx) => ({
+          ...p,
+          testId,
+          order: p.order ?? idx,
+          isDirty: true,
+          isModified: false,
+          isError: false,
+        }));
 
-      if (res.success) {
-        showToast(res.message, "success");
+        await db.testParameters.bulkPut(formatted);
+        showToast("Parameters configured successfully!", "success");
         setConfigDialogOpen(false);
-        // Refresh local parameter list
         loadParameters();
-      } else {
-        showToast(res.message, "error");
+
+        // Background sync if online
+        if (typeof navigator !== "undefined" && navigator.onLine) {
+          import("@/lib/offline/sync/syncManager").then(({ syncManager }) => syncManager.sync()).catch(() => {});
+        }
       }
     } catch (err) {
-      showToast(err.message || "Failed to update parameters setup", "error");
+      console.error("Save config parameters error:", err);
+      showToast("An error occurred while saving parameters", "error");
     }
   };
 

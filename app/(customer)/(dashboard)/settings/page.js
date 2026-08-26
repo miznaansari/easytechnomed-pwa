@@ -72,14 +72,6 @@ function SettingsContent({ defaultSection = "profile" }) {
           setProfileEmail(adminData.email || "");
           setCompanyName(adminData.companyName || "");
           setMobileNumber(adminData.mobileNumber || "");
-        } else if (typeof navigator !== "undefined" && navigator.onLine) {
-          const res = await fetch("/api/settings").then((r) => r.json());
-          if (res.success && res.settings) {
-            setProfileName(res.settings.name || "");
-            setProfileEmail(res.settings.email || "");
-            setCompanyName(res.settings.companyName || "");
-            setMobileNumber(res.settings.mobileNumber || "");
-          }
         }
       } catch (err) {
         console.error("Error loading profile from IndexedDB:", err);
@@ -109,7 +101,7 @@ function SettingsContent({ defaultSection = "profile" }) {
 
     setUpdatingProfile(true);
     try {
-      // 1. Update local IndexedDB admin profile
+      // 1. Update local IndexedDB admin profile (0ms latency)
       const cachedAdmins = await db.admins.toArray();
       if (cachedAdmins.length > 0) {
         await db.updateOffline("admins", cachedAdmins[0].id, {
@@ -119,38 +111,18 @@ function SettingsContent({ defaultSection = "profile" }) {
         });
       }
 
-      if (typeof navigator !== "undefined" && !navigator.onLine) {
-        showToast("Profile updated locally (Offline)! Will sync when connected.", "success");
-        setOldPassword("");
-        setNewPassword("");
-        setConfirmPassword("");
-        return;
-      }
+      showToast("Profile updated successfully!", "success");
+      setOldPassword("");
+      setNewPassword("");
+      setConfirmPassword("");
 
-      const res = await fetch("/api/profile", {
-        method: "PUT",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-          name: profileName,
-          oldPassword: oldPassword || null,
-          newPassword: newPassword || null,
-          confirmPassword: confirmPassword || null,
-          companyName: companyName || null,
-          mobileNumber: mobileNumber || null,
-        }),
-      }).then((r) => r.json());
-
-      if (res.success) {
-        showToast(res.message || "Profile updated successfully!", "success");
-        setOldPassword("");
-        setNewPassword("");
-        setConfirmPassword("");
-      } else {
-        showToast(res.message || "Saved locally.", "info");
+      // 2. Trigger background auto-sync if online
+      if (typeof navigator !== "undefined" && navigator.onLine) {
+        import("@/lib/offline/sync/syncManager").then(({ syncManager }) => syncManager.sync()).catch(() => {});
       }
     } catch (err) {
-      console.warn("Profile API update failed, saved locally:", err);
-      showToast("Profile updated locally (Offline).", "warning");
+      console.error("Profile update error:", err);
+      showToast("An error occurred while updating profile.", "error");
     } finally {
       setUpdatingProfile(false);
     }

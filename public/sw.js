@@ -1,4 +1,4 @@
-const CACHE_NAME = "easytechnomed-pwa-v3";
+const CACHE_NAME = "easytechnomed-pwa-v4";
 const OFFLINE_URL = "/offline.html";
 
 // Core routes and critical static assets to pre-cache on install
@@ -19,6 +19,27 @@ const PRECACHE_ROUTES = [
   "/members",
 ];
 
+// Helper: Fast fetch with short timeout to prevent navigation freezes on dead connections
+function fetchWithTimeout(request, timeoutMs = 450) {
+  return new Promise((resolve, reject) => {
+    const controller = new AbortController();
+    const timer = setTimeout(() => {
+      controller.abort();
+      reject(new Error("NetworkTimeout"));
+    }, timeoutMs);
+
+    fetch(request, { signal: controller.signal })
+      .then((res) => {
+        clearTimeout(timer);
+        resolve(res);
+      })
+      .catch((err) => {
+        clearTimeout(timer);
+        reject(err);
+      });
+  });
+}
+
 // Install event: cache offline fallback page and core dashboard routes
 self.addEventListener("install", (event) => {
   event.waitUntil(
@@ -26,17 +47,32 @@ self.addEventListener("install", (event) => {
       .open(CACHE_NAME)
       .then(async (cache) => {
         console.log("[Service Worker] Pre-caching core offline assets & routes...");
-        // Use Promise.allSettled so one missing image/route doesn't fail the entire install
         await Promise.allSettled(
-          PRECACHE_ROUTES.map((route) =>
-            fetch(route, { cache: "reload" })
-              .then((res) => {
-                if (res.ok) return cache.put(route, res);
-              })
-              .catch((err) => {
-                console.warn(`[Service Worker] Pre-cache failed for: ${route}`, err);
-              })
-          )
+          PRECACHE_ROUTES.map(async (route) => {
+            try {
+              // 1. Pre-cache standard page HTML / asset
+              const res = await fetch(route, { cache: "reload" });
+              if (res.ok) {
+                await cache.put(route, res);
+              }
+
+              // 2. Pre-cache RSC data for app routes so first-time offline navigation is instant
+              if (route.startsWith("/") && !route.includes(".")) {
+                try {
+                  const rscRes = await fetch(route, {
+                    headers: { RSC: "1" },
+                    cache: "reload",
+                  });
+                  if (rscRes.ok) {
+                    await cache.put(`${route}?_rsc=1`, rscRes.clone());
+                    await cache.put(route, rscRes);
+                  }
+                } catch {}
+              }
+            } catch (err) {
+              console.warn(`[Service Worker] Pre-cache failed for: ${route}`, err);
+            }
+          })
         );
       })
       .then(() => self.skipWaiting())
@@ -85,20 +121,9 @@ self.addEventListener("fetch", (event) => {
 
   if (isRSCRequest) {
     event.respondWith(
-      fetch(event.request)
-        .then((networkResponse) => {
-          if (networkResponse && networkResponse.status === 200) {
-            const clone = networkResponse.clone();
-            caches.open(CACHE_NAME).then((cache) => {
-              cache.put(event.request, clone);
-              // Also store under plain pathname for fallback lookup
-              cache.put(url.pathname, networkResponse.clone());
-            });
-          }
-          return networkResponse;
-        })
-        .catch(async () => {
-          console.log("[Service Worker] RSC fetch failed (offline), attempting cached response for:", url.pathname);
+      (async () => {
+        // A. If already offline, skip network entirely -> Instant 0ms response from cache
+        if (typeof self.navigator !== "undefined" && !self.navigator.onLine) {
           const cached = await caches.match(event.request, { ignoreSearch: true });
           if (cached) return cached;
 
@@ -108,21 +133,12 @@ self.addEventListener("fetch", (event) => {
           const dashboardRsc = await caches.match("/dashboard", { ignoreSearch: true });
           if (dashboardRsc) return dashboardRsc;
 
-          return new Response("", {
-            status: 503,
-            statusText: "Offline",
-            headers: { "Content-Type": "text/plain" },
-          });
-        })
-    );
-    return;
-  }
+          return new Response("", { status: 503, statusText: "Offline" });
+        }
 
-  // 2. Full Page HTML Navigation Requests (Reloads, entering URLs, hard navigations)
-  if (event.request.mode === "navigate") {
-    event.respondWith(
-      fetch(event.request)
-        .then((networkResponse) => {
+        // B. If online: Race network with 450ms timeout so disconnected network doesn't hang UI
+        try {
+          const networkResponse = await fetchWithTimeout(event.request, 450);
           if (networkResponse && networkResponse.status === 200) {
             const clone = networkResponse.clone();
             caches.open(CACHE_NAME).then((cache) => {
@@ -131,18 +147,36 @@ self.addEventListener("fetch", (event) => {
             });
           }
           return networkResponse;
-        })
-        .catch(async () => {
-          console.log("[Service Worker] Navigation fetch failed (offline), attempting cached route for:", url.pathname);
-          // Try exact request
+        } catch {
+          // Network timed out or failed (disconnected WiFi/internet) -> Fallback to Cache instantly
           const cached = await caches.match(event.request, { ignoreSearch: true });
           if (cached) return cached;
 
-          // Try pathname
-          const pathnameCached = await caches.match(url.pathname);
+          const pathnameCached = await caches.match(url.pathname, { ignoreSearch: true });
           if (pathnameCached) return pathnameCached;
 
-          // Fallback to pre-cached dashboard shell or offline.html
+          const dashboardRsc = await caches.match("/dashboard", { ignoreSearch: true });
+          if (dashboardRsc) return dashboardRsc;
+
+          return new Response("", { status: 503, statusText: "Offline" });
+        }
+      })()
+    );
+    return;
+  }
+
+  // 2. Full Page HTML Navigation Requests (Reloads, entering URLs, hard navigations)
+  if (event.request.mode === "navigate") {
+    event.respondWith(
+      (async () => {
+        // A. If offline, serve cached shell immediately (0ms)
+        if (typeof self.navigator !== "undefined" && !self.navigator.onLine) {
+          const cached = await caches.match(event.request, { ignoreSearch: true });
+          if (cached) return cached;
+
+          const pathnameCached = await caches.match(url.pathname, { ignoreSearch: true });
+          if (pathnameCached) return pathnameCached;
+
           const fallbackCache = await caches.open(CACHE_NAME);
           const dashboardFallback = await fallbackCache.match("/dashboard");
           if (dashboardFallback) return dashboardFallback;
@@ -154,7 +188,37 @@ self.addEventListener("fetch", (event) => {
             status: 503,
             headers: { "Content-Type": "text/plain" },
           });
-        })
+        }
+
+        // B. If online, fetch with 500ms timeout
+        try {
+          const networkResponse = await fetchWithTimeout(event.request, 500);
+          if (networkResponse && networkResponse.status === 200) {
+            const clone = networkResponse.clone();
+            caches.open(CACHE_NAME).then((cache) => {
+              cache.put(event.request, clone);
+              cache.put(url.pathname, networkResponse.clone());
+            });
+          }
+          return networkResponse;
+        } catch {
+          // Fallback to cache immediately on network timeout
+          const cached = await caches.match(event.request, { ignoreSearch: true });
+          if (cached) return cached;
+
+          const pathnameCached = await caches.match(url.pathname, { ignoreSearch: true });
+          if (pathnameCached) return pathnameCached;
+
+          const fallbackCache = await caches.open(CACHE_NAME);
+          const dashboardFallback = await fallbackCache.match("/dashboard");
+          if (dashboardFallback) return dashboardFallback;
+
+          const offlineFallback = await fallbackCache.match(OFFLINE_URL);
+          if (offlineFallback) return offlineFallback;
+
+          return new Response("Offline", { status: 503, headers: { "Content-Type": "text/plain" } });
+        }
+      })()
     );
     return;
   }
@@ -190,7 +254,7 @@ self.addEventListener("fetch", (event) => {
           })
           .catch(() => cachedResponse);
 
-        // Return cached version immediately if present, otherwise await network fetch
+        // Return cached version immediately (0ms) if present, otherwise await network fetch
         return cachedResponse || networkFetch;
       })
     );

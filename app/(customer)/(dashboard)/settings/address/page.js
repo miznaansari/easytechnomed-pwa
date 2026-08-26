@@ -49,20 +49,6 @@ export default function AddressSettingsPage() {
             country: adminData.address.country || ""
           });
         }
-
-        if (typeof navigator !== "undefined" && navigator.onLine) {
-          const res = await fetch("/api/settings/address").then((r) => r.json());
-          if (res.success && res.address) {
-            setAddress({
-              address1: res.address.address1 || "",
-              address2: res.address.address2 || "",
-              city: res.address.city || "",
-              state: res.address.state || "",
-              pincode: res.address.pincode || "",
-              country: res.address.country || ""
-            });
-          }
-        }
       } catch (err) {
         console.error(err);
       } finally {
@@ -79,30 +65,21 @@ export default function AddressSettingsPage() {
   const handleSave = async () => {
     setSaving(true);
     try {
-      // 1. Update local admin address in IndexedDB
+      // 1. Update local admin address in IndexedDB (0ms latency)
       const cachedAdmins = await db.admins.toArray();
       if (cachedAdmins.length > 0) {
         await db.updateOffline("admins", cachedAdmins[0].id, { address });
       }
 
-      if (typeof navigator !== "undefined" && !navigator.onLine) {
-        toast.success("Address updated locally (Offline)! Will sync when connected.");
-        return;
-      }
+      toast.success("Address updated successfully!");
 
-      const res = await fetch("/api/settings/address", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(address)
-      }).then((r) => r.json());
-
-      if (res.success) {
-        toast.success(res.message || "Address updated successfully!");
-      } else {
-        toast.info("Saved locally.");
+      // 2. Trigger background auto-sync if online
+      if (typeof navigator !== "undefined" && navigator.onLine) {
+        import("@/lib/offline/sync/syncManager").then(({ syncManager }) => syncManager.sync()).catch(() => {});
       }
     } catch (err) {
-      toast.success("Address saved locally (Offline).");
+      console.error(err);
+      toast.error("Failed to save address.");
     } finally {
       setSaving(false);
     }

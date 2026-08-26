@@ -115,19 +115,33 @@ export default function WorkspaceMembersPage() {
     }
 
     setSubmitting(true);
-    const res = await fetch("/api/members", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify(formData),
-    }).then((r) => r.json());
-    if (res.success) {
-      toast.success(res.message || "Member added successfully.");
+    try {
+      const selectedRole = roles.find((r) => r.id === formData.roleId);
+      const newMember = {
+        name: formData.name,
+        email: formData.email,
+        roleId: formData.roleId,
+        role: selectedRole || { name: "STAFF", permissions: [] },
+        isActive: true,
+      };
+
+      // 1. Insert directly into local IndexedDB
+      await db.insertOffline("admins", newMember);
+
+      toast.success("Member added successfully.");
       handleClose();
       fetchData();
-    } else {
-      toast.error(res.error || "Failed to add member.");
+
+      // 2. Trigger background auto-sync if online
+      if (typeof navigator !== "undefined" && navigator.onLine) {
+        import("@/lib/offline/sync/syncManager").then(({ syncManager }) => syncManager.sync()).catch(() => {});
+      }
+    } catch (err) {
+      console.error(err);
+      toast.error("Failed to add member.");
+    } finally {
+      setSubmitting(false);
     }
-    setSubmitting(false);
   };
 
   const formatDate = (dateStr) => {
@@ -147,17 +161,15 @@ export default function WorkspaceMembersPage() {
     }
 
     try {
-      const res = await fetch("/api/members", {
-        method: "PATCH",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ memberId, isActive: newStatus }),
-      }).then((r) => r.json());
+      // 1. Update directly in local IndexedDB
+      await db.updateOffline("admins", memberId, { isActive: newStatus });
 
-      if (res.success) {
-        toast.success(res.message || "Member status updated successfully.");
-        fetchData();
-      } else {
-        toast.error(res.error || "Failed to update member status.");
+      toast.success("Member status updated successfully.");
+      fetchData();
+
+      // 2. Trigger background auto-sync if online
+      if (typeof navigator !== "undefined" && navigator.onLine) {
+        import("@/lib/offline/sync/syncManager").then(({ syncManager }) => syncManager.sync()).catch(() => {});
       }
     } catch (err) {
       console.error(err);

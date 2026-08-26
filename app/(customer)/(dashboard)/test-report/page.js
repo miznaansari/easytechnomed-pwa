@@ -453,20 +453,6 @@ export default function TestReportPage() {
             address: adminData?.address || null,
           });
         }
-
-        if (typeof navigator !== "undefined" && navigator.onLine) {
-          const res = await fetch("/api/settings").then((r) => r.json());
-          if (res.success && res.settings) {
-            setAdminSettings({
-              framePdfUrl: res.settings.framePdfUrl || "",
-              useFrameDefault: res.settings.useFrameDefault ?? true,
-              companyName: res.settings.companyName || "",
-              email: res.settings.email || "",
-              mobileNumber: res.settings.mobileNumber || "",
-              address: res.settings.address || null,
-            });
-          }
-        }
       } catch (err) {
         console.error("Failed to load admin settings in test-report page:", err);
       }
@@ -642,30 +628,18 @@ export default function TestReportPage() {
       return;
     }
     try {
-      if (typeof navigator !== "undefined" && !navigator.onLine) {
-        await db.deleteOffline("registrations", selectedReg.id);
-        showToast("Registration deleted locally (Offline)! Will sync when connected.", "success");
-        loadData();
-        return;
-      }
+      // 1. Delete directly in local IndexedDB (0ms latency)
+      await db.deleteOffline("registrations", selectedReg.id);
+      showToast("Registration deleted successfully", "success");
+      loadData();
 
-      const res = await fetch(`/api/registrations/${selectedReg.id}`, { method: "DELETE" }).then((r) => r.json());
-      if (res.success) {
-        await db.deleteOffline("registrations", selectedReg.id);
-        showToast(res.message || "Registration deleted successfully", "success");
-        loadData();
-      } else {
-        showToast(res.message, "error");
+      // 2. Trigger background auto-sync if online
+      if (typeof navigator !== "undefined" && navigator.onLine) {
+        import("@/lib/offline/sync/syncManager").then(({ syncManager }) => syncManager.sync()).catch(() => {});
       }
     } catch (err) {
-      console.warn("Delete network failed, performing offline delete:", err);
-      try {
-        await db.deleteOffline("registrations", selectedReg.id);
-        showToast("Network failed: Registration deleted locally (Offline).", "warning");
-        loadData();
-      } catch (dbErr) {
-        showToast(err.message || "Failed to delete registration", "error");
-      }
+      console.error("Delete registration error:", err);
+      showToast(err.message || "Failed to delete registration", "error");
     }
   };
 
@@ -686,7 +660,7 @@ export default function TestReportPage() {
     const regId = selectedReg.id;
     handleCloseMenu();
     try {
-      // 1. Read directly from local registration first (0ms latency, works offline & online)
+      // 1. Read directly from local registration in IndexedDB (0ms latency)
       const localReg = await db.registrations.get(regId) || selectedReg;
       const regTests = Array.isArray(localReg?.tests) ? localReg.tests : [];
 
@@ -706,27 +680,6 @@ export default function TestReportPage() {
         }));
         setSampleRows(rows);
         setSampleDialogOpen(true);
-      } else if (typeof navigator !== "undefined" && navigator.onLine) {
-        const res = await fetch(`/api/registrations/${regId}/samples`).then((r) => r.json());
-        if (res.success && res.registration) {
-          const rows = (res.registration.tests || []).map((rt) => ({
-            testId: rt.test?.id || rt.testId,
-            testName: rt.test?.name || rt.name,
-            sampleStatus: rt.sampleStatus,
-            sampleBarcode: rt.sampleBarcode || selectedReg.barcode?.replace(/^,\s*/, "")?.split(" ")?.[0] || "",
-            sampleRemark: rt.sampleRemark || "",
-            sendTo: rt.sendTo || "-NA-",
-            expense: rt.expense || 0,
-            assessNo: rt.assessNo || "",
-            pathologist: rt.pathologist || "-NA-",
-            collectedBy: rt.collectedBy || "-NA-",
-            product: rt.product || "-NA-"
-          }));
-          setSampleRows(rows);
-          setSampleDialogOpen(true);
-        } else {
-          showToast(res.message || "No tests found for this registration", "error");
-        }
       } else {
         showToast("No tests found for this registration", "warning");
       }
@@ -744,7 +697,7 @@ export default function TestReportPage() {
   const handleSaveSamples = async () => {
     setSampleSaving(true);
     try {
-      // 1. Update IndexedDB registration record directly
+      // 1. Update IndexedDB registration record directly (0ms latency)
       const regId = selectedReg.id;
       const localReg = await db.registrations.get(regId);
       if (localReg) {
@@ -770,32 +723,17 @@ export default function TestReportPage() {
         await db.updateOffline("registrations", regId, { tests: updatedTests });
       }
 
-      if (typeof navigator !== "undefined" && !navigator.onLine) {
-        showToast("Sample details saved locally (Offline)! Will sync when connected.", "success");
-        setSampleDialogOpen(false);
-        loadData();
-        return;
-      }
-
-      const res = await fetch(`/api/registrations/${selectedReg.id}/samples`, {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(sampleRows),
-      }).then((r) => r.json());
-
-      if (res.success) {
-        showToast(res.message || "Sample details updated successfully!", "success");
-        setSampleDialogOpen(false);
-        loadData();
-      } else {
-        showToast(res.message || "Saved locally.", "info");
-        setSampleDialogOpen(false);
-        loadData();
-      }
-    } catch (err) {
-      showToast("Saved locally (Offline).", "warning");
+      showToast("Sample details updated successfully!", "success");
       setSampleDialogOpen(false);
       loadData();
+
+      // 2. Trigger background auto-sync if online
+      if (typeof navigator !== "undefined" && navigator.onLine) {
+        import("@/lib/offline/sync/syncManager").then(({ syncManager }) => syncManager.sync()).catch(() => {});
+      }
+    } catch (err) {
+      console.error("Save samples error:", err);
+      showToast("An error occurred while saving samples", "error");
     } finally {
       setSampleSaving(false);
     }

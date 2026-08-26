@@ -23,6 +23,8 @@ import {
   Percent as PercentIcon
 } from "@mui/icons-material";
 
+import db from "@/lib/offline/db";
+
 export default function AddDoctorDrawer({ open, onClose, onSuccess, initialName = "" }) {
   const [name, setName] = useState("");
   const [code, setCode] = useState("");
@@ -50,36 +52,36 @@ export default function AddDoctorDrawer({ open, onClose, onSuccess, initialName 
     setLoading(true);
 
     try {
-      const res = await fetch("/api/doctors", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-          name: name.trim(),
-          code: code.trim() || null,
-          degree: degree.trim() || null,
-          address: address.trim() || null,
-          clinicName: clinicName.trim() || null,
-          incentivePercent: parseFloat(incentive) || 0,
-        }),
-      }).then((r) => r.json());
+      const docData = {
+        name: name.trim(),
+        code: code.trim() || null,
+        degree: degree.trim() || null,
+        address: address.trim() || null,
+        clinicName: clinicName.trim() || null,
+        incentivePercent: parseFloat(incentive) || 0,
+      };
 
-      if (res.success) {
-        // Reset form fields
-        setName("");
-        setCode("");
-        setDegree("");
-        setClinicName("");
-        setAddress("");
-        setIncentive("0");
+      // 1. Insert directly into local IndexedDB (0ms latency)
+      const savedDoc = await db.insertOffline("doctors", docData);
 
-        if (onSuccess) {
-          onSuccess(res.doctor, res.message);
-        }
-      } else {
-        setError(res.message || "Failed to add doctor.");
+      // Reset form fields
+      setName("");
+      setCode("");
+      setDegree("");
+      setClinicName("");
+      setAddress("");
+      setIncentive("0");
+
+      if (onSuccess) {
+        onSuccess(savedDoc, "Doctor added successfully!");
+      }
+
+      // 2. Trigger background auto-sync if online
+      if (typeof navigator !== "undefined" && navigator.onLine) {
+        import("@/lib/offline/sync/syncManager").then(({ syncManager }) => syncManager.sync()).catch(() => {});
       }
     } catch (err) {
-      console.error(err);
+      console.error("Save doctor error:", err);
       setError("An unexpected error occurred while saving.");
     } finally {
       setLoading(false);

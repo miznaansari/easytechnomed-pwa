@@ -364,7 +364,7 @@ export default function PdfSettingsClient() {
     showToast("Template frame URL cleared. Click Save to apply changes.", "info");
   };
 
-  // Save Settings to Backend
+  // Save Settings to Local IndexedDB & Sync
   const handleSave = async () => {
     setSaving(true);
     try {
@@ -373,18 +373,23 @@ export default function PdfSettingsClient() {
         columnOrder: JSON.stringify(settings.columnOrder),
       };
 
-      const res = await fetch("/api/settings/pdf", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(payload),
-      }).then((r) => r.json());
+      // 1. Save directly into local IndexedDB
+      await db.workspacePdf.put({
+        ...payload,
+        id: 1,
+        isDirty: true,
+        isModified: false,
+        isError: false,
+      });
 
-      if (res.success) {
-        showToast(res.message || "All PDF settings saved successfully!", "success");
-      } else {
-        showToast(res.error || "Failed to save settings.", "error");
+      showToast("All PDF settings saved successfully!", "success");
+
+      // 2. Trigger background auto-sync if online
+      if (typeof navigator !== "undefined" && navigator.onLine) {
+        import("@/lib/offline/sync/syncManager").then(({ syncManager }) => syncManager.sync()).catch(() => {});
       }
     } catch (err) {
+      console.error(err);
       showToast("An error occurred while saving settings.", "error");
     } finally {
       setSaving(false);

@@ -145,15 +145,8 @@ export default function ShowResult({ open, onClose, selectedReg }) {
           results: localResults.length > 0 ? localResults : (localReg.results || []),
         });
       }
-
-      if (typeof navigator !== "undefined" && navigator.onLine && regId) {
-        const res = await fetch(`/api/registrations/${regId}/parameters`).then((r) => r.json());
-        if (res.success && res.registration) {
-          setPreviewData(res.registration);
-        }
-      }
     } catch (err) {
-      console.error("[ShowResult] Error loading preview:", err);
+      console.error("[ShowResult] Error loading preview from IndexedDB:", err);
     } finally {
       setPreviewLoading(false);
     }

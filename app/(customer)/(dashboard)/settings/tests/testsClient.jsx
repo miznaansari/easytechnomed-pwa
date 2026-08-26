@@ -195,11 +195,10 @@ export default function TestsClient() {
 
       // If IndexedDB is empty and online, bootstrap in background
       if (cachedTests.length === 0 && typeof navigator !== "undefined" && navigator.onLine) {
-        const res = await fetch(`/api/tests?limit=1000`).then((r) => r.json()).catch(() => ({ success: false }));
-        if (res.success && Array.isArray(res.tests)) {
-          await db.tests.bulkPut(res.tests.map((t) => ({ ...t, isDirty: false, isModified: false, isError: false })));
+        try {
+          await syncManager.bootstrapInitialData();
           cachedTests = await db.tests.filter((t) => !t.isDeleted).toArray();
-        }
+        } catch (e) {}
       }
 
       let filtered = cachedTests;
@@ -315,39 +314,35 @@ export default function TestsClient() {
         return;
       }
 
-      const res = await fetch("/api/tests", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(newTestPayload),
-      }).then((r) => r.json());
+      // 1. Save directly in local IndexedDB (0ms latency)
+      const savedTest = await db.insertOffline("tests", newTestPayload);
 
-      if (res.success && res.test) {
-        await db.tests.put({ ...res.test, isDirty: false, isModified: false, isError: false });
-        showToast(res.message || "Test added successfully! Please configure its parameters.", "success");
-        fetchTests(testPage, testSearchQuery);
-        setOpenAddTestDialog(false);
-        setNewTestName("");
-        setNewTestCode("");
-        setNewTestPrice("");
-        setNewOutsourceCost("0");
-        setNewSpecialIncentive("");
+      showToast("Test added successfully! Please configure its parameters.", "success");
+      fetchTests(testPage, testSearchQuery);
+      setOpenAddTestDialog(false);
+      setNewTestName("");
+      setNewTestCode("");
+      setNewTestPrice("");
+      setNewOutsourceCost("0");
+      setNewSpecialIncentive("");
 
-        // Open parameters config immediately as the next step
-        const parsedTest = res.test;
-        setParameterizingTest(parsedTest);
-        setParametersList(parsedTest.parameters && parsedTest.parameters.length > 0 ? parsedTest.parameters : [
-          {
-            key: `new-${Date.now()}`,
-            name: "Result",
-            unit: "",
-            normalRangeDefault: "As per report",
-            valueType: "NUMERIC",
-          }
-        ]);
-        setExpandedParams({});
-        setOpenParamsDialog(true);
-      } else {
-        showToast(res.message || "Failed to add test.", "error");
+      // Open parameters config immediately
+      setParameterizingTest(savedTest);
+      setParametersList([
+        {
+          key: `new-${Date.now()}`,
+          name: "Result",
+          unit: "",
+          normalRangeDefault: "As per report",
+          valueType: "NUMERIC",
+        }
+      ]);
+      setExpandedParams({});
+      setOpenParamsDialog(true);
+
+      // Background auto-sync trigger
+      if (typeof navigator !== "undefined" && navigator.onLine) {
+        import("@/lib/offline/sync/syncManager").then(({ syncManager }) => syncManager.sync()).catch(() => {});
       }
     } catch (err) {
       console.error(err);
@@ -377,37 +372,25 @@ export default function TestsClient() {
         specialIncentivePercent: editingSpecialIncentive !== "" && !isNaN(parseFloat(editingSpecialIncentive)) ? parseFloat(editingSpecialIncentive) : null,
       };
 
-      if (typeof navigator !== "undefined" && !navigator.onLine) {
-        await db.tests.update(editingTest.id, {
-          ...updatedFields,
-          isModified: true,
-        });
-        showToast("Test updated locally (Offline).", "success");
-        fetchTests(testPage, testSearchQuery);
-        setOpenEditPriceDialog(false);
-        setEditingTest(null);
-        return;
+      // 1. Update directly in local IndexedDB (0ms latency)
+      await db.updateOffline("tests", editingTest.id, updatedFields);
+
+      showToast("Test updated successfully!", "success");
+      fetchTests(testPage, testSearchQuery);
+      setOpenEditPriceDialog(false);
+      setEditingTest(null);
+
+      // Background auto-sync trigger
+      if (typeof navigator !== "undefined" && navigator.onLine) {
+        import("@/lib/offline/sync/syncManager").then(({ syncManager }) => syncManager.sync()).catch(() => {});
       }
-
-      const res = await fetch("/api/tests", {
-        method: "PUT",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-          testId: editingTest.id,
-          ...updatedFields,
-        }),
-      }).then((r) => r.json());
-
-      if (res.success) {
-        await db.tests.update(editingTest.id, {
-          ...updatedFields,
-          isModified: false,
-          isDirty: false,
-        });
-        showToast(res.message || "Test updated successfully!", "success");
-        fetchTests(testPage, testSearchQuery);
-        setOpenEditPriceDialog(false);
-        setEditingTest(null);
+    } catch (err) {
+      console.error(err);
+      showToast("An error occurred while updating test.", "error");
+    } finally {
+      setIsUpdatingPrice(false);
+    }
+  };
         setEditingPrice("");
         setEditingName("");
         setEditingOutsourceCost("0");
@@ -741,37 +724,20 @@ export default function TestsClient() {
       const cachedTest = await db.tests.get(parameterizingTest.id);
       if (cachedTest) {
         await db.tests.update(parameterizingTest.id, {
-          parameters: testParamsToPut,
+          parameters: formattedList,
         });
       }
 
-      if (typeof navigator !== "undefined" && !navigator.onLine) {
-        showToast("Parameters saved locally (Offline).", "success");
-        fetchTests(testPage, testSearchQuery);
-        setOpenParamsDialog(false);
-        setParameterizingTest(null);
-        setParametersList([]);
-        setExpandedParams({});
-        return;
-      }
+      showToast("Test parameters updated successfully!", "success");
+      fetchTests(testPage, testSearchQuery);
+      setOpenParamsDialog(false);
+      setParameterizingTest(null);
+      setParametersList([]);
+      setExpandedParams({});
 
-      const res = await fetch(`/api/registrations/${parameterizingTest.id}/parameters`, {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-          parametersList: formattedList,
-        }),
-      }).then((r) => r.json());
-
-      if (res.success) {
-        showToast("Test parameters updated successfully!", "success");
-        fetchTests(testPage, testSearchQuery);
-        setOpenParamsDialog(false);
-        setParameterizingTest(null);
-        setParametersList([]);
-        setExpandedParams({});
-      } else {
-        showToast(res.message || "Failed to update parameters.", "error");
+      // 2. Trigger background auto-sync if online
+      if (typeof navigator !== "undefined" && navigator.onLine) {
+        import("@/lib/offline/sync/syncManager").then(({ syncManager }) => syncManager.sync()).catch(() => {});
       }
     } catch (err) {
       console.error(err);
