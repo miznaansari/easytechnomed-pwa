@@ -37,19 +37,7 @@ export default function CustomerLoginPage() {
     // If offline, immediately enter dashboard with 0 authentication barriers
     if (typeof navigator !== "undefined" && !navigator.onLine) {
       router.replace("/dashboard");
-      return;
     }
-
-    async function checkExistingAuth() {
-      try {
-        const { getCachedSession } = await import("@/lib/auth/offlineAuth");
-        const cached = await getCachedSession();
-        if (cached) {
-          router.replace("/dashboard");
-        }
-      } catch {}
-    }
-    checkExistingAuth();
   }, [router]);
 
   const {

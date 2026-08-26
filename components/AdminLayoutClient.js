@@ -131,7 +131,8 @@ const getExpiryMessage = (expireAt) => {
   };
 };
 
-export default function AdminLayoutClient({ admin, children }) {
+export default function AdminLayoutClient({ admin: initialAdmin, children }) {
+  const [admin, setAdmin] = useState(initialAdmin || null);
   const [mobileOpen, setMobileOpen] = useState(false);
   const [desktopOpen, setDesktopOpen] = useState(true);
   const [isClosing, setIsClosing] = useState(false);
@@ -144,10 +145,30 @@ export default function AdminLayoutClient({ admin, children }) {
   const { pendingCount, sync, isSyncing } = useSync();
 
   useEffect(() => {
-    if (admin) {
-      saveAuthenticatedSession({ admin });
+    async function hydrateAdmin() {
+      if (initialAdmin) {
+        setAdmin(initialAdmin);
+        sessionStorage.setItem("admin_profile", JSON.stringify(initialAdmin));
+        return;
+      }
+      try {
+        const cached = sessionStorage.getItem("admin_profile");
+        if (cached) {
+          setAdmin(JSON.parse(cached));
+          return;
+        }
+        const [cachedAdmins, cachedSession] = await Promise.all([
+          db.admins.toArray(),
+          db.offlineSession.get(1),
+        ]);
+        const local = cachedAdmins?.[0] || cachedSession?.admin;
+        if (local) {
+          setAdmin(local);
+        }
+      } catch {}
     }
-  }, [admin]);
+    hydrateAdmin();
+  }, [initialAdmin]);
 
   const handleItemHover = (event, item) => {
     if (!isDrawerExpanded && item.subItems) {
@@ -211,61 +232,6 @@ export default function AdminLayoutClient({ admin, children }) {
       import("@/lib/offline/sync/syncManager")
         .then(({ syncManager }) => syncManager.bootstrapInitialData())
         .catch(() => {});
-    }
-
-    if (admin) {
-      sessionStorage.setItem("admin_profile", JSON.stringify(admin));
-
-      const isAdmin = pathname.startsWith("/admin");
-      const cleanPath = isAdmin ? pathname.slice(6) || "/" : pathname;
-
-      const roleUpper = (admin.role?.name || admin.role || "").toUpperCase();
-      const userPerms = admin.permissions || [];
-      const hasAll = roleUpper === "ADMIN" || roleUpper === "OWNER" || userPerms.includes("ALL");
-
-      if (!hasAll) {
-        let hasAccess = true;
-
-        if (cleanPath === "/" || cleanPath === "/dashboard") {
-          hasAccess = userPerms.includes("DASHBOARD_VIEW");
-        } else if (cleanPath.startsWith("/registration")) {
-          hasAccess = userPerms.includes("REGISTRATION_READ") || userPerms.includes("REGISTRATION_WRITE");
-        } else if (cleanPath.startsWith("/test-report")) {
-          hasAccess = userPerms.includes("REGISTRATION_READ") || userPerms.includes("REGISTRATION_WRITE");
-        } else if (cleanPath.startsWith("/doctor-summary")) {
-          hasAccess = userPerms.includes("DOCTOR_READ") || userPerms.includes("DOCTOR_WRITE");
-        } else if (cleanPath.startsWith("/members")) {
-          hasAccess = userPerms.includes("MEMBER_READ") || userPerms.includes("MEMBER_WRITE");
-        } else if (cleanPath.startsWith("/settings")) {
-          hasAccess = userPerms.includes("SETTINGS_READ") || userPerms.includes("SETTINGS_WRITE") ||
-            userPerms.includes("TEST_READ") || userPerms.includes("TEST_WRITE");
-        }
-
-        if (!hasAccess) {
-          // Find first permitted route
-          let targetPath = null;
-          if (userPerms.includes("DASHBOARD_VIEW")) {
-            targetPath = "/dashboard";
-          } else if (userPerms.includes("REGISTRATION_READ") || userPerms.includes("REGISTRATION_WRITE")) {
-            targetPath = "/registration";
-          } else if (userPerms.includes("DOCTOR_READ") || userPerms.includes("DOCTOR_WRITE")) {
-            targetPath = "/doctor-summary";
-          } else if (userPerms.includes("MEMBER_READ") || userPerms.includes("MEMBER_WRITE")) {
-            targetPath = "/members";
-          } else if (
-            userPerms.includes("SETTINGS_READ") || userPerms.includes("SETTINGS_WRITE") ||
-            userPerms.includes("TEST_READ") || userPerms.includes("TEST_WRITE")
-          ) {
-            targetPath = "/settings";
-          }
-
-          if (targetPath) {
-            router.replace(isAdmin ? `/admin${targetPath}` : targetPath);
-          } else {
-            router.replace("/auth/login?error=unauthorized");
-          }
-        }
-      }
     }
   }, [admin, pathname, router, mounted]);
 
