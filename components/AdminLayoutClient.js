@@ -48,7 +48,7 @@ import UnsyncedLogoutModal from "@/components/offline/UnsyncedLogoutModal";
 import { useSync } from "@/hooks/useSync";
 import { saveAuthenticatedSession, clearLocalSession } from "@/lib/auth/offlineAuth";
 
-const drawerWidth = 260;
+const drawerWidth = 280;
 
 // Create a custom MUI theme matching the app's clean medical theme
 const theme = createTheme({
@@ -390,8 +390,29 @@ export default function AdminLayoutClient({ admin, children }) {
         )}
       </Toolbar>
       <Divider />
-      <Box sx={{ overflowY: "auto", overflowX: "hidden", flexGrow: 1, py: 2 }}>
-        <List sx={{ px: isDrawerExpanded ? 2 : 1 }}>
+      <Box
+        sx={{
+          overflowY: "auto",
+          overflowX: "hidden",
+          flexGrow: 1,
+          py: 1.5,
+          scrollbarWidth: "thin",
+          "&::-webkit-scrollbar": {
+            width: "4px",
+          },
+          "&::-webkit-scrollbar-track": {
+            background: "transparent",
+          },
+          "&::-webkit-scrollbar-thumb": {
+            background: "rgba(0, 0, 0, 0.12)",
+            borderRadius: "4px",
+          },
+          "&::-webkit-scrollbar-thumb:hover": {
+            background: "rgba(0, 0, 0, 0.25)",
+          },
+        }}
+      >
+        <List sx={{ px: isDrawerExpanded ? 1.5 : 1 }}>
           {filteredMenuItems.map((item) => {
             const isAdmin = pathname.startsWith("/admin");
             const cleanPath = isAdmin ? pathname.slice(6) || "/" : pathname;
@@ -407,8 +428,8 @@ export default function AdminLayoutClient({ admin, children }) {
                       onMouseLeave={handleItemLeave}
                       sx={{
                         borderRadius: "8px",
-                        py: 1.2,
-                        px: 2.5,
+                        py: 1,
+                        px: isDrawerExpanded ? 2 : 1.5,
                         backgroundColor: isActive ? "primary.light" : "transparent",
                         color: isActive ? "primary.contrastText" : "text.secondary",
                         justifyContent: isDrawerExpanded ? "initial" : "center",
@@ -427,7 +448,7 @@ export default function AdminLayoutClient({ admin, children }) {
                           display: "flex",
                           justifyContent: "center",
                           minWidth: 0,
-                          mr: isDrawerExpanded ? 3 : "auto",
+                          mr: isDrawerExpanded ? 2 : "auto",
                         }}
                       >
                         {item.icon}
@@ -436,8 +457,6 @@ export default function AdminLayoutClient({ admin, children }) {
                         primary={item.text}
                         sx={{
                           opacity: isDrawerExpanded ? 1 : 0,
-                          whiteSpace: "nowrap",
-                          overflow: "hidden",
                           width: isDrawerExpanded ? "auto" : 0,
                           transition: (theme) =>
                             theme.transitions.create("opacity", {
@@ -448,7 +467,8 @@ export default function AdminLayoutClient({ admin, children }) {
                         slotProps={{
                           primary: {
                             fontWeight: isActive ? 700 : 500,
-                            fontSize: "0.9rem",
+                            fontSize: "0.875rem",
+                            noWrap: true,
                           }
                         }}
                       />
@@ -456,7 +476,7 @@ export default function AdminLayoutClient({ admin, children }) {
                   </Link>
                 </ListItem>
                 {isDrawerExpanded && item.subItems && (
-                  <List component="div" disablePadding sx={{ pl: 4, mb: 1 }}>
+                  <List component="div" disablePadding sx={{ pl: 3, mb: 1 }}>
                     {item.subItems.map((sub) => {
                       const searchParamsStr = sub.path.split("?")[1] || "";
                       const tabName = searchParamsStr.split("=")[1] || "";
@@ -474,7 +494,7 @@ export default function AdminLayoutClient({ admin, children }) {
                               sx={{
                                 borderRadius: "6px",
                                 py: 0.6,
-                                px: 2,
+                                px: 1.5,
                                 backgroundColor: isSubActive ? "rgba(15, 118, 110, 0.08)" : "transparent",
                                 color: isSubActive ? "primary.main" : "text.secondary",
                                 "&:hover": {
