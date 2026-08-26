@@ -206,6 +206,13 @@ export default function AdminLayoutClient({ admin, children }) {
       } catch {}
     });
 
+    // Background complete setup: Sync all master data to IndexedDB
+    if (typeof navigator !== "undefined" && navigator.onLine) {
+      import("@/lib/offline/sync/syncManager")
+        .then(({ syncManager }) => syncManager.bootstrapInitialData())
+        .catch(() => {});
+    }
+
     if (admin) {
       sessionStorage.setItem("admin_profile", JSON.stringify(admin));
 
