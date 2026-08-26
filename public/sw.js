@@ -1,11 +1,10 @@
-const CACHE_NAME = "easytechnomed-pwa-v6";
+const CACHE_NAME = "easytechnomed-pwa-v7";
 const OFFLINE_URL = "/offline.html";
 
 // Core routes and critical static assets to pre-cache on install
 const PRECACHE_ROUTES = [
   OFFLINE_URL,
   "/",
-  "/auth/login",
   "/dashboard",
   "/registration",
   "/test-report",
@@ -95,7 +94,7 @@ self.addEventListener("fetch", (event) => {
   if (url.protocol !== "http:" && url.protocol !== "https:") return;
 
   // Never cache API requests in Service Worker - persistent offline data belongs in IndexedDB!
-  if (url.pathname.startsWith("/api/") || url.pathname.startsWith("/adminstration/api/")) {
+  if (url.pathname.startsWith("/api/")) {
     return;
   }
 
@@ -141,8 +140,38 @@ self.addEventListener("fetch", (event) => {
   // 2. Full Page HTML Navigation Requests (Reloads, entering URLs, hard navigations)
   if (event.request.mode === "navigate") {
     event.respondWith(
-      fetch(event.request)
-        .then((networkResponse) => {
+      (async () => {
+        // A. If offline, instantly serve cached HTML page
+        if (typeof self.navigator !== "undefined" && !self.navigator.onLine) {
+          const cached = await caches.match(event.request, { ignoreSearch: true });
+          if (cached && isHtmlResponse(cached)) return cached;
+
+          const pathnameCached = await caches.match(url.pathname, { ignoreSearch: true });
+          if (pathnameCached && isHtmlResponse(pathnameCached)) return pathnameCached;
+
+          const fallbackCache = await caches.open(CACHE_NAME);
+          if (url.pathname.startsWith("/registration")) {
+            const regFallback = await fallbackCache.match("/registration");
+            if (regFallback && isHtmlResponse(regFallback)) return regFallback;
+          }
+          if (url.pathname.startsWith("/test-report")) {
+            const trFallback = await fallbackCache.match("/test-report");
+            if (trFallback && isHtmlResponse(trFallback)) return trFallback;
+          }
+
+          const dashboardFallback = await fallbackCache.match("/dashboard");
+          if (dashboardFallback && isHtmlResponse(dashboardFallback)) return dashboardFallback;
+
+          const rootFallback = await fallbackCache.match("/");
+          if (rootFallback && isHtmlResponse(rootFallback)) return rootFallback;
+
+          const offlineFallback = await fallbackCache.match(OFFLINE_URL);
+          if (offlineFallback) return offlineFallback;
+        }
+
+        // B. If online, fetch from network and cache
+        try {
+          const networkResponse = await fetch(event.request);
           if (networkResponse && networkResponse.status === 200 && isHtmlResponse(networkResponse)) {
             const clone = networkResponse.clone();
             caches.open(CACHE_NAME).then((cache) => {
@@ -151,8 +180,7 @@ self.addEventListener("fetch", (event) => {
             });
           }
           return networkResponse;
-        })
-        .catch(async () => {
+        } catch {
           // Network failed (offline / lost connection) -> Fallback to Cache
           const cached = await caches.match(event.request, { ignoreSearch: true });
           if (cached && isHtmlResponse(cached)) return cached;
@@ -161,11 +189,20 @@ self.addEventListener("fetch", (event) => {
           if (pathnameCached && isHtmlResponse(pathnameCached)) return pathnameCached;
 
           const fallbackCache = await caches.open(CACHE_NAME);
-          const rootFallback = await fallbackCache.match("/");
-          if (rootFallback && isHtmlResponse(rootFallback)) return rootFallback;
+          if (url.pathname.startsWith("/registration")) {
+            const regFallback = await fallbackCache.match("/registration");
+            if (regFallback && isHtmlResponse(regFallback)) return regFallback;
+          }
+          if (url.pathname.startsWith("/test-report")) {
+            const trFallback = await fallbackCache.match("/test-report");
+            if (trFallback && isHtmlResponse(trFallback)) return trFallback;
+          }
 
           const dashboardFallback = await fallbackCache.match("/dashboard");
           if (dashboardFallback && isHtmlResponse(dashboardFallback)) return dashboardFallback;
+
+          const rootFallback = await fallbackCache.match("/");
+          if (rootFallback && isHtmlResponse(rootFallback)) return rootFallback;
 
           const offlineFallback = await fallbackCache.match(OFFLINE_URL);
           if (offlineFallback) return offlineFallback;
@@ -177,7 +214,8 @@ self.addEventListener("fetch", (event) => {
               headers: { "Content-Type": "text/html" },
             }
           );
-        })
+        }
+      })()
     );
     return;
   }
