@@ -53,6 +53,7 @@ import {
 } from "@mui/icons-material";
 import * as XLSX from "xlsx";
 import AddDoctorDrawer from "@/components/AddDoctorDrawer";
+import db from "@/lib/offline/db";
 
 export default function DoctorSummaryPage() {
   const [openAddDocDrawer, setOpenAddDocDrawer] = useState(false);
@@ -89,14 +90,27 @@ export default function DoctorSummaryPage() {
       return;
     }
     setSavingEdit(true);
+    const newIncentive = parseFloat(editIncentiveInput);
+
     try {
+      if (typeof navigator !== "undefined" && !navigator.onLine) {
+        await db.updateOffline("doctors", editingDoc.id, {
+          incentivePercent: newIncentive,
+        });
+        showToast("Doctor incentive updated locally (Offline)! Will sync when connected.", "success");
+        setOpenEditDialog(false);
+        setEditingDoc(null);
+        loadData();
+        return;
+      }
+
       const res = await fetch("/api/doctors", {
         method: "PUT",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
           doctorId: editingDoc.id,
-          incentivePercent: parseFloat(editIncentiveInput)
-        })
+          incentivePercent: newIncentive,
+        }),
       }).then((r) => r.json());
 
       if (res.success) {
@@ -109,7 +123,17 @@ export default function DoctorSummaryPage() {
       }
     } catch (err) {
       console.error(err);
-      showToast("An unexpected error occurred.", "error");
+      try {
+        await db.updateOffline("doctors", editingDoc.id, {
+          incentivePercent: newIncentive,
+        });
+        showToast("Network failed: Updated locally (Offline).", "warning");
+        setOpenEditDialog(false);
+        setEditingDoc(null);
+        loadData();
+      } catch (dbErr) {
+        showToast("An unexpected error occurred.", "error");
+      }
     } finally {
       setSavingEdit(false);
     }
@@ -124,8 +148,17 @@ export default function DoctorSummaryPage() {
     if (!deletingDoc) return;
     setDeleting(true);
     try {
+      if (typeof navigator !== "undefined" && !navigator.onLine) {
+        await db.deleteOffline("doctors", deletingDoc.id);
+        showToast("Doctor deleted locally (Offline)! Will sync when connected.", "success");
+        setOpenDeleteDialog(false);
+        setDeletingDoc(null);
+        loadData();
+        return;
+      }
+
       const res = await fetch(`/api/doctors?doctorId=${deletingDoc.id}`, {
-        method: "DELETE"
+        method: "DELETE",
       }).then((r) => r.json());
 
       if (res.success) {
@@ -138,7 +171,15 @@ export default function DoctorSummaryPage() {
       }
     } catch (err) {
       console.error(err);
-      showToast("An unexpected error occurred.", "error");
+      try {
+        await db.deleteOffline("doctors", deletingDoc.id);
+        showToast("Network failed: Deleted locally (Offline).", "warning");
+        setOpenDeleteDialog(false);
+        setDeletingDoc(null);
+        loadData();
+      } catch (dbErr) {
+        showToast("An unexpected error occurred.", "error");
+      }
     } finally {
       setDeleting(false);
     }
@@ -211,12 +252,51 @@ export default function DoctorSummaryPage() {
   const loadData = async () => {
     setLoading(true);
     try {
+      if (typeof navigator !== "undefined" && !navigator.onLine) {
+        // Offline: compute from IndexedDB
+        const docs = await db.doctors.filter(d => !d.isDeleted).toArray();
+        const regs = await db.registrations.filter(r => !r.isDeleted).toArray();
+
+        const summary = docs.map((doc) => {
+          const docRegs = regs.filter(r => r.refById === doc.id || r.secondRefId === doc.id);
+          const totalAmt = docRegs.reduce((sum, r) => sum + (parseFloat(r.totalAmount) || 0), 0);
+          const totalDisc = docRegs.reduce((sum, r) => sum + (parseFloat(r.discountAmount) || 0), 0);
+          const netAmt = totalAmt - totalDisc;
+          const totalCol = docRegs.reduce((sum, r) => sum + (parseFloat(r.receivedAmount) || 0), 0);
+          const incRate = parseFloat(doc.incentivePercent) || 0;
+          const incAmt = (netAmt * incRate) / 100;
+
+          return {
+            id: doc.id,
+            name: doc.name,
+            code: doc.code,
+            degree: doc.degree,
+            clinicName: doc.clinicName,
+            address: doc.address,
+            incentivePercent: incRate,
+            incentiveAmount: incAmt,
+            amount: totalAmt,
+            discount: totalDisc,
+            netAmount: netAmt,
+            collection: totalCol,
+            registrations: docRegs,
+          };
+        });
+
+        setSummaryData(summary);
+        setLoading(false);
+        return;
+      }
+
       const queryParams = new URLSearchParams();
       if (startDate) queryParams.set("startDate", `${startDate}T00:00:00.000Z`);
       if (endDate) queryParams.set("endDate", `${endDate}T23:59:59.999Z`);
 
-      const res = await fetch(`/api/doctor-summary?${queryParams.toString()}`).then((r) => r.json());
-      if (res.success) {
+      const res = await fetch(`/api/doctor-summary?${queryParams.toString()}`)
+        .then((r) => r.json())
+        .catch(() => ({ success: false }));
+
+      if (res.success && Array.isArray(res.summary)) {
         const parsed = res.summary.map((item) => ({
           ...item,
           amount: Number(item.amount) || 0,
@@ -228,6 +308,35 @@ export default function DoctorSummaryPage() {
           registrations: item.registrations || [],
         }));
         setSummaryData(parsed);
+      } else {
+        // Fallback to IndexedDB
+        const docs = await db.doctors.filter(d => !d.isDeleted).toArray();
+        const regs = await db.registrations.filter(r => !r.isDeleted).toArray();
+        const summary = docs.map((doc) => {
+          const docRegs = regs.filter(r => r.refById === doc.id || r.secondRefId === doc.id);
+          const totalAmt = docRegs.reduce((sum, r) => sum + (parseFloat(r.totalAmount) || 0), 0);
+          const totalDisc = docRegs.reduce((sum, r) => sum + (parseFloat(r.discountAmount) || 0), 0);
+          const netAmt = totalAmt - totalDisc;
+          const totalCol = docRegs.reduce((sum, r) => sum + (parseFloat(r.receivedAmount) || 0), 0);
+          const incRate = parseFloat(doc.incentivePercent) || 0;
+          const incAmt = (netAmt * incRate) / 100;
+          return {
+            id: doc.id,
+            name: doc.name,
+            code: doc.code,
+            degree: doc.degree,
+            clinicName: doc.clinicName,
+            address: doc.address,
+            incentivePercent: incRate,
+            incentiveAmount: incAmt,
+            amount: totalAmt,
+            discount: totalDisc,
+            netAmount: netAmt,
+            collection: totalCol,
+            registrations: docRegs,
+          };
+        });
+        setSummaryData(summary);
       }
     } catch (err) {
       console.error(err);

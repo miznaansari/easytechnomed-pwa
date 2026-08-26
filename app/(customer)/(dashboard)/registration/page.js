@@ -46,6 +46,8 @@ import {
 import { useSearchParams, useRouter } from "next/navigation";
 import { useAdminPermissions } from "@/lib/clientAuth";
 import { City, State } from "country-state-city";
+import db from "@/lib/offline/db";
+import { useSync } from "@/hooks/useSync";
 
 const filter = createFilterOptions({
   limit: 100,
@@ -184,12 +186,40 @@ export default function RegistrationPage() {
   useEffect(() => {
     async function loadData() {
       try {
+        if (typeof navigator !== "undefined" && !navigator.onLine) {
+          // Offline mode: load directly from IndexedDB
+          const cachedDocs = await db.doctors.filter(d => !d.isDeleted).toArray();
+          const cachedTests = await db.tests.filter(t => !t.isDeleted).toArray();
+          if (cachedDocs.length > 0) setDoctors(cachedDocs);
+          if (cachedTests.length > 0) {
+            setTests(cachedTests.map(t => ({
+              ...t,
+              price: Number(t.price) || 0,
+              outsourceCost: Number(t.outsourceCost) || 0,
+              specialIncentivePercent: t.specialIncentivePercent ? Number(t.specialIncentivePercent) : null,
+            })));
+          }
+          setLoading(false);
+          return;
+        }
+
         const [docsRes, testsRes] = await Promise.all([
-          fetch("/api/doctors").then((r) => r.json()),
-          fetch("/api/tests").then((r) => r.json())
+          fetch("/api/doctors").then((r) => r.json()).catch(() => ({ success: false })),
+          fetch("/api/tests").then((r) => r.json()).catch(() => ({ success: false }))
         ]);
-        if (docsRes.success) setDoctors(docsRes.doctors);
-        if (testsRes.success) {
+
+        if (docsRes.success && Array.isArray(docsRes.doctors)) {
+          setDoctors(docsRes.doctors);
+          // Cache in IndexedDB
+          for (const doc of docsRes.doctors) {
+            await db.doctors.put({ ...doc, isDirty: false, isModified: false, isError: false });
+          }
+        } else {
+          const cachedDocs = await db.doctors.filter(d => !d.isDeleted).toArray();
+          if (cachedDocs.length > 0) setDoctors(cachedDocs);
+        }
+
+        if (testsRes.success && Array.isArray(testsRes.tests)) {
           const parsedTests = testsRes.tests.map((t) => ({
             ...t,
             price: Number(t.price) || 0,
@@ -197,7 +227,22 @@ export default function RegistrationPage() {
             specialIncentivePercent: t.specialIncentivePercent !== undefined && t.specialIncentivePercent !== null ? Number(t.specialIncentivePercent) : null,
           }));
           setTests(parsedTests);
+          // Cache in IndexedDB
+          for (const test of parsedTests) {
+            await db.tests.put({ ...test, isDirty: false, isModified: false, isError: false });
+          }
+        } else {
+          const cachedTests = await db.tests.filter(t => !t.isDeleted).toArray();
+          if (cachedTests.length > 0) {
+            setTests(cachedTests.map(t => ({
+              ...t,
+              price: Number(t.price) || 0,
+              outsourceCost: Number(t.outsourceCost) || 0,
+              specialIncentivePercent: t.specialIncentivePercent ? Number(t.specialIncentivePercent) : null,
+            })));
+          }
         }
+
         fetch("/api/settings")
           .then((r) => r.json())
           .then((s) => {
@@ -205,8 +250,14 @@ export default function RegistrationPage() {
           })
           .catch(() => {});
       } catch (err) {
-        console.error(err);
-        showNotification("Failed to load initial data", "error");
+        console.error("Error loading initial data:", err);
+        // Fallback to IndexedDB
+        try {
+          const cachedDocs = await db.doctors.filter(d => !d.isDeleted).toArray();
+          const cachedTests = await db.tests.filter(t => !t.isDeleted).toArray();
+          if (cachedDocs.length > 0) setDoctors(cachedDocs);
+          if (cachedTests.length > 0) setTests(cachedTests);
+        } catch (dbErr) {}
       } finally {
         setLoading(false);
       }
@@ -638,20 +689,92 @@ _Thank you for choosing us for your health diagnostics!_`;
         })),
       };
 
-      const res = editId
-        ? await fetch(`/api/registrations/${parseInt(editId)}`, {
-          method: "PUT",
-          headers: { "Content-Type": "application/json" },
-          body: JSON.stringify(payload),
-        }).then((r) => r.json())
-        : await fetch("/api/registrations", {
-          method: "POST",
-          headers: { "Content-Type": "application/json" },
-          body: JSON.stringify(payload),
-        }).then((r) => r.json());
+      // If offline, save directly to IndexedDB
+      if (typeof navigator !== "undefined" && !navigator.onLine) {
+        const localSeq = Date.now().toString().slice(-4);
+        const labId = `OFFL-${localSeq}`;
+        const regNo = `ETM-OFFL-${Date.now().toString().slice(-6)}`;
+        const localRecord = {
+          ...payload,
+          labId,
+          regNo,
+          date: new Date().toISOString(),
+          status: payload.dueAmount > 0 ? "Pending" : "Completed",
+          tests: selectedTests.map((t) => ({
+            testId: t.id,
+            price: t.price,
+            test: t,
+          })),
+        };
+
+        if (editId) {
+          await db.updateOffline("registrations", parseInt(editId), localRecord);
+          showNotification("Registration updated locally (Offline)! Will sync when connected.", "success");
+          setTimeout(() => router.push("/test-report"), 1000);
+        } else {
+          await db.insertOffline("registrations", localRecord);
+          showNotification("Registration saved locally (Offline)! Will sync automatically when connected.", "success");
+          handleReset();
+        }
+        return;
+      }
+
+      let res;
+      try {
+        res = editId
+          ? await fetch(`/api/registrations/${parseInt(editId)}`, {
+            method: "PUT",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify(payload),
+          }).then((r) => r.json())
+          : await fetch("/api/registrations", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify(payload),
+          }).then((r) => r.json());
+      } catch (netErr) {
+        // Network failed mid-request: save offline
+        console.warn("[Registration] Online request failed, saving offline fallback:", netErr);
+        const localSeq = Date.now().toString().slice(-4);
+        const labId = `OFFL-${localSeq}`;
+        const regNo = `ETM-OFFL-${Date.now().toString().slice(-6)}`;
+        const localRecord = {
+          ...payload,
+          labId,
+          regNo,
+          date: new Date().toISOString(),
+          status: payload.dueAmount > 0 ? "Pending" : "Completed",
+          tests: selectedTests.map((t) => ({
+            testId: t.id,
+            price: t.price,
+            test: t,
+          })),
+        };
+
+        if (editId) {
+          await db.updateOffline("registrations", parseInt(editId), localRecord);
+          showNotification("Connection lost. Updated locally (Offline).", "warning");
+          setTimeout(() => router.push("/test-report"), 1000);
+        } else {
+          await db.insertOffline("registrations", localRecord);
+          showNotification("Connection lost. Registration saved locally (Offline).", "warning");
+          handleReset();
+        }
+        return;
+      }
 
       if (res.success) {
         showNotification(res.message, "success");
+
+        // Cache authoritative record in IndexedDB
+        if (res.registration && res.registration.id) {
+          await db.registrations.put({
+            ...res.registration,
+            isDirty: false,
+            isModified: false,
+            isError: false,
+          });
+        }
 
         // Automatically open WhatsApp with prefilled message & report link if enabled
         if (sendWhatsapp && res.registration) {

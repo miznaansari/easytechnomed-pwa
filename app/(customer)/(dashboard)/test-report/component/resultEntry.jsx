@@ -48,6 +48,7 @@ import {
   AutoAwesome as AutoAwesomeIcon
 } from "@mui/icons-material";
 import ResultEntryMobile from "./resultEntryMobile";
+import db from "@/lib/offline/db";
 import {
   addValueToValuesMap,
   evaluateExpression,
@@ -136,8 +137,42 @@ export default function ResultEntry({ open, onClose, selectedReg, onSaveSuccess,
   const loadParameters = async () => {
     setLoading(true);
     try {
-      const res = await fetch(`/api/registrations/${selectedReg.id}/parameters`).then((r) => r.json());
-      if (res.success) {
+      if (typeof navigator !== "undefined" && !navigator.onLine) {
+        // Offline: try to load from selectedReg or IndexedDB
+        if (selectedReg) {
+          setResultRegDetails(selectedReg);
+          const tests = (selectedReg.tests || []).map((rt) => rt.test || rt);
+          setResultTests(tests);
+
+          const values = {};
+          const overrides = new Set();
+          
+          // Query local patientResults from Dexie
+          const localResults = await db.patientResults
+            .filter((r) => r.registrationId === selectedReg.id)
+            .toArray();
+
+          const resultsList = localResults.length > 0 ? localResults : (selectedReg.results || []);
+          resultsList.forEach((r) => {
+            values[r.testParameterId] = r.value;
+            if (r.value !== undefined && r.value !== null && r.value !== "") {
+              overrides.add(r.testParameterId);
+              overrides.add(String(r.testParameterId));
+            }
+          });
+
+          const initialCalculated = calculateAllDependents(values, tests, null, overrides, selectedReg);
+          setResultValues(initialCalculated);
+          setManualOverrides(overrides);
+          setReportNotes(selectedReg.remark || "");
+          setAutoSaveStatus("idle");
+          setLoading(false);
+          return;
+        }
+      }
+
+      const res = await fetch(`/api/registrations/${selectedReg.id}/parameters`).then((r) => r.json()).catch(() => ({ success: false }));
+      if (res.success && res.registration) {
         setResultRegDetails(res.registration);
         const tests = (res.registration.tests || []).map((rt) => rt.test);
         setResultTests(tests);
@@ -157,10 +192,19 @@ export default function ResultEntry({ open, onClose, selectedReg, onSaveSuccess,
         setReportNotes(res.registration.remark || "");
         setAutoSaveStatus("idle");
       } else {
-        showToast(res.message || "Failed to load parameters", "error");
+        // Fallback to selectedReg
+        if (selectedReg) {
+          setResultRegDetails(selectedReg);
+          const tests = (selectedReg.tests || []).map((rt) => rt.test || rt);
+          setResultTests(tests);
+        }
       }
     } catch (err) {
-      showToast(err.message || "Failed to load result parameters", "error");
+      console.error("Failed to load parameters:", err);
+      if (selectedReg) {
+        setResultRegDetails(selectedReg);
+        setResultTests((selectedReg.tests || []).map((rt) => rt.test || rt));
+      }
     } finally {
       setLoading(false);
     }
@@ -240,6 +284,48 @@ export default function ResultEntry({ open, onClose, selectedReg, onSaveSuccess,
           value: resultValues[paramId] !== undefined && resultValues[paramId] !== null ? String(resultValues[paramId]) : ""
         }));
 
+      // Offline handler
+      if (typeof navigator !== "undefined" && !navigator.onLine) {
+        for (const item of resultsData) {
+          const existing = await db.patientResults
+            .filter((r) => r.registrationId === resultRegDetails.id && r.testParameterId === item.testParameterId)
+            .first();
+
+          if (existing) {
+            await db.updateOffline("patientResults", existing.id, {
+              value: item.value,
+            });
+          } else {
+            await db.insertOffline("patientResults", {
+              registrationId: resultRegDetails.id,
+              testParameterId: item.testParameterId,
+              value: item.value,
+            });
+          }
+        }
+
+        const newStatus = isDraft ? (resultRegDetails.status || "Pending") : "Completed";
+        await db.updateOffline("registrations", resultRegDetails.id, {
+          remark: reportNotes,
+          status: newStatus,
+        });
+
+        const now = new Date();
+        const timeStr = now.toLocaleTimeString([], { hour: "2-digit", minute: "2-digit", second: "2-digit" });
+        setLastSavedTime(timeStr);
+        setAutoSaveStatus("saved");
+
+        if (!isDraft) {
+          showToast("Results saved locally (Offline)! Will sync when connected.", "success");
+          setIsSaved(true);
+          if (onSaveSuccess) onSaveSuccess();
+        } else if (!isSilent) {
+          showToast("Draft saved locally (Offline)", "success");
+          if (onSaveSuccess) onSaveSuccess();
+        }
+        return;
+      }
+
       const apiUrl = isDraft
         ? `/api/registrations/${resultRegDetails.id}/results/draft`
         : `/api/registrations/${resultRegDetails.id}/results`;
@@ -257,6 +343,31 @@ export default function ResultEntry({ open, onClose, selectedReg, onSaveSuccess,
       const res = await response.json();
 
       if (res.success) {
+        // Cache results into IndexedDB
+        for (const item of resultsData) {
+          const existing = await db.patientResults
+            .filter((r) => r.registrationId === resultRegDetails.id && r.testParameterId === item.testParameterId)
+            .first();
+
+          if (existing) {
+            await db.patientResults.update(existing.id, {
+              value: item.value,
+              isDirty: false,
+              isModified: false,
+              isError: false,
+            });
+          } else {
+            await db.patientResults.add({
+              registrationId: resultRegDetails.id,
+              testParameterId: item.testParameterId,
+              value: item.value,
+              isDirty: false,
+              isModified: false,
+              isError: false,
+            });
+          }
+        }
+
         const now = new Date();
         const timeStr = now.toLocaleTimeString([], { hour: "2-digit", minute: "2-digit", second: "2-digit" });
         setLastSavedTime(timeStr);
@@ -283,10 +394,41 @@ export default function ResultEntry({ open, onClose, selectedReg, onSaveSuccess,
         return;
       }
       console.error("Save results error:", err);
-      if (isSilent) {
-        setAutoSaveStatus("error");
-      } else {
-        showToast(err.message || "Failed to save results", "error");
+
+      // Offline fallback on connection loss
+      try {
+        const resultsData = Object.keys(resultValues)
+          .filter((paramId) => !isNaN(parseInt(paramId)) && parseInt(paramId) > 0)
+          .map((paramId) => ({
+            testParameterId: parseInt(paramId),
+            value: resultValues[paramId] !== undefined && resultValues[paramId] !== null ? String(resultValues[paramId]) : ""
+          }));
+
+        for (const item of resultsData) {
+          const existing = await db.patientResults
+            .filter((r) => r.registrationId === resultRegDetails.id && r.testParameterId === item.testParameterId)
+            .first();
+
+          if (existing) {
+            await db.updateOffline("patientResults", existing.id, { value: item.value });
+          } else {
+            await db.insertOffline("patientResults", {
+              registrationId: resultRegDetails.id,
+              testParameterId: item.testParameterId,
+              value: item.value,
+            });
+          }
+        }
+        setAutoSaveStatus("saved");
+        if (!isSilent) {
+          showToast("Network error: Results saved locally (Offline).", "warning");
+        }
+      } catch (dbErr) {
+        if (isSilent) {
+          setAutoSaveStatus("error");
+        } else {
+          showToast(err.message || "Failed to save results", "error");
+        }
       }
     } finally {
       if (!abortController.signal.aborted) {

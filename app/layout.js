@@ -1,6 +1,7 @@
 import { Outfit } from "next/font/google";
 import ToastProvider from "@/components/ToastProvider";
 import PWARegister from "@/components/PWARegister";
+import OfflineProvider from "@/components/providers/OfflineProvider";
 import "./globals.css";
 
 const outfit = Outfit({
@@ -44,9 +45,11 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" className={`${outfit.variable} h-full antialiased`}>
       <body className="min-h-full flex flex-col bg-slate-50 text-slate-900 font-sans selection:bg-blue-600 selection:text-white">
-        <PWARegister />
-        <ToastProvider />
-        <div className="flex-1 flex flex-col">{children}</div>
+        <OfflineProvider>
+          <PWARegister />
+          <ToastProvider />
+          <div className="flex-1 flex flex-col">{children}</div>
+        </OfflineProvider>
       </body>
     </html>
   );

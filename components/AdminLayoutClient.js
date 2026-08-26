@@ -43,6 +43,10 @@ import {
   Settings as SettingsIcon,
   People as PeopleIcon
 } from "@mui/icons-material";
+import SyncIndicator from "@/components/offline/SyncIndicator";
+import UnsyncedLogoutModal from "@/components/offline/UnsyncedLogoutModal";
+import { useSync } from "@/hooks/useSync";
+import { saveAuthenticatedSession, clearLocalSession } from "@/lib/auth/offlineAuth";
 
 const drawerWidth = 260;
 
@@ -134,7 +138,16 @@ export default function AdminLayoutClient({ admin, children }) {
   const [anchorEl, setAnchorEl] = useState(null);
   const [hoverAnchorEl, setHoverAnchorEl] = useState(null);
   const [hoveredItem, setHoveredItem] = useState(null);
+  const [unsyncedModalOpen, setUnsyncedModalOpen] = useState(false);
   const hoverTimeoutRef = React.useRef(null);
+
+  const { pendingCount, sync, isSyncing } = useSync();
+
+  useEffect(() => {
+    if (admin) {
+      saveAuthenticatedSession({ admin });
+    }
+  }, [admin]);
 
   const handleItemHover = (event, item) => {
     if (!isDrawerExpanded && item.subItems) {
@@ -263,12 +276,32 @@ export default function AdminLayoutClient({ admin, children }) {
 
   const handleLogout = async () => {
     handleProfileMenuClose();
-    const res = await fetch("/api/auth/logout", {
-      method: "POST",
-    }).then((r) => r.json());
-    if (res?.success) {
-      router.push(res.redirect);
+    if (pendingCount > 0) {
+      setUnsyncedModalOpen(true);
+      return;
     }
+    await performLogout();
+  };
+
+  const performLogout = async () => {
+    try {
+      await clearLocalSession();
+      const res = await fetch("/api/auth/logout", {
+        method: "POST",
+      }).then((r) => r.json());
+      if (res?.success) {
+        router.push(res.redirect);
+      } else {
+        router.push("/auth/login");
+      }
+    } catch (err) {
+      router.push("/auth/login");
+    }
+  };
+
+  const handleSyncAndLogout = async () => {
+    await sync();
+    await performLogout();
   };
 
   const hasPermission = (requiredPermissions) => {
@@ -649,52 +682,55 @@ export default function AdminLayoutClient({ admin, children }) {
                 </Typography>
               </Box>
 
-              {/* Profile Dropdown */}
-              <Box>
-                <Button
-                  onClick={handleProfileMenuOpen}
-                  startIcon={
-                    <Avatar sx={{ bgcolor: "primary.main", width: 32, height: 32, fontSize: "0.875rem" }}>
-                      {admin?.name?.charAt(0).toUpperCase() || "A"}
-                    </Avatar>
-                  }
-                  sx={{ color: "text.primary", px: 1.5, py: 0.5 }}
-                >
-                  <Typography variant="subtitle2" sx={{ display: { xs: "none", sm: "block" }, fontWeight: 600, ml: 1 }}>
-                    {admin?.name || "Admin"}
-                  </Typography>
-                </Button>
-                <Menu
-                  anchorEl={anchorEl}
-                  open={Boolean(anchorEl)}
-                  onClose={handleProfileMenuClose}
-                  transformOrigin={{ horizontal: "right", vertical: "top" }}
-                  anchorOrigin={{ horizontal: "right", vertical: "bottom" }}
-                  PaperProps={{
-                    sx: {
-                      mt: 1.5,
-                      boxShadow: "0 4px 20px 0 rgba(0,0,0,0.08)",
-                      border: "1px solid",
-                      borderColor: "divider",
-                      borderRadius: 2,
-                      minWidth: 180,
-                    },
-                  }}
-                >
-                  <Box sx={{ px: 2, py: 1.5 }}>
-                    <Typography variant="subtitle2" sx={{ fontWeight: 700 }}>
-                      {admin?.name || "System Admin"}
+              {/* Right Side Actions: Sync Indicator + Profile Dropdown */}
+              <Box sx={{ display: "flex", alignItems: "center", gap: 1.5 }}>
+                <SyncIndicator />
+                <Box>
+                  <Button
+                    onClick={handleProfileMenuOpen}
+                    startIcon={
+                      <Avatar sx={{ bgcolor: "primary.main", width: 32, height: 32, fontSize: "0.875rem" }}>
+                        {admin?.name?.charAt(0).toUpperCase() || "A"}
+                      </Avatar>
+                    }
+                    sx={{ color: "text.primary", px: 1.5, py: 0.5 }}
+                  >
+                    <Typography variant="subtitle2" sx={{ display: { xs: "none", sm: "block" }, fontWeight: 600, ml: 1 }}>
+                      {admin?.name || "Admin"}
                     </Typography>
-                    <Typography variant="caption" sx={{ color: "text.secondary" }}>
-                      Role: {admin?.role?.name || "Admin"}
-                    </Typography>
-                  </Box>
-                  <Divider />
-                  <MenuItem onClick={handleLogout} sx={{ py: 1.2, color: "error.main", gap: 1 }}>
-                    <LogoutIcon fontSize="small" />
-                    Logout
-                  </MenuItem>
-                </Menu>
+                  </Button>
+                  <Menu
+                    anchorEl={anchorEl}
+                    open={Boolean(anchorEl)}
+                    onClose={handleProfileMenuClose}
+                    transformOrigin={{ horizontal: "right", vertical: "top" }}
+                    anchorOrigin={{ horizontal: "right", vertical: "bottom" }}
+                    PaperProps={{
+                      sx: {
+                        mt: 1.5,
+                        boxShadow: "0 4px 20px 0 rgba(0,0,0,0.08)",
+                        border: "1px solid",
+                        borderColor: "divider",
+                        borderRadius: 2,
+                        minWidth: 180,
+                      },
+                    }}
+                  >
+                    <Box sx={{ px: 2, py: 1.5 }}>
+                      <Typography variant="subtitle2" sx={{ fontWeight: 700 }}>
+                        {admin?.name || "System Admin"}
+                      </Typography>
+                      <Typography variant="caption" sx={{ color: "text.secondary" }}>
+                        Role: {admin?.role?.name || "Admin"}
+                      </Typography>
+                    </Box>
+                    <Divider />
+                    <MenuItem onClick={handleLogout} sx={{ py: 1.2, color: "error.main", gap: 1 }}>
+                      <LogoutIcon fontSize="small" />
+                      Logout
+                    </MenuItem>
+                  </Menu>
+                </Box>
               </Box>
             </Toolbar>
           </AppBar>
@@ -835,6 +871,16 @@ export default function AdminLayoutClient({ admin, children }) {
               </MenuList>
             </Paper>
           </Popper>
+
+          {/* Unsynced Data Modal on Logout */}
+          <UnsyncedLogoutModal
+            open={unsyncedModalOpen}
+            onClose={() => setUnsyncedModalOpen(false)}
+            onConfirmLogout={performLogout}
+            onSyncAndLogout={handleSyncAndLogout}
+            pendingCount={pendingCount}
+            isSyncing={isSyncing}
+          />
         </Box>
       </ThemeProvider>
     </TrackingProvider>

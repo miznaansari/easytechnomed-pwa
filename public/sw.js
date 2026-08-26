@@ -1,74 +1,115 @@
-const CACHE_NAME = "easytechnomed-cache-v1";
+const CACHE_NAME = "easytechnomed-cache-v2";
 const OFFLINE_URL = "/offline.html";
 
-// Assets to cache immediately on installation
-const ASSETS_TO_CACHE = [
+// Core routes and assets to pre-cache on install
+const PRECACHE_ROUTES = [
   OFFLINE_URL,
   "/favicon.ico",
   "/apple-touch-icon.png",
   "/android-chrome-192x192.png",
   "/android-chrome-512x512.png",
   "/logo/logobg.png",
+  "/logo/customer_login_bg.png",
+  "/auth/login",
+  "/dashboard",
+  "/registration",
+  "/test-report",
+  "/doctor-summary",
+  "/settings",
 ];
 
-// Install event: cache the offline fallback page and core assets
+// Install event: cache offline fallback page and core dashboard routes
 self.addEventListener("install", (event) => {
   event.waitUntil(
-    caches.open(CACHE_NAME).then((cache) => {
-      console.log("[Service Worker] Caching offline fallback page and assets");
-      return cache.addAll(ASSETS_TO_CACHE);
-    }).then(() => self.skipWaiting())
+    caches
+      .open(CACHE_NAME)
+      .then((cache) => {
+        console.log("[Service Worker] Pre-caching core offline assets & routes");
+        return cache.addAll(PRECACHE_ROUTES).catch((err) => {
+          console.warn("[Service Worker] Some precache items failed:", err);
+        });
+      })
+      .then(() => self.skipWaiting())
   );
 });
 
 // Activate event: clean up older caches
 self.addEventListener("activate", (event) => {
   event.waitUntil(
-    caches.keys().then((cacheNames) => {
-      return Promise.all(
-        cacheNames.map((cacheName) => {
-          if (cacheName !== CACHE_NAME) {
-            console.log("[Service Worker] Deleting old cache:", cacheName);
-            return caches.delete(cacheName);
-          }
-        })
-      );
-    }).then(() => self.clients.claim())
+    caches
+      .keys()
+      .then((cacheNames) => {
+        return Promise.all(
+          cacheNames.map((cacheName) => {
+            if (cacheName !== CACHE_NAME) {
+              console.log("[Service Worker] Deleting old cache:", cacheName);
+              return caches.delete(cacheName);
+            }
+          })
+        );
+      })
+      .then(() => self.clients.claim())
   );
 });
 
-// Fetch event: handle offline fallbacks and asset caching
+// Fetch event: handle offline navigation and asset caching
 self.addEventListener("fetch", (event) => {
   // Only handle GET requests
   if (event.request.method !== "GET") return;
 
   const url = new URL(event.request.url);
 
-  // Ignore requests with unsupported schemes (like chrome-extension, data, ftp, etc.)
+  // Ignore unsupported schemes (e.g. chrome-extension, data)
   if (url.protocol !== "http:" && url.protocol !== "https:") return;
 
-  // 1. Navigation requests (HTML page loads)
+  // Never cache API responses in service worker - persistent data belongs in IndexedDB!
+  if (url.pathname.startsWith("/api/")) {
+    return;
+  }
+
+  // 1. Navigation requests (HTML page loads) - Network-first with cache fallback
   if (event.request.mode === "navigate") {
     event.respondWith(
-      fetch(event.request).catch((error) => {
-        console.log("[Service Worker] Navigation failed, serving offline page:", error);
-        return caches.open(CACHE_NAME).then((cache) => {
-          return cache.match(OFFLINE_URL);
-        });
-      })
+      fetch(event.request)
+        .then((networkResponse) => {
+          if (networkResponse && networkResponse.status === 200) {
+            const responseClone = networkResponse.clone();
+            caches.open(CACHE_NAME).then((cache) => {
+              cache.put(event.request, responseClone);
+            });
+          }
+          return networkResponse;
+        })
+        .catch(async () => {
+          console.log("[Service Worker] Navigation fetch failed, attempting cached route for:", url.pathname);
+          const cachedResponse = await caches.match(event.request);
+          if (cachedResponse) {
+            return cachedResponse;
+          }
+
+          // Fallback to pre-cached matching path or offline.html
+          const fallbackCache = await caches.open(CACHE_NAME);
+          const matchedFallback = await fallbackCache.match(url.pathname);
+          if (matchedFallback) {
+            return matchedFallback;
+          }
+
+          return fallbackCache.match(OFFLINE_URL);
+        })
     );
     return;
   }
 
-  // 2. Static assets (images, CSS, JS, manifest)
+  // 2. Static assets (images, CSS, JS, fonts, Next static bundles) - Cache-first with network fallback
   const isStaticAsset =
-    ASSETS_TO_CACHE.includes(url.pathname) ||
     url.pathname.startsWith("/_next/static/") ||
     url.pathname.endsWith(".js") ||
     url.pathname.endsWith(".css") ||
     url.pathname.endsWith(".png") ||
     url.pathname.endsWith(".jpg") ||
+    url.pathname.endsWith(".svg") ||
     url.pathname.endsWith(".ico") ||
+    url.pathname.endsWith(".woff2") ||
     url.pathname.endsWith(".webmanifest");
 
   if (isStaticAsset) {
@@ -78,27 +119,27 @@ self.addEventListener("fetch", (event) => {
           return cachedResponse;
         }
 
-        return fetch(event.request).then((networkResponse) => {
-          // Check if we received a valid response
-          if (!networkResponse || networkResponse.status !== 200 || networkResponse.type !== "basic") {
+        return fetch(event.request)
+          .then((networkResponse) => {
+            if (!networkResponse || networkResponse.status !== 200) {
+              return networkResponse;
+            }
+
+            const responseToCache = networkResponse.clone();
+            caches.open(CACHE_NAME).then((cache) => {
+              cache.put(event.request, responseToCache);
+            });
+
             return networkResponse;
-          }
-
-          // Cache the new static asset
-          const responseToCache = networkResponse.clone();
-          caches.open(CACHE_NAME).then((cache) => {
-            cache.put(event.request, responseToCache);
+          })
+          .catch(() => {
+            // Silent catch for static assets when offline
           });
-
-          return networkResponse;
-        }).catch(() => {
-          // Silent catch for assets if network is down
-        });
       })
     );
     return;
   }
 
-  // 3. Fallback to normal network requests for everything else (API requests, etc.)
+  // 3. Default fallback for other requests
   event.respondWith(fetch(event.request).catch(() => {}));
 });

@@ -91,6 +91,8 @@ import * as XLSX from "xlsx";
 import ResultEntry from "./component/resultEntry";
 import ShowResult from "./component/showResult";
 import MoneyRecipt from "./component/MoneyRecipt";
+import SyncStatusIcon from "@/components/offline/SyncStatusIcon";
+import db from "@/lib/offline/db";
 
 
 const menuButtonStyle = {
@@ -452,6 +454,24 @@ export default function TestReportPage() {
   const loadData = async () => {
     setLoading(true);
     try {
+      if (typeof navigator !== "undefined" && !navigator.onLine) {
+        // Offline: load from IndexedDB
+        let localData = await db.registrations.filter((r) => !r.isDeleted).toArray();
+        if (search) {
+          const q = search.toLowerCase();
+          localData = localData.filter(
+            (r) =>
+              (r.name && r.name.toLowerCase().includes(q)) ||
+              (r.regNo && r.regNo.toLowerCase().includes(q)) ||
+              (r.mobileNo && r.mobileNo.includes(q))
+          );
+        }
+        setRegistrations(localData);
+        setTotal(localData.length);
+        setLoading(false);
+        return;
+      }
+
       const queryParams = new URLSearchParams();
       if (startDate) queryParams.set("startDate", `${startDate}T00:00:00.000Z`);
       if (endDate) queryParams.set("endDate", `${endDate}T23:59:59.999Z`);
@@ -459,13 +479,48 @@ export default function TestReportPage() {
       queryParams.set("page", page.toString());
       queryParams.set("limit", limit.toString());
 
-      const res = await fetch(`/api/registrations?${queryParams.toString()}`).then((r) => r.json());
-      if (res.success) {
-        setRegistrations(res.registrations);
-        setTotal(res.total || 0);
+      const res = await fetch(`/api/registrations?${queryParams.toString()}`)
+        .then((r) => r.json())
+        .catch(() => ({ success: false }));
+
+      if (res.success && Array.isArray(res.registrations)) {
+        // Merge with local dirty/modified items
+        const dirtyItems = await db.registrations
+          .filter((r) => r.isDirty === true || r.isModified === true)
+          .toArray();
+
+        const serverMap = new Map();
+        res.registrations.forEach((sr) => serverMap.set(sr.id, sr));
+
+        // Overwrite or prepend dirty items so local offline changes are visible immediately
+        dirtyItems.forEach((di) => {
+          serverMap.set(di.id, di);
+        });
+
+        const merged = Array.from(serverMap.values());
+        setRegistrations(merged);
+        setTotal(res.total || merged.length);
+
+        // Cache server records in IndexedDB
+        for (const reg of res.registrations) {
+          const local = await db.registrations.get(reg.id);
+          if (!local || (!local.isDirty && !local.isModified)) {
+            await db.registrations.put({ ...reg, isDirty: false, isModified: false, isError: false });
+          }
+        }
+      } else {
+        // Fallback to IndexedDB
+        let localData = await db.registrations.filter((r) => !r.isDeleted).toArray();
+        setRegistrations(localData);
+        setTotal(localData.length);
       }
     } catch (err) {
-      console.error(err);
+      console.error("Error loading test reports:", err);
+      try {
+        let localData = await db.registrations.filter((r) => !r.isDeleted).toArray();
+        setRegistrations(localData);
+        setTotal(localData.length);
+      } catch (dbErr) {}
     } finally {
       setLoading(false);
     }
@@ -995,6 +1050,7 @@ export default function TestReportPage() {
             >
               <TableRow>
                 <TableCell sx={{ fontWeight: 700, fontSize: "0.82rem", width: "50px", whiteSpace: "nowrap" }}>SNO</TableCell>
+                <TableCell sx={{ fontWeight: 700, fontSize: "0.82rem", width: "40px", whiteSpace: "nowrap" }} align="center">Sync</TableCell>
                 <TableCell sx={{ fontWeight: 700, fontSize: "0.82rem", width: "60px", whiteSpace: "nowrap" }} align="center">Actions</TableCell>
                 <TableCell sx={{ fontWeight: 700, fontSize: "0.82rem", whiteSpace: "nowrap" }}>Reg.Date</TableCell>
                 <TableCell sx={{ fontWeight: 700, fontSize: "0.82rem", whiteSpace: "nowrap" }}>Reg.No</TableCell>
@@ -1050,6 +1106,14 @@ export default function TestReportPage() {
                       }}
                     >
                       <TableCell sx={{ width: "50px", whiteSpace: "nowrap" }}>{idx + 1}</TableCell>
+                      <TableCell align="center" sx={{ width: "40px", whiteSpace: "nowrap" }}>
+                        <SyncStatusIcon
+                          isDirty={reg.isDirty}
+                          isModified={reg.isModified}
+                          isError={reg.isError}
+                          errorInfo={reg.errorInfo}
+                        />
+                      </TableCell>
                       <TableCell align="center" sx={{ width: "60px", whiteSpace: "nowrap" }}>
                         <IconButton
                           size="small"

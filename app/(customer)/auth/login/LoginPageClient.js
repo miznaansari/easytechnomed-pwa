@@ -45,11 +45,31 @@ export default function CustomerLoginPage() {
 
   const onSubmit = async (data) => {
     setIsLoading(true);
+    const identifier = data.identifier.trim();
+
     try {
+      // 1. If currently offline, attempt offline login validation
+      if (typeof navigator !== "undefined" && !navigator.onLine) {
+        const { getCachedSession, isLocalSessionValid } = await import("@/lib/auth/offlineAuth");
+        const cached = await getCachedSession();
+        const valid = await isLocalSessionValid();
+
+        if (cached && valid) {
+          toast.success("Logged in with offline session! ⚡");
+          router.push("/dashboard");
+          return;
+        } else {
+          toast.error("No valid offline session found. Please connect to the internet to log in.");
+          setIsLoading(false);
+          return;
+        }
+      }
+
+      // 2. Online login attempt
       const res = await fetch("/api/auth/login", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ identifier: data.identifier.trim(), password: data.password }),
+        body: JSON.stringify({ identifier, password: data.password }),
       }).then((r) => r.json());
 
       if (res.success) {
@@ -60,7 +80,19 @@ export default function CustomerLoginPage() {
         setIsLoading(false);
       }
     } catch (error) {
-      toast.error("An unexpected error occurred. Please try again.");
+      // Fallback: If fetch failed due to network disruption, attempt cached session
+      try {
+        const { getCachedSession, isLocalSessionValid } = await import("@/lib/auth/offlineAuth");
+        const cached = await getCachedSession();
+        const valid = await isLocalSessionValid();
+        if (cached && valid) {
+          toast.info("Offline mode active - logged in using saved session.");
+          router.push("/dashboard");
+          return;
+        }
+      } catch (e) {}
+
+      toast.error("Network connection failed. Please check your internet or retry.");
       setIsLoading(false);
     }
   };
