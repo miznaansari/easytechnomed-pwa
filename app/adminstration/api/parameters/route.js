@@ -1,0 +1,105 @@
+import { NextResponse } from "next/server";
+import { prisma } from "@/lib/db";
+import { verifySuperAdminAPI } from "@/lib/auth";
+
+export async function GET(req) {
+  try {
+    await verifySuperAdminAPI();
+    
+    // Fetch parameters from the master Parameter table that belong to tests with workspaceId = null and isDeleted = false
+    const parameters = await prisma.parameter.findMany({
+      where: {
+        testMappings: {
+          some: {
+            isDeleted: false,
+            test: {
+              workspaceId: null,
+              isDeleted: false
+            }
+          }
+        }
+      },
+      orderBy: { name: "asc" }
+    });
+
+    return NextResponse.json({
+      success: true,
+      parameters
+    });
+  } catch (error) {
+    console.error("SuperAdmin GET Parameters Error:", error);
+    const status = error.message === "Unauthorized" ? 401 : 500;
+    return NextResponse.json({ success: false, error: error.message }, { status });
+  }
+}
+
+export async function POST(req) {
+  try {
+    await verifySuperAdminAPI();
+    const body = await req.json().catch(() => ({}));
+    const {
+      name,
+      code,
+      unit,
+      valueType,
+      options,
+      minValMale,
+      maxValMale,
+      normalRangeMale,
+      minValFemale,
+      maxValFemale,
+      normalRangeFemale,
+      minValBaby,
+      maxValBaby,
+      normalRangeBaby,
+      normalRangeDefault
+    } = body;
+
+    const normName = (name || "").trim();
+    if (!normName) {
+      return NextResponse.json({ success: false, error: "Parameter name is required." }, { status: 400 });
+    }
+
+    const normCode = code ? code.trim().toUpperCase().replace(/[^A-Z0-9_]/g, "") : null;
+
+    // Check if name is already taken
+    const duplicate = await prisma.parameter.findFirst({
+      where: {
+        name: { equals: normName },
+        workspaceId: null
+      }
+    });
+
+    if (duplicate) {
+      return NextResponse.json({ success: false, error: `Parameter name "${normName}" is already taken.` }, { status: 400 });
+    }
+
+    const isNumeric = (valueType || "NUMERIC") === "NUMERIC";
+
+    const created = await prisma.parameter.create({
+      data: {
+        name: normName,
+        code: normCode || null,
+        unit: unit || null,
+        valueType: valueType || "NUMERIC",
+        options: options || null,
+        minValMale: isNumeric && minValMale !== "" && minValMale !== null && minValMale !== undefined ? parseFloat(minValMale) : null,
+        maxValMale: isNumeric && maxValMale !== "" && maxValMale !== null && maxValMale !== undefined ? parseFloat(maxValMale) : null,
+        normalRangeMale: normalRangeMale || null,
+        minValFemale: isNumeric && minValFemale !== "" && minValFemale !== null && minValFemale !== undefined ? parseFloat(minValFemale) : null,
+        maxValFemale: isNumeric && maxValFemale !== "" && maxValFemale !== null && maxValFemale !== undefined ? parseFloat(maxValFemale) : null,
+        normalRangeFemale: normalRangeFemale || null,
+        minValBaby: isNumeric && minValBaby !== "" && minValBaby !== null && minValBaby !== undefined ? parseFloat(minValBaby) : null,
+        maxValBaby: isNumeric && maxValBaby !== "" && maxValBaby !== null && maxValBaby !== undefined ? parseFloat(maxValBaby) : null,
+        normalRangeBaby: normalRangeBaby || null,
+        normalRangeDefault: normalRangeDefault || null
+      }
+    });
+
+    return NextResponse.json({ success: true, message: "Parameter created successfully.", parameter: created });
+  } catch (error) {
+    console.error("SuperAdmin POST Parameter Error:", error);
+    const status = error.message === "Unauthorized" ? 401 : 500;
+    return NextResponse.json({ success: false, error: error.message }, { status });
+  }
+}
