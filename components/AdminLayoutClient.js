@@ -297,75 +297,50 @@ export default function AdminLayoutClient({ admin: initialAdmin, children }) {
     await performLogout();
   };
 
-  const hasPermission = (requiredPermissions) => {
-    if (!admin) return false;
-    const roleUpper = (admin.role?.name || admin.role || "").toUpperCase();
-    const userPerms = admin.permissions || [];
-
-    if (roleUpper === "ADMIN" || roleUpper === "OWNER" || userPerms.includes("ALL")) {
-      return true;
-    }
-
-    return requiredPermissions.some(perm => userPerms.includes(perm));
-  };
+  // Always show all options - full access across all modules
+  const hasPermission = () => true;
 
   const menuItems = [
     {
       text: "Dashboard",
       path: "/dashboard",
       icon: <DashboardIcon />,
-      required: ["DASHBOARD_VIEW"]
     },
     {
       text: "Patient Registration",
       path: "/registration",
       icon: <RegisterIcon />,
-      required: ["REGISTRATION_READ", "REGISTRATION_WRITE"]
     },
     {
       text: "Test Reports",
       path: "/test-report",
       icon: <ReportIcon />,
-      required: ["REGISTRATION_READ", "REGISTRATION_WRITE"]
     },
     {
       text: "Dr. Referral Summary",
       path: "/doctor-summary",
       icon: <DoctorIcon />,
-      required: ["DOCTOR_READ", "DOCTOR_WRITE"]
     },
     {
       text: "Manage Members",
       path: "/members",
       icon: <PeopleIcon />,
-      required: ["MEMBER_READ", "MEMBER_WRITE"]
     },
     {
       text: "System Settings",
       path: "/settings",
       icon: <SettingsIcon />,
-      required: ["SETTINGS_READ", "SETTINGS_WRITE", "TEST_READ", "TEST_WRITE"],
       subItems: [
-        { text: "Profile Setting", path: "/settings?tab=profile", required: ["SETTINGS_READ", "SETTINGS_WRITE"] },
-        { text: "Address Setting", path: "/settings/address", required: ["SETTINGS_READ", "SETTINGS_WRITE"] },
-        { text: "Test & Parameter", path: "/settings/tests", required: ["TEST_READ", "TEST_WRITE"] },
-        { text: "PDF Frame Setting", path: "/settings/pdf", required: ["SETTINGS_READ", "SETTINGS_WRITE"] },
-        { text: "Subscription & Invoices", path: "/settings/payments", required: ["SETTINGS_READ", "SETTINGS_WRITE"] },
+        { text: "Profile Setting", path: "/settings?tab=profile" },
+        { text: "Address Setting", path: "/settings/address" },
+        { text: "Test & Parameter", path: "/settings/tests" },
+        { text: "PDF Frame Setting", path: "/settings/pdf" },
+        { text: "Subscription & Invoices", path: "/settings/payments" },
       ]
     },
   ];
 
-  const filteredMenuItems = menuItems
-    .filter(item => !item.required || hasPermission(item.required))
-    .map(item => {
-      if (item.subItems) {
-        return {
-          ...item,
-          subItems: item.subItems.filter(sub => !sub.required || hasPermission(sub.required))
-        };
-      }
-      return item;
-    });
+  const filteredMenuItems = menuItems;
 
   const drawerContent = (
     <Box sx={{ height: "100%", display: "flex", flexDirection: "column", overflowX: "hidden" }}>
