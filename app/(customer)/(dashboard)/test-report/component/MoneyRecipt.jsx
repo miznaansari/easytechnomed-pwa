@@ -225,17 +225,6 @@ export default function MoneyRecipt({ open, onClose, selectedReg, onSaveSuccess,
       setSavingPayment(false);
     }
   };
-    } catch (err) {
-      console.warn("Payment network request failed, saved locally:", err);
-      showToast("Saved payment locally (Offline).", "warning");
-      setTimeout(() => {
-        onClose();
-        if (onSaveSuccess) onSaveSuccess();
-      }, 800);
-    } finally {
-      setSavingPayment(false);
-    }
-  };
 
   const handlePrintReceipt = (reg) => {
     if (!reg) return;

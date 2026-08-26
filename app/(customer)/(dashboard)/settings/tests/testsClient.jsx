@@ -379,6 +379,10 @@ export default function TestsClient() {
       fetchTests(testPage, testSearchQuery);
       setOpenEditPriceDialog(false);
       setEditingTest(null);
+      setEditingPrice("");
+      setEditingName("");
+      setEditingOutsourceCost("0");
+      setEditingSpecialIncentive("");
 
       // Background auto-sync trigger
       if (typeof navigator !== "undefined" && navigator.onLine) {
@@ -387,20 +391,6 @@ export default function TestsClient() {
     } catch (err) {
       console.error(err);
       showToast("An error occurred while updating test.", "error");
-    } finally {
-      setIsUpdatingPrice(false);
-    }
-  };
-        setEditingPrice("");
-        setEditingName("");
-        setEditingOutsourceCost("0");
-        setEditingSpecialIncentive("");
-      } else {
-        showToast(res.message || "Failed to update test details.", "error");
-      }
-    } catch (err) {
-      console.error(err);
-      showToast("An error occurred while updating test details.", "error");
     } finally {
       setIsUpdatingPrice(false);
     }
