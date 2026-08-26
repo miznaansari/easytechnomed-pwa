@@ -176,7 +176,21 @@ self.addEventListener("fetch", (event) => {
             if (isHtmlResponse(appShell)) return appShell;
 
             // 4. Try any core dashboard page
-            for (const route of ["/dashboard", "/test-report", "/registration", "/doctor-summary", "/settings", "/"]) {
+            const allDashboardRoutes = [
+              "/dashboard",
+              "/registration",
+              "/test-report",
+              "/doctor-summary",
+              "/members",
+              "/userApprove",
+              "/settings",
+              "/settings/tests",
+              "/settings/pdf",
+              "/settings/payments",
+              "/settings/address",
+              "/"
+            ];
+            for (const route of allDashboardRoutes) {
               const fallback = await cache.match(route);
               if (isHtmlResponse(fallback)) return fallback;
             }
