@@ -186,6 +186,26 @@ export default function AdminLayoutClient({ admin, children }) {
   const [mounted, setMounted] = useState(false);
   useEffect(() => {
     setMounted(true);
+
+    // Prefetch all dashboard route chunks so they are stored in Service Worker cache for offline use
+    const routesToPrefetch = [
+      "/dashboard",
+      "/registration",
+      "/test-report",
+      "/doctor-summary",
+      "/members",
+      "/settings",
+      "/settings/address",
+      "/settings/tests",
+      "/settings/pdf",
+      "/settings/payments"
+    ];
+    routesToPrefetch.forEach((r) => {
+      try {
+        router.prefetch(r);
+      } catch {}
+    });
+
     if (admin) {
       sessionStorage.setItem("admin_profile", JSON.stringify(admin));
 

@@ -339,19 +339,39 @@ export default function PdfSettingsClient() {
 
     setUploading(true);
     try {
-      const formData = new FormData();
-      formData.append("file", file);
+      // 1. Immediately read file as Uint8Array for offline IndexedDB use
+      const arrayBuf = await file.arrayBuffer();
+      const frameBytes = new Uint8Array(arrayBuf);
+      setSettings((prev) => ({ ...prev, framePdfBytes: frameBytes }));
 
-      const res = await fetch("/api/settings/upload-frame", {
-        method: "POST",
-        body: formData,
-      }).then((r) => r.json());
-      if (res.success && res.url) {
-        handleInputChange("framePdfUrl", res.url);
-        showToast("Letterhead frame PDF uploaded successfully!", "success");
+      // 2. Upload online if connected
+      if (typeof navigator !== "undefined" && navigator.onLine) {
+        const formData = new FormData();
+        formData.append("file", file);
+
+        const res = await fetch("/api/settings/upload-frame", {
+          method: "POST",
+          body: formData,
+        }).then((r) => r.json());
+        if (res.success && res.url) {
+          handleInputChange("framePdfUrl", res.url);
+          showToast("Letterhead frame PDF uploaded successfully!", "success");
+        } else {
+          showToast(res.error || "Saved frame locally.", "info");
+        }
       } else {
-        showToast(res.error || "Failed to upload file.", "error");
+        showToast("Letterhead frame saved locally in IndexedDB (Offline Mode).", "success");
       }
+
+      // Save directly to Dexie
+      await db.workspacePdf.put({
+        ...settings,
+        framePdfBytes: frameBytes,
+        id: 1,
+        isDirty: true,
+        isModified: false,
+        isError: false,
+      });
     } catch (err) {
       showToast("An error occurred during file upload.", "error");
     } finally {

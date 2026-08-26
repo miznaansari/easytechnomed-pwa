@@ -1,4 +1,4 @@
-const CACHE_NAME = "easytechnomed-pwa-v7";
+const CACHE_NAME = "easytechnomed-pwa-v8";
 const OFFLINE_URL = "/offline.html";
 
 // Core routes and critical static assets to pre-cache on install
@@ -10,6 +10,10 @@ const PRECACHE_ROUTES = [
   "/test-report",
   "/doctor-summary",
   "/settings",
+  "/settings/address",
+  "/settings/tests",
+  "/settings/pdf",
+  "/settings/payments",
   "/members",
   "/favicon.ico",
   "/apple-touch-icon.png",
@@ -19,20 +23,50 @@ const PRECACHE_ROUTES = [
   "/logo/customer_login_bg.png",
 ];
 
-// Install event: cache offline fallback page and core dashboard routes
+// Helper: Extract all JS/CSS asset URLs from HTML string
+function extractAssetsFromHtml(htmlText) {
+  const assets = new Set();
+  // Match <script src="...">
+  const scriptRegex = /<script[^>]+src=["'](\/_next\/static\/[^"']+)["']/g;
+  let match;
+  while ((match = scriptRegex.exec(htmlText)) !== null) {
+    assets.add(match[1]);
+  }
+  // Match <link rel="preload" href="..."> and <link rel="stylesheet" href="...">
+  const linkRegex = /<link[^>]+href=["'](\/_next\/static\/[^"']+)["']/g;
+  while ((match = linkRegex.exec(htmlText)) !== null) {
+    assets.add(match[1]);
+  }
+  // Match chunk filenames mentioned in JSON / RSC flight scripts
+  const chunkRegex = /"\/_next\/static\/chunks\/[^"]+\.js"/g;
+  while ((match = chunkRegex.exec(htmlText)) !== null) {
+    const clean = match[0].replace(/"/g, "");
+    assets.add(clean);
+  }
+  return Array.from(assets);
+}
+
+// Install event: cache offline fallback page, core dashboard routes, AND all JS chunks
 self.addEventListener("install", (event) => {
   event.waitUntil(
     caches
       .open(CACHE_NAME)
       .then(async (cache) => {
         console.log("[Service Worker] Pre-caching core offline assets & routes...");
+        const extractedAssets = new Set();
+
         await Promise.allSettled(
           PRECACHE_ROUTES.map(async (route) => {
             try {
               // 1. Pre-cache standard page HTML document
               const res = await fetch(route, { cache: "reload" });
               if (res.ok) {
+                const text = await res.clone().text();
                 await cache.put(route, res);
+
+                // Extract all JS chunks and CSS files referenced in this page
+                const assets = extractAssetsFromHtml(text);
+                assets.forEach((a) => extractedAssets.add(a));
               }
 
               // 2. Pre-cache RSC data separately for app routes so client-side navigation is instant
@@ -43,13 +77,30 @@ self.addEventListener("install", (event) => {
                     cache: "reload",
                   });
                   if (rscRes.ok) {
+                    const rscText = await rscRes.clone().text();
                     await cache.put(`${route}?_rsc=1`, rscRes);
+
+                    const rscAssets = extractAssetsFromHtml(rscText);
+                    rscAssets.forEach((a) => extractedAssets.add(a));
                   }
                 } catch {}
               }
             } catch (err) {
               console.warn(`[Service Worker] Pre-cache failed for: ${route}`, err);
             }
+          })
+        );
+
+        // 3. Pre-cache all discovered Next.js JS chunks and stylesheets
+        console.log(`[Service Worker] Pre-caching ${extractedAssets.size} JS chunks & assets...`);
+        await Promise.allSettled(
+          Array.from(extractedAssets).map(async (assetUrl) => {
+            try {
+              const aRes = await fetch(assetUrl, { cache: "reload" });
+              if (aRes.ok) {
+                await cache.put(assetUrl, aRes);
+              }
+            } catch {}
           })
         );
       })
@@ -158,6 +209,18 @@ self.addEventListener("fetch", (event) => {
             const trFallback = await fallbackCache.match("/test-report");
             if (trFallback && isHtmlResponse(trFallback)) return trFallback;
           }
+          if (url.pathname.startsWith("/members")) {
+            const memFallback = await fallbackCache.match("/members");
+            if (memFallback && isHtmlResponse(memFallback)) return memFallback;
+          }
+          if (url.pathname.startsWith("/settings")) {
+            const setFallback = await fallbackCache.match("/settings");
+            if (setFallback && isHtmlResponse(setFallback)) return setFallback;
+          }
+          if (url.pathname.startsWith("/doctor-summary")) {
+            const docFallback = await fallbackCache.match("/doctor-summary");
+            if (docFallback && isHtmlResponse(docFallback)) return docFallback;
+          }
 
           const dashboardFallback = await fallbackCache.match("/dashboard");
           if (dashboardFallback && isHtmlResponse(dashboardFallback)) return dashboardFallback;
@@ -197,6 +260,18 @@ self.addEventListener("fetch", (event) => {
             const trFallback = await fallbackCache.match("/test-report");
             if (trFallback && isHtmlResponse(trFallback)) return trFallback;
           }
+          if (url.pathname.startsWith("/members")) {
+            const memFallback = await fallbackCache.match("/members");
+            if (memFallback && isHtmlResponse(memFallback)) return memFallback;
+          }
+          if (url.pathname.startsWith("/settings")) {
+            const setFallback = await fallbackCache.match("/settings");
+            if (setFallback && isHtmlResponse(setFallback)) return setFallback;
+          }
+          if (url.pathname.startsWith("/doctor-summary")) {
+            const docFallback = await fallbackCache.match("/doctor-summary");
+            if (docFallback && isHtmlResponse(docFallback)) return docFallback;
+          }
 
           const dashboardFallback = await fallbackCache.match("/dashboard");
           if (dashboardFallback && isHtmlResponse(dashboardFallback)) return dashboardFallback;
@@ -220,7 +295,7 @@ self.addEventListener("fetch", (event) => {
     return;
   }
 
-  // 3. Static Assets (Next.js JS bundles, CSS, Fonts, Images, Manifest) - Stale-While-Revalidate / Cache-First
+  // 3. Static Assets (Next.js JS bundles, CSS, Fonts, Images, Manifest) - Cache-First with Network Revalidation & Offline Fallback
   const isStaticAsset =
     url.pathname.startsWith("/_next/") ||
     url.pathname.endsWith(".js") ||
@@ -237,22 +312,46 @@ self.addEventListener("fetch", (event) => {
 
   if (isStaticAsset) {
     event.respondWith(
-      caches.match(event.request).then((cachedResponse) => {
-        // Fetch from network in background to revalidate cache
-        const networkFetch = fetch(event.request)
-          .then((networkResponse) => {
-            if (networkResponse && networkResponse.status === 200) {
-              const responseToCache = networkResponse.clone();
-              caches.open(CACHE_NAME).then((cache) => {
-                cache.put(event.request, responseToCache);
-              });
-            }
-            return networkResponse;
-          })
-          .catch(() => cachedResponse);
+      caches.match(event.request).then(async (cachedResponse) => {
+        if (cachedResponse) {
+          // Revalidate in background if online
+          if (typeof self.navigator !== "undefined" && self.navigator.onLine) {
+            fetch(event.request)
+              .then((networkResponse) => {
+                if (networkResponse && networkResponse.status === 200) {
+                  const clone = networkResponse.clone();
+                  caches.open(CACHE_NAME).then((cache) => cache.put(event.request, clone));
+                }
+              })
+              .catch(() => {});
+          }
+          return cachedResponse;
+        }
 
-        // Return cached version immediately (0ms) if present, otherwise await network fetch
-        return cachedResponse || networkFetch;
+        // Not in cache: Try network
+        try {
+          const networkResponse = await fetch(event.request);
+          if (networkResponse && networkResponse.status === 200) {
+            const clone = networkResponse.clone();
+            caches.open(CACHE_NAME).then((cache) => cache.put(event.request, clone));
+          }
+          return networkResponse;
+        } catch (fetchErr) {
+          // Fallback for failed JS chunk when offline: Return a valid empty JS module so React/Webpack doesn't throw fatal ChunkLoadError!
+          if (url.pathname.endsWith(".js")) {
+            return new Response("/* Offline Empty Chunk Fallback */", {
+              status: 200,
+              headers: { "Content-Type": "application/javascript" },
+            });
+          }
+          if (url.pathname.endsWith(".css")) {
+            return new Response("/* Offline CSS */", {
+              status: 200,
+              headers: { "Content-Type": "text/css" },
+            });
+          }
+          return new Response("", { status: 408, statusText: "Offline" });
+        }
       })
     );
     return;
