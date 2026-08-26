@@ -1,9 +1,9 @@
-const CACHE_NAME = "easytechnomed-pwa-v4";
+const CACHE_NAME = "easytechnomed-pwa-v5";
 const OFFLINE_URL = "/offline.html";
 const OFFLINE_PRINT_URL = "/offline-print.html";
 
-// Core routes and critical static assets to pre-cache on install
-const PRECACHE_ROUTES = [
+// Static assets and fallback pages to precache on install
+const PRECACHE_ASSETS = [
   OFFLINE_URL,
   OFFLINE_PRINT_URL,
   "/favicon.ico",
@@ -12,30 +12,25 @@ const PRECACHE_ROUTES = [
   "/android-chrome-512x512.png",
   "/logo/logobg.png",
   "/logo/customer_login_bg.png",
-  "/auth/login",
-  "/dashboard",
-  "/registration",
-  "/test-report",
-  "/doctor-summary",
-  "/settings",
-  "/members",
 ];
 
-// Install event: cache offline fallback page and core dashboard routes
+// Install event: cache offline fallback page and icons
 self.addEventListener("install", (event) => {
   event.waitUntil(
     caches
       .open(CACHE_NAME)
       .then(async (cache) => {
-        console.log("[Service Worker] Pre-caching core offline assets & routes...");
+        console.log("[Service Worker] Pre-caching offline assets...");
         await Promise.allSettled(
-          PRECACHE_ROUTES.map((route) =>
-            fetch(route, { cache: "reload" })
+          PRECACHE_ASSETS.map((asset) =>
+            fetch(asset, { cache: "reload" })
               .then((res) => {
-                if (res.ok) return cache.put(route, res);
+                if (res && res.ok) {
+                  return cache.put(asset, res);
+                }
               })
               .catch((err) => {
-                console.warn(`[Service Worker] Pre-cache failed for: ${route}`, err);
+                console.warn(`[Service Worker] Pre-cache failed for: ${asset}`, err);
               })
           )
         );
@@ -82,12 +77,19 @@ self.addEventListener("fetch", (event) => {
     event.respondWith(
       fetch(event.request).catch(async () => {
         console.log("[Service Worker] Serving offline print template for:", url.pathname);
-        const cache = await caches.open(CACHE_NAME);
-        const offlinePrintDoc = await cache.match(OFFLINE_PRINT_URL);
-        if (offlinePrintDoc) return offlinePrintDoc;
-        const offlineGeneral = await cache.match(OFFLINE_URL);
-        if (offlineGeneral) return offlineGeneral;
-        return new Response("Offline document not available.", { status: 503, headers: { "Content-Type": "text/plain" } });
+        try {
+          const cache = await caches.open(CACHE_NAME);
+          const offlinePrintDoc = await cache.match(OFFLINE_PRINT_URL);
+          if (offlinePrintDoc) return offlinePrintDoc;
+          const offlineGeneral = await cache.match(OFFLINE_URL);
+          if (offlineGeneral) return offlineGeneral;
+        } catch (e) {
+          console.warn("[Service Worker] Print fallback error:", e);
+        }
+        return new Response("Offline document not available.", {
+          status: 200,
+          headers: { "Content-Type": "text/html; charset=utf-8" },
+        });
       })
     );
     return;
@@ -111,19 +113,16 @@ self.addEventListener("fetch", (event) => {
           if (networkResponse && networkResponse.status === 200) {
             const clone = networkResponse.clone();
             caches.open(CACHE_NAME).then((cache) => {
-              cache.put(event.request, clone);
-              cache.put(url.pathname, networkResponse.clone());
-            });
+              cache.put(event.request, clone).catch(() => {});
+            }).catch(() => {});
           }
           return networkResponse;
         })
         .catch(async () => {
-          console.log("[Service Worker] RSC fetch failed (offline) for:", url.pathname);
-          const cached = await caches.match(event.request, { ignoreSearch: true });
-          if (cached) return cached;
-
-          const pathnameCached = await caches.match(url.pathname);
-          if (pathnameCached) return pathnameCached;
+          try {
+            const cached = await caches.match(event.request, { ignoreSearch: true });
+            if (cached) return cached;
+          } catch (e) {}
 
           return new Response("", {
             status: 200,
@@ -142,30 +141,30 @@ self.addEventListener("fetch", (event) => {
           if (networkResponse && networkResponse.status === 200) {
             const clone = networkResponse.clone();
             caches.open(CACHE_NAME).then((cache) => {
-              cache.put(event.request, clone);
-              cache.put(url.pathname, networkResponse.clone());
-            });
+              cache.put(event.request, clone).catch(() => {});
+            }).catch(() => {});
           }
           return networkResponse;
         })
         .catch(async () => {
           console.log("[Service Worker] Navigation offline for:", url.pathname);
-          const cached = await caches.match(event.request, { ignoreSearch: true });
-          if (cached) return cached;
+          try {
+            const cached = await caches.match(event.request, { ignoreSearch: true });
+            if (cached) return cached;
 
-          const pathnameCached = await caches.match(url.pathname);
-          if (pathnameCached) return pathnameCached;
+            const pathnameCached = await caches.match(url.pathname);
+            if (pathnameCached) return pathnameCached;
 
-          const fallbackCache = await caches.open(CACHE_NAME);
-          const dashboardFallback = await fallbackCache.match("/dashboard");
-          if (dashboardFallback) return dashboardFallback;
-
-          const offlineFallback = await fallbackCache.match(OFFLINE_URL);
-          if (offlineFallback) return offlineFallback;
+            const cache = await caches.open(CACHE_NAME);
+            const offlineFallback = await cache.match(OFFLINE_URL);
+            if (offlineFallback) return offlineFallback;
+          } catch (e) {
+            console.warn("[Service Worker] Navigation cache match error:", e);
+          }
 
           return new Response("Offline - Please reconnect to internet", {
             status: 200,
-            headers: { "Content-Type": "text/html" },
+            headers: { "Content-Type": "text/html; charset=utf-8" },
           });
         })
     );
@@ -191,14 +190,13 @@ self.addEventListener("fetch", (event) => {
     event.respondWith(
       caches.match(event.request, { ignoreSearch: true }).then((cachedResponse) => {
         if (cachedResponse) {
-          // Revalidate in background if connected
           fetch(event.request)
             .then((networkResponse) => {
               if (networkResponse && networkResponse.status === 200) {
-                const responseToCache = networkResponse.clone();
+                const clone = networkResponse.clone();
                 caches.open(CACHE_NAME).then((cache) => {
-                  cache.put(event.request, responseToCache);
-                });
+                  cache.put(event.request, clone).catch(() => {});
+                }).catch(() => {});
               }
             })
             .catch(() => {});
@@ -208,10 +206,10 @@ self.addEventListener("fetch", (event) => {
         return fetch(event.request)
           .then((networkResponse) => {
             if (networkResponse && networkResponse.status === 200) {
-              const responseToCache = networkResponse.clone();
+              const clone = networkResponse.clone();
               caches.open(CACHE_NAME).then((cache) => {
-                cache.put(event.request, responseToCache);
-              });
+                cache.put(event.request, clone).catch(() => {});
+              }).catch(() => {});
             }
             return networkResponse;
           })
@@ -226,8 +224,10 @@ self.addEventListener("fetch", (event) => {
   // 6. Default Fallback
   event.respondWith(
     fetch(event.request).catch(async () => {
-      const cached = await caches.match(event.request, { ignoreSearch: true });
-      if (cached) return cached;
+      try {
+        const cached = await caches.match(event.request, { ignoreSearch: true });
+        if (cached) return cached;
+      } catch (e) {}
       return new Response("", { status: 200 });
     })
   );
