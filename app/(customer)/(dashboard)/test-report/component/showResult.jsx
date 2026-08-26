@@ -32,6 +32,7 @@ import {
   Download as DownloadIcon,
   Assignment as AssignmentIcon
 } from "@mui/icons-material";
+import db from "@/lib/offline/db";
 import ShowResultMobile from "./showResultMobile";
 
 const getReferenceRange = (param, reg) => {
@@ -109,16 +110,50 @@ export default function ShowResult({ open, onClose, selectedReg }) {
 
   const loadPreviewData = async () => {
     setPreviewLoading(true);
+    const regId = selectedReg?.id;
     try {
-      const res = await fetch(`/api/registrations/${selectedReg.id}/parameters`).then((r) => r.json());
-      if (res.success) {
-        setPreviewData(res.registration);
-      } else {
-        setPreviewData(null);
+      // 1. Build preview data directly from local IndexedDB (0ms latency, works offline & online)
+      const localReg = (regId ? await db.registrations.get(regId) : null) || selectedReg;
+      if (localReg) {
+        const [localResults, allDoctors] = await Promise.all([
+          db.patientResults.where("registrationId").equals(regId).toArray(),
+          db.doctors.toArray(),
+        ]);
+
+        const doc = allDoctors.find((d) => d.id === (localReg.refById || localReg.refBy?.id));
+
+        const enrichedTests = await Promise.all(
+          (localReg.tests || []).map(async (rt) => {
+            const tId = rt.testId || rt.test?.id || rt.id;
+            const cachedTest = tId ? await db.tests.get(tId) : null;
+            const cachedParams = tId ? await db.testParameters.where("testId").equals(tId).sortBy("order") : [];
+
+            return {
+              ...rt,
+              test: {
+                ...(cachedTest || rt.test || rt),
+                parameters: cachedParams.length > 0 ? cachedParams : (cachedTest?.parameters || rt.test?.parameters || rt.parameters || []),
+              },
+            };
+          })
+        );
+
+        setPreviewData({
+          ...localReg,
+          refBy: doc || localReg.refBy || { name: "Self" },
+          tests: enrichedTests,
+          results: localResults.length > 0 ? localResults : (localReg.results || []),
+        });
+      }
+
+      if (typeof navigator !== "undefined" && navigator.onLine && regId) {
+        const res = await fetch(`/api/registrations/${regId}/parameters`).then((r) => r.json());
+        if (res.success && res.registration) {
+          setPreviewData(res.registration);
+        }
       }
     } catch (err) {
-      console.error(err);
-      setPreviewData(null);
+      console.error("[ShowResult] Error loading preview:", err);
     } finally {
       setPreviewLoading(false);
     }

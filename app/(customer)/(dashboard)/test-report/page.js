@@ -435,16 +435,37 @@ export default function TestReportPage() {
   useEffect(() => {
     async function fetchSettings() {
       try {
-        const res = await fetch("/api/settings").then((r) => r.json());
-        if (res.success && res.settings) {
+        const [cachedPdf, cachedAdmins, cachedSession] = await Promise.all([
+          db.workspacePdf.toArray(),
+          db.admins.toArray(),
+          db.offlineSession.get(1),
+        ]);
+        const pdf = cachedPdf?.[0];
+        const adminData = cachedAdmins?.[0] || cachedSession?.admin;
+
+        if (pdf || adminData) {
           setAdminSettings({
-            framePdfUrl: res.settings.framePdfUrl || "",
-            useFrameDefault: res.settings.useFrameDefault ?? true,
-            companyName: res.settings.companyName || "",
-            email: res.settings.email || "",
-            mobileNumber: res.settings.mobileNumber || "",
-            address: res.settings.address || null
+            framePdfUrl: pdf?.framePdfUrl || "",
+            useFrameDefault: pdf?.useFrameDefault ?? true,
+            companyName: adminData?.companyName || "",
+            email: adminData?.email || "",
+            mobileNumber: adminData?.mobileNumber || "",
+            address: adminData?.address || null,
           });
+        }
+
+        if (typeof navigator !== "undefined" && navigator.onLine) {
+          const res = await fetch("/api/settings").then((r) => r.json());
+          if (res.success && res.settings) {
+            setAdminSettings({
+              framePdfUrl: res.settings.framePdfUrl || "",
+              useFrameDefault: res.settings.useFrameDefault ?? true,
+              companyName: res.settings.companyName || "",
+              email: res.settings.email || "",
+              mobileNumber: res.settings.mobileNumber || "",
+              address: res.settings.address || null,
+            });
+          }
         }
       } catch (err) {
         console.error("Failed to load admin settings in test-report page:", err);
@@ -616,19 +637,35 @@ export default function TestReportPage() {
   // Delete Registration
   const handleDeleteRegistration = async () => {
     handleCloseMenu();
+    if (!selectedReg) return;
     if (!window.confirm(`Are you sure you want to delete patient registration ${selectedReg.regNo} (${selectedReg.name})?`)) {
       return;
     }
     try {
+      if (typeof navigator !== "undefined" && !navigator.onLine) {
+        await db.deleteOffline("registrations", selectedReg.id);
+        showToast("Registration deleted locally (Offline)! Will sync when connected.", "success");
+        loadData();
+        return;
+      }
+
       const res = await fetch(`/api/registrations/${selectedReg.id}`, { method: "DELETE" }).then((r) => r.json());
       if (res.success) {
-        showToast(res.message, "success");
+        await db.deleteOffline("registrations", selectedReg.id);
+        showToast(res.message || "Registration deleted successfully", "success");
         loadData();
       } else {
         showToast(res.message, "error");
       }
     } catch (err) {
-      showToast(err.message || "Failed to delete registration", "error");
+      console.warn("Delete network failed, performing offline delete:", err);
+      try {
+        await db.deleteOffline("registrations", selectedReg.id);
+        showToast("Network failed: Registration deleted locally (Offline).", "warning");
+        loadData();
+      } catch (dbErr) {
+        showToast(err.message || "Failed to delete registration", "error");
+      }
     }
   };
 
@@ -649,13 +686,16 @@ export default function TestReportPage() {
     const regId = selectedReg.id;
     handleCloseMenu();
     try {
-      const res = await fetch(`/api/registrations/${regId}/samples`).then((r) => r.json());
-      if (res.success) {
-        const rows = res.registration.tests.map((rt) => ({
-          testId: rt.test.id,
-          testName: rt.test.name,
-          sampleStatus: rt.sampleStatus,
-          sampleBarcode: rt.sampleBarcode || selectedReg.barcode?.replace(/^,\s*/, "")?.split(" ")?.[0] || "",
+      // 1. Read directly from local registration first (0ms latency, works offline & online)
+      const localReg = await db.registrations.get(regId) || selectedReg;
+      const regTests = Array.isArray(localReg?.tests) ? localReg.tests : [];
+
+      if (regTests.length > 0) {
+        const rows = regTests.map((rt) => ({
+          testId: rt.testId || rt.test?.id || rt.id,
+          testName: rt.test?.name || rt.name || "Test",
+          sampleStatus: rt.sampleStatus || "Sample Collected",
+          sampleBarcode: rt.sampleBarcode || localReg.barcode?.replace(/^,\s*/, "")?.split(" ")?.[0] || "",
           sampleRemark: rt.sampleRemark || "",
           sendTo: rt.sendTo || "-NA-",
           expense: rt.expense || 0,
@@ -666,8 +706,29 @@ export default function TestReportPage() {
         }));
         setSampleRows(rows);
         setSampleDialogOpen(true);
+      } else if (typeof navigator !== "undefined" && navigator.onLine) {
+        const res = await fetch(`/api/registrations/${regId}/samples`).then((r) => r.json());
+        if (res.success && res.registration) {
+          const rows = (res.registration.tests || []).map((rt) => ({
+            testId: rt.test?.id || rt.testId,
+            testName: rt.test?.name || rt.name,
+            sampleStatus: rt.sampleStatus,
+            sampleBarcode: rt.sampleBarcode || selectedReg.barcode?.replace(/^,\s*/, "")?.split(" ")?.[0] || "",
+            sampleRemark: rt.sampleRemark || "",
+            sendTo: rt.sendTo || "-NA-",
+            expense: rt.expense || 0,
+            assessNo: rt.assessNo || "",
+            pathologist: rt.pathologist || "-NA-",
+            collectedBy: rt.collectedBy || "-NA-",
+            product: rt.product || "-NA-"
+          }));
+          setSampleRows(rows);
+          setSampleDialogOpen(true);
+        } else {
+          showToast(res.message || "No tests found for this registration", "error");
+        }
       } else {
-        showToast(res.message, "error");
+        showToast("No tests found for this registration", "warning");
       }
     } catch (err) {
       showToast(err.message || "Failed to load sample details", "error");
@@ -683,20 +744,58 @@ export default function TestReportPage() {
   const handleSaveSamples = async () => {
     setSampleSaving(true);
     try {
+      // 1. Update IndexedDB registration record directly
+      const regId = selectedReg.id;
+      const localReg = await db.registrations.get(regId);
+      if (localReg) {
+        const updatedTests = (localReg.tests || []).map((t) => {
+          const matchingSample = sampleRows.find((s) => s.testId === (t.testId || t.test?.id || t.id));
+          if (matchingSample) {
+            return {
+              ...t,
+              sampleStatus: matchingSample.sampleStatus,
+              sampleBarcode: matchingSample.sampleBarcode,
+              sampleRemark: matchingSample.sampleRemark,
+              sendTo: matchingSample.sendTo,
+              expense: matchingSample.expense,
+              assessNo: matchingSample.assessNo,
+              pathologist: matchingSample.pathologist,
+              collectedBy: matchingSample.collectedBy,
+              product: matchingSample.product,
+            };
+          }
+          return t;
+        });
+
+        await db.updateOffline("registrations", regId, { tests: updatedTests });
+      }
+
+      if (typeof navigator !== "undefined" && !navigator.onLine) {
+        showToast("Sample details saved locally (Offline)! Will sync when connected.", "success");
+        setSampleDialogOpen(false);
+        loadData();
+        return;
+      }
+
       const res = await fetch(`/api/registrations/${selectedReg.id}/samples`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(sampleRows),
       }).then((r) => r.json());
+
       if (res.success) {
-        showToast(res.message, "success");
+        showToast(res.message || "Sample details updated successfully!", "success");
         setSampleDialogOpen(false);
         loadData();
       } else {
-        showToast(res.message, "error");
+        showToast(res.message || "Saved locally.", "info");
+        setSampleDialogOpen(false);
+        loadData();
       }
     } catch (err) {
-      showToast(err.message || "Failed to save sample details", "error");
+      showToast("Saved locally (Offline).", "warning");
+      setSampleDialogOpen(false);
+      loadData();
     } finally {
       setSampleSaving(false);
     }

@@ -12,6 +12,14 @@ export default function DashboardErrorBoundary({ error, reset }) {
 
   const isOffline = typeof navigator !== "undefined" && !navigator.onLine;
 
+  const handleReload = () => {
+    if (typeof window !== "undefined") {
+      window.location.reload();
+    } else {
+      reset();
+    }
+  };
+
   return (
     <Box
       sx={{
@@ -40,8 +48,8 @@ export default function DashboardErrorBoundary({ error, reset }) {
             width: 64,
             height: 64,
             borderRadius: "50%",
-            bgcolor: isOffline ? "#fef3c7" : "#fee2e2",
-            color: isOffline ? "#d97706" : "#dc2626",
+            bgcolor: isOffline ? "#ccfbf1" : "#fee2e2",
+            color: isOffline ? "#0f766e" : "#dc2626",
             display: "flex",
             alignItems: "center",
             justifyContent: "center",
@@ -53,24 +61,24 @@ export default function DashboardErrorBoundary({ error, reset }) {
         </Box>
 
         <Typography variant="h6" sx={{ fontWeight: 800, color: "#0f172a", mb: 1 }}>
-          {isOffline ? "You are currently offline" : "Something went wrong"}
+          {isOffline ? "Offline Mode (IndexedDB Active)" : "Something went wrong"}
         </Typography>
 
         <Typography variant="body2" sx={{ color: "#64748b", mb: 3, lineHeight: 1.6 }}>
           {isOffline
-            ? "Your local data is safely preserved in IndexedDB. You can continue working on cached laboratory records."
+            ? "Your laboratory data is safely stored in local IndexedDB. You can continue creating registrations, entering test results, and printing reports."
             : error?.message || "An unexpected error occurred while loading this view."}
         </Typography>
 
-        <Box sx={{ display: "flex", gap: 1.5, justifyContent: "center" }}>
+        <Box sx={{ display: "flex", gap: 1.5, justifyContent: "center", flexWrap: "wrap" }}>
           <Button
             variant="contained"
             color="primary"
             startIcon={<RefreshIcon />}
-            onClick={() => reset()}
+            onClick={handleReload}
             sx={{ fontWeight: 600, textTransform: "none", px: 2.5 }}
           >
-            Try Again
+            Reload Local Data
           </Button>
 
           <Button
@@ -81,6 +89,15 @@ export default function DashboardErrorBoundary({ error, reset }) {
             sx={{ fontWeight: 600, textTransform: "none", px: 2 }}
           >
             Registration
+          </Button>
+
+          <Button
+            component={Link}
+            href="/test-report"
+            variant="outlined"
+            sx={{ fontWeight: 600, textTransform: "none", px: 2 }}
+          >
+            Test Reports
           </Button>
         </Box>
       </Paper>

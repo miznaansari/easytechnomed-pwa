@@ -30,7 +30,7 @@ import {
 } from "@mui/material";
 import { Add as AddIcon, People as PeopleIcon } from "@mui/icons-material";
 import { toast } from "sonner";
-import { useAdminPermissions } from "@/lib/clientAuth";
+import db from "@/lib/offline/db";
 
 export default function WorkspaceMembersPage() {
   const { hasPermission } = useAdminPermissions();
@@ -53,30 +53,37 @@ export default function WorkspaceMembersPage() {
   const fetchData = async () => {
     setLoading(true);
     try {
-      const [mRes, rRes, pRes] = await Promise.all([
-        fetch("/api/members").then((r) => r.json()),
-        fetch("/api/roles").then((r) => r.json()),
-        fetch("/api/profile").then((r) => r.json()).catch(() => ({}))
+      const [cachedAdmins, cachedSession] = await Promise.all([
+        db.admins.toArray(),
+        db.offlineSession.get(1),
       ]);
-
-      if (mRes.success) {
-        setMembers(mRes.members);
-      } else {
-        toast.error(mRes.error || "Failed to load workspace members.");
+      const adminData = cachedAdmins?.[0] || cachedSession?.admin;
+      if (adminData) {
+        setCurrentAdmin(adminData);
+        if (cachedAdmins.length > 0) {
+          setMembers(cachedAdmins);
+        }
       }
 
-      if (rRes.success) {
-        setRoles(rRes.roles);
-      } else {
-        toast.error(rRes.error || "Failed to load roles list.");
-      }
+      if (typeof navigator !== "undefined" && navigator.onLine) {
+        const [mRes, rRes, pRes] = await Promise.all([
+          fetch("/api/members").then((r) => r.json()).catch(() => ({})),
+          fetch("/api/roles").then((r) => r.json()).catch(() => ({})),
+          fetch("/api/profile").then((r) => r.json()).catch(() => ({})),
+        ]);
 
-      if (pRes.success && pRes.admin) {
-        setCurrentAdmin(pRes.admin);
+        if (mRes.success) {
+          setMembers(mRes.members);
+        }
+        if (rRes.success) {
+          setRoles(rRes.roles);
+        }
+        if (pRes.success && pRes.admin) {
+          setCurrentAdmin(pRes.admin);
+        }
       }
     } catch (err) {
       console.error(err);
-      toast.error("Failed to load workspace data.");
     } finally {
       setLoading(false);
     }

@@ -109,6 +109,24 @@ function SettingsContent({ defaultSection = "profile" }) {
 
     setUpdatingProfile(true);
     try {
+      // 1. Update local IndexedDB admin profile
+      const cachedAdmins = await db.admins.toArray();
+      if (cachedAdmins.length > 0) {
+        await db.updateOffline("admins", cachedAdmins[0].id, {
+          name: profileName,
+          companyName: companyName || null,
+          mobileNumber: mobileNumber || null,
+        });
+      }
+
+      if (typeof navigator !== "undefined" && !navigator.onLine) {
+        showToast("Profile updated locally (Offline)! Will sync when connected.", "success");
+        setOldPassword("");
+        setNewPassword("");
+        setConfirmPassword("");
+        return;
+      }
+
       const res = await fetch("/api/profile", {
         method: "PUT",
         headers: { "Content-Type": "application/json" },
@@ -128,11 +146,11 @@ function SettingsContent({ defaultSection = "profile" }) {
         setNewPassword("");
         setConfirmPassword("");
       } else {
-        showToast(res.message || "Failed to update profile.", "error");
+        showToast(res.message || "Saved locally.", "info");
       }
     } catch (err) {
-      console.error(err);
-      showToast("An error occurred while updating profile.", "error");
+      console.warn("Profile API update failed, saved locally:", err);
+      showToast("Profile updated locally (Offline).", "warning");
     } finally {
       setUpdatingProfile(false);
     }

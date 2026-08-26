@@ -35,6 +35,7 @@ import {
   Save as SaveIcon,
   Print as PrintIcon
 } from "@mui/icons-material";
+import db from "@/lib/offline/db";
 import MoneyReciptMobile from "./MoneyReciptMobile";
 
 export default function MoneyRecipt({ open, onClose, selectedReg, onSaveSuccess, canWrite }) {
@@ -63,30 +64,46 @@ export default function MoneyRecipt({ open, onClose, selectedReg, onSaveSuccess,
   const loadReceiptDetails = async () => {
     setLoadingReceipt(true);
     try {
-      const res = await fetch(`/api/registrations/${selectedReg.id}`).then((r) => r.json());
-      if (res.success && res.registration) {
-        setSelectedRegistration(res.registration);
+      // 1. Read directly from IndexedDB (0ms latency, works offline & online)
+      const localReg = (selectedReg?.id ? await db.registrations.get(selectedReg.id) : null) || selectedReg;
+      if (localReg) {
+        setSelectedRegistration(localReg);
 
         // Initialize inputs
-        const total = parseFloat(res.registration.totalAmount || 0);
-        const discount = parseFloat(res.registration.discountAmount || 0);
-        const alreadyPaid = parseFloat(res.registration.receivedAmount || 0);
+        const total = parseFloat(localReg.totalAmount || 0) + parseFloat(localReg.collectionCharge || 0);
+        const discount = parseFloat(localReg.discountAmount || 0);
+        const alreadyPaid = parseFloat(localReg.receivedAmount || 0);
         const remainingDue = Math.max(0, total - discount - alreadyPaid);
 
         setDiscountInput(discount);
-        setDiscountPercentInput(parseFloat(res.registration.discountPercent || 0));
-        setReceivedInput(remainingDue); // default received input to remaining due
-        setPaymentModeInput(res.registration.paymentMode || "Cash");
-        setPaymentRefNoInput(res.registration.paymentRefNo || "");
+        setDiscountPercentInput(parseFloat(localReg.discountPercent || 0));
+        setReceivedInput(remainingDue);
+        setPaymentModeInput(localReg.paymentMode || "Cash");
+        setPaymentRefNoInput(localReg.paymentRefNo || "");
         setRemarkInput("");
-      } else {
-        showToast(res.error || "Failed to load registration details.", "error");
-        setTimeout(onClose, 1500);
+      }
+
+      if (typeof navigator !== "undefined" && navigator.onLine && selectedReg?.id) {
+        const res = await fetch(`/api/registrations/${selectedReg.id}`).then((r) => r.json());
+        if (res.success && res.registration) {
+          setSelectedRegistration(res.registration);
+          const total = parseFloat(res.registration.totalAmount || 0) + parseFloat(res.registration.collectionCharge || 0);
+          const discount = parseFloat(res.registration.discountAmount || 0);
+          const alreadyPaid = parseFloat(res.registration.receivedAmount || 0);
+          const remainingDue = Math.max(0, total - discount - alreadyPaid);
+
+          setDiscountInput(discount);
+          setDiscountPercentInput(parseFloat(res.registration.discountPercent || 0));
+          setReceivedInput(remainingDue);
+          setPaymentModeInput(res.registration.paymentMode || "Cash");
+          setPaymentRefNoInput(res.registration.paymentRefNo || "");
+        }
       }
     } catch (err) {
       console.error(err);
-      showToast("Error loading registration details.", "error");
-      setTimeout(onClose, 1500);
+      if (!selectedRegistration && selectedReg) {
+        setSelectedRegistration(selectedReg);
+      }
     } finally {
       setLoadingReceipt(false);
     }
@@ -181,14 +198,47 @@ export default function MoneyRecipt({ open, onClose, selectedReg, onSaveSuccess,
     }
 
     setSavingPayment(true);
+    const newTotalReceived = alreadyPaid + enteredReceived;
+    const newDue = Math.max(0, netBill - newTotalReceived);
+    const regId = selectedRegistration.id;
+
     try {
+      // 1. Record payment in local IndexedDB stores
+      if (enteredReceived > 0) {
+        await db.insertOffline("registrationPayments", {
+          registrationId: regId,
+          amount: enteredReceived,
+          mode: paymentModeInput,
+          refNo: paymentRefNoInput,
+          remark: remarkInput,
+        });
+      }
+
+      await db.updateOffline("registrations", regId, {
+        receivedAmount: newTotalReceived,
+        discountAmount: currentDiscount,
+        discountPercent: parseFloat(discountPercentInput) || 0,
+        dueAmount: newDue,
+        paymentMode: paymentModeInput,
+        paymentRefNo: paymentRefNoInput,
+      });
+
+      if (typeof navigator !== "undefined" && !navigator.onLine) {
+        showToast("Payment recorded locally (Offline)! Will sync when connected.", "success");
+        setTimeout(() => {
+          onClose();
+          if (onSaveSuccess) onSaveSuccess();
+        }, 800);
+        return;
+      }
+
       const res = await fetch(`/api/registrations/${selectedRegistration.id}/payment`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
           received: enteredReceived,
           discountPercent: parseFloat(discountPercentInput) || 0,
-          discountAmount: parseFloat(discountInput) || 0,
+          discountAmount: currentDiscount,
           paymentMode: paymentModeInput,
           paymentRefNo: paymentRefNoInput,
           remark: remarkInput,
@@ -200,13 +250,21 @@ export default function MoneyRecipt({ open, onClose, selectedReg, onSaveSuccess,
         setTimeout(() => {
           onClose();
           if (onSaveSuccess) onSaveSuccess();
-        }, 1000);
+        }, 800);
       } else {
-        showToast(res.error || res.message || "Failed to record payment.", "error");
+        showToast("Payment saved locally.", "info");
+        setTimeout(() => {
+          onClose();
+          if (onSaveSuccess) onSaveSuccess();
+        }, 800);
       }
     } catch (err) {
-      console.error(err);
-      showToast("An error occurred while saving payment.", "error");
+      console.warn("Payment network request failed, saved locally:", err);
+      showToast("Saved payment locally (Offline).", "warning");
+      setTimeout(() => {
+        onClose();
+        if (onSaveSuccess) onSaveSuccess();
+      }, 800);
     } finally {
       setSavingPayment(false);
     }

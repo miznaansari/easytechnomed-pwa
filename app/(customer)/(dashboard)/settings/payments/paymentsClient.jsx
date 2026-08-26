@@ -29,6 +29,7 @@ import {
   CalendarMonth as CalendarIcon,
   Download as DownloadIcon,
 } from "@mui/icons-material";
+import db from "@/lib/offline/db";
 import { toast } from "sonner";
 
 export default function PaymentsClient() {
@@ -41,17 +42,25 @@ export default function PaymentsClient() {
     async function loadPayments() {
       setLoading(true);
       try {
-        const res = await fetch("/api/settings/payments").then((r) => r.json());
-        if (res.success) {
-          setPayments(res.payments || []);
-          setWorkspace(res.workspace || null);
-          setTotalPaid(res.totalPaid || 0);
-        } else {
-          toast.error(res.error || "Failed to load subscription history.");
+        const [cachedWorkspaces, cachedAdmins] = await Promise.all([
+          db.workspaces.toArray(),
+          db.admins.toArray(),
+        ]);
+        const ws = cachedWorkspaces?.[0] || cachedAdmins?.[0]?.workspace;
+        if (ws) {
+          setWorkspace(ws);
+        }
+
+        if (typeof navigator !== "undefined" && navigator.onLine) {
+          const res = await fetch("/api/settings/payments").then((r) => r.json());
+          if (res.success) {
+            setPayments(res.payments || []);
+            if (res.workspace) setWorkspace(res.workspace);
+            setTotalPaid(res.totalPaid || 0);
+          }
         }
       } catch (err) {
         console.error(err);
-        toast.error("An error occurred while loading subscription data.");
       } finally {
         setLoading(false);
       }

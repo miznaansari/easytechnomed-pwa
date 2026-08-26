@@ -102,13 +102,16 @@ self.addEventListener("fetch", (event) => {
           const cached = await caches.match(event.request, { ignoreSearch: true });
           if (cached) return cached;
 
-          const pathnameCached = await caches.match(url.pathname);
+          const pathnameCached = await caches.match(url.pathname, { ignoreSearch: true });
           if (pathnameCached) return pathnameCached;
 
-          // If no cached RSC found, return an empty 200 response so Next.js client router doesn't crash with "This page couldn't load"
+          const dashboardRsc = await caches.match("/dashboard", { ignoreSearch: true });
+          if (dashboardRsc) return dashboardRsc;
+
           return new Response("", {
-            status: 200,
-            headers: { "Content-Type": "text/x-component" },
+            status: 503,
+            statusText: "Offline",
+            headers: { "Content-Type": "text/plain" },
           });
         })
     );

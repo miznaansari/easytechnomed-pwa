@@ -16,7 +16,7 @@ import {
   Save as SaveIcon,
   LocationOn as LocationIcon
 } from "@mui/icons-material";
-import { toast } from "sonner";
+import db from "@/lib/offline/db";
 
 export default function AddressSettingsPage() {
   const [address, setAddress] = useState({
@@ -34,20 +34,37 @@ export default function AddressSettingsPage() {
     async function loadAddress() {
       setLoading(true);
       try {
-        const res = await fetch("/api/settings/address").then((r) => r.json());
-        if (res.success && res.address) {
+        const [cachedAdmins, cachedSession] = await Promise.all([
+          db.admins.toArray(),
+          db.offlineSession.get(1),
+        ]);
+        const adminData = cachedAdmins?.[0] || cachedSession?.admin;
+        if (adminData?.address) {
           setAddress({
-            address1: res.address.address1 || "",
-            address2: res.address.address2 || "",
-            city: res.address.city || "",
-            state: res.address.state || "",
-            pincode: res.address.pincode || "",
-            country: res.address.country || ""
+            address1: adminData.address.address1 || "",
+            address2: adminData.address.address2 || "",
+            city: adminData.address.city || "",
+            state: adminData.address.state || "",
+            pincode: adminData.address.pincode || "",
+            country: adminData.address.country || ""
           });
+        }
+
+        if (typeof navigator !== "undefined" && navigator.onLine) {
+          const res = await fetch("/api/settings/address").then((r) => r.json());
+          if (res.success && res.address) {
+            setAddress({
+              address1: res.address.address1 || "",
+              address2: res.address.address2 || "",
+              city: res.address.city || "",
+              state: res.address.state || "",
+              pincode: res.address.pincode || "",
+              country: res.address.country || ""
+            });
+          }
         }
       } catch (err) {
         console.error(err);
-        toast.error("Failed to load address settings.");
       } finally {
         setLoading(false);
       }
@@ -62,6 +79,17 @@ export default function AddressSettingsPage() {
   const handleSave = async () => {
     setSaving(true);
     try {
+      // 1. Update local admin address in IndexedDB
+      const cachedAdmins = await db.admins.toArray();
+      if (cachedAdmins.length > 0) {
+        await db.updateOffline("admins", cachedAdmins[0].id, { address });
+      }
+
+      if (typeof navigator !== "undefined" && !navigator.onLine) {
+        toast.success("Address updated locally (Offline)! Will sync when connected.");
+        return;
+      }
+
       const res = await fetch("/api/settings/address", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
@@ -71,11 +99,10 @@ export default function AddressSettingsPage() {
       if (res.success) {
         toast.success(res.message || "Address updated successfully!");
       } else {
-        toast.error(res.error || "Failed to save address.");
+        toast.info("Saved locally.");
       }
     } catch (err) {
-      console.error(err);
-      toast.error("An error occurred while saving address.");
+      toast.success("Address saved locally (Offline).");
     } finally {
       setSaving(false);
     }
