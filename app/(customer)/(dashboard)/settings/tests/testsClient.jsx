@@ -2,6 +2,8 @@
 
 import React, { useState, useEffect } from "react";
 import db from "@/lib/offline/db";
+import { useSync } from "@/hooks/useSync";
+import { syncManager } from "@/lib/offline/sync/syncManager";
 import {
   Box,
   Card,
@@ -118,21 +120,63 @@ export default function TestsClient() {
 
   const [toast, setToast] = useState({ open: false, message: "", severity: "success" });
 
-  useEffect(() => {
-    async function loadCatalogs() {
-      try {
-        const [cachedTests, cachedParams] = await Promise.all([
-          db.tests.filter((t) => !t.isDeleted).toArray(),
-          db.parameters.toArray(),
-        ]);
-        if (cachedTests.length > 0) setTestCatalog(cachedTests);
-        if (cachedParams.length > 0) setParameterDictionary(cachedParams);
-      } catch (err) {
-        console.error("Error loading catalogs from IndexedDB:", err);
-      }
+  const { isSyncing, lastSyncTime } = useSync();
+  const isSyncingPrevRef = React.useRef(false);
+
+  const loadCatalogs = async () => {
+    try {
+      const [cachedTests, cachedParams] = await Promise.all([
+        db.tests.filter((t) => !t.isDeleted).toArray(),
+        db.parameters.toArray(),
+      ]);
+      if (cachedTests.length > 0) setTestCatalog(cachedTests);
+      if (cachedParams.length > 0) setParameterDictionary(cachedParams);
+    } catch (err) {
+      console.error("Error loading catalogs from IndexedDB:", err);
     }
+  };
+
+  useEffect(() => {
     loadCatalogs();
   }, []);
+
+  // Real-time sync reload
+  useEffect(() => {
+    if (isSyncingPrevRef.current && !isSyncing) {
+      loadCatalogs();
+      fetchTests(testPage, testSearchQuery);
+    }
+    isSyncingPrevRef.current = isSyncing;
+  }, [isSyncing]);
+
+  useEffect(() => {
+    if (lastSyncTime) {
+      loadCatalogs();
+      fetchTests(testPage, testSearchQuery);
+    }
+  }, [lastSyncTime]);
+
+  useEffect(() => {
+    const handleSync = () => {
+      loadCatalogs();
+      fetchTests(testPage, testSearchQuery);
+    };
+    window.addEventListener("easytechnomed:sync-complete", handleSync);
+    window.addEventListener("easytechnomed:sync-state-change", handleSync);
+
+    const unsubscribe = syncManager.subscribe((state) => {
+      if (!state.isSyncing && state.lastSyncTime) {
+        loadCatalogs();
+        fetchTests(testPage, testSearchQuery);
+      }
+    });
+
+    return () => {
+      window.removeEventListener("easytechnomed:sync-complete", handleSync);
+      window.removeEventListener("easytechnomed:sync-state-change", handleSync);
+      unsubscribe();
+    };
+  }, [testPage, testSearchQuery]);
 
   const autocompleteOptions = React.useMemo(() => [
     ...testCatalog.map((t) => ({ type: "test", id: t.id, name: t.name, parameters: t.parameters || [] })),
@@ -227,19 +271,58 @@ export default function TestsClient() {
 
     setIsAddingTest(true);
     try {
+      const newTestPayload = {
+        name: newTestName.trim(),
+        code: newTestCode.trim() || null,
+        price: parseFloat(newTestPrice),
+        outsourceCost: newOutsourceCost !== "" ? parseFloat(newOutsourceCost) || 0 : 0,
+        specialIncentivePercent: newSpecialIncentive !== "" && !isNaN(parseFloat(newSpecialIncentive)) ? parseFloat(newSpecialIncentive) : null,
+      };
+
+      if (typeof navigator !== "undefined" && !navigator.onLine) {
+        const newId = Date.now();
+        const newTest = {
+          id: newId,
+          ...newTestPayload,
+          code: newTestPayload.code || `T${newId.toString().slice(-4)}`,
+          isDirty: true,
+          isModified: false,
+          isError: false,
+          parameters: [],
+        };
+        await db.tests.put(newTest);
+        showToast("Test created locally (Offline).", "success");
+        fetchTests(testPage, testSearchQuery);
+        setOpenAddTestDialog(false);
+        setNewTestName("");
+        setNewTestCode("");
+        setNewTestPrice("");
+        setNewOutsourceCost("0");
+        setNewSpecialIncentive("");
+
+        setParameterizingTest(newTest);
+        setParametersList([
+          {
+            key: `new-${Date.now()}`,
+            name: "Result",
+            unit: "",
+            normalRangeDefault: "As per report",
+            valueType: "NUMERIC",
+          }
+        ]);
+        setExpandedParams({});
+        setOpenParamsDialog(true);
+        return;
+      }
+
       const res = await fetch("/api/tests", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-          name: newTestName.trim(),
-          code: newTestCode.trim() || null,
-          price: parseFloat(newTestPrice),
-          outsourceCost: newOutsourceCost !== "" ? parseFloat(newOutsourceCost) || 0 : 0,
-          specialIncentivePercent: newSpecialIncentive !== "" && !isNaN(parseFloat(newSpecialIncentive)) ? parseFloat(newSpecialIncentive) : null,
-        }),
+        body: JSON.stringify(newTestPayload),
       }).then((r) => r.json());
 
-      if (res.success) {
+      if (res.success && res.test) {
+        await db.tests.put({ ...res.test, isDirty: false, isModified: false, isError: false });
         showToast(res.message || "Test added successfully! Please configure its parameters.", "success");
         fetchTests(testPage, testSearchQuery);
         setOpenAddTestDialog(false);
@@ -252,20 +335,13 @@ export default function TestsClient() {
         // Open parameters config immediately as the next step
         const parsedTest = res.test;
         setParameterizingTest(parsedTest);
-        setParametersList(parsedTest.parameters || [
+        setParametersList(parsedTest.parameters && parsedTest.parameters.length > 0 ? parsedTest.parameters : [
           {
+            key: `new-${Date.now()}`,
             name: "Result",
             unit: "",
             normalRangeDefault: "As per report",
-            minValMale: "",
-            maxValMale: "",
-            normalRangeMale: "",
-            minValFemale: "",
-            maxValFemale: "",
-            normalRangeFemale: "",
-            minValBaby: "",
-            maxValBaby: "",
-            normalRangeBaby: ""
+            valueType: "NUMERIC",
           }
         ]);
         setExpandedParams({});
@@ -294,19 +370,40 @@ export default function TestsClient() {
 
     setIsUpdatingPrice(true);
     try {
+      const updatedFields = {
+        name: editingName.trim(),
+        price: parseFloat(editingPrice),
+        outsourceCost: editingOutsourceCost !== "" ? parseFloat(editingOutsourceCost) || 0 : 0,
+        specialIncentivePercent: editingSpecialIncentive !== "" && !isNaN(parseFloat(editingSpecialIncentive)) ? parseFloat(editingSpecialIncentive) : null,
+      };
+
+      if (typeof navigator !== "undefined" && !navigator.onLine) {
+        await db.tests.update(editingTest.id, {
+          ...updatedFields,
+          isModified: true,
+        });
+        showToast("Test updated locally (Offline).", "success");
+        fetchTests(testPage, testSearchQuery);
+        setOpenEditPriceDialog(false);
+        setEditingTest(null);
+        return;
+      }
+
       const res = await fetch("/api/tests", {
         method: "PUT",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
           testId: editingTest.id,
-          price: parseFloat(editingPrice),
-          name: editingName.trim(),
-          outsourceCost: editingOutsourceCost !== "" ? parseFloat(editingOutsourceCost) || 0 : 0,
-          specialIncentivePercent: editingSpecialIncentive !== "" && !isNaN(parseFloat(editingSpecialIncentive)) ? parseFloat(editingSpecialIncentive) : null,
+          ...updatedFields,
         }),
       }).then((r) => r.json());
 
       if (res.success) {
+        await db.tests.update(editingTest.id, {
+          ...updatedFields,
+          isModified: false,
+          isDirty: false,
+        });
         showToast(res.message || "Test updated successfully!", "success");
         fetchTests(testPage, testSearchQuery);
         setOpenEditPriceDialog(false);
@@ -605,32 +702,64 @@ export default function TestsClient() {
 
     setSavingParams(true);
     try {
+      const formattedList = parametersList.map((p, idx) => ({
+        key: p.key,
+        id: p.id,
+        parameterId: p.parameterId,
+        parentId: p.parentId,
+        parentKey: p.parentKey,
+        name: p.name.trim(),
+        order: idx + 1,
+        isHeader: p.isHeader || false,
+        unit: p.unit || "",
+        valueType: p.valueType || "NUMERIC",
+        options: p.options || null,
+        normalRangeDefault: p.normalRangeDefault || "",
+        minValMale: p.minValMale !== "" ? parseFloat(p.minValMale) : null,
+        maxValMale: p.maxValMale !== "" ? parseFloat(p.maxValMale) : null,
+        normalRangeMale: p.normalRangeMale || "",
+        minValFemale: p.minValFemale !== "" ? parseFloat(p.minValFemale) : null,
+        maxValFemale: p.maxValFemale !== "" ? parseFloat(p.maxValFemale) : null,
+        normalRangeFemale: p.normalRangeFemale || "",
+        minValBaby: p.minValBaby !== "" ? parseFloat(p.minValBaby) : null,
+        maxValBaby: p.maxValBaby !== "" ? parseFloat(p.maxValBaby) : null,
+        normalRangeBaby: p.normalRangeBaby || "",
+      }));
+
+      // Cache locally into IndexedDB testParameters and tests
+      const testParamsToPut = formattedList.map((tp, idx) => ({
+        ...tp,
+        id: tp.id || (Date.now() + idx),
+        testId: parameterizingTest.id,
+        isDirty: false,
+        isModified: false,
+        isError: false,
+      }));
+      await db.testParameters.where("testId").equals(parameterizingTest.id).delete();
+      await db.testParameters.bulkPut(testParamsToPut);
+
+      const cachedTest = await db.tests.get(parameterizingTest.id);
+      if (cachedTest) {
+        await db.tests.update(parameterizingTest.id, {
+          parameters: testParamsToPut,
+        });
+      }
+
+      if (typeof navigator !== "undefined" && !navigator.onLine) {
+        showToast("Parameters saved locally (Offline).", "success");
+        fetchTests(testPage, testSearchQuery);
+        setOpenParamsDialog(false);
+        setParameterizingTest(null);
+        setParametersList([]);
+        setExpandedParams({});
+        return;
+      }
+
       const res = await fetch(`/api/registrations/${parameterizingTest.id}/parameters`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
-          parametersList: parametersList.map((p) => ({
-            key: p.key,
-            id: p.id,
-            parameterId: p.parameterId,
-            parentId: p.parentId,
-            parentKey: p.parentKey,
-            name: p.name.trim(),
-            isHeader: p.isHeader || false,
-            unit: p.unit || "",
-            valueType: p.valueType || "NUMERIC",
-            options: p.options || null,
-            normalRangeDefault: p.normalRangeDefault || "",
-            minValMale: p.minValMale !== "" ? parseFloat(p.minValMale) : null,
-            maxValMale: p.maxValMale !== "" ? parseFloat(p.maxValMale) : null,
-            normalRangeMale: p.normalRangeMale || "",
-            minValFemale: p.minValFemale !== "" ? parseFloat(p.minValFemale) : null,
-            maxValFemale: p.maxValFemale !== "" ? parseFloat(p.maxValFemale) : null,
-            normalRangeFemale: p.normalRangeFemale || "",
-            minValBaby: p.minValBaby !== "" ? parseFloat(p.minValBaby) : null,
-            maxValBaby: p.maxValBaby !== "" ? parseFloat(p.maxValBaby) : null,
-            normalRangeBaby: p.normalRangeBaby || "",
-          })),
+          parametersList: formattedList,
         }),
       }).then((r) => r.json());
 

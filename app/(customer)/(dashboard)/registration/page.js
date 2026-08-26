@@ -861,22 +861,53 @@ _Thank you for choosing us for your health diagnostics!_`;
       const targetInput = e.currentTarget;
       setIsLookingUpMobile(true);
       try {
-        const res = await fetch(`/api/registrations/by-mobile?mobileNo=${val}`).then((r) => r.json());
-        if (res.success && res.patients && res.patients.length > 0) {
-          if (res.patients.length === 1) {
-            // Exactly one patient, prefill immediately
-            handlePrefillPatient(res.patients[0]);
-          } else {
-            // Multiple patients, open dropdown anchored to the input field
-            setMatchingPatients(res.patients);
-            setMobileAnchorEl(targetInput);
+        // 1. Query directly from IndexedDB (0ms latency, works offline & online)
+        const matchingRegs = await db.registrations
+          .filter((r) => !r.isDeleted && r.mobileNo === val)
+          .toArray();
+
+        const patientsMap = new Map();
+        for (const reg of matchingRegs) {
+          const key = `${(reg.name || "").toLowerCase().trim()}_${reg.gender}_${reg.age}_${reg.ageUnit}`;
+          if (!patientsMap.has(key)) {
+            patientsMap.set(key, {
+              title: reg.title || "Mr",
+              name: reg.name || "",
+              gender: reg.gender || "Male",
+              age: reg.age,
+              ageUnit: reg.ageUnit || "Year",
+              city: reg.city || "",
+            });
           }
+        }
+
+        let patients = Array.from(patientsMap.values());
+
+        // 2. If not in local IndexedDB and online, fallback to API
+        if (patients.length === 0 && typeof navigator !== "undefined" && navigator.onLine) {
+          try {
+            const res = await fetch(`/api/registrations/by-mobile?mobileNo=${val}`).then((r) => r.json());
+            if (res.success && Array.isArray(res.patients) && res.patients.length > 0) {
+              patients = res.patients;
+            }
+          } catch (fetchErr) {
+            console.warn("Mobile API lookup fallback error:", fetchErr);
+          }
+        }
+
+        if (patients.length === 1) {
+          // Exactly one patient, prefill immediately
+          handlePrefillPatient(patients[0]);
+        } else if (patients.length > 1) {
+          // Multiple patients, open dropdown anchored to the input field
+          setMatchingPatients(patients);
+          setMobileAnchorEl(targetInput);
         } else {
           // New number detected (no previous registrations), clear patient fields
           handleClearPatientFields();
         }
       } catch (err) {
-        console.error("Failed to lookup mobile number:", err);
+        console.error("Failed to lookup mobile number from IndexedDB:", err);
       } finally {
         setIsLookingUpMobile(false);
       }

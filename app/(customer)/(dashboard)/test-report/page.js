@@ -459,17 +459,13 @@ export default function TestReportPage() {
       // 1. Immediately query and filter directly from IndexedDB (0ms latency)
       let allLocal = await db.registrations.filter((r) => !r.isDeleted).toArray();
 
-      // If IndexedDB is empty and online, bootstrap recent data in background
+      // If IndexedDB is empty and online, bootstrap all data in background
       if (allLocal.length === 0 && typeof navigator !== "undefined" && navigator.onLine) {
         try {
-          const res = await fetch("/api/registrations?limit=100").then((r) => r.json()).catch(() => ({ success: false }));
-          if (res.success && Array.isArray(res.registrations)) {
-            const regsToPut = res.registrations.map((r) => ({ ...r, isDirty: false, isModified: false, isError: false }));
-            await db.registrations.bulkPut(regsToPut);
-            allLocal = await db.registrations.filter((r) => !r.isDeleted).toArray();
-          }
+          await syncManager.bootstrapInitialData();
+          allLocal = await db.registrations.filter((r) => !r.isDeleted).toArray();
         } catch (fetchErr) {
-          console.warn("[TestReport] Background fetch warning:", fetchErr);
+          console.warn("[TestReport] Background bootstrap warning:", fetchErr);
         }
       }
 
