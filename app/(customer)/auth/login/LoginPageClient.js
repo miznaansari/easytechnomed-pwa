@@ -34,12 +34,17 @@ export default function CustomerLoginPage() {
   const [identifierValue, setIdentifierValue] = useState("");
 
   React.useEffect(() => {
+    // If offline, immediately enter dashboard with 0 authentication barriers
+    if (typeof navigator !== "undefined" && !navigator.onLine) {
+      router.replace("/dashboard");
+      return;
+    }
+
     async function checkExistingAuth() {
       try {
-        const { getCachedSession, isLocalSessionValid } = await import("@/lib/auth/offlineAuth");
+        const { getCachedSession } = await import("@/lib/auth/offlineAuth");
         const cached = await getCachedSession();
-        const valid = await isLocalSessionValid();
-        if (cached && valid) {
+        if (cached) {
           router.replace("/dashboard");
         }
       } catch {}
@@ -62,21 +67,10 @@ export default function CustomerLoginPage() {
     const identifier = data.identifier.trim();
 
     try {
-      // 1. If currently offline, attempt offline login validation
+      // 1. If currently offline, directly enter dashboard without checking credentials
       if (typeof navigator !== "undefined" && !navigator.onLine) {
-        const { getCachedSession, isLocalSessionValid } = await import("@/lib/auth/offlineAuth");
-        const cached = await getCachedSession();
-        const valid = await isLocalSessionValid();
-
-        if (cached && valid) {
-          toast.success("Logged in with offline session! ⚡");
-          router.push("/dashboard");
-          return;
-        } else {
-          toast.error("No valid offline session found. Please connect to the internet to log in.");
-          setIsLoading(false);
-          return;
-        }
+        router.push("/dashboard");
+        return;
       }
 
       // 2. Online login attempt
@@ -101,20 +95,8 @@ export default function CustomerLoginPage() {
         setIsLoading(false);
       }
     } catch (error) {
-      // Fallback: If fetch failed due to network disruption, attempt cached session
-      try {
-        const { getCachedSession, isLocalSessionValid } = await import("@/lib/auth/offlineAuth");
-        const cached = await getCachedSession();
-        const valid = await isLocalSessionValid();
-        if (cached && valid) {
-          toast.info("Offline mode active - logged in using saved session.");
-          router.push("/dashboard");
-          return;
-        }
-      } catch (e) {}
-
-      toast.error("Network connection failed. Please check your internet or retry.");
-      setIsLoading(false);
+      // If network fails, directly enter dashboard
+      router.push("/dashboard");
     }
   };
 
@@ -219,14 +201,22 @@ export default function CustomerLoginPage() {
               </div>
 
               {/* Submit */}
-              <div className="space-y-4 pt-2">
+              <div className="space-y-3 pt-2">
                 <Button
                   type="submit"
                   className="w-full bg-slate-900 hover:bg-slate-800 text-white font-extrabold py-3.5 rounded-2xl transition-all duration-300 flex items-center justify-center gap-2 border-0 shadow-[0_10px_20px_rgba(15,23,42,0.15)] hover:shadow-[0_15px_25px_rgba(20,184,166,0.2)] transform hover:-translate-y-0.5"
                   isLoading={isLoading}
                 >
-                  Access Customer Portal
+                  Sign In Online
                   <ArrowRight className="h-4 w-4" />
+                </Button>
+
+                <Button
+                  type="button"
+                  onClick={() => router.push("/dashboard")}
+                  className="w-full bg-teal-600 hover:bg-teal-700 text-white font-bold py-3 rounded-2xl transition-all duration-300 flex items-center justify-center gap-2 border-0 shadow-sm"
+                >
+                  ⚡ Open Offline Dashboard (Direct IndexedDB)
                 </Button>
 
                 <div className="flex items-center justify-center w-full text-xs text-slate-500 pt-2 border-t border-slate-100">
