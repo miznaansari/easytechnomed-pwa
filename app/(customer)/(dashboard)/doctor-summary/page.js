@@ -53,6 +53,8 @@ import {
 } from "@mui/icons-material";
 import * as XLSX from "xlsx";
 import AddDoctorDrawer from "@/components/AddDoctorDrawer";
+import { useSync } from "@/hooks/useSync";
+import { syncManager } from "@/lib/offline/sync/syncManager";
 import db from "@/lib/offline/db";
 
 export default function DoctorSummaryPage() {
@@ -344,6 +346,43 @@ export default function DoctorSummaryPage() {
       setLoading(false);
     }
   };
+
+  const { isSyncing, lastSyncTime } = useSync();
+  const isSyncingPrevRef = React.useRef(false);
+
+  // Auto-reload data when sync finishes
+  useEffect(() => {
+    if (isSyncingPrevRef.current && !isSyncing) {
+      loadData();
+    }
+    isSyncingPrevRef.current = isSyncing;
+  }, [isSyncing]);
+
+  useEffect(() => {
+    if (lastSyncTime) {
+      loadData();
+    }
+  }, [lastSyncTime]);
+
+  useEffect(() => {
+    const handleSyncEvent = () => {
+      loadData();
+    };
+    window.addEventListener("easytechnomed:sync-complete", handleSyncEvent);
+    window.addEventListener("easytechnomed:sync-state-change", handleSyncEvent);
+
+    const unsubscribe = syncManager.subscribe((state) => {
+      if (!state.isSyncing && state.lastSyncTime) {
+        loadData();
+      }
+    });
+
+    return () => {
+      window.removeEventListener("easytechnomed:sync-complete", handleSyncEvent);
+      window.removeEventListener("easytechnomed:sync-state-change", handleSyncEvent);
+      unsubscribe();
+    };
+  }, []);
 
   useEffect(() => {
     loadData();

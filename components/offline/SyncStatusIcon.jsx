@@ -7,15 +7,38 @@ import {
   CloudUpload as PendingUploadIcon,
   Error as ErrorIcon,
   Schedule as PendingClockIcon,
+  Sync as SyncingIcon,
 } from "@mui/icons-material";
 
 export default function SyncStatusIcon({
   isDirty = false,
   isModified = false,
   isError = false,
+  isSyncing = false,
   errorInfo = "",
   size = 18,
 }) {
+  if (isSyncing && (isDirty || isModified)) {
+    return (
+      <Tooltip title="Synchronizing with server..." arrow>
+        <Box
+          component="span"
+          sx={{
+            display: "inline-flex",
+            alignItems: "center",
+            animation: "spin 1.2s linear infinite",
+            "@keyframes spin": {
+              "0%": { transform: "rotate(0deg)" },
+              "100%": { transform: "rotate(360deg)" },
+            },
+          }}
+        >
+          <SyncingIcon sx={{ color: "#0284c7", fontSize: size }} />
+        </Box>
+      </Tooltip>
+    );
+  }
+
   if (isError) {
     return (
       <Tooltip title={`Sync Failed: ${errorInfo || "Click sync to retry"}`} arrow>
