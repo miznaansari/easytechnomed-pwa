@@ -15,5 +15,6 @@
   ],
   "theme_color": "#0f766e",
   "background_color": "#f8fafc",
+  "start_url": "/auth/login",
   "display": "standalone"
 }

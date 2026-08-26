@@ -33,6 +33,20 @@ export default function CustomerLoginPage() {
   const [isLoading, setIsLoading] = useState(false);
   const [identifierValue, setIdentifierValue] = useState("");
 
+  React.useEffect(() => {
+    async function checkExistingAuth() {
+      try {
+        const { getCachedSession, isLocalSessionValid } = await import("@/lib/auth/offlineAuth");
+        const cached = await getCachedSession();
+        const valid = await isLocalSessionValid();
+        if (cached && valid) {
+          router.replace("/dashboard");
+        }
+      } catch {}
+    }
+    checkExistingAuth();
+  }, [router]);
+
   const {
     register,
     handleSubmit,

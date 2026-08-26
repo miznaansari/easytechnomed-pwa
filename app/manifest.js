@@ -3,7 +3,7 @@ export default function manifest() {
     name: "EasyTechnoMed | Laboratory Information Management System",
     short_name: "EasyTechnoMed",
     description: "Secure, reliable, and modern cloud-based Laboratory Information Management System (LIMS) for diagnostic center operations, test tracking, and reports.",
-    start_url: "/",
+    start_url: "/auth/login",
     display: "standalone",
     background_color: "#f8fafc",
     theme_color: "#0f766e",
