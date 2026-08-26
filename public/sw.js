@@ -4,6 +4,7 @@ const OFFLINE_URL = "/offline.html";
 // Core routes and critical static assets to pre-cache on install
 const PRECACHE_ROUTES = [
   OFFLINE_URL,
+  "/",
   "/favicon.ico",
   "/apple-touch-icon.png",
   "/android-chrome-192x192.png",
@@ -67,7 +68,7 @@ self.addEventListener("install", (event) => {
                     await cache.put(`${route}?_rsc=1`, rscRes.clone());
                     await cache.put(route, rscRes);
                   }
-                } catch {}
+                } catch { }
               }
             } catch (err) {
               console.warn(`[Service Worker] Pre-cache failed for: ${route}`, err);
