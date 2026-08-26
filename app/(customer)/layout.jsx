@@ -1,11 +1,8 @@
 "use client";
 
-import React, { useState, useEffect } from "react";
-import { useRouter, usePathname } from "next/navigation";
+import React from "react";
 import { ThemeProvider, createTheme } from "@mui/material/styles";
 import { CssBaseline, Box } from "@mui/material";
-import Navbar from "./home/Navbar";
-import Footer from "./home/Footer";
 
 // Unified theme for all customer routes
 const theme = createTheme({
@@ -64,96 +61,14 @@ const theme = createTheme({
   },
 });
 
-const navLinks = [
-  { text: "Features", href: "/#features" },
-  { text: "Benefits", href: "/#benefits" },
-  { text: "Pricing", href: "/#pricing" },
-  { text: "FAQ", href: "/#faq" },
-  { text: "About Us", href: "/about" },
-  { text: "Contact Us", href: "/contact" },
-];
-
 export default function CustomerLayout({ children }) {
-  const router = useRouter();
-  const pathname = usePathname();
-  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-  const [scrolled, setScrolled] = useState(false);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      if (window.scrollY > 50) {
-        setScrolled(true);
-      } else {
-        setScrolled(false);
-      }
-    };
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
-
-  const isDashboard = pathname.startsWith("/dashboard") ||
-                      pathname.startsWith("/registration") ||
-                      pathname.startsWith("/test-report") ||
-                      pathname.startsWith("/doctor-summary") ||
-                      pathname.startsWith("/members") ||
-                      pathname.startsWith("/settings") ||
-                      pathname.startsWith("/userApprove");
-
-  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://easytechnomed.com";
-  const siteNavigationSchema = {
-    "@context": "https://schema.org",
-    "@graph": [
-      {
-        "@type": "WebSite",
-        "@id": `${siteUrl}/#website`,
-        "url": `${siteUrl}/`,
-        "name": "EasyTechnoMed",
-        "description": "Cloud-Based Diagnostic Lab & LIMS Management Software"
-      },
-      {
-        "@type": "SiteNavigationElement",
-        "@id": `${siteUrl}/#navigation`,
-        "name": [
-          "Register",
-          "Login",
-          "About Us",
-          "Contact Us",
-          "Privacy Policy"
-        ],
-        "url": [
-          `${siteUrl}/auth/register`,
-          `${siteUrl}/auth/login`,
-          `${siteUrl}/about`,
-          `${siteUrl}/contact`,
-          `${siteUrl}/privacy`
-        ]
-      }
-    ]
-  };
-
   return (
     <ThemeProvider theme={theme}>
       <CssBaseline />
       <Box sx={{ minHeight: "100vh", display: "flex", flexDirection: "column", bgcolor: "background.default" }}>
-        {!isDashboard && (
-          <>
-            <script
-              type="application/ld+json"
-              dangerouslySetInnerHTML={{ __html: JSON.stringify(siteNavigationSchema) }}
-            />
-            <Navbar
-              scrolled={scrolled}
-              mobileMenuOpen={mobileMenuOpen}
-              setMobileMenuOpen={setMobileMenuOpen}
-              navLinks={navLinks}
-              router={router}
-            />
-          </>
-        )}
         <Box component="main" sx={{ flexGrow: 1, display: "flex", flexDirection: "column" }}>
           {children}
         </Box>
-        {!isDashboard && <Footer navLinks={navLinks} />}
       </Box>
     </ThemeProvider>
   );

@@ -290,12 +290,12 @@ export default function AdminLayoutClient({ admin, children }) {
         method: "POST",
       }).then((r) => r.json());
       if (res?.success) {
-        router.push(res.redirect);
+        router.push(res.redirect || "/");
       } else {
-        router.push("/auth/login");
+        router.push("/");
       }
     } catch (err) {
-      router.push("/auth/login");
+      router.push("/");
     }
   };
 

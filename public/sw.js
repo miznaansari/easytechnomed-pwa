@@ -161,8 +161,8 @@ self.addEventListener("fetch", (event) => {
           if (pathnameCached && isHtmlResponse(pathnameCached)) return pathnameCached;
 
           const fallbackCache = await caches.open(CACHE_NAME);
-          const loginFallback = await fallbackCache.match("/auth/login");
-          if (loginFallback && isHtmlResponse(loginFallback)) return loginFallback;
+          const rootFallback = await fallbackCache.match("/");
+          if (rootFallback && isHtmlResponse(rootFallback)) return rootFallback;
 
           const dashboardFallback = await fallbackCache.match("/dashboard");
           if (dashboardFallback && isHtmlResponse(dashboardFallback)) return dashboardFallback;

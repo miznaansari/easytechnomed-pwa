@@ -15,16 +15,23 @@ export async function proxy(request) {
   }
 
   const adminToken = request.cookies.get("admin_session_token")?.value;
-  const superAdminToken = request.cookies.get("super_admin_session_token")?.value;
 
-  // 1. Workspace Admin & Dashboard Pages protection (excludes superadmin routes starting with /adminstration)
-  if ((pathname.startsWith("/admin") || pathname.startsWith("/dashboard")) && !pathname.startsWith("/auth") && !pathname.startsWith("/api") && !pathname.startsWith("/adminstration")) {
+  // 1. Workspace Dashboard Pages protection
+  const isDashboardRoute =
+    pathname.startsWith("/dashboard") ||
+    pathname.startsWith("/registration") ||
+    pathname.startsWith("/test-report") ||
+    pathname.startsWith("/doctor-summary") ||
+    pathname.startsWith("/members") ||
+    pathname.startsWith("/settings");
+
+  if (isDashboardRoute) {
     if (!adminToken) {
-      return NextResponse.redirect(new URL("/auth/login", request.url));
+      return NextResponse.redirect(new URL("/", request.url));
     }
     try {
       await jwtVerify(adminToken, JWT_SECRET);
-      
+
       // Stateful verification against the database
       const session = await prisma.adminSession.findUnique({
         where: { token: adminToken },
@@ -41,7 +48,7 @@ export async function proxy(request) {
         if (session) {
           await prisma.adminSession.delete({ where: { id: session.id } }).catch(() => {});
         }
-        const res = NextResponse.redirect(new URL("/auth/login", request.url));
+        const res = NextResponse.redirect(new URL("/", request.url));
         res.cookies.delete("admin_session_token");
         return res;
       }
@@ -51,47 +58,19 @@ export async function proxy(request) {
         if (session) {
           await prisma.adminSession.delete({ where: { id: session.id } }).catch(() => {});
         }
-        const res = NextResponse.redirect(new URL("/auth/login?error=deactivated", request.url));
+        const res = NextResponse.redirect(new URL("/?error=deactivated", request.url));
         res.cookies.delete("admin_session_token");
         return res;
       }
     } catch (e) {
-      const res = NextResponse.redirect(new URL("/auth/login", request.url));
+      const res = NextResponse.redirect(new URL("/", request.url));
       res.cookies.delete("admin_session_token");
       return res;
     }
   }
 
-  // 2. SuperAdmin Pages protection
-  if (pathname.startsWith("/adminstration") && !pathname.startsWith("/adminstration/login") && !pathname.startsWith("/adminstration/api")) {
-    if (!superAdminToken) {
-      return NextResponse.redirect(new URL("/adminstration/login", request.url));
-    }
-    try {
-      await jwtVerify(superAdminToken, JWT_SECRET);
-      
-      // Stateful verification for SuperAdmin against database
-      const session = await prisma.superAdminSession.findUnique({
-        where: { token: superAdminToken },
-      });
-
-      if (!session || session.expiresAt < new Date()) {
-        if (session) {
-          await prisma.superAdminSession.delete({ where: { id: session.id } }).catch(() => {});
-        }
-        const res = NextResponse.redirect(new URL("/adminstration/login", request.url));
-        res.cookies.delete("super_admin_session_token");
-        return res;
-      }
-    } catch (e) {
-      const res = NextResponse.redirect(new URL("/adminstration/login", request.url));
-      res.cookies.delete("super_admin_session_token");
-      return res;
-    }
-  }
-
-  // 3. Prevent logged-in admins from visiting login/register pages
-  if ((pathname === "/auth/login" || pathname === "/auth/register") && adminToken) {
+  // 2. Prevent logged-in admins from visiting root login page
+  if ((pathname === "/" || pathname === "/auth/login" || pathname === "/auth/register") && adminToken) {
     const errorParam = request.nextUrl.searchParams.get("error");
     if (errorParam) {
       return NextResponse.next();
@@ -106,21 +85,24 @@ export async function proxy(request) {
     }
   }
 
-  // 4. Prevent logged-in superadmins from visiting superadmin login page
-  if (pathname === "/adminstration/login" && superAdminToken) {
-    try {
-      await jwtVerify(superAdminToken, JWT_SECRET);
-      return NextResponse.redirect(new URL("/adminstration/dashboard", request.url));
-    } catch (e) {
-      const res = NextResponse.next();
-      res.cookies.delete("super_admin_session_token");
-      return res;
-    }
-  }
-
   return NextResponse.next();
 }
 
 export const config = {
-  matcher: ["/dashboard", "/dashboard/:path*", "/admin", "/:path*", "/adminstration", "/adminstration/:path*", "/auth/login", "/auth/register"],
+  matcher: [
+    "/",
+    "/dashboard",
+    "/dashboard/:path*",
+    "/registration",
+    "/registration/:path*",
+    "/test-report",
+    "/test-report/:path*",
+    "/doctor-summary",
+    "/doctor-summary/:path*",
+    "/members",
+    "/members/:path*",
+    "/settings",
+    "/settings/:path*",
+    "/auth/:path*",
+  ],
 };

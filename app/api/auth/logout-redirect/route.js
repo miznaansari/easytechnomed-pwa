@@ -10,7 +10,7 @@ export async function GET(request) {
   cookieStore.delete("admin_session_token");
   cookieStore.delete("session_token");
 
-  let dest = "/auth/login";
+  let dest = "/";
   if (isSuper) {
     cookieStore.delete("super_admin_session_token");
     dest = "/adminstration/login";
