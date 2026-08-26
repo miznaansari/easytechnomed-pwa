@@ -30,6 +30,7 @@ import {
   Download as DownloadIcon,
 } from "@mui/icons-material";
 import { toast } from "sonner";
+import { openOfflinePrint } from "@/lib/offline/offlinePrint";
 
 export default function PaymentsClient() {
   const [payments, setPayments] = useState([]);
@@ -322,7 +323,14 @@ export default function PaymentsClient() {
                       size="small"
                       fullWidth
                       startIcon={<DownloadIcon fontSize="small" />}
-                      onClick={() => window.open(`/api/print-subscription-invoice/${log.uid || log.id}`, "_blank")}
+                      onClick={() => {
+                        const idOrUid = log.uid || log.id;
+                        if (typeof navigator !== "undefined" && !navigator.onLine) {
+                          openOfflinePrint({ type: "subscription-invoice", idOrRegNo: idOrUid });
+                        } else {
+                          window.open(`/api/print-subscription-invoice/${idOrUid}`, "_blank");
+                        }
+                      }}
                       sx={{
                         py: 0.8,
                         fontWeight: 700,
@@ -431,7 +439,14 @@ export default function PaymentsClient() {
                               size="small"
                               color="primary"
                               startIcon={<ReceiptLongIcon fontSize="small" />}
-                              onClick={() => window.open(`/api/print-subscription-invoice/${log.uid || log.id}`, "_blank")}
+                              onClick={() => {
+                                const idOrUid = log.uid || log.id;
+                                if (typeof navigator !== "undefined" && !navigator.onLine) {
+                                  openOfflinePrint({ type: "subscription-invoice", idOrRegNo: idOrUid });
+                                } else {
+                                  window.open(`/api/print-subscription-invoice/${idOrUid}`, "_blank");
+                                }
+                              }}
                               sx={{
                                 py: 0.4,
                                 px: 1.5,

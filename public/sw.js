@@ -1,9 +1,11 @@
-const CACHE_NAME = "easytechnomed-pwa-v3";
+const CACHE_NAME = "easytechnomed-pwa-v4";
 const OFFLINE_URL = "/offline.html";
+const OFFLINE_PRINT_URL = "/offline-print.html";
 
 // Core routes and critical static assets to pre-cache on install
 const PRECACHE_ROUTES = [
   OFFLINE_URL,
+  OFFLINE_PRINT_URL,
   "/favicon.ico",
   "/apple-touch-icon.png",
   "/android-chrome-192x192.png",
@@ -26,7 +28,6 @@ self.addEventListener("install", (event) => {
       .open(CACHE_NAME)
       .then(async (cache) => {
         console.log("[Service Worker] Pre-caching core offline assets & routes...");
-        // Use Promise.allSettled so one missing image/route doesn't fail the entire install
         await Promise.allSettled(
           PRECACHE_ROUTES.map((route) =>
             fetch(route, { cache: "reload" })
@@ -62,9 +63,8 @@ self.addEventListener("activate", (event) => {
   );
 });
 
-// Fetch event: handle offline navigation, Next.js RSC requests, and asset caching
+// Fetch event: handle offline navigation, RSC requests, print fallbacks, and asset caching
 self.addEventListener("fetch", (event) => {
-  // Only handle GET requests
   if (event.request.method !== "GET") return;
 
   const url = new URL(event.request.url);
@@ -72,12 +72,33 @@ self.addEventListener("fetch", (event) => {
   // Ignore unsupported schemes (e.g. chrome-extension, data:)
   if (url.protocol !== "http:" && url.protocol !== "https:") return;
 
-  // Never cache API requests in Service Worker - persistent offline data belongs in IndexedDB!
+  // 1. Handle Print Document Routes (/api/print-report/, /api/print-bill/, /api/print-subscription-invoice/)
+  const isPrintRequest =
+    url.pathname.startsWith("/api/print-report/") ||
+    url.pathname.startsWith("/api/print-bill/") ||
+    url.pathname.startsWith("/api/print-subscription-invoice/");
+
+  if (isPrintRequest) {
+    event.respondWith(
+      fetch(event.request).catch(async () => {
+        console.log("[Service Worker] Serving offline print template for:", url.pathname);
+        const cache = await caches.open(CACHE_NAME);
+        const offlinePrintDoc = await cache.match(OFFLINE_PRINT_URL);
+        if (offlinePrintDoc) return offlinePrintDoc;
+        const offlineGeneral = await cache.match(OFFLINE_URL);
+        if (offlineGeneral) return offlineGeneral;
+        return new Response("Offline document not available.", { status: 503, headers: { "Content-Type": "text/plain" } });
+      })
+    );
+    return;
+  }
+
+  // 2. Bypass standard data APIs (offline data handled via IndexedDB)
   if (url.pathname.startsWith("/api/") || url.pathname.startsWith("/adminstration/api/")) {
     return;
   }
 
-  // 1. Next.js React Server Component (RSC) requests (used for client-side navigation between pages)
+  // 3. Next.js React Server Component (RSC) requests
   const isRSCRequest =
     url.searchParams.has("_rsc") ||
     event.request.headers.get("RSC") === "1" ||
@@ -91,21 +112,19 @@ self.addEventListener("fetch", (event) => {
             const clone = networkResponse.clone();
             caches.open(CACHE_NAME).then((cache) => {
               cache.put(event.request, clone);
-              // Also store under plain pathname for fallback lookup
               cache.put(url.pathname, networkResponse.clone());
             });
           }
           return networkResponse;
         })
         .catch(async () => {
-          console.log("[Service Worker] RSC fetch failed (offline), attempting cached response for:", url.pathname);
+          console.log("[Service Worker] RSC fetch failed (offline) for:", url.pathname);
           const cached = await caches.match(event.request, { ignoreSearch: true });
           if (cached) return cached;
 
           const pathnameCached = await caches.match(url.pathname);
           if (pathnameCached) return pathnameCached;
 
-          // If no cached RSC found, return an empty 200 response so Next.js client router doesn't crash with "This page couldn't load"
           return new Response("", {
             status: 200,
             headers: { "Content-Type": "text/x-component" },
@@ -115,7 +134,7 @@ self.addEventListener("fetch", (event) => {
     return;
   }
 
-  // 2. Full Page HTML Navigation Requests (Reloads, entering URLs, hard navigations)
+  // 4. Full Page HTML Navigation Requests (Reloads, direct URL visits)
   if (event.request.mode === "navigate") {
     event.respondWith(
       fetch(event.request)
@@ -130,16 +149,13 @@ self.addEventListener("fetch", (event) => {
           return networkResponse;
         })
         .catch(async () => {
-          console.log("[Service Worker] Navigation fetch failed (offline), attempting cached route for:", url.pathname);
-          // Try exact request
+          console.log("[Service Worker] Navigation offline for:", url.pathname);
           const cached = await caches.match(event.request, { ignoreSearch: true });
           if (cached) return cached;
 
-          // Try pathname
           const pathnameCached = await caches.match(url.pathname);
           if (pathnameCached) return pathnameCached;
 
-          // Fallback to pre-cached dashboard shell or offline.html
           const fallbackCache = await caches.open(CACHE_NAME);
           const dashboardFallback = await fallbackCache.match("/dashboard");
           if (dashboardFallback) return dashboardFallback;
@@ -148,15 +164,15 @@ self.addEventListener("fetch", (event) => {
           if (offlineFallback) return offlineFallback;
 
           return new Response("Offline - Please reconnect to internet", {
-            status: 503,
-            headers: { "Content-Type": "text/plain" },
+            status: 200,
+            headers: { "Content-Type": "text/html" },
           });
         })
     );
     return;
   }
 
-  // 3. Static Assets (Next.js JS bundles, CSS, Fonts, Images, Manifest) - Stale-While-Revalidate / Cache-First
+  // 5. Static Assets (Next.js JS bundles, CSS, Fonts, Images, Manifest)
   const isStaticAsset =
     url.pathname.startsWith("/_next/") ||
     url.pathname.endsWith(".js") ||
@@ -173,9 +189,23 @@ self.addEventListener("fetch", (event) => {
 
   if (isStaticAsset) {
     event.respondWith(
-      caches.match(event.request).then((cachedResponse) => {
-        // Fetch from network in background to revalidate cache
-        const networkFetch = fetch(event.request)
+      caches.match(event.request, { ignoreSearch: true }).then((cachedResponse) => {
+        if (cachedResponse) {
+          // Revalidate in background if connected
+          fetch(event.request)
+            .then((networkResponse) => {
+              if (networkResponse && networkResponse.status === 200) {
+                const responseToCache = networkResponse.clone();
+                caches.open(CACHE_NAME).then((cache) => {
+                  cache.put(event.request, responseToCache);
+                });
+              }
+            })
+            .catch(() => {});
+          return cachedResponse;
+        }
+
+        return fetch(event.request)
           .then((networkResponse) => {
             if (networkResponse && networkResponse.status === 200) {
               const responseToCache = networkResponse.clone();
@@ -185,21 +215,20 @@ self.addEventListener("fetch", (event) => {
             }
             return networkResponse;
           })
-          .catch(() => cachedResponse);
-
-        // Return cached version immediately if present, otherwise await network fetch
-        return cachedResponse || networkFetch;
+          .catch(() => {
+            return new Response("", { status: 200 });
+          });
       })
     );
     return;
   }
 
-  // 4. Default fallback for other non-API requests
+  // 6. Default Fallback
   event.respondWith(
     fetch(event.request).catch(async () => {
       const cached = await caches.match(event.request, { ignoreSearch: true });
       if (cached) return cached;
-      return new Response("", { status: 408, statusText: "Offline" });
+      return new Response("", { status: 200 });
     })
   );
 });

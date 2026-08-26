@@ -56,6 +56,7 @@ import AddDoctorDrawer from "@/components/AddDoctorDrawer";
 import { useSync } from "@/hooks/useSync";
 import { syncManager } from "@/lib/offline/sync/syncManager";
 import db from "@/lib/offline/db";
+import { openOfflinePrint } from "@/lib/offline/offlinePrint";
 
 export default function DoctorSummaryPage() {
   const [openAddDocDrawer, setOpenAddDocDrawer] = useState(false);
@@ -1094,25 +1095,37 @@ export default function DoctorSummaryPage() {
                                             {getStatusChip(reg.status)}
                                           </TableCell>
                                           <TableCell align="center" sx={{ whiteSpace: "nowrap" }}>
-                                            <Tooltip title="Print / View Bill">
-                                              <IconButton
-                                                size="small"
-                                                color="primary"
-                                                onClick={() => window.open(`/api/print-bill/${reg.id}`, "_blank")}
-                                                sx={{ mr: 0.5 }}
-                                              >
-                                                <ReceiptIcon fontSize="small" />
-                                              </IconButton>
-                                            </Tooltip>
-                                            <Tooltip title="Print / View Test Report">
-                                              <IconButton
-                                                size="small"
-                                                color="success"
-                                                onClick={() => window.open(`/api/print-report/${reg.regNo}?withFrame=true`, "_blank")}
-                                              >
-                                                <ReportIcon fontSize="small" />
-                                              </IconButton>
-                                            </Tooltip>
+                                             <Tooltip title="Print / View Bill">
+                                               <IconButton
+                                                 size="small"
+                                                 color="primary"
+                                                 onClick={() => {
+                                                   if (typeof navigator !== "undefined" && !navigator.onLine) {
+                                                     openOfflinePrint({ type: "bill", idOrRegNo: reg.id || reg.regNo });
+                                                   } else {
+                                                     window.open(`/api/print-bill/${reg.id}`, "_blank");
+                                                   }
+                                                 }}
+                                                 sx={{ mr: 0.5 }}
+                                               >
+                                                 <ReceiptIcon fontSize="small" />
+                                               </IconButton>
+                                             </Tooltip>
+                                             <Tooltip title="Print / View Test Report">
+                                               <IconButton
+                                                 size="small"
+                                                 color="success"
+                                                 onClick={() => {
+                                                   if (typeof navigator !== "undefined" && !navigator.onLine) {
+                                                     openOfflinePrint({ type: "report", idOrRegNo: reg.regNo || reg.id, withFrame: true });
+                                                   } else {
+                                                     window.open(`/api/print-report/${reg.regNo}?withFrame=true`, "_blank");
+                                                   }
+                                                 }}
+                                               >
+                                                 <ReportIcon fontSize="small" />
+                                               </IconButton>
+                                             </Tooltip>
                                           </TableCell>
                                         </TableRow>
                                       ))}
