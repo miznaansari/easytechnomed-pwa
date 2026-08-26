@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState, useEffect, Suspense } from "react";
+import db from "@/lib/offline/db";
 import {
   Box,
   Card,
@@ -55,21 +56,33 @@ function SettingsContent({ defaultSection = "profile" }) {
     setToast({ open: true, message, severity });
   };
 
-  // Load profile settings on mount
+  // Load profile settings instantly from IndexedDB
   useEffect(() => {
     async function loadProfile() {
       setLoading(true);
       try {
-        const res = await fetch("/api/settings").then((r) => r.json());
-        if (res.success && res.settings) {
-          setProfileName(res.settings.name || "");
-          setProfileEmail(res.settings.email || "");
-          setCompanyName(res.settings.companyName || "");
-          setMobileNumber(res.settings.mobileNumber || "");
+        const [cachedAdmins, cachedSession] = await Promise.all([
+          db.admins.toArray(),
+          db.offlineSession.get(1),
+        ]);
+        const adminData = cachedAdmins?.[0] || cachedSession?.admin;
+
+        if (adminData) {
+          setProfileName(adminData.name || "");
+          setProfileEmail(adminData.email || "");
+          setCompanyName(adminData.companyName || "");
+          setMobileNumber(adminData.mobileNumber || "");
+        } else if (typeof navigator !== "undefined" && navigator.onLine) {
+          const res = await fetch("/api/settings").then((r) => r.json());
+          if (res.success && res.settings) {
+            setProfileName(res.settings.name || "");
+            setProfileEmail(res.settings.email || "");
+            setCompanyName(res.settings.companyName || "");
+            setMobileNumber(res.settings.mobileNumber || "");
+          }
         }
       } catch (err) {
-        console.error(err);
-        showToast("Failed to load settings data.", "error");
+        console.error("Error loading profile from IndexedDB:", err);
       } finally {
         setLoading(false);
       }

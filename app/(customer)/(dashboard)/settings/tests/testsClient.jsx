@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState, useEffect } from "react";
+import db from "@/lib/offline/db";
 import {
   Box,
   Card,
@@ -118,21 +119,19 @@ export default function TestsClient() {
   const [toast, setToast] = useState({ open: false, message: "", severity: "success" });
 
   useEffect(() => {
-    // Fetch parameter dictionary
-    fetch("/adminstration/api/parameters")
-      .then((r) => r.json())
-      .then((res) => {
-        if (res.success) setParameterDictionary(res.parameters || []);
-      })
-      .catch(() => { });
-
-    // Fetch tests catalog
-    fetch("/api/tests?limit=1000")
-      .then((r) => r.json())
-      .then((res) => {
-        if (res.success) setTestCatalog(res.tests || []);
-      })
-      .catch(() => { });
+    async function loadCatalogs() {
+      try {
+        const [cachedTests, cachedParams] = await Promise.all([
+          db.tests.filter((t) => !t.isDeleted).toArray(),
+          db.parameters.toArray(),
+        ]);
+        if (cachedTests.length > 0) setTestCatalog(cachedTests);
+        if (cachedParams.length > 0) setParameterDictionary(cachedParams);
+      } catch (err) {
+        console.error("Error loading catalogs from IndexedDB:", err);
+      }
+    }
+    loadCatalogs();
   }, []);
 
   const autocompleteOptions = React.useMemo(() => [
@@ -144,19 +143,43 @@ export default function TestsClient() {
     setToast({ open: true, message, severity });
   };
 
-  // Fetch tests dynamically with page and search query
+  // Fetch tests dynamically from IndexedDB with pagination and search
   const fetchTests = async (page = 1, search = "") => {
     setTestsLoading(true);
     try {
-      const res = await fetch(`/api/tests?page=${page}&limit=20&search=${encodeURIComponent(search)}`).then((r) => r.json());
-      if (res.success && res.tests) {
-        setTestsList(res.tests);
-        if (res.pagination) {
-          setTestPage(res.pagination.page);
-          setTestTotalPages(res.pagination.totalPages);
-          setTestTotalCount(res.pagination.totalCount);
+      let cachedTests = await db.tests.filter((t) => !t.isDeleted).toArray();
+
+      // If IndexedDB is empty and online, bootstrap in background
+      if (cachedTests.length === 0 && typeof navigator !== "undefined" && navigator.onLine) {
+        const res = await fetch(`/api/tests?limit=1000`).then((r) => r.json()).catch(() => ({ success: false }));
+        if (res.success && Array.isArray(res.tests)) {
+          await db.tests.bulkPut(res.tests.map((t) => ({ ...t, isDirty: false, isModified: false, isError: false })));
+          cachedTests = await db.tests.filter((t) => !t.isDeleted).toArray();
         }
       }
+
+      let filtered = cachedTests;
+      if (search.trim()) {
+        const q = search.toLowerCase().trim();
+        filtered = filtered.filter(
+          (t) =>
+            (t.name && t.name.toLowerCase().includes(q)) ||
+            (t.code && t.code.toLowerCase().includes(q))
+        );
+      }
+
+      filtered.sort((a, b) => (a.name || "").localeCompare(b.name || ""));
+
+      const limit = 20;
+      const totalCount = filtered.length;
+      const totalPages = Math.ceil(totalCount / limit) || 1;
+      const startIndex = (page - 1) * limit;
+      const paginated = filtered.slice(startIndex, startIndex + limit);
+
+      setTestsList(paginated);
+      setTestPage(page);
+      setTestTotalPages(totalPages);
+      setTestTotalCount(totalCount);
     } catch (err) {
       console.error(err);
       showToast("Failed to fetch tests.", "error");

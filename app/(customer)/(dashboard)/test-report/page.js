@@ -454,68 +454,57 @@ export default function TestReportPage() {
   const loadData = async () => {
     setLoading(true);
     try {
-      if (typeof navigator !== "undefined" && !navigator.onLine) {
-        // Offline: load from IndexedDB
-        let localData = await db.registrations.filter((r) => !r.isDeleted).toArray();
-        if (search) {
-          const q = search.toLowerCase();
-          localData = localData.filter(
-            (r) =>
-              (r.name && r.name.toLowerCase().includes(q)) ||
-              (r.regNo && r.regNo.toLowerCase().includes(q)) ||
-              (r.mobileNo && r.mobileNo.includes(q))
-          );
-        }
-        setRegistrations(localData);
-        setTotal(localData.length);
-        setLoading(false);
-        return;
-      }
+      // 1. Immediately query and filter directly from IndexedDB (0ms latency)
+      let allLocal = await db.registrations.filter((r) => !r.isDeleted).toArray();
 
-      const queryParams = new URLSearchParams();
-      if (startDate) queryParams.set("startDate", `${startDate}T00:00:00.000Z`);
-      if (endDate) queryParams.set("endDate", `${endDate}T23:59:59.999Z`);
-      if (search) queryParams.set("search", search);
-      queryParams.set("page", page.toString());
-      queryParams.set("limit", limit.toString());
-
-      const res = await fetch(`/api/registrations?${queryParams.toString()}`)
-        .then((r) => r.json())
-        .catch(() => ({ success: false }));
-
-      if (res.success && Array.isArray(res.registrations)) {
-        // Merge with local dirty/modified items
-        const dirtyItems = await db.registrations
-          .filter((r) => r.isDirty === true || r.isModified === true)
-          .toArray();
-
-        const serverMap = new Map();
-        res.registrations.forEach((sr) => serverMap.set(sr.id, sr));
-
-        // Overwrite or prepend dirty items so local offline changes are visible immediately
-        dirtyItems.forEach((di) => {
-          serverMap.set(di.id, di);
-        });
-
-        const merged = Array.from(serverMap.values());
-        setRegistrations(merged);
-        setTotal(res.total || merged.length);
-
-        // Cache server records in IndexedDB
-        for (const reg of res.registrations) {
-          const local = await db.registrations.get(reg.id);
-          if (!local || (!local.isDirty && !local.isModified)) {
-            await db.registrations.put({ ...reg, isDirty: false, isModified: false, isError: false });
+      // If IndexedDB is empty and online, bootstrap recent data in background
+      if (allLocal.length === 0 && typeof navigator !== "undefined" && navigator.onLine) {
+        try {
+          const res = await fetch("/api/registrations?limit=100").then((r) => r.json()).catch(() => ({ success: false }));
+          if (res.success && Array.isArray(res.registrations)) {
+            const regsToPut = res.registrations.map((r) => ({ ...r, isDirty: false, isModified: false, isError: false }));
+            await db.registrations.bulkPut(regsToPut);
+            allLocal = await db.registrations.filter((r) => !r.isDeleted).toArray();
           }
+        } catch (fetchErr) {
+          console.warn("[TestReport] Background fetch warning:", fetchErr);
         }
-      } else {
-        // Fallback to IndexedDB
-        let localData = await db.registrations.filter((r) => !r.isDeleted).toArray();
-        setRegistrations(localData);
-        setTotal(localData.length);
       }
+
+      let filtered = allLocal;
+
+      // Filter by Date Range
+      if (startDate) {
+        const startTimestamp = new Date(startDate).setHours(0, 0, 0, 0);
+        filtered = filtered.filter((r) => r.date && new Date(r.date).getTime() >= startTimestamp);
+      }
+      if (endDate) {
+        const endTimestamp = new Date(endDate).setHours(23, 59, 59, 999);
+        filtered = filtered.filter((r) => r.date && new Date(r.date).getTime() <= endTimestamp);
+      }
+
+      // Filter by Search
+      if (search) {
+        const q = search.toLowerCase().trim();
+        filtered = filtered.filter(
+          (r) =>
+            (r.name && r.name.toLowerCase().includes(q)) ||
+            (r.regNo && r.regNo.toLowerCase().includes(q)) ||
+            (r.mobileNo && r.mobileNo.includes(q))
+        );
+      }
+
+      // Sort by date descending
+      filtered.sort((a, b) => new Date(b.date || 0).getTime() - new Date(a.date || 0).getTime());
+
+      const totalCount = filtered.length;
+      const startIndex = (page - 1) * limit;
+      const paginated = filtered.slice(startIndex, startIndex + limit);
+
+      setRegistrations(paginated);
+      setTotal(totalCount);
     } catch (err) {
-      console.error("Error loading test reports:", err);
+      console.error("Error loading test reports from IndexedDB:", err);
       try {
         let localData = await db.registrations.filter((r) => !r.isDeleted).toArray();
         setRegistrations(localData);

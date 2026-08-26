@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState, useEffect, useRef } from "react";
+import db from "@/lib/offline/db";
 import {
   Box,
   Card,
@@ -121,14 +122,24 @@ export default function PdfSettingsClient() {
     }));
   };
 
-  // Load configuration from API
+  // Load configuration instantly from IndexedDB
   useEffect(() => {
     async function loadSettings() {
       setLoading(true);
       try {
-        const res = await fetch("/api/settings/pdf").then((r) => r.json());
-        if (res.success && res.settings) {
-          const s = res.settings;
+        let cachedPdf = await db.workspacePdf.toArray();
+        let s = cachedPdf?.[0];
+
+        // If not in IndexedDB and online, fetch from API
+        if (!s && typeof navigator !== "undefined" && navigator.onLine) {
+          const res = await fetch("/api/settings/pdf").then((r) => r.json());
+          if (res.success && res.settings) {
+            s = res.settings;
+            await db.workspacePdf.put({ ...s, id: s.id || 1, isDirty: false, isModified: false, isError: false });
+          }
+        }
+
+        if (s) {
           let parsedCols = DEFAULT_COLUMNS;
           if (s.columnOrder) {
             try {
@@ -171,8 +182,7 @@ export default function PdfSettingsClient() {
           });
         }
       } catch (err) {
-        console.error(err);
-        showToast("Failed to load PDF studio settings.", "error");
+        console.error("Error loading PDF settings from IndexedDB:", err);
       } finally {
         setLoading(false);
       }

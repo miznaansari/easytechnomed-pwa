@@ -55,7 +55,54 @@ export async function POST(req) {
         } else if (object_name === "tests") {
           const count = await prisma.test.count({
             where: {
-              workspaceId: admin.workspaceId,
+              OR: [{ workspaceId: admin.workspaceId }, { workspaceId: null }],
+              updatedAt: { gt: clientTime },
+            },
+          });
+          hasServerUpdates = count > 0;
+        } else if (object_name === "parameters") {
+          const count = await prisma.parameter.count({
+            where: {
+              OR: [{ workspaceId: admin.workspaceId }, { workspaceId: null }],
+              updatedAt: { gt: clientTime },
+            },
+          });
+          hasServerUpdates = count > 0;
+        } else if (object_name === "testParameters") {
+          const count = await prisma.testParameter.count({
+            where: {
+              OR: [{ workspaceId: admin.workspaceId }, { workspaceId: null }],
+              updatedAt: { gt: clientTime },
+            },
+          });
+          hasServerUpdates = count > 0;
+        } else if (object_name === "testDepartments") {
+          const count = await prisma.testDepartment.count({
+            where: {
+              updatedAt: { gt: clientTime },
+            },
+          });
+          hasServerUpdates = count > 0;
+        } else if (object_name === "testFormulas") {
+          const count = await prisma.testFormula.count({
+            where: {
+              OR: [{ workspaceId: admin.workspaceId }, { workspaceId: null }],
+              updatedAt: { gt: clientTime },
+            },
+          });
+          hasServerUpdates = count > 0;
+        } else if (object_name === "interpretationRules") {
+          const count = await prisma.interpretationRule.count({
+            where: {
+              OR: [{ workspaceId: admin.workspaceId }, { workspaceId: null }],
+              updatedAt: { gt: clientTime },
+            },
+          });
+          hasServerUpdates = count > 0;
+        } else if (object_name === "registrationPayments") {
+          const count = await prisma.registrationPayment.count({
+            where: {
+              registration: { workspaceId: admin.workspaceId },
               updatedAt: { gt: clientTime },
             },
           });

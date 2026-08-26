@@ -81,6 +81,8 @@ export async function GET(req) {
         include: {
           refBy: true,
           tests: { include: { test: true } },
+          results: true,
+          payments: true,
         },
         orderBy: { date: "desc" },
         skip,

@@ -137,70 +137,54 @@ export default function ResultEntry({ open, onClose, selectedReg, onSaveSuccess,
   const loadParameters = async () => {
     setLoading(true);
     try {
-      if (typeof navigator !== "undefined" && !navigator.onLine) {
-        // Offline: try to load from selectedReg or IndexedDB
-        if (selectedReg) {
-          setResultRegDetails(selectedReg);
-          const tests = (selectedReg.tests || []).map((rt) => rt.test || rt);
-          setResultTests(tests);
+      if (selectedReg) {
+        setResultRegDetails(selectedReg);
 
-          const values = {};
-          const overrides = new Set();
-          
-          // Query local patientResults from Dexie
-          const localResults = await db.patientResults
-            .filter((r) => r.registrationId === selectedReg.id)
-            .toArray();
+        // Enrich tests from IndexedDB (0ms latency, works online & offline)
+        const enrichedTests = await Promise.all(
+          (selectedReg.tests || []).map(async (rt) => {
+            const testId = rt.testId || (rt.test ? rt.test.id : rt.id);
+            const cachedTest = testId ? await db.tests.get(testId) : null;
+            const cachedParams = testId ? await db.testParameters.where("testId").equals(testId).sortBy("order") : [];
+            const cachedFormulas = testId ? await db.testFormulas.where("testId").equals(testId).toArray() : [];
+            const cachedRules = testId ? await db.interpretationRules.where("testId").equals(testId).toArray() : [];
 
-          const resultsList = localResults.length > 0 ? localResults : (selectedReg.results || []);
-          resultsList.forEach((r) => {
-            values[r.testParameterId] = r.value;
-            if (r.value !== undefined && r.value !== null && r.value !== "") {
-              overrides.add(r.testParameterId);
-              overrides.add(String(r.testParameterId));
-            }
-          });
+            return {
+              ...(cachedTest || rt.test || rt),
+              parameters: cachedParams.length > 0 ? cachedParams : (cachedTest?.parameters || rt.parameters || []),
+              formulas: cachedFormulas.length > 0 ? cachedFormulas : (cachedTest?.formulas || rt.formulas || []),
+              interpretationRules: cachedRules.length > 0 ? cachedRules : (cachedTest?.interpretationRules || rt.interpretationRules || []),
+            };
+          })
+        );
 
-          const initialCalculated = calculateAllDependents(values, tests, null, overrides, selectedReg);
-          setResultValues(initialCalculated);
-          setManualOverrides(overrides);
-          setReportNotes(selectedReg.remark || "");
-          setAutoSaveStatus("idle");
-          setLoading(false);
-          return;
-        }
-      }
-
-      const res = await fetch(`/api/registrations/${selectedReg.id}/parameters`).then((r) => r.json()).catch(() => ({ success: false }));
-      if (res.success && res.registration) {
-        setResultRegDetails(res.registration);
-        const tests = (res.registration.tests || []).map((rt) => rt.test);
-        setResultTests(tests);
+        setResultTests(enrichedTests);
 
         const values = {};
         const overrides = new Set();
-        (res.registration.results || []).forEach((r) => {
+        
+        // Query local patientResults from Dexie
+        const localResults = await db.patientResults
+          .filter((r) => r.registrationId === selectedReg.id)
+          .toArray();
+
+        const resultsList = localResults.length > 0 ? localResults : (selectedReg.results || []);
+        resultsList.forEach((r) => {
           values[r.testParameterId] = r.value;
           if (r.value !== undefined && r.value !== null && r.value !== "") {
             overrides.add(r.testParameterId);
             overrides.add(String(r.testParameterId));
           }
         });
-        const initialCalculated = calculateAllDependents(values, tests, null, overrides, res.registration);
+
+        const initialCalculated = calculateAllDependents(values, enrichedTests, null, overrides, selectedReg);
         setResultValues(initialCalculated);
         setManualOverrides(overrides);
-        setReportNotes(res.registration.remark || "");
+        setReportNotes(selectedReg.remark || "");
         setAutoSaveStatus("idle");
-      } else {
-        // Fallback to selectedReg
-        if (selectedReg) {
-          setResultRegDetails(selectedReg);
-          const tests = (selectedReg.tests || []).map((rt) => rt.test || rt);
-          setResultTests(tests);
-        }
       }
     } catch (err) {
-      console.error("Failed to load parameters:", err);
+      console.error("Failed to load parameters from IndexedDB:", err);
       if (selectedReg) {
         setResultRegDetails(selectedReg);
         setResultTests((selectedReg.tests || []).map((rt) => rt.test || rt));

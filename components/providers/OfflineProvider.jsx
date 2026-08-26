@@ -83,6 +83,25 @@ export default function OfflineProvider({ children }) {
     return () => unsubscribeSync();
   }, [isOnline]);
 
+  // Initial check: if IndexedDB is missing tests or parameters, bootstrap via Promise.all
+  useEffect(() => {
+    async function checkAndBootstrap() {
+      if (typeof window === "undefined" || !navigator.onLine) return;
+      try {
+        const testCount = await db.tests.count();
+        const paramCount = await db.parameters.count();
+        if (testCount === 0 || paramCount === 0) {
+          console.log("[OfflineProvider] Empty master tables detected in IndexedDB, bootstrapping via Promise.all...");
+          await syncManager.bootstrapInitialData();
+          await refreshPendingCount();
+        }
+      } catch (err) {
+        console.warn("[OfflineProvider] Bootstrap check warning:", err);
+      }
+    }
+    checkAndBootstrap();
+  }, [refreshPendingCount]);
+
   // Periodic check for pending count and initial refresh
   useEffect(() => {
     // eslint-disable-next-line react-hooks/set-state-in-effect

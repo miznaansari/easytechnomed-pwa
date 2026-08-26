@@ -182,82 +182,62 @@ export default function RegistrationPage() {
   // Notifications
   const [notification, setNotification] = useState({ open: false, message: "", severity: "success" });
 
-  // Load initial data (doctors & tests)
+  // Load initial data instantly from IndexedDB
   useEffect(() => {
     async function loadData() {
       try {
-        if (typeof navigator !== "undefined" && !navigator.onLine) {
-          // Offline mode: load directly from IndexedDB
-          const cachedDocs = await db.doctors.filter(d => !d.isDeleted).toArray();
-          const cachedTests = await db.tests.filter(t => !t.isDeleted).toArray();
-          if (cachedDocs.length > 0) setDoctors(cachedDocs);
-          if (cachedTests.length > 0) {
-            setTests(cachedTests.map(t => ({
-              ...t,
-              price: Number(t.price) || 0,
-              outsourceCost: Number(t.outsourceCost) || 0,
-              specialIncentivePercent: t.specialIncentivePercent ? Number(t.specialIncentivePercent) : null,
-            })));
-          }
-          setLoading(false);
-          return;
-        }
-
-        const [docsRes, testsRes] = await Promise.all([
-          fetch("/api/doctors").then((r) => r.json()).catch(() => ({ success: false })),
-          fetch("/api/tests").then((r) => r.json()).catch(() => ({ success: false }))
+        // 1. Immediately load doctors & tests from IndexedDB (0ms latency, works offline & online)
+        const [cachedDocs, cachedTests, cachedAdmin, cachedPdf] = await Promise.all([
+          db.doctors.filter((d) => !d.isDeleted).toArray(),
+          db.tests.filter((t) => !t.isDeleted).toArray(),
+          db.admins.toArray(),
+          db.workspacePdf.toArray(),
         ]);
 
-        if (docsRes.success && Array.isArray(docsRes.doctors)) {
-          setDoctors(docsRes.doctors);
-          // Cache in IndexedDB
-          for (const doc of docsRes.doctors) {
-            await db.doctors.put({ ...doc, isDirty: false, isModified: false, isError: false });
-          }
-        } else {
-          const cachedDocs = await db.doctors.filter(d => !d.isDeleted).toArray();
-          if (cachedDocs.length > 0) setDoctors(cachedDocs);
-        }
-
-        if (testsRes.success && Array.isArray(testsRes.tests)) {
-          const parsedTests = testsRes.tests.map((t) => ({
-            ...t,
-            price: Number(t.price) || 0,
-            outsourceCost: t.outsourceCost !== undefined && t.outsourceCost !== null ? Number(t.outsourceCost) : 0,
-            specialIncentivePercent: t.specialIncentivePercent !== undefined && t.specialIncentivePercent !== null ? Number(t.specialIncentivePercent) : null,
-          }));
-          setTests(parsedTests);
-          // Cache in IndexedDB
-          for (const test of parsedTests) {
-            await db.tests.put({ ...test, isDirty: false, isModified: false, isError: false });
-          }
-        } else {
-          const cachedTests = await db.tests.filter(t => !t.isDeleted).toArray();
-          if (cachedTests.length > 0) {
-            setTests(cachedTests.map(t => ({
+        if (cachedDocs.length > 0) setDoctors(cachedDocs);
+        if (cachedTests.length > 0) {
+          setTests(
+            cachedTests.map((t) => ({
               ...t,
               price: Number(t.price) || 0,
               outsourceCost: Number(t.outsourceCost) || 0,
               specialIncentivePercent: t.specialIncentivePercent ? Number(t.specialIncentivePercent) : null,
-            })));
-          }
+            }))
+          );
         }
 
-        fetch("/api/settings")
-          .then((r) => r.json())
-          .then((s) => {
-            if (s?.settings?.companyName) setLabName(s.settings.companyName);
-          })
-          .catch(() => {});
+        const adminObj = cachedAdmin?.[0];
+        const pdfObj = cachedPdf?.[0];
+        if (adminObj?.companyName || pdfObj?.companyName) {
+          setLabName(adminObj?.companyName || pdfObj?.companyName);
+        }
+
+        setLoading(false);
+
+        // 2. Only if IndexedDB is empty and online, bootstrap in background
+        if ((cachedDocs.length === 0 || cachedTests.length === 0) && typeof navigator !== "undefined" && navigator.onLine) {
+          const { syncManager } = await import("@/lib/offline/sync/syncManager");
+          const bootstrapRes = await syncManager.bootstrapInitialData();
+          if (bootstrapRes.success) {
+            const [freshDocs, freshTests] = await Promise.all([
+              db.doctors.filter((d) => !d.isDeleted).toArray(),
+              db.tests.filter((t) => !t.isDeleted).toArray(),
+            ]);
+            if (freshDocs.length > 0) setDoctors(freshDocs);
+            if (freshTests.length > 0) {
+              setTests(
+                freshTests.map((t) => ({
+                  ...t,
+                  price: Number(t.price) || 0,
+                  outsourceCost: Number(t.outsourceCost) || 0,
+                  specialIncentivePercent: t.specialIncentivePercent ? Number(t.specialIncentivePercent) : null,
+                }))
+              );
+            }
+          }
+        }
       } catch (err) {
-        console.error("Error loading initial data:", err);
-        // Fallback to IndexedDB
-        try {
-          const cachedDocs = await db.doctors.filter(d => !d.isDeleted).toArray();
-          const cachedTests = await db.tests.filter(t => !t.isDeleted).toArray();
-          if (cachedDocs.length > 0) setDoctors(cachedDocs);
-          if (cachedTests.length > 0) setTests(cachedTests);
-        } catch (dbErr) {}
+        console.error("Error loading initial data from IndexedDB:", err);
       } finally {
         setLoading(false);
       }

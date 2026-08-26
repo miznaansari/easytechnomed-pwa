@@ -8,23 +8,23 @@ function serializeTests(tests) {
     if (test.parameters) {
       test.parameters = test.parameters.map(tp => {
         if (tp.parameter) {
-          const { parameter, ...rest } = tp;
           return {
-            ...rest,
-            name: parameter.name,
-            unit: tp.unit !== undefined && tp.unit !== null ? tp.unit : (parameter.unit || ""),
-            valueType: tp.valueType || parameter.valueType || "NUMERIC",
-            options: tp.options || parameter.options || null,
-            minValMale: parameter.minValMale,
-            maxValMale: parameter.maxValMale,
-            normalRangeMale: parameter.normalRangeMale,
-            minValFemale: parameter.minValFemale,
-            maxValFemale: parameter.maxValFemale,
-            normalRangeFemale: parameter.normalRangeFemale,
-            minValBaby: parameter.minValBaby,
-            maxValBaby: parameter.maxValBaby,
-            normalRangeBaby: parameter.normalRangeBaby,
-            normalRangeDefault: parameter.normalRangeDefault,
+            ...tp,
+            parameter: tp.parameter,
+            name: tp.name || tp.parameter.name,
+            unit: tp.unit !== undefined && tp.unit !== null ? tp.unit : (tp.parameter.unit || ""),
+            valueType: tp.valueType || tp.parameter.valueType || "NUMERIC",
+            options: tp.options || tp.parameter.options || null,
+            minValMale: tp.parameter.minValMale,
+            maxValMale: tp.parameter.maxValMale,
+            normalRangeMale: tp.parameter.normalRangeMale,
+            minValFemale: tp.parameter.minValFemale,
+            maxValFemale: tp.parameter.maxValFemale,
+            normalRangeFemale: tp.parameter.normalRangeFemale,
+            minValBaby: tp.parameter.minValBaby,
+            maxValBaby: tp.parameter.maxValBaby,
+            normalRangeBaby: tp.parameter.normalRangeBaby,
+            normalRangeDefault: tp.parameter.normalRangeDefault,
           };
         }
         return tp;
@@ -40,23 +40,23 @@ function serializeSingleTest(test) {
   if (serialized.parameters) {
     serialized.parameters = serialized.parameters.map(tp => {
       if (tp.parameter) {
-        const { parameter, ...rest } = tp;
         return {
-          ...rest,
-          name: parameter.name,
-          unit: tp.unit !== undefined && tp.unit !== null ? tp.unit : (parameter.unit || ""),
-          valueType: tp.valueType || parameter.valueType || "NUMERIC",
-          options: tp.options || parameter.options || null,
-          minValMale: parameter.minValMale,
-          maxValMale: parameter.maxValMale,
-          normalRangeMale: parameter.normalRangeMale,
-          minValFemale: parameter.minValFemale,
-          maxValFemale: parameter.maxValFemale,
-          normalRangeFemale: parameter.normalRangeFemale,
-          minValBaby: parameter.minValBaby,
-          maxValBaby: parameter.maxValBaby,
-          normalRangeBaby: parameter.normalRangeBaby,
-          normalRangeDefault: parameter.normalRangeDefault,
+          ...tp,
+          parameter: tp.parameter,
+          name: tp.name || tp.parameter.name,
+          unit: tp.unit !== undefined && tp.unit !== null ? tp.unit : (tp.parameter.unit || ""),
+          valueType: tp.valueType || tp.parameter.valueType || "NUMERIC",
+          options: tp.options || tp.parameter.options || null,
+          minValMale: tp.parameter.minValMale,
+          maxValMale: tp.parameter.maxValMale,
+          normalRangeMale: tp.parameter.normalRangeMale,
+          minValFemale: tp.parameter.minValFemale,
+          maxValFemale: tp.parameter.maxValFemale,
+          normalRangeFemale: tp.parameter.normalRangeFemale,
+          minValBaby: tp.parameter.minValBaby,
+          maxValBaby: tp.parameter.maxValBaby,
+          normalRangeBaby: tp.parameter.normalRangeBaby,
+          normalRangeDefault: tp.parameter.normalRangeDefault,
         };
       }
       return tp;
@@ -89,7 +89,11 @@ export async function GET(req) {
           where: { isDeleted: false },
           orderBy: { order: "asc" },
           include: { parameter: true }
-        }
+        },
+        formulas: {
+          where: { isActive: true }
+        },
+        interpretationRules: true
       },
       orderBy: { name: "asc" },
     });

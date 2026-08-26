@@ -252,94 +252,94 @@ export default function DoctorSummaryPage() {
   const loadData = async () => {
     setLoading(true);
     try {
-      if (typeof navigator !== "undefined" && !navigator.onLine) {
-        // Offline: compute from IndexedDB
-        const docs = await db.doctors.filter(d => !d.isDeleted).toArray();
-        const regs = await db.registrations.filter(r => !r.isDeleted).toArray();
+      // Compute immediately from IndexedDB (0ms latency, works online & offline)
+      const docs = await db.doctors.filter((d) => !d.isDeleted).toArray();
+      let regs = await db.registrations.filter((r) => !r.isDeleted).toArray();
 
-        const summary = docs.map((doc) => {
-          const docRegs = regs.filter(r => r.refById === doc.id || r.secondRefId === doc.id);
-          const totalAmt = docRegs.reduce((sum, r) => sum + (parseFloat(r.totalAmount) || 0), 0);
-          const totalDisc = docRegs.reduce((sum, r) => sum + (parseFloat(r.discountAmount) || 0), 0);
-          const netAmt = totalAmt - totalDisc;
-          const totalCol = docRegs.reduce((sum, r) => sum + (parseFloat(r.receivedAmount) || 0), 0);
-          const incRate = parseFloat(doc.incentivePercent) || 0;
-          const incAmt = (netAmt * incRate) / 100;
+      // Filter registrations by Date Range
+      if (startDate) {
+        const startTimestamp = new Date(startDate).setHours(0, 0, 0, 0);
+        regs = regs.filter((r) => r.date && new Date(r.date).getTime() >= startTimestamp);
+      }
+      if (endDate) {
+        const endTimestamp = new Date(endDate).setHours(23, 59, 59, 999);
+        regs = regs.filter((r) => r.date && new Date(r.date).getTime() <= endTimestamp);
+      }
+
+      const summary = docs.map((doc) => {
+        const rawDocRegs = regs.filter((r) => r.refById === doc.id || r.secondRefId === doc.id);
+        const incRate = parseFloat(doc.incentivePercent) || 0;
+
+        let totalAmt = 0;
+        let totalDisc = 0;
+        let totalNet = 0;
+        let totalCol = 0;
+        let totalInc = 0;
+
+        const docRegs = rawDocRegs.map((r) => {
+          const tot = parseFloat(r.totalAmount) || 0;
+          const disc = parseFloat(r.discountAmount) || 0;
+          const net = tot - disc;
+          const rec = parseFloat(r.receivedAmount) || 0;
+          const inc = (net * incRate) / 100;
+
+          totalAmt += tot;
+          totalDisc += disc;
+          totalNet += net;
+          totalCol += rec;
+          totalInc += inc;
+
+          const parsedTests = Array.isArray(r.tests)
+            ? r.tests.map((t) => {
+                const tPrice = Number(t.price) || 0;
+                const tExpense = Number(t.expense) || 0;
+                const tBase = tPrice - tExpense;
+                const tInc = (tBase * incRate) / 100;
+                return {
+                  ...t,
+                  name: t.name || t.test?.name || "Test",
+                  price: tPrice,
+                  expense: tExpense,
+                  netBase: tBase,
+                  incentivePercent: incRate,
+                  incentiveAmount: tInc,
+                };
+              })
+            : [];
 
           return {
-            id: doc.id,
-            name: doc.name,
-            code: doc.code,
-            degree: doc.degree,
-            clinicName: doc.clinicName,
-            address: doc.address,
+            ...r,
+            amount: tot,
+            discount: disc,
+            netAmount: net,
+            receivedAmount: rec,
             incentivePercent: incRate,
-            incentiveAmount: incAmt,
-            amount: totalAmt,
-            discount: totalDisc,
-            netAmount: netAmt,
-            collection: totalCol,
-            registrations: docRegs,
+            incentiveAmount: inc,
+            tests: parsedTests,
           };
         });
 
-        setSummaryData(summary);
-        setLoading(false);
-        return;
-      }
+        return {
+          id: doc.id,
+          name: doc.name || "Doctor",
+          code: doc.code || "",
+          degree: doc.degree || "",
+          clinicName: doc.clinicName || "",
+          address: doc.address || "",
+          incentivePercent: incRate,
+          incentiveAmount: totalInc,
+          amount: totalAmt,
+          discount: totalDisc,
+          netAmount: totalNet,
+          collection: totalCol,
+          count: docRegs.length,
+          registrations: docRegs,
+        };
+      });
 
-      const queryParams = new URLSearchParams();
-      if (startDate) queryParams.set("startDate", `${startDate}T00:00:00.000Z`);
-      if (endDate) queryParams.set("endDate", `${endDate}T23:59:59.999Z`);
-
-      const res = await fetch(`/api/doctor-summary?${queryParams.toString()}`)
-        .then((r) => r.json())
-        .catch(() => ({ success: false }));
-
-      if (res.success && Array.isArray(res.summary)) {
-        const parsed = res.summary.map((item) => ({
-          ...item,
-          amount: Number(item.amount) || 0,
-          discount: Number(item.discount) || 0,
-          netAmount: Number(item.netAmount) || 0,
-          collection: Number(item.collection) || 0,
-          incentivePercent: Number(item.incentivePercent) || 0,
-          incentiveAmount: Number(item.incentiveAmount) || 0,
-          registrations: item.registrations || [],
-        }));
-        setSummaryData(parsed);
-      } else {
-        // Fallback to IndexedDB
-        const docs = await db.doctors.filter(d => !d.isDeleted).toArray();
-        const regs = await db.registrations.filter(r => !r.isDeleted).toArray();
-        const summary = docs.map((doc) => {
-          const docRegs = regs.filter(r => r.refById === doc.id || r.secondRefId === doc.id);
-          const totalAmt = docRegs.reduce((sum, r) => sum + (parseFloat(r.totalAmount) || 0), 0);
-          const totalDisc = docRegs.reduce((sum, r) => sum + (parseFloat(r.discountAmount) || 0), 0);
-          const netAmt = totalAmt - totalDisc;
-          const totalCol = docRegs.reduce((sum, r) => sum + (parseFloat(r.receivedAmount) || 0), 0);
-          const incRate = parseFloat(doc.incentivePercent) || 0;
-          const incAmt = (netAmt * incRate) / 100;
-          return {
-            id: doc.id,
-            name: doc.name,
-            code: doc.code,
-            degree: doc.degree,
-            clinicName: doc.clinicName,
-            address: doc.address,
-            incentivePercent: incRate,
-            incentiveAmount: incAmt,
-            amount: totalAmt,
-            discount: totalDisc,
-            netAmount: netAmt,
-            collection: totalCol,
-            registrations: docRegs,
-          };
-        });
-        setSummaryData(summary);
-      }
+      setSummaryData(summary);
     } catch (err) {
-      console.error(err);
+      console.error("Error computing doctor summary from IndexedDB:", err);
     } finally {
       setLoading(false);
     }
@@ -845,12 +845,12 @@ export default function DoctorSummaryPage() {
                         <TableCell sx={{ color: "text.secondary" }}>{item.lastPaid ? formatDate(item.lastPaid) : "-"}</TableCell>
                         <TableCell align="right" sx={{ fontWeight: 600 }}>{item.incentivePercent}%</TableCell>
                         <TableCell align="right" sx={{ fontWeight: 700 }}>{item.count}</TableCell>
-                        <TableCell align="right">₹{item.amount.toFixed(2)}</TableCell>
-                        <TableCell align="right">₹{item.discount.toFixed(2)}</TableCell>
-                        <TableCell align="right" sx={{ fontWeight: 600 }}>₹{item.netAmount.toFixed(2)}</TableCell>
-                        <TableCell align="right" sx={{ color: "primary.dark", fontWeight: 700 }}>₹{item.incentiveAmount.toFixed(2)}</TableCell>
+                        <TableCell align="right">₹{(Number(item.amount) || 0).toFixed(2)}</TableCell>
+                        <TableCell align="right">₹{(Number(item.discount) || 0).toFixed(2)}</TableCell>
+                        <TableCell align="right" sx={{ fontWeight: 600 }}>₹{(Number(item.netAmount) || 0).toFixed(2)}</TableCell>
+                        <TableCell align="right" sx={{ color: "primary.dark", fontWeight: 700 }}>₹{(Number(item.incentiveAmount) || 0).toFixed(2)}</TableCell>
                         <TableCell align="right" sx={{ color: "success.main", fontWeight: 700 }}>
-                          {item.collection > 0 ? `₹${item.collection.toFixed(2)}` : "0.00"}
+                          {(Number(item.collection) || 0) > 0 ? `₹${(Number(item.collection) || 0).toFixed(2)}` : "0.00"}
                         </TableCell>
                       </TableRow>
 
@@ -1040,16 +1040,16 @@ export default function DoctorSummaryPage() {
                                             </Box>
                                           </TableCell>
                                           <TableCell align="right" sx={{ fontSize: "0.78rem", fontWeight: 600 }}>
-                                            ₹{reg.netAmount.toFixed(2)}
+                                            ₹{(Number(reg.netAmount) || 0).toFixed(2)}
                                           </TableCell>
                                           <TableCell align="right" sx={{ fontSize: "0.78rem", color: "primary.dark", fontWeight: 700 }}>
-                                            ₹{reg.incentiveAmount.toFixed(2)}
+                                            ₹{(Number(reg.incentiveAmount) || 0).toFixed(2)}
                                             <Typography variant="caption" sx={{ display: "block", color: "text.secondary", fontSize: "0.68rem" }}>
-                                              {reg.hasSpecialTests || reg.hasOutsourcedTests ? "(Itemized Calc)" : `(${reg.incentivePercent}%)`}
+                                              {reg.hasSpecialTests || reg.hasOutsourcedTests ? "(Itemized Calc)" : `(${reg.incentivePercent || 0}%)`}
                                             </Typography>
                                           </TableCell>
                                           <TableCell align="right" sx={{ fontSize: "0.78rem", whiteSpace: "nowrap", color: "success.main", fontWeight: 600 }}>
-                                            ₹{reg.receivedAmount.toFixed(2)}
+                                            ₹{(Number(reg.receivedAmount) || 0).toFixed(2)}
                                           </TableCell>
                                           <TableCell align="center" sx={{ fontSize: "0.78rem" }}>
                                             {getStatusChip(reg.status)}

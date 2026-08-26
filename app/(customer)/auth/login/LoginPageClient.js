@@ -73,8 +73,15 @@ export default function CustomerLoginPage() {
       }).then((r) => r.json());
 
       if (res.success) {
-        toast.success(res.message);
-        router.push(res.redirect);
+        toast.loading("Synchronizing laboratory database...", { id: "login-sync" });
+        try {
+          const { syncManager } = await import("@/lib/offline/sync/syncManager");
+          await syncManager.bootstrapInitialData();
+        } catch (syncErr) {
+          console.warn("[LoginPage] Offline bootstrap warning:", syncErr);
+        }
+        toast.success(res.message || "Login successful!", { id: "login-sync" });
+        router.push(res.redirect || "/dashboard");
       } else {
         toast.error(res.message);
         setIsLoading(false);
