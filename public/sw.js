@@ -1,4 +1,4 @@
-const CACHE_NAME = "easytechnomed-pwa-v6";
+const CACHE_NAME = "easytechnomed-pwa-v7";
 const OFFLINE_PRINT_URL = "/offline-print.html";
 const APP_SHELL_KEY = "/__app_shell__";
 
@@ -12,6 +12,13 @@ const PRECACHE_ASSETS = [
   "/logo/logobg.png",
   "/logo/customer_login_bg.png",
 ];
+
+// Helper: check if a Response has text/html content-type
+function isHtmlResponse(res) {
+  if (!res || !res.headers) return false;
+  const ct = res.headers.get("content-type") || "";
+  return ct.includes("text/html");
+}
 
 // Install event: cache offline fallback assets
 self.addEventListener("install", (event) => {
@@ -38,7 +45,7 @@ self.addEventListener("install", (event) => {
   );
 });
 
-// Activate event: clean up older caches and claim clients immediately
+// Activate event: delete old caches (including poisoned RSC payloads) and claim clients immediately
 self.addEventListener("activate", (event) => {
   event.waitUntil(
     caches
@@ -47,7 +54,7 @@ self.addEventListener("activate", (event) => {
         return Promise.all(
           cacheNames.map((cacheName) => {
             if (cacheName !== CACHE_NAME) {
-              console.log("[Service Worker] Deleting old cache:", cacheName);
+              console.log("[Service Worker] Purging old cache version:", cacheName);
               return caches.delete(cacheName);
             }
           })
@@ -57,16 +64,16 @@ self.addEventListener("activate", (event) => {
   );
 });
 
-// Fetch event: handle offline navigation, RSC requests, print fallbacks, and asset caching
+// Fetch event
 self.addEventListener("fetch", (event) => {
   if (event.request.method !== "GET") return;
 
   const url = new URL(event.request.url);
 
-  // Ignore unsupported schemes (e.g. chrome-extension, data:)
+  // Ignore non-http schemes (e.g. chrome-extension, data:)
   if (url.protocol !== "http:" && url.protocol !== "https:") return;
 
-  // 1. Handle Print Document Routes (/api/print-report/, /api/print-bill/, /api/print-subscription-invoice/)
+  // 1. Handle Print Routes (/api/print-report/, /api/print-bill/, /api/print-subscription-invoice/)
   const isPrintRequest =
     url.pathname.startsWith("/api/print-report/") ||
     url.pathname.startsWith("/api/print-bill/") ||
@@ -92,12 +99,12 @@ self.addEventListener("fetch", (event) => {
     return;
   }
 
-  // 2. Bypass standard data APIs (offline data handled via IndexedDB)
+  // 2. Bypass standard data APIs (offline data is managed via IndexedDB)
   if (url.pathname.startsWith("/api/") || url.pathname.startsWith("/adminstration/api/")) {
     return;
   }
 
-  // 3. Next.js React Server Component (RSC) requests
+  // 3. Next.js React Server Component (RSC) requests (NEVER overwrite plain HTML pathname cache with RSC payload!)
   const isRSCRequest =
     url.searchParams.has("_rsc") ||
     event.request.headers.get("RSC") === "1" ||
@@ -108,23 +115,18 @@ self.addEventListener("fetch", (event) => {
       fetch(event.request)
         .then((networkResponse) => {
           if (networkResponse && networkResponse.status === 200) {
-            const clone1 = networkResponse.clone();
-            const clone2 = networkResponse.clone();
-            caches.open(CACHE_NAME).then(async (cache) => {
-              try {
-                await cache.put(event.request, clone1);
-                await cache.put(url.pathname, clone2);
-              } catch (e) {}
+            const clone = networkResponse.clone();
+            caches.open(CACHE_NAME).then((cache) => {
+              // ONLY store under exact request (which includes _rsc query param)
+              cache.put(event.request, clone).catch(() => {});
             }).catch(() => {});
           }
           return networkResponse;
         })
         .catch(async () => {
           try {
-            const cached = await caches.match(event.request, { ignoreSearch: true });
+            const cached = await caches.match(event.request, { ignoreSearch: false });
             if (cached) return cached;
-            const pathnameCached = await caches.match(url.pathname);
-            if (pathnameCached) return pathnameCached;
           } catch (e) {}
 
           return new Response("", {
@@ -136,13 +138,13 @@ self.addEventListener("fetch", (event) => {
     return;
   }
 
-  // 4. Full Page HTML Navigation Requests (Reloads, direct URL visits, page shifts)
-  // Instead of showing a "No Internet" screen, serve the cached Next.js App Shell so React loads offline from IndexedDB!
+  // 4. Full Page HTML Navigation Requests (mode: 'navigate')
+  // ALWAYS return a genuine text/html response (App Shell) so React hydrates offline from IndexedDB
   if (event.request.mode === "navigate") {
     event.respondWith(
       fetch(event.request)
         .then((networkResponse) => {
-          if (networkResponse && networkResponse.status === 200) {
+          if (networkResponse && networkResponse.status === 200 && isHtmlResponse(networkResponse)) {
             const clone1 = networkResponse.clone();
             const clone2 = networkResponse.clone();
             const clone3 = networkResponse.clone();
@@ -157,44 +159,45 @@ self.addEventListener("fetch", (event) => {
           return networkResponse;
         })
         .catch(async () => {
-          console.log("[Service Worker] Offline navigation fallback (Serving App Shell) for:", url.pathname);
+          console.log("[Service Worker] Offline navigation (App Shell) for:", url.pathname);
           try {
             const cache = await caches.open(CACHE_NAME);
 
-            // 1. Try exact request
+            // 1. Try exact HTML request
             const cachedExact = await cache.match(event.request, { ignoreSearch: true });
-            if (cachedExact) return cachedExact;
+            if (isHtmlResponse(cachedExact)) return cachedExact;
 
-            // 2. Try pathname
+            // 2. Try pathname HTML
             const pathnameCached = await cache.match(url.pathname);
-            if (pathnameCached) return pathnameCached;
+            if (isHtmlResponse(pathnameCached)) return pathnameCached;
 
             // 3. Try global App Shell
             const appShell = await cache.match(APP_SHELL_KEY);
-            if (appShell) return appShell;
+            if (isHtmlResponse(appShell)) return appShell;
 
-            // 4. Try any cached dashboard route
+            // 4. Try any core dashboard page
             for (const route of ["/dashboard", "/test-report", "/registration", "/doctor-summary", "/settings", "/"]) {
               const fallback = await cache.match(route);
-              if (fallback) return fallback;
+              if (isHtmlResponse(fallback)) return fallback;
             }
 
-            // 5. Try any cached HTML file in Cache Storage
+            // 5. Try any cached HTML in storage
             const keys = await cache.keys();
             for (const key of keys) {
               const item = await cache.match(key);
-              if (item && item.headers && item.headers.get("content-type")?.includes("text/html")) {
-                return item;
-              }
+              if (isHtmlResponse(item)) return item;
             }
           } catch (e) {
-            console.warn("[Service Worker] App shell cache match error:", e);
+            console.warn("[Service Worker] Navigation cache match error:", e);
           }
 
-          return new Response("<!DOCTYPE html><html><head><meta http-equiv='refresh' content='2'></head><body>Loading EasyTechnoMed App...</body></html>", {
-            status: 200,
-            headers: { "Content-Type": "text/html; charset=utf-8" },
-          });
+          return new Response(
+            "<!DOCTYPE html><html><head><meta charset='utf-8'><title>EasyTechnoMed</title><script>window.location.reload();</script></head><body>Loading EasyTechnoMed App...</body></html>",
+            {
+              status: 200,
+              headers: { "Content-Type": "text/html; charset=utf-8" },
+            }
+          );
         })
     );
     return;
@@ -219,7 +222,7 @@ self.addEventListener("fetch", (event) => {
     event.respondWith(
       caches.match(event.request, { ignoreSearch: true }).then((cachedResponse) => {
         if (cachedResponse) {
-          // Revalidate in background if connected
+          // Revalidate in background if online
           fetch(event.request)
             .then((networkResponse) => {
               if (networkResponse && networkResponse.status === 200) {
