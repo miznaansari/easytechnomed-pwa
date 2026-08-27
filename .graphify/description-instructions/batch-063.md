@@ -17,6 +17,8 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "generated_client_index_d_aggregateadmin": "AggregateAdmin" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L10672 | neighbors=[index.d.ts]
+- "generated_client_index_d_aggregateadminaddress": "AggregateAdminAddress" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L23961 | neighbors=[index.d.ts]
 - "generated_client_index_d_aggregateadminrole": "AggregateAdminRole" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L12861 | neighbors=[index.d.ts]
 - "generated_client_index_d_aggregateadminrolepermission": "AggregateAdminRolePermission" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L13809 | neighbors=[index.d.ts]
 - "generated_client_index_d_aggregateadminsession": "AggregateAdminSession" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L11922 | neighbors=[index.d.ts]
@@ -55,8 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "generated_client_index_d_booleanfieldrefinput": "BooleanFieldRefInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L34452 | neighbors=[index.d.ts]
 - "generated_client_index_d_boolfieldupdateoperationsinput": "BoolFieldUpdateOperationsInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L42879 | neighbors=[index.d.ts]
 - "generated_client_index_d_boolfilter": "BoolFilter" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L40392 | neighbors=[index.d.ts]
-- "generated_client_index_d_boolwithaggregatesfilter": "BoolWithAggregatesFilter" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L40598 | neighbors=[index.d.ts]
-- "generated_client_index_d_cast": "Cast" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L954 | neighbors=[index.d.ts]
 
 ## Instructions
 

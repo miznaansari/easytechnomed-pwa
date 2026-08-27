@@ -17,6 +17,8 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "generated_client_index_d_adminroleinclude": "AdminRoleInclude" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L13060 | neighbors=[index.d.ts]
+- "generated_client_index_d_adminrolemaxaggregateinputtype": "AdminRoleMaxAggregateInputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L12915 | neighbors=[index.d.ts]
 - "generated_client_index_d_adminrolemaxaggregateoutputtype": "AdminRoleMaxAggregateOutputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L12884 | neighbors=[index.d.ts]
 - "generated_client_index_d_adminrolemaxorderbyaggregateinput": "AdminRoleMaxOrderByAggregateInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L41188 | neighbors=[index.d.ts]
 - "generated_client_index_d_adminroleminaggregateinputtype": "AdminRoleMinAggregateInputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L12908 | neighbors=[index.d.ts]
@@ -55,8 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "generated_client_index_d_adminrolepermissionfinduniqueargs": "AdminRolePermissionFindUniqueArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L14394 | neighbors=[index.d.ts]
 - "generated_client_index_d_adminrolepermissionfinduniqueorthrowargs": "AdminRolePermissionFindUniqueOrThrowArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L14412 | neighbors=[index.d.ts]
 - "generated_client_index_d_adminrolepermissiongetpayload": "AdminRolePermissionGetPayload" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L14018 | neighbors=[index.d.ts]
-- "generated_client_index_d_adminrolepermissiongroupbyargs": "AdminRolePermissionGroupByArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L13948 | neighbors=[index.d.ts]
-- "generated_client_index_d_adminrolepermissiongroupbyoutputtype": "AdminRolePermissionGroupByOutputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L13962 | neighbors=[index.d.ts]
 
 ## Instructions
 

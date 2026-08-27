@@ -17,6 +17,8 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "generated_client_index_d_admincreateorconnectwithoutaddressinput": "AdminCreateOrConnectWithoutAddressInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L50256 | neighbors=[index.d.ts]
+- "generated_client_index_d_admincreateorconnectwithoutregistrationsinput": "AdminCreateOrConnectWithoutRegistrationsInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L48519 | neighbors=[index.d.ts]
 - "generated_client_index_d_admincreateorconnectwithoutroleinput": "AdminCreateOrConnectWithoutRoleInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L47434 | neighbors=[index.d.ts]
 - "generated_client_index_d_admincreateorconnectwithoutsessionsinput": "AdminCreateOrConnectWithoutSessionsInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L47300 | neighbors=[index.d.ts]
 - "generated_client_index_d_admincreateorconnectwithouttrackingsinput": "AdminCreateOrConnectWithoutTrackingsInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L50584 | neighbors=[index.d.ts]
@@ -55,8 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "generated_client_index_d_adminpayload": "$AdminPayload" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L11081 | neighbors=[index.d.ts]
 - "generated_client_index_d_adminrelationfilter": "AdminRelationFilter" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L41122 | neighbors=[index.d.ts]
 - "generated_client_index_d_adminrole": "AdminRole" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L65 | neighbors=[index.d.ts]
-- "generated_client_index_d_adminrole_adminsargs": "AdminRole$adminsArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L13753 | neighbors=[index.d.ts]
-- "generated_client_index_d_adminrole_permissionsargs": "AdminRole$permissionsArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L13773 | neighbors=[index.d.ts]
 
 ## Instructions
 

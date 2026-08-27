@@ -17,6 +17,8 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "generated_client_index_d_interpretationrulefindfirstargs": "InterpretationRuleFindFirstArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L31421 | neighbors=[index.d.ts]
+- "generated_client_index_d_interpretationrulefindfirstorthrowargs": "InterpretationRuleFindFirstOrThrowArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L31469 | neighbors=[index.d.ts]
 - "generated_client_index_d_interpretationrulefindmanyargs": "InterpretationRuleFindManyArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L31517 | neighbors=[index.d.ts]
 - "generated_client_index_d_interpretationrulefinduniqueargs": "InterpretationRuleFindUniqueArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L31385 | neighbors=[index.d.ts]
 - "generated_client_index_d_interpretationrulefinduniqueorthrowargs": "InterpretationRuleFindUniqueOrThrowArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L31403 | neighbors=[index.d.ts]
@@ -55,8 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "generated_client_index_d_interpretationruleuncheckedupdatemanywithoutparameterinput": "InterpretationRuleUncheckedUpdateManyWithoutParameterInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L54114 | neighbors=[index.d.ts]
 - "generated_client_index_d_interpretationruleuncheckedupdatemanywithoutparameternestedinput": "InterpretationRuleUncheckedUpdateManyWithoutParameterNestedInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L44485 | neighbors=[index.d.ts]
 - "generated_client_index_d_interpretationruleuncheckedupdatemanywithouttestinput": "InterpretationRuleUncheckedUpdateManyWithoutTestInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L53801 | neighbors=[index.d.ts]
-- "generated_client_index_d_interpretationruleuncheckedupdatemanywithouttestnestedinput": "InterpretationRuleUncheckedUpdateManyWithoutTestNestedInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L44109 | neighbors=[index.d.ts]
-- "generated_client_index_d_interpretationruleuncheckedupdatemanywithoutworkspaceinput": "InterpretationRuleUncheckedUpdateManyWithoutWorkspaceInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L52607 | neighbors=[index.d.ts]
 
 ## Instructions
 

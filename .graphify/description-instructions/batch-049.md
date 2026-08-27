@@ -17,6 +17,8 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "app_layout_outfit": "outfit" | kind=code-symbol | source=app/layout.js:L7 | neighbors=[layout.js]
+- "app_layout_rootlayout": "RootLayout()" | kind=code-symbol | source=app/layout.js:L44 | neighbors=[layout.js]
 - "app_layout_viewport": "viewport" | kind=code-symbol | source=app/layout.js:L40 | neighbors=[layout.js]
 - "app_manifest_manifest": "manifest()" | kind=code-symbol | source=app/manifest.js:L1 | neighbors=[manifest.js]
 - "app_robots_robots": "robots()" | kind=code-symbol | source=app/robots.js:L1 | neighbors=[robots.js]
@@ -55,8 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "customer_layout_customerlayout": "CustomerLayout()" | kind=code-symbol | source=app/(customer)/layout.jsx:L64 | neighbors=[layout.jsx]
 - "customer_layout_theme": "theme" | kind=code-symbol | source=app/(customer)/layout.jsx:L8 | neighbors=[layout.jsx]
 - "customer_page_metadata": "metadata" | kind=code-symbol | source=app/(customer)/page.jsx:L3 | neighbors=[page.jsx]
-- "customer_page_rootpage": "RootPage()" | kind=code-symbol | source=app/(customer)/page.jsx:L8 | neighbors=[page.jsx]
-- "dashboard_dashboardcharts_customtooltip": "CustomTooltip()" | kind=code-symbol | source=app/(customer)/(dashboard)/dashboard/DashboardCharts.js:L21 | neighbors=[DashboardCharts.js]
 
 ## Instructions
 

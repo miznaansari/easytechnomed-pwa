@@ -17,6 +17,8 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "generated_client_index_d_getinterpretationruleaggregatetype": "GetInterpretationRuleAggregateType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L30895 | neighbors=[index.d.ts]
+- "generated_client_index_d_getinterpretationrulegroupbypayload": "GetInterpretationRuleGroupByPayload" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L30936 | neighbors=[index.d.ts]
 - "generated_client_index_d_getleadaggregatetype": "GetLeadAggregateType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L23236 | neighbors=[index.d.ts]
 - "generated_client_index_d_getleadcontactaggregatetype": "GetLeadContactAggregateType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L26077 | neighbors=[index.d.ts]
 - "generated_client_index_d_getleadcontactgroupbypayload": "GetLeadContactGroupByPayload" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L26119 | neighbors=[index.d.ts]
@@ -55,8 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "generated_client_index_d_getuserrolepermissiongroupbypayload": "GetUserRolePermissionGroupByPayload" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L9941 | neighbors=[index.d.ts]
 - "generated_client_index_d_getusersessionaggregatetype": "GetUserSessionAggregateType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L8064 | neighbors=[index.d.ts]
 - "generated_client_index_d_getusersessiongroupbypayload": "GetUserSessionGroupByPayload" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L8104 | neighbors=[index.d.ts]
-- "generated_client_index_d_getworkspaceaggregatetype": "GetWorkspaceAggregateType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L3875 | neighbors=[index.d.ts]
-- "generated_client_index_d_getworkspacegroupbypayload": "GetWorkspaceGroupByPayload" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L3917 | neighbors=[index.d.ts]
 
 ## Instructions
 

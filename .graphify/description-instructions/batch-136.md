@@ -17,6 +17,8 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "runtime_library_d_payloadtoresult": "PayloadToResult" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L2305 | neighbors=[_d()]
+- "runtime_library_d_pick_2": "Pick_2" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L2309 | neighbors=[_d()]
 - "runtime_library_d_primarykey": "PrimaryKey" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L685 | neighbors=[_d()]
 - "runtime_library_d_prismaclientinitializationerror": "PrismaClientInitializationError" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L2314 | neighbors=[_d()]
 - "runtime_library_d_prismaclientoptions": "PrismaClientOptions" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L2331 | neighbors=[_d()]
@@ -55,8 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "runtime_library_d_readonlydeep_2": "ReadonlyDeep_2" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L2646 | neighbors=[_d()]
 - "runtime_library_d_record_2": "Record_2" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L2650 | neighbors=[_d()]
 - "runtime_library_d_renameandnestpayloadkeys": "RenameAndNestPayloadKeys" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L2655 | neighbors=[_d()]
-- "runtime_library_d_requestbatchoptions": "RequestBatchOptions" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L2659 | neighbors=[_d()]
-- "runtime_library_d_requesterror": "RequestError" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L2667 | neighbors=[_d()]
 
 ## Instructions
 

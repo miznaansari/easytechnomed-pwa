@@ -52,7 +52,7 @@ one-sentence description — no prose, no markdown fences.
 - "doctor_summary_page": "page.js" | kind=code-symbol | source=app/(customer)/(dashboard)/doctor-summary/page.js:L1 | neighbors=[252e194 e, 2b2534c f, 532b740 fixed, 53ca5c1 stable version 1, 6fcf015 f, 7d8c494 fxed]
 - "lib_auth": "auth.js" | kind=code-symbol | source=lib/auth.js:L1 | neighbors=[252e194 e, 5e3d9ef d, requireAdmin(), requireSuperAdmin(), requireUser(), signToken()]
 - "offline_db": "db.js" | kind=code-symbol | source=lib/offline/db.js:L1 | neighbors=[2b2534c f, 84a8ff2 full indexeddb based, AppDatabase, db, timestamps.js, getUtcIsoNow()]
-- "offline_network_networkmonitor": "NetworkMonitor" | kind=code-symbol | source=lib/offline/network.js:L5 | neighbors=[network.js, .checkConnection(), .constructor(), .handleStatusChange(), .notifyListeners(), .startHeartbeat()]
+- "offline_network_networkmonitor": "NetworkMonitor" | kind=code-symbol | source=lib/offline/network.js:L6 | neighbors=[network.js, .checkConnection(), .constructor(), .handleStatusChange(), .notifyListeners(), .subscribe()]
 - "pdf_pdfclient": "pdfClient.jsx" | kind=code-symbol | source=app/(customer)/(dashboard)/settings/pdf/pdfClient.jsx:L1 | neighbors=[252e194 e, 532b740 fixed, 53ca5c1 stable version 1, 7d8c494 fxed, 84a8ff2 full indexeddb based, 905ef50 fixed]
 - "runtime_edge_esm_getdeepfieldvalue": "getDeepFieldValue()" | kind=code-symbol | source=scratch/generated-client/runtime/edge-esm.js:L3 | neighbors=[edge-esm.js, bu(), Eu(), getDeepField(), hc(), pu()]
 - "runtime_edge_esm_pu": "pu()" | kind=code-symbol | source=scratch/generated-client/runtime/edge-esm.js:L4 | neighbors=[edge-esm.js, cu(), addErrorMessage(), addSuggestion(), Ao(), asObject()]

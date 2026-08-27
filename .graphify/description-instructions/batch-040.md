@@ -17,6 +17,8 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "runtime_index_browser_d_anynull": "AnyNull" | kind=code-symbol | source=scratch/generated-client/runtime/index-browser.d.ts:L1 | neighbors=[index-browser.d.ts, NullTypesEnumValue]
+- "runtime_index_browser_d_dbnull": "DbNull" | kind=code-symbol | source=scratch/generated-client/runtime/index-browser.d.ts:L16 | neighbors=[index-browser.d.ts, NullTypesEnumValue]
 - "runtime_index_browser_d_jsonnull": "JsonNull" | kind=code-symbol | source=scratch/generated-client/runtime/index-browser.d.ts:L298 | neighbors=[index-browser.d.ts, NullTypesEnumValue]
 - "runtime_index_browser_getname": "_getName()" | kind=code-symbol | source=scratch/generated-client/runtime/index-browser.js:L1 | neighbors=[index-browser.js, constructor()]
 - "runtime_index_browser_getnamespace": "_getNamespace()" | kind=code-symbol | source=scratch/generated-client/runtime/index-browser.js:L1 | neighbors=[index-browser.js, constructor()]
@@ -55,8 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "runtime_library_d_transaction": "Transaction" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L3228 | neighbors=[_d(), Queryable]
 - "runtime_library_d_transactioncontext": "TransactionContext" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L3252 | neighbors=[_d(), Queryable]
 - "runtime_library_da": "da()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L29 | neighbors=[library.js, isEmpty()]
-- "runtime_library_dd": "dd()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L29 | neighbors=[library.js, Se()]
-- "runtime_library_dl": "Dl()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L121 | neighbors=[library.js, fo()]
 
 ## Instructions
 

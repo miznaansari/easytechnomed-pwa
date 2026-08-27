@@ -17,6 +17,8 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "runtime_library_d_exceptionwithname": "ExceptionWithName" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L1239 | neighbors=[_d()]
+- "runtime_library_d_extendedeventtype": "ExtendedEventType" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L1246 | neighbors=[_d()]
 - "runtime_library_d_extendedspanoptions": "ExtendedSpanOptions" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L1248 | neighbors=[_d()]
 - "runtime_library_d_extendshook": "ExtendsHook" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L1260 | neighbors=[_d()]
 - "runtime_library_d_extensionargs": "ExtensionArgs" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L1294 | neighbors=[_d()]
@@ -55,8 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "runtime_library_d_indextype": "IndexType" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L741 | neighbors=[_d()]
 - "runtime_library_d_inputjsonarray": "InputJsonArray" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L1739 | neighbors=[_d()]
 - "runtime_library_d_inputjsonobject": "InputJsonObject" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L1746 | neighbors=[_d()]
-- "runtime_library_d_inputjsonvalue": "InputJsonValue" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L1763 | neighbors=[_d()]
-- "runtime_library_d_inputtype": "InputType" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L811 | neighbors=[_d()]
 
 ## Instructions
 

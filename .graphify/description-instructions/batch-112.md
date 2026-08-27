@@ -17,6 +17,8 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "generated_client_index_d_userrolepermissioncreatemanyroleinput": "UserRolePermissionCreateManyRoleInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L52749 | neighbors=[index.d.ts]
+- "generated_client_index_d_userrolepermissioncreatemanyroleinputenvelope": "UserRolePermissionCreateManyRoleInputEnvelope" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L46710 | neighbors=[index.d.ts]
 - "generated_client_index_d_userrolepermissioncreatenestedmanywithoutroleinput": "UserRolePermissionCreateNestedManyWithoutRoleInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L43374 | neighbors=[index.d.ts]
 - "generated_client_index_d_userrolepermissioncreateorconnectwithoutroleinput": "UserRolePermissionCreateOrConnectWithoutRoleInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L46705 | neighbors=[index.d.ts]
 - "generated_client_index_d_userrolepermissioncreatewithoutroleinput": "UserRolePermissionCreateWithoutRoleInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L46696 | neighbors=[index.d.ts]
@@ -55,8 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "generated_client_index_d_userrolepermissionsumaggregateoutputtype": "UserRolePermissionSumAggregateOutputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L9790 | neighbors=[index.d.ts]
 - "generated_client_index_d_userrolepermissionsumorderbyaggregateinput": "UserRolePermissionSumOrderByAggregateInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L40990 | neighbors=[index.d.ts]
 - "generated_client_index_d_userrolepermissionuncheckedcreateinput": "UserRolePermissionUncheckedCreateInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L37796 | neighbors=[index.d.ts]
-- "generated_client_index_d_userrolepermissionuncheckedcreatenestedmanywithoutroleinput": "UserRolePermissionUncheckedCreateNestedManyWithoutRoleInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L43388 | neighbors=[index.d.ts]
-- "generated_client_index_d_userrolepermissionuncheckedcreatewithoutroleinput": "UserRolePermissionUncheckedCreateWithoutRoleInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L46700 | neighbors=[index.d.ts]
 
 ## Instructions
 

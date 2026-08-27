@@ -17,6 +17,8 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "generated_client_index_d_testformulauncheckedupdatemanywithoutworkspacenestedinput": "TestFormulaUncheckedUpdateManyWithoutWorkspaceNestedInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L43133 | neighbors=[index.d.ts]
+- "generated_client_index_d_testformulauncheckedupdatewithoutoutputparameterinput": "TestFormulaUncheckedUpdateWithoutOutputParameterInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L54069 | neighbors=[index.d.ts]
 - "generated_client_index_d_testformulauncheckedupdatewithouttestinput": "TestFormulaUncheckedUpdateWithoutTestInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L53756 | neighbors=[index.d.ts]
 - "generated_client_index_d_testformulauncheckedupdatewithoutworkspaceinput": "TestFormulaUncheckedUpdateWithoutWorkspaceInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L52562 | neighbors=[index.d.ts]
 - "generated_client_index_d_testformulaupdateargs": "TestFormulaUpdateArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L30608 | neighbors=[index.d.ts]
@@ -55,8 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "generated_client_index_d_testminorderbyaggregateinput": "TestMinOrderByAggregateInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L41435 | neighbors=[index.d.ts]
 - "generated_client_index_d_testorderbyrelationaggregateinput": "TestOrderByRelationAggregateInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L40495 | neighbors=[index.d.ts]
 - "generated_client_index_d_testorderbywithaggregationinput": "TestOrderByWithAggregationInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L35540 | neighbors=[index.d.ts]
-- "generated_client_index_d_testorderbywithrelationinput": "TestOrderByWithRelationInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L35476 | neighbors=[index.d.ts]
-- "generated_client_index_d_testparameter": "TestParameter" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L100 | neighbors=[index.d.ts]
 
 ## Instructions
 

@@ -17,6 +17,8 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "generated_client_index_d_workspacewhereuniqueinput": "WorkspaceWhereUniqueInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L34527 | neighbors=[index.d.ts]
+- "generated_client_index_d_xor": "XOR" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L795 | neighbors=[index.d.ts]
 - "generated_client_index_fs": "fs" | kind=code-symbol | source=scratch/generated-client/index.js:L625 | neighbors=[index.js]
 - "generated_client_index_path": "path" | kind=code-symbol | source=scratch/generated-client/index.js:L82 | neighbors=[index.js]
 - "generated_client_index_prisma": "Prisma" | kind=code-symbol | source=scratch/generated-client/index.js:L29 | neighbors=[index.js]
@@ -55,8 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "logout_route_post": "POST()" | kind=code-symbol | source=app/api/authas/logout/route.js:L5 | neighbors=[route.js]
 - "members_page_workspacememberspage": "WorkspaceMembersPage()" | kind=code-symbol | source=app/(customer)/(dashboard)/members/page.js:L36 | neighbors=[page.js]
 - "members_route_get": "GET()" | kind=code-symbol | source=app/api/members/route.js:L6 | neighbors=[route.js]
-- "members_route_patch": "PATCH()" | kind=code-symbol | source=app/api/members/route.js:L74 | neighbors=[route.js]
-- "members_route_post": "POST()" | kind=code-symbol | source=app/api/members/route.js:L34 | neighbors=[route.js]
 
 ## Instructions
 

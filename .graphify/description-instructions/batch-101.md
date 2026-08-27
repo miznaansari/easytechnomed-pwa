@@ -17,6 +17,8 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "generated_client_index_d_testfindmanyargs": "TestFindManyArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L16779 | neighbors=[index.d.ts]
+- "generated_client_index_d_testfinduniqueargs": "TestFindUniqueArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L16647 | neighbors=[index.d.ts]
 - "generated_client_index_d_testfinduniqueorthrowargs": "TestFindUniqueOrThrowArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L16665 | neighbors=[index.d.ts]
 - "generated_client_index_d_testformula": "TestFormula" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L145 | neighbors=[index.d.ts]
 - "generated_client_index_d_testformula_workspaceargs": "TestFormula$workspaceArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L30698 | neighbors=[index.d.ts]
@@ -55,8 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "generated_client_index_d_testformulafieldrefs": "TestFormulaFieldRefs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L30385 | neighbors=[index.d.ts]
 - "generated_client_index_d_testformulafindfirstargs": "TestFormulaFindFirstArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L30440 | neighbors=[index.d.ts]
 - "generated_client_index_d_testformulafindfirstorthrowargs": "TestFormulaFindFirstOrThrowArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L30488 | neighbors=[index.d.ts]
-- "generated_client_index_d_testformulafindmanyargs": "TestFormulaFindManyArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L30536 | neighbors=[index.d.ts]
-- "generated_client_index_d_testformulafinduniqueargs": "TestFormulaFindUniqueArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L30404 | neighbors=[index.d.ts]
 
 ## Instructions
 

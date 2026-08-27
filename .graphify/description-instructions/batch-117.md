@@ -17,6 +17,8 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "generated_client_index_d_userupsertwithoutsessionsinput": "UserUpsertWithoutSessionsInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L46597 | neighbors=[index.d.ts]
+- "generated_client_index_d_userupsertwithwhereuniquewithoutroleinput": "UserUpsertWithWhereUniqueWithoutRoleInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L46715 | neighbors=[index.d.ts]
 - "generated_client_index_d_userupsertwithwhereuniquewithoutworkspaceinput": "UserUpsertWithWhereUniqueWithoutWorkspaceInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L45909 | neighbors=[index.d.ts]
 - "generated_client_index_d_userwhereinput": "UserWhereInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L34716 | neighbors=[index.d.ts]
 - "generated_client_index_d_userwhereuniqueinput": "UserWhereUniqueInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L34765 | neighbors=[index.d.ts]
@@ -55,8 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "generated_client_index_d_workspacecountoutputtypedefaultargs": "WorkspaceCountOutputTypeDefaultArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L3165 | neighbors=[index.d.ts]
 - "generated_client_index_d_workspacecountoutputtypeselect": "WorkspaceCountOutputTypeSelect" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L3149 | neighbors=[index.d.ts]
 - "generated_client_index_d_workspacecreateargs": "WorkspaceCreateArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L4575 | neighbors=[index.d.ts]
-- "generated_client_index_d_workspacecreateinput": "WorkspaceCreateInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L37291 | neighbors=[index.d.ts]
-- "generated_client_index_d_workspacecreatemanyargs": "WorkspaceCreateManyArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L4593 | neighbors=[index.d.ts]
 
 ## Instructions
 

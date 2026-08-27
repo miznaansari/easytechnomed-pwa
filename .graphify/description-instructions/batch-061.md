@@ -17,6 +17,8 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "generated_client_index_d_admintrackingscalarwherewithaggregatesinput": "AdminTrackingScalarWhereWithAggregatesInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L36726 | neighbors=[index.d.ts]
+- "generated_client_index_d_admintrackingselect": "AdminTrackingSelect" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L27051 | neighbors=[index.d.ts]
 - "generated_client_index_d_admintrackingselectscalar": "AdminTrackingSelectScalar" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L27065 | neighbors=[index.d.ts]
 - "generated_client_index_d_admintrackingsumaggregateinputtype": "AdminTrackingSumAggregateInputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L26891 | neighbors=[index.d.ts]
 - "generated_client_index_d_admintrackingsumaggregateoutputtype": "AdminTrackingSumAggregateOutputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L26841 | neighbors=[index.d.ts]
@@ -55,8 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "generated_client_index_d_adminuncheckedupdatemanywithoutroleinput": "AdminUncheckedUpdateManyWithoutRoleInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L53167 | neighbors=[index.d.ts]
 - "generated_client_index_d_adminuncheckedupdatemanywithoutrolenestedinput": "AdminUncheckedUpdateManyWithoutRoleNestedInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L43723 | neighbors=[index.d.ts]
 - "generated_client_index_d_adminuncheckedupdatemanywithoutworkspaceinput": "AdminUncheckedUpdateManyWithoutWorkspaceInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L52029 | neighbors=[index.d.ts]
-- "generated_client_index_d_adminuncheckedupdatemanywithoutworkspacenestedinput": "AdminUncheckedUpdateManyWithoutWorkspaceNestedInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L43035 | neighbors=[index.d.ts]
-- "generated_client_index_d_adminuncheckedupdatewithoutaddressinput": "AdminUncheckedUpdateWithoutAddressInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L50301 | neighbors=[index.d.ts]
 
 ## Instructions
 

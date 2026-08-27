@@ -17,6 +17,8 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "generated_client_index_d_workspaceupdateonewithoutdoctorsnestedinput": "WorkspaceUpdateOneWithoutDoctorsNestedInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L43821 | neighbors=[index.d.ts]
+- "generated_client_index_d_workspaceupdateonewithoutinterpretationrulesnestedinput": "WorkspaceUpdateOneWithoutInterpretationRulesNestedInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L44777 | neighbors=[index.d.ts]
 - "generated_client_index_d_workspaceupdateonewithoutparametersnestedinput": "WorkspaceUpdateOneWithoutParametersNestedInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L44405 | neighbors=[index.d.ts]
 - "generated_client_index_d_workspaceupdateonewithoutregistrationsnestedinput": "WorkspaceUpdateOneWithoutRegistrationsNestedInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L44231 | neighbors=[index.d.ts]
 - "generated_client_index_d_workspaceupdateonewithouttestformulasnestedinput": "WorkspaceUpdateOneWithoutTestFormulasNestedInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L44733 | neighbors=[index.d.ts]
@@ -55,8 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "generated_client_index_d_workspaceupsertwithouttestsinput": "WorkspaceUpsertWithoutTestsInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L48205 | neighbors=[index.d.ts]
 - "generated_client_index_d_workspaceupsertwithoutusersinput": "WorkspaceUpsertWithoutUsersInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L46472 | neighbors=[index.d.ts]
 - "generated_client_index_d_workspacewhereinput": "WorkspaceWhereInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L34480 | neighbors=[index.d.ts]
-- "generated_client_index_d_workspacewhereuniqueinput": "WorkspaceWhereUniqueInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L34527 | neighbors=[index.d.ts]
-- "generated_client_index_d_xor": "XOR" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L795 | neighbors=[index.d.ts]
 
 ## Instructions
 

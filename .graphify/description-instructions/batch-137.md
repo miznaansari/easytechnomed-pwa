@@ -17,6 +17,8 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "runtime_library_d_requestbatchoptions": "RequestBatchOptions" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L2659 | neighbors=[_d()]
+- "runtime_library_d_requesterror": "RequestError" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L2667 | neighbors=[_d()]
 - "runtime_library_d_requesthandler": "RequestHandler" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L2678 | neighbors=[_d()]
 - "runtime_library_d_requestoptions": "RequestOptions" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L2696 | neighbors=[_d()]
 - "runtime_library_d_requestoptions_2": "RequestOptions_2" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L2702 | neighbors=[_d()]
@@ -55,8 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "runtime_library_d_spancallback": "SpanCallback" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L3024 | neighbors=[_d()]
 - "runtime_library_d_spancontext": "SpanContext" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L3030 | neighbors=[_d()]
 - "runtime_library_d_spankind": "SpanKind" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L3078 | neighbors=[_d()]
-- "runtime_library_d_spanoptions": "SpanOptions" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L3108 | neighbors=[_d()]
-- "runtime_library_d_spanstatus": "SpanStatus" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L3124 | neighbors=[_d()]
 
 ## Instructions
 

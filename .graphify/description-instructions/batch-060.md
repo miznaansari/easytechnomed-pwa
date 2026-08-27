@@ -17,6 +17,8 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "generated_client_index_d_admintrackingcountaggregateinputtype": "AdminTrackingCountAggregateInputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L26921 | neighbors=[index.d.ts]
+- "generated_client_index_d_admintrackingcountaggregateoutputtype": "AdminTrackingCountAggregateOutputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L26871 | neighbors=[index.d.ts]
 - "generated_client_index_d_admintrackingcountargs": "AdminTrackingCountArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L27102 | neighbors=[index.d.ts]
 - "generated_client_index_d_admintrackingcountorderbyaggregateinput": "AdminTrackingCountOrderByAggregateInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L42317 | neighbors=[index.d.ts]
 - "generated_client_index_d_admintrackingcreateargs": "AdminTrackingCreateArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L27657 | neighbors=[index.d.ts]
@@ -55,8 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "generated_client_index_d_admintrackingpayload": "$AdminTrackingPayload" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L27081 | neighbors=[index.d.ts]
 - "generated_client_index_d_admintrackingscalarfieldenum": "AdminTrackingScalarFieldEnum" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L34306 | neighbors=[index.d.ts]
 - "generated_client_index_d_admintrackingscalarwhereinput": "AdminTrackingScalarWhereInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L47210 | neighbors=[index.d.ts]
-- "generated_client_index_d_admintrackingscalarwherewithaggregatesinput": "AdminTrackingScalarWhereWithAggregatesInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L36726 | neighbors=[index.d.ts]
-- "generated_client_index_d_admintrackingselect": "AdminTrackingSelect" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L27051 | neighbors=[index.d.ts]
 
 ## Instructions
 

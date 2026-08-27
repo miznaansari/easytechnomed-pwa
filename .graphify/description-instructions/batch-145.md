@@ -17,6 +17,8 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "scratch_test_calc_standard_code_fallbacks": "STANDARD_CODE_FALLBACKS" | kind=code-symbol | source=scratch/test-calc.js:L1 | neighbors=[test-calc.js]
+- "scratch_test_calc_tests": "tests" | kind=code-symbol | source=scratch/test-calc.js:L171 | neighbors=[test-calc.js]
 - "scratch_test_db_main": "main()" | kind=code-symbol | source=scratch/test-db.mjs:L3 | neighbors=[test-db.mjs]
 - "scratch_test_dlc_calc_calculatedifferentialsummary": "{ calculateDifferentialSummary }" | kind=code-symbol | source=scratch/test-dlc-calc.js:L1 | neighbors=[test-dlc-calc.js]
 - "scratch_test_dlc_calc_params": "params" | kind=code-symbol | source=scratch/test-dlc-calc.js:L4 | neighbors=[test-dlc-calc.js]
@@ -55,8 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "scratch_test_reg_17_regpayload": "regPayload" | kind=code-symbol | source=scratch/test-reg-17.js:L328 | neighbors=[test-reg-17.js]
 - "scratch_test_reg_17_valuesmap": "valuesMap" | kind=code-symbol | source=scratch/test-reg-17.js:L379 | neighbors=[test-reg-17.js]
 - "scratch_test_report_security_runsecuritytests": "runSecurityTests()" | kind=code-symbol | source=scratch/test-report-security.mjs:L3 | neighbors=[test-report-security.mjs]
-- "scratch_test_sync_bootstrap_verifybackendendpoints": "verifyBackendEndpoints()" | kind=code-symbol | source=scratch/test-sync-bootstrap.mjs:L3 | neighbors=[test-sync-bootstrap.mjs]
-- "scratch_test_user_cbc_inputvalues": "inputValues" | kind=code-symbol | source=scratch/test-user-cbc.js:L43 | neighbors=[test-user-cbc.js]
 
 ## Instructions
 

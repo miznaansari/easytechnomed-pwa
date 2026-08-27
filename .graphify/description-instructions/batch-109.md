@@ -17,6 +17,8 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "generated_client_index_d_useravgaggregateinputtype": "UserAvgAggregateInputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L6896 | neighbors=[index.d.ts]
+- "generated_client_index_d_useravgaggregateoutputtype": "UserAvgAggregateOutputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L6822 | neighbors=[index.d.ts]
 - "generated_client_index_d_useravgorderbyaggregateinput": "UserAvgOrderByAggregateInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L40816 | neighbors=[index.d.ts]
 - "generated_client_index_d_usercountaggregateinputtype": "UserCountAggregateInputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L6948 | neighbors=[index.d.ts]
 - "generated_client_index_d_usercountaggregateoutputtype": "UserCountAggregateOutputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L6874 | neighbors=[index.d.ts]
@@ -55,8 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "generated_client_index_d_userfinduniqueargs": "UserFindUniqueArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L7567 | neighbors=[index.d.ts]
 - "generated_client_index_d_userfinduniqueorthrowargs": "UserFindUniqueOrThrowArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L7585 | neighbors=[index.d.ts]
 - "generated_client_index_d_usergetpayload": "UserGetPayload" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L7175 | neighbors=[index.d.ts]
-- "generated_client_index_d_usergroupbyargs": "UserGroupByArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L7041 | neighbors=[index.d.ts]
-- "generated_client_index_d_usergroupbyoutputtype": "UserGroupByOutputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L7055 | neighbors=[index.d.ts]
 
 ## Instructions
 

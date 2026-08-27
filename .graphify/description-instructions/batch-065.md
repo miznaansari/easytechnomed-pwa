@@ -17,6 +17,8 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "generated_client_index_d_doctorcountoutputtypeselect": "DoctorCountOutputTypeSelect" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L3446 | neighbors=[index.d.ts]
+- "generated_client_index_d_doctorcreateargs": "DoctorCreateArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L15592 | neighbors=[index.d.ts]
 - "generated_client_index_d_doctorcreateinput": "DoctorCreateInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L38187 | neighbors=[index.d.ts]
 - "generated_client_index_d_doctorcreatemanyargs": "DoctorCreateManyArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L15610 | neighbors=[index.d.ts]
 - "generated_client_index_d_doctorcreatemanyinput": "DoctorCreateManyInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L38261 | neighbors=[index.d.ts]
@@ -55,8 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "generated_client_index_d_doctorincentiveavgorderbyaggregateinput": "DoctorIncentiveAvgOrderByAggregateInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L42570 | neighbors=[index.d.ts]
 - "generated_client_index_d_doctorincentivecountaggregateinputtype": "DoctorIncentiveCountAggregateInputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L31779 | neighbors=[index.d.ts]
 - "generated_client_index_d_doctorincentivecountaggregateoutputtype": "DoctorIncentiveCountAggregateOutputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L31744 | neighbors=[index.d.ts]
-- "generated_client_index_d_doctorincentivecountargs": "DoctorIncentiveCountArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L31935 | neighbors=[index.d.ts]
-- "generated_client_index_d_doctorincentivecountorderbyaggregateinput": "DoctorIncentiveCountOrderByAggregateInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L42563 | neighbors=[index.d.ts]
 
 ## Instructions
 

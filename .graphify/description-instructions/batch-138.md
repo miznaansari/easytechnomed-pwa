@@ -17,6 +17,8 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "runtime_library_d_spanoptions": "SpanOptions" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L3108 | neighbors=[_d()]
+- "runtime_library_d_spanstatus": "SpanStatus" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L3124 | neighbors=[_d()]
 - "runtime_library_d_spanstatuscode": "SpanStatusCode" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L3134 | neighbors=[_d()]
 - "runtime_library_d_sql": "Sql" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L3153 | neighbors=[_d()]
 - "runtime_library_d_timeinput": "TimeInput" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L3178 | neighbors=[_d()]
@@ -55,8 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "runtime_library_gn": "gn()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L28 | neighbors=[library.js]
 - "runtime_library_go": "go()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L121 | neighbors=[library.js]
 - "runtime_library_has": "has()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L111 | neighbors=[library.js]
-- "runtime_library_hc": "hc()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L21 | neighbors=[library.js]
-- "runtime_library_ifundefined": "ifUndefined()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L29 | neighbors=[library.js]
 
 ## Instructions
 

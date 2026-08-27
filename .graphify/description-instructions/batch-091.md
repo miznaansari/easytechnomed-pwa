@@ -17,6 +17,8 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "generated_client_index_d_registrationupdatemanywithwherewithoutrefbyinput": "RegistrationUpdateManyWithWhereWithoutRefByInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L47878 | neighbors=[index.d.ts]
+- "generated_client_index_d_registrationupdatemanywithwherewithoutsecondrefinput": "RegistrationUpdateManyWithWhereWithoutSecondRefInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L47894 | neighbors=[index.d.ts]
 - "generated_client_index_d_registrationupdatemanywithwherewithoutworkspaceinput": "RegistrationUpdateManyWithWhereWithoutWorkspaceInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L45815 | neighbors=[index.d.ts]
 - "generated_client_index_d_registrationupdateonerequiredwithoutpaymentsnestedinput": "RegistrationUpdateOneRequiredWithoutPaymentsNestedInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L44633 | neighbors=[index.d.ts]
 - "generated_client_index_d_registrationupdateonerequiredwithoutresultsnestedinput": "RegistrationUpdateOneRequiredWithoutResultsNestedInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L44597 | neighbors=[index.d.ts]
@@ -55,8 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "generated_client_index_d_strict": "_Strict" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L904 | neighbors=[index.d.ts]
 - "generated_client_index_d_stringfieldrefinput": "StringFieldRefInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L34445 | neighbors=[index.d.ts]
 - "generated_client_index_d_stringfieldupdateoperationsinput": "StringFieldUpdateOperationsInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L42875 | neighbors=[index.d.ts]
-- "generated_client_index_d_stringfilter": "StringFilter" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L40378 | neighbors=[index.d.ts]
-- "generated_client_index_d_stringnullablefilter": "StringNullableFilter" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L40689 | neighbors=[index.d.ts]
 
 ## Instructions
 

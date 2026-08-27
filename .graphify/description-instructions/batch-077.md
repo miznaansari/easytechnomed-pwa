@@ -17,6 +17,8 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "generated_client_index_d_nesteddatetimenullablefilter": "NestedDateTimeNullableFilter" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L44872 | neighbors=[index.d.ts]
+- "generated_client_index_d_nesteddatetimenullablewithaggregatesfilter": "NestedDateTimeNullableWithAggregatesFilter" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L44949 | neighbors=[index.d.ts]
 - "generated_client_index_d_nesteddatetimewithaggregatesfilter": "NestedDateTimeWithAggregatesFilter" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L44935 | neighbors=[index.d.ts]
 - "generated_client_index_d_nesteddecimalfilter": "NestedDecimalFilter" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L45032 | neighbors=[index.d.ts]
 - "generated_client_index_d_nesteddecimalnullablefilter": "NestedDecimalNullableFilter" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L45059 | neighbors=[index.d.ts]
@@ -55,8 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "generated_client_index_d_parameteravgaggregateinputtype": "ParameterAvgAggregateInputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L19762 | neighbors=[index.d.ts]
 - "generated_client_index_d_parameteravgaggregateoutputtype": "ParameterAvgAggregateOutputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L19592 | neighbors=[index.d.ts]
 - "generated_client_index_d_parameteravgorderbyaggregateinput": "ParameterAvgOrderByAggregateInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L41848 | neighbors=[index.d.ts]
-- "generated_client_index_d_parametercountaggregateinputtype": "ParameterCountAggregateInputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L19892 | neighbors=[index.d.ts]
-- "generated_client_index_d_parametercountaggregateoutputtype": "ParameterCountAggregateOutputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L19722 | neighbors=[index.d.ts]
 
 ## Instructions
 

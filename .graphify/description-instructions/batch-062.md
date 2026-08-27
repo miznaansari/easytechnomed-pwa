@@ -17,6 +17,8 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "generated_client_index_d_adminuncheckedupdatemanywithoutworkspacenestedinput": "AdminUncheckedUpdateManyWithoutWorkspaceNestedInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L43035 | neighbors=[index.d.ts]
+- "generated_client_index_d_adminuncheckedupdatewithoutaddressinput": "AdminUncheckedUpdateWithoutAddressInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L50301 | neighbors=[index.d.ts]
 - "generated_client_index_d_adminuncheckedupdatewithoutregistrationsinput": "AdminUncheckedUpdateWithoutRegistrationsInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L48807 | neighbors=[index.d.ts]
 - "generated_client_index_d_adminuncheckedupdatewithoutroleinput": "AdminUncheckedUpdateWithoutRoleInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L53137 | neighbors=[index.d.ts]
 - "generated_client_index_d_adminuncheckedupdatewithoutsessionsinput": "AdminUncheckedUpdateWithoutSessionsInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L47345 | neighbors=[index.d.ts]
@@ -55,8 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "generated_client_index_d_adminupsertwithwhereuniquewithoutworkspaceinput": "AdminUpsertWithWhereUniqueWithoutWorkspaceInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L45723 | neighbors=[index.d.ts]
 - "generated_client_index_d_adminwhereinput": "AdminWhereInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L34999 | neighbors=[index.d.ts]
 - "generated_client_index_d_adminwhereuniqueinput": "AdminWhereUniqueInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L35068 | neighbors=[index.d.ts]
-- "generated_client_index_d_aggregateadmin": "AggregateAdmin" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L10672 | neighbors=[index.d.ts]
-- "generated_client_index_d_aggregateadminaddress": "AggregateAdminAddress" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L23961 | neighbors=[index.d.ts]
 
 ## Instructions
 

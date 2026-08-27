@@ -17,6 +17,8 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "runtime_edge_json": "json()" | kind=code-symbol | source=scratch/generated-client/runtime/edge.js:L5 | neighbors=[edge.js, metrics()]
+- "runtime_edge_kc": "kc()" | kind=code-symbol | source=scratch/generated-client/runtime/edge.js:L12 | neighbors=[edge.js, kn()]
 - "runtime_edge_kr": "Kr()" | kind=code-symbol | source=scratch/generated-client/runtime/edge.js:L20 | neighbors=[edge.js, jc()]
 - "runtime_edge_la": "La()" | kind=code-symbol | source=scratch/generated-client/runtime/edge.js:L1 | neighbors=[edge.js, Sa()]
 - "runtime_edge_lc": "lc()" | kind=code-symbol | source=scratch/generated-client/runtime/edge.js:L6 | neighbors=[edge.js, ts()]
@@ -55,8 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "runtime_edge_yn": "yn()" | kind=code-symbol | source=scratch/generated-client/runtime/edge.js:L1 | neighbors=[edge.js, fu()]
 - "runtime_edge_ys": "ys()" | kind=code-symbol | source=scratch/generated-client/runtime/edge.js:L6 | neighbors=[edge.js, constructor()]
 - "runtime_index_browser_ae": "Ae()" | kind=code-symbol | source=scratch/generated-client/runtime/index-browser.js:L1 | neighbors=[index-browser.js, e()]
-- "runtime_index_browser_d_anynull": "AnyNull" | kind=code-symbol | source=scratch/generated-client/runtime/index-browser.d.ts:L1 | neighbors=[index-browser.d.ts, NullTypesEnumValue]
-- "runtime_index_browser_d_dbnull": "DbNull" | kind=code-symbol | source=scratch/generated-client/runtime/index-browser.d.ts:L16 | neighbors=[index-browser.d.ts, NullTypesEnumValue]
 
 ## Instructions
 

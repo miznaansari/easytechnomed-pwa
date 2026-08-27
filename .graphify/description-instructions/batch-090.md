@@ -17,6 +17,8 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "generated_client_index_d_registrationtestwhereinput": "RegistrationTestWhereInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L35847 | neighbors=[index.d.ts]
+- "generated_client_index_d_registrationtestwhereuniqueinput": "RegistrationTestWhereUniqueInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L35886 | neighbors=[index.d.ts]
 - "generated_client_index_d_registrationuncheckedcreateinput": "RegistrationUncheckedCreateInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L38531 | neighbors=[index.d.ts]
 - "generated_client_index_d_registrationuncheckedcreatenestedmanywithoutadmininput": "RegistrationUncheckedCreateNestedManyWithoutAdminInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L43524 | neighbors=[index.d.ts]
 - "generated_client_index_d_registrationuncheckedcreatenestedmanywithoutrefbyinput": "RegistrationUncheckedCreateNestedManyWithoutRefByInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L43792 | neighbors=[index.d.ts]
@@ -55,8 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "generated_client_index_d_registrationupdatemanywithoutsecondrefnestedinput": "RegistrationUpdateManyWithoutSecondRefNestedInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L43845 | neighbors=[index.d.ts]
 - "generated_client_index_d_registrationupdatemanywithoutworkspacenestedinput": "RegistrationUpdateManyWithoutWorkspaceNestedInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L42927 | neighbors=[index.d.ts]
 - "generated_client_index_d_registrationupdatemanywithwherewithoutadmininput": "RegistrationUpdateManyWithWhereWithoutAdminInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L47236 | neighbors=[index.d.ts]
-- "generated_client_index_d_registrationupdatemanywithwherewithoutrefbyinput": "RegistrationUpdateManyWithWhereWithoutRefByInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L47878 | neighbors=[index.d.ts]
-- "generated_client_index_d_registrationupdatemanywithwherewithoutsecondrefinput": "RegistrationUpdateManyWithWhereWithoutSecondRefInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L47894 | neighbors=[index.d.ts]
 
 ## Instructions
 

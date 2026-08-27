@@ -17,6 +17,8 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "generated_client_index_d_testupdateonerequiredwithoutinterpretationrulesnestedinput": "TestUpdateOneRequiredWithoutInterpretationRulesNestedInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L44787 | neighbors=[index.d.ts]
+- "generated_client_index_d_testupdateonerequiredwithoutparametersnestedinput": "TestUpdateOneRequiredWithoutParametersNestedInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L44563 | neighbors=[index.d.ts]
 - "generated_client_index_d_testupdateonerequiredwithoutregistrationsnestedinput": "TestUpdateOneRequiredWithoutRegistrationsNestedInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L44341 | neighbors=[index.d.ts]
 - "generated_client_index_d_testupdatetoonewithwherewithoutformulasinput": "TestUpdateToOneWithWhereWithoutFormulasInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L51038 | neighbors=[index.d.ts]
 - "generated_client_index_d_testupdatetoonewithwherewithoutinterpretationrulesinput": "TestUpdateToOneWithWhereWithoutInterpretationRulesInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L51432 | neighbors=[index.d.ts]
@@ -55,8 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "generated_client_index_d_user_workspaceargs": "User$workspaceArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L7861 | neighbors=[index.d.ts]
 - "generated_client_index_d_useraggregateargs": "UserAggregateArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L6969 | neighbors=[index.d.ts]
 - "generated_client_index_d_userargs": "UserArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L54330 | neighbors=[index.d.ts]
-- "generated_client_index_d_useravgaggregateinputtype": "UserAvgAggregateInputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L6896 | neighbors=[index.d.ts]
-- "generated_client_index_d_useravgaggregateoutputtype": "UserAvgAggregateOutputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L6822 | neighbors=[index.d.ts]
 
 ## Instructions
 

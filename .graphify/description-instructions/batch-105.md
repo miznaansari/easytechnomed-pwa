@@ -17,6 +17,8 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "generated_client_index_d_testparameterdefaultargs": "TestParameterDefaultArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L22132 | neighbors=[index.d.ts]
+- "generated_client_index_d_testparameterdelegate": "TestParameterDelegate" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L21415 | neighbors=[index.d.ts]
 - "generated_client_index_d_testparameterdeleteargs": "TestParameterDeleteArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L22069 | neighbors=[index.d.ts]
 - "generated_client_index_d_testparameterdeletemanyargs": "TestParameterDeleteManyArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L22087 | neighbors=[index.d.ts]
 - "generated_client_index_d_testparameterfieldrefs": "TestParameterFieldRefs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L21776 | neighbors=[index.d.ts]
@@ -55,8 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "generated_client_index_d_testparameteruncheckedcreatenestedmanywithoutworkspaceinput": "TestParameterUncheckedCreateNestedManyWithoutWorkspaceInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L42848 | neighbors=[index.d.ts]
 - "generated_client_index_d_testparameteruncheckedcreatewithoutparameterinput": "TestParameterUncheckedCreateWithoutParameterInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L49266 | neighbors=[index.d.ts]
 - "generated_client_index_d_testparameteruncheckedcreatewithoutresultsinput": "TestParameterUncheckedCreateWithoutResultsInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L50016 | neighbors=[index.d.ts]
-- "generated_client_index_d_testparameteruncheckedcreatewithouttestinput": "TestParameterUncheckedCreateWithoutTestInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L48050 | neighbors=[index.d.ts]
-- "generated_client_index_d_testparameteruncheckedcreatewithoutworkspaceinput": "TestParameterUncheckedCreateWithoutWorkspaceInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L45553 | neighbors=[index.d.ts]
 
 ## Instructions
 

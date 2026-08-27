@@ -17,6 +17,8 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "generated_client_index_d_superadmintrackingdeleteargs": "SuperAdminTrackingDeleteArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L28728 | neighbors=[index.d.ts]
+- "generated_client_index_d_superadmintrackingdeletemanyargs": "SuperAdminTrackingDeleteManyArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L28746 | neighbors=[index.d.ts]
 - "generated_client_index_d_superadmintrackingfieldrefs": "SuperAdminTrackingFieldRefs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L28445 | neighbors=[index.d.ts]
 - "generated_client_index_d_superadmintrackingfindfirstargs": "SuperAdminTrackingFindFirstArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L28498 | neighbors=[index.d.ts]
 - "generated_client_index_d_superadmintrackingfindfirstorthrowargs": "SuperAdminTrackingFindFirstOrThrowArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L28546 | neighbors=[index.d.ts]
@@ -55,8 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "generated_client_index_d_superadmintrackinguncheckedupdatemanywithoutsuperadminnestedinput": "SuperAdminTrackingUncheckedUpdateManyWithoutSuperAdminNestedInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L43241 | neighbors=[index.d.ts]
 - "generated_client_index_d_superadmintrackinguncheckedupdatewithoutsuperadmininput": "SuperAdminTrackingUncheckedUpdateWithoutSuperAdminInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L52673 | neighbors=[index.d.ts]
 - "generated_client_index_d_superadmintrackingupdateargs": "SuperAdminTrackingUpdateArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L28666 | neighbors=[index.d.ts]
-- "generated_client_index_d_superadmintrackingupdateinput": "SuperAdminTrackingUpdateInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L39804 | neighbors=[index.d.ts]
-- "generated_client_index_d_superadmintrackingupdatemanyargs": "SuperAdminTrackingUpdateManyArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L28688 | neighbors=[index.d.ts]
 
 ## Instructions
 

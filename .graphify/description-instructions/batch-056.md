@@ -17,6 +17,8 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "generated_client_index_d_adminrolepermissiongroupbyargs": "AdminRolePermissionGroupByArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L13948 | neighbors=[index.d.ts]
+- "generated_client_index_d_adminrolepermissiongroupbyoutputtype": "AdminRolePermissionGroupByOutputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L13962 | neighbors=[index.d.ts]
 - "generated_client_index_d_adminrolepermissioninclude": "AdminRolePermissionInclude" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L14001 | neighbors=[index.d.ts]
 - "generated_client_index_d_adminrolepermissionlistrelationfilter": "AdminRolePermissionListRelationFilter" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L41167 | neighbors=[index.d.ts]
 - "generated_client_index_d_adminrolepermissionmaxaggregateinputtype": "AdminRolePermissionMaxAggregateInputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L13863 | neighbors=[index.d.ts]
@@ -55,8 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "generated_client_index_d_adminrolepermissionupdatewithoutroleinput": "AdminRolePermissionUpdateWithoutRoleInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L53193 | neighbors=[index.d.ts]
 - "generated_client_index_d_adminrolepermissionupdatewithwhereuniquewithoutroleinput": "AdminRolePermissionUpdateWithWhereUniqueWithoutRoleInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L47485 | neighbors=[index.d.ts]
 - "generated_client_index_d_adminrolepermissionupsertargs": "AdminRolePermissionUpsertArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L14634 | neighbors=[index.d.ts]
-- "generated_client_index_d_adminrolepermissionupsertwithwhereuniquewithoutroleinput": "AdminRolePermissionUpsertWithWhereUniqueWithoutRoleInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L47479 | neighbors=[index.d.ts]
-- "generated_client_index_d_adminrolepermissionwhereinput": "AdminRolePermissionWhereInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L35288 | neighbors=[index.d.ts]
 
 ## Instructions
 

@@ -17,12 +17,14 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "next_config": "next.config.mjs" | kind=code-symbol | source=next.config.mjs:L1 | neighbors=[252e194 e, nextConfig]
+- "offline_db_appdatabase_deleteoffline": ".deleteOffline()" | kind=code-symbol | source=lib/offline/db.js:L104 | neighbors=[AppDatabase, .updateOffline()]
 - "offline_db_appdatabase_getallpendingrecords": ".getAllPendingRecords()" | kind=code-symbol | source=lib/offline/db.js:L167 | neighbors=[AppDatabase, .getPendingCount()]
 - "offline_db_appdatabase_getpendingcount": ".getPendingCount()" | kind=code-symbol | source=lib/offline/db.js:L196 | neighbors=[AppDatabase, .getAllPendingRecords()]
 - "offline_db_appdatabase_updateoffline": ".updateOffline()" | kind=code-symbol | source=lib/offline/db.js:L73 | neighbors=[AppDatabase, .deleteOffline()]
-- "offline_network_networkmonitor_checkconnection": ".checkConnection()" | kind=code-symbol | source=lib/offline/network.js:L54 | neighbors=[NetworkMonitor, .handleStatusChange()]
-- "offline_network_networkmonitor_constructor": ".constructor()" | kind=code-symbol | source=lib/offline/network.js:L6 | neighbors=[NetworkMonitor, .startHeartbeat()]
-- "offline_network_networkmonitor_notifylisteners": ".notifyListeners()" | kind=code-symbol | source=lib/offline/network.js:L27 | neighbors=[NetworkMonitor, .handleStatusChange()]
+- "offline_network_networkmonitor_checkconnection": ".checkConnection()" | kind=code-symbol | source=lib/offline/network.js:L52 | neighbors=[NetworkMonitor, .handleStatusChange()]
+- "offline_network_networkmonitor_constructor": ".constructor()" | kind=code-symbol | source=lib/offline/network.js:L7 | neighbors=[NetworkMonitor, .startHeartbeat()]
+- "offline_network_networkmonitor_notifylisteners": ".notifyListeners()" | kind=code-symbol | source=lib/offline/network.js:L25 | neighbors=[NetworkMonitor, .handleStatusChange()]
 - "offline_network_networkmonitor_startheartbeat": ".startHeartbeat()" | kind=code-symbol | source=lib/offline/network.js:L81 | neighbors=[NetworkMonitor, .constructor()]
 - "offline_offlinepdfgenerator_isoutofrange": "isOutOfRange()" | kind=code-symbol | source=lib/offline/offlinePdfGenerator.js:L73 | neighbors=[offlinePdfGenerator.js, isQualitativeAbnormal()]
 - "offline_offlinepdfgenerator_isqualitativeabnormal": "isQualitativeAbnormal()" | kind=code-symbol | source=lib/offline/offlinePdfGenerator.js:L10 | neighbors=[offlinePdfGenerator.js, isOutOfRange()]
@@ -55,8 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "registrationid_route_isoutofrange": "isOutOfRange()" | kind=code-symbol | source=app/api/print-report/[registrationId]/route.js:L44 | neighbors=[route.js, isQualitativeAbnormal()]
 - "registrationid_route_isqualitativeabnormal": "isQualitativeAbnormal()" | kind=code-symbol | source=app/api/print-report/[registrationId]/route.js:L14 | neighbors=[route.js, isOutOfRange()]
 - "registrationid_route_numbertowords": "numberToWords()" | kind=code-symbol | source=app/api/print-bill/[registrationId]/route.js:L19 | neighbors=[route.js, GET()]
-- "registrations_route_get": "GET()" | kind=code-symbol | source=app/api/registrations/route.js:L51 | neighbors=[route.js, serializeData()]
-- "registrations_route_post": "POST()" | kind=code-symbol | source=app/api/registrations/route.js:L110 | neighbors=[route.js, serializeData()]
 
 ## Instructions
 

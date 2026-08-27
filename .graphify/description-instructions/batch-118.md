@@ -17,6 +17,8 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "generated_client_index_d_workspacecreateinput": "WorkspaceCreateInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L37291 | neighbors=[index.d.ts]
+- "generated_client_index_d_workspacecreatemanyargs": "WorkspaceCreateManyArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L4593 | neighbors=[index.d.ts]
 - "generated_client_index_d_workspacecreatemanyinput": "WorkspaceCreateManyInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L37377 | neighbors=[index.d.ts]
 - "generated_client_index_d_workspacecreatenestedonewithoutadminsinput": "WorkspaceCreateNestedOneWithoutAdminsInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L43471 | neighbors=[index.d.ts]
 - "generated_client_index_d_workspacecreatenestedonewithoutdoctorsinput": "WorkspaceCreateNestedOneWithoutDoctorsInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L43765 | neighbors=[index.d.ts]
@@ -55,8 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "generated_client_index_d_workspacefieldrefs": "WorkspaceFieldRefs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L4383 | neighbors=[index.d.ts]
 - "generated_client_index_d_workspacefindfirstargs": "WorkspaceFindFirstArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L4436 | neighbors=[index.d.ts]
 - "generated_client_index_d_workspacefindfirstorthrowargs": "WorkspaceFindFirstOrThrowArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L4484 | neighbors=[index.d.ts]
-- "generated_client_index_d_workspacefindmanyargs": "WorkspaceFindManyArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L4532 | neighbors=[index.d.ts]
-- "generated_client_index_d_workspacefinduniqueargs": "WorkspaceFindUniqueArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L4400 | neighbors=[index.d.ts]
 
 ## Instructions
 

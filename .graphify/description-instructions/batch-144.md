@@ -17,6 +17,8 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "scratch_backfill_prisma": "prisma" | kind=code-symbol | source=scratch-backfill.js:L2 | neighbors=[scratch-backfill.js]
+- "scratch_backfill_prismaclient": "{ PrismaClient }" | kind=code-symbol | source=scratch-backfill.js:L1 | neighbors=[scratch-backfill.js]
 - "scratch_bootstrap_dates_main": "main()" | kind=code-symbol | source=scratch/bootstrap-dates.js:L4 | neighbors=[bootstrap-dates.js]
 - "scratch_bootstrap_dates_prisma": "prisma" | kind=code-symbol | source=scratch/bootstrap-dates.js:L2 | neighbors=[bootstrap-dates.js]
 - "scratch_bootstrap_dates_prismaclient": "{ PrismaClient }" | kind=code-symbol | source=scratch/bootstrap-dates.js:L1 | neighbors=[bootstrap-dates.js]
@@ -55,8 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "scratch_test_calc_initialvalues": "initialValues" | kind=code-symbol | source=scratch/test-calc.js:L189 | neighbors=[test-calc.js]
 - "scratch_test_calc_overrides": "overrides" | kind=code-symbol | source=scratch/test-calc.js:L190 | neighbors=[test-calc.js]
 - "scratch_test_calc_result": "result" | kind=code-symbol | source=scratch/test-calc.js:L191 | neighbors=[test-calc.js]
-- "scratch_test_calc_standard_code_fallbacks": "STANDARD_CODE_FALLBACKS" | kind=code-symbol | source=scratch/test-calc.js:L1 | neighbors=[test-calc.js]
-- "scratch_test_calc_tests": "tests" | kind=code-symbol | source=scratch/test-calc.js:L171 | neighbors=[test-calc.js]
 
 ## Instructions
 

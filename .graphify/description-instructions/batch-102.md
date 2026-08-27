@@ -17,6 +17,8 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "generated_client_index_d_testformulafindmanyargs": "TestFormulaFindManyArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L30536 | neighbors=[index.d.ts]
+- "generated_client_index_d_testformulafinduniqueargs": "TestFormulaFindUniqueArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L30404 | neighbors=[index.d.ts]
 - "generated_client_index_d_testformulafinduniqueorthrowargs": "TestFormulaFindUniqueOrThrowArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L30422 | neighbors=[index.d.ts]
 - "generated_client_index_d_testformulagetpayload": "TestFormulaGetPayload" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L30018 | neighbors=[index.d.ts]
 - "generated_client_index_d_testformulagroupbyargs": "TestFormulaGroupByArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L29910 | neighbors=[index.d.ts]
@@ -55,8 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "generated_client_index_d_testformulauncheckedupdatemanywithouttestinput": "TestFormulaUncheckedUpdateManyWithoutTestInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L53769 | neighbors=[index.d.ts]
 - "generated_client_index_d_testformulauncheckedupdatemanywithouttestnestedinput": "TestFormulaUncheckedUpdateManyWithoutTestNestedInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L44095 | neighbors=[index.d.ts]
 - "generated_client_index_d_testformulauncheckedupdatemanywithoutworkspaceinput": "TestFormulaUncheckedUpdateManyWithoutWorkspaceInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L52575 | neighbors=[index.d.ts]
-- "generated_client_index_d_testformulauncheckedupdatemanywithoutworkspacenestedinput": "TestFormulaUncheckedUpdateManyWithoutWorkspaceNestedInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L43133 | neighbors=[index.d.ts]
-- "generated_client_index_d_testformulauncheckedupdatewithoutoutputparameterinput": "TestFormulaUncheckedUpdateWithoutOutputParameterInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L54069 | neighbors=[index.d.ts]
 
 ## Instructions
 

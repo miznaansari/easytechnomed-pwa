@@ -17,6 +17,8 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "generated_client_index_d_parametercountaggregateinputtype": "ParameterCountAggregateInputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L19892 | neighbors=[index.d.ts]
+- "generated_client_index_d_parametercountaggregateoutputtype": "ParameterCountAggregateOutputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L19722 | neighbors=[index.d.ts]
 - "generated_client_index_d_parametercountargs": "ParameterCountArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L20214 | neighbors=[index.d.ts]
 - "generated_client_index_d_parametercountorderbyaggregateinput": "ParameterCountOrderByAggregateInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L41810 | neighbors=[index.d.ts]
 - "generated_client_index_d_parametercountoutputtype": "ParameterCountOutputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L3596 | neighbors=[index.d.ts]
@@ -55,8 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "generated_client_index_d_parameterfinduniqueargs": "ParameterFindUniqueArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L20623 | neighbors=[index.d.ts]
 - "generated_client_index_d_parameterfinduniqueorthrowargs": "ParameterFindUniqueOrThrowArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L20641 | neighbors=[index.d.ts]
 - "generated_client_index_d_parametergetpayload": "ParameterGetPayload" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L20212 | neighbors=[index.d.ts]
-- "generated_client_index_d_parametergroupbyargs": "ParameterGroupByArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L20003 | neighbors=[index.d.ts]
-- "generated_client_index_d_parametergroupbyoutputtype": "ParameterGroupByOutputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L20017 | neighbors=[index.d.ts]
 
 ## Instructions
 

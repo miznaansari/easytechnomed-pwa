@@ -17,6 +17,8 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "generated_client_index_d_leadaggregateargs": "LeadAggregateArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L23175 | neighbors=[index.d.ts]
+- "generated_client_index_d_leadargs": "LeadArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L54390 | neighbors=[index.d.ts]
 - "generated_client_index_d_leadavgaggregateinputtype": "LeadAvgAggregateInputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L23145 | neighbors=[index.d.ts]
 - "generated_client_index_d_leadavgaggregateoutputtype": "LeadAvgAggregateOutputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L23114 | neighbors=[index.d.ts]
 - "generated_client_index_d_leadavgorderbyaggregateinput": "LeadAvgOrderByAggregateInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L42147 | neighbors=[index.d.ts]
@@ -55,8 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "generated_client_index_d_leadcontactminorderbyaggregateinput": "LeadContactMinOrderByAggregateInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L42301 | neighbors=[index.d.ts]
 - "generated_client_index_d_leadcontactorderbywithaggregationinput": "LeadContactOrderByWithAggregationInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L36632 | neighbors=[index.d.ts]
 - "generated_client_index_d_leadcontactorderbywithrelationinput": "LeadContactOrderByWithRelationInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L36605 | neighbors=[index.d.ts]
-- "generated_client_index_d_leadcontactpayload": "$LeadContactPayload" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L26159 | neighbors=[index.d.ts]
-- "generated_client_index_d_leadcontactscalarfieldenum": "LeadContactScalarFieldEnum" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L34291 | neighbors=[index.d.ts]
 
 ## Instructions
 

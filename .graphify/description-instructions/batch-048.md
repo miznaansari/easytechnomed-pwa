@@ -17,6 +17,8 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "scratch_test_calc_checkformuladependencies": "checkFormulaDependencies()" | kind=code-symbol | source=scratch/test-calc.js:L64 | neighbors=[test-calc.js, calculateAllDependents()]
+- "scratch_test_calc_evaluateexpression": "evaluateExpression()" | kind=code-symbol | source=scratch/test-calc.js:L21 | neighbors=[test-calc.js, calculateAllDependents()]
 - "scratch_test_calc_export_calculatedifferentialsummary": "calculateDifferentialSummary()" | kind=code-symbol | source=scratch/test-calc-export.js:L67 | neighbors=[test-calc-export.js, test-dlc-calc.js]
 - "scratch_test_db": "test-db.mjs" | kind=code-symbol | source=scratch/test-db.mjs:L1 | neighbors=[252e194 e, main()]
 - "scratch_test_report_security": "test-report-security.mjs" | kind=code-symbol | source=scratch/test-report-security.mjs:L1 | neighbors=[252e194 e, runSecurityTests()]
@@ -55,8 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "address_route_post": "POST()" | kind=code-symbol | source=app/api/settings/address/route.js:L30 | neighbors=[route.js]
 - "admin_route_post": "POST()" | kind=code-symbol | source=app/api/tracking/admin/route.js:L5 | neighbors=[route.js]
 - "app_layout_metadata": "metadata" | kind=code-symbol | source=app/layout.js:L13 | neighbors=[layout.js]
-- "app_layout_outfit": "outfit" | kind=code-symbol | source=app/layout.js:L7 | neighbors=[layout.js]
-- "app_layout_rootlayout": "RootLayout()" | kind=code-symbol | source=app/layout.js:L44 | neighbors=[layout.js]
 
 ## Instructions
 

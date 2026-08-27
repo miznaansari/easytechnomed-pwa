@@ -17,6 +17,8 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "generated_client_index_d_workspacepdffindfirstorthrowargs": "WorkspacePdfFindFirstOrThrowArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L33655 | neighbors=[index.d.ts]
+- "generated_client_index_d_workspacepdffindmanyargs": "WorkspacePdfFindManyArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L33703 | neighbors=[index.d.ts]
 - "generated_client_index_d_workspacepdffinduniqueargs": "WorkspacePdfFindUniqueArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L33571 | neighbors=[index.d.ts]
 - "generated_client_index_d_workspacepdffinduniqueorthrowargs": "WorkspacePdfFindUniqueOrThrowArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L33589 | neighbors=[index.d.ts]
 - "generated_client_index_d_workspacepdfgetpayload": "WorkspacePdfGetPayload" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L33165 | neighbors=[index.d.ts]
@@ -55,8 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "generated_client_index_d_workspacepdfupdatetoonewithwherewithoutworkspaceinput": "WorkspacePdfUpdateToOneWithWhereWithoutWorkspaceInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L46115 | neighbors=[index.d.ts]
 - "generated_client_index_d_workspacepdfupdatewithoutworkspaceinput": "WorkspacePdfUpdateWithoutWorkspaceInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L46120 | neighbors=[index.d.ts]
 - "generated_client_index_d_workspacepdfupsertargs": "WorkspacePdfUpsertArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L33811 | neighbors=[index.d.ts]
-- "generated_client_index_d_workspacepdfupsertwithoutworkspaceinput": "WorkspacePdfUpsertWithoutWorkspaceInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L46109 | neighbors=[index.d.ts]
-- "generated_client_index_d_workspacepdfwhereinput": "WorkspacePdfWhereInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L37094 | neighbors=[index.d.ts]
 
 ## Instructions
 

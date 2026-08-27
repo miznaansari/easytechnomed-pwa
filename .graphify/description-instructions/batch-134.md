@@ -17,6 +17,8 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "runtime_library_d_inputjsonvalue": "InputJsonValue" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L1763 | neighbors=[_d()]
+- "runtime_library_d_inputtype": "InputType" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L811 | neighbors=[_d()]
 - "runtime_library_d_inputtyperef": "InputTypeRef" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L784 | neighbors=[_d()]
 - "runtime_library_d_instance": "Instance" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L329 | neighbors=[_d()]
 - "runtime_library_d_interactivetransactioninfo": "InteractiveTransactionInfo" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L1767 | neighbors=[_d()]
@@ -55,8 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "runtime_library_d_metric": "Metric" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L2063 | neighbors=[_d()]
 - "runtime_library_d_metrichistogram": "MetricHistogram" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L2070 | neighbors=[_d()]
 - "runtime_library_d_metrichistogrambucket": "MetricHistogramBucket" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L2076 | neighbors=[_d()]
-- "runtime_library_d_metrics": "Metrics" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L2078 | neighbors=[_d()]
-- "runtime_library_d_metricsclient": "MetricsClient" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L2084 | neighbors=[_d()]
 
 ## Instructions
 

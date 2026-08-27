@@ -17,6 +17,8 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "generated_client_index_d_superadminfindfirstorthrowargs": "SuperAdminFindFirstOrThrowArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L5609 | neighbors=[index.d.ts]
+- "generated_client_index_d_superadminfindmanyargs": "SuperAdminFindManyArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L5657 | neighbors=[index.d.ts]
 - "generated_client_index_d_superadminfinduniqueargs": "SuperAdminFindUniqueArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L5525 | neighbors=[index.d.ts]
 - "generated_client_index_d_superadminfinduniqueorthrowargs": "SuperAdminFindUniqueOrThrowArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L5543 | neighbors=[index.d.ts]
 - "generated_client_index_d_superadmingetpayload": "SuperAdminGetPayload" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L5145 | neighbors=[index.d.ts]
@@ -55,8 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "generated_client_index_d_superadminsessioncreatemanysuperadmininput": "SuperAdminSessionCreateManySuperAdminInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L52617 | neighbors=[index.d.ts]
 - "generated_client_index_d_superadminsessioncreatemanysuperadmininputenvelope": "SuperAdminSessionCreateManySuperAdminInputEnvelope" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L46211 | neighbors=[index.d.ts]
 - "generated_client_index_d_superadminsessioncreatenestedmanywithoutsuperadmininput": "SuperAdminSessionCreateNestedManyWithoutSuperAdminInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L43171 | neighbors=[index.d.ts]
-- "generated_client_index_d_superadminsessioncreateorconnectwithoutsuperadmininput": "SuperAdminSessionCreateOrConnectWithoutSuperAdminInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L46206 | neighbors=[index.d.ts]
-- "generated_client_index_d_superadminsessioncreatewithoutsuperadmininput": "SuperAdminSessionCreateWithoutSuperAdminInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L46189 | neighbors=[index.d.ts]
 
 ## Instructions
 

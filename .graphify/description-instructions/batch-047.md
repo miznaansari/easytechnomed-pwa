@@ -17,6 +17,8 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "runtime_wasm_mapqueryengineresult": "mapQueryEngineResult()" | kind=code-symbol | source=scratch/generated-client/runtime/wasm.js:L21 | neighbors=[wasm.js, unpack()]
+- "runtime_wasm_mr": "mr()" | kind=code-symbol | source=scratch/generated-client/runtime/wasm.js:L21 | neighbors=[wasm.js, ya()]
 - "runtime_wasm_parseiniterror": "parseInitError()" | kind=code-symbol | source=scratch/generated-client/runtime/wasm.js:L11 | neighbors=[wasm.js, loadEngine()]
 - "runtime_wasm_parserequesterror": "parseRequestError()" | kind=code-symbol | source=scratch/generated-client/runtime/wasm.js:L11 | neighbors=[wasm.js, request()]
 - "runtime_wasm_prometheus": "prometheus()" | kind=code-symbol | source=scratch/generated-client/runtime/wasm.js:L5 | neighbors=[wasm.js, metrics()]
@@ -55,8 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "scratch_backfill_counters_main": "main()" | kind=code-symbol | source=scratch-backfill-counters.js:L13 | neighbors=[scratch-backfill-counters.js, generateRandomSuffix()]
 - "scratch_check_reg_14": "check-reg-14.js" | kind=code-symbol | source=scratch/check-reg-14.js:L1 | neighbors=[252e194 e, main()]
 - "scratch_check_reg_22": "check-reg-22.js" | kind=code-symbol | source=scratch/check-reg-22.js:L1 | neighbors=[252e194 e, main()]
-- "scratch_test_calc_checkformuladependencies": "checkFormulaDependencies()" | kind=code-symbol | source=scratch/test-calc.js:L64 | neighbors=[test-calc.js, calculateAllDependents()]
-- "scratch_test_calc_evaluateexpression": "evaluateExpression()" | kind=code-symbol | source=scratch/test-calc.js:L21 | neighbors=[test-calc.js, calculateAllDependents()]
 
 ## Instructions
 

@@ -17,6 +17,8 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "generated_client_index_d_parametergroupbyargs": "ParameterGroupByArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L20003 | neighbors=[index.d.ts]
+- "generated_client_index_d_parametergroupbyoutputtype": "ParameterGroupByOutputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L20017 | neighbors=[index.d.ts]
 - "generated_client_index_d_parameterinclude": "ParameterInclude" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L20156 | neighbors=[index.d.ts]
 - "generated_client_index_d_parameterlistrelationfilter": "ParameterListRelationFilter" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L40449 | neighbors=[index.d.ts]
 - "generated_client_index_d_parametermaxaggregateinputtype": "ParameterMaxAggregateInputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L19854 | neighbors=[index.d.ts]
@@ -55,8 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "generated_client_index_d_parameterupdateargs": "ParameterUpdateArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L20827 | neighbors=[index.d.ts]
 - "generated_client_index_d_parameterupdateinput": "ParameterUpdateInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L38983 | neighbors=[index.d.ts]
 - "generated_client_index_d_parameterupdatemanyargs": "ParameterUpdateManyArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L20849 | neighbors=[index.d.ts]
-- "generated_client_index_d_parameterupdatemanymutationinput": "ParameterUpdateManyMutationInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L39102 | neighbors=[index.d.ts]
-- "generated_client_index_d_parameterupdatemanywithoutworkspacenestedinput": "ParameterUpdateManyWithoutWorkspaceNestedInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L42969 | neighbors=[index.d.ts]
 
 ## Instructions
 

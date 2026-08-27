@@ -43,6 +43,24 @@ export default function SyncIndicator() {
   } = useSync();
 
   const [anchorEl, setAnchorEl] = useState(null);
+  const [isClientOnline, setIsClientOnline] = useState(true);
+
+  // Direct reactive subscription to browser online/offline events
+  useEffect(() => {
+    const updateOnlineStatus = () => {
+      const online = typeof navigator !== "undefined" ? navigator.onLine : true;
+      setIsClientOnline(online);
+    };
+
+    updateOnlineStatus();
+    window.addEventListener("online", updateOnlineStatus);
+    window.addEventListener("offline", updateOnlineStatus);
+
+    return () => {
+      window.removeEventListener("online", updateOnlineStatus);
+      window.removeEventListener("offline", updateOnlineStatus);
+    };
+  }, []);
 
   const handleClick = (event) => {
     setAnchorEl(event.currentTarget);
@@ -64,8 +82,13 @@ export default function SyncIndicator() {
           (typeof err.error === "string" && (err.error.includes("401") || err.error.includes("Unauthorized")))
       ));
 
-  // Consistent online status across whole component
-  const isCurrentlyOnline = Boolean(isOnline !== false && (typeof navigator === "undefined" || navigator.onLine));
+  // Strict online status: false if either context or native browser says offline
+  const isCurrentlyOnline = Boolean(
+    isClientOnline &&
+    isOnline !== false &&
+    (typeof navigator === "undefined" || navigator.onLine)
+  );
+
 
   // Determine icon and color based on sync state
   let iconComponent = null;

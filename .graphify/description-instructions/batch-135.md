@@ -17,6 +17,8 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "runtime_library_d_metrics": "Metrics" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L2078 | neighbors=[_d()]
+- "runtime_library_d_metricsclient": "MetricsClient" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L2084 | neighbors=[_d()]
 - "runtime_library_d_metricsoptions": "MetricsOptions" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L2104 | neighbors=[_d()]
 - "runtime_library_d_metricsoptionscommon": "MetricsOptionsCommon" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L2111 | neighbors=[_d()]
 - "runtime_library_d_metricsoptionsjson": "MetricsOptionsJson" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L2115 | neighbors=[_d()]
@@ -55,8 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "runtime_library_d_patchflat": "PatchFlat" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L2293 | neighbors=[_d()]
 - "runtime_library_d_path": "Path" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L2295 | neighbors=[_d()]
 - "runtime_library_d_payload": "Payload" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L2297 | neighbors=[_d()]
-- "runtime_library_d_payloadtoresult": "PayloadToResult" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L2305 | neighbors=[_d()]
-- "runtime_library_d_pick_2": "Pick_2" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L2309 | neighbors=[_d()]
 
 ## Instructions
 

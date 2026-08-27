@@ -17,6 +17,8 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "runtime_index_browser_he": "He()" | kind=code-symbol | source=scratch/generated-client/runtime/index-browser.js:L1 | neighbors=[index-browser.js]
+- "runtime_index_browser_hn": "hn()" | kind=code-symbol | source=scratch/generated-client/runtime/index-browser.js:L1 | neighbors=[index-browser.js]
 - "runtime_index_browser_in": "In()" | kind=code-symbol | source=scratch/generated-client/runtime/index-browser.js:L1 | neighbors=[index-browser.js]
 - "runtime_index_browser_kn": "kn()" | kind=code-symbol | source=scratch/generated-client/runtime/index-browser.js:L1 | neighbors=[index-browser.js]
 - "runtime_index_browser_me": "me()" | kind=code-symbol | source=scratch/generated-client/runtime/index-browser.js:L1 | neighbors=[index-browser.js]
@@ -55,8 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "runtime_library_d_batchargs": "BatchArgs" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L86 | neighbors=[_d()]
 - "runtime_library_d_batchinternalparams": "BatchInternalParams" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L93 | neighbors=[_d()]
 - "runtime_library_d_batchquery": "BatchQuery" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L98 | neighbors=[_d()]
-- "runtime_library_d_batchqueryengineresult": "BatchQueryEngineResult" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L104 | neighbors=[_d()]
-- "runtime_library_d_batchqueryoptionscb": "BatchQueryOptionsCb" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L106 | neighbors=[_d()]
 
 ## Instructions
 

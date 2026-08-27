@@ -17,6 +17,8 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "generated_client_index_d_interpretationruleuncheckedupdatemanywithouttestnestedinput": "InterpretationRuleUncheckedUpdateManyWithoutTestNestedInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L44109 | neighbors=[index.d.ts]
+- "generated_client_index_d_interpretationruleuncheckedupdatemanywithoutworkspaceinput": "InterpretationRuleUncheckedUpdateManyWithoutWorkspaceInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L52607 | neighbors=[index.d.ts]
 - "generated_client_index_d_interpretationruleuncheckedupdatemanywithoutworkspacenestedinput": "InterpretationRuleUncheckedUpdateManyWithoutWorkspaceNestedInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L43147 | neighbors=[index.d.ts]
 - "generated_client_index_d_interpretationruleuncheckedupdatewithoutparameterinput": "InterpretationRuleUncheckedUpdateWithoutParameterInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L54104 | neighbors=[index.d.ts]
 - "generated_client_index_d_interpretationruleuncheckedupdatewithouttestinput": "InterpretationRuleUncheckedUpdateWithoutTestInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L53791 | neighbors=[index.d.ts]
@@ -55,8 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "generated_client_index_d_key": "Key" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L873 | neighbors=[index.d.ts]
 - "generated_client_index_d_keys": "Keys" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L952 | neighbors=[index.d.ts]
 - "generated_client_index_d_lead": "Lead" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L110 | neighbors=[index.d.ts]
-- "generated_client_index_d_leadaggregateargs": "LeadAggregateArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L23175 | neighbors=[index.d.ts]
-- "generated_client_index_d_leadargs": "LeadArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L54390 | neighbors=[index.d.ts]
 
 ## Instructions
 

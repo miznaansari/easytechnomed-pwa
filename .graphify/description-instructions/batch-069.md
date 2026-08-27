@@ -17,6 +17,8 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "generated_client_index_d_doctorupsertwithoutsecondregistrationsinput": "DoctorUpsertWithoutSecondRegistrationsInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L48669 | neighbors=[index.d.ts]
+- "generated_client_index_d_doctorupsertwithwhereuniquewithoutworkspaceinput": "DoctorUpsertWithWhereUniqueWithoutWorkspaceInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L45769 | neighbors=[index.d.ts]
 - "generated_client_index_d_doctorwhereinput": "DoctorWhereInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L35336 | neighbors=[index.d.ts]
 - "generated_client_index_d_doctorwhereuniqueinput": "DoctorWhereUniqueInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L35379 | neighbors=[index.d.ts]
 - "generated_client_index_d_doctorworkspaceidcodecompounduniqueinput": "DoctorWorkspaceIdCodeCompoundUniqueInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L41260 | neighbors=[index.d.ts]
@@ -55,8 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "generated_client_index_d_getdoctorincentivegroupbypayload": "GetDoctorIncentiveGroupByPayload" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L31885 | neighbors=[index.d.ts]
 - "generated_client_index_d_getevents": "GetEvents" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L3055 | neighbors=[index.d.ts]
 - "generated_client_index_d_gethavingfields": "GetHavingFields" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L975 | neighbors=[index.d.ts]
-- "generated_client_index_d_getinterpretationruleaggregatetype": "GetInterpretationRuleAggregateType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L30895 | neighbors=[index.d.ts]
-- "generated_client_index_d_getinterpretationrulegroupbypayload": "GetInterpretationRuleGroupByPayload" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L30936 | neighbors=[index.d.ts]
 
 ## Instructions
 

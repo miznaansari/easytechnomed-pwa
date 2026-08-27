@@ -17,6 +17,8 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "generated_client_index_d_testdepartmentgetpayload": "TestDepartmentGetPayload" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L29004 | neighbors=[index.d.ts]
+- "generated_client_index_d_testdepartmentgroupbyargs": "TestDepartmentGroupByArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L28928 | neighbors=[index.d.ts]
 - "generated_client_index_d_testdepartmentgroupbyoutputtype": "TestDepartmentGroupByOutputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L28942 | neighbors=[index.d.ts]
 - "generated_client_index_d_testdepartmentinclude": "TestDepartmentInclude" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L28985 | neighbors=[index.d.ts]
 - "generated_client_index_d_testdepartmentmaxaggregateinputtype": "TestDepartmentMaxAggregateInputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L28841 | neighbors=[index.d.ts]
@@ -55,8 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "generated_client_index_d_testfieldrefs": "TestFieldRefs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L16618 | neighbors=[index.d.ts]
 - "generated_client_index_d_testfindfirstargs": "TestFindFirstArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L16683 | neighbors=[index.d.ts]
 - "generated_client_index_d_testfindfirstorthrowargs": "TestFindFirstOrThrowArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L16731 | neighbors=[index.d.ts]
-- "generated_client_index_d_testfindmanyargs": "TestFindManyArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L16779 | neighbors=[index.d.ts]
-- "generated_client_index_d_testfinduniqueargs": "TestFindUniqueArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L16647 | neighbors=[index.d.ts]
 
 ## Instructions
 

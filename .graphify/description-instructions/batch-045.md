@@ -17,6 +17,8 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "runtime_react_native_oa": "Oa()" | kind=code-symbol | source=scratch/generated-client/runtime/react-native.js:L1 | neighbors=[react-native.js, xa()]
+- "runtime_react_native_oi": "oi()" | kind=code-symbol | source=scratch/generated-client/runtime/react-native.js:L1 | neighbors=[react-native.js, Yn()]
 - "runtime_react_native_os": "os()" | kind=code-symbol | source=scratch/generated-client/runtime/react-native.js:L12 | neighbors=[react-native.js, isEmpty()]
 - "runtime_react_native_parseiniterror": "parseInitError()" | kind=code-symbol | source=scratch/generated-client/runtime/react-native.js:L60 | neighbors=[react-native.js, loadEngine()]
 - "runtime_react_native_parserequesterror": "parseRequestError()" | kind=code-symbol | source=scratch/generated-client/runtime/react-native.js:L60 | neighbors=[react-native.js, request()]
@@ -55,8 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "runtime_react_native_zs": "Zs()" | kind=code-symbol | source=scratch/generated-client/runtime/react-native.js:L74 | neighbors=[react-native.js, gp()]
 - "runtime_wasm_a": "_a()" | kind=code-symbol | source=scratch/generated-client/runtime/wasm.js:L6 | neighbors=[wasm.js, ui()]
 - "runtime_wasm_additem": "addItem()" | kind=code-symbol | source=scratch/generated-client/runtime/wasm.js:L3 | neighbors=[wasm.js, Xs()]
-- "runtime_wasm_addmarginsymbol": "addMarginSymbol()" | kind=code-symbol | source=scratch/generated-client/runtime/wasm.js:L2 | neighbors=[wasm.js, write()]
-- "runtime_wasm_al": "al()" | kind=code-symbol | source=scratch/generated-client/runtime/wasm.js:L31 | neighbors=[wasm.js, io()]
 
 ## Instructions
 

@@ -17,6 +17,8 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "customer_page_rootpage": "RootPage()" | kind=code-symbol | source=app/(customer)/page.jsx:L8 | neighbors=[page.jsx]
+- "dashboard_dashboardcharts_customtooltip": "CustomTooltip()" | kind=code-symbol | source=app/(customer)/(dashboard)/dashboard/DashboardCharts.js:L21 | neighbors=[DashboardCharts.js]
 - "dashboard_error_dashboarderrorboundary": "DashboardErrorBoundary()" | kind=code-symbol | source=app/(customer)/(dashboard)/error.js:L8 | neighbors=[error.js]
 - "dashboard_layout_admindashboardlayout": "AdminDashboardLayout()" | kind=code-symbol | source=app/(customer)/(dashboard)/layout.js:L7 | neighbors=[layout.js]
 - "dashboard_page_admindashboardpage": "AdminDashboardPage()" | kind=code-symbol | source=app/(customer)/(dashboard)/dashboard/page.js:L45 | neighbors=[page.js]
@@ -55,8 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "generated_client_index_d_adminaddresscreatemanyinput": "AdminAddressCreateManyInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L39504 | neighbors=[index.d.ts]
 - "generated_client_index_d_adminaddresscreatenestedonewithoutadmininput": "AdminAddressCreateNestedOneWithoutAdminInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L43477 | neighbors=[index.d.ts]
 - "generated_client_index_d_adminaddresscreateorconnectwithoutadmininput": "AdminAddressCreateOrConnectWithoutAdminInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L46887 | neighbors=[index.d.ts]
-- "generated_client_index_d_adminaddresscreatewithoutadmininput": "AdminAddressCreateWithoutAdminInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L46860 | neighbors=[index.d.ts]
-- "generated_client_index_d_adminaddressdefaultargs": "AdminAddressDefaultArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L24947 | neighbors=[index.d.ts]
 
 ## Instructions
 

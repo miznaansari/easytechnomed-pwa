@@ -17,6 +17,8 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "generated_client_index_d_adminaddressupdateinput": "AdminAddressUpdateInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L39475 | neighbors=[index.d.ts]
+- "generated_client_index_d_adminaddressupdatemanyargs": "AdminAddressUpdateManyArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L24879 | neighbors=[index.d.ts]
 - "generated_client_index_d_adminaddressupdatemanymutationinput": "AdminAddressUpdateManyMutationInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L39519 | neighbors=[index.d.ts]
 - "generated_client_index_d_adminaddressupdateonewithoutadminnestedinput": "AdminAddressUpdateOneWithoutAdminNestedInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L43549 | neighbors=[index.d.ts]
 - "generated_client_index_d_adminaddressupdatetoonewithwherewithoutadmininput": "AdminAddressUpdateToOneWithWhereWithoutAdminInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L47133 | neighbors=[index.d.ts]
@@ -55,8 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "generated_client_index_d_admincreatenestedonewithoutregistrationsinput": "AdminCreateNestedOneWithoutRegistrationsInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L44148 | neighbors=[index.d.ts]
 - "generated_client_index_d_admincreatenestedonewithoutsessionsinput": "AdminCreateNestedOneWithoutSessionsInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L43653 | neighbors=[index.d.ts]
 - "generated_client_index_d_admincreatenestedonewithouttrackingsinput": "AdminCreateNestedOneWithoutTrackingsInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L44641 | neighbors=[index.d.ts]
-- "generated_client_index_d_admincreateorconnectwithoutaddressinput": "AdminCreateOrConnectWithoutAddressInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L50256 | neighbors=[index.d.ts]
-- "generated_client_index_d_admincreateorconnectwithoutregistrationsinput": "AdminCreateOrConnectWithoutRegistrationsInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L48519 | neighbors=[index.d.ts]
 
 ## Instructions
 

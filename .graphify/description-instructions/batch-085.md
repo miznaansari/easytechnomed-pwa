@@ -17,6 +17,8 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "generated_client_index_d_registrationcreateorconnectwithoutworkspaceinput": "RegistrationCreateOrConnectWithoutWorkspaceInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L45321 | neighbors=[index.d.ts]
+- "generated_client_index_d_registrationcreatewithoutadmininput": "RegistrationCreateWithoutAdminInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L46950 | neighbors=[index.d.ts]
 - "generated_client_index_d_registrationcreatewithoutpaymentsinput": "RegistrationCreateWithoutPaymentsInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L50331 | neighbors=[index.d.ts]
 - "generated_client_index_d_registrationcreatewithoutrefbyinput": "RegistrationCreateWithoutRefByInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L47596 | neighbors=[index.d.ts]
 - "generated_client_index_d_registrationcreatewithoutresultsinput": "RegistrationCreateWithoutResultsInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L49901 | neighbors=[index.d.ts]
@@ -55,8 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "generated_client_index_d_registrationpaymentavgaggregateoutputtype": "RegistrationPaymentAvgAggregateOutputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L24971 | neighbors=[index.d.ts]
 - "generated_client_index_d_registrationpaymentavgorderbyaggregateinput": "RegistrationPaymentAvgOrderByAggregateInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L42239 | neighbors=[index.d.ts]
 - "generated_client_index_d_registrationpaymentcountaggregateinputtype": "RegistrationPaymentCountAggregateInputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L25052 | neighbors=[index.d.ts]
-- "generated_client_index_d_registrationpaymentcountaggregateoutputtype": "RegistrationPaymentCountAggregateOutputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L25005 | neighbors=[index.d.ts]
-- "generated_client_index_d_registrationpaymentcountargs": "RegistrationPaymentCountArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L25228 | neighbors=[index.d.ts]
 
 ## Instructions
 

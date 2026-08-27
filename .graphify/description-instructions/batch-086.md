@@ -17,6 +17,8 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "generated_client_index_d_registrationpaymentcountaggregateoutputtype": "RegistrationPaymentCountAggregateOutputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L25005 | neighbors=[index.d.ts]
+- "generated_client_index_d_registrationpaymentcountargs": "RegistrationPaymentCountArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L25228 | neighbors=[index.d.ts]
 - "generated_client_index_d_registrationpaymentcountorderbyaggregateinput": "RegistrationPaymentCountOrderByAggregateInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L42228 | neighbors=[index.d.ts]
 - "generated_client_index_d_registrationpaymentcreateargs": "RegistrationPaymentCreateArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L25782 | neighbors=[index.d.ts]
 - "generated_client_index_d_registrationpaymentcreateinput": "RegistrationPaymentCreateInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L39547 | neighbors=[index.d.ts]
@@ -55,8 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "generated_client_index_d_registrationpaymentscalarfieldenum": "RegistrationPaymentScalarFieldEnum" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L34276 | neighbors=[index.d.ts]
 - "generated_client_index_d_registrationpaymentscalarwhereinput": "RegistrationPaymentScalarWhereInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L48853 | neighbors=[index.d.ts]
 - "generated_client_index_d_registrationpaymentscalarwherewithaggregatesinput": "RegistrationPaymentScalarWhereWithAggregatesInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L36576 | neighbors=[index.d.ts]
-- "generated_client_index_d_registrationpaymentselect": "RegistrationPaymentSelect" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L25180 | neighbors=[index.d.ts]
-- "generated_client_index_d_registrationpaymentselectscalar": "RegistrationPaymentSelectScalar" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L25193 | neighbors=[index.d.ts]
 
 ## Instructions
 

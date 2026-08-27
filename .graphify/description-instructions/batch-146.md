@@ -17,6 +17,8 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "scratch_test_sync_bootstrap_verifybackendendpoints": "verifyBackendEndpoints()" | kind=code-symbol | source=scratch/test-sync-bootstrap.mjs:L3 | neighbors=[test-sync-bootstrap.mjs]
+- "scratch_test_user_cbc_inputvalues": "inputValues" | kind=code-symbol | source=scratch/test-user-cbc.js:L43 | neighbors=[test-user-cbc.js]
 - "scratch_test_user_cbc_result": "result" | kind=code-symbol | source=scratch/test-user-cbc.js:L55 | neighbors=[test-user-cbc.js]
 - "scratch_test_user_cbc_testdefinition": "testDefinition" | kind=code-symbol | source=scratch/test-user-cbc.js:L4 | neighbors=[test-user-cbc.js]
 - "scratch_test_user_lipid_addvaluetovaluesmap": "addValueToValuesMap()" | kind=code-symbol | source=scratch/test-user-lipid.js:L1 | neighbors=[test-user-lipid.js]
@@ -55,8 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "tests_page_settingstestspage": "SettingsTestsPage()" | kind=code-symbol | source=app/(customer)/(dashboard)/settings/tests/page.js:L7 | neighbors=[page.js]
 - "tests_route_delete": "DELETE()" | kind=code-symbol | source=app/api/tests/route.js:L379 | neighbors=[route.js]
 - "tests_testsclient_common_lab_units": "COMMON_LAB_UNITS" | kind=code-symbol | source=app/(customer)/(dashboard)/settings/tests/testsClient.jsx:L50 | neighbors=[testsClient.jsx]
-- "tests_testsclient_testsclient": "TestsClient()" | kind=code-symbol | source=app/(customer)/(dashboard)/settings/tests/testsClient.jsx:L81 | neighbors=[testsClient.jsx]
-- "ui_alert_alert": "Alert()" | kind=code-symbol | source=components/ui/Alert.js:L4 | neighbors=[Alert.js]
 
 ## Instructions
 

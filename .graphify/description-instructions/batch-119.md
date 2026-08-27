@@ -17,6 +17,8 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "generated_client_index_d_workspacefindmanyargs": "WorkspaceFindManyArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L4532 | neighbors=[index.d.ts]
+- "generated_client_index_d_workspacefinduniqueargs": "WorkspaceFindUniqueArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L4400 | neighbors=[index.d.ts]
 - "generated_client_index_d_workspacefinduniqueorthrowargs": "WorkspaceFindUniqueOrThrowArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L4418 | neighbors=[index.d.ts]
 - "generated_client_index_d_workspacegetpayload": "WorkspaceGetPayload" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L4009 | neighbors=[index.d.ts]
 - "generated_client_index_d_workspacegroupbyargs": "WorkspaceGroupByArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L3886 | neighbors=[index.d.ts]
@@ -55,8 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "generated_client_index_d_workspacepdfdeletemanyargs": "WorkspacePdfDeleteManyArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L33855 | neighbors=[index.d.ts]
 - "generated_client_index_d_workspacepdffieldrefs": "WorkspacePdfFieldRefs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L33530 | neighbors=[index.d.ts]
 - "generated_client_index_d_workspacepdffindfirstargs": "WorkspacePdfFindFirstArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L33607 | neighbors=[index.d.ts]
-- "generated_client_index_d_workspacepdffindfirstorthrowargs": "WorkspacePdfFindFirstOrThrowArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L33655 | neighbors=[index.d.ts]
-- "generated_client_index_d_workspacepdffindmanyargs": "WorkspacePdfFindManyArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L33703 | neighbors=[index.d.ts]
 
 ## Instructions
 

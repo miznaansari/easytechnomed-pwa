@@ -17,6 +17,8 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "generated_client_index_d_adminrolepermissionupsertwithwhereuniquewithoutroleinput": "AdminRolePermissionUpsertWithWhereUniqueWithoutRoleInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L47479 | neighbors=[index.d.ts]
+- "generated_client_index_d_adminrolepermissionwhereinput": "AdminRolePermissionWhereInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L35288 | neighbors=[index.d.ts]
 - "generated_client_index_d_adminrolepermissionwhereuniqueinput": "AdminRolePermissionWhereUniqueInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L35305 | neighbors=[index.d.ts]
 - "generated_client_index_d_adminrolerelationfilter": "AdminRoleRelationFilter" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L40995 | neighbors=[index.d.ts]
 - "generated_client_index_d_adminrolescalarfieldenum": "AdminRoleScalarFieldEnum" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L34034 | neighbors=[index.d.ts]
@@ -55,8 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "generated_client_index_d_adminselectscalar": "AdminSelectScalar" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L11044 | neighbors=[index.d.ts]
 - "generated_client_index_d_adminsession": "AdminSession" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L60 | neighbors=[index.d.ts]
 - "generated_client_index_d_adminsessionaggregateargs": "AdminSessionAggregateArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L12013 | neighbors=[index.d.ts]
-- "generated_client_index_d_adminsessionargs": "AdminSessionArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L54350 | neighbors=[index.d.ts]
-- "generated_client_index_d_adminsessionavgaggregateinputtype": "AdminSessionAvgAggregateInputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L11972 | neighbors=[index.d.ts]
 
 ## Instructions
 

@@ -17,6 +17,8 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "generated_client_index_d_registrationpaymentselect": "RegistrationPaymentSelect" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L25180 | neighbors=[index.d.ts]
+- "generated_client_index_d_registrationpaymentselectscalar": "RegistrationPaymentSelectScalar" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L25193 | neighbors=[index.d.ts]
 - "generated_client_index_d_registrationpaymentsumaggregateinputtype": "RegistrationPaymentSumAggregateInputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L25024 | neighbors=[index.d.ts]
 - "generated_client_index_d_registrationpaymentsumaggregateoutputtype": "RegistrationPaymentSumAggregateOutputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L24977 | neighbors=[index.d.ts]
 - "generated_client_index_d_registrationpaymentsumorderbyaggregateinput": "RegistrationPaymentSumOrderByAggregateInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L42267 | neighbors=[index.d.ts]
@@ -55,8 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "generated_client_index_d_registrationtestavgaggregateinputtype": "RegistrationTestAvgAggregateInputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L18639 | neighbors=[index.d.ts]
 - "generated_client_index_d_registrationtestavgaggregateoutputtype": "RegistrationTestAvgAggregateOutputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L18575 | neighbors=[index.d.ts]
 - "generated_client_index_d_registrationtestavgorderbyaggregateinput": "RegistrationTestAvgOrderByAggregateInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L41748 | neighbors=[index.d.ts]
-- "generated_client_index_d_registrationtestcountaggregateinputtype": "RegistrationTestCountAggregateInputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L18685 | neighbors=[index.d.ts]
-- "generated_client_index_d_registrationtestcountaggregateoutputtype": "RegistrationTestCountAggregateOutputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L18621 | neighbors=[index.d.ts]
 
 ## Instructions
 

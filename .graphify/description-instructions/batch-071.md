@@ -17,6 +17,8 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "generated_client_index_d_getworkspaceaggregatetype": "GetWorkspaceAggregateType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L3875 | neighbors=[index.d.ts]
+- "generated_client_index_d_getworkspacegroupbypayload": "GetWorkspaceGroupByPayload" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L3917 | neighbors=[index.d.ts]
 - "generated_client_index_d_getworkspacepdfaggregatetype": "GetWorkspacePdfAggregateType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L32964 | neighbors=[index.d.ts]
 - "generated_client_index_d_getworkspacepdfgroupbypayload": "GetWorkspacePdfGroupByPayload" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L33030 | neighbors=[index.d.ts]
 - "generated_client_index_d_has": "Has" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L937 | neighbors=[index.d.ts]
@@ -55,8 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "generated_client_index_d_interpretationruledeleteargs": "InterpretationRuleDeleteArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L31651 | neighbors=[index.d.ts]
 - "generated_client_index_d_interpretationruledeletemanyargs": "InterpretationRuleDeleteManyArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L31669 | neighbors=[index.d.ts]
 - "generated_client_index_d_interpretationrulefieldrefs": "InterpretationRuleFieldRefs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L31369 | neighbors=[index.d.ts]
-- "generated_client_index_d_interpretationrulefindfirstargs": "InterpretationRuleFindFirstArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L31421 | neighbors=[index.d.ts]
-- "generated_client_index_d_interpretationrulefindfirstorthrowargs": "InterpretationRuleFindFirstOrThrowArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L31469 | neighbors=[index.d.ts]
 
 ## Instructions
 

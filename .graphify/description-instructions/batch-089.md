@@ -17,6 +17,8 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "generated_client_index_d_registrationtestorderbywithaggregationinput": "RegistrationTestOrderByWithAggregationInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L35908 | neighbors=[index.d.ts]
+- "generated_client_index_d_registrationtestorderbywithrelationinput": "RegistrationTestOrderByWithRelationInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L35868 | neighbors=[index.d.ts]
 - "generated_client_index_d_registrationtestpayload": "$RegistrationTestPayload" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L18863 | neighbors=[index.d.ts]
 - "generated_client_index_d_registrationtestregistrationidtestidcompounduniqueinput": "RegistrationTestRegistrationIdTestIdCompoundUniqueInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L41727 | neighbors=[index.d.ts]
 - "generated_client_index_d_registrationtestscalarfieldenum": "RegistrationTestScalarFieldEnum" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L34154 | neighbors=[index.d.ts]
@@ -55,8 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "generated_client_index_d_registrationtestupsertargs": "RegistrationTestUpsertArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L19514 | neighbors=[index.d.ts]
 - "generated_client_index_d_registrationtestupsertwithwhereuniquewithoutregistrationinput": "RegistrationTestUpsertWithWhereUniqueWithoutRegistrationInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L48867 | neighbors=[index.d.ts]
 - "generated_client_index_d_registrationtestupsertwithwhereuniquewithouttestinput": "RegistrationTestUpsertWithWhereUniqueWithoutTestInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L48170 | neighbors=[index.d.ts]
-- "generated_client_index_d_registrationtestwhereinput": "RegistrationTestWhereInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L35847 | neighbors=[index.d.ts]
-- "generated_client_index_d_registrationtestwhereuniqueinput": "RegistrationTestWhereUniqueInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L35886 | neighbors=[index.d.ts]
 
 ## Instructions
 

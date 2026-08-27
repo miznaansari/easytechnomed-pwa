@@ -17,6 +17,8 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "generated_client_index_d_testparameteruncheckedcreatewithouttestinput": "TestParameterUncheckedCreateWithoutTestInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L48050 | neighbors=[index.d.ts]
+- "generated_client_index_d_testparameteruncheckedcreatewithoutworkspaceinput": "TestParameterUncheckedCreateWithoutWorkspaceInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L45553 | neighbors=[index.d.ts]
 - "generated_client_index_d_testparameteruncheckedupdateinput": "TestParameterUncheckedUpdateInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L39243 | neighbors=[index.d.ts]
 - "generated_client_index_d_testparameteruncheckedupdatemanyinput": "TestParameterUncheckedUpdateManyInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L39306 | neighbors=[index.d.ts]
 - "generated_client_index_d_testparameteruncheckedupdatemanywithoutparameterinput": "TestParameterUncheckedUpdateManyWithoutParameterInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L54036 | neighbors=[index.d.ts]
@@ -55,8 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "generated_client_index_d_testparameterupsertwithwhereuniquewithoutworkspaceinput": "TestParameterUpsertWithWhereUniqueWithoutWorkspaceInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L46005 | neighbors=[index.d.ts]
 - "generated_client_index_d_testparameterwhereinput": "TestParameterWhereInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L36165 | neighbors=[index.d.ts]
 - "generated_client_index_d_testparameterwhereuniqueinput": "TestParameterWhereUniqueInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L36220 | neighbors=[index.d.ts]
-- "generated_client_index_d_testpayload": "$TestPayload" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L16212 | neighbors=[index.d.ts]
-- "generated_client_index_d_testrelationfilter": "TestRelationFilter" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L41722 | neighbors=[index.d.ts]
 
 ## Instructions
 

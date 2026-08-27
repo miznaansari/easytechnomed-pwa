@@ -17,6 +17,8 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "generated_client_index_d_stringfilter": "StringFilter" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L40378 | neighbors=[index.d.ts]
+- "generated_client_index_d_stringnullablefilter": "StringNullableFilter" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L40689 | neighbors=[index.d.ts]
 - "generated_client_index_d_stringnullablewithaggregatesfilter": "StringNullableWithAggregatesFilter" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L40748 | neighbors=[index.d.ts]
 - "generated_client_index_d_stringwithaggregatesfilter": "StringWithAggregatesFilter" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L40581 | neighbors=[index.d.ts]
 - "generated_client_index_d_subset": "Subset" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L762 | neighbors=[index.d.ts]
@@ -55,8 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "generated_client_index_d_superadmindeletemanyargs": "SuperAdminDeleteManyArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L5809 | neighbors=[index.d.ts]
 - "generated_client_index_d_superadminfieldrefs": "SuperAdminFieldRefs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L5511 | neighbors=[index.d.ts]
 - "generated_client_index_d_superadminfindfirstargs": "SuperAdminFindFirstArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L5561 | neighbors=[index.d.ts]
-- "generated_client_index_d_superadminfindfirstorthrowargs": "SuperAdminFindFirstOrThrowArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L5609 | neighbors=[index.d.ts]
-- "generated_client_index_d_superadminfindmanyargs": "SuperAdminFindManyArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L5657 | neighbors=[index.d.ts]
 
 ## Instructions
 

@@ -17,6 +17,8 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "generated_client_index_d_usersessionfindmanyargs": "UserSessionFindManyArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L8673 | neighbors=[index.d.ts]
+- "generated_client_index_d_usersessionfinduniqueargs": "UserSessionFindUniqueArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L8541 | neighbors=[index.d.ts]
 - "generated_client_index_d_usersessionfinduniqueorthrowargs": "UserSessionFindUniqueOrThrowArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L8559 | neighbors=[index.d.ts]
 - "generated_client_index_d_usersessiongetpayload": "UserSessionGetPayload" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L8161 | neighbors=[index.d.ts]
 - "generated_client_index_d_usersessiongroupbyargs": "UserSessionGroupByArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L8075 | neighbors=[index.d.ts]
@@ -55,8 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "generated_client_index_d_usersessionupdatemanymutationinput": "UserSessionUpdateManyMutationInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L37733 | neighbors=[index.d.ts]
 - "generated_client_index_d_usersessionupdatemanywithoutusernestedinput": "UserSessionUpdateManyWithoutUserNestedInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L43317 | neighbors=[index.d.ts]
 - "generated_client_index_d_usersessionupdatemanywithwherewithoutuserinput": "UserSessionUpdateManyWithWhereWithoutUserInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L46535 | neighbors=[index.d.ts]
-- "generated_client_index_d_usersessionupdatewithoutuserinput": "UserSessionUpdateWithoutUserInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L52704 | neighbors=[index.d.ts]
-- "generated_client_index_d_usersessionupdatewithwhereuniquewithoutuserinput": "UserSessionUpdateWithWhereUniqueWithoutUserInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L46530 | neighbors=[index.d.ts]
 
 ## Instructions
 

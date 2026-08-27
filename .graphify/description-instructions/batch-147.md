@@ -17,6 +17,8 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "tests_testsclient_testsclient": "TestsClient()" | kind=code-symbol | source=app/(customer)/(dashboard)/settings/tests/testsClient.jsx:L81 | neighbors=[testsClient.jsx]
+- "ui_alert_alert": "Alert()" | kind=code-symbol | source=components/ui/Alert.js:L4 | neighbors=[Alert.js]
 - "ui_avatar_avatar": "Avatar()" | kind=code-symbol | source=components/ui/Avatar.js:L3 | neighbors=[Avatar.js]
 - "ui_badge_badge": "Badge()" | kind=code-symbol | source=components/ui/Badge.js:L3 | neighbors=[Badge.js]
 - "ui_button_button": "Button()" | kind=code-symbol | source=components/ui/Button.js:L4 | neighbors=[Button.js]

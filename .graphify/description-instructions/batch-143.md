@@ -17,6 +17,8 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "runtime_wasm_o": "_o()" | kind=code-symbol | source=scratch/generated-client/runtime/wasm.js:L30 | neighbors=[wasm.js]
+- "runtime_wasm_offset": "offset()" | kind=code-symbol | source=scratch/generated-client/runtime/wasm.js:L1 | neighbors=[wasm.js]
 - "runtime_wasm_onbeforeexit": "onBeforeExit()" | kind=code-symbol | source=scratch/generated-client/runtime/wasm.js:L11 | neighbors=[wasm.js]
 - "runtime_wasm_pn": "pn()" | kind=code-symbol | source=scratch/generated-client/runtime/wasm.js:L1 | neighbors=[wasm.js]
 - "runtime_wasm_po": "po()" | kind=code-symbol | source=scratch/generated-client/runtime/wasm.js:L21 | neighbors=[wasm.js]
@@ -55,8 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "scratch_backfill_incentives_prisma": "prisma" | kind=code-symbol | source=scratch-backfill-incentives.js:L2 | neighbors=[scratch-backfill-incentives.js]
 - "scratch_backfill_incentives_prismaclient": "{ PrismaClient }" | kind=code-symbol | source=scratch-backfill-incentives.js:L1 | neighbors=[scratch-backfill-incentives.js]
 - "scratch_backfill_main": "main()" | kind=code-symbol | source=scratch-backfill.js:L4 | neighbors=[scratch-backfill.js]
-- "scratch_backfill_prisma": "prisma" | kind=code-symbol | source=scratch-backfill.js:L2 | neighbors=[scratch-backfill.js]
-- "scratch_backfill_prismaclient": "{ PrismaClient }" | kind=code-symbol | source=scratch-backfill.js:L1 | neighbors=[scratch-backfill.js]
 
 ## Instructions
 

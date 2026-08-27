@@ -17,6 +17,8 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "generated_client_index_d_adminsessionargs": "AdminSessionArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L54350 | neighbors=[index.d.ts]
+- "generated_client_index_d_adminsessionavgaggregateinputtype": "AdminSessionAvgAggregateInputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L11972 | neighbors=[index.d.ts]
 - "generated_client_index_d_adminsessionavgaggregateoutputtype": "AdminSessionAvgAggregateOutputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L11930 | neighbors=[index.d.ts]
 - "generated_client_index_d_adminsessionavgorderbyaggregateinput": "AdminSessionAvgOrderByAggregateInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L41137 | neighbors=[index.d.ts]
 - "generated_client_index_d_adminsessioncountaggregateinputtype": "AdminSessionCountAggregateInputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L12002 | neighbors=[index.d.ts]
@@ -55,8 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "generated_client_index_d_adminsessionminorderbyaggregateinput": "AdminSessionMinOrderByAggregateInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L41152 | neighbors=[index.d.ts]
 - "generated_client_index_d_adminsessionorderbyrelationaggregateinput": "AdminSessionOrderByRelationAggregateInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L41017 | neighbors=[index.d.ts]
 - "generated_client_index_d_adminsessionorderbywithaggregationinput": "AdminSessionOrderByWithAggregationInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L35205 | neighbors=[index.d.ts]
-- "generated_client_index_d_adminsessionorderbywithrelationinput": "AdminSessionOrderByWithRelationInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L35180 | neighbors=[index.d.ts]
-- "generated_client_index_d_adminsessionpayload": "$AdminSessionPayload" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L12154 | neighbors=[index.d.ts]
 
 ## Instructions
 

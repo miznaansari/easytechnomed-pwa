@@ -17,6 +17,8 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "dashboard_dashboardcharts_revenuechart": "RevenueChart()" | kind=code-symbol | source=app/(customer)/(dashboard)/dashboard/DashboardCharts.js:L104 | neighbors=[DashboardCharts.js, page.js]
+- "dashboard_rangeselector": "RangeSelector.js" | kind=code-symbol | source=app/(customer)/(dashboard)/dashboard/RangeSelector.js:L1 | neighbors=[252e194 e, DashboardRangeSelector()]
 - "doctor_summary_route_get": "GET()" | kind=code-symbol | source=app/api/doctor-summary/route.js:L10 | neighbors=[route.js, serializeData()]
 - "doctor_summary_route_serializedata": "serializeData()" | kind=code-symbol | source=app/api/doctor-summary/route.js:L6 | neighbors=[route.js, GET()]
 - "doctors_route_get": "GET()" | kind=code-symbol | source=app/api/doctors/route.js:L10 | neighbors=[route.js, serializeData()]
@@ -55,8 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "login_loginpageclient_customerloginpage": "CustomerLoginPage()" | kind=code-symbol | source=app/(customer)/auth/login/LoginPageClient.js:L31 | neighbors=[LoginPageClient.js, isLikelyMobile()]
 - "login_loginpageclient_islikelymobile": "isLikelyMobile()" | kind=code-symbol | source=app/(customer)/auth/login/LoginPageClient.js:L15 | neighbors=[LoginPageClient.js, CustomerLoginPage()]
 - "login_route": "route.js" | kind=code-symbol | source=app/api/authas/login/route.js:L1 | neighbors=[252e194 e, POST()]
-- "next_config": "next.config.mjs" | kind=code-symbol | source=next.config.mjs:L1 | neighbors=[252e194 e, nextConfig]
-- "offline_db_appdatabase_deleteoffline": ".deleteOffline()" | kind=code-symbol | source=lib/offline/db.js:L104 | neighbors=[AppDatabase, .updateOffline()]
 
 ## Instructions
 

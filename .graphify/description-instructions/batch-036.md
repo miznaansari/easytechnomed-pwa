@@ -17,6 +17,8 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "registrations_route_get": "GET()" | kind=code-symbol | source=app/api/registrations/route.js:L51 | neighbors=[route.js, serializeData()]
+- "registrations_route_post": "POST()" | kind=code-symbol | source=app/api/registrations/route.js:L110 | neighbors=[route.js, serializeData()]
 - "reject_route": "route.js" | kind=code-symbol | source=app/api/approvals/reject/route.js:L1 | neighbors=[252e194 e, POST()]
 - "results_route_post": "POST()" | kind=code-symbol | source=app/api/registrations/[id]/results/route.js:L6 | neighbors=[route.js, PUT()]
 - "results_route_put": "PUT()" | kind=code-symbol | source=app/api/registrations/[id]/results/route.js:L108 | neighbors=[route.js, POST()]
@@ -55,8 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "runtime_edge_esm_getallbatchquerycallbacks": "getAllBatchQueryCallbacks()" | kind=code-symbol | source=scratch/generated-client/runtime/edge-esm.js:L5 | neighbors=[edge-esm.js, get()]
 - "runtime_edge_esm_getcurrentlinelength": "getCurrentLineLength()" | kind=code-symbol | source=scratch/generated-client/runtime/edge-esm.js:L3 | neighbors=[edge-esm.js, write()]
 - "runtime_edge_esm_getfields": "getFields()" | kind=code-symbol | source=scratch/generated-client/runtime/edge-esm.js:L3 | neighbors=[edge-esm.js, vu()]
-- "runtime_edge_esm_getnamespace": "_getNamespace()" | kind=code-symbol | source=scratch/generated-client/runtime/edge-esm.js:L4 | neighbors=[edge-esm.js, constructor()]
-- "runtime_edge_esm_getoutputtypedescription": "getOutputTypeDescription()" | kind=code-symbol | source=scratch/generated-client/runtime/edge-esm.js:L5 | neighbors=[edge-esm.js, fu()]
 
 ## Instructions
 

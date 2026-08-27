@@ -17,6 +17,8 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "generated_client_index_d_testaggregateargs": "TestAggregateArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L16017 | neighbors=[index.d.ts]
+- "generated_client_index_d_testargs": "TestArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L54366 | neighbors=[index.d.ts]
 - "generated_client_index_d_testavgaggregateinputtype": "TestAvgAggregateInputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L15914 | neighbors=[index.d.ts]
 - "generated_client_index_d_testavgaggregateoutputtype": "TestAvgAggregateOutputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L15810 | neighbors=[index.d.ts]
 - "generated_client_index_d_testavgorderbyaggregateinput": "TestAvgOrderByAggregateInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L41396 | neighbors=[index.d.ts]
@@ -55,8 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "generated_client_index_d_testcreatewithoutdepartmentinput": "TestCreateWithoutDepartmentInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L50713 | neighbors=[index.d.ts]
 - "generated_client_index_d_testcreatewithoutformulasinput": "TestCreateWithoutFormulasInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L50838 | neighbors=[index.d.ts]
 - "generated_client_index_d_testcreatewithoutinterpretationrulesinput": "TestCreateWithoutInterpretationRulesInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L51232 | neighbors=[index.d.ts]
-- "generated_client_index_d_testcreatewithoutparametersinput": "TestCreateWithoutParametersInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L49621 | neighbors=[index.d.ts]
-- "generated_client_index_d_testcreatewithoutregistrationsinput": "TestCreateWithoutRegistrationsInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L48977 | neighbors=[index.d.ts]
 
 ## Instructions
 

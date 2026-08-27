@@ -17,6 +17,8 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "generated_client_index_d_usergroupbyargs": "UserGroupByArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L7041 | neighbors=[index.d.ts]
+- "generated_client_index_d_usergroupbyoutputtype": "UserGroupByOutputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L7055 | neighbors=[index.d.ts]
 - "generated_client_index_d_userinclude": "UserInclude" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L7139 | neighbors=[index.d.ts]
 - "generated_client_index_d_userlistrelationfilter": "UserListRelationFilter" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L40443 | neighbors=[index.d.ts]
 - "generated_client_index_d_usermaxaggregateinputtype": "UserMaxAggregateInputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L6928 | neighbors=[index.d.ts]
@@ -55,8 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "generated_client_index_d_userrolecreatenestedonewithoutpermissionsinput": "UserRoleCreateNestedOneWithoutPermissionsInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L43451 | neighbors=[index.d.ts]
 - "generated_client_index_d_userrolecreatenestedonewithoutusersinput": "UserRoleCreateNestedOneWithoutUsersInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L43273 | neighbors=[index.d.ts]
 - "generated_client_index_d_userrolecreateorconnectwithoutpermissionsinput": "UserRoleCreateOrConnectWithoutPermissionsInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L46767 | neighbors=[index.d.ts]
-- "generated_client_index_d_userrolecreateorconnectwithoutusersinput": "UserRoleCreateOrConnectWithoutUsersInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L46372 | neighbors=[index.d.ts]
-- "generated_client_index_d_userrolecreatewithoutpermissionsinput": "UserRoleCreateWithoutPermissionsInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L46756 | neighbors=[index.d.ts]
 
 ## Instructions
 

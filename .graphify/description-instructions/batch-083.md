@@ -17,6 +17,8 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "generated_client_index_d_prisma_interpretationruleclient": "Prisma__InterpretationRuleClient" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L31336 | neighbors=[index.d.ts]
+- "generated_client_index_d_prisma_leadclient": "Prisma__LeadClient" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L23649 | neighbors=[index.d.ts]
 - "generated_client_index_d_prisma_leadcontactclient": "Prisma__LeadContactClient" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L26510 | neighbors=[index.d.ts]
 - "generated_client_index_d_prisma_parameterclient": "Prisma__ParameterClient" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L20546 | neighbors=[index.d.ts]
 - "generated_client_index_d_prisma_patientresultclient": "Prisma__PatientResultClient" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L22748 | neighbors=[index.d.ts]
@@ -55,8 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "generated_client_index_d_registration_testsargs": "Registration$testsArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L18531 | neighbors=[index.d.ts]
 - "generated_client_index_d_registration_workspaceargs": "Registration$workspaceArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L18481 | neighbors=[index.d.ts]
 - "generated_client_index_d_registrationaggregateargs": "RegistrationAggregateArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L17408 | neighbors=[index.d.ts]
-- "generated_client_index_d_registrationargs": "RegistrationArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L54370 | neighbors=[index.d.ts]
-- "generated_client_index_d_registrationavgaggregateinputtype": "RegistrationAvgAggregateInputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L17242 | neighbors=[index.d.ts]
 
 ## Instructions
 

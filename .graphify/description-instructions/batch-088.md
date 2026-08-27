@@ -17,6 +17,8 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "generated_client_index_d_registrationtestcountaggregateinputtype": "RegistrationTestCountAggregateInputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L18685 | neighbors=[index.d.ts]
+- "generated_client_index_d_registrationtestcountaggregateoutputtype": "RegistrationTestCountAggregateOutputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L18621 | neighbors=[index.d.ts]
 - "generated_client_index_d_registrationtestcountargs": "RegistrationTestCountArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L18889 | neighbors=[index.d.ts]
 - "generated_client_index_d_registrationtestcountorderbyaggregateinput": "RegistrationTestCountOrderByAggregateInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L41732 | neighbors=[index.d.ts]
 - "generated_client_index_d_registrationtestcreateargs": "RegistrationTestCreateArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L19449 | neighbors=[index.d.ts]
@@ -55,8 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "generated_client_index_d_registrationtestminaggregateoutputtype": "RegistrationTestMinAggregateOutputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L18589 | neighbors=[index.d.ts]
 - "generated_client_index_d_registrationtestminorderbyaggregateinput": "RegistrationTestMinOrderByAggregateInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L41771 | neighbors=[index.d.ts]
 - "generated_client_index_d_registrationtestorderbyrelationaggregateinput": "RegistrationTestOrderByRelationAggregateInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L41363 | neighbors=[index.d.ts]
-- "generated_client_index_d_registrationtestorderbywithaggregationinput": "RegistrationTestOrderByWithAggregationInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L35908 | neighbors=[index.d.ts]
-- "generated_client_index_d_registrationtestorderbywithrelationinput": "RegistrationTestOrderByWithRelationInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L35868 | neighbors=[index.d.ts]
 
 ## Instructions
 

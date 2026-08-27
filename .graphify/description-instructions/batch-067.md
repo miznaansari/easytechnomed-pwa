@@ -17,6 +17,8 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "generated_client_index_d_doctorincentiveselectscalar": "DoctorIncentiveSelectScalar" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L31908 | neighbors=[index.d.ts]
+- "generated_client_index_d_doctorincentivesumaggregateinputtype": "DoctorIncentiveSumAggregateInputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L31759 | neighbors=[index.d.ts]
 - "generated_client_index_d_doctorincentivesumaggregateoutputtype": "DoctorIncentiveSumAggregateOutputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L31724 | neighbors=[index.d.ts]
 - "generated_client_index_d_doctorincentivesumorderbyaggregateinput": "DoctorIncentiveSumOrderByAggregateInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L42590 | neighbors=[index.d.ts]
 - "generated_client_index_d_doctorincentiveuncheckedcreateinput": "DoctorIncentiveUncheckedCreateInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L40080 | neighbors=[index.d.ts]
@@ -55,8 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "generated_client_index_d_doctorrelationfilter": "DoctorRelationFilter" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L42558 | neighbors=[index.d.ts]
 - "generated_client_index_d_doctorscalarfieldenum": "DoctorScalarFieldEnum" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L34062 | neighbors=[index.d.ts]
 - "generated_client_index_d_doctorscalarwhereinput": "DoctorScalarWhereInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L45785 | neighbors=[index.d.ts]
-- "generated_client_index_d_doctorscalarwherewithaggregatesinput": "DoctorScalarWhereWithAggregatesInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L35424 | neighbors=[index.d.ts]
-- "generated_client_index_d_doctorselect": "DoctorSelect" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L14956 | neighbors=[index.d.ts]
 
 ## Instructions
 

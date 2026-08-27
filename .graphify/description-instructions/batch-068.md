@@ -17,6 +17,8 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "generated_client_index_d_doctorscalarwherewithaggregatesinput": "DoctorScalarWhereWithAggregatesInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L35424 | neighbors=[index.d.ts]
+- "generated_client_index_d_doctorselect": "DoctorSelect" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L14956 | neighbors=[index.d.ts]
 - "generated_client_index_d_doctorselectscalar": "DoctorSelectScalar" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L14978 | neighbors=[index.d.ts]
 - "generated_client_index_d_doctorsumaggregateinputtype": "DoctorSumAggregateInputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L14780 | neighbors=[index.d.ts]
 - "generated_client_index_d_doctorsumaggregateoutputtype": "DoctorSumAggregateOutputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L14718 | neighbors=[index.d.ts]
@@ -55,8 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "generated_client_index_d_doctorupsertargs": "DoctorUpsertArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L15657 | neighbors=[index.d.ts]
 - "generated_client_index_d_doctorupsertwithoutincentivehistoryinput": "DoctorUpsertWithoutIncentiveHistoryInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L51620 | neighbors=[index.d.ts]
 - "generated_client_index_d_doctorupsertwithoutregistrationsinput": "DoctorUpsertWithoutRegistrationsInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L48623 | neighbors=[index.d.ts]
-- "generated_client_index_d_doctorupsertwithoutsecondregistrationsinput": "DoctorUpsertWithoutSecondRegistrationsInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L48669 | neighbors=[index.d.ts]
-- "generated_client_index_d_doctorupsertwithwhereuniquewithoutworkspaceinput": "DoctorUpsertWithWhereUniqueWithoutWorkspaceInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L45769 | neighbors=[index.d.ts]
 
 ## Instructions
 

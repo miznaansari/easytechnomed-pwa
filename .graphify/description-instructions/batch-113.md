@@ -17,6 +17,8 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "generated_client_index_d_userrolepermissionuncheckedcreatenestedmanywithoutroleinput": "UserRolePermissionUncheckedCreateNestedManyWithoutRoleInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L43388 | neighbors=[index.d.ts]
+- "generated_client_index_d_userrolepermissionuncheckedcreatewithoutroleinput": "UserRolePermissionUncheckedCreateWithoutRoleInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L46700 | neighbors=[index.d.ts]
 - "generated_client_index_d_userrolepermissionuncheckedupdateinput": "UserRolePermissionUncheckedUpdateInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L37807 | neighbors=[index.d.ts]
 - "generated_client_index_d_userrolepermissionuncheckedupdatemanyinput": "UserRolePermissionUncheckedUpdateManyInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L37823 | neighbors=[index.d.ts]
 - "generated_client_index_d_userrolepermissionuncheckedupdatemanywithoutroleinput": "UserRolePermissionUncheckedUpdateManyWithoutRoleInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L52821 | neighbors=[index.d.ts]
@@ -55,8 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "generated_client_index_d_userroleupdatemanymutationinput": "UserRoleUpdateManyMutationInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L37782 | neighbors=[index.d.ts]
 - "generated_client_index_d_userroleupdateonerequiredwithoutpermissionsnestedinput": "UserRoleUpdateOneRequiredWithoutPermissionsNestedInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L43457 | neighbors=[index.d.ts]
 - "generated_client_index_d_userroleupdateonerequiredwithoutusersnestedinput": "UserRoleUpdateOneRequiredWithoutUsersNestedInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L43299 | neighbors=[index.d.ts]
-- "generated_client_index_d_userroleupdatetoonewithwherewithoutpermissionsinput": "UserRoleUpdateToOneWithWhereWithoutPermissionsInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L46778 | neighbors=[index.d.ts]
-- "generated_client_index_d_userroleupdatetoonewithwherewithoutusersinput": "UserRoleUpdateToOneWithWhereWithoutUsersInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L46456 | neighbors=[index.d.ts]
 
 ## Instructions
 

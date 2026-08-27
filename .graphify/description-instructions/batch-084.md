@@ -17,6 +17,8 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "generated_client_index_d_registrationargs": "RegistrationArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L54370 | neighbors=[index.d.ts]
+- "generated_client_index_d_registrationavgaggregateinputtype": "RegistrationAvgAggregateInputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L17242 | neighbors=[index.d.ts]
 - "generated_client_index_d_registrationavgaggregateoutputtype": "RegistrationAvgAggregateOutputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L17075 | neighbors=[index.d.ts]
 - "generated_client_index_d_registrationavgorderbyaggregateinput": "RegistrationAvgOrderByAggregateInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L41579 | neighbors=[index.d.ts]
 - "generated_client_index_d_registrationcountaggregateinputtype": "RegistrationCountAggregateInputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L17364 | neighbors=[index.d.ts]
@@ -55,8 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "generated_client_index_d_registrationcreateorconnectwithoutresultsinput": "RegistrationCreateOrConnectWithoutResultsInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L49990 | neighbors=[index.d.ts]
 - "generated_client_index_d_registrationcreateorconnectwithoutsecondrefinput": "RegistrationCreateOrConnectWithoutSecondRefInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L47784 | neighbors=[index.d.ts]
 - "generated_client_index_d_registrationcreateorconnectwithouttestsinput": "RegistrationCreateOrConnectWithoutTestsInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L48972 | neighbors=[index.d.ts]
-- "generated_client_index_d_registrationcreateorconnectwithoutworkspaceinput": "RegistrationCreateOrConnectWithoutWorkspaceInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L45321 | neighbors=[index.d.ts]
-- "generated_client_index_d_registrationcreatewithoutadmininput": "RegistrationCreateWithoutAdminInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L46950 | neighbors=[index.d.ts]
 
 ## Instructions
 

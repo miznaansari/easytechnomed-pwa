@@ -17,6 +17,8 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "generated_client_index_d_userroleupdatetoonewithwherewithoutpermissionsinput": "UserRoleUpdateToOneWithWhereWithoutPermissionsInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L46778 | neighbors=[index.d.ts]
+- "generated_client_index_d_userroleupdatetoonewithwherewithoutusersinput": "UserRoleUpdateToOneWithWhereWithoutUsersInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L46456 | neighbors=[index.d.ts]
 - "generated_client_index_d_userroleupdatewithoutpermissionsinput": "UserRoleUpdateWithoutPermissionsInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L46783 | neighbors=[index.d.ts]
 - "generated_client_index_d_userroleupdatewithoutusersinput": "UserRoleUpdateWithoutUsersInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L46461 | neighbors=[index.d.ts]
 - "generated_client_index_d_userroleupsertargs": "UserRoleUpsertArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L9667 | neighbors=[index.d.ts]
@@ -55,8 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "generated_client_index_d_usersessionfieldrefs": "UserSessionFieldRefs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L8526 | neighbors=[index.d.ts]
 - "generated_client_index_d_usersessionfindfirstargs": "UserSessionFindFirstArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L8577 | neighbors=[index.d.ts]
 - "generated_client_index_d_usersessionfindfirstorthrowargs": "UserSessionFindFirstOrThrowArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L8625 | neighbors=[index.d.ts]
-- "generated_client_index_d_usersessionfindmanyargs": "UserSessionFindManyArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L8673 | neighbors=[index.d.ts]
-- "generated_client_index_d_usersessionfinduniqueargs": "UserSessionFindUniqueArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L8541 | neighbors=[index.d.ts]
 
 ## Instructions
 

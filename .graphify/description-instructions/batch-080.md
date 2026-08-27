@@ -17,6 +17,8 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "generated_client_index_d_parameterupdatemanymutationinput": "ParameterUpdateManyMutationInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L39102 | neighbors=[index.d.ts]
+- "generated_client_index_d_parameterupdatemanywithoutworkspacenestedinput": "ParameterUpdateManyWithoutWorkspaceNestedInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L42969 | neighbors=[index.d.ts]
 - "generated_client_index_d_parameterupdatemanywithwherewithoutworkspaceinput": "ParameterUpdateManyWithWhereWithoutWorkspaceInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L45959 | neighbors=[index.d.ts]
 - "generated_client_index_d_parameterupdateonerequiredwithoutinterpretationrulesnestedinput": "ParameterUpdateOneRequiredWithoutInterpretationRulesNestedInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L44795 | neighbors=[index.d.ts]
 - "generated_client_index_d_parameterupdateonerequiredwithouttestformulasnestedinput": "ParameterUpdateOneRequiredWithoutTestFormulasNestedInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L44751 | neighbors=[index.d.ts]
@@ -55,8 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "generated_client_index_d_patientresultcreatemanyregistrationinput": "PatientResultCreateManyRegistrationInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L53811 | neighbors=[index.d.ts]
 - "generated_client_index_d_patientresultcreatemanyregistrationinputenvelope": "PatientResultCreateManyRegistrationInputEnvelope" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L48329 | neighbors=[index.d.ts]
 - "generated_client_index_d_patientresultcreatemanytestparameterinput": "PatientResultCreateManyTestParameterInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L54124 | neighbors=[index.d.ts]
-- "generated_client_index_d_patientresultcreatemanytestparameterinputenvelope": "PatientResultCreateManyTestParameterInputEnvelope" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L49532 | neighbors=[index.d.ts]
-- "generated_client_index_d_patientresultcreatenestedmanywithoutregistrationinput": "PatientResultCreateNestedManyWithoutRegistrationInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L44123 | neighbors=[index.d.ts]
 
 ## Instructions
 

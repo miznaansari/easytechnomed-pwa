@@ -17,6 +17,8 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "generated_client_index_d_testcreatewithoutparametersinput": "TestCreateWithoutParametersInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L49621 | neighbors=[index.d.ts]
+- "generated_client_index_d_testcreatewithoutregistrationsinput": "TestCreateWithoutRegistrationsInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L48977 | neighbors=[index.d.ts]
 - "generated_client_index_d_testcreatewithoutworkspaceinput": "TestCreateWithoutWorkspaceInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L45331 | neighbors=[index.d.ts]
 - "generated_client_index_d_testdefaultargs": "TestDefaultArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L17051 | neighbors=[index.d.ts]
 - "generated_client_index_d_testdelegate": "TestDelegate" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L16255 | neighbors=[index.d.ts]
@@ -55,8 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "generated_client_index_d_testdepartmentfindmanyargs": "TestDepartmentFindManyArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L29513 | neighbors=[index.d.ts]
 - "generated_client_index_d_testdepartmentfinduniqueargs": "TestDepartmentFindUniqueArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L29381 | neighbors=[index.d.ts]
 - "generated_client_index_d_testdepartmentfinduniqueorthrowargs": "TestDepartmentFindUniqueOrThrowArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L29399 | neighbors=[index.d.ts]
-- "generated_client_index_d_testdepartmentgetpayload": "TestDepartmentGetPayload" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L29004 | neighbors=[index.d.ts]
-- "generated_client_index_d_testdepartmentgroupbyargs": "TestDepartmentGroupByArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L28928 | neighbors=[index.d.ts]
 
 ## Instructions
 

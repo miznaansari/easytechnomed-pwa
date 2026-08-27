@@ -24,6 +24,7 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "commit:repo:github.com-personal/miznaansari/easytechnomed-pwa@6325ac4601eac2f28c31d96812a3115d32258803": "6325ac4 2.0.20" | kind=Commit | source=git | neighbors=[main, f3857f9 f, d84f15f f]
 - "commit:repo:github.com-personal/miznaansari/easytechnomed-pwa@713405831eef818366ebb6342eb43cd7340a4a62": "7134058 1.1.29" | kind=Commit | source=git | neighbors=[main, b5ea15f d, d87cf87 d]
 - "commit:repo:github.com-personal/miznaansari/easytechnomed-pwa@720f0160e2a9e5247fee57dd7f67464920beaa7c": "720f016 2.0.13" | kind=Commit | source=git | neighbors=[main, 905ef50 fixed, c070c55 fixed]
 - "commit:repo:github.com-personal/miznaansari/easytechnomed-pwa@7ec76baa937c381ba6859cd5d0cfe2bb9a34815d": "7ec76ba 2.0.12" | kind=Commit | source=git | neighbors=[4d7570f fixed, main, c070c55 fixed]
@@ -33,6 +34,7 @@ one-sentence description — no prose, no markdown fences.
 - "commit:repo:github.com-personal/miznaansari/easytechnomed-pwa@9deec8fd0983a64980479366856db84bed70a63a": "9deec8f 2.0.4" | kind=Commit | source=git | neighbors=[main, fafa3d9 f, b0c8bf9 full indexeddb based]
 - "commit:repo:github.com-personal/miznaansari/easytechnomed-pwa@a14c9b8bbea1748bf13611f038dce324604c0733": "a14c9b8 2.0.14" | kind=Commit | source=git | neighbors=[905ef50 fixed, main, cb86968 fixed]
 - "commit:repo:github.com-personal/miznaansari/easytechnomed-pwa@a4a950af85ecefcfc811d8b22f2b61546a488fe8": "a4a950a 2.0.5" | kind=Commit | source=git | neighbors=[main, 6618261 f, fafa3d9 f]
+- "commit:repo:github.com-personal/miznaansari/easytechnomed-pwa@c5cbecd35dab9843171e92af854db27d4a2695d8": "c5cbecd 3.0.1" | kind=Commit | source=git | neighbors=[af73a19 fixed, main, 5ce0a2e fixed]
 - "commit:repo:github.com-personal/miznaansari/easytechnomed-pwa@cc4c42700f90d3aaec33239797a4bf165ff759d3": "cc4c427 1.1.26" | kind=Commit | source=git | neighbors=[6fcf015 f, main, 56f4d63 f]
 - "commit:repo:github.com-personal/miznaansari/easytechnomed-pwa@dad94e154d28d52e1022bfb4ad46b292c0217a63": "dad94e1 2.0.18" | kind=Commit | source=git | neighbors=[37ee548 f, main, 9e25c19 f]
 - "commit:repo:github.com-personal/miznaansari/easytechnomed-pwa@dbe17328a3c0ed13c2d1fc9400bad8257f433f7c": "dbe1732 1.1.25" | kind=Commit | source=git | neighbors=[main, 6fcf015 f, eb8b1e5 f]
@@ -62,8 +64,6 @@ one-sentence description — no prose, no markdown fences.
 - "lib_r2": "r2.js" | kind=code-symbol | source=lib/r2.js:L1 | neighbors=[252e194 e, s3Client, uploadFileToR2()]
 - "logout_redirect_route": "route.js" | kind=code-symbol | source=app/api/auth/logout-redirect/route.js:L1 | neighbors=[252e194 e, 5e3d9ef d, GET()]
 - "logout_route": "route.js" | kind=code-symbol | source=app/api/authas/logout/route.js:L1 | neighbors=[252e194 e, 5e3d9ef d, POST()]
-- "offline_network_networkmonitor_handlestatuschange": ".handleStatusChange()" | kind=code-symbol | source=lib/offline/network.js:L20 | neighbors=[NetworkMonitor, .checkConnection(), .notifyListeners()]
-- "offline_offlineprint_printbilloffline": "printBillOffline()" | kind=code-symbol | source=lib/offline/offlinePrint.js:L57 | neighbors=[offlinePrint.js, formatDate(), numberToWords()]
 
 ## Instructions
 

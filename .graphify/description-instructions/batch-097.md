@@ -17,6 +17,8 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "generated_client_index_d_superadmintrackingupdateinput": "SuperAdminTrackingUpdateInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L39804 | neighbors=[index.d.ts]
+- "generated_client_index_d_superadmintrackingupdatemanyargs": "SuperAdminTrackingUpdateManyArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L28688 | neighbors=[index.d.ts]
 - "generated_client_index_d_superadmintrackingupdatemanymutationinput": "SuperAdminTrackingUpdateManyMutationInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L39839 | neighbors=[index.d.ts]
 - "generated_client_index_d_superadmintrackingupdatemanywithoutsuperadminnestedinput": "SuperAdminTrackingUpdateManyWithoutSuperAdminNestedInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L43213 | neighbors=[index.d.ts]
 - "generated_client_index_d_superadmintrackingupdatemanywithwherewithoutsuperadmininput": "SuperAdminTrackingUpdateManyWithWhereWithoutSuperAdminInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L46287 | neighbors=[index.d.ts]
@@ -55,8 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "generated_client_index_d_test_parametersargs": "Test$parametersArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L16991 | neighbors=[index.d.ts]
 - "generated_client_index_d_test_registrationsargs": "Test$registrationsArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L16956 | neighbors=[index.d.ts]
 - "generated_client_index_d_test_workspaceargs": "Test$workspaceArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L16976 | neighbors=[index.d.ts]
-- "generated_client_index_d_testaggregateargs": "TestAggregateArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L16017 | neighbors=[index.d.ts]
-- "generated_client_index_d_testargs": "TestArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L54366 | neighbors=[index.d.ts]
 
 ## Instructions
 

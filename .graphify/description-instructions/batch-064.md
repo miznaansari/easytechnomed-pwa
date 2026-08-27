@@ -17,6 +17,8 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "generated_client_index_d_boolwithaggregatesfilter": "BoolWithAggregatesFilter" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L40598 | neighbors=[index.d.ts]
+- "generated_client_index_d_cast": "Cast" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L954 | neighbors=[index.d.ts]
 - "generated_client_index_d_computeraw": "ComputeRaw" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L882 | neighbors=[index.d.ts]
 - "generated_client_index_d_datasource": "Datasource" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L3124 | neighbors=[index.d.ts]
 - "generated_client_index_d_datasources": "Datasources" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L1049 | neighbors=[index.d.ts]
@@ -55,8 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "generated_client_index_d_doctorcountoutputtypecountregistrationsargs": "DoctorCountOutputTypeCountRegistrationsArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L3466 | neighbors=[index.d.ts]
 - "generated_client_index_d_doctorcountoutputtypecountsecondregistrationsargs": "DoctorCountOutputTypeCountSecondRegistrationsArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L3473 | neighbors=[index.d.ts]
 - "generated_client_index_d_doctorcountoutputtypedefaultargs": "DoctorCountOutputTypeDefaultArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L3456 | neighbors=[index.d.ts]
-- "generated_client_index_d_doctorcountoutputtypeselect": "DoctorCountOutputTypeSelect" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L3446 | neighbors=[index.d.ts]
-- "generated_client_index_d_doctorcreateargs": "DoctorCreateArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L15592 | neighbors=[index.d.ts]
 
 ## Instructions
 

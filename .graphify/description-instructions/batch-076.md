@@ -17,6 +17,8 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "generated_client_index_d_leadmaxaggregateoutputtype": "LeadMaxAggregateOutputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L23129 | neighbors=[index.d.ts]
+- "generated_client_index_d_leadmaxorderbyaggregateinput": "LeadMaxOrderByAggregateInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L42151 | neighbors=[index.d.ts]
 - "generated_client_index_d_leadminaggregateinputtype": "LeadMinAggregateInputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L23153 | neighbors=[index.d.ts]
 - "generated_client_index_d_leadminaggregateoutputtype": "LeadMinAggregateOutputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L23122 | neighbors=[index.d.ts]
 - "generated_client_index_d_leadminorderbyaggregateinput": "LeadMinOrderByAggregateInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L42158 | neighbors=[index.d.ts]
@@ -55,8 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "generated_client_index_d_nestedboolfilter": "NestedBoolFilter" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L44856 | neighbors=[index.d.ts]
 - "generated_client_index_d_nestedboolwithaggregatesfilter": "NestedBoolWithAggregatesFilter" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L44927 | neighbors=[index.d.ts]
 - "generated_client_index_d_nesteddatetimefilter": "NestedDateTimeFilter" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L44861 | neighbors=[index.d.ts]
-- "generated_client_index_d_nesteddatetimenullablefilter": "NestedDateTimeNullableFilter" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L44872 | neighbors=[index.d.ts]
-- "generated_client_index_d_nesteddatetimenullablewithaggregatesfilter": "NestedDateTimeNullableWithAggregatesFilter" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L44949 | neighbors=[index.d.ts]
 
 ## Instructions
 

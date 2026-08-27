@@ -17,6 +17,8 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "runtime_library_d_document": "Document" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L645 | neighbors=[_d()]
+- "runtime_library_d_dynamicclientextensionargs": "DynamicClientExtensionArgs" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L887 | neighbors=[_d()]
 - "runtime_library_d_dynamicclientextensionthis": "DynamicClientExtensionThis" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L897 | neighbors=[_d()]
 - "runtime_library_d_dynamicclientextensionthisbuiltin": "DynamicClientExtensionThisBuiltin" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L911 | neighbors=[_d()]
 - "runtime_library_d_dynamicmodelextensionargs": "DynamicModelExtensionArgs" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L928 | neighbors=[_d()]
@@ -55,8 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "runtime_library_d_exception": "Exception" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L1223 | neighbors=[_d()]
 - "runtime_library_d_exceptionwithcode": "ExceptionWithCode" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L1225 | neighbors=[_d()]
 - "runtime_library_d_exceptionwithmessage": "ExceptionWithMessage" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L1232 | neighbors=[_d()]
-- "runtime_library_d_exceptionwithname": "ExceptionWithName" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L1239 | neighbors=[_d()]
-- "runtime_library_d_extendedeventtype": "ExtendedEventType" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L1246 | neighbors=[_d()]
 
 ## Instructions
 

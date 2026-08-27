@@ -17,6 +17,8 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "generated_client_index_d_usersessionupdatewithoutuserinput": "UserSessionUpdateWithoutUserInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L52704 | neighbors=[index.d.ts]
+- "generated_client_index_d_usersessionupdatewithwhereuniquewithoutuserinput": "UserSessionUpdateWithWhereUniqueWithoutUserInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L46530 | neighbors=[index.d.ts]
 - "generated_client_index_d_usersessionupsertargs": "UserSessionUpsertArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L8781 | neighbors=[index.d.ts]
 - "generated_client_index_d_usersessionupsertwithwhereuniquewithoutuserinput": "UserSessionUpsertWithWhereUniqueWithoutUserInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L46524 | neighbors=[index.d.ts]
 - "generated_client_index_d_usersessionwhereinput": "UserSessionWhereInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L34839 | neighbors=[index.d.ts]
@@ -55,8 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "generated_client_index_d_userupdatewithwhereuniquewithoutroleinput": "UserUpdateWithWhereUniqueWithoutRoleInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L46721 | neighbors=[index.d.ts]
 - "generated_client_index_d_userupdatewithwhereuniquewithoutworkspaceinput": "UserUpdateWithWhereUniqueWithoutWorkspaceInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L45915 | neighbors=[index.d.ts]
 - "generated_client_index_d_userupsertargs": "UserUpsertArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L7807 | neighbors=[index.d.ts]
-- "generated_client_index_d_userupsertwithoutsessionsinput": "UserUpsertWithoutSessionsInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L46597 | neighbors=[index.d.ts]
-- "generated_client_index_d_userupsertwithwhereuniquewithoutroleinput": "UserUpsertWithWhereUniqueWithoutRoleInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L46715 | neighbors=[index.d.ts]
 
 ## Instructions
 

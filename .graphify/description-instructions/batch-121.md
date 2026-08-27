@@ -17,6 +17,8 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "generated_client_index_d_workspacepdfupsertwithoutworkspaceinput": "WorkspacePdfUpsertWithoutWorkspaceInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L46109 | neighbors=[index.d.ts]
+- "generated_client_index_d_workspacepdfwhereinput": "WorkspacePdfWhereInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L37094 | neighbors=[index.d.ts]
 - "generated_client_index_d_workspacepdfwhereuniqueinput": "WorkspacePdfWhereUniqueInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L37171 | neighbors=[index.d.ts]
 - "generated_client_index_d_workspacerelationfilter": "WorkspaceRelationFilter" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L42596 | neighbors=[index.d.ts]
 - "generated_client_index_d_workspacescalarfieldenum": "WorkspaceScalarFieldEnum" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L33903 | neighbors=[index.d.ts]
@@ -55,8 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "generated_client_index_d_workspaceupdatemanymutationinput": "WorkspaceUpdateManyMutationInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L37389 | neighbors=[index.d.ts]
 - "generated_client_index_d_workspaceupdateonerequiredwithoutpdfsettingnestedinput": "WorkspaceUpdateOneRequiredWithoutPdfSettingNestedInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L44823 | neighbors=[index.d.ts]
 - "generated_client_index_d_workspaceupdateonewithoutadminsnestedinput": "WorkspaceUpdateOneWithoutAdminsNestedInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L43539 | neighbors=[index.d.ts]
-- "generated_client_index_d_workspaceupdateonewithoutdoctorsnestedinput": "WorkspaceUpdateOneWithoutDoctorsNestedInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L43821 | neighbors=[index.d.ts]
-- "generated_client_index_d_workspaceupdateonewithoutinterpretationrulesnestedinput": "WorkspaceUpdateOneWithoutInterpretationRulesNestedInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L44777 | neighbors=[index.d.ts]
 
 ## Instructions
 

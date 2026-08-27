@@ -17,6 +17,8 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "generated_client_index_d_leadcontactpayload": "$LeadContactPayload" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L26159 | neighbors=[index.d.ts]
+- "generated_client_index_d_leadcontactscalarfieldenum": "LeadContactScalarFieldEnum" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L34291 | neighbors=[index.d.ts]
 - "generated_client_index_d_leadcontactscalarwherewithaggregatesinput": "LeadContactScalarWhereWithAggregatesInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L36649 | neighbors=[index.d.ts]
 - "generated_client_index_d_leadcontactselect": "LeadContactSelect" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L26133 | neighbors=[index.d.ts]
 - "generated_client_index_d_leadcontactselectscalar": "LeadContactSelectScalar" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L26146 | neighbors=[index.d.ts]
@@ -55,8 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "generated_client_index_d_leadgroupbyargs": "LeadGroupByArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L23247 | neighbors=[index.d.ts]
 - "generated_client_index_d_leadgroupbyoutputtype": "LeadGroupByOutputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L23261 | neighbors=[index.d.ts]
 - "generated_client_index_d_leadmaxaggregateinputtype": "LeadMaxAggregateInputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L23160 | neighbors=[index.d.ts]
-- "generated_client_index_d_leadmaxaggregateoutputtype": "LeadMaxAggregateOutputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L23129 | neighbors=[index.d.ts]
-- "generated_client_index_d_leadmaxorderbyaggregateinput": "LeadMaxOrderByAggregateInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L42151 | neighbors=[index.d.ts]
 
 ## Instructions
 

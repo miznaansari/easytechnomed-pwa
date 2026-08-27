@@ -17,6 +17,8 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "generated_client_index_d_testpayload": "$TestPayload" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L16212 | neighbors=[index.d.ts]
+- "generated_client_index_d_testrelationfilter": "TestRelationFilter" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L41722 | neighbors=[index.d.ts]
 - "generated_client_index_d_testscalarfieldenum": "TestScalarFieldEnum" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L34089 | neighbors=[index.d.ts]
 - "generated_client_index_d_testscalarwhereinput": "TestScalarWhereInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L45882 | neighbors=[index.d.ts]
 - "generated_client_index_d_testscalarwherewithaggregatesinput": "TestScalarWhereWithAggregatesInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L35569 | neighbors=[index.d.ts]
@@ -55,8 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "generated_client_index_d_testupdatemanywithwherewithoutdepartmentinput": "TestUpdateManyWithWhereWithoutDepartmentInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L50787 | neighbors=[index.d.ts]
 - "generated_client_index_d_testupdatemanywithwherewithoutworkspaceinput": "TestUpdateManyWithWhereWithoutWorkspaceInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L45877 | neighbors=[index.d.ts]
 - "generated_client_index_d_testupdateonerequiredwithoutformulasnestedinput": "TestUpdateOneRequiredWithoutFormulasNestedInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L44743 | neighbors=[index.d.ts]
-- "generated_client_index_d_testupdateonerequiredwithoutinterpretationrulesnestedinput": "TestUpdateOneRequiredWithoutInterpretationRulesNestedInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L44787 | neighbors=[index.d.ts]
-- "generated_client_index_d_testupdateonerequiredwithoutparametersnestedinput": "TestUpdateOneRequiredWithoutParametersNestedInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L44563 | neighbors=[index.d.ts]
 
 ## Instructions
 

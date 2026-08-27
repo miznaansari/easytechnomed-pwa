@@ -17,6 +17,8 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "runtime_react_native_uo": "uo()" | kind=code-symbol | source=scratch/generated-client/runtime/react-native.js:L7 | neighbors=[react-native.js]
+- "runtime_react_native_use": "use()" | kind=code-symbol | source=scratch/generated-client/runtime/react-native.js:L69 | neighbors=[react-native.js]
 - "runtime_react_native_va": "va()" | kind=code-symbol | source=scratch/generated-client/runtime/react-native.js:L1 | neighbors=[react-native.js]
 - "runtime_react_native_ve": "Ve()" | kind=code-symbol | source=scratch/generated-client/runtime/react-native.js:L12 | neighbors=[react-native.js]
 - "runtime_react_native_vl": "Vl()" | kind=code-symbol | source=scratch/generated-client/runtime/react-native.js:L2 | neighbors=[react-native.js]
@@ -55,8 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "runtime_wasm_mo": "Mo()" | kind=code-symbol | source=scratch/generated-client/runtime/wasm.js:L30 | neighbors=[wasm.js]
 - "runtime_wasm_nextid": "nextId()" | kind=code-symbol | source=scratch/generated-client/runtime/wasm.js:L30 | neighbors=[wasm.js]
 - "runtime_wasm_nr": "Nr()" | kind=code-symbol | source=scratch/generated-client/runtime/wasm.js:L5 | neighbors=[wasm.js]
-- "runtime_wasm_o": "_o()" | kind=code-symbol | source=scratch/generated-client/runtime/wasm.js:L30 | neighbors=[wasm.js]
-- "runtime_wasm_offset": "offset()" | kind=code-symbol | source=scratch/generated-client/runtime/wasm.js:L1 | neighbors=[wasm.js]
 
 ## Instructions
 

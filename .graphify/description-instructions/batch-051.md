@@ -17,6 +17,8 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "generated_client_index_d_adminaddresscreatewithoutadmininput": "AdminAddressCreateWithoutAdminInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L46860 | neighbors=[index.d.ts]
+- "generated_client_index_d_adminaddressdefaultargs": "AdminAddressDefaultArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L24947 | neighbors=[index.d.ts]
 - "generated_client_index_d_adminaddressdelegate": "AdminAddressDelegate" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L24275 | neighbors=[index.d.ts]
 - "generated_client_index_d_adminaddressdeleteargs": "AdminAddressDeleteArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L24919 | neighbors=[index.d.ts]
 - "generated_client_index_d_adminaddressdeletemanyargs": "AdminAddressDeleteManyArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L24937 | neighbors=[index.d.ts]
@@ -55,8 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "generated_client_index_d_adminaddressuncheckedupdateonewithoutadminnestedinput": "AdminAddressUncheckedUpdateOneWithoutAdminNestedInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L43601 | neighbors=[index.d.ts]
 - "generated_client_index_d_adminaddressuncheckedupdatewithoutadmininput": "AdminAddressUncheckedUpdateWithoutAdminInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L47151 | neighbors=[index.d.ts]
 - "generated_client_index_d_adminaddressupdateargs": "AdminAddressUpdateArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L24857 | neighbors=[index.d.ts]
-- "generated_client_index_d_adminaddressupdateinput": "AdminAddressUpdateInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L39475 | neighbors=[index.d.ts]
-- "generated_client_index_d_adminaddressupdatemanyargs": "AdminAddressUpdateManyArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L24879 | neighbors=[index.d.ts]
 
 ## Instructions
 
