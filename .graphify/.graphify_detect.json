@@ -377,16 +377,16 @@
     "video": []
   },
   "total_files": 366,
-  "total_words": 542313,
+  "total_words": 542206,
   "needs_graph": true,
-  "warning": "Large corpus: 366 files · ~542,313 words. Semantic extraction will be expensive (many Claude tokens). Consider running on a subfolder, or use --no-semantic to run AST-only.",
+  "warning": "Large corpus: 366 files · ~542,206 words. Semantic extraction will be expensive (many Claude tokens). Consider running on a subfolder, or use --no-semantic to run AST-only.",
   "skipped_sensitive": [
     "test unit.xlsx [office conversion requires async - use pipeline]"
   ],
   "graphifyignore_patterns": 22,
   "git": {
     "source_owner": "git",
-    "source_hash": "c5cbecd35dab9843171e92af854db27d4a2695d8",
+    "source_hash": "9a50d76fdc96edbbcfaff30fb952ad24910efa0a",
     "branches": [
       "main"
     ],
@@ -399,10 +399,10 @@
     "source": "default-auto",
     "root": ".",
     "git_root": ".",
-    "head": "c5cbecd35dab9843171e92af854db27d4a2695d8",
-    "candidate_count": 590,
+    "head": "9a50d76fdc96edbbcfaff30fb952ad24910efa0a",
+    "candidate_count": 592,
     "included_count": 366,
-    "excluded_untracked_count": 2,
+    "excluded_untracked_count": 0,
     "excluded_ignored_count": 120668,
     "excluded_sensitive_count": 0,
     "missing_committed_count": 0,
