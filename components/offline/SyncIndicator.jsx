@@ -46,8 +46,9 @@ export default function SyncIndicator() {
 
   const [anchorEl, setAnchorEl] = useState(null);
   const [isClientOnline, setIsClientOnline] = useState(true);
+  const [isStandalone, setIsStandalone] = useState(false);
 
-  // Direct reactive subscription to browser online/offline events
+  // Direct reactive subscription to browser online/offline events & PWA check
   useEffect(() => {
     const updateOnlineStatus = () => {
       const online = typeof navigator !== "undefined" ? navigator.onLine : true;
@@ -55,6 +56,14 @@ export default function SyncIndicator() {
     };
 
     updateOnlineStatus();
+
+    if (typeof window !== "undefined") {
+      const standaloneMatch =
+        window.matchMedia("(display-mode: standalone)").matches ||
+        window.navigator.standalone === true;
+      setIsStandalone(Boolean(standaloneMatch));
+    }
+
     window.addEventListener("online", updateOnlineStatus);
     window.addEventListener("offline", updateOnlineStatus);
 
@@ -91,7 +100,6 @@ export default function SyncIndicator() {
     (typeof navigator === "undefined" || navigator.onLine)
   );
 
-
   // Determine icon and color based on sync state - OFFLINE takes topmost priority
   let iconComponent = null;
   let tooltipText = "";
@@ -101,15 +109,15 @@ export default function SyncIndicator() {
   if (!isCurrentlyOnline) {
     iconComponent = <OfflineIcon sx={{ color: "#f59e0b" }} />;
     tooltipText = pendingCount > 0
-      ? `Offline: ${pendingCount} change${pendingCount === 1 ? "" : "s"} saved in local database`
-      : "Offline: Working in local IndexedDB";
+      ? `Offline Mode: ${pendingCount} change${pendingCount === 1 ? "" : "s"} saved locally`
+      : "Offline Mode: Working in local IndexedDB";
     if (pendingCount > 0) {
       badgeContent = pendingCount;
       badgeColor = "warning";
     }
   } else if (hasAuthError) {
     iconComponent = <ErrorIcon sx={{ color: "#ef4444" }} />;
-    tooltipText = "Authentication expired (401). Re-login required to sync.";
+    tooltipText = "Session expired (401). Re-login required to sync.";
     badgeContent = "!";
     badgeColor = "error";
   } else if (syncStatus === "syncing") {
@@ -121,6 +129,10 @@ export default function SyncIndicator() {
       />
     );
     tooltipText = "Synchronizing with cloud...";
+    if (pendingCount > 0) {
+      badgeContent = pendingCount;
+      badgeColor = "primary";
+    }
   } else if (syncStatus === "error" || (syncErrors && syncErrors.length > 0)) {
     iconComponent = <ErrorIcon sx={{ color: "#ef4444" }} />;
     tooltipText = syncErrors && syncErrors.length > 0
@@ -138,28 +150,30 @@ export default function SyncIndicator() {
     tooltipText = "Cloud Connected - All data synced";
   }
 
-
   return (
     <>
       <Tooltip title={tooltipText} arrow>
         <IconButton
           onClick={handleClick}
           size="small"
+          aria-label="Sync status"
           sx={{
             width: 38,
             height: 38,
             p: 0.75,
             borderRadius: 2,
-            backgroundColor: hasAuthError
-              ? "rgba(239, 68, 68, 0.08)"
-              : !isCurrentlyOnline
+            backgroundColor: !isCurrentlyOnline
               ? "rgba(245, 158, 11, 0.08)"
+              : hasAuthError
+              ? "rgba(239, 68, 68, 0.08)"
+              : syncStatus === "error"
+              ? "rgba(239, 68, 68, 0.08)"
               : "transparent",
             "&:hover": {
-              backgroundColor: hasAuthError
-                ? "rgba(239, 68, 68, 0.16)"
-                : !isCurrentlyOnline
+              backgroundColor: !isCurrentlyOnline
                 ? "rgba(245, 158, 11, 0.16)"
+                : hasAuthError
+                ? "rgba(239, 68, 68, 0.16)"
                 : "rgba(15, 118, 110, 0.08)",
             },
           }}
@@ -211,7 +225,7 @@ export default function SyncIndicator() {
           },
         }}
       >
-        <Box sx={{ width: 310, p: 2.5, boxSizing: "border-box" }}>
+        <Box sx={{ width: 320, p: 2.5, boxSizing: "border-box" }}>
           {/* Header Row */}
           <Box sx={{ display: "flex", alignItems: "center", justifyContent: "space-between", mb: 2 }}>
             <Box sx={{ display: "flex", alignItems: "center", gap: 1.25 }}>
@@ -220,49 +234,112 @@ export default function SyncIndicator() {
                   display: "flex",
                   alignItems: "center",
                   justifyContent: "center",
-                  width: 34,
-                  height: 34,
+                  width: 36,
+                  height: 36,
                   borderRadius: "10px",
-                  backgroundColor: hasAuthError
-                    ? "#fef2f2"
-                    : !isCurrentlyOnline
+                  backgroundColor: !isCurrentlyOnline
                     ? "#fffbeb"
+                    : hasAuthError || syncStatus === "error"
+                    ? "#fef2f2"
+                    : syncStatus === "syncing"
+                    ? "#f0fdfa"
+                    : pendingCount > 0
+                    ? "#f0f9ff"
                     : "#f0fdf4",
-                  color: hasAuthError
-                    ? "#dc2626"
-                    : !isCurrentlyOnline
+                  color: !isCurrentlyOnline
                     ? "#d97706"
+                    : hasAuthError || syncStatus === "error"
+                    ? "#dc2626"
+                    : syncStatus === "syncing"
+                    ? "#0f766e"
+                    : pendingCount > 0
+                    ? "#0284c7"
                     : "#16a34a",
                 }}
               >
-                {hasAuthError ? (
-                  <ErrorIcon sx={{ fontSize: 20 }} />
-                ) : !isCurrentlyOnline ? (
+                {!isCurrentlyOnline ? (
                   <OfflineIcon sx={{ fontSize: 20 }} />
+                ) : hasAuthError || syncStatus === "error" ? (
+                  <ErrorIcon sx={{ fontSize: 20 }} />
+                ) : syncStatus === "syncing" ? (
+                  <CircularProgress size={18} thickness={5} sx={{ color: "#0f766e" }} />
                 ) : (
                   <CloudDoneIcon sx={{ fontSize: 20 }} />
                 )}
               </Box>
               <Box>
                 <Typography variant="subtitle2" sx={{ fontWeight: 800, color: "#0f172a", fontSize: "0.9rem", lineHeight: 1.2 }}>
-                  {hasAuthError ? "Auth Expired" : !isCurrentlyOnline ? "Offline Mode" : "Cloud Connected"}
+                  {!isCurrentlyOnline
+                    ? "Offline Mode"
+                    : hasAuthError
+                    ? "Auth Expired"
+                    : syncStatus === "syncing"
+                    ? "Syncing Data..."
+                    : syncStatus === "error"
+                    ? "Sync Error"
+                    : pendingCount > 0
+                    ? "Pending Sync"
+                    : "Cloud Connected"}
                 </Typography>
                 <Typography variant="caption" sx={{ color: "#64748b", fontSize: "0.7rem", fontWeight: 500 }}>
-                  {hasAuthError ? "Re-login required" : !isCurrentlyOnline ? "Local DB active" : "Real-time sync"}
+                  {!isCurrentlyOnline
+                    ? "Local IndexedDB Active"
+                    : hasAuthError
+                    ? "Re-login required"
+                    : syncStatus === "syncing"
+                    ? "Updating cloud database"
+                    : syncStatus === "error"
+                    ? "Check server connection"
+                    : pendingCount > 0
+                    ? `${pendingCount} changes queued`
+                    : "Real-time sync active"}
                 </Typography>
               </Box>
             </Box>
 
             <Chip
               size="small"
-              label={hasAuthError ? "AUTH REQ" : !isCurrentlyOnline ? "OFFLINE" : (syncStatus === "synced" ? "SYNCED" : syncStatus.toUpperCase())}
-              color={hasAuthError || syncStatus === "error" ? "error" : !isCurrentlyOnline ? "warning" : "success"}
+              label={
+                !isCurrentlyOnline
+                  ? "OFFLINE"
+                  : hasAuthError
+                  ? "AUTH REQ"
+                  : syncStatus === "syncing"
+                  ? "SYNCING"
+                  : syncStatus === "error"
+                  ? "ERROR"
+                  : pendingCount > 0
+                  ? "QUEUED"
+                  : "SYNCED"
+              }
+              color={
+                !isCurrentlyOnline
+                  ? "warning"
+                  : hasAuthError || syncStatus === "error"
+                  ? "error"
+                  : syncStatus === "syncing"
+                  ? "primary"
+                  : pendingCount > 0
+                  ? "info"
+                  : "success"
+              }
               sx={{ fontWeight: 800, fontSize: "0.65rem", height: 22, borderRadius: "6px" }}
             />
           </Box>
 
-
           <Divider sx={{ mb: 2, borderColor: "#f1f5f9" }} />
+
+          {/* Offline Information Banner */}
+          {!isCurrentlyOnline && (
+            <Box sx={{ mb: 2, p: 1.5, bgcolor: "#fffbeb", border: "1px solid #fef3c7", borderRadius: "12px" }}>
+              <Typography variant="caption" sx={{ fontWeight: 800, color: "#92400e", display: "block", fontSize: "0.75rem" }}>
+                Operating in Offline Mode
+              </Typography>
+              <Typography variant="caption" sx={{ color: "#b45309", display: "block", mt: 0.25, fontSize: "0.7rem", lineHeight: 1.35 }}>
+                Registrations, test reports, and bills are saved with 0ms latency in local IndexedDB. Automatic cloud sync will resume when connection is restored.
+              </Typography>
+            </Box>
+          )}
 
           {/* Sync Stats Info */}
           <Box
@@ -279,20 +356,18 @@ export default function SyncIndicator() {
           >
             <Box sx={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
               <Typography variant="caption" sx={{ color: "#64748b", fontWeight: 600, fontSize: "0.78rem" }}>
-                Pending Changes:
+                Pending Local Records:
               </Typography>
-              <Box sx={{ display: "flex", alignItems: "center", gap: 0.5 }}>
-                <Typography
-                  variant="caption"
-                  sx={{
-                    fontWeight: 800,
-                    fontSize: "0.78rem",
-                    color: pendingCount > 0 ? "#d97706" : "#16a34a",
-                  }}
-                >
-                  {pendingCount} {pendingCount === 1 ? "record" : "records"}
-                </Typography>
-              </Box>
+              <Typography
+                variant="caption"
+                sx={{
+                  fontWeight: 800,
+                  fontSize: "0.78rem",
+                  color: pendingCount > 0 ? "#d97706" : "#16a34a",
+                }}
+              >
+                {pendingCount} {pendingCount === 1 ? "record" : "records"}
+              </Typography>
             </Box>
 
             <Box sx={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
@@ -303,10 +378,19 @@ export default function SyncIndicator() {
                 {lastSyncTime ? formatLocalDisplay(lastSyncTime) : "Not yet"}
               </Typography>
             </Box>
+
+            <Box sx={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
+              <Typography variant="caption" sx={{ color: "#64748b", fontWeight: 600, fontSize: "0.78rem" }}>
+                App Mode:
+              </Typography>
+              <Typography variant="caption" sx={{ fontWeight: 700, color: isStandalone ? "#0f766e" : "#475569", fontSize: "0.75rem" }}>
+                {isStandalone ? "Installed PWA App" : "Web Browser PWA"}
+              </Typography>
+            </Box>
           </Box>
 
-          {/* Auth Error Banner & Action */}
-          {hasAuthError && (
+          {/* Auth Error Banner & Action (Only when online) */}
+          {isCurrentlyOnline && hasAuthError && (
             <Box sx={{ mb: 2, p: 1.5, bgcolor: "#fef2f2", border: "1px solid #fee2e2", borderRadius: "12px" }}>
               <Typography variant="caption" sx={{ fontWeight: 800, color: "#991b1b", display: "block", fontSize: "0.75rem" }}>
                 Session Expired (401)
@@ -338,8 +422,8 @@ export default function SyncIndicator() {
             </Box>
           )}
 
-          {/* Failed Sync Items (if any non-auth errors) */}
-          {!hasAuthError && syncErrors && syncErrors.length > 0 && (
+          {/* Failed Sync Items (Only when online and non-auth error) */}
+          {isCurrentlyOnline && !hasAuthError && syncErrors && syncErrors.length > 0 && (
             <Box sx={{ mb: 2, p: 1.5, bgcolor: "#fef2f2", border: "1px solid #fee2e2", borderRadius: "12px" }}>
               <Typography variant="caption" sx={{ fontWeight: 800, color: "#991b1b", display: "block", fontSize: "0.75rem" }}>
                 Failed Sync Items:
@@ -361,16 +445,18 @@ export default function SyncIndicator() {
             </Box>
           )}
 
-          {/* Sync Now Action Button */}
+          {/* Sync Action Button */}
           <Button
             fullWidth
             variant="contained"
-            disabled={!isOnline || syncStatus === "syncing"}
+            disabled={!isCurrentlyOnline || syncStatus === "syncing"}
             onClick={() => {
               sync();
             }}
             startIcon={
-              syncStatus === "syncing" ? (
+              !isCurrentlyOnline ? (
+                <OfflineIcon sx={{ fontSize: 18 }} />
+              ) : syncStatus === "syncing" ? (
                 <CircularProgress size={16} color="inherit" />
               ) : (
                 <RefreshIcon sx={{ fontSize: 18 }} />
@@ -378,23 +464,29 @@ export default function SyncIndicator() {
             }
             sx={{
               py: 1.1,
-              backgroundColor: "#0f766e",
+              backgroundColor: !isCurrentlyOnline ? "#e2e8f0" : "#0f766e",
+              color: !isCurrentlyOnline ? "#64748b" : "#ffffff",
               fontWeight: 700,
               fontSize: "0.85rem",
               borderRadius: "10px",
               textTransform: "none",
-              boxShadow: "0 2px 4px rgba(15, 118, 110, 0.2)",
+              boxShadow: !isCurrentlyOnline ? "none" : "0 2px 4px rgba(15, 118, 110, 0.2)",
               "&:hover": {
-                backgroundColor: "#0d645d",
-                boxShadow: "0 4px 8px rgba(15, 118, 110, 0.3)",
+                backgroundColor: !isCurrentlyOnline ? "#e2e8f0" : "#0d645d",
+                boxShadow: !isCurrentlyOnline ? "none" : "0 4px 8px rgba(15, 118, 110, 0.3)",
               },
             }}
           >
-            {syncStatus === "syncing" ? "Syncing in progress..." : "Sync Now"}
+            {!isCurrentlyOnline
+              ? "Offline - Changes Saved Locally"
+              : syncStatus === "syncing"
+              ? "Syncing in progress..."
+              : "Sync Now"}
           </Button>
         </Box>
       </Popover>
     </>
   );
 }
+
 
