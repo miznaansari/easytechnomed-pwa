@@ -1,6 +1,6 @@
 {
-    "name": "pathlab",
-    "version": "3.0.5",
+    "name": "easytechnomed",
+    "version": "3.0.6",
     "private": true,
     "scripts": {
         "dev": "next dev",
