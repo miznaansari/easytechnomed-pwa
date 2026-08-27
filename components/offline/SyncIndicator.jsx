@@ -167,9 +167,7 @@ export default function SyncIndicator() {
           <Chip
             size="small"
             label={syncStatus === "offline" ? "LOCAL" : syncStatus.toUpperCase()}
-            color="success"
-                : "warning"
-            }
+            color={syncStatus === "error" ? "error" : "success"}
             sx={{ fontWeight: 700, fontSize: "0.65rem", height: 20 }}
           />
         </Box>

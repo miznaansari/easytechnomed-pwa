@@ -1,4 +1,4 @@
-const CACHE_NAME = "easytechnomed-pwa-v9";
+const CACHE_NAME = "easytechnomed-pwa-v10";
 const OFFLINE_URL = "/offline.html";
 
 // Core routes and critical static assets to pre-cache on install
@@ -160,11 +160,12 @@ self.addEventListener("fetch", (event) => {
       fetch(event.request)
         .then((networkResponse) => {
           if (networkResponse && networkResponse.status === 200) {
-            const clone = networkResponse.clone();
+            const clone1 = networkResponse.clone();
+            const clone2 = networkResponse.clone();
             caches.open(CACHE_NAME).then((cache) => {
-              cache.put(event.request, clone);
-              cache.put(`${url.pathname}?_rsc=1`, networkResponse.clone());
-            });
+              cache.put(event.request, clone1);
+              cache.put(`${url.pathname}?_rsc=1`, clone2);
+            }).catch(() => {});
           }
           return networkResponse;
         })
@@ -236,11 +237,12 @@ self.addEventListener("fetch", (event) => {
         try {
           const networkResponse = await fetch(event.request);
           if (networkResponse && networkResponse.status === 200 && isHtmlResponse(networkResponse)) {
-            const clone = networkResponse.clone();
+            const clone1 = networkResponse.clone();
+            const clone2 = networkResponse.clone();
             caches.open(CACHE_NAME).then((cache) => {
-              cache.put(event.request, clone);
-              cache.put(url.pathname, networkResponse.clone());
-            });
+              cache.put(event.request, clone1);
+              cache.put(url.pathname, clone2);
+            }).catch(() => {});
           }
           return networkResponse;
         } catch {

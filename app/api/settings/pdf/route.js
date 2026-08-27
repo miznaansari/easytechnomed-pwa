@@ -89,7 +89,27 @@ export async function GET() {
       }
     }
 
-    return NextResponse.json({ success: true, settings: pdfConfig });
+    // If framePdfUrl exists, fetch PDF bytes on backend and pass base64 to frontend to avoid CORS errors
+    let framePdfBase64 = null;
+    if (pdfConfig.framePdfUrl) {
+      try {
+        const frameRes = await fetch(pdfConfig.framePdfUrl);
+        if (frameRes.ok) {
+          const buffer = await frameRes.arrayBuffer();
+          framePdfBase64 = Buffer.from(buffer).toString("base64");
+        }
+      } catch (fErr) {
+        console.warn("[PDF API] Backend could not download framePdfUrl:", fErr.message);
+      }
+    }
+
+    return NextResponse.json({
+      success: true,
+      settings: {
+        ...pdfConfig,
+        framePdfBase64,
+      },
+    });
   } catch (error) {
     if (error.message === "NEXT_REDIRECT" || (error.digest && error.digest.startsWith("NEXT_REDIRECT"))) {
       return NextResponse.json({ success: false, error: "Unauthorized", message: "Unauthorized" }, { status: 401 });
@@ -176,10 +196,27 @@ export async function POST(req) {
       },
     }).catch(() => {});
 
+    // If framePdfUrl exists, fetch PDF bytes on backend and pass base64 to frontend to avoid CORS errors
+    let framePdfBase64 = null;
+    if (saved.framePdfUrl) {
+      try {
+        const frameRes = await fetch(saved.framePdfUrl);
+        if (frameRes.ok) {
+          const buffer = await frameRes.arrayBuffer();
+          framePdfBase64 = Buffer.from(buffer).toString("base64");
+        }
+      } catch (fErr) {
+        console.warn("[PDF API] Backend could not download framePdfUrl:", fErr.message);
+      }
+    }
+
     return NextResponse.json({
       success: true,
       message: "PDF configuration saved successfully!",
-      settings: saved,
+      settings: {
+        ...saved,
+        framePdfBase64,
+      },
     });
   } catch (error) {
     if (error.message === "NEXT_REDIRECT" || (error.digest && error.digest.startsWith("NEXT_REDIRECT"))) {
