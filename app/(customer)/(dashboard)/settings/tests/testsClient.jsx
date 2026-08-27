@@ -193,8 +193,8 @@ export default function TestsClient() {
     try {
       let cachedTests = await db.tests.filter((t) => !t.isDeleted).toArray();
 
-      // If IndexedDB is empty and online, bootstrap in background
-      if (cachedTests.length === 0 && typeof navigator !== "undefined" && navigator.onLine) {
+      // If IndexedDB is empty and online and not initial synced, bootstrap in background
+      if (cachedTests.length === 0 && typeof navigator !== "undefined" && navigator.onLine && localStorage.getItem("isInitialSynced") !== "1") {
         try {
           await syncManager.bootstrapInitialData();
           cachedTests = await db.tests.filter((t) => !t.isDeleted).toArray();

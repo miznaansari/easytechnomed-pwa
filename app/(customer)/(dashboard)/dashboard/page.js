@@ -151,8 +151,8 @@ export default function AdminDashboardPage() {
         setAdminProfile(currentAdmin);
       }
 
-      // If IndexedDB is empty and we are online, trigger bootstrap in background
-      if (allRegs.length === 0 && typeof navigator !== "undefined" && navigator.onLine) {
+      // If IndexedDB is empty and we are online and not initial synced, trigger bootstrap in background
+      if (allRegs.length === 0 && typeof navigator !== "undefined" && navigator.onLine && localStorage.getItem("isInitialSynced") !== "1") {
         syncManager.bootstrapInitialData().catch((err) => console.warn("[Dashboard] Bootstrap error:", err));
       }
 

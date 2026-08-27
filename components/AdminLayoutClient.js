@@ -226,14 +226,7 @@ export default function AdminLayoutClient({ admin: initialAdmin, children }) {
         router.prefetch(r);
       } catch {}
     });
-
-    // Background complete setup: Sync all master data to IndexedDB
-    if (typeof navigator !== "undefined" && navigator.onLine) {
-      import("@/lib/offline/sync/syncManager")
-        .then(({ syncManager }) => syncManager.bootstrapInitialData())
-        .catch(() => {});
-    }
-  }, [admin, pathname, router, mounted]);
+  }, [router]);
 
   const isMdUp = useMediaQuery(theme.breakpoints.up("md"));
 

@@ -477,8 +477,8 @@ export default function TestReportPage() {
       // 1. Immediately query and filter directly from IndexedDB (0ms latency)
       let allLocal = await db.registrations.filter((r) => !r.isDeleted).toArray();
 
-      // If IndexedDB is empty and online, bootstrap all data in background
-      if (allLocal.length === 0 && typeof navigator !== "undefined" && navigator.onLine) {
+      // If IndexedDB is empty and online and not initial synced, bootstrap all data in background
+      if (allLocal.length === 0 && typeof navigator !== "undefined" && navigator.onLine && localStorage.getItem("isInitialSynced") !== "1") {
         try {
           await syncManager.bootstrapInitialData();
           allLocal = await db.registrations.filter((r) => !r.isDeleted).toArray();

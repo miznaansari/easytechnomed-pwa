@@ -214,8 +214,8 @@ export default function RegistrationPage() {
 
         setLoading(false);
 
-        // 2. Only if IndexedDB is empty and online, bootstrap in background
-        if ((cachedDocs.length === 0 || cachedTests.length === 0) && typeof navigator !== "undefined" && navigator.onLine) {
+        // 2. Only if IndexedDB is empty and not initial synced, bootstrap in background
+        if ((cachedDocs.length === 0 || cachedTests.length === 0) && typeof navigator !== "undefined" && navigator.onLine && localStorage.getItem("isInitialSynced") !== "1") {
           const { syncManager } = await import("@/lib/offline/sync/syncManager");
           const bootstrapRes = await syncManager.bootstrapInitialData();
           if (bootstrapRes.success) {

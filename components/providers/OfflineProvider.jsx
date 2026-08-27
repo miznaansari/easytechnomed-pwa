@@ -47,12 +47,24 @@ export default function OfflineProvider({ children }) {
     return result;
   }, [refreshPendingCount]);
 
+  const debounceTimerRef = useRef(null);
+
+  // Debounced sync trigger for burst events (online, mutated)
+  const debouncedTriggerSync = useCallback(() => {
+    if (debounceTimerRef.current) {
+      clearTimeout(debounceTimerRef.current);
+    }
+    debounceTimerRef.current = setTimeout(() => {
+      triggerSync();
+    }, 300);
+  }, [triggerSync]);
+
   // Network monitor & online/offline window event listeners
   useEffect(() => {
     const handleOnline = () => {
       setIsOnline(true);
       console.log("[OfflineProvider] Internet reconnected, triggering auto-sync...");
-      triggerSync();
+      debouncedTriggerSync();
     };
 
     const handleOffline = () => {
@@ -63,7 +75,7 @@ export default function OfflineProvider({ children }) {
     const handleDataMutated = () => {
       refreshPendingCount();
       if (typeof navigator !== "undefined" && navigator.onLine) {
-        triggerSync();
+        debouncedTriggerSync();
       }
     };
 
@@ -77,18 +89,19 @@ export default function OfflineProvider({ children }) {
         setSyncStatus("offline");
       } else if (!prevOnlineRef.current && online) {
         console.log("[OfflineProvider] Network monitor detected online, triggering auto-sync...");
-        triggerSync();
+        debouncedTriggerSync();
       }
       prevOnlineRef.current = online;
     });
 
     return () => {
+      if (debounceTimerRef.current) clearTimeout(debounceTimerRef.current);
       window.removeEventListener("online", handleOnline);
       window.removeEventListener("offline", handleOffline);
       window.removeEventListener("easytechnomed:data-mutated", handleDataMutated);
       unsubscribeNetwork();
     };
-  }, [triggerSync, refreshPendingCount]);
+  }, [debouncedTriggerSync, refreshPendingCount]);
 
   // SyncManager subscription
   useEffect(() => {
@@ -109,17 +122,19 @@ export default function OfflineProvider({ children }) {
     return () => unsubscribeSync();
   }, []);
 
-  // Initial check: if IndexedDB is missing tests or parameters, bootstrap via Promise.all
+  // Initial check: if user has not completed initial sync and is online, bootstrap via Promise.all
   useEffect(() => {
     async function checkAndBootstrap() {
       if (typeof window === "undefined" || !navigator.onLine) return;
       try {
-        const testCount = await db.tests.count();
-        const paramCount = await db.parameters.count();
-        if (testCount === 0 || paramCount === 0) {
-          console.log("[OfflineProvider] Empty master tables detected in IndexedDB, bootstrapping via Promise.all...");
-          await syncManager.bootstrapInitialData();
-          await refreshPendingCount();
+        const isInitialSynced = localStorage.getItem("isInitialSynced");
+        if (isInitialSynced !== "1") {
+          console.log("[OfflineProvider] isInitialSynced not set. Bootstrapping all data into IndexedDB...");
+          const res = await syncManager.bootstrapInitialData();
+          if (res.success) {
+            localStorage.setItem("isInitialSynced", "1");
+            await refreshPendingCount();
+          }
         }
       } catch (err) {
         console.warn("[OfflineProvider] Bootstrap check warning:", err);
@@ -128,17 +143,20 @@ export default function OfflineProvider({ children }) {
     checkAndBootstrap();
   }, [refreshPendingCount]);
 
-  // Periodic auto-sync loop: every 10 seconds check pending records and auto-sync when online
+  // Periodic auto-sync loop: every 30 seconds check server updates & pending records when online
   useEffect(() => {
     refreshPendingCount();
 
     const interval = setInterval(async () => {
-      const pending = await refreshPendingCount();
-      if (pending > 0 && typeof navigator !== "undefined" && navigator.onLine && !syncManager.isSyncing) {
-        console.log(`[OfflineProvider] Auto-syncing ${pending} pending local records in background...`);
-        triggerSync();
+      if (typeof window === "undefined") return;
+      if (typeof navigator !== "undefined" && navigator.onLine && !syncManager.isSyncing) {
+        const isInitialSynced = localStorage.getItem("isInitialSynced");
+        // Only run incremental sync after initial sync is complete
+        if (isInitialSynced === "1") {
+          await triggerSync();
+        }
       }
-    }, 10000);
+    }, 30000);
 
     return () => clearInterval(interval);
   }, [refreshPendingCount, triggerSync]);

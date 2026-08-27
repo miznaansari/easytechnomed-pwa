@@ -72,7 +72,10 @@ export default function CustomerLoginPage() {
         toast.loading("Synchronizing laboratory database...", { id: "login-sync" });
         try {
           const { syncManager } = await import("@/lib/offline/sync/syncManager");
-          await syncManager.bootstrapInitialData();
+          const bootstrapRes = await syncManager.bootstrapInitialData();
+          if (bootstrapRes?.success && typeof window !== "undefined") {
+            localStorage.setItem("isInitialSynced", "1");
+          }
         } catch (syncErr) {
           console.warn("[LoginPage] Offline bootstrap warning:", syncErr);
         }
