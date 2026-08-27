@@ -6,9 +6,15 @@
         "dev": "next dev",
         "build": "prisma generate && next build",
         "start": "next start",
-        "lint": "eslint"
+        "lint": "eslint",
+        "graphify": "npx @sentropic/graphify",
+        "graphify:summary": "npx @sentropic/graphify summary",
+        "graphify:update": "npx @sentropic/graphify update .",
+        "graphify:studio": "npx @sentropic/graphify studio export .graphify/studio"
     },
     "dependencies": {
+
+
         "@aws-sdk/client-s3": "^3.1079.0",
         "@emotion/react": "^11.14.0",
         "@emotion/styled": "^11.14.1",
@@ -36,6 +42,7 @@
         "zod": "^4.4.3"
     },
     "devDependencies": {
+        "@sentropic/graphify": "^0.17.1",
         "@tailwindcss/postcss": "^4",
         "eslint": "^9",
         "eslint-config-next": "16.2.9",

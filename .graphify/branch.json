@@ -1,0 +1,16 @@
+{
+  "schemaVersion": 1,
+  "branchName": "main",
+  "worktreePath": "D:\\Atif Bhai\\new\\components",
+  "upstream": "origin/main",
+  "mergeBase": "98ad5ca697f0155858c84f94f0a8f7df6f8c5fd6",
+  "firstSeenHead": "98ad5ca697f0155858c84f94f0a8f7df6f8c5fd6",
+  "lastSeenHead": "98ad5ca697f0155858c84f94f0a8f7df6f8c5fd6",
+  "lastAnalyzedHead": "98ad5ca697f0155858c84f94f0a8f7df6f8c5fd6",
+  "stale": false,
+  "staleReason": null,
+  "staleSince": null,
+  "lifecycleEvent": null,
+  "createdAt": "2026-08-27T21:13:48.965Z",
+  "updatedAt": "2026-08-27T21:13:48.965Z"
+}

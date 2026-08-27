@@ -1,0 +1,24 @@
+# GRAPHIFY COMMANDS (SHORT & SIMPLE)
+
+1. SETUP (One-Time)
+npm install -D @sentropic/graphify
+npx @sentropic/graphify install antigravity
+
+2. BUILD / EXPORT VISUAL GRAPH
+npm run graphify:studio
+
+3. OPEN GRAPH IN BROWSER
+start .graphify\studio\studio.html
+
+4. SUMMARY & HUBS
+npm run graphify:summary
+
+5. UPDATE GRAPH (After Code Changes)
+npm run graphify:update               # Fast one-shot update: npx @sentropic/graphify update .
+npm run graphify:studio               # Rebuilds graph + exports studio.html
+npx @sentropic/graphify . --watch     # Auto-updates graph continuously on file save
+
+6. INSPECT NODE / COMPONENT
+npx @sentropic/graphify tree <name>      # e.g: npx @sentropic/graphify tree syncManager
+npx @sentropic/graphify explain <name>   # e.g: npx @sentropic/graphify explain SyncIndicator
+npx @sentropic/graphify query "<text>"   # e.g: npx @sentropic/graphify query "offline sync"
