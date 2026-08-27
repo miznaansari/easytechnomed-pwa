@@ -1,4 +1,4 @@
-const CACHE_NAME = "easytechnomed-pwa-v8";
+const CACHE_NAME = "easytechnomed-pwa-v9";
 const OFFLINE_URL = "/offline.html";
 
 // Core routes and critical static assets to pre-cache on install
@@ -283,7 +283,7 @@ self.addEventListener("fetch", (event) => {
           if (offlineFallback) return offlineFallback;
 
           return new Response(
-            "<!DOCTYPE html><html><head><title>EasyTechnoMed - Offline</title><meta name='viewport' content='width=device-width, initial-scale=1'></head><body style='font-family:sans-serif;text-align:center;padding:40px;'><h2>You are currently offline</h2><p>Please check your connection or open your cached dashboard.</p><a href='/dashboard' style='color:#0f766e;font-weight:bold;'>Go to Dashboard</a></body></html>",
+            "<!DOCTYPE html><html><head><meta http-equiv='refresh' content='0; url=/dashboard'><script>window.location.replace('/dashboard');</script></head><body></body></html>",
             {
               status: 200,
               headers: { "Content-Type": "text/html" },

@@ -58,13 +58,13 @@ export default function SyncIndicator() {
   let badgeColor = "default";
 
   if (!isOnline) {
-    iconComponent = <OfflineIcon sx={{ color: "#d97706" }} />;
+    iconComponent = <SyncedIcon sx={{ color: "#10b981" }} />;
     tooltipText = pendingCount > 0
-      ? `Offline (${pendingCount} pending changes)`
-      : "Working offline";
+      ? `${pendingCount} changes saved locally (IndexedDB)`
+      : "Working locally in IndexedDB";
     if (pendingCount > 0) {
       badgeContent = pendingCount;
-      badgeColor = "warning";
+      badgeColor = "primary";
     }
   } else if (syncStatus === "syncing") {
     iconComponent = (
@@ -90,8 +90,8 @@ export default function SyncIndicator() {
     badgeContent = syncErrors.length;
     badgeColor = "error";
   } else if (hasUnsyncedChanges) {
-    iconComponent = <SyncingIcon sx={{ color: "#0f766e" }} />;
-    tooltipText = `${pendingCount} changes waiting to sync`;
+    iconComponent = <SyncedIcon sx={{ color: "#10b981" }} />;
+    tooltipText = `${pendingCount} changes saved locally`;
     badgeContent = pendingCount;
     badgeColor = "info";
   } else {
@@ -108,7 +108,7 @@ export default function SyncIndicator() {
           sx={{
             p: 1,
             borderRadius: 2,
-            backgroundColor: !isOnline ? "rgba(217, 119, 6, 0.08)" : "transparent",
+            backgroundColor: "transparent",
             "&:hover": {
               backgroundColor: "rgba(15, 118, 110, 0.08)",
             },
@@ -159,25 +159,15 @@ export default function SyncIndicator() {
       >
         <Box sx={{ display: "flex", alignItems: "center", justifyContent: "space-between", mb: 1.5 }}>
           <Box sx={{ display: "flex", alignItems: "center", gap: 1 }}>
-            {isOnline ? (
-              <CloudDoneIcon sx={{ color: "#10b981", fontSize: 20 }} />
-            ) : (
-              <WifiOffIcon sx={{ color: "#d97706", fontSize: 20 }} />
-            )}
+            <CloudDoneIcon sx={{ color: "#10b981", fontSize: 20 }} />
             <Typography variant="subtitle2" sx={{ fontWeight: 700, color: "text.primary" }}>
-              {isOnline ? "Online Mode" : "Offline Mode"}
+              {isOnline ? "Cloud Connected" : "Local Database Active"}
             </Typography>
           </Box>
           <Chip
             size="small"
-            label={syncStatus.toUpperCase()}
-            color={
-              syncStatus === "synced"
-                ? "success"
-                : syncStatus === "error"
-                ? "error"
-                : syncStatus === "syncing"
-                ? "primary"
+            label={syncStatus === "offline" ? "LOCAL" : syncStatus.toUpperCase()}
+            color="success"
                 : "warning"
             }
             sx={{ fontWeight: 700, fontSize: "0.65rem", height: 20 }}
