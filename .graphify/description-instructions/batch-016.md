@@ -12,11 +12,19 @@ describing what it is or does. Use only the provided context.
 For a code symbol (kind=code-symbol — a function, class, or constant),
 describe what the function/symbol does based on its name, source location
 and neighbors — e.g. "Resolves the configured ontology profile from graphify.yaml.".
+For an entity node (any other kind — e.g. a person, place, event, object),
+describe what the entity is and its role, grounded in its type, its
+relations (neighbors) and the provided citations/evidence — e.g.
+"Lady Carfax, a wealthy heiress who disappears en route to Lausanne.".
+Ground entity descriptions in the citations/evidence when present; do not
+speculate beyond the context, so a node with no supporting context may be
+left out of the reply.
 Write every description in English (en). Do not switch languages.
 No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "commit:repo:github.com-personal/miznaansari/easytechnomed-pwa@fafa3d9183637b6a594e9828f4bb2d45607463f1": "fafa3d9 f" | kind=Commit | source=git | neighbors=[9deec8f 2.0.4, main, a4a950a 2.0.5, sw.js]
 - "context_offlinesynccontext": "OfflineSyncContext.js" | kind=code-symbol | source=context/OfflineSyncContext.js:L1 | neighbors=[2b2534c f, 9f59247 expire token, OfflineSyncContext, useOfflineSync()]
 - "customer_layout": "layout.jsx" | kind=code-symbol | source=app/(customer)/layout.jsx:L1 | neighbors=[252e194 e, 5e3d9ef d, CustomerLayout(), theme]
 - "dashboard_error": "error.js" | kind=code-symbol | source=app/(customer)/(dashboard)/error.js:L1 | neighbors=[5e3d9ef d, cf2bb98 new, eb8b1e5 f, DashboardErrorBoundary()]
@@ -37,6 +45,7 @@ one-sentence description — no prose, no markdown fences.
 - "lib_saasinvoice": "saasInvoice.js" | kind=code-symbol | source=lib/saasInvoice.js:L1 | neighbors=[252e194 e, decodePaymentUid(), encodePaymentUid(), KEY]
 - "login_page": "page.js" | kind=code-symbol | source=app/(customer)/auth/login/page.js:L1 | neighbors=[252e194 e, LoginPageClient.js, metadata, Page()]
 - "members_route": "route.js" | kind=code-symbol | source=app/api/members/route.js:L1 | neighbors=[252e194 e, GET(), PATCH(), POST()]
+- "offline_network": "network.js" | kind=code-symbol | source=lib/offline/network.js:L1 | neighbors=[2b2534c f, af73a19 fixed, NetworkMonitor, syncManager.js]
 - "offline_offlinepdfgenerator_generatereportpdfoffline": "generateReportPdfOffline()" | kind=code-symbol | source=lib/offline/offlinePdfGenerator.js:L271 | neighbors=[offlinePdfGenerator.js, layoutMarkdownLines(), parseMarkdownTokens(), offlinePrint.js]
 - "offline_syncstatusicon": "SyncStatusIcon.jsx" | kind=code-symbol | source=components/offline/SyncStatusIcon.jsx:L1 | neighbors=[2b2534c f, 6fcf015 f, d446d11 fixed code, SyncStatusIcon()]
 - "parameters_route": "route.js" | kind=code-symbol | source=app/api/registrations/[id]/parameters/route.js:L1 | neighbors=[252e194 e, GET(), POST(), serializeRegistration()]
@@ -61,8 +70,6 @@ one-sentence description — no prose, no markdown fences.
 - "runtime_edge_esm_cl": "cl()" | kind=code-symbol | source=scratch/generated-client/runtime/edge-esm.js:L1 | neighbors=[edge-esm.js, e(), Pr(), tt()]
 - "runtime_edge_esm_da": "Da()" | kind=code-symbol | source=scratch/generated-client/runtime/edge-esm.js:L1 | neighbors=[edge-esm.js, Pt(), ze(), yi()]
 - "runtime_edge_esm_de": "de()" | kind=code-symbol | source=scratch/generated-client/runtime/edge-esm.js:L1 | neighbors=[edge-esm.js, si(), ui(), ya()]
-- "runtime_edge_esm_ee": "Ee()" | kind=code-symbol | source=scratch/generated-client/runtime/edge-esm.js:L5 | neighbors=[edge-esm.js, Gt(), N(), os()]
-- "runtime_edge_esm_emit": "emit()" | kind=code-symbol | source=scratch/generated-client/runtime/edge-esm.js:L1 | neighbors=[edge-esm.js, forEach(), handleAndLogRequestError(), withRetry()]
 
 ## Instructions
 

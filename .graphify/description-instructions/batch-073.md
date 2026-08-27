@@ -17,6 +17,10 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "generated_client_index_d_interpretationruleuncheckedupdatemanywithoutworkspacenestedinput": "InterpretationRuleUncheckedUpdateManyWithoutWorkspaceNestedInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L43147 | neighbors=[index.d.ts]
+- "generated_client_index_d_interpretationruleuncheckedupdatewithoutparameterinput": "InterpretationRuleUncheckedUpdateWithoutParameterInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L54104 | neighbors=[index.d.ts]
+- "generated_client_index_d_interpretationruleuncheckedupdatewithouttestinput": "InterpretationRuleUncheckedUpdateWithoutTestInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L53791 | neighbors=[index.d.ts]
+- "generated_client_index_d_interpretationruleuncheckedupdatewithoutworkspaceinput": "InterpretationRuleUncheckedUpdateWithoutWorkspaceInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L52597 | neighbors=[index.d.ts]
 - "generated_client_index_d_interpretationruleupdateargs": "InterpretationRuleUpdateArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L31589 | neighbors=[index.d.ts]
 - "generated_client_index_d_interpretationruleupdateinput": "InterpretationRuleUpdateInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L40024 | neighbors=[index.d.ts]
 - "generated_client_index_d_interpretationruleupdatemanyargs": "InterpretationRuleUpdateManyArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L31611 | neighbors=[index.d.ts]
@@ -53,10 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "generated_client_index_d_lead": "Lead" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L110 | neighbors=[index.d.ts]
 - "generated_client_index_d_leadaggregateargs": "LeadAggregateArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L23175 | neighbors=[index.d.ts]
 - "generated_client_index_d_leadargs": "LeadArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L54390 | neighbors=[index.d.ts]
-- "generated_client_index_d_leadavgaggregateinputtype": "LeadAvgAggregateInputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L23145 | neighbors=[index.d.ts]
-- "generated_client_index_d_leadavgaggregateoutputtype": "LeadAvgAggregateOutputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L23114 | neighbors=[index.d.ts]
-- "generated_client_index_d_leadavgorderbyaggregateinput": "LeadAvgOrderByAggregateInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L42147 | neighbors=[index.d.ts]
-- "generated_client_index_d_leadcontact": "LeadContact" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L125 | neighbors=[index.d.ts]
 
 ## Instructions
 

@@ -24,8 +24,12 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "commit:repo:github.com-personal/miznaansari/easytechnomed-pwa@713405831eef818366ebb6342eb43cd7340a4a62": "7134058 1.1.29" | kind=Commit | source=git | neighbors=[main, b5ea15f d, d87cf87 d]
+- "commit:repo:github.com-personal/miznaansari/easytechnomed-pwa@720f0160e2a9e5247fee57dd7f67464920beaa7c": "720f016 2.0.13" | kind=Commit | source=git | neighbors=[main, 905ef50 fixed, c070c55 fixed]
+- "commit:repo:github.com-personal/miznaansari/easytechnomed-pwa@7ec76baa937c381ba6859cd5d0cfe2bb9a34815d": "7ec76ba 2.0.12" | kind=Commit | source=git | neighbors=[4d7570f fixed, main, c070c55 fixed]
 - "commit:repo:github.com-personal/miznaansari/easytechnomed-pwa@7fcf80494a27d4ec2c960aafbecce7822f0a3df5": "7fcf804 1.1.30" | kind=Commit | source=git | neighbors=[main, a4caf17 fix: ensure Service Worker only…, b5ea15f d]
 - "commit:repo:github.com-personal/miznaansari/easytechnomed-pwa@84807f47cf682325bf74a7f044ba8c9dcc1c4fbd": "84807f4 1.1.27" | kind=Commit | source=git | neighbors=[56f4d63 f, main, 532b740 fixed]
+- "commit:repo:github.com-personal/miznaansari/easytechnomed-pwa@98ad5ca697f0155858c84f94f0a8f7df6f8c5fd6": "98ad5ca 2.0.24" | kind=Commit | source=git | neighbors=[main, fae0b0a graphify added., d446d11 fixed code]
 - "commit:repo:github.com-personal/miznaansari/easytechnomed-pwa@9deec8fd0983a64980479366856db84bed70a63a": "9deec8f 2.0.4" | kind=Commit | source=git | neighbors=[main, fafa3d9 f, b0c8bf9 full indexeddb based]
 - "commit:repo:github.com-personal/miznaansari/easytechnomed-pwa@a14c9b8bbea1748bf13611f038dce324604c0733": "a14c9b8 2.0.14" | kind=Commit | source=git | neighbors=[905ef50 fixed, main, cb86968 fixed]
 - "commit:repo:github.com-personal/miznaansari/easytechnomed-pwa@a4a950af85ecefcfc811d8b22f2b61546a488fe8": "a4a950a 2.0.5" | kind=Commit | source=git | neighbors=[main, 6618261 f, fafa3d9 f]
@@ -41,6 +45,7 @@ one-sentence description — no prose, no markdown fences.
 - "commit:repo:github.com-personal/miznaansari/easytechnomed-pwa@f4e1e655ae80cf80b6058913d91248ead25763a3": "f4e1e65 2.0.21" | kind=Commit | source=git | neighbors=[f3857f9 f, main, 14fa292 f]
 - "commit:repo:github.com-personal/miznaansari/easytechnomed-pwa@f9a9e52ab881f37b37845b3f25a164a999f6ce02": "f9a9e52 1.1.28" | kind=Commit | source=git | neighbors=[532b740 fixed, main, d87cf87 d]
 - "commit:repo:github.com-personal/miznaansari/easytechnomed-pwa@f9e9bea93a9679482a23f68dc2d2df3c6b3c9c17": "f9e9bea 2.0.8" | kind=Commit | source=git | neighbors=[37dcb32 fixed, main, cea69a2 d]
+- "commit:repo:github.com-personal/miznaansari/easytechnomed-pwa@fae0b0a32e7f1f425fc024c87b3f94a501c8a16c": "fae0b0a graphify added." | kind=Commit | source=git | neighbors=[98ad5ca 2.0.24, main, 14ed805 3.0.0]
 - "component_differentialcounttracker_calculatedifferentialsummary": "calculateDifferentialSummary()" | kind=code-symbol | source=app/(customer)/(dashboard)/test-report/component/DifferentialCountTracker.jsx:L91 | neighbors=[DifferentialCountTracker.jsx, DifferentialHeaderBadge(), validateDifferentialOnSave()]
 - "component_differentialcounttracker_differentialheaderbadge": "DifferentialHeaderBadge()" | kind=code-symbol | source=app/(customer)/(dashboard)/test-report/component/DifferentialCountTracker.jsx:L197 | neighbors=[DifferentialCountTracker.jsx, calculateDifferentialSummary(), isDifferentialHeader()]
 - "component_moneyreciptmobile": "MoneyReciptMobile.jsx" | kind=code-symbol | source=app/(customer)/(dashboard)/test-report/component/MoneyReciptMobile.jsx:L1 | neighbors=[252e194 e, MoneyRecipt.jsx, MoneyReciptMobile()]
@@ -57,13 +62,8 @@ one-sentence description — no prose, no markdown fences.
 - "lib_r2": "r2.js" | kind=code-symbol | source=lib/r2.js:L1 | neighbors=[252e194 e, s3Client, uploadFileToR2()]
 - "logout_redirect_route": "route.js" | kind=code-symbol | source=app/api/auth/logout-redirect/route.js:L1 | neighbors=[252e194 e, 5e3d9ef d, GET()]
 - "logout_route": "route.js" | kind=code-symbol | source=app/api/authas/logout/route.js:L1 | neighbors=[252e194 e, 5e3d9ef d, POST()]
-- "offline_network": "network.js" | kind=code-symbol | source=lib/offline/network.js:L1 | neighbors=[2b2534c f, NetworkMonitor, syncManager.js]
 - "offline_network_networkmonitor_handlestatuschange": ".handleStatusChange()" | kind=code-symbol | source=lib/offline/network.js:L20 | neighbors=[NetworkMonitor, .checkConnection(), .notifyListeners()]
 - "offline_offlineprint_printbilloffline": "printBillOffline()" | kind=code-symbol | source=lib/offline/offlinePrint.js:L57 | neighbors=[offlinePrint.js, formatDate(), numberToWords()]
-- "offline_timestamps_getutcisonow": "getUtcIsoNow()" | kind=code-symbol | source=lib/offline/timestamps.js:L10 | neighbors=[db.js, timestamps.js, syncManager.js]
-- "payments_page": "page.js" | kind=code-symbol | source=app/(customer)/(dashboard)/settings/payments/page.js:L1 | neighbors=[252e194 e, SettingsPaymentsPage(), paymentsClient.jsx]
-- "pdf_page": "page.js" | kind=code-symbol | source=app/(customer)/(dashboard)/settings/pdf/page.js:L1 | neighbors=[252e194 e, SettingsPdfPage(), pdfClient.jsx]
-- "preview_pdf_route": "route.js" | kind=code-symbol | source=app/api/settings/preview-pdf/route.js:L1 | neighbors=[252e194 e, formatDate(), GET()]
 
 ## Instructions
 

@@ -17,6 +17,10 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "offline_timestamps_getutcisonow": "getUtcIsoNow()" | kind=code-symbol | source=lib/offline/timestamps.js:L10 | neighbors=[db.js, timestamps.js, syncManager.js]
+- "payments_page": "page.js" | kind=code-symbol | source=app/(customer)/(dashboard)/settings/payments/page.js:L1 | neighbors=[252e194 e, SettingsPaymentsPage(), paymentsClient.jsx]
+- "pdf_page": "page.js" | kind=code-symbol | source=app/(customer)/(dashboard)/settings/pdf/page.js:L1 | neighbors=[252e194 e, SettingsPdfPage(), pdfClient.jsx]
+- "preview_pdf_route": "route.js" | kind=code-symbol | source=app/api/settings/preview-pdf/route.js:L1 | neighbors=[252e194 e, formatDate(), GET()]
 - "profile_route": "route.js" | kind=code-symbol | source=app/api/profile/route.js:L1 | neighbors=[252e194 e, GET(), PUT()]
 - "registrations_route_serializedata": "serializeData()" | kind=code-symbol | source=app/api/registrations/route.js:L7 | neighbors=[route.js, GET(), POST()]
 - "runtime_edge_a": "a()" | kind=code-symbol | source=scratch/generated-client/runtime/edge.js:L1 | neighbors=[edge.js, g(), l()]
@@ -53,10 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "runtime_edge_esm_getallmodelextensions": "getAllModelExtensions()" | kind=code-symbol | source=scratch/generated-client/runtime/edge-esm.js:L5 | neighbors=[edge-esm.js, getOrCreate(), N()]
 - "runtime_edge_esm_getallquerycallbacks": "getAllQueryCallbacks()" | kind=code-symbol | source=scratch/generated-client/runtime/edge-esm.js:L5 | neighbors=[edge-esm.js, getOrCreate(), ps()]
 - "runtime_edge_esm_getsubselectionvalue": "getSubSelectionValue()" | kind=code-symbol | source=scratch/generated-client/runtime/edge-esm.js:L3 | neighbors=[edge-esm.js, getDeepSubSelectionValue(), getSelectionParent()]
-- "runtime_edge_esm_gettraceparent": "getTraceParent()" | kind=code-symbol | source=scratch/generated-client/runtime/edge-esm.js:L20 | neighbors=[edge-esm.js, build(), getGlobalTracingHelper()]
-- "runtime_edge_esm_gi": "gi()" | kind=code-symbol | source=scratch/generated-client/runtime/edge-esm.js:L1 | neighbors=[edge-esm.js, fi(), write()]
-- "runtime_edge_esm_gs": "Gs()" | kind=code-symbol | source=scratch/generated-client/runtime/edge-esm.js:L20 | neighbors=[edge-esm.js, qc(), unpack()]
-- "runtime_edge_esm_he": "he()" | kind=code-symbol | source=scratch/generated-client/runtime/edge-esm.js:L5 | neighbors=[edge-esm.js, dc(), Do()]
 
 ## Instructions
 

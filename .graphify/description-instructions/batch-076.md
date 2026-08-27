@@ -17,6 +17,10 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "generated_client_index_d_leadminaggregateinputtype": "LeadMinAggregateInputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L23153 | neighbors=[index.d.ts]
+- "generated_client_index_d_leadminaggregateoutputtype": "LeadMinAggregateOutputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L23122 | neighbors=[index.d.ts]
+- "generated_client_index_d_leadminorderbyaggregateinput": "LeadMinOrderByAggregateInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L42158 | neighbors=[index.d.ts]
+- "generated_client_index_d_leadorderbywithaggregationinput": "LeadOrderByWithAggregationInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L36404 | neighbors=[index.d.ts]
 - "generated_client_index_d_leadorderbywithrelationinput": "LeadOrderByWithRelationInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L36387 | neighbors=[index.d.ts]
 - "generated_client_index_d_leadpayload": "$LeadPayload" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L23303 | neighbors=[index.d.ts]
 - "generated_client_index_d_leadscalarfieldenum": "LeadScalarFieldEnum" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L34244 | neighbors=[index.d.ts]
@@ -53,10 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "generated_client_index_d_nesteddatetimefilter": "NestedDateTimeFilter" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L44861 | neighbors=[index.d.ts]
 - "generated_client_index_d_nesteddatetimenullablefilter": "NestedDateTimeNullableFilter" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L44872 | neighbors=[index.d.ts]
 - "generated_client_index_d_nesteddatetimenullablewithaggregatesfilter": "NestedDateTimeNullableWithAggregatesFilter" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L44949 | neighbors=[index.d.ts]
-- "generated_client_index_d_nesteddatetimewithaggregatesfilter": "NestedDateTimeWithAggregatesFilter" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L44935 | neighbors=[index.d.ts]
-- "generated_client_index_d_nesteddecimalfilter": "NestedDecimalFilter" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L45032 | neighbors=[index.d.ts]
-- "generated_client_index_d_nesteddecimalnullablefilter": "NestedDecimalNullableFilter" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L45059 | neighbors=[index.d.ts]
-- "generated_client_index_d_nesteddecimalnullablewithaggregatesfilter": "NestedDecimalNullableWithAggregatesFilter" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L45070 | neighbors=[index.d.ts]
 
 ## Instructions
 

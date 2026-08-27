@@ -17,6 +17,10 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "generated_client_index_d_prisma_leadcontactclient": "Prisma__LeadContactClient" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L26510 | neighbors=[index.d.ts]
+- "generated_client_index_d_prisma_parameterclient": "Prisma__ParameterClient" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L20546 | neighbors=[index.d.ts]
+- "generated_client_index_d_prisma_patientresultclient": "Prisma__PatientResultClient" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L22748 | neighbors=[index.d.ts]
+- "generated_client_index_d_prisma_pick": "Prisma__Pick" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L741 | neighbors=[index.d.ts]
 - "generated_client_index_d_prisma_registrationclient": "Prisma__RegistrationClient" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L18052 | neighbors=[index.d.ts]
 - "generated_client_index_d_prisma_registrationpaymentclient": "Prisma__RegistrationPaymentClient" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L25560 | neighbors=[index.d.ts]
 - "generated_client_index_d_prisma_registrationtestclient": "Prisma__RegistrationTestClient" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L19221 | neighbors=[index.d.ts]
@@ -53,10 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "generated_client_index_d_registrationaggregateargs": "RegistrationAggregateArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L17408 | neighbors=[index.d.ts]
 - "generated_client_index_d_registrationargs": "RegistrationArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L54370 | neighbors=[index.d.ts]
 - "generated_client_index_d_registrationavgaggregateinputtype": "RegistrationAvgAggregateInputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L17242 | neighbors=[index.d.ts]
-- "generated_client_index_d_registrationavgaggregateoutputtype": "RegistrationAvgAggregateOutputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L17075 | neighbors=[index.d.ts]
-- "generated_client_index_d_registrationavgorderbyaggregateinput": "RegistrationAvgOrderByAggregateInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L41579 | neighbors=[index.d.ts]
-- "generated_client_index_d_registrationcountaggregateinputtype": "RegistrationCountAggregateInputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L17364 | neighbors=[index.d.ts]
-- "generated_client_index_d_registrationcountaggregateoutputtype": "RegistrationCountAggregateOutputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L17197 | neighbors=[index.d.ts]
 
 ## Instructions
 

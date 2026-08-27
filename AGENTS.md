@@ -10,6 +10,12 @@ This version has breaking changes — APIs, conventions, and file structure may 
 - **IndexedDB-First Forms & UI**: ALL forms, user inputs, reports, and data mutations MUST write and read directly from local IndexedDB (Dexie `EasyTechnoMedOfflineDB`) with 0ms latency. Forms must NEVER directly make blocking API requests on submit.
 - **Sync Engine Decides Cloud Routing**: The background sync coordinator (`syncManager` & `/api/offline/sync`) solely determines and executes `POST` (for `isDirty` new records), `PUT` (for `isModified` records), and `GET` (for cloud deltas) to sync with MySQL Prisma.
 - **Maintain Sync Integrity**: Adhere strictly to the dual-layer storage patterns and conventions recorded in `memory.md`.
+- **Version Bump, Graphify Refresh & Memory Update On Complete**: ALWAYS at the end of completing code changes or features:
+  1. Increment `package.json` version (e.g. `npm version patch --no-git-tag-version`).
+  2. Record the new version and changelog entry in `memory.md`.
+  3. Re-run Graphify update (`npm run graphify:update` / `npx @sentropic/graphify update .`) to keep the knowledge graph in sync.
+
+
 
 
 

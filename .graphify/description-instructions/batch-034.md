@@ -17,6 +17,10 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "doctor_summary_route_get": "GET()" | kind=code-symbol | source=app/api/doctor-summary/route.js:L10 | neighbors=[route.js, serializeData()]
+- "doctor_summary_route_serializedata": "serializeData()" | kind=code-symbol | source=app/api/doctor-summary/route.js:L6 | neighbors=[route.js, GET()]
+- "doctors_route_get": "GET()" | kind=code-symbol | source=app/api/doctors/route.js:L10 | neighbors=[route.js, serializeData()]
+- "doctors_route_post": "POST()" | kind=code-symbol | source=app/api/doctors/route.js:L24 | neighbors=[route.js, serializeData()]
 - "doctors_route_put": "PUT()" | kind=code-symbol | source=app/api/doctors/route.js:L114 | neighbors=[route.js, serializeData()]
 - "draft_route": "route.js" | kind=code-symbol | source=app/api/registrations/[id]/results/draft/route.js:L1 | neighbors=[252e194 e, POST()]
 - "eslint_config": "eslint.config.mjs" | kind=code-symbol | source=eslint.config.mjs:L1 | neighbors=[252e194 e, eslintConfig]
@@ -53,10 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "login_route": "route.js" | kind=code-symbol | source=app/api/authas/login/route.js:L1 | neighbors=[252e194 e, POST()]
 - "next_config": "next.config.mjs" | kind=code-symbol | source=next.config.mjs:L1 | neighbors=[252e194 e, nextConfig]
 - "offline_db_appdatabase_deleteoffline": ".deleteOffline()" | kind=code-symbol | source=lib/offline/db.js:L104 | neighbors=[AppDatabase, .updateOffline()]
-- "offline_db_appdatabase_getallpendingrecords": ".getAllPendingRecords()" | kind=code-symbol | source=lib/offline/db.js:L167 | neighbors=[AppDatabase, .getPendingCount()]
-- "offline_db_appdatabase_getpendingcount": ".getPendingCount()" | kind=code-symbol | source=lib/offline/db.js:L196 | neighbors=[AppDatabase, .getAllPendingRecords()]
-- "offline_db_appdatabase_updateoffline": ".updateOffline()" | kind=code-symbol | source=lib/offline/db.js:L73 | neighbors=[AppDatabase, .deleteOffline()]
-- "offline_network_networkmonitor_checkconnection": ".checkConnection()" | kind=code-symbol | source=lib/offline/network.js:L54 | neighbors=[NetworkMonitor, .handleStatusChange()]
 
 ## Instructions
 

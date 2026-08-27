@@ -17,6 +17,10 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "runtime_library_d_dynamicclientextensionthis": "DynamicClientExtensionThis" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L897 | neighbors=[_d()]
+- "runtime_library_d_dynamicclientextensionthisbuiltin": "DynamicClientExtensionThisBuiltin" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L911 | neighbors=[_d()]
+- "runtime_library_d_dynamicmodelextensionargs": "DynamicModelExtensionArgs" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L928 | neighbors=[_d()]
+- "runtime_library_d_dynamicmodelextensionfluentapi": "DynamicModelExtensionFluentApi" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L951 | neighbors=[_d()]
 - "runtime_library_d_dynamicmodelextensionfnresult": "DynamicModelExtensionFnResult" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L959 | neighbors=[_d()]
 - "runtime_library_d_dynamicmodelextensionfnresultbase": "DynamicModelExtensionFnResultBase" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L961 | neighbors=[_d()]
 - "runtime_library_d_dynamicmodelextensionfnresultnull": "DynamicModelExtensionFnResultNull" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L963 | neighbors=[_d()]
@@ -53,10 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "runtime_library_d_exceptionwithmessage": "ExceptionWithMessage" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L1232 | neighbors=[_d()]
 - "runtime_library_d_exceptionwithname": "ExceptionWithName" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L1239 | neighbors=[_d()]
 - "runtime_library_d_extendedeventtype": "ExtendedEventType" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L1246 | neighbors=[_d()]
-- "runtime_library_d_extendedspanoptions": "ExtendedSpanOptions" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L1248 | neighbors=[_d()]
-- "runtime_library_d_extendshook": "ExtendsHook" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L1260 | neighbors=[_d()]
-- "runtime_library_d_extensionargs": "ExtensionArgs" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L1294 | neighbors=[_d()]
-- "runtime_library_d_extractglobalomit": "ExtractGlobalOmit" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L1345 | neighbors=[_d()]
 
 ## Instructions
 

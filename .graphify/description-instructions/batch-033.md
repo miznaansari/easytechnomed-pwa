@@ -24,6 +24,10 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "runtime_wasm_xs": "Xs()" | kind=code-symbol | source=scratch/generated-client/runtime/wasm.js:L5 | neighbors=[wasm.js, si(), addItem()]
+- "runtime_wasm_ya": "ya()" | kind=code-symbol | source=scratch/generated-client/runtime/wasm.js:L5 | neighbors=[wasm.js, Ir(), mr()]
+- "runtime_wasm_za": "za()" | kind=code-symbol | source=scratch/generated-client/runtime/wasm.js:L21 | neighbors=[wasm.js, be(), xo()]
+- "scratch_test_calc_calculatealldependents": "calculateAllDependents()" | kind=code-symbol | source=scratch/test-calc.js:L76 | neighbors=[test-calc.js, checkFormulaDependencies(), evaluateExpression()]
 - "scratch_test_calc_export": "test-calc-export.js" | kind=code-symbol | source=scratch/test-calc-export.js:L1 | neighbors=[252e194 e, calculateDifferentialSummary(), DLC_DEFINITIONS]
 - "scratch_test_reg_15": "test-reg-15.js" | kind=code-symbol | source=scratch/test-reg-15.js:L1 | neighbors=[252e194 e, runFormulaEngine(), main()]
 - "seed_parameters_route": "route.js" | kind=code-symbol | source=app/api/seed-parameters/route.js:L1 | neighbors=[252e194 e, GET(), processTestParameters()]
@@ -45,7 +49,7 @@ one-sentence description — no prose, no markdown fences.
 - "by_mobile_route_get": "GET()" | kind=code-symbol | source=app/api/registrations/by-mobile/route.js:L10 | neighbors=[route.js, serializeData()]
 - "by_mobile_route_serializedata": "serializeData()" | kind=code-symbol | source=app/api/registrations/by-mobile/route.js:L6 | neighbors=[route.js, GET()]
 - "change_role_route": "route.js" | kind=code-symbol | source=app/api/approvals/change-role/route.js:L1 | neighbors=[POST(), 252e194 e]
-- "commit:repo:github.com-personal/miznaansari/easytechnomed-pwa@98ad5ca697f0155858c84f94f0a8f7df6f8c5fd6": "98ad5ca 2.0.24" | kind=Commit | source=git | neighbors=[main, d446d11 fixed code]
+- "commit:repo:github.com-personal/miznaansari/easytechnomed-pwa@c5cbecd35dab9843171e92af854db27d4a2695d8": "c5cbecd 3.0.1" | kind=Commit | source=git | neighbors=[af73a19 fixed, main]
 - "component_differentialcounttracker_isdifferentialheader": "isDifferentialHeader()" | kind=code-symbol | source=app/(customer)/(dashboard)/test-report/component/DifferentialCountTracker.jsx:L76 | neighbors=[DifferentialCountTracker.jsx, DifferentialHeaderBadge()]
 - "component_differentialcounttracker_validatedifferentialonsave": "validateDifferentialOnSave()" | kind=code-symbol | source=app/(customer)/(dashboard)/test-report/component/DifferentialCountTracker.jsx:L178 | neighbors=[DifferentialCountTracker.jsx, calculateDifferentialSummary()]
 - "component_showresult_isoutofrange": "isOutOfRange()" | kind=code-symbol | source=app/(customer)/(dashboard)/test-report/component/showResult.jsx:L92 | neighbors=[showResult.jsx, isQualitativeAbnormal()]
@@ -60,10 +64,6 @@ one-sentence description — no prose, no markdown fences.
 - "dashboard_dashboardcharts_registrationchart": "RegistrationChart()" | kind=code-symbol | source=app/(customer)/(dashboard)/dashboard/DashboardCharts.js:L58 | neighbors=[DashboardCharts.js, page.js]
 - "dashboard_dashboardcharts_revenuechart": "RevenueChart()" | kind=code-symbol | source=app/(customer)/(dashboard)/dashboard/DashboardCharts.js:L104 | neighbors=[DashboardCharts.js, page.js]
 - "dashboard_rangeselector": "RangeSelector.js" | kind=code-symbol | source=app/(customer)/(dashboard)/dashboard/RangeSelector.js:L1 | neighbors=[252e194 e, DashboardRangeSelector()]
-- "doctor_summary_route_get": "GET()" | kind=code-symbol | source=app/api/doctor-summary/route.js:L10 | neighbors=[route.js, serializeData()]
-- "doctor_summary_route_serializedata": "serializeData()" | kind=code-symbol | source=app/api/doctor-summary/route.js:L6 | neighbors=[route.js, GET()]
-- "doctors_route_get": "GET()" | kind=code-symbol | source=app/api/doctors/route.js:L10 | neighbors=[route.js, serializeData()]
-- "doctors_route_post": "POST()" | kind=code-symbol | source=app/api/doctors/route.js:L24 | neighbors=[route.js, serializeData()]
 
 ## Instructions
 

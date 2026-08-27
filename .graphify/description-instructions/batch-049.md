@@ -17,6 +17,10 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "app_layout_viewport": "viewport" | kind=code-symbol | source=app/layout.js:L40 | neighbors=[layout.js]
+- "app_manifest_manifest": "manifest()" | kind=code-symbol | source=app/manifest.js:L1 | neighbors=[manifest.js]
+- "app_robots_robots": "robots()" | kind=code-symbol | source=app/robots.js:L1 | neighbors=[robots.js]
+- "app_sitemap_sitemap": "sitemap()" | kind=code-symbol | source=app/sitemap.js:L1 | neighbors=[sitemap.js]
 - "approvals_route_get": "GET()" | kind=code-symbol | source=app/api/approvals/route.js:L5 | neighbors=[route.js]
 - "approve_route_post": "POST()" | kind=code-symbol | source=app/api/approvals/approve/route.js:L6 | neighbors=[route.js]
 - "auth_offlineauth_checkunsynceddatabeforelogout": "checkUnsyncedDataBeforeLogout()" | kind=code-symbol | source=lib/auth/offlineAuth.js:L126 | neighbors=[offlineAuth.js]
@@ -53,10 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "customer_page_metadata": "metadata" | kind=code-symbol | source=app/(customer)/page.jsx:L3 | neighbors=[page.jsx]
 - "customer_page_rootpage": "RootPage()" | kind=code-symbol | source=app/(customer)/page.jsx:L8 | neighbors=[page.jsx]
 - "dashboard_dashboardcharts_customtooltip": "CustomTooltip()" | kind=code-symbol | source=app/(customer)/(dashboard)/dashboard/DashboardCharts.js:L21 | neighbors=[DashboardCharts.js]
-- "dashboard_error_dashboarderrorboundary": "DashboardErrorBoundary()" | kind=code-symbol | source=app/(customer)/(dashboard)/error.js:L8 | neighbors=[error.js]
-- "dashboard_layout_admindashboardlayout": "AdminDashboardLayout()" | kind=code-symbol | source=app/(customer)/(dashboard)/layout.js:L7 | neighbors=[layout.js]
-- "dashboard_page_admindashboardpage": "AdminDashboardPage()" | kind=code-symbol | source=app/(customer)/(dashboard)/dashboard/page.js:L45 | neighbors=[page.js]
-- "dashboard_rangeselector_dashboardrangeselector": "DashboardRangeSelector()" | kind=code-symbol | source=app/(customer)/(dashboard)/dashboard/RangeSelector.js:L7 | neighbors=[RangeSelector.js]
 
 ## Instructions
 

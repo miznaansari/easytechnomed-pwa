@@ -17,6 +17,10 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "runtime_react_native_kr": "Kr()" | kind=code-symbol | source=scratch/generated-client/runtime/react-native.js:L1 | neighbors=[react-native.js, ii(), Pa()]
+- "runtime_react_native_ks": "ks()" | kind=code-symbol | source=scratch/generated-client/runtime/react-native.js:L62 | neighbors=[react-native.js, Ms(), toString()]
+- "runtime_react_native_l": "l()" | kind=code-symbol | source=scratch/generated-client/runtime/react-native.js:L1 | neighbors=[react-native.js, a(), Yn()]
+- "runtime_react_native_ma": "Ma()" | kind=code-symbol | source=scratch/generated-client/runtime/react-native.js:L1 | neighbors=[react-native.js, slice(), xa()]
 - "runtime_react_native_makerequired": "makeRequired()" | kind=code-symbol | source=scratch/generated-client/runtime/react-native.js:L7 | neighbors=[react-native.js, du(), uu()]
 - "runtime_react_native_ms": "Ms()" | kind=code-symbol | source=scratch/generated-client/runtime/react-native.js:L62 | neighbors=[react-native.js, Fs(), ks()]
 - "runtime_react_native_mt": "Mt()" | kind=code-symbol | source=scratch/generated-client/runtime/react-native.js:L2 | neighbors=[react-native.js, As(), ml()]
@@ -53,10 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "runtime_react_native_z": "Z()" | kind=code-symbol | source=scratch/generated-client/runtime/react-native.js:L2 | neighbors=[react-native.js, be(), Yn()]
 - "runtime_wasm_allocunsafe": "allocUnsafe()" | kind=code-symbol | source=scratch/generated-client/runtime/wasm.js:L1 | neighbors=[wasm.js, alloc(), from()]
 - "runtime_wasm_append": "append()" | kind=code-symbol | source=scratch/generated-client/runtime/wasm.js:L5 | neighbors=[wasm.js, e(), ni()]
-- "runtime_wasm_at": "at()" | kind=code-symbol | source=scratch/generated-client/runtime/wasm.js:L1 | neighbors=[wasm.js, ds(), to()]
-- "runtime_wasm_bi": "bi()" | kind=code-symbol | source=scratch/generated-client/runtime/wasm.js:L5 | neighbors=[wasm.js, isEmpty(), sr()]
-- "runtime_wasm_copy": "copy()" | kind=code-symbol | source=scratch/generated-client/runtime/wasm.js:L1 | neighbors=[wasm.js, V(), write()]
-- "runtime_wasm_createenginespan": "createEngineSpan()" | kind=code-symbol | source=scratch/generated-client/runtime/wasm.js:L21 | neighbors=[wasm.js, getGlobalTracingHelper(), logger()]
 
 ## Instructions
 

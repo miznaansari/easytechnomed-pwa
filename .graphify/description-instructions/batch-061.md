@@ -17,6 +17,10 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "generated_client_index_d_admintrackingselectscalar": "AdminTrackingSelectScalar" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L27065 | neighbors=[index.d.ts]
+- "generated_client_index_d_admintrackingsumaggregateinputtype": "AdminTrackingSumAggregateInputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L26891 | neighbors=[index.d.ts]
+- "generated_client_index_d_admintrackingsumaggregateoutputtype": "AdminTrackingSumAggregateOutputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L26841 | neighbors=[index.d.ts]
+- "generated_client_index_d_admintrackingsumorderbyaggregateinput": "AdminTrackingSumOrderByAggregateInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L42359 | neighbors=[index.d.ts]
 - "generated_client_index_d_admintrackinguncheckedcreateinput": "AdminTrackingUncheckedCreateInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L39712 | neighbors=[index.d.ts]
 - "generated_client_index_d_admintrackinguncheckedcreatenestedmanywithoutadmininput": "AdminTrackingUncheckedCreateNestedManyWithoutAdminInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L43517 | neighbors=[index.d.ts]
 - "generated_client_index_d_admintrackinguncheckedcreatewithoutadmininput": "AdminTrackingUncheckedCreateWithoutAdminInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L46929 | neighbors=[index.d.ts]
@@ -53,10 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "generated_client_index_d_adminuncheckedupdatemanywithoutworkspaceinput": "AdminUncheckedUpdateManyWithoutWorkspaceInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L52029 | neighbors=[index.d.ts]
 - "generated_client_index_d_adminuncheckedupdatemanywithoutworkspacenestedinput": "AdminUncheckedUpdateManyWithoutWorkspaceNestedInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L43035 | neighbors=[index.d.ts]
 - "generated_client_index_d_adminuncheckedupdatewithoutaddressinput": "AdminUncheckedUpdateWithoutAddressInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L50301 | neighbors=[index.d.ts]
-- "generated_client_index_d_adminuncheckedupdatewithoutregistrationsinput": "AdminUncheckedUpdateWithoutRegistrationsInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L48807 | neighbors=[index.d.ts]
-- "generated_client_index_d_adminuncheckedupdatewithoutroleinput": "AdminUncheckedUpdateWithoutRoleInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L53137 | neighbors=[index.d.ts]
-- "generated_client_index_d_adminuncheckedupdatewithoutsessionsinput": "AdminUncheckedUpdateWithoutSessionsInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L47345 | neighbors=[index.d.ts]
-- "generated_client_index_d_adminuncheckedupdatewithouttrackingsinput": "AdminUncheckedUpdateWithoutTrackingsInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L50629 | neighbors=[index.d.ts]
 
 ## Instructions
 

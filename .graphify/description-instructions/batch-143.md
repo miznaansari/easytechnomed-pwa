@@ -17,6 +17,10 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "runtime_wasm_onbeforeexit": "onBeforeExit()" | kind=code-symbol | source=scratch/generated-client/runtime/wasm.js:L11 | neighbors=[wasm.js]
+- "runtime_wasm_pn": "pn()" | kind=code-symbol | source=scratch/generated-client/runtime/wasm.js:L1 | neighbors=[wasm.js]
+- "runtime_wasm_po": "po()" | kind=code-symbol | source=scratch/generated-client/runtime/wasm.js:L21 | neighbors=[wasm.js]
+- "runtime_wasm_qo": "Qo()" | kind=code-symbol | source=scratch/generated-client/runtime/wasm.js:L1 | neighbors=[wasm.js]
 - "runtime_wasm_registernewerror": "registerNewError()" | kind=code-symbol | source=scratch/generated-client/runtime/wasm.js:L5 | neighbors=[wasm.js]
 - "runtime_wasm_requestargstomiddlewareargs": "requestArgsToMiddlewareArgs()" | kind=code-symbol | source=scratch/generated-client/runtime/wasm.js:L21 | neighbors=[wasm.js]
 - "runtime_wasm_rl": "rl()" | kind=code-symbol | source=scratch/generated-client/runtime/wasm.js:L26 | neighbors=[wasm.js]
@@ -53,10 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "scratch_backfill_main": "main()" | kind=code-symbol | source=scratch-backfill.js:L4 | neighbors=[scratch-backfill.js]
 - "scratch_backfill_prisma": "prisma" | kind=code-symbol | source=scratch-backfill.js:L2 | neighbors=[scratch-backfill.js]
 - "scratch_backfill_prismaclient": "{ PrismaClient }" | kind=code-symbol | source=scratch-backfill.js:L1 | neighbors=[scratch-backfill.js]
-- "scratch_bootstrap_dates_main": "main()" | kind=code-symbol | source=scratch/bootstrap-dates.js:L4 | neighbors=[bootstrap-dates.js]
-- "scratch_bootstrap_dates_prisma": "prisma" | kind=code-symbol | source=scratch/bootstrap-dates.js:L2 | neighbors=[bootstrap-dates.js]
-- "scratch_bootstrap_dates_prismaclient": "{ PrismaClient }" | kind=code-symbol | source=scratch/bootstrap-dates.js:L1 | neighbors=[bootstrap-dates.js]
-- "scratch_check_data_main": "main()" | kind=code-symbol | source=scratch/check-data.js:L4 | neighbors=[check-data.js]
 
 ## Instructions
 

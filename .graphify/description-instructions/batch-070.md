@@ -17,6 +17,10 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "generated_client_index_d_getleadaggregatetype": "GetLeadAggregateType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L23236 | neighbors=[index.d.ts]
+- "generated_client_index_d_getleadcontactaggregatetype": "GetLeadContactAggregateType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L26077 | neighbors=[index.d.ts]
+- "generated_client_index_d_getleadcontactgroupbypayload": "GetLeadContactGroupByPayload" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L26119 | neighbors=[index.d.ts]
+- "generated_client_index_d_getleadgroupbypayload": "GetLeadGroupByPayload" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L23273 | neighbors=[index.d.ts]
 - "generated_client_index_d_getlogtype": "GetLogType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L3054 | neighbors=[index.d.ts]
 - "generated_client_index_d_getparameteraggregatetype": "GetParameterAggregateType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L19992 | neighbors=[index.d.ts]
 - "generated_client_index_d_getparametergroupbypayload": "GetParameterGroupByPayload" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L20060 | neighbors=[index.d.ts]
@@ -53,10 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "generated_client_index_d_getusersessiongroupbypayload": "GetUserSessionGroupByPayload" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L8104 | neighbors=[index.d.ts]
 - "generated_client_index_d_getworkspaceaggregatetype": "GetWorkspaceAggregateType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L3875 | neighbors=[index.d.ts]
 - "generated_client_index_d_getworkspacegroupbypayload": "GetWorkspaceGroupByPayload" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L3917 | neighbors=[index.d.ts]
-- "generated_client_index_d_getworkspacepdfaggregatetype": "GetWorkspacePdfAggregateType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L32964 | neighbors=[index.d.ts]
-- "generated_client_index_d_getworkspacepdfgroupbypayload": "GetWorkspacePdfGroupByPayload" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L33030 | neighbors=[index.d.ts]
-- "generated_client_index_d_has": "Has" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L937 | neighbors=[index.d.ts]
-- "generated_client_index_d_interpretationrule": "InterpretationRule" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L150 | neighbors=[index.d.ts]
 
 ## Instructions
 

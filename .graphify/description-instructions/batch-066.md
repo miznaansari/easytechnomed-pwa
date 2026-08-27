@@ -17,6 +17,10 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "generated_client_index_d_doctorincentivecreateargs": "DoctorIncentiveCreateArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L32485 | neighbors=[index.d.ts]
+- "generated_client_index_d_doctorincentivecreateinput": "DoctorIncentiveCreateInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L40074 | neighbors=[index.d.ts]
+- "generated_client_index_d_doctorincentivecreatemanyargs": "DoctorIncentiveCreateManyArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L32503 | neighbors=[index.d.ts]
+- "generated_client_index_d_doctorincentivecreatemanydoctorinput": "DoctorIncentiveCreateManyDoctorInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L53291 | neighbors=[index.d.ts]
 - "generated_client_index_d_doctorincentivecreatemanydoctorinputenvelope": "DoctorIncentiveCreateManyDoctorInputEnvelope" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L47810 | neighbors=[index.d.ts]
 - "generated_client_index_d_doctorincentivecreatemanyinput": "DoctorIncentiveCreateManyInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L40100 | neighbors=[index.d.ts]
 - "generated_client_index_d_doctorincentivecreatenestedmanywithoutdoctorinput": "DoctorIncentiveCreateNestedManyWithoutDoctorInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L43785 | neighbors=[index.d.ts]
@@ -53,10 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "generated_client_index_d_doctorincentiveselect": "DoctorIncentiveSelect" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L31899 | neighbors=[index.d.ts]
 - "generated_client_index_d_doctorincentiveselectscalar": "DoctorIncentiveSelectScalar" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L31908 | neighbors=[index.d.ts]
 - "generated_client_index_d_doctorincentivesumaggregateinputtype": "DoctorIncentiveSumAggregateInputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L31759 | neighbors=[index.d.ts]
-- "generated_client_index_d_doctorincentivesumaggregateoutputtype": "DoctorIncentiveSumAggregateOutputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L31724 | neighbors=[index.d.ts]
-- "generated_client_index_d_doctorincentivesumorderbyaggregateinput": "DoctorIncentiveSumOrderByAggregateInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L42590 | neighbors=[index.d.ts]
-- "generated_client_index_d_doctorincentiveuncheckedcreateinput": "DoctorIncentiveUncheckedCreateInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L40080 | neighbors=[index.d.ts]
-- "generated_client_index_d_doctorincentiveuncheckedcreatenestedmanywithoutdoctorinput": "DoctorIncentiveUncheckedCreateNestedManyWithoutDoctorInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L43806 | neighbors=[index.d.ts]
 
 ## Instructions
 

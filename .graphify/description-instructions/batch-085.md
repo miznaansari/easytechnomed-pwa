@@ -17,6 +17,10 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "generated_client_index_d_registrationcreatewithoutpaymentsinput": "RegistrationCreateWithoutPaymentsInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L50331 | neighbors=[index.d.ts]
+- "generated_client_index_d_registrationcreatewithoutrefbyinput": "RegistrationCreateWithoutRefByInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L47596 | neighbors=[index.d.ts]
+- "generated_client_index_d_registrationcreatewithoutresultsinput": "RegistrationCreateWithoutResultsInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L49901 | neighbors=[index.d.ts]
+- "generated_client_index_d_registrationcreatewithoutsecondrefinput": "RegistrationCreateWithoutSecondRefInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L47695 | neighbors=[index.d.ts]
 - "generated_client_index_d_registrationcreatewithouttestsinput": "RegistrationCreateWithoutTestsInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L48883 | neighbors=[index.d.ts]
 - "generated_client_index_d_registrationcreatewithoutworkspaceinput": "RegistrationCreateWithoutWorkspaceInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L45232 | neighbors=[index.d.ts]
 - "generated_client_index_d_registrationdefaultargs": "RegistrationDefaultArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L18551 | neighbors=[index.d.ts]
@@ -53,10 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "generated_client_index_d_registrationpaymentcountaggregateinputtype": "RegistrationPaymentCountAggregateInputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L25052 | neighbors=[index.d.ts]
 - "generated_client_index_d_registrationpaymentcountaggregateoutputtype": "RegistrationPaymentCountAggregateOutputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L25005 | neighbors=[index.d.ts]
 - "generated_client_index_d_registrationpaymentcountargs": "RegistrationPaymentCountArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L25228 | neighbors=[index.d.ts]
-- "generated_client_index_d_registrationpaymentcountorderbyaggregateinput": "RegistrationPaymentCountOrderByAggregateInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L42228 | neighbors=[index.d.ts]
-- "generated_client_index_d_registrationpaymentcreateargs": "RegistrationPaymentCreateArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L25782 | neighbors=[index.d.ts]
-- "generated_client_index_d_registrationpaymentcreateinput": "RegistrationPaymentCreateInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L39547 | neighbors=[index.d.ts]
-- "generated_client_index_d_registrationpaymentcreatemanyargs": "RegistrationPaymentCreateManyArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L25800 | neighbors=[index.d.ts]
 
 ## Instructions
 

@@ -17,6 +17,10 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "generated_client_index_fs": "fs" | kind=code-symbol | source=scratch/generated-client/index.js:L625 | neighbors=[index.js]
+- "generated_client_index_path": "path" | kind=code-symbol | source=scratch/generated-client/index.js:L82 | neighbors=[index.js]
+- "generated_client_index_prisma": "Prisma" | kind=code-symbol | source=scratch/generated-client/index.js:L29 | neighbors=[index.js]
+- "generated_client_index_prismaclient": "PrismaClient" | kind=code-symbol | source=scratch/generated-client/index.js:L654 | neighbors=[index.js]
 - "generated_client_index_prismaclientknownrequesterror_prismaclientunknownrequesterror_prismaclientrustpanicerror_prismaclientinitializationerror_prismaclientvalidationerror_notfounderror_getprismaclient_sqltag_empty_join_raw_skip_decimal_debug_objectenumvalues_makestrictenum_extensions_warnonce_definedmmfproperty_public_getruntime": "{\n  PrismaClientKnownRequestError,\n  PrismaClientUnknownRequestError,\n  PrismaC…" | kind=code-symbol | source=scratch/generated-client/index.js:L4 | neighbors=[index.js]
 - "generated_client_index_warnenvconflicts": "{ warnEnvConflicts }" | kind=code-symbol | source=scratch/generated-client/index.js:L647 | neighbors=[index.js]
 - "generated_client_wasm_decimal_objectenumvalues_makestrictenum_public_getruntime_skip": "{\n  Decimal,\n  objectEnumValues,\n  makeStrictEnum,\n  Public,\n  getRuntime,\n  sk…" | kind=code-symbol | source=scratch/generated-client/wasm.js:L4 | neighbors=[wasm.js]
@@ -53,10 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "members_route_get": "GET()" | kind=code-symbol | source=app/api/members/route.js:L6 | neighbors=[route.js]
 - "members_route_patch": "PATCH()" | kind=code-symbol | source=app/api/members/route.js:L74 | neighbors=[route.js]
 - "members_route_post": "POST()" | kind=code-symbol | source=app/api/members/route.js:L34 | neighbors=[route.js]
-- "next_config_nextconfig": "nextConfig" | kind=code-symbol | source=next.config.mjs:L2 | neighbors=[next.config.mjs]
-- "offline_db_appdatabase_constructor": ".constructor()" | kind=code-symbol | source=lib/offline/db.js:L5 | neighbors=[AppDatabase]
-- "offline_db_appdatabase_getallerrorrecords": ".getAllErrorRecords()" | kind=code-symbol | source=lib/offline/db.js:L205 | neighbors=[AppDatabase]
-- "offline_db_appdatabase_insertoffline": ".insertOffline()" | kind=code-symbol | source=lib/offline/db.js:L47 | neighbors=[AppDatabase]
 
 ## Instructions
 

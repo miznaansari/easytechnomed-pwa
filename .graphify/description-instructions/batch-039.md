@@ -17,6 +17,10 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "runtime_edge_kr": "Kr()" | kind=code-symbol | source=scratch/generated-client/runtime/edge.js:L20 | neighbors=[edge.js, jc()]
+- "runtime_edge_la": "La()" | kind=code-symbol | source=scratch/generated-client/runtime/edge.js:L1 | neighbors=[edge.js, Sa()]
+- "runtime_edge_lc": "lc()" | kind=code-symbol | source=scratch/generated-client/runtime/edge.js:L6 | neighbors=[edge.js, ts()]
+- "runtime_edge_ma": "Ma()" | kind=code-symbol | source=scratch/generated-client/runtime/edge.js:L1 | neighbors=[edge.js, mr()]
 - "runtime_edge_mapqueryengineresult": "mapQueryEngineResult()" | kind=code-symbol | source=scratch/generated-client/runtime/edge.js:L20 | neighbors=[edge.js, unpack()]
 - "runtime_edge_na": "Na()" | kind=code-symbol | source=scratch/generated-client/runtime/edge.js:L1 | neighbors=[edge.js, Sa()]
 - "runtime_edge_ni": "ni()" | kind=code-symbol | source=scratch/generated-client/runtime/edge.js:L20 | neighbors=[edge.js, ks()]
@@ -53,10 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "runtime_index_browser_ae": "Ae()" | kind=code-symbol | source=scratch/generated-client/runtime/index-browser.js:L1 | neighbors=[index-browser.js, e()]
 - "runtime_index_browser_d_anynull": "AnyNull" | kind=code-symbol | source=scratch/generated-client/runtime/index-browser.d.ts:L1 | neighbors=[index-browser.d.ts, NullTypesEnumValue]
 - "runtime_index_browser_d_dbnull": "DbNull" | kind=code-symbol | source=scratch/generated-client/runtime/index-browser.d.ts:L16 | neighbors=[index-browser.d.ts, NullTypesEnumValue]
-- "runtime_index_browser_d_jsonnull": "JsonNull" | kind=code-symbol | source=scratch/generated-client/runtime/index-browser.d.ts:L298 | neighbors=[index-browser.d.ts, NullTypesEnumValue]
-- "runtime_index_browser_getname": "_getName()" | kind=code-symbol | source=scratch/generated-client/runtime/index-browser.js:L1 | neighbors=[index-browser.js, constructor()]
-- "runtime_index_browser_getnamespace": "_getNamespace()" | kind=code-symbol | source=scratch/generated-client/runtime/index-browser.js:L1 | neighbors=[index-browser.js, constructor()]
-- "runtime_index_browser_i": "i()" | kind=code-symbol | source=scratch/generated-client/runtime/index-browser.js:L1 | neighbors=[index-browser.js, be()]
 
 ## Instructions
 

@@ -17,6 +17,10 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "generated_client_index_d_workspacepdffinduniqueargs": "WorkspacePdfFindUniqueArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L33571 | neighbors=[index.d.ts]
+- "generated_client_index_d_workspacepdffinduniqueorthrowargs": "WorkspacePdfFindUniqueOrThrowArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L33589 | neighbors=[index.d.ts]
+- "generated_client_index_d_workspacepdfgetpayload": "WorkspacePdfGetPayload" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L33165 | neighbors=[index.d.ts]
+- "generated_client_index_d_workspacepdfgroupbyargs": "WorkspacePdfGroupByArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L32975 | neighbors=[index.d.ts]
 - "generated_client_index_d_workspacepdfgroupbyoutputtype": "WorkspacePdfGroupByOutputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L32989 | neighbors=[index.d.ts]
 - "generated_client_index_d_workspacepdfinclude": "WorkspacePdfInclude" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L33118 | neighbors=[index.d.ts]
 - "generated_client_index_d_workspacepdfmaxaggregateinputtype": "WorkspacePdfMaxAggregateInputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L32830 | neighbors=[index.d.ts]
@@ -53,10 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "generated_client_index_d_workspacepdfupsertargs": "WorkspacePdfUpsertArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L33811 | neighbors=[index.d.ts]
 - "generated_client_index_d_workspacepdfupsertwithoutworkspaceinput": "WorkspacePdfUpsertWithoutWorkspaceInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L46109 | neighbors=[index.d.ts]
 - "generated_client_index_d_workspacepdfwhereinput": "WorkspacePdfWhereInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L37094 | neighbors=[index.d.ts]
-- "generated_client_index_d_workspacepdfwhereuniqueinput": "WorkspacePdfWhereUniqueInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L37171 | neighbors=[index.d.ts]
-- "generated_client_index_d_workspacerelationfilter": "WorkspaceRelationFilter" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L42596 | neighbors=[index.d.ts]
-- "generated_client_index_d_workspacescalarfieldenum": "WorkspaceScalarFieldEnum" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L33903 | neighbors=[index.d.ts]
-- "generated_client_index_d_workspacescalarwherewithaggregatesinput": "WorkspaceScalarWhereWithAggregatesInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L34569 | neighbors=[index.d.ts]
 
 ## Instructions
 

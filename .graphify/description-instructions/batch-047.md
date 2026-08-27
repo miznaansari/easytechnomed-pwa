@@ -17,6 +17,10 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "runtime_wasm_parseiniterror": "parseInitError()" | kind=code-symbol | source=scratch/generated-client/runtime/wasm.js:L11 | neighbors=[wasm.js, loadEngine()]
+- "runtime_wasm_parserequesterror": "parseRequestError()" | kind=code-symbol | source=scratch/generated-client/runtime/wasm.js:L11 | neighbors=[wasm.js, request()]
+- "runtime_wasm_prometheus": "prometheus()" | kind=code-symbol | source=scratch/generated-client/runtime/wasm.js:L5 | neighbors=[wasm.js, metrics()]
+- "runtime_wasm_qa": "Qa()" | kind=code-symbol | source=scratch/generated-client/runtime/wasm.js:L14 | neighbors=[wasm.js, so()]
 - "runtime_wasm_qt": "qt()" | kind=code-symbol | source=scratch/generated-client/runtime/wasm.js:L1 | neighbors=[wasm.js, getExternalAdapterError()]
 - "runtime_wasm_random": "random()" | kind=code-symbol | source=scratch/generated-client/runtime/wasm.js:L1 | neighbors=[wasm.js, slice()]
 - "runtime_wasm_removefield": "removeField()" | kind=code-symbol | source=scratch/generated-client/runtime/wasm.js:L3 | neighbors=[wasm.js, _s()]
@@ -53,10 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "scratch_check_reg_22": "check-reg-22.js" | kind=code-symbol | source=scratch/check-reg-22.js:L1 | neighbors=[252e194 e, main()]
 - "scratch_test_calc_checkformuladependencies": "checkFormulaDependencies()" | kind=code-symbol | source=scratch/test-calc.js:L64 | neighbors=[test-calc.js, calculateAllDependents()]
 - "scratch_test_calc_evaluateexpression": "evaluateExpression()" | kind=code-symbol | source=scratch/test-calc.js:L21 | neighbors=[test-calc.js, calculateAllDependents()]
-- "scratch_test_calc_export_calculatedifferentialsummary": "calculateDifferentialSummary()" | kind=code-symbol | source=scratch/test-calc-export.js:L67 | neighbors=[test-calc-export.js, test-dlc-calc.js]
-- "scratch_test_db": "test-db.mjs" | kind=code-symbol | source=scratch/test-db.mjs:L1 | neighbors=[252e194 e, main()]
-- "scratch_test_report_security": "test-report-security.mjs" | kind=code-symbol | source=scratch/test-report-security.mjs:L1 | neighbors=[252e194 e, runSecurityTests()]
-- "scratch_test_sync_bootstrap": "test-sync-bootstrap.mjs" | kind=code-symbol | source=scratch/test-sync-bootstrap.mjs:L1 | neighbors=[7d8c494 fxed, verifyBackendEndpoints()]
 
 ## Instructions
 

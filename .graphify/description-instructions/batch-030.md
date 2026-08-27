@@ -17,6 +17,10 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "runtime_library_uploadschema": "uploadSchema()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L111 | neighbors=[library.js, handleError(), runInChildSpan()]
+- "runtime_library_vm": "vm()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L121 | neighbors=[library.js, Fe(), Ll()]
+- "runtime_library_vs": "Vs()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L26 | neighbors=[library.js, pn(), addErrorMessage()]
+- "runtime_library_wl": "wl()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L114 | neighbors=[library.js, pl(), toString()]
 - "runtime_library_ws": "ws()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L21 | neighbors=[library.js, addSuggestion(), hasField()]
 - "runtime_library_xa": "xa()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L31 | neighbors=[library.js, kd(), t()]
 - "runtime_library_xi": "xi()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L21 | neighbors=[library.js, sp(), t()]
@@ -53,10 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "runtime_react_native_jc": "jc()" | kind=code-symbol | source=scratch/generated-client/runtime/react-native.js:L12 | neighbors=[react-native.js, He(), xo()]
 - "runtime_react_native_jt": "Jt()" | kind=code-symbol | source=scratch/generated-client/runtime/react-native.js:L10 | neighbors=[react-native.js, constructor(), _o()]
 - "runtime_react_native_kc": "kc()" | kind=code-symbol | source=scratch/generated-client/runtime/react-native.js:L12 | neighbors=[react-native.js, He(), Qo()]
-- "runtime_react_native_kr": "Kr()" | kind=code-symbol | source=scratch/generated-client/runtime/react-native.js:L1 | neighbors=[react-native.js, ii(), Pa()]
-- "runtime_react_native_ks": "ks()" | kind=code-symbol | source=scratch/generated-client/runtime/react-native.js:L62 | neighbors=[react-native.js, Ms(), toString()]
-- "runtime_react_native_l": "l()" | kind=code-symbol | source=scratch/generated-client/runtime/react-native.js:L1 | neighbors=[react-native.js, a(), Yn()]
-- "runtime_react_native_ma": "Ma()" | kind=code-symbol | source=scratch/generated-client/runtime/react-native.js:L1 | neighbors=[react-native.js, slice(), xa()]
 
 ## Instructions
 

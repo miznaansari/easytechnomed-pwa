@@ -17,6 +17,10 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "generated_client_index_d_doctorwhereinput": "DoctorWhereInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L35336 | neighbors=[index.d.ts]
+- "generated_client_index_d_doctorwhereuniqueinput": "DoctorWhereUniqueInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L35379 | neighbors=[index.d.ts]
+- "generated_client_index_d_doctorworkspaceidcodecompounduniqueinput": "DoctorWorkspaceIdCodeCompoundUniqueInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L41260 | neighbors=[index.d.ts]
+- "generated_client_index_d_either": "__Either" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L827 | neighbors=[index.d.ts]
 - "generated_client_index_d_eitherloose": "EitherLoose" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L835 | neighbors=[index.d.ts]
 - "generated_client_index_d_eitherstrict": "EitherStrict" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L833 | neighbors=[index.d.ts]
 - "generated_client_index_d_enumerable": "Enumerable" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L746 | neighbors=[index.d.ts]
@@ -53,10 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "generated_client_index_d_gethavingfields": "GetHavingFields" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L975 | neighbors=[index.d.ts]
 - "generated_client_index_d_getinterpretationruleaggregatetype": "GetInterpretationRuleAggregateType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L30895 | neighbors=[index.d.ts]
 - "generated_client_index_d_getinterpretationrulegroupbypayload": "GetInterpretationRuleGroupByPayload" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L30936 | neighbors=[index.d.ts]
-- "generated_client_index_d_getleadaggregatetype": "GetLeadAggregateType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L23236 | neighbors=[index.d.ts]
-- "generated_client_index_d_getleadcontactaggregatetype": "GetLeadContactAggregateType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L26077 | neighbors=[index.d.ts]
-- "generated_client_index_d_getleadcontactgroupbypayload": "GetLeadContactGroupByPayload" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L26119 | neighbors=[index.d.ts]
-- "generated_client_index_d_getleadgroupbypayload": "GetLeadGroupByPayload" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L23273 | neighbors=[index.d.ts]
 
 ## Instructions
 

@@ -17,6 +17,10 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "runtime_library_d_primarykey": "PrimaryKey" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L685 | neighbors=[_d()]
+- "runtime_library_d_prismaclientinitializationerror": "PrismaClientInitializationError" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L2314 | neighbors=[_d()]
+- "runtime_library_d_prismaclientoptions": "PrismaClientOptions" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L2331 | neighbors=[_d()]
+- "runtime_library_d_prismaclientrustpanicerror": "PrismaClientRustPanicError" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L2388 | neighbors=[_d()]
 - "runtime_library_d_prismaclientvalidationerror": "PrismaClientValidationError" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L2401 | neighbors=[_d()]
 - "runtime_library_d_prismapromise": "PrismaPromise" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L2410 | neighbors=[_d()]
 - "runtime_library_d_prismapromise_2": "PrismaPromise_2" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L2419 | neighbors=[_d()]
@@ -53,10 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "runtime_library_d_renameandnestpayloadkeys": "RenameAndNestPayloadKeys" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L2655 | neighbors=[_d()]
 - "runtime_library_d_requestbatchoptions": "RequestBatchOptions" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L2659 | neighbors=[_d()]
 - "runtime_library_d_requesterror": "RequestError" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L2667 | neighbors=[_d()]
-- "runtime_library_d_requesthandler": "RequestHandler" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L2678 | neighbors=[_d()]
-- "runtime_library_d_requestoptions": "RequestOptions" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L2696 | neighbors=[_d()]
-- "runtime_library_d_requestoptions_2": "RequestOptions_2" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L2702 | neighbors=[_d()]
-- "runtime_library_d_requestparams": "RequestParams" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L2710 | neighbors=[_d()]
 
 ## Instructions
 

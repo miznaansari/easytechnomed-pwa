@@ -17,6 +17,10 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "generated_client_index_d_adminrolepermissioninclude": "AdminRolePermissionInclude" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L14001 | neighbors=[index.d.ts]
+- "generated_client_index_d_adminrolepermissionlistrelationfilter": "AdminRolePermissionListRelationFilter" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L41167 | neighbors=[index.d.ts]
+- "generated_client_index_d_adminrolepermissionmaxaggregateinputtype": "AdminRolePermissionMaxAggregateInputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L13863 | neighbors=[index.d.ts]
+- "generated_client_index_d_adminrolepermissionmaxaggregateoutputtype": "AdminRolePermissionMaxAggregateOutputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L13833 | neighbors=[index.d.ts]
 - "generated_client_index_d_adminrolepermissionmaxorderbyaggregateinput": "AdminRolePermissionMaxOrderByAggregateInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L41222 | neighbors=[index.d.ts]
 - "generated_client_index_d_adminrolepermissionminaggregateinputtype": "AdminRolePermissionMinAggregateInputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L13857 | neighbors=[index.d.ts]
 - "generated_client_index_d_adminrolepermissionminaggregateoutputtype": "AdminRolePermissionMinAggregateOutputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L13827 | neighbors=[index.d.ts]
@@ -53,10 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "generated_client_index_d_adminrolepermissionupsertargs": "AdminRolePermissionUpsertArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L14634 | neighbors=[index.d.ts]
 - "generated_client_index_d_adminrolepermissionupsertwithwhereuniquewithoutroleinput": "AdminRolePermissionUpsertWithWhereUniqueWithoutRoleInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L47479 | neighbors=[index.d.ts]
 - "generated_client_index_d_adminrolepermissionwhereinput": "AdminRolePermissionWhereInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L35288 | neighbors=[index.d.ts]
-- "generated_client_index_d_adminrolepermissionwhereuniqueinput": "AdminRolePermissionWhereUniqueInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L35305 | neighbors=[index.d.ts]
-- "generated_client_index_d_adminrolerelationfilter": "AdminRoleRelationFilter" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L40995 | neighbors=[index.d.ts]
-- "generated_client_index_d_adminrolescalarfieldenum": "AdminRoleScalarFieldEnum" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L34034 | neighbors=[index.d.ts]
-- "generated_client_index_d_adminrolescalarwherewithaggregatesinput": "AdminRoleScalarWhereWithAggregatesInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L35278 | neighbors=[index.d.ts]
 
 ## Instructions
 

@@ -17,6 +17,10 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "generated_client_index_d_stringnullablewithaggregatesfilter": "StringNullableWithAggregatesFilter" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L40748 | neighbors=[index.d.ts]
+- "generated_client_index_d_stringwithaggregatesfilter": "StringWithAggregatesFilter" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L40581 | neighbors=[index.d.ts]
+- "generated_client_index_d_subset": "Subset" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L762 | neighbors=[index.d.ts]
+- "generated_client_index_d_subsetintersection": "SubsetIntersection" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L784 | neighbors=[index.d.ts]
 - "generated_client_index_d_superadmin": "SuperAdmin" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L25 | neighbors=[index.d.ts]
 - "generated_client_index_d_superadmin_sessionsargs": "SuperAdmin$sessionsArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L5819 | neighbors=[index.d.ts]
 - "generated_client_index_d_superadmin_trackingsargs": "SuperAdmin$trackingsArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L5839 | neighbors=[index.d.ts]
@@ -53,10 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "generated_client_index_d_superadminfindfirstargs": "SuperAdminFindFirstArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L5561 | neighbors=[index.d.ts]
 - "generated_client_index_d_superadminfindfirstorthrowargs": "SuperAdminFindFirstOrThrowArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L5609 | neighbors=[index.d.ts]
 - "generated_client_index_d_superadminfindmanyargs": "SuperAdminFindManyArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L5657 | neighbors=[index.d.ts]
-- "generated_client_index_d_superadminfinduniqueargs": "SuperAdminFindUniqueArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L5525 | neighbors=[index.d.ts]
-- "generated_client_index_d_superadminfinduniqueorthrowargs": "SuperAdminFindUniqueOrThrowArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L5543 | neighbors=[index.d.ts]
-- "generated_client_index_d_superadmingetpayload": "SuperAdminGetPayload" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L5145 | neighbors=[index.d.ts]
-- "generated_client_index_d_superadmingroupbyargs": "SuperAdminGroupByArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L5058 | neighbors=[index.d.ts]
 
 ## Instructions
 

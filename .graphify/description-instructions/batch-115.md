@@ -17,6 +17,10 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "generated_client_index_d_usersessionfinduniqueorthrowargs": "UserSessionFindUniqueOrThrowArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L8559 | neighbors=[index.d.ts]
+- "generated_client_index_d_usersessiongetpayload": "UserSessionGetPayload" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L8161 | neighbors=[index.d.ts]
+- "generated_client_index_d_usersessiongroupbyargs": "UserSessionGroupByArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L8075 | neighbors=[index.d.ts]
+- "generated_client_index_d_usersessiongroupbyoutputtype": "UserSessionGroupByOutputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L8089 | neighbors=[index.d.ts]
 - "generated_client_index_d_usersessioninclude": "UserSessionInclude" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L8140 | neighbors=[index.d.ts]
 - "generated_client_index_d_usersessionlistrelationfilter": "UserSessionListRelationFilter" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L40786 | neighbors=[index.d.ts]
 - "generated_client_index_d_usersessionmaxaggregateinputtype": "UserSessionMaxAggregateInputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L7982 | neighbors=[index.d.ts]
@@ -53,10 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "generated_client_index_d_usersessionupdatemanywithwherewithoutuserinput": "UserSessionUpdateManyWithWhereWithoutUserInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L46535 | neighbors=[index.d.ts]
 - "generated_client_index_d_usersessionupdatewithoutuserinput": "UserSessionUpdateWithoutUserInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L52704 | neighbors=[index.d.ts]
 - "generated_client_index_d_usersessionupdatewithwhereuniquewithoutuserinput": "UserSessionUpdateWithWhereUniqueWithoutUserInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L46530 | neighbors=[index.d.ts]
-- "generated_client_index_d_usersessionupsertargs": "UserSessionUpsertArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L8781 | neighbors=[index.d.ts]
-- "generated_client_index_d_usersessionupsertwithwhereuniquewithoutuserinput": "UserSessionUpsertWithWhereUniqueWithoutUserInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L46524 | neighbors=[index.d.ts]
-- "generated_client_index_d_usersessionwhereinput": "UserSessionWhereInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L34839 | neighbors=[index.d.ts]
-- "generated_client_index_d_usersessionwhereuniqueinput": "UserSessionWhereUniqueInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L34864 | neighbors=[index.d.ts]
 
 ## Instructions
 

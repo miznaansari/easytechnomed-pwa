@@ -17,6 +17,10 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "generated_client_index_d_registrationtestcountargs": "RegistrationTestCountArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L18889 | neighbors=[index.d.ts]
+- "generated_client_index_d_registrationtestcountorderbyaggregateinput": "RegistrationTestCountOrderByAggregateInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L41732 | neighbors=[index.d.ts]
+- "generated_client_index_d_registrationtestcreateargs": "RegistrationTestCreateArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L19449 | neighbors=[index.d.ts]
+- "generated_client_index_d_registrationtestcreateinput": "RegistrationTestCreateInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L38792 | neighbors=[index.d.ts]
 - "generated_client_index_d_registrationtestcreatemanyargs": "RegistrationTestCreateManyArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L19467 | neighbors=[index.d.ts]
 - "generated_client_index_d_registrationtestcreatemanyinput": "RegistrationTestCreateManyInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L38856 | neighbors=[index.d.ts]
 - "generated_client_index_d_registrationtestcreatemanyregistrationinput": "RegistrationTestCreateManyRegistrationInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L53831 | neighbors=[index.d.ts]
@@ -53,10 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "generated_client_index_d_registrationtestorderbyrelationaggregateinput": "RegistrationTestOrderByRelationAggregateInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L41363 | neighbors=[index.d.ts]
 - "generated_client_index_d_registrationtestorderbywithaggregationinput": "RegistrationTestOrderByWithAggregationInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L35908 | neighbors=[index.d.ts]
 - "generated_client_index_d_registrationtestorderbywithrelationinput": "RegistrationTestOrderByWithRelationInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L35868 | neighbors=[index.d.ts]
-- "generated_client_index_d_registrationtestpayload": "$RegistrationTestPayload" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L18863 | neighbors=[index.d.ts]
-- "generated_client_index_d_registrationtestregistrationidtestidcompounduniqueinput": "RegistrationTestRegistrationIdTestIdCompoundUniqueInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L41727 | neighbors=[index.d.ts]
-- "generated_client_index_d_registrationtestscalarfieldenum": "RegistrationTestScalarFieldEnum" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L34154 | neighbors=[index.d.ts]
-- "generated_client_index_d_registrationtestscalarwhereinput": "RegistrationTestScalarWhereInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L48186 | neighbors=[index.d.ts]
 
 ## Instructions
 

@@ -17,6 +17,10 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "generated_client_index_d_userrolepermissionuncheckedupdateinput": "UserRolePermissionUncheckedUpdateInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L37807 | neighbors=[index.d.ts]
+- "generated_client_index_d_userrolepermissionuncheckedupdatemanyinput": "UserRolePermissionUncheckedUpdateManyInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L37823 | neighbors=[index.d.ts]
+- "generated_client_index_d_userrolepermissionuncheckedupdatemanywithoutroleinput": "UserRolePermissionUncheckedUpdateManyWithoutRoleInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L52821 | neighbors=[index.d.ts]
+- "generated_client_index_d_userrolepermissionuncheckedupdatemanywithoutrolenestedinput": "UserRolePermissionUncheckedUpdateManyWithoutRoleNestedInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L43437 | neighbors=[index.d.ts]
 - "generated_client_index_d_userrolepermissionuncheckedupdatewithoutroleinput": "UserRolePermissionUncheckedUpdateWithoutRoleInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L52816 | neighbors=[index.d.ts]
 - "generated_client_index_d_userrolepermissionupdateargs": "UserRolePermissionUpdateArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L10566 | neighbors=[index.d.ts]
 - "generated_client_index_d_userrolepermissionupdateinput": "UserRolePermissionUpdateInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L37802 | neighbors=[index.d.ts]
@@ -53,10 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "generated_client_index_d_userroleupdateonerequiredwithoutusersnestedinput": "UserRoleUpdateOneRequiredWithoutUsersNestedInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L43299 | neighbors=[index.d.ts]
 - "generated_client_index_d_userroleupdatetoonewithwherewithoutpermissionsinput": "UserRoleUpdateToOneWithWhereWithoutPermissionsInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L46778 | neighbors=[index.d.ts]
 - "generated_client_index_d_userroleupdatetoonewithwherewithoutusersinput": "UserRoleUpdateToOneWithWhereWithoutUsersInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L46456 | neighbors=[index.d.ts]
-- "generated_client_index_d_userroleupdatewithoutpermissionsinput": "UserRoleUpdateWithoutPermissionsInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L46783 | neighbors=[index.d.ts]
-- "generated_client_index_d_userroleupdatewithoutusersinput": "UserRoleUpdateWithoutUsersInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L46461 | neighbors=[index.d.ts]
-- "generated_client_index_d_userroleupsertargs": "UserRoleUpsertArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L9667 | neighbors=[index.d.ts]
-- "generated_client_index_d_userroleupsertwithoutpermissionsinput": "UserRoleUpsertWithoutPermissionsInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L46772 | neighbors=[index.d.ts]
 
 ## Instructions
 

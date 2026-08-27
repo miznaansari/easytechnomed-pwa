@@ -1,25 +1,24 @@
 # Graph Report - .  (2026-08-27)
 
 ## Corpus Check
-- 209 files · ~404,742 words
-- Verdict: corpus is large enough that graph structure adds value.
+- Large corpus: 366 files · ~542,007 words. Semantic extraction will be expensive (many Claude tokens). Consider running on a subfolder, or use --no-semantic to run AST-only.
 
 ## Summary
-- 5902 nodes · 8914 edges · 129 communities detected
+- 5906 nodes · 8924 edges · 127 communities detected
 - Extraction: 100% EXTRACTED · 0% INFERRED · 0% AMBIGUOUS
 - Token cost: 0 input · 0 output
-- Edge kinds: contains: 5619 · calls: 2688 · MODIFIES: 352 · ON_BRANCH: 71 · PARENT_OF: 70 · imports: 39 · imports_from: 31 · method: 29 · inherits: 13 · implements: 2
+- Edge kinds: contains: 5619 · calls: 2688 · MODIFIES: 354 · ON_BRANCH: 75 · PARENT_OF: 74 · imports: 39 · imports_from: 31 · method: 29 · inherits: 13 · implements: 2
 
 
 ## Input Scope
 - Requested: auto
 - Resolved: committed (source: default-auto)
-- Included files: 209 · Candidates: 228
-- Excluded: 206 untracked · 120530 ignored · 0 sensitive · 0 missing committed
+- Included files: 366 · Candidates: 590
+- Excluded: 0 untracked · 120668 ignored · 0 sensitive · 0 missing committed
 - Recommendation: Use --scope all or graphify.yaml inputs.corpus for a knowledge-base folder.
 
 ## Graph Freshness
-- Built from Git commit: `98ad5ca`
+- Built from Git commit: `c5cbecd`
 - Compare this hash to `git rev-parse HEAD` before trusting freshness-sensitive graph output.
 ## God Nodes (most connected - your core abstractions)
 1. `_d()` - 334 edges
@@ -53,11 +52,11 @@ Nodes (52): Aa(), ai(), Ao(), ap(), As(), bs(), Ca(), co() (+44 more)
 
 ### Community 3 - "Community 3"
 Cohesion: 0.02
-Nodes (19): GET(), serializeData(), 252e194 e, theme, GET(), serializeData(), eslintConfig, config (+11 more)
+Nodes (56): Au(), Bl(), bs(), cm(), Cn(), constructor(), ct(), Dl() (+48 more)
 
 ### Community 4 - "Community 4"
 Cohesion: 0.02
-Nodes (56): Au(), Bl(), bs(), cm(), Cn(), constructor(), ct(), Dl() (+48 more)
+Nodes (20): GET(), serializeData(), 252e194 e, GET(), serializeData(), eslintConfig, config, fs (+12 more)
 
 ### Community 5 - "Community 5"
 Cohesion: 0.02
@@ -73,11 +72,11 @@ Nodes (50): al(), Ar(), at(), bo(), Ce(), constructor(), createEngineSpan(), emi
 
 ### Community 8 - "Community 8"
 Cohesion: 0.05
-Nodes (54): main, 026962b 1.1.33, 05ff307 2.0.3, 0afb0ac 2.0.19, 1064f6b 2.0.10, 2291b5b 2.0.2, 2476fb6 2.0.9, 2ef3785 2.0.1 (+46 more)
+Nodes (29): 05ff307 2.0.3, 2b2534c f, 532b740 fixed, 53ca5c1 stable version 1, 56f4d63 f, 6fcf015 f, 7d8c494 fxed, 84807f4 1.1.27 (+21 more)
 
 ### Community 9 - "Community 9"
 Cohesion: 0.05
-Nodes (27): 2b2534c f, 56f4d63 f, 6fcf015 f, 7d8c494 fxed, 98ad5ca 2.0.24, 9f59247 expire token, cc4c427 1.1.26, d446d11 fixed code (+19 more)
+Nodes (57): main, 026962b 1.1.33, 0afb0ac 2.0.19, 14ed805 3.0.0, 14fa292 f, 1ba5187 2.0.17, 2476fb6 2.0.9, 2ef3785 2.0.1 (+49 more)
 
 ### Community 10 - "Community 10"
 Cohesion: 0.06
@@ -117,27 +116,27 @@ Nodes (35): aa(), ad(), addItem(), Am(), Br(), ed(), findField(), getArgumentNam
 
 ### Community 19 - "Community 19"
 Cohesion: 0.08
-Nodes (18): DEFAULT_OFFLINE_ADMIN, getCachedSession(), getOrCreateOfflineSession(), isLocalSessionValid(), saveAuthenticatedSession(), 1ba5187 2.0.17, 37ee548 f, 9e25c19 f (+10 more)
-
-### Community 20 - "Community 20"
-Cohesion: 0.08
 Nodes (34): addItem(), alloc(), allocUnsafe(), allocUnsafeSlow(), ao(), Bt(), byteLength(), construct() (+26 more)
 
-### Community 21 - "Community 21"
+### Community 20 - "Community 20"
 Cohesion: 0.07
 Nodes (34): _a(), ai(), as(), bi(), da(), ea(), enabled(), et() (+26 more)
 
-### Community 22 - "Community 22"
+### Community 21 - "Community 21"
 Cohesion: 0.09
 Nodes (33): append(), bl(), cl(), Dt(), e(), empty(), Er(), gn() (+25 more)
 
-### Community 23 - "Community 23"
+### Community 22 - "Community 22"
 Cohesion: 0.09
 Nodes (31): addMarginSymbol(), afterNextNewline(), $c(), Dr(), fi(), getCurrentLineLength(), gi(), handleRequestError() (+23 more)
 
-### Community 24 - "Community 24"
+### Community 23 - "Community 23"
 Cohesion: 0.09
 Nodes (31): addMarginSymbol(), afterNextNewline(), ea(), getCurrentLineLength(), hi(), hl(), indent(), indentedCurrentLine() (+23 more)
+
+### Community 24 - "Community 24"
+Cohesion: 0.09
+Nodes (12): 1064f6b 2.0.10, 2291b5b 2.0.2, aae6bad fixed, cf2bb98 new, isOutOfRange(), isQualitativeAbnormal(), isOutOfRange(), isQualitativeAbnormal() (+4 more)
 
 ### Community 25 - "Community 25"
 Cohesion: 0.08
@@ -214,136 +213,136 @@ Cohesion: 0.13
 Nodes (23): Al(), append(), Bt(), e(), empty(), fromContent(), gr(), ho() (+15 more)
 
 ### Community 38 - "Community 38"
-Cohesion: 0.14
-Nodes (22): Aa(), Ca(), Da(), de(), di(), fi(), ja(), ka() (+14 more)
+Cohesion: 0.11
+Nodes (12): DEFAULT_OFFLINE_ADMIN, getCachedSession(), getOrCreateOfflineSession(), isLocalSessionValid(), saveAuthenticatedSession(), 4d7570f fixed, 5ff2734 2.0.11, metadata (+4 more)
 
 ### Community 39 - "Community 39"
-Cohesion: 0.14
-Nodes (22): Fu(), ii(), In(), ju(), li(), Lo(), loadLibrary(), Lu() (+14 more)
+Cohesion: 0.11
+Nodes (9): 5e3d9ef d, theme, requireAdmin(), requireSuperAdmin(), requireUser(), verifySuperAdminAPI(), verifyToken(), config (+1 more)
 
 ### Community 40 - "Community 40"
 Cohesion: 0.14
-Nodes (22): ae(), append(), cn(), compare(), D(), dt(), e(), empty() (+14 more)
+Nodes (22): Aa(), Ca(), Da(), de(), di(), fi(), ja(), ka() (+14 more)
 
 ### Community 41 - "Community 41"
+Cohesion: 0.14
+Nodes (22): Fu(), ii(), In(), ju(), li(), Lo(), loadLibrary(), Lu() (+14 more)
+
+### Community 42 - "Community 42"
+Cohesion: 0.14
+Nodes (22): ae(), append(), cn(), compare(), D(), dt(), e(), empty() (+14 more)
+
+### Community 43 - "Community 43"
 Cohesion: 0.11
 Nodes (21): bs(), build(), buildCaptureSettings(), createEngineSpan(), emit(), forEach(), getActiveContext(), getGlobalTracingHelper() (+13 more)
 
-### Community 42 - "Community 42"
+### Community 44 - "Community 44"
 Cohesion: 0.13
 Nodes (21): buildQueryError(), consumeError(), fd(), Ft(), getExternalAdapterError(), handleAndLogRequestError(), hm(), json() (+13 more)
 
-### Community 43 - "Community 43"
+### Community 45 - "Community 45"
 Cohesion: 0.15
 Nodes (21): An(), ba(), Ea(), ha(), highlight(), Hr(), ii(), io() (+13 more)
 
-### Community 44 - "Community 44"
+### Community 46 - "Community 46"
 Cohesion: 0.11
 Nodes (20): dc(), Do(), ft(), he(), ic(), ko(), nc(), oc() (+12 more)
 
-### Community 45 - "Community 45"
+### Community 47 - "Community 47"
 Cohesion: 0.14
 Nodes (20): fo(), getPrintWidth(), h(), He(), Il(), ke(), kt(), mapQueryEngineResult() (+12 more)
 
-### Community 46 - "Community 46"
+### Community 48 - "Community 48"
 Cohesion: 0.15
 Nodes (20): addMarginSymbol(), afterNextNewline(), au(), ci(), getCurrentLineLength(), indent(), indentedCurrentLine(), newLine() (+12 more)
 
-### Community 47 - "Community 47"
+### Community 49 - "Community 49"
 Cohesion: 0.16
 Nodes (19): addMarginSymbol(), afterNextNewline(), bi(), Ei(), getCurrentLineLength(), indent(), indentedCurrentLine(), newLine() (+11 more)
 
-### Community 48 - "Community 48"
+### Community 50 - "Community 50"
 Cohesion: 0.12
 Nodes (19): build(), buildCaptureSettings(), createEngineSpan(), emit(), forEach(), getActiveContext(), getGlobalTracingHelper(), getTraceParent() (+11 more)
 
-### Community 49 - "Community 49"
+### Community 51 - "Community 51"
 Cohesion: 0.23
 Nodes (19): findField(), getArgumentName(), getArgumentPath(), getComputedFields(), getOutputTypeDescription(), getSelectionPath(), Gu(), In() (+11 more)
 
-### Community 50 - "Community 50"
+### Community 52 - "Community 52"
 Cohesion: 0.12
 Nodes (18): AnyNull, Args, Config, Constructor, DbNull, Decimal, Exact, GetRuntimeOutput (+10 more)
 
-### Community 51 - "Community 51"
+### Community 53 - "Community 53"
 Cohesion: 0.12
 Nodes (18): ac(), cc(), highlight(), hp(), is(), ln(), ns(), pc() (+10 more)
 
-### Community 52 - "Community 52"
+### Community 54 - "Community 54"
 Cohesion: 0.17
 Nodes (17): Ee(), Es(), fc(), gc(), getAllClientExtensions(), getAllComputedFields(), getAllModelExtensions(), getOrCreate() (+9 more)
 
-### Community 53 - "Community 53"
+### Community 55 - "Community 55"
 Cohesion: 0.14
 Nodes (16): build(), buildCaptureSettings(), createEngineSpan(), fm(), forEach(), getActiveContext(), getGlobalTracingHelper(), getTraceParent() (+8 more)
 
-### Community 54 - "Community 54"
+### Community 56 - "Community 56"
 Cohesion: 0.13
 Nodes (15): addItem(), de(), Dl(), Gc(), getLocation(), _getName(), He(), jc() (+7 more)
 
-### Community 55 - "Community 55"
+### Community 57 - "Community 57"
 Cohesion: 0.21
 Nodes (8): generateReportPdfOffline(), isOutOfRange(), isQualitativeAbnormal(), layoutMarkdownLines(), parseMarkdownTokens(), formatDate(), numberToWords(), printBillOffline()
 
-### Community 56 - "Community 56"
+### Community 58 - "Community 58"
 Cohesion: 0.14
 Nodes (14): dp(), Fe(), getGlobalOmit(), _l(), Ll(), mapQueryEngineResult(), pp(), removeAllFields() (+6 more)
 
-### Community 57 - "Community 57"
+### Community 59 - "Community 59"
 Cohesion: 0.20
 Nodes (14): buildQueryError(), consumeError(), getExternalAdapterError(), ja(), json(), metrics(), parseEngineResponse(), parseRequestError() (+6 more)
 
-### Community 58 - "Community 58"
-Cohesion: 0.17
-Nodes (8): 14fa292 f, 48cc7ec 2.0.22, f4e1e65 2.0.21, metadata, CustomerLoginPage(), isLikelyMobile(), loginSchema, metadata
-
-### Community 59 - "Community 59"
+### Community 60 - "Community 60"
 Cohesion: 0.19
 Nodes (13): ap(), cp(), He(), K(), nc(), nn(), Qo(), ri() (+5 more)
 
-### Community 60 - "Community 60"
+### Community 61 - "Community 61"
 Cohesion: 0.21
 Nodes (13): Dn(), ha(), handleRequestError(), Ja(), kn(), On(), Ot(), qa() (+5 more)
 
-### Community 61 - "Community 61"
+### Community 62 - "Community 62"
 Cohesion: 0.15
 Nodes (13): at(), Fe(), Fs(), getGlobalOmit(), ks(), lt(), Ms(), np() (+5 more)
 
-### Community 62 - "Community 62"
+### Community 63 - "Community 63"
 Cohesion: 0.17
 Nodes (4): runFormulaEngine(), prisma, prisma, prisma
 
-### Community 63 - "Community 63"
+### Community 64 - "Community 64"
 Cohesion: 0.18
 Nodes (12): cp(), emit(), gt(), handleAndLogRequestError(), handleRequestError(), pp(), renderAllMessages(), Rr() (+4 more)
 
-### Community 64 - "Community 64"
+### Community 65 - "Community 65"
 Cohesion: 0.27
 Nodes (1): SyncManager
 
-### Community 65 - "Community 65"
+### Community 66 - "Community 66"
 Cohesion: 0.24
 Nodes (1): AppDatabase
 
-### Community 66 - "Community 66"
+### Community 67 - "Community 67"
 Cohesion: 0.20
 Nodes (10): ci(), handleRequestError(), Ht(), oi(), Pa(), renderAllMessages(), sanitizeMessage(), va() (+2 more)
 
-### Community 67 - "Community 67"
+### Community 68 - "Community 68"
 Cohesion: 0.20
 Nodes (6): evaluatedFormulas, formulas, res, typedValues, userParams, valuesMap
 
-### Community 68 - "Community 68"
+### Community 69 - "Community 69"
 Cohesion: 0.22
 Nodes (9): getGlobalOmit(), Hs(), qt(), rt(), shouldApplyGlobalOmit(), ts(), uc(), xe() (+1 more)
 
-### Community 69 - "Community 69"
+### Community 70 - "Community 70"
 Cohesion: 0.28
 Nodes (8): calculateAllDependents(), checkFormulaDependencies(), evaluateExpression(), initialValues, overrides, result, STANDARD_CODE_FALLBACKS, tests
-
-### Community 70 - "Community 70"
-Cohesion: 0.39
-Nodes (5): requireAdmin(), requireSuperAdmin(), requireUser(), verifySuperAdminAPI(), verifyToken()
 
 ### Community 71 - "Community 71"
 Cohesion: 0.39
@@ -501,15 +500,15 @@ Nodes (2): GET(), serializeRegistration()
 
 ### Community 109 - "Community 109"
 Cohesion: 0.50
-Nodes (2): config, JWT_SECRET
-
-### Community 110 - "Community 110"
-Cohesion: 0.50
 Nodes (4): ErrorWithBatchIndex, NotFoundError, PrismaClientKnownRequestError, PrismaClientUnknownRequestError
 
-### Community 111 - "Community 111"
+### Community 110 - "Community 110"
 Cohesion: 0.67
 Nodes (2): GET(), serializeData()
+
+### Community 111 - "Community 111"
+Cohesion: 0.50
+Nodes (2): prisma, { PrismaClient }
 
 ### Community 112 - "Community 112"
 Cohesion: 0.50
@@ -561,42 +560,34 @@ Nodes (2): prisma, { PrismaClient }
 
 ### Community 124 - "Community 124"
 Cohesion: 0.50
-Nodes (2): prisma, { PrismaClient }
+Nodes (2): sampleReg, url
 
 ### Community 125 - "Community 125"
 Cohesion: 0.50
-Nodes (2): sampleReg, url
-
-### Community 126 - "Community 126"
-Cohesion: 0.50
 Nodes (2): prisma, { PrismaClient }
 
-### Community 128 - "Community 128"
-Cohesion: 1.00
-Nodes (2): callGemini(), POST()
-
-### Community 129 - "Community 129"
+### Community 126 - "Community 126"
 Cohesion: 1.00
 Nodes (2): formatDate(), GET()
 
-### Community 130 - "Community 130"
+### Community 127 - "Community 127"
 Cohesion: 1.00
 Nodes (2): POST(), PUT()
 
-### Community 131 - "Community 131"
+### Community 128 - "Community 128"
 Cohesion: 1.00
 Nodes (2): GET(), processTestParameters()
 
-### Community 132 - "Community 132"
+### Community 129 - "Community 129"
 Cohesion: 1.00
 Nodes (2): callGeminiModels(), POST()
 
 ## Knowledge Gaps
 - **3368 isolated node(s):** `filter`, `indianStatesMap`, `indianCities`, `COMMON_LAB_UNITS`, `DLC_DEFINITIONS` (+3363 more)
   These have ≤1 connection - possible missing edges or undocumented components.
-- **Thin community `Community 64`** (1 nodes): `SyncManager`
+- **Thin community `Community 65`** (1 nodes): `SyncManager`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 65`** (1 nodes): `AppDatabase`
+- **Thin community `Community 66`** (1 nodes): `AppDatabase`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
 - **Thin community `Community 72`** (1 nodes): `NetworkMonitor`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
@@ -614,9 +605,9 @@ Nodes (2): callGeminiModels(), POST()
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
 - **Thin community `Community 108`** (2 nodes): `GET()`, `serializeRegistration()`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 109`** (2 nodes): `config`, `JWT_SECRET`
+- **Thin community `Community 110`** (2 nodes): `GET()`, `serializeData()`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 111`** (2 nodes): `GET()`, `serializeData()`
+- **Thin community `Community 111`** (2 nodes): `prisma`, `{ PrismaClient }`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
 - **Thin community `Community 112`** (2 nodes): `prisma`, `{ PrismaClient }`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
@@ -642,31 +633,27 @@ Nodes (2): callGeminiModels(), POST()
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
 - **Thin community `Community 123`** (2 nodes): `prisma`, `{ PrismaClient }`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 124`** (2 nodes): `prisma`, `{ PrismaClient }`
+- **Thin community `Community 124`** (2 nodes): `sampleReg`, `url`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 125`** (2 nodes): `sampleReg`, `url`
+- **Thin community `Community 125`** (2 nodes): `prisma`, `{ PrismaClient }`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 126`** (2 nodes): `prisma`, `{ PrismaClient }`
+- **Thin community `Community 126`** (2 nodes): `formatDate()`, `GET()`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 128`** (2 nodes): `callGemini()`, `POST()`
+- **Thin community `Community 127`** (2 nodes): `POST()`, `PUT()`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 129`** (2 nodes): `formatDate()`, `GET()`
+- **Thin community `Community 128`** (2 nodes): `GET()`, `processTestParameters()`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 130`** (2 nodes): `POST()`, `PUT()`
-  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 131`** (2 nodes): `GET()`, `processTestParameters()`
-  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 132`** (2 nodes): `callGeminiModels()`, `POST()`
+- **Thin community `Community 129`** (2 nodes): `callGeminiModels()`, `POST()`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
-- **Why does `_d()` connect `Community 1` to `Community 3`, `Community 4`, `Community 101`, `Community 102`, `Community 110`?**
+- **Why does `_d()` connect `Community 1` to `Community 4`, `Community 3`, `Community 101`, `Community 102`, `Community 109`?**
   _High betweenness centrality (0.110) - this node is a cross-community bridge._
-- **Why does `SyncManager` connect `Community 64` to `Community 9`?**
+- **Why does `SyncManager` connect `Community 65` to `Community 8`?**
   _High betweenness centrality (0.004) - this node is a cross-community bridge._
-- **Why does `AppDatabase` connect `Community 65` to `Community 9`?**
+- **Why does `AppDatabase` connect `Community 66` to `Community 8`?**
   _High betweenness centrality (0.003) - this node is a cross-community bridge._
 - **What connects `filter`, `indianStatesMap`, `indianCities` to the rest of the system?**
   _3368 weakly-connected nodes found - possible documentation gaps or missing edges._

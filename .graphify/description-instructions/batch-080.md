@@ -17,6 +17,10 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "generated_client_index_d_parameterupdatemanywithwherewithoutworkspaceinput": "ParameterUpdateManyWithWhereWithoutWorkspaceInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L45959 | neighbors=[index.d.ts]
+- "generated_client_index_d_parameterupdateonerequiredwithoutinterpretationrulesnestedinput": "ParameterUpdateOneRequiredWithoutInterpretationRulesNestedInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L44795 | neighbors=[index.d.ts]
+- "generated_client_index_d_parameterupdateonerequiredwithouttestformulasnestedinput": "ParameterUpdateOneRequiredWithoutTestFormulasNestedInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L44751 | neighbors=[index.d.ts]
+- "generated_client_index_d_parameterupdateonerequiredwithouttestmappingsnestedinput": "ParameterUpdateOneRequiredWithoutTestMappingsNestedInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L44555 | neighbors=[index.d.ts]
 - "generated_client_index_d_parameterupdatetoonewithwherewithoutinterpretationrulesinput": "ParameterUpdateToOneWithWhereWithoutInterpretationRulesInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L51496 | neighbors=[index.d.ts]
 - "generated_client_index_d_parameterupdatetoonewithwherewithouttestformulasinput": "ParameterUpdateToOneWithWhereWithoutTestFormulasInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L51102 | neighbors=[index.d.ts]
 - "generated_client_index_d_parameterupdatetoonewithwherewithouttestmappingsinput": "ParameterUpdateToOneWithWhereWithoutTestMappingsInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L49753 | neighbors=[index.d.ts]
@@ -53,10 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "generated_client_index_d_patientresultcreatemanytestparameterinput": "PatientResultCreateManyTestParameterInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L54124 | neighbors=[index.d.ts]
 - "generated_client_index_d_patientresultcreatemanytestparameterinputenvelope": "PatientResultCreateManyTestParameterInputEnvelope" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L49532 | neighbors=[index.d.ts]
 - "generated_client_index_d_patientresultcreatenestedmanywithoutregistrationinput": "PatientResultCreateNestedManyWithoutRegistrationInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L44123 | neighbors=[index.d.ts]
-- "generated_client_index_d_patientresultcreatenestedmanywithouttestparameterinput": "PatientResultCreateNestedManyWithoutTestParameterInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L44505 | neighbors=[index.d.ts]
-- "generated_client_index_d_patientresultcreateorconnectwithoutregistrationinput": "PatientResultCreateOrConnectWithoutRegistrationInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L48324 | neighbors=[index.d.ts]
-- "generated_client_index_d_patientresultcreateorconnectwithouttestparameterinput": "PatientResultCreateOrConnectWithoutTestParameterInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L49527 | neighbors=[index.d.ts]
-- "generated_client_index_d_patientresultcreatewithoutregistrationinput": "PatientResultCreateWithoutRegistrationInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L48305 | neighbors=[index.d.ts]
 
 ## Instructions
 

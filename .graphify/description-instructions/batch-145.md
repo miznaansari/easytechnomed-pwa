@@ -17,6 +17,10 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "scratch_test_db_main": "main()" | kind=code-symbol | source=scratch/test-db.mjs:L3 | neighbors=[test-db.mjs]
+- "scratch_test_dlc_calc_calculatedifferentialsummary": "{ calculateDifferentialSummary }" | kind=code-symbol | source=scratch/test-dlc-calc.js:L1 | neighbors=[test-dlc-calc.js]
+- "scratch_test_dlc_calc_params": "params" | kind=code-symbol | source=scratch/test-dlc-calc.js:L4 | neighbors=[test-dlc-calc.js]
+- "scratch_test_dlc_calc_values1": "values1" | kind=code-symbol | source=scratch/test-dlc-calc.js:L19 | neighbors=[test-dlc-calc.js]
 - "scratch_test_dlc_calc_values2": "values2" | kind=code-symbol | source=scratch/test-dlc-calc.js:L32 | neighbors=[test-dlc-calc.js]
 - "scratch_test_fix_reg_17_main": "main()" | kind=code-symbol | source=scratch/test-fix-reg-17.js:L6 | neighbors=[test-fix-reg-17.js]
 - "scratch_test_fix_reg_17_prisma": "prisma" | kind=code-symbol | source=scratch/test-fix-reg-17.js:L4 | neighbors=[test-fix-reg-17.js]
@@ -53,10 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "scratch_test_report_security_runsecuritytests": "runSecurityTests()" | kind=code-symbol | source=scratch/test-report-security.mjs:L3 | neighbors=[test-report-security.mjs]
 - "scratch_test_sync_bootstrap_verifybackendendpoints": "verifyBackendEndpoints()" | kind=code-symbol | source=scratch/test-sync-bootstrap.mjs:L3 | neighbors=[test-sync-bootstrap.mjs]
 - "scratch_test_user_cbc_inputvalues": "inputValues" | kind=code-symbol | source=scratch/test-user-cbc.js:L43 | neighbors=[test-user-cbc.js]
-- "scratch_test_user_cbc_result": "result" | kind=code-symbol | source=scratch/test-user-cbc.js:L55 | neighbors=[test-user-cbc.js]
-- "scratch_test_user_cbc_testdefinition": "testDefinition" | kind=code-symbol | source=scratch/test-user-cbc.js:L4 | neighbors=[test-user-cbc.js]
-- "scratch_test_user_lipid_addvaluetovaluesmap": "addValueToValuesMap()" | kind=code-symbol | source=scratch/test-user-lipid.js:L1 | neighbors=[test-user-lipid.js]
-- "scratch_test_user_lipid_checkformuladependencies": "checkFormulaDependencies()" | kind=code-symbol | source=scratch/test-user-lipid.js:L236 | neighbors=[test-user-lipid.js]
 
 ## Instructions
 

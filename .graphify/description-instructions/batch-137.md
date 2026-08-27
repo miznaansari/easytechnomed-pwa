@@ -17,6 +17,10 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "runtime_library_d_requesthandler": "RequestHandler" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L2678 | neighbors=[_d()]
+- "runtime_library_d_requestoptions": "RequestOptions" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L2696 | neighbors=[_d()]
+- "runtime_library_d_requestoptions_2": "RequestOptions_2" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L2702 | neighbors=[_d()]
+- "runtime_library_d_requestparams": "RequestParams" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L2710 | neighbors=[_d()]
 - "runtime_library_d_requestresponse": "RequestResponse" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L2728 | neighbors=[_d()]
 - "runtime_library_d_requiredextensionargs": "RequiredExtensionArgs" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L2738 | neighbors=[_d()]
 - "runtime_library_d_requiredkeys": "RequiredKeys" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L2742 | neighbors=[_d()]
@@ -53,10 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "runtime_library_d_spankind": "SpanKind" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L3078 | neighbors=[_d()]
 - "runtime_library_d_spanoptions": "SpanOptions" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L3108 | neighbors=[_d()]
 - "runtime_library_d_spanstatus": "SpanStatus" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L3124 | neighbors=[_d()]
-- "runtime_library_d_spanstatuscode": "SpanStatusCode" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L3134 | neighbors=[_d()]
-- "runtime_library_d_sql": "Sql" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L3153 | neighbors=[_d()]
-- "runtime_library_d_timeinput": "TimeInput" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L3178 | neighbors=[_d()]
-- "runtime_library_d_totuple": "ToTuple" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L3180 | neighbors=[_d()]
 
 ## Instructions
 

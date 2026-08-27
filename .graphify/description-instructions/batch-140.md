@@ -17,6 +17,10 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "runtime_library_yl": "Yl()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L130 | neighbors=[library.js]
+- "runtime_library_yo": "yo()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L3 | neighbors=[library.js]
+- "runtime_library_ze": "Ze()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L31 | neighbors=[library.js]
+- "runtime_library_zl": "Zl()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L131 | neighbors=[library.js]
 - "runtime_react_native_bc": "Bc()" | kind=code-symbol | source=scratch/generated-client/runtime/react-native.js:L12 | neighbors=[react-native.js]
 - "runtime_react_native_ce": "Ce()" | kind=code-symbol | source=scratch/generated-client/runtime/react-native.js:L10 | neighbors=[react-native.js]
 - "runtime_react_native_cl": "cl()" | kind=code-symbol | source=scratch/generated-client/runtime/react-native.js:L1 | neighbors=[react-native.js]
@@ -53,10 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "runtime_react_native_jn": "Jn()" | kind=code-symbol | source=scratch/generated-client/runtime/react-native.js:L69 | neighbors=[react-native.js]
 - "runtime_react_native_jr": "jr()" | kind=code-symbol | source=scratch/generated-client/runtime/react-native.js:L62 | neighbors=[react-native.js]
 - "runtime_react_native_js": "js()" | kind=code-symbol | source=scratch/generated-client/runtime/react-native.js:L69 | neighbors=[react-native.js]
-- "runtime_react_native_kn": "Kn()" | kind=code-symbol | source=scratch/generated-client/runtime/react-native.js:L69 | neighbors=[react-native.js]
-- "runtime_react_native_ko": "Ko()" | kind=code-symbol | source=scratch/generated-client/runtime/react-native.js:L12 | neighbors=[react-native.js]
-- "runtime_react_native_kt": "Kt()" | kind=code-symbol | source=scratch/generated-client/runtime/react-native.js:L10 | neighbors=[react-native.js]
-- "runtime_react_native_lastlinenumber": "lastLineNumber()" | kind=code-symbol | source=scratch/generated-client/runtime/react-native.js:L2 | neighbors=[react-native.js]
 
 ## Instructions
 

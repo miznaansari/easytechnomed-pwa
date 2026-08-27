@@ -17,10 +17,14 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "next_config_nextconfig": "nextConfig" | kind=code-symbol | source=next.config.mjs:L2 | neighbors=[next.config.mjs]
+- "offline_db_appdatabase_constructor": ".constructor()" | kind=code-symbol | source=lib/offline/db.js:L5 | neighbors=[AppDatabase]
+- "offline_db_appdatabase_getallerrorrecords": ".getAllErrorRecords()" | kind=code-symbol | source=lib/offline/db.js:L205 | neighbors=[AppDatabase]
+- "offline_db_appdatabase_insertoffline": ".insertOffline()" | kind=code-symbol | source=lib/offline/db.js:L47 | neighbors=[AppDatabase]
 - "offline_db_appdatabase_marksynced": ".markSynced()" | kind=code-symbol | source=lib/offline/db.js:L129 | neighbors=[AppDatabase]
 - "offline_db_appdatabase_marksyncerror": ".markSyncError()" | kind=code-symbol | source=lib/offline/db.js:L152 | neighbors=[AppDatabase]
 - "offline_db_db": "db" | kind=code-symbol | source=lib/offline/db.js:L236 | neighbors=[db.js]
-- "offline_network_networkmonitor_stopheartbeat": ".stopHeartbeat()" | kind=code-symbol | source=lib/offline/network.js:L87 | neighbors=[NetworkMonitor]
+- "offline_network_networkmonitor_stopheartbeat": ".stopHeartbeat()" | kind=code-symbol | source=lib/offline/network.js:L90 | neighbors=[NetworkMonitor]
 - "offline_network_networkmonitor_subscribe": ".subscribe()" | kind=code-symbol | source=lib/offline/network.js:L42 | neighbors=[NetworkMonitor]
 - "offline_offlinepdfgenerator_formatdate": "formatDate()" | kind=code-symbol | source=lib/offline/offlinePdfGenerator.js:L108 | neighbors=[offlinePdfGenerator.js]
 - "offline_offlinepdfgenerator_getreferencerange": "getReferenceRange()" | kind=code-symbol | source=lib/offline/offlinePdfGenerator.js:L85 | neighbors=[offlinePdfGenerator.js]
@@ -53,10 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "profile_route_put": "PUT()" | kind=code-symbol | source=app/api/profile/route.js:L53 | neighbors=[route.js]
 - "providers_offlineprovider_offlineprovider": "OfflineProvider()" | kind=code-symbol | source=components/providers/OfflineProvider.jsx:L10 | neighbors=[OfflineProvider.jsx]
 - "proxy_config": "config" | kind=code-symbol | source=proxy.js:L33 | neighbors=[proxy.js]
-- "proxy_jwt_secret": "JWT_SECRET" | kind=code-symbol | source=proxy.js:L4 | neighbors=[proxy.js]
-- "proxy_proxy": "proxy()" | kind=code-symbol | source=proxy.js:L8 | neighbors=[proxy.js]
-- "public_sw_extractassetsfromhtml": "extractAssetsFromHtml()" | kind=code-symbol | source=public/sw.js:L27 | neighbors=[sw.js]
-- "public_sw_ishtmlresponse": "isHtmlResponse()" | kind=code-symbol | source=public/sw.js:L131 | neighbors=[sw.js]
 
 ## Instructions
 

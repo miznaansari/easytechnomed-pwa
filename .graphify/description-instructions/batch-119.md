@@ -17,6 +17,10 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "generated_client_index_d_workspacefinduniqueorthrowargs": "WorkspaceFindUniqueOrThrowArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L4418 | neighbors=[index.d.ts]
+- "generated_client_index_d_workspacegetpayload": "WorkspaceGetPayload" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L4009 | neighbors=[index.d.ts]
+- "generated_client_index_d_workspacegroupbyargs": "WorkspaceGroupByArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L3886 | neighbors=[index.d.ts]
+- "generated_client_index_d_workspacegroupbyoutputtype": "WorkspaceGroupByOutputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L3900 | neighbors=[index.d.ts]
 - "generated_client_index_d_workspaceinclude": "WorkspaceInclude" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L3967 | neighbors=[index.d.ts]
 - "generated_client_index_d_workspacemaxaggregateinputtype": "WorkspaceMaxAggregateInputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L3789 | neighbors=[index.d.ts]
 - "generated_client_index_d_workspacemaxaggregateoutputtype": "WorkspaceMaxAggregateOutputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L3741 | neighbors=[index.d.ts]
@@ -53,10 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "generated_client_index_d_workspacepdffindfirstargs": "WorkspacePdfFindFirstArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L33607 | neighbors=[index.d.ts]
 - "generated_client_index_d_workspacepdffindfirstorthrowargs": "WorkspacePdfFindFirstOrThrowArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L33655 | neighbors=[index.d.ts]
 - "generated_client_index_d_workspacepdffindmanyargs": "WorkspacePdfFindManyArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L33703 | neighbors=[index.d.ts]
-- "generated_client_index_d_workspacepdffinduniqueargs": "WorkspacePdfFindUniqueArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L33571 | neighbors=[index.d.ts]
-- "generated_client_index_d_workspacepdffinduniqueorthrowargs": "WorkspacePdfFindUniqueOrThrowArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L33589 | neighbors=[index.d.ts]
-- "generated_client_index_d_workspacepdfgetpayload": "WorkspacePdfGetPayload" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L33165 | neighbors=[index.d.ts]
-- "generated_client_index_d_workspacepdfgroupbyargs": "WorkspacePdfGroupByArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L32975 | neighbors=[index.d.ts]
 
 ## Instructions
 

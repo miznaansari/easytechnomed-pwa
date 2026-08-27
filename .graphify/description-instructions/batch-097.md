@@ -17,6 +17,10 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "generated_client_index_d_superadmintrackingupdatemanymutationinput": "SuperAdminTrackingUpdateManyMutationInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L39839 | neighbors=[index.d.ts]
+- "generated_client_index_d_superadmintrackingupdatemanywithoutsuperadminnestedinput": "SuperAdminTrackingUpdateManyWithoutSuperAdminNestedInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L43213 | neighbors=[index.d.ts]
+- "generated_client_index_d_superadmintrackingupdatemanywithwherewithoutsuperadmininput": "SuperAdminTrackingUpdateManyWithWhereWithoutSuperAdminInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L46287 | neighbors=[index.d.ts]
+- "generated_client_index_d_superadmintrackingupdatewithoutsuperadmininput": "SuperAdminTrackingUpdateWithoutSuperAdminInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L52663 | neighbors=[index.d.ts]
 - "generated_client_index_d_superadmintrackingupdatewithwhereuniquewithoutsuperadmininput": "SuperAdminTrackingUpdateWithWhereUniqueWithoutSuperAdminInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L46282 | neighbors=[index.d.ts]
 - "generated_client_index_d_superadmintrackingupsertargs": "SuperAdminTrackingUpsertArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L28702 | neighbors=[index.d.ts]
 - "generated_client_index_d_superadmintrackingupsertwithwhereuniquewithoutsuperadmininput": "SuperAdminTrackingUpsertWithWhereUniqueWithoutSuperAdminInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L46276 | neighbors=[index.d.ts]
@@ -53,10 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "generated_client_index_d_test_workspaceargs": "Test$workspaceArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L16976 | neighbors=[index.d.ts]
 - "generated_client_index_d_testaggregateargs": "TestAggregateArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L16017 | neighbors=[index.d.ts]
 - "generated_client_index_d_testargs": "TestArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L54366 | neighbors=[index.d.ts]
-- "generated_client_index_d_testavgaggregateinputtype": "TestAvgAggregateInputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L15914 | neighbors=[index.d.ts]
-- "generated_client_index_d_testavgaggregateoutputtype": "TestAvgAggregateOutputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L15810 | neighbors=[index.d.ts]
-- "generated_client_index_d_testavgorderbyaggregateinput": "TestAvgOrderByAggregateInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L41396 | neighbors=[index.d.ts]
-- "generated_client_index_d_testcountaggregateinputtype": "TestCountAggregateInputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L15992 | neighbors=[index.d.ts]
 
 ## Instructions
 

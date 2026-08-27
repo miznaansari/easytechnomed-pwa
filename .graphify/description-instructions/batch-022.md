@@ -17,6 +17,8 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "runtime_wasm_bt": "Bt()" | kind=code-symbol | source=scratch/generated-client/runtime/wasm.js:L1 | neighbors=[wasm.js, toString(), di(), si()]
+- "runtime_wasm_buildqueryerror": "buildQueryError()" | kind=code-symbol | source=scratch/generated-client/runtime/wasm.js:L12 | neighbors=[wasm.js, getExternalAdapterError(), request(), requestBatch()]
 - "runtime_wasm_cn": "cn()" | kind=code-symbol | source=scratch/generated-client/runtime/wasm.js:L1 | neighbors=[wasm.js, ae(), D(), slice()]
 - "runtime_wasm_cs": "cs()" | kind=code-symbol | source=scratch/generated-client/runtime/wasm.js:L1 | neighbors=[wasm.js, Rs(), toString(), underline()]
 - "runtime_wasm_getallcomputedfields": "getAllComputedFields()" | kind=code-symbol | source=scratch/generated-client/runtime/wasm.js:L5 | neighbors=[wasm.js, getOrCreate(), getComputedFields(), ui()]
@@ -55,8 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "runtime_wasm_writeempty": "writeEmpty()" | kind=code-symbol | source=scratch/generated-client/runtime/wasm.js:L3 | neighbors=[wasm.js, write(), setColor(), underline()]
 - "runtime_wasm_ws": "ws()" | kind=code-symbol | source=scratch/generated-client/runtime/wasm.js:L1 | neighbors=[wasm.js, e(), addSuggestion(), hasField()]
 - "runtime_wasm_yr": "yr()" | kind=code-symbol | source=scratch/generated-client/runtime/wasm.js:L1 | neighbors=[wasm.js, It(), D(), e()]
-- "runtime_wasm_ze": "ze()" | kind=code-symbol | source=scratch/generated-client/runtime/wasm.js:L4 | neighbors=[wasm.js, Ct(), di(), si()]
-- "samples_route": "route.js" | kind=code-symbol | source=app/api/registrations/[id]/samples/route.js:L1 | neighbors=[252e194 e, GET(), POST(), serializeData()]
 
 ## Instructions
 

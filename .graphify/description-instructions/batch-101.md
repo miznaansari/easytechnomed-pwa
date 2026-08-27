@@ -17,6 +17,10 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "generated_client_index_d_testfinduniqueorthrowargs": "TestFindUniqueOrThrowArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L16665 | neighbors=[index.d.ts]
+- "generated_client_index_d_testformula": "TestFormula" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L145 | neighbors=[index.d.ts]
+- "generated_client_index_d_testformula_workspaceargs": "TestFormula$workspaceArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L30698 | neighbors=[index.d.ts]
+- "generated_client_index_d_testformulaaggregateargs": "TestFormulaAggregateArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L29838 | neighbors=[index.d.ts]
 - "generated_client_index_d_testformulaargs": "TestFormulaArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L54418 | neighbors=[index.d.ts]
 - "generated_client_index_d_testformulaavgaggregateinputtype": "TestFormulaAvgAggregateInputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L29779 | neighbors=[index.d.ts]
 - "generated_client_index_d_testformulaavgaggregateoutputtype": "TestFormulaAvgAggregateOutputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L29719 | neighbors=[index.d.ts]
@@ -53,10 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "generated_client_index_d_testformulafindfirstorthrowargs": "TestFormulaFindFirstOrThrowArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L30488 | neighbors=[index.d.ts]
 - "generated_client_index_d_testformulafindmanyargs": "TestFormulaFindManyArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L30536 | neighbors=[index.d.ts]
 - "generated_client_index_d_testformulafinduniqueargs": "TestFormulaFindUniqueArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L30404 | neighbors=[index.d.ts]
-- "generated_client_index_d_testformulafinduniqueorthrowargs": "TestFormulaFindUniqueOrThrowArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L30422 | neighbors=[index.d.ts]
-- "generated_client_index_d_testformulagetpayload": "TestFormulaGetPayload" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L30018 | neighbors=[index.d.ts]
-- "generated_client_index_d_testformulagroupbyargs": "TestFormulaGroupByArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L29910 | neighbors=[index.d.ts]
-- "generated_client_index_d_testformulagroupbyoutputtype": "TestFormulaGroupByOutputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L29924 | neighbors=[index.d.ts]
 
 ## Instructions
 

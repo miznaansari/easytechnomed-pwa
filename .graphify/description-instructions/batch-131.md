@@ -17,6 +17,10 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "runtime_library_d_batchqueryoptionscbargs": "BatchQueryOptionsCbArgs" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L108 | neighbors=[_d()]
+- "runtime_library_d_batchtransactionoptions": "BatchTransactionOptions" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L114 | neighbors=[_d()]
+- "runtime_library_d_binarytargetsenvvalue": "BinaryTargetsEnvValue" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L118 | neighbors=[_d()]
+- "runtime_library_d_call": "Call" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L124 | neighbors=[_d()]
 - "runtime_library_d_callsite": "CallSite" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L128 | neighbors=[_d()]
 - "runtime_library_d_cast": "Cast" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L132 | neighbors=[_d()]
 - "runtime_library_d_client": "Client" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L134 | neighbors=[_d()]
@@ -53,10 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "runtime_library_d_devtypemapfndef": "DevTypeMapFnDef" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L638 | neighbors=[_d()]
 - "runtime_library_d_document": "Document" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L645 | neighbors=[_d()]
 - "runtime_library_d_dynamicclientextensionargs": "DynamicClientExtensionArgs" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L887 | neighbors=[_d()]
-- "runtime_library_d_dynamicclientextensionthis": "DynamicClientExtensionThis" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L897 | neighbors=[_d()]
-- "runtime_library_d_dynamicclientextensionthisbuiltin": "DynamicClientExtensionThisBuiltin" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L911 | neighbors=[_d()]
-- "runtime_library_d_dynamicmodelextensionargs": "DynamicModelExtensionArgs" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L928 | neighbors=[_d()]
-- "runtime_library_d_dynamicmodelextensionfluentapi": "DynamicModelExtensionFluentApi" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L951 | neighbors=[_d()]
 
 ## Instructions
 

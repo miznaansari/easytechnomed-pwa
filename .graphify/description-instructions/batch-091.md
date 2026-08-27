@@ -17,6 +17,10 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "generated_client_index_d_registrationupdatemanywithwherewithoutworkspaceinput": "RegistrationUpdateManyWithWhereWithoutWorkspaceInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L45815 | neighbors=[index.d.ts]
+- "generated_client_index_d_registrationupdateonerequiredwithoutpaymentsnestedinput": "RegistrationUpdateOneRequiredWithoutPaymentsNestedInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L44633 | neighbors=[index.d.ts]
+- "generated_client_index_d_registrationupdateonerequiredwithoutresultsnestedinput": "RegistrationUpdateOneRequiredWithoutResultsNestedInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L44597 | neighbors=[index.d.ts]
+- "generated_client_index_d_registrationupdateonerequiredwithouttestsnestedinput": "RegistrationUpdateOneRequiredWithoutTestsNestedInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L44333 | neighbors=[index.d.ts]
 - "generated_client_index_d_registrationupdatetoonewithwherewithoutpaymentsinput": "RegistrationUpdateToOneWithWhereWithoutPaymentsInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L50431 | neighbors=[index.d.ts]
 - "generated_client_index_d_registrationupdatetoonewithwherewithoutresultsinput": "RegistrationUpdateToOneWithWhereWithoutResultsInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L50049 | neighbors=[index.d.ts]
 - "generated_client_index_d_registrationupdatetoonewithwherewithouttestsinput": "RegistrationUpdateToOneWithWhereWithoutTestsInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L49041 | neighbors=[index.d.ts]
@@ -53,10 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "generated_client_index_d_stringfieldupdateoperationsinput": "StringFieldUpdateOperationsInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L42875 | neighbors=[index.d.ts]
 - "generated_client_index_d_stringfilter": "StringFilter" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L40378 | neighbors=[index.d.ts]
 - "generated_client_index_d_stringnullablefilter": "StringNullableFilter" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L40689 | neighbors=[index.d.ts]
-- "generated_client_index_d_stringnullablewithaggregatesfilter": "StringNullableWithAggregatesFilter" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L40748 | neighbors=[index.d.ts]
-- "generated_client_index_d_stringwithaggregatesfilter": "StringWithAggregatesFilter" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L40581 | neighbors=[index.d.ts]
-- "generated_client_index_d_subset": "Subset" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L762 | neighbors=[index.d.ts]
-- "generated_client_index_d_subsetintersection": "SubsetIntersection" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L784 | neighbors=[index.d.ts]
 
 ## Instructions
 

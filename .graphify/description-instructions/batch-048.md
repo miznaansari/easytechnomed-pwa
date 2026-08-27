@@ -17,6 +17,10 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "scratch_test_calc_export_calculatedifferentialsummary": "calculateDifferentialSummary()" | kind=code-symbol | source=scratch/test-calc-export.js:L67 | neighbors=[test-calc-export.js, test-dlc-calc.js]
+- "scratch_test_db": "test-db.mjs" | kind=code-symbol | source=scratch/test-db.mjs:L1 | neighbors=[252e194 e, main()]
+- "scratch_test_report_security": "test-report-security.mjs" | kind=code-symbol | source=scratch/test-report-security.mjs:L1 | neighbors=[252e194 e, runSecurityTests()]
+- "scratch_test_sync_bootstrap": "test-sync-bootstrap.mjs" | kind=code-symbol | source=scratch/test-sync-bootstrap.mjs:L1 | neighbors=[7d8c494 fxed, verifyBackendEndpoints()]
 - "seed_parameters_route_get": "GET()" | kind=code-symbol | source=app/api/seed-parameters/route.js:L163 | neighbors=[route.js, processTestParameters()]
 - "seed_parameters_route_processtestparameters": "processTestParameters()" | kind=code-symbol | source=app/api/seed-parameters/route.js:L4 | neighbors=[route.js, GET()]
 - "suggestion_route_callgeminimodels": "callGeminiModels()" | kind=code-symbol | source=app/api/ai/suggestion/route.js:L4 | neighbors=[route.js, POST()]
@@ -53,10 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "app_layout_metadata": "metadata" | kind=code-symbol | source=app/layout.js:L13 | neighbors=[layout.js]
 - "app_layout_outfit": "outfit" | kind=code-symbol | source=app/layout.js:L7 | neighbors=[layout.js]
 - "app_layout_rootlayout": "RootLayout()" | kind=code-symbol | source=app/layout.js:L44 | neighbors=[layout.js]
-- "app_layout_viewport": "viewport" | kind=code-symbol | source=app/layout.js:L40 | neighbors=[layout.js]
-- "app_manifest_manifest": "manifest()" | kind=code-symbol | source=app/manifest.js:L1 | neighbors=[manifest.js]
-- "app_robots_robots": "robots()" | kind=code-symbol | source=app/robots.js:L1 | neighbors=[robots.js]
-- "app_sitemap_sitemap": "sitemap()" | kind=code-symbol | source=app/sitemap.js:L1 | neighbors=[sitemap.js]
 
 ## Instructions
 

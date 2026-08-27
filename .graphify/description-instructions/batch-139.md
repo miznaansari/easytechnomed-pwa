@@ -17,6 +17,10 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "runtime_library_inspect": "inspect()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L29 | neighbors=[library.js]
+- "runtime_library_jc": "jc()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L21 | neighbors=[library.js]
+- "runtime_library_jd": "jd()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L31 | neighbors=[library.js]
+- "runtime_library_je": "je()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L4 | neighbors=[library.js]
 - "runtime_library_jl": "Jl()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L131 | neighbors=[library.js]
 - "runtime_library_js": "js()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L26 | neighbors=[library.js]
 - "runtime_library_kl": "kl()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L121 | neighbors=[library.js]
@@ -53,10 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "runtime_library_yc": "Yc()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L21 | neighbors=[library.js]
 - "runtime_library_ye": "ye()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L4 | neighbors=[library.js]
 - "runtime_library_yi": "yi()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L21 | neighbors=[library.js]
-- "runtime_library_yl": "Yl()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L130 | neighbors=[library.js]
-- "runtime_library_yo": "yo()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L3 | neighbors=[library.js]
-- "runtime_library_ze": "Ze()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L31 | neighbors=[library.js]
-- "runtime_library_zl": "Zl()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L131 | neighbors=[library.js]
 
 ## Instructions
 

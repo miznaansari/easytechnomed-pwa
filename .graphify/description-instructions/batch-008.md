@@ -24,6 +24,7 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "runtime_wasm_oi": "oi()" | kind=code-symbol | source=scratch/generated-client/runtime/wasm.js:L5 | neighbors=[wasm.js, addField(), Pa(), si(), t(), va()]
 - "runtime_wasm_ra": "ra()" | kind=code-symbol | source=scratch/generated-client/runtime/wasm.js:L5 | neighbors=[wasm.js, getSelectionPath(), isPreviewFeatureOn(), na(), sa(), throwValidationError()]
 - "runtime_wasm_ui": "ui()" | kind=code-symbol | source=scratch/generated-client/runtime/wasm.js:L5 | neighbors=[wasm.js, sa(), _a(), et(), ge(), getAllComputedFields()]
 - "runtime_wasm_vs": "Vs()" | kind=code-symbol | source=scratch/generated-client/runtime/wasm.js:L4 | neighbors=[wasm.js, t(), addErrorMessage(), asObject(), getDeepFieldValue(), getDeepSubSelectionValue()]
@@ -44,7 +45,6 @@ one-sentence description — no prose, no markdown fences.
   PrismaClientKnownRequestError,
   Pr…, empty()]
 - "lib_pdftheme": "pdfTheme.js" | kind=code-symbol | source=lib/pdfTheme.js:L1 | neighbors=[252e194 e, computeColumnLayout(), DEFAULT_COLUMNS, getFontFamilyDefinitions(), hexToRgb(), PDF_THEME_PRESETS]
-- "offline_syncindicator": "SyncIndicator.jsx" | kind=code-symbol | source=components/offline/SyncIndicator.jsx:L1 | neighbors=[2b2534c f, 9f59247 expire token, d446d11 fixed code, d84f15f f, f3857f9 f, SyncIndicator()]
 - "pdf_route": "route.js" | kind=code-symbol | source=app/api/settings/pdf/route.js:L1 | neighbors=[252e194 e, f3857f9 f, DEFAULT_COLUMN_ORDER, DEFAULT_PDF_SETTINGS, GET(), POST()]
 - "providers_offlineprovider": "OfflineProvider.jsx" | kind=code-symbol | source=components/providers/OfflineProvider.jsx:L1 | neighbors=[2b2534c f, 7d8c494 fxed, 84a8ff2 full indexeddb based, 9e25c19 f, 9f59247 expire token, OfflineProvider()]
 - "proxy": "proxy.js" | kind=code-symbol | source=proxy.js:L1 | neighbors=[252e194 e, 5e3d9ef d, c070c55 fixed, config, JWT_SECRET, proxy()]

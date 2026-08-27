@@ -17,6 +17,10 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "runtime_library_d_inputtyperef": "InputTypeRef" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L784 | neighbors=[_d()]
+- "runtime_library_d_instance": "Instance" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L329 | neighbors=[_d()]
+- "runtime_library_d_interactivetransactioninfo": "InteractiveTransactionInfo" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L1767 | neighbors=[_d()]
+- "runtime_library_d_interactivetransactionoptions": "InteractiveTransactionOptions" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L1780 | neighbors=[_d()]
 - "runtime_library_d_internalargs": "InternalArgs" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L1782 | neighbors=[_d()]
 - "runtime_library_d_internalrequestparams": "InternalRequestParams" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L1817 | neighbors=[_d()]
 - "runtime_library_d_isolationlevel": "IsolationLevel" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L1842 | neighbors=[_d()]
@@ -53,10 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "runtime_library_d_metrichistogrambucket": "MetricHistogramBucket" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L2076 | neighbors=[_d()]
 - "runtime_library_d_metrics": "Metrics" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L2078 | neighbors=[_d()]
 - "runtime_library_d_metricsclient": "MetricsClient" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L2084 | neighbors=[_d()]
-- "runtime_library_d_metricsoptions": "MetricsOptions" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L2104 | neighbors=[_d()]
-- "runtime_library_d_metricsoptionscommon": "MetricsOptionsCommon" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L2111 | neighbors=[_d()]
-- "runtime_library_d_metricsoptionsjson": "MetricsOptionsJson" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L2115 | neighbors=[_d()]
-- "runtime_library_d_metricsoptionsprometheus": "MetricsOptionsPrometheus" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L2119 | neighbors=[_d()]
 
 ## Instructions
 

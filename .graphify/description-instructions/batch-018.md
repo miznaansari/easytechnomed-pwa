@@ -17,6 +17,8 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "runtime_edge_esm_vr": "vr()" | kind=code-symbol | source=scratch/generated-client/runtime/edge-esm.js:L1 | neighbors=[edge-esm.js, lo(), Oo(), toString()]
+- "runtime_edge_esm_wi": "wi()" | kind=code-symbol | source=scratch/generated-client/runtime/edge-esm.js:L1 | neighbors=[edge-esm.js, Ta(), ui(), Na()]
 - "runtime_edge_esm_writeempty": "writeEmpty()" | kind=code-symbol | source=scratch/generated-client/runtime/edge-esm.js:L3 | neighbors=[edge-esm.js, write(), setColor(), underline()]
 - "runtime_edge_esm_yc": "yc()" | kind=code-symbol | source=scratch/generated-client/runtime/edge-esm.js:L6 | neighbors=[edge-esm.js, os(), te(), Ve()]
 - "runtime_edge_esm_yi": "yi()" | kind=code-symbol | source=scratch/generated-client/runtime/edge-esm.js:L1 | neighbors=[edge-esm.js, di(), mi(), Da()]
@@ -55,8 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "runtime_edge_unpack": "unpack()" | kind=code-symbol | source=scratch/generated-client/runtime/edge.js:L20 | neighbors=[edge.js, mapQueryEngineResult(), values(), zs()]
 - "runtime_edge_v": "v()" | kind=code-symbol | source=scratch/generated-client/runtime/edge.js:L1 | neighbors=[edge.js, S(), h(), xn()]
 - "runtime_edge_ve": "Ve()" | kind=code-symbol | source=scratch/generated-client/runtime/edge.js:L5 | neighbors=[edge.js, bc(), wc(), yc()]
-- "runtime_edge_withretry": "withRetry()" | kind=code-symbol | source=scratch/generated-client/runtime/edge.js:L12 | neighbors=[edge.js, requestInternal(), transaction(), emit()]
-- "runtime_edge_wl": "wl()" | kind=code-symbol | source=scratch/generated-client/runtime/edge.js:L1 | neighbors=[edge.js, e(), O(), Tr()]
 
 ## Instructions
 

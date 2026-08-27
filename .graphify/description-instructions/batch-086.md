@@ -17,6 +17,10 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "generated_client_index_d_registrationpaymentcountorderbyaggregateinput": "RegistrationPaymentCountOrderByAggregateInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L42228 | neighbors=[index.d.ts]
+- "generated_client_index_d_registrationpaymentcreateargs": "RegistrationPaymentCreateArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L25782 | neighbors=[index.d.ts]
+- "generated_client_index_d_registrationpaymentcreateinput": "RegistrationPaymentCreateInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L39547 | neighbors=[index.d.ts]
+- "generated_client_index_d_registrationpaymentcreatemanyargs": "RegistrationPaymentCreateManyArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L25800 | neighbors=[index.d.ts]
 - "generated_client_index_d_registrationpaymentcreatemanyinput": "RegistrationPaymentCreateManyInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L39589 | neighbors=[index.d.ts]
 - "generated_client_index_d_registrationpaymentcreatemanyregistrationinput": "RegistrationPaymentCreateManyRegistrationInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L53821 | neighbors=[index.d.ts]
 - "generated_client_index_d_registrationpaymentcreatemanyregistrationinputenvelope": "RegistrationPaymentCreateManyRegistrationInputEnvelope" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L48548 | neighbors=[index.d.ts]
@@ -53,10 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "generated_client_index_d_registrationpaymentscalarwherewithaggregatesinput": "RegistrationPaymentScalarWhereWithAggregatesInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L36576 | neighbors=[index.d.ts]
 - "generated_client_index_d_registrationpaymentselect": "RegistrationPaymentSelect" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L25180 | neighbors=[index.d.ts]
 - "generated_client_index_d_registrationpaymentselectscalar": "RegistrationPaymentSelectScalar" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L25193 | neighbors=[index.d.ts]
-- "generated_client_index_d_registrationpaymentsumaggregateinputtype": "RegistrationPaymentSumAggregateInputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L25024 | neighbors=[index.d.ts]
-- "generated_client_index_d_registrationpaymentsumaggregateoutputtype": "RegistrationPaymentSumAggregateOutputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L24977 | neighbors=[index.d.ts]
-- "generated_client_index_d_registrationpaymentsumorderbyaggregateinput": "RegistrationPaymentSumOrderByAggregateInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L42267 | neighbors=[index.d.ts]
-- "generated_client_index_d_registrationpaymentuncheckedcreateinput": "RegistrationPaymentUncheckedCreateInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L39557 | neighbors=[index.d.ts]
 
 ## Instructions
 

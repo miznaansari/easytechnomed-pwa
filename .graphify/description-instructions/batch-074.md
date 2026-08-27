@@ -17,6 +17,10 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "generated_client_index_d_leadavgaggregateinputtype": "LeadAvgAggregateInputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L23145 | neighbors=[index.d.ts]
+- "generated_client_index_d_leadavgaggregateoutputtype": "LeadAvgAggregateOutputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L23114 | neighbors=[index.d.ts]
+- "generated_client_index_d_leadavgorderbyaggregateinput": "LeadAvgOrderByAggregateInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L42147 | neighbors=[index.d.ts]
+- "generated_client_index_d_leadcontact": "LeadContact" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L125 | neighbors=[index.d.ts]
 - "generated_client_index_d_leadcontactaggregateargs": "LeadContactAggregateArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L26016 | neighbors=[index.d.ts]
 - "generated_client_index_d_leadcontactargs": "LeadContactArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L54402 | neighbors=[index.d.ts]
 - "generated_client_index_d_leadcontactavgaggregateinputtype": "LeadContactAvgAggregateInputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L25971 | neighbors=[index.d.ts]
@@ -53,10 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "generated_client_index_d_leadcontactorderbywithrelationinput": "LeadContactOrderByWithRelationInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L36605 | neighbors=[index.d.ts]
 - "generated_client_index_d_leadcontactpayload": "$LeadContactPayload" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L26159 | neighbors=[index.d.ts]
 - "generated_client_index_d_leadcontactscalarfieldenum": "LeadContactScalarFieldEnum" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L34291 | neighbors=[index.d.ts]
-- "generated_client_index_d_leadcontactscalarwherewithaggregatesinput": "LeadContactScalarWhereWithAggregatesInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L36649 | neighbors=[index.d.ts]
-- "generated_client_index_d_leadcontactselect": "LeadContactSelect" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L26133 | neighbors=[index.d.ts]
-- "generated_client_index_d_leadcontactselectscalar": "LeadContactSelectScalar" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L26146 | neighbors=[index.d.ts]
-- "generated_client_index_d_leadcontactsumaggregateinputtype": "LeadContactSumAggregateInputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L25975 | neighbors=[index.d.ts]
 
 ## Instructions
 

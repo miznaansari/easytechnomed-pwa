@@ -17,6 +17,10 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "generated_client_index_d_adminaddressupdatemanymutationinput": "AdminAddressUpdateManyMutationInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L39519 | neighbors=[index.d.ts]
+- "generated_client_index_d_adminaddressupdateonewithoutadminnestedinput": "AdminAddressUpdateOneWithoutAdminNestedInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L43549 | neighbors=[index.d.ts]
+- "generated_client_index_d_adminaddressupdatetoonewithwherewithoutadmininput": "AdminAddressUpdateToOneWithWhereWithoutAdminInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L47133 | neighbors=[index.d.ts]
+- "generated_client_index_d_adminaddressupdatewithoutadmininput": "AdminAddressUpdateWithoutAdminInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L47138 | neighbors=[index.d.ts]
 - "generated_client_index_d_adminaddressupsertargs": "AdminAddressUpsertArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L24893 | neighbors=[index.d.ts]
 - "generated_client_index_d_adminaddressupsertwithoutadmininput": "AdminAddressUpsertWithoutAdminInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L47127 | neighbors=[index.d.ts]
 - "generated_client_index_d_adminaddresswhereinput": "AdminAddressWhereInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L36426 | neighbors=[index.d.ts]
@@ -53,10 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "generated_client_index_d_admincreatenestedonewithouttrackingsinput": "AdminCreateNestedOneWithoutTrackingsInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L44641 | neighbors=[index.d.ts]
 - "generated_client_index_d_admincreateorconnectwithoutaddressinput": "AdminCreateOrConnectWithoutAddressInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L50256 | neighbors=[index.d.ts]
 - "generated_client_index_d_admincreateorconnectwithoutregistrationsinput": "AdminCreateOrConnectWithoutRegistrationsInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L48519 | neighbors=[index.d.ts]
-- "generated_client_index_d_admincreateorconnectwithoutroleinput": "AdminCreateOrConnectWithoutRoleInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L47434 | neighbors=[index.d.ts]
-- "generated_client_index_d_admincreateorconnectwithoutsessionsinput": "AdminCreateOrConnectWithoutSessionsInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L47300 | neighbors=[index.d.ts]
-- "generated_client_index_d_admincreateorconnectwithouttrackingsinput": "AdminCreateOrConnectWithoutTrackingsInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L50584 | neighbors=[index.d.ts]
-- "generated_client_index_d_admincreateorconnectwithoutworkspaceinput": "AdminCreateOrConnectWithoutWorkspaceInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L45177 | neighbors=[index.d.ts]
 
 ## Instructions
 

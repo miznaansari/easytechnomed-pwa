@@ -17,6 +17,10 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "generated_client_index_d_workspacepdfwhereuniqueinput": "WorkspacePdfWhereUniqueInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L37171 | neighbors=[index.d.ts]
+- "generated_client_index_d_workspacerelationfilter": "WorkspaceRelationFilter" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L42596 | neighbors=[index.d.ts]
+- "generated_client_index_d_workspacescalarfieldenum": "WorkspaceScalarFieldEnum" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L33903 | neighbors=[index.d.ts]
+- "generated_client_index_d_workspacescalarwherewithaggregatesinput": "WorkspaceScalarWhereWithAggregatesInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L34569 | neighbors=[index.d.ts]
 - "generated_client_index_d_workspaceselect": "WorkspaceSelect" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L3931 | neighbors=[index.d.ts]
 - "generated_client_index_d_workspaceselectscalar": "WorkspaceSelectScalar" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L3955 | neighbors=[index.d.ts]
 - "generated_client_index_d_workspacesumaggregateinputtype": "WorkspaceSumAggregateInputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L3772 | neighbors=[index.d.ts]
@@ -53,10 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "generated_client_index_d_workspaceupdateonewithoutadminsnestedinput": "WorkspaceUpdateOneWithoutAdminsNestedInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L43539 | neighbors=[index.d.ts]
 - "generated_client_index_d_workspaceupdateonewithoutdoctorsnestedinput": "WorkspaceUpdateOneWithoutDoctorsNestedInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L43821 | neighbors=[index.d.ts]
 - "generated_client_index_d_workspaceupdateonewithoutinterpretationrulesnestedinput": "WorkspaceUpdateOneWithoutInterpretationRulesNestedInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L44777 | neighbors=[index.d.ts]
-- "generated_client_index_d_workspaceupdateonewithoutparametersnestedinput": "WorkspaceUpdateOneWithoutParametersNestedInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L44405 | neighbors=[index.d.ts]
-- "generated_client_index_d_workspaceupdateonewithoutregistrationsnestedinput": "WorkspaceUpdateOneWithoutRegistrationsNestedInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L44231 | neighbors=[index.d.ts]
-- "generated_client_index_d_workspaceupdateonewithouttestformulasnestedinput": "WorkspaceUpdateOneWithoutTestFormulasNestedInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L44733 | neighbors=[index.d.ts]
-- "generated_client_index_d_workspaceupdateonewithouttestparametersnestedinput": "WorkspaceUpdateOneWithoutTestParametersNestedInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L44531 | neighbors=[index.d.ts]
 
 ## Instructions
 

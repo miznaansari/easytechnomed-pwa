@@ -17,6 +17,10 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "generated_client_index_d_testavgaggregateinputtype": "TestAvgAggregateInputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L15914 | neighbors=[index.d.ts]
+- "generated_client_index_d_testavgaggregateoutputtype": "TestAvgAggregateOutputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L15810 | neighbors=[index.d.ts]
+- "generated_client_index_d_testavgorderbyaggregateinput": "TestAvgOrderByAggregateInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L41396 | neighbors=[index.d.ts]
+- "generated_client_index_d_testcountaggregateinputtype": "TestCountAggregateInputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L15992 | neighbors=[index.d.ts]
 - "generated_client_index_d_testcountaggregateoutputtype": "TestCountAggregateOutputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L15888 | neighbors=[index.d.ts]
 - "generated_client_index_d_testcountargs": "TestCountArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L16250 | neighbors=[index.d.ts]
 - "generated_client_index_d_testcountorderbyaggregateinput": "TestCountOrderByAggregateInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L41372 | neighbors=[index.d.ts]
@@ -53,10 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "generated_client_index_d_testcreatewithoutinterpretationrulesinput": "TestCreateWithoutInterpretationRulesInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L51232 | neighbors=[index.d.ts]
 - "generated_client_index_d_testcreatewithoutparametersinput": "TestCreateWithoutParametersInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L49621 | neighbors=[index.d.ts]
 - "generated_client_index_d_testcreatewithoutregistrationsinput": "TestCreateWithoutRegistrationsInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L48977 | neighbors=[index.d.ts]
-- "generated_client_index_d_testcreatewithoutworkspaceinput": "TestCreateWithoutWorkspaceInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L45331 | neighbors=[index.d.ts]
-- "generated_client_index_d_testdefaultargs": "TestDefaultArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L17051 | neighbors=[index.d.ts]
-- "generated_client_index_d_testdelegate": "TestDelegate" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L16255 | neighbors=[index.d.ts]
-- "generated_client_index_d_testdeleteargs": "TestDeleteArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L16913 | neighbors=[index.d.ts]
 
 ## Instructions
 

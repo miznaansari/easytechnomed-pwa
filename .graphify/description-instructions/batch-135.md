@@ -17,6 +17,10 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "runtime_library_d_metricsoptions": "MetricsOptions" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L2104 | neighbors=[_d()]
+- "runtime_library_d_metricsoptionscommon": "MetricsOptionsCommon" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L2111 | neighbors=[_d()]
+- "runtime_library_d_metricsoptionsjson": "MetricsOptionsJson" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L2115 | neighbors=[_d()]
+- "runtime_library_d_metricsoptionsprometheus": "MetricsOptionsPrometheus" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L2119 | neighbors=[_d()]
 - "runtime_library_d_middlewareargsmapper": "MiddlewareArgsMapper" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L2123 | neighbors=[_d()]
 - "runtime_library_d_middlewarehandler": "MiddlewareHandler" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L2128 | neighbors=[_d()]
 - "runtime_library_d_model": "Model" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L689 | neighbors=[_d()]
@@ -53,10 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "runtime_library_d_payload": "Payload" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L2297 | neighbors=[_d()]
 - "runtime_library_d_payloadtoresult": "PayloadToResult" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L2305 | neighbors=[_d()]
 - "runtime_library_d_pick_2": "Pick_2" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L2309 | neighbors=[_d()]
-- "runtime_library_d_primarykey": "PrimaryKey" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L685 | neighbors=[_d()]
-- "runtime_library_d_prismaclientinitializationerror": "PrismaClientInitializationError" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L2314 | neighbors=[_d()]
-- "runtime_library_d_prismaclientoptions": "PrismaClientOptions" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L2331 | neighbors=[_d()]
-- "runtime_library_d_prismaclientrustpanicerror": "PrismaClientRustPanicError" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L2388 | neighbors=[_d()]
 
 ## Instructions
 

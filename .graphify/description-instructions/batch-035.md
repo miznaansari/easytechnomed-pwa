@@ -17,9 +17,13 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "offline_db_appdatabase_getallpendingrecords": ".getAllPendingRecords()" | kind=code-symbol | source=lib/offline/db.js:L167 | neighbors=[AppDatabase, .getPendingCount()]
+- "offline_db_appdatabase_getpendingcount": ".getPendingCount()" | kind=code-symbol | source=lib/offline/db.js:L196 | neighbors=[AppDatabase, .getAllPendingRecords()]
+- "offline_db_appdatabase_updateoffline": ".updateOffline()" | kind=code-symbol | source=lib/offline/db.js:L73 | neighbors=[AppDatabase, .deleteOffline()]
+- "offline_network_networkmonitor_checkconnection": ".checkConnection()" | kind=code-symbol | source=lib/offline/network.js:L54 | neighbors=[NetworkMonitor, .handleStatusChange()]
 - "offline_network_networkmonitor_constructor": ".constructor()" | kind=code-symbol | source=lib/offline/network.js:L6 | neighbors=[NetworkMonitor, .startHeartbeat()]
 - "offline_network_networkmonitor_notifylisteners": ".notifyListeners()" | kind=code-symbol | source=lib/offline/network.js:L27 | neighbors=[NetworkMonitor, .handleStatusChange()]
-- "offline_network_networkmonitor_startheartbeat": ".startHeartbeat()" | kind=code-symbol | source=lib/offline/network.js:L78 | neighbors=[NetworkMonitor, .constructor()]
+- "offline_network_networkmonitor_startheartbeat": ".startHeartbeat()" | kind=code-symbol | source=lib/offline/network.js:L81 | neighbors=[NetworkMonitor, .constructor()]
 - "offline_offlinepdfgenerator_isoutofrange": "isOutOfRange()" | kind=code-symbol | source=lib/offline/offlinePdfGenerator.js:L73 | neighbors=[offlinePdfGenerator.js, isQualitativeAbnormal()]
 - "offline_offlinepdfgenerator_isqualitativeabnormal": "isQualitativeAbnormal()" | kind=code-symbol | source=lib/offline/offlinePdfGenerator.js:L10 | neighbors=[offlinePdfGenerator.js, isOutOfRange()]
 - "offline_offlinepdfgenerator_layoutmarkdownlines": "layoutMarkdownLines()" | kind=code-symbol | source=lib/offline/offlinePdfGenerator.js:L164 | neighbors=[offlinePdfGenerator.js, generateReportPdfOffline()]
@@ -53,10 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "registrationid_route_numbertowords": "numberToWords()" | kind=code-symbol | source=app/api/print-bill/[registrationId]/route.js:L19 | neighbors=[route.js, GET()]
 - "registrations_route_get": "GET()" | kind=code-symbol | source=app/api/registrations/route.js:L51 | neighbors=[route.js, serializeData()]
 - "registrations_route_post": "POST()" | kind=code-symbol | source=app/api/registrations/route.js:L110 | neighbors=[route.js, serializeData()]
-- "reject_route": "route.js" | kind=code-symbol | source=app/api/approvals/reject/route.js:L1 | neighbors=[252e194 e, POST()]
-- "results_route_post": "POST()" | kind=code-symbol | source=app/api/registrations/[id]/results/route.js:L6 | neighbors=[route.js, PUT()]
-- "results_route_put": "PUT()" | kind=code-symbol | source=app/api/registrations/[id]/results/route.js:L108 | neighbors=[route.js, POST()]
-- "roles_route": "route.js" | kind=code-symbol | source=app/api/roles/route.js:L1 | neighbors=[252e194 e, GET()]
 
 ## Instructions
 

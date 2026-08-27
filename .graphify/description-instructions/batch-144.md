@@ -17,6 +17,10 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "scratch_bootstrap_dates_main": "main()" | kind=code-symbol | source=scratch/bootstrap-dates.js:L4 | neighbors=[bootstrap-dates.js]
+- "scratch_bootstrap_dates_prisma": "prisma" | kind=code-symbol | source=scratch/bootstrap-dates.js:L2 | neighbors=[bootstrap-dates.js]
+- "scratch_bootstrap_dates_prismaclient": "{ PrismaClient }" | kind=code-symbol | source=scratch/bootstrap-dates.js:L1 | neighbors=[bootstrap-dates.js]
+- "scratch_check_data_main": "main()" | kind=code-symbol | source=scratch/check-data.js:L4 | neighbors=[check-data.js]
 - "scratch_check_data_prisma": "prisma" | kind=code-symbol | source=scratch/check-data.js:L2 | neighbors=[check-data.js]
 - "scratch_check_data_prismaclient": "{ PrismaClient }" | kind=code-symbol | source=scratch/check-data.js:L1 | neighbors=[check-data.js]
 - "scratch_check_formulas_2398_main": "main()" | kind=code-symbol | source=scratch/check-formulas-2398.js:L4 | neighbors=[check-formulas-2398.js]
@@ -53,10 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "scratch_test_calc_result": "result" | kind=code-symbol | source=scratch/test-calc.js:L191 | neighbors=[test-calc.js]
 - "scratch_test_calc_standard_code_fallbacks": "STANDARD_CODE_FALLBACKS" | kind=code-symbol | source=scratch/test-calc.js:L1 | neighbors=[test-calc.js]
 - "scratch_test_calc_tests": "tests" | kind=code-symbol | source=scratch/test-calc.js:L171 | neighbors=[test-calc.js]
-- "scratch_test_db_main": "main()" | kind=code-symbol | source=scratch/test-db.mjs:L3 | neighbors=[test-db.mjs]
-- "scratch_test_dlc_calc_calculatedifferentialsummary": "{ calculateDifferentialSummary }" | kind=code-symbol | source=scratch/test-dlc-calc.js:L1 | neighbors=[test-dlc-calc.js]
-- "scratch_test_dlc_calc_params": "params" | kind=code-symbol | source=scratch/test-dlc-calc.js:L4 | neighbors=[test-dlc-calc.js]
-- "scratch_test_dlc_calc_values1": "values1" | kind=code-symbol | source=scratch/test-dlc-calc.js:L19 | neighbors=[test-dlc-calc.js]
 
 ## Instructions
 

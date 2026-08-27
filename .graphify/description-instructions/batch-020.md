@@ -17,6 +17,8 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "runtime_library_li": "li()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L6 | neighbors=[library.js, slice(), toString(), za()]
+- "runtime_library_loadengine": "loadEngine()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L112 | neighbors=[library.js, instantiateLibrary(), loadLibrary(), parseInitError()]
 - "runtime_library_lp": "lp()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L21 | neighbors=[library.js, addErrorMessage(), Hs(), markAsError()]
 - "runtime_library_lt": "Lt()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L31 | neighbors=[library.js, ea(), id(), kd()]
 - "runtime_library_maplineat": "mapLineAt()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L21 | neighbors=[library.js, e(), r(), wp()]
@@ -55,8 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "runtime_react_native_getargumentpath": "getArgumentPath()" | kind=code-symbol | source=scratch/generated-client/runtime/react-native.js:L10 | neighbors=[react-native.js, fo(), lc(), Mo()]
 - "runtime_react_native_getcomputedfields": "getComputedFields()" | kind=code-symbol | source=scratch/generated-client/runtime/react-native.js:L10 | neighbors=[react-native.js, ac(), getAllComputedFields(), sc()]
 - "runtime_react_native_getfieldvalue": "getFieldValue()" | kind=code-symbol | source=scratch/generated-client/runtime/react-native.js:L8 | neighbors=[react-native.js, bo(), getDeepSelectionParent(), getField()]
-- "runtime_react_native_getglobalomit": "getGlobalOmit()" | kind=code-symbol | source=scratch/generated-client/runtime/react-native.js:L10 | neighbors=[react-native.js, shouldApplyGlobalOmit(), st(), sc()]
-- "runtime_react_native_getname": "_getName()" | kind=code-symbol | source=scratch/generated-client/runtime/react-native.js:L9 | neighbors=[react-native.js, constructor(), fo(), to()]
 
 ## Instructions
 

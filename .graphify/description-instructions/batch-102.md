@@ -17,6 +17,10 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "generated_client_index_d_testformulafinduniqueorthrowargs": "TestFormulaFindUniqueOrThrowArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L30422 | neighbors=[index.d.ts]
+- "generated_client_index_d_testformulagetpayload": "TestFormulaGetPayload" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L30018 | neighbors=[index.d.ts]
+- "generated_client_index_d_testformulagroupbyargs": "TestFormulaGroupByArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L29910 | neighbors=[index.d.ts]
+- "generated_client_index_d_testformulagroupbyoutputtype": "TestFormulaGroupByOutputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L29924 | neighbors=[index.d.ts]
 - "generated_client_index_d_testformulainclude": "TestFormulaInclude" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L29989 | neighbors=[index.d.ts]
 - "generated_client_index_d_testformulalistrelationfilter": "TestFormulaListRelationFilter" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L40461 | neighbors=[index.d.ts]
 - "generated_client_index_d_testformulamaxaggregateinputtype": "TestFormulaMaxAggregateInputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L29809 | neighbors=[index.d.ts]
@@ -53,10 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "generated_client_index_d_testformulauncheckedupdatemanywithoutworkspaceinput": "TestFormulaUncheckedUpdateManyWithoutWorkspaceInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L52575 | neighbors=[index.d.ts]
 - "generated_client_index_d_testformulauncheckedupdatemanywithoutworkspacenestedinput": "TestFormulaUncheckedUpdateManyWithoutWorkspaceNestedInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L43133 | neighbors=[index.d.ts]
 - "generated_client_index_d_testformulauncheckedupdatewithoutoutputparameterinput": "TestFormulaUncheckedUpdateWithoutOutputParameterInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L54069 | neighbors=[index.d.ts]
-- "generated_client_index_d_testformulauncheckedupdatewithouttestinput": "TestFormulaUncheckedUpdateWithoutTestInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L53756 | neighbors=[index.d.ts]
-- "generated_client_index_d_testformulauncheckedupdatewithoutworkspaceinput": "TestFormulaUncheckedUpdateWithoutWorkspaceInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L52562 | neighbors=[index.d.ts]
-- "generated_client_index_d_testformulaupdateargs": "TestFormulaUpdateArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L30608 | neighbors=[index.d.ts]
-- "generated_client_index_d_testformulaupdateinput": "TestFormulaUpdateInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L39938 | neighbors=[index.d.ts]
 
 ## Instructions
 

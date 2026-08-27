@@ -17,6 +17,7 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "runtime_edge_rt": "Rt()" | kind=code-symbol | source=scratch/generated-client/runtime/edge.js:L1 | neighbors=[edge.js, ms(), iu(), ol(), ou()]
 - "runtime_edge_sn": "sn()" | kind=code-symbol | source=scratch/generated-client/runtime/edge.js:L1 | neighbors=[edge.js, Aa(), on(), rn(), toString()]
 - "runtime_edge_so": "So()" | kind=code-symbol | source=scratch/generated-client/runtime/edge.js:L4 | neighbors=[edge.js, cu(), ou(), addSuggestion(), hasField()]
 - "runtime_edge_st": "st()" | kind=code-symbol | source=scratch/generated-client/runtime/edge.js:L2 | neighbors=[edge.js, Fr(), handleRequestError(), cu(), uu()]
@@ -56,7 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "runtime_library_pe": "pe()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L4 | neighbors=[library.js, Au(), Iu(), j(), Oo()]
 - "runtime_library_se": "Se()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L29 | neighbors=[library.js, ji(), Oa(), dd(), Yr()]
 - "runtime_library_si": "Si()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L21 | neighbors=[library.js, en(), ie(), slice(), we()]
-- "runtime_library_tc": "Tc()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L21 | neighbors=[library.js, en(), slice(), sn(), Ss()]
 
 ## Instructions
 

@@ -17,6 +17,10 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "generated_client_index_d_testformulauncheckedupdatewithouttestinput": "TestFormulaUncheckedUpdateWithoutTestInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L53756 | neighbors=[index.d.ts]
+- "generated_client_index_d_testformulauncheckedupdatewithoutworkspaceinput": "TestFormulaUncheckedUpdateWithoutWorkspaceInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L52562 | neighbors=[index.d.ts]
+- "generated_client_index_d_testformulaupdateargs": "TestFormulaUpdateArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L30608 | neighbors=[index.d.ts]
+- "generated_client_index_d_testformulaupdateinput": "TestFormulaUpdateInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L39938 | neighbors=[index.d.ts]
 - "generated_client_index_d_testformulaupdatemanyargs": "TestFormulaUpdateManyArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L30630 | neighbors=[index.d.ts]
 - "generated_client_index_d_testformulaupdatemanymutationinput": "TestFormulaUpdateManyMutationInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L39979 | neighbors=[index.d.ts]
 - "generated_client_index_d_testformulaupdatemanywithoutoutputparameternestedinput": "TestFormulaUpdateManyWithoutOutputParameterNestedInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L44429 | neighbors=[index.d.ts]
@@ -53,10 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "generated_client_index_d_testorderbywithaggregationinput": "TestOrderByWithAggregationInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L35540 | neighbors=[index.d.ts]
 - "generated_client_index_d_testorderbywithrelationinput": "TestOrderByWithRelationInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L35476 | neighbors=[index.d.ts]
 - "generated_client_index_d_testparameter": "TestParameter" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L100 | neighbors=[index.d.ts]
-- "generated_client_index_d_testparameter_resultsargs": "TestParameter$resultsArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L22112 | neighbors=[index.d.ts]
-- "generated_client_index_d_testparameter_workspaceargs": "TestParameter$workspaceArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L22097 | neighbors=[index.d.ts]
-- "generated_client_index_d_testparameteraggregateargs": "TestParameterAggregateArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L21191 | neighbors=[index.d.ts]
-- "generated_client_index_d_testparameterargs": "TestParameterArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L54382 | neighbors=[index.d.ts]
 
 ## Instructions
 

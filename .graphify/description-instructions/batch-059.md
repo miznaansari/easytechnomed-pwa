@@ -17,6 +17,10 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "generated_client_index_d_adminsessionscalarfieldenum": "AdminSessionScalarFieldEnum" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L34024 | neighbors=[index.d.ts]
+- "generated_client_index_d_adminsessionscalarwhereinput": "AdminSessionScalarWhereInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L47181 | neighbors=[index.d.ts]
+- "generated_client_index_d_adminsessionscalarwherewithaggregatesinput": "AdminSessionScalarWhereWithAggregatesInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L35220 | neighbors=[index.d.ts]
+- "generated_client_index_d_adminsessionselect": "AdminSessionSelect" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L12128 | neighbors=[index.d.ts]
 - "generated_client_index_d_adminsessionselectscalar": "AdminSessionSelectScalar" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L12140 | neighbors=[index.d.ts]
 - "generated_client_index_d_adminsessionsumaggregateinputtype": "AdminSessionSumAggregateInputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L11977 | neighbors=[index.d.ts]
 - "generated_client_index_d_adminsessionsumaggregateoutputtype": "AdminSessionSumAggregateOutputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L11935 | neighbors=[index.d.ts]
@@ -53,10 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "generated_client_index_d_admintrackingavgorderbyaggregateinput": "AdminTrackingAvgOrderByAggregateInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L42329 | neighbors=[index.d.ts]
 - "generated_client_index_d_admintrackingcountaggregateinputtype": "AdminTrackingCountAggregateInputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L26921 | neighbors=[index.d.ts]
 - "generated_client_index_d_admintrackingcountaggregateoutputtype": "AdminTrackingCountAggregateOutputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L26871 | neighbors=[index.d.ts]
-- "generated_client_index_d_admintrackingcountargs": "AdminTrackingCountArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L27102 | neighbors=[index.d.ts]
-- "generated_client_index_d_admintrackingcountorderbyaggregateinput": "AdminTrackingCountOrderByAggregateInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L42317 | neighbors=[index.d.ts]
-- "generated_client_index_d_admintrackingcreateargs": "AdminTrackingCreateArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L27657 | neighbors=[index.d.ts]
-- "generated_client_index_d_admintrackingcreateinput": "AdminTrackingCreateInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L39701 | neighbors=[index.d.ts]
 
 ## Instructions
 

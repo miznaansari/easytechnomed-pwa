@@ -2,8 +2,10 @@
 
 ## 1. Project Overview
 - **Name**: EasyTechnoMed PWA / LIMS (Laboratory Information Management System)
+- **Current Version**: `v3.0.1`
 - **Framework**: Next.js (App Router), React 19, Material-UI (MUI v7), Dexie.js (v4.4+), Prisma ORM, MySQL.
 - **Purpose**: Diagnostic laboratory & clinic management system supporting offline-first operations, patient registration, sample collection, test report generation, print engine, financial receipting, and background synchronization.
+
 
 ---
 
@@ -74,4 +76,19 @@
 5. **Heartbeat Endpoints**: Ensure `/api/auth/check` supports `HEAD` requests for lightweight connectivity checks.
 6. **IndexedDB-First Forms & UI Operations**: ALL UI forms (patient registration, doctor creation, tests, results entry, money receipts, settings) MUST write directly to IndexedDB (`insertOffline` / `updateOffline` / `deleteOffline`). Forms NEVER make direct blocking API calls to the cloud on user submit.
 7. **Sync Engine Cloud Decider**: Background `syncManager` (`/api/offline/sync` & `modelRegistry.js`) decides whether to perform `POST` (new `isDirty` records), `PUT` (edited `isModified` records), or `GET` (cloud deltas) to synchronize with MySQL Prisma.
+8. **Version Bump, Graphify Refresh & Memory Update**: ALWAYS at the end of every completed task or feature change:
+   - Increment the `package.json` version (patch bump).
+   - Update `memory.md` with the new version and changelog entry.
+   - Run Graphify update (`npm run graphify:update` / `npx @sentropic/graphify update .`) to keep the graph and project version synchronized.
+
+---
+
+## 5. Version History & Changelog
+
+| Version | Date | Key Changes & Milestones |
+| :--- | :--- | :--- |
+| `v3.0.1` | 2026-08-28 | Unified Navbar Sync Indicator online state with Popover; Switched heartbeat to `GET` for ServiceWorker resilience; Integrated Graphify AST Knowledge Graph (5,906 nodes, 8,924 edges); Configured Dexie `liveQuery` reactive table updates; Standardized Zod numeric coercion (`z.coerce.number()`); Enforced MySQL + IndexedDB memory rules. |
+| `v3.0.0` | 2026-08-27 | Initial dual-layer offline sync architecture release with Dexie `EasyTechnoMedOfflineDB` and Prisma ORM. |
+
+
 

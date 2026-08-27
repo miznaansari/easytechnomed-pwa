@@ -17,6 +17,10 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "generated_client_index_d_workspaceupdateonewithoutparametersnestedinput": "WorkspaceUpdateOneWithoutParametersNestedInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L44405 | neighbors=[index.d.ts]
+- "generated_client_index_d_workspaceupdateonewithoutregistrationsnestedinput": "WorkspaceUpdateOneWithoutRegistrationsNestedInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L44231 | neighbors=[index.d.ts]
+- "generated_client_index_d_workspaceupdateonewithouttestformulasnestedinput": "WorkspaceUpdateOneWithoutTestFormulasNestedInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L44733 | neighbors=[index.d.ts]
+- "generated_client_index_d_workspaceupdateonewithouttestparametersnestedinput": "WorkspaceUpdateOneWithoutTestParametersNestedInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L44531 | neighbors=[index.d.ts]
 - "generated_client_index_d_workspaceupdateonewithouttestsnestedinput": "WorkspaceUpdateOneWithoutTestsNestedInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L44015 | neighbors=[index.d.ts]
 - "generated_client_index_d_workspaceupdateonewithoutusersnestedinput": "WorkspaceUpdateOneWithoutUsersNestedInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L43307 | neighbors=[index.d.ts]
 - "generated_client_index_d_workspaceupdatetoonewithwherewithoutadminsinput": "WorkspaceUpdateToOneWithWhereWithoutAdminsInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L47081 | neighbors=[index.d.ts]
@@ -53,10 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "generated_client_index_d_workspacewhereinput": "WorkspaceWhereInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L34480 | neighbors=[index.d.ts]
 - "generated_client_index_d_workspacewhereuniqueinput": "WorkspaceWhereUniqueInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L34527 | neighbors=[index.d.ts]
 - "generated_client_index_d_xor": "XOR" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L795 | neighbors=[index.d.ts]
-- "generated_client_index_fs": "fs" | kind=code-symbol | source=scratch/generated-client/index.js:L625 | neighbors=[index.js]
-- "generated_client_index_path": "path" | kind=code-symbol | source=scratch/generated-client/index.js:L82 | neighbors=[index.js]
-- "generated_client_index_prisma": "Prisma" | kind=code-symbol | source=scratch/generated-client/index.js:L29 | neighbors=[index.js]
-- "generated_client_index_prismaclient": "PrismaClient" | kind=code-symbol | source=scratch/generated-client/index.js:L654 | neighbors=[index.js]
 
 ## Instructions
 

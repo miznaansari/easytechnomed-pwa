@@ -17,6 +17,10 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "generated_client_index_d_doctorselectscalar": "DoctorSelectScalar" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L14978 | neighbors=[index.d.ts]
+- "generated_client_index_d_doctorsumaggregateinputtype": "DoctorSumAggregateInputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L14780 | neighbors=[index.d.ts]
+- "generated_client_index_d_doctorsumaggregateoutputtype": "DoctorSumAggregateOutputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L14718 | neighbors=[index.d.ts]
+- "generated_client_index_d_doctorsumorderbyaggregateinput": "DoctorSumOrderByAggregateInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L41319 | neighbors=[index.d.ts]
 - "generated_client_index_d_doctoruncheckedcreateinput": "DoctorUncheckedCreateInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L38205 | neighbors=[index.d.ts]
 - "generated_client_index_d_doctoruncheckedcreatenestedmanywithoutworkspaceinput": "DoctorUncheckedCreateNestedManyWithoutWorkspaceInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L42813 | neighbors=[index.d.ts]
 - "generated_client_index_d_doctoruncheckedcreatewithoutincentivehistoryinput": "DoctorUncheckedCreateWithoutIncentiveHistoryInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L51597 | neighbors=[index.d.ts]
@@ -53,10 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "generated_client_index_d_doctorupsertwithoutregistrationsinput": "DoctorUpsertWithoutRegistrationsInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L48623 | neighbors=[index.d.ts]
 - "generated_client_index_d_doctorupsertwithoutsecondregistrationsinput": "DoctorUpsertWithoutSecondRegistrationsInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L48669 | neighbors=[index.d.ts]
 - "generated_client_index_d_doctorupsertwithwhereuniquewithoutworkspaceinput": "DoctorUpsertWithWhereUniqueWithoutWorkspaceInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L45769 | neighbors=[index.d.ts]
-- "generated_client_index_d_doctorwhereinput": "DoctorWhereInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L35336 | neighbors=[index.d.ts]
-- "generated_client_index_d_doctorwhereuniqueinput": "DoctorWhereUniqueInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L35379 | neighbors=[index.d.ts]
-- "generated_client_index_d_doctorworkspaceidcodecompounduniqueinput": "DoctorWorkspaceIdCodeCompoundUniqueInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L41260 | neighbors=[index.d.ts]
-- "generated_client_index_d_either": "__Either" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L827 | neighbors=[index.d.ts]
 
 ## Instructions
 

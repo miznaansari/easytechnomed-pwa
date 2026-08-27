@@ -17,6 +17,10 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "generated_client_index_d_superadminsessiondefaultargs": "SuperAdminSessionDefaultArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L6798 | neighbors=[index.d.ts]
+- "generated_client_index_d_superadminsessiondelegate": "SuperAdminSessionDelegate" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L6131 | neighbors=[index.d.ts]
+- "generated_client_index_d_superadminsessiondeleteargs": "SuperAdminSessionDeleteArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L6770 | neighbors=[index.d.ts]
+- "generated_client_index_d_superadminsessiondeletemanyargs": "SuperAdminSessionDeleteManyArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L6788 | neighbors=[index.d.ts]
 - "generated_client_index_d_superadminsessionfieldrefs": "SuperAdminSessionFieldRefs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L6489 | neighbors=[index.d.ts]
 - "generated_client_index_d_superadminsessionfindfirstargs": "SuperAdminSessionFindFirstArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L6540 | neighbors=[index.d.ts]
 - "generated_client_index_d_superadminsessionfindfirstorthrowargs": "SuperAdminSessionFindFirstOrThrowArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L6588 | neighbors=[index.d.ts]
@@ -53,10 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "generated_client_index_d_superadminsessionuncheckedupdatemanyinput": "SuperAdminSessionUncheckedUpdateManyInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L37536 | neighbors=[index.d.ts]
 - "generated_client_index_d_superadminsessionuncheckedupdatemanywithoutsuperadmininput": "SuperAdminSessionUncheckedUpdateManyWithoutSuperAdminInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L52654 | neighbors=[index.d.ts]
 - "generated_client_index_d_superadminsessionuncheckedupdatemanywithoutsuperadminnestedinput": "SuperAdminSessionUncheckedUpdateManyWithoutSuperAdminNestedInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L43227 | neighbors=[index.d.ts]
-- "generated_client_index_d_superadminsessionuncheckedupdatewithoutsuperadmininput": "SuperAdminSessionUncheckedUpdateWithoutSuperAdminInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L52645 | neighbors=[index.d.ts]
-- "generated_client_index_d_superadminsessionupdateargs": "SuperAdminSessionUpdateArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L6708 | neighbors=[index.d.ts]
-- "generated_client_index_d_superadminsessionupdateinput": "SuperAdminSessionUpdateInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L37499 | neighbors=[index.d.ts]
-- "generated_client_index_d_superadminsessionupdatemanyargs": "SuperAdminSessionUpdateManyArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L6730 | neighbors=[index.d.ts]
 
 ## Instructions
 

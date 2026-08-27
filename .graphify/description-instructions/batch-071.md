@@ -17,6 +17,10 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "generated_client_index_d_getworkspacepdfaggregatetype": "GetWorkspacePdfAggregateType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L32964 | neighbors=[index.d.ts]
+- "generated_client_index_d_getworkspacepdfgroupbypayload": "GetWorkspacePdfGroupByPayload" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L33030 | neighbors=[index.d.ts]
+- "generated_client_index_d_has": "Has" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L937 | neighbors=[index.d.ts]
+- "generated_client_index_d_interpretationrule": "InterpretationRule" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L150 | neighbors=[index.d.ts]
 - "generated_client_index_d_interpretationrule_workspaceargs": "InterpretationRule$workspaceArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L31679 | neighbors=[index.d.ts]
 - "generated_client_index_d_interpretationruleaggregateargs": "InterpretationRuleAggregateArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L30834 | neighbors=[index.d.ts]
 - "generated_client_index_d_interpretationruleargs": "InterpretationRuleArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L54422 | neighbors=[index.d.ts]
@@ -53,10 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "generated_client_index_d_interpretationrulefieldrefs": "InterpretationRuleFieldRefs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L31369 | neighbors=[index.d.ts]
 - "generated_client_index_d_interpretationrulefindfirstargs": "InterpretationRuleFindFirstArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L31421 | neighbors=[index.d.ts]
 - "generated_client_index_d_interpretationrulefindfirstorthrowargs": "InterpretationRuleFindFirstOrThrowArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L31469 | neighbors=[index.d.ts]
-- "generated_client_index_d_interpretationrulefindmanyargs": "InterpretationRuleFindManyArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L31517 | neighbors=[index.d.ts]
-- "generated_client_index_d_interpretationrulefinduniqueargs": "InterpretationRuleFindUniqueArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L31385 | neighbors=[index.d.ts]
-- "generated_client_index_d_interpretationrulefinduniqueorthrowargs": "InterpretationRuleFindUniqueOrThrowArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L31403 | neighbors=[index.d.ts]
-- "generated_client_index_d_interpretationrulegetpayload": "InterpretationRuleGetPayload" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L31002 | neighbors=[index.d.ts]
 
 ## Instructions
 

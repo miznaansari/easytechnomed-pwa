@@ -17,6 +17,10 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "generated_client_index_d_registrationpaymentsumaggregateinputtype": "RegistrationPaymentSumAggregateInputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L25024 | neighbors=[index.d.ts]
+- "generated_client_index_d_registrationpaymentsumaggregateoutputtype": "RegistrationPaymentSumAggregateOutputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L24977 | neighbors=[index.d.ts]
+- "generated_client_index_d_registrationpaymentsumorderbyaggregateinput": "RegistrationPaymentSumOrderByAggregateInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L42267 | neighbors=[index.d.ts]
+- "generated_client_index_d_registrationpaymentuncheckedcreateinput": "RegistrationPaymentUncheckedCreateInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L39557 | neighbors=[index.d.ts]
 - "generated_client_index_d_registrationpaymentuncheckedcreatenestedmanywithoutregistrationinput": "RegistrationPaymentUncheckedCreateNestedManyWithoutRegistrationInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L44175 | neighbors=[index.d.ts]
 - "generated_client_index_d_registrationpaymentuncheckedcreatewithoutregistrationinput": "RegistrationPaymentUncheckedCreateWithoutRegistrationInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L48533 | neighbors=[index.d.ts]
 - "generated_client_index_d_registrationpaymentuncheckedupdateinput": "RegistrationPaymentUncheckedUpdateInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L39578 | neighbors=[index.d.ts]
@@ -53,10 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "generated_client_index_d_registrationtestavgorderbyaggregateinput": "RegistrationTestAvgOrderByAggregateInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L41748 | neighbors=[index.d.ts]
 - "generated_client_index_d_registrationtestcountaggregateinputtype": "RegistrationTestCountAggregateInputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L18685 | neighbors=[index.d.ts]
 - "generated_client_index_d_registrationtestcountaggregateoutputtype": "RegistrationTestCountAggregateOutputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L18621 | neighbors=[index.d.ts]
-- "generated_client_index_d_registrationtestcountargs": "RegistrationTestCountArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L18889 | neighbors=[index.d.ts]
-- "generated_client_index_d_registrationtestcountorderbyaggregateinput": "RegistrationTestCountOrderByAggregateInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L41732 | neighbors=[index.d.ts]
-- "generated_client_index_d_registrationtestcreateargs": "RegistrationTestCreateArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L19449 | neighbors=[index.d.ts]
-- "generated_client_index_d_registrationtestcreateinput": "RegistrationTestCreateInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L38792 | neighbors=[index.d.ts]
 
 ## Instructions
 

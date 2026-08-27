@@ -17,6 +17,8 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "runtime_edge_esm_ee": "Ee()" | kind=code-symbol | source=scratch/generated-client/runtime/edge-esm.js:L5 | neighbors=[edge-esm.js, Gt(), N(), os()]
+- "runtime_edge_esm_emit": "emit()" | kind=code-symbol | source=scratch/generated-client/runtime/edge-esm.js:L1 | neighbors=[edge-esm.js, forEach(), handleAndLogRequestError(), withRetry()]
 - "runtime_edge_esm_er": "Er()" | kind=code-symbol | source=scratch/generated-client/runtime/edge-esm.js:L1 | neighbors=[edge-esm.js, e(), O(), ke()]
 - "runtime_edge_esm_fc": "fc()" | kind=code-symbol | source=scratch/generated-client/runtime/edge-esm.js:L6 | neighbors=[edge-esm.js, te(), Ve(), N()]
 - "runtime_edge_esm_ga": "ga()" | kind=code-symbol | source=scratch/generated-client/runtime/edge-esm.js:L1 | neighbors=[edge-esm.js, ai(), be(), enabled()]
@@ -55,8 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "runtime_edge_esm_uo": "uo()" | kind=code-symbol | source=scratch/generated-client/runtime/edge-esm.js:L1 | neighbors=[edge-esm.js, ul(), e(), to()]
 - "runtime_edge_esm_v": "v()" | kind=code-symbol | source=scratch/generated-client/runtime/edge-esm.js:L1 | neighbors=[edge-esm.js, gn(), S(), h()]
 - "runtime_edge_esm_ve": "Ve()" | kind=code-symbol | source=scratch/generated-client/runtime/edge-esm.js:L5 | neighbors=[edge-esm.js, fc(), gc(), yc()]
-- "runtime_edge_esm_vr": "vr()" | kind=code-symbol | source=scratch/generated-client/runtime/edge-esm.js:L1 | neighbors=[edge-esm.js, lo(), Oo(), toString()]
-- "runtime_edge_esm_wi": "wi()" | kind=code-symbol | source=scratch/generated-client/runtime/edge-esm.js:L1 | neighbors=[edge-esm.js, Ta(), ui(), Na()]
 
 ## Instructions
 

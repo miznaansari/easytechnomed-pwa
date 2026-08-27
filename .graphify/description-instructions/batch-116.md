@@ -17,6 +17,10 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "generated_client_index_d_usersessionupsertargs": "UserSessionUpsertArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L8781 | neighbors=[index.d.ts]
+- "generated_client_index_d_usersessionupsertwithwhereuniquewithoutuserinput": "UserSessionUpsertWithWhereUniqueWithoutUserInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L46524 | neighbors=[index.d.ts]
+- "generated_client_index_d_usersessionwhereinput": "UserSessionWhereInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L34839 | neighbors=[index.d.ts]
+- "generated_client_index_d_usersessionwhereuniqueinput": "UserSessionWhereUniqueInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L34864 | neighbors=[index.d.ts]
 - "generated_client_index_d_usersumaggregateinputtype": "UserSumAggregateInputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L6902 | neighbors=[index.d.ts]
 - "generated_client_index_d_usersumaggregateoutputtype": "UserSumAggregateOutputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L6828 | neighbors=[index.d.ts]
 - "generated_client_index_d_usersumorderbyaggregateinput": "UserSumOrderByAggregateInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L40862 | neighbors=[index.d.ts]
@@ -53,10 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "generated_client_index_d_userupsertargs": "UserUpsertArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L7807 | neighbors=[index.d.ts]
 - "generated_client_index_d_userupsertwithoutsessionsinput": "UserUpsertWithoutSessionsInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L46597 | neighbors=[index.d.ts]
 - "generated_client_index_d_userupsertwithwhereuniquewithoutroleinput": "UserUpsertWithWhereUniqueWithoutRoleInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L46715 | neighbors=[index.d.ts]
-- "generated_client_index_d_userupsertwithwhereuniquewithoutworkspaceinput": "UserUpsertWithWhereUniqueWithoutWorkspaceInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L45909 | neighbors=[index.d.ts]
-- "generated_client_index_d_userwhereinput": "UserWhereInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L34716 | neighbors=[index.d.ts]
-- "generated_client_index_d_userwhereuniqueinput": "UserWhereUniqueInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L34765 | neighbors=[index.d.ts]
-- "generated_client_index_d_without": "Without" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L789 | neighbors=[index.d.ts]
 
 ## Instructions
 

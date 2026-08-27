@@ -17,6 +17,10 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "generated_client_index_d_testcreatewithoutworkspaceinput": "TestCreateWithoutWorkspaceInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L45331 | neighbors=[index.d.ts]
+- "generated_client_index_d_testdefaultargs": "TestDefaultArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L17051 | neighbors=[index.d.ts]
+- "generated_client_index_d_testdelegate": "TestDelegate" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L16255 | neighbors=[index.d.ts]
+- "generated_client_index_d_testdeleteargs": "TestDeleteArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L16913 | neighbors=[index.d.ts]
 - "generated_client_index_d_testdeletemanyargs": "TestDeleteManyArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L16931 | neighbors=[index.d.ts]
 - "generated_client_index_d_testdepartment": "TestDepartment" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L140 | neighbors=[index.d.ts]
 - "generated_client_index_d_testdepartment_testsargs": "TestDepartment$testsArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L29675 | neighbors=[index.d.ts]
@@ -53,10 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "generated_client_index_d_testdepartmentfinduniqueorthrowargs": "TestDepartmentFindUniqueOrThrowArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L29399 | neighbors=[index.d.ts]
 - "generated_client_index_d_testdepartmentgetpayload": "TestDepartmentGetPayload" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L29004 | neighbors=[index.d.ts]
 - "generated_client_index_d_testdepartmentgroupbyargs": "TestDepartmentGroupByArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L28928 | neighbors=[index.d.ts]
-- "generated_client_index_d_testdepartmentgroupbyoutputtype": "TestDepartmentGroupByOutputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L28942 | neighbors=[index.d.ts]
-- "generated_client_index_d_testdepartmentinclude": "TestDepartmentInclude" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L28985 | neighbors=[index.d.ts]
-- "generated_client_index_d_testdepartmentmaxaggregateinputtype": "TestDepartmentMaxAggregateInputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L28841 | neighbors=[index.d.ts]
-- "generated_client_index_d_testdepartmentmaxaggregateoutputtype": "TestDepartmentMaxAggregateOutputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L28810 | neighbors=[index.d.ts]
 
 ## Instructions
 

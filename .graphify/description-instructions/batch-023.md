@@ -24,6 +24,8 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "runtime_wasm_ze": "ze()" | kind=code-symbol | source=scratch/generated-client/runtime/wasm.js:L4 | neighbors=[wasm.js, Ct(), di(), si()]
+- "samples_route": "route.js" | kind=code-symbol | source=app/api/registrations/[id]/samples/route.js:L1 | neighbors=[252e194 e, GET(), POST(), serializeData()]
 - "scratch_backfill": "scratch-backfill.js" | kind=code-symbol | source=scratch-backfill.js:L1 | neighbors=[252e194 e, main(), prisma, { PrismaClient }]
 - "scratch_backfill_incentives": "scratch-backfill-incentives.js" | kind=code-symbol | source=scratch-backfill-incentives.js:L1 | neighbors=[252e194 e, main(), prisma, { PrismaClient }]
 - "scratch_bootstrap_dates": "bootstrap-dates.js" | kind=code-symbol | source=scratch/bootstrap-dates.js:L1 | neighbors=[252e194 e, main(), prisma, { PrismaClient }]
@@ -52,6 +54,7 @@ one-sentence description — no prose, no markdown fences.
 - "commit:repo:github.com-personal/miznaansari/easytechnomed-pwa@05ff30789c62158472747a1d4720bfa72699ce66": "05ff307 2.0.3" | kind=Commit | source=git | neighbors=[main, b0c8bf9 full indexeddb based, 84a8ff2 full indexeddb based]
 - "commit:repo:github.com-personal/miznaansari/easytechnomed-pwa@0afb0aca16b0b7c60827b470364b7139f68d0373": "0afb0ac 2.0.19" | kind=Commit | source=git | neighbors=[main, d84f15f f, 9e25c19 f]
 - "commit:repo:github.com-personal/miznaansari/easytechnomed-pwa@1064f6b19f43957380f01f884545e43d863fb4f4": "1064f6b 2.0.10" | kind=Commit | source=git | neighbors=[main, aae6bad fixed, 5e3d9ef d]
+- "commit:repo:github.com-personal/miznaansari/easytechnomed-pwa@14ed805173d8f620130ddae59fa09191a53a56d3": "14ed805 3.0.0" | kind=Commit | source=git | neighbors=[main, af73a19 fixed, fae0b0a graphify added.]
 - "commit:repo:github.com-personal/miznaansari/easytechnomed-pwa@1ba5187ee6d2c914df8e27fd4139a8596d6081cc": "1ba5187 2.0.17" | kind=Commit | source=git | neighbors=[main, 37ee548 f, eb42395 2.0.16]
 - "commit:repo:github.com-personal/miznaansari/easytechnomed-pwa@2291b5b219512923f56c9243207e09ed0fbbd6c7": "2291b5b 2.0.2" | kind=Commit | source=git | neighbors=[main, 84a8ff2 full indexeddb based, cf2bb98 new]
 - "commit:repo:github.com-personal/miznaansari/easytechnomed-pwa@2476fb6811bfd0ea0c2be69c2f0e6584978025f6": "2476fb6 2.0.9" | kind=Commit | source=git | neighbors=[main, 5e3d9ef d, cea69a2 d]
@@ -61,9 +64,6 @@ one-sentence description — no prose, no markdown fences.
 - "commit:repo:github.com-personal/miznaansari/easytechnomed-pwa@48cc7ec32defe0b9c99dc02a05d23b2bfcbc86f7": "48cc7ec 2.0.22" | kind=Commit | source=git | neighbors=[14fa292 f, main, 9f59247 expire token]
 - "commit:repo:github.com-personal/miznaansari/easytechnomed-pwa@5ff27349a85485707e8d6ec1dbdf3a9164b29d0c": "5ff2734 2.0.11" | kind=Commit | source=git | neighbors=[main, 4d7570f fixed, aae6bad fixed]
 - "commit:repo:github.com-personal/miznaansari/easytechnomed-pwa@6325ac4601eac2f28c31d96812a3115d32258803": "6325ac4 2.0.20" | kind=Commit | source=git | neighbors=[main, f3857f9 f, d84f15f f]
-- "commit:repo:github.com-personal/miznaansari/easytechnomed-pwa@713405831eef818366ebb6342eb43cd7340a4a62": "7134058 1.1.29" | kind=Commit | source=git | neighbors=[main, b5ea15f d, d87cf87 d]
-- "commit:repo:github.com-personal/miznaansari/easytechnomed-pwa@720f0160e2a9e5247fee57dd7f67464920beaa7c": "720f016 2.0.13" | kind=Commit | source=git | neighbors=[main, 905ef50 fixed, c070c55 fixed]
-- "commit:repo:github.com-personal/miznaansari/easytechnomed-pwa@7ec76baa937c381ba6859cd5d0cfe2bb9a34815d": "7ec76ba 2.0.12" | kind=Commit | source=git | neighbors=[4d7570f fixed, main, c070c55 fixed]
 
 ## Instructions
 

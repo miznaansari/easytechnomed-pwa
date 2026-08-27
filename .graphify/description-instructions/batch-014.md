@@ -17,6 +17,7 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "runtime_library_tc": "Tc()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L21 | neighbors=[library.js, en(), slice(), sn(), Ss()]
 - "runtime_library_tt": "Tt()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L26 | neighbors=[library.js, handleRequestError(), vp(), wp(), wn()]
 - "runtime_library_u": "$u()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L5 | neighbors=[library.js, Lo(), Do(), ko(), Nu()]
 - "runtime_library_um": "um()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L111 | neighbors=[library.js, ul(), cm(), ct(), text()]
@@ -56,7 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "runtime_react_native_writewithcontents": "writeWithContents()" | kind=code-symbol | source=scratch/generated-client/runtime/react-native.js:L8 | neighbors=[react-native.js, write(), afterNextNewline(), withIndent(), writeLine()]
 - "runtime_react_native_writewithitems": "writeWithItems()" | kind=code-symbol | source=scratch/generated-client/runtime/react-native.js:L8 | neighbors=[react-native.js, write(), afterNextNewline(), withIndent(), writeLine()]
 - "runtime_react_native_xi": "Xi()" | kind=code-symbol | source=scratch/generated-client/runtime/react-native.js:L2 | neighbors=[react-native.js, e(), r(), Xl(), zl()]
-- "runtime_react_native_zr": "zr()" | kind=code-symbol | source=scratch/generated-client/runtime/react-native.js:L1 | neighbors=[react-native.js, ba(), Hr(), Wr(), toString()]
 
 ## Instructions
 

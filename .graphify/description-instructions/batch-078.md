@@ -17,6 +17,10 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "generated_client_index_d_parametercountargs": "ParameterCountArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L20214 | neighbors=[index.d.ts]
+- "generated_client_index_d_parametercountorderbyaggregateinput": "ParameterCountOrderByAggregateInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L41810 | neighbors=[index.d.ts]
+- "generated_client_index_d_parametercountoutputtype": "ParameterCountOutputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L3596 | neighbors=[index.d.ts]
+- "generated_client_index_d_parametercountoutputtypeargs": "ParameterCountOutputTypeArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L54306 | neighbors=[index.d.ts]
 - "generated_client_index_d_parametercountoutputtypecountinterpretationrulesargs": "ParameterCountOutputTypeCountInterpretationRulesArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L3636 | neighbors=[index.d.ts]
 - "generated_client_index_d_parametercountoutputtypecounttestformulasargs": "ParameterCountOutputTypeCountTestFormulasArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L3629 | neighbors=[index.d.ts]
 - "generated_client_index_d_parametercountoutputtypecounttestmappingsargs": "ParameterCountOutputTypeCountTestMappingsArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L3622 | neighbors=[index.d.ts]
@@ -53,10 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "generated_client_index_d_parametergetpayload": "ParameterGetPayload" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L20212 | neighbors=[index.d.ts]
 - "generated_client_index_d_parametergroupbyargs": "ParameterGroupByArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L20003 | neighbors=[index.d.ts]
 - "generated_client_index_d_parametergroupbyoutputtype": "ParameterGroupByOutputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L20017 | neighbors=[index.d.ts]
-- "generated_client_index_d_parameterinclude": "ParameterInclude" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L20156 | neighbors=[index.d.ts]
-- "generated_client_index_d_parameterlistrelationfilter": "ParameterListRelationFilter" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L40449 | neighbors=[index.d.ts]
-- "generated_client_index_d_parametermaxaggregateinputtype": "ParameterMaxAggregateInputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L19854 | neighbors=[index.d.ts]
-- "generated_client_index_d_parametermaxaggregateoutputtype": "ParameterMaxAggregateOutputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L19684 | neighbors=[index.d.ts]
 
 ## Instructions
 

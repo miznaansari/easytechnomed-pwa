@@ -17,6 +17,8 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "runtime_react_native_getglobalomit": "getGlobalOmit()" | kind=code-symbol | source=scratch/generated-client/runtime/react-native.js:L10 | neighbors=[react-native.js, shouldApplyGlobalOmit(), st(), sc()]
+- "runtime_react_native_getname": "_getName()" | kind=code-symbol | source=scratch/generated-client/runtime/react-native.js:L9 | neighbors=[react-native.js, constructor(), fo(), to()]
 - "runtime_react_native_gt": "gt()" | kind=code-symbol | source=scratch/generated-client/runtime/react-native.js:L10 | neighbors=[react-native.js, hp(), Sr(), Vo()]
 - "runtime_react_native_handleandlogrequesterror": "handleAndLogRequestError()" | kind=code-symbol | source=scratch/generated-client/runtime/react-native.js:L69 | neighbors=[react-native.js, emit(), handleRequestError(), request()]
 - "runtime_react_native_he": "He()" | kind=code-symbol | source=scratch/generated-client/runtime/react-native.js:L10 | neighbors=[react-native.js, Gc(), jc(), kc()]
@@ -55,8 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "runtime_wasm_afternextnewline": "afterNextNewline()" | kind=code-symbol | source=scratch/generated-client/runtime/wasm.js:L2 | neighbors=[wasm.js, write(), writeWithContents(), writeWithItems()]
 - "runtime_wasm_ai": "ai()" | kind=code-symbol | source=scratch/generated-client/runtime/wasm.js:L5 | neighbors=[wasm.js, t(), tt(), li()]
 - "runtime_wasm_ao": "ao()" | kind=code-symbol | source=scratch/generated-client/runtime/wasm.js:L14 | neighbors=[wasm.js, oo(), toJSON(), so()]
-- "runtime_wasm_bt": "Bt()" | kind=code-symbol | source=scratch/generated-client/runtime/wasm.js:L1 | neighbors=[wasm.js, toString(), di(), si()]
-- "runtime_wasm_buildqueryerror": "buildQueryError()" | kind=code-symbol | source=scratch/generated-client/runtime/wasm.js:L12 | neighbors=[wasm.js, getExternalAdapterError(), request(), requestBatch()]
 
 ## Instructions
 

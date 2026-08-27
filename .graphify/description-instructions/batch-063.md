@@ -17,6 +17,10 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "generated_client_index_d_aggregateadminrole": "AggregateAdminRole" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L12861 | neighbors=[index.d.ts]
+- "generated_client_index_d_aggregateadminrolepermission": "AggregateAdminRolePermission" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L13809 | neighbors=[index.d.ts]
+- "generated_client_index_d_aggregateadminsession": "AggregateAdminSession" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L11922 | neighbors=[index.d.ts]
+- "generated_client_index_d_aggregateadmintracking": "AggregateAdminTracking" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L26827 | neighbors=[index.d.ts]
 - "generated_client_index_d_aggregatedoctor": "AggregateDoctor" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L14704 | neighbors=[index.d.ts]
 - "generated_client_index_d_aggregatedoctorincentive": "AggregateDoctorIncentive" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L31710 | neighbors=[index.d.ts]
 - "generated_client_index_d_aggregateinterpretationrule": "AggregateInterpretationRule" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L30729 | neighbors=[index.d.ts]
@@ -53,10 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "generated_client_index_d_boolfilter": "BoolFilter" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L40392 | neighbors=[index.d.ts]
 - "generated_client_index_d_boolwithaggregatesfilter": "BoolWithAggregatesFilter" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L40598 | neighbors=[index.d.ts]
 - "generated_client_index_d_cast": "Cast" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L954 | neighbors=[index.d.ts]
-- "generated_client_index_d_computeraw": "ComputeRaw" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L882 | neighbors=[index.d.ts]
-- "generated_client_index_d_datasource": "Datasource" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L3124 | neighbors=[index.d.ts]
-- "generated_client_index_d_datasources": "Datasources" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L1049 | neighbors=[index.d.ts]
-- "generated_client_index_d_datetimefieldrefinput": "DateTimeFieldRefInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L34459 | neighbors=[index.d.ts]
 
 ## Instructions
 

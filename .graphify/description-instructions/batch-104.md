@@ -17,6 +17,10 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "generated_client_index_d_testparameter_resultsargs": "TestParameter$resultsArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L22112 | neighbors=[index.d.ts]
+- "generated_client_index_d_testparameter_workspaceargs": "TestParameter$workspaceArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L22097 | neighbors=[index.d.ts]
+- "generated_client_index_d_testparameteraggregateargs": "TestParameterAggregateArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L21191 | neighbors=[index.d.ts]
+- "generated_client_index_d_testparameterargs": "TestParameterArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L54382 | neighbors=[index.d.ts]
 - "generated_client_index_d_testparameteravgaggregateinputtype": "TestParameterAvgAggregateInputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L21104 | neighbors=[index.d.ts]
 - "generated_client_index_d_testparameteravgaggregateoutputtype": "TestParameterAvgAggregateOutputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L21016 | neighbors=[index.d.ts]
 - "generated_client_index_d_testparameteravgorderbyaggregateinput": "TestParameterAvgOrderByAggregateInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L42021 | neighbors=[index.d.ts]
@@ -53,10 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "generated_client_index_d_testparametercreatewithoutworkspaceinput": "TestParameterCreateWithoutWorkspaceInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L45532 | neighbors=[index.d.ts]
 - "generated_client_index_d_testparameterdefaultargs": "TestParameterDefaultArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L22132 | neighbors=[index.d.ts]
 - "generated_client_index_d_testparameterdelegate": "TestParameterDelegate" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L21415 | neighbors=[index.d.ts]
-- "generated_client_index_d_testparameterdeleteargs": "TestParameterDeleteArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L22069 | neighbors=[index.d.ts]
-- "generated_client_index_d_testparameterdeletemanyargs": "TestParameterDeleteManyArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L22087 | neighbors=[index.d.ts]
-- "generated_client_index_d_testparameterfieldrefs": "TestParameterFieldRefs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L21776 | neighbors=[index.d.ts]
-- "generated_client_index_d_testparameterfindfirstargs": "TestParameterFindFirstArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L21839 | neighbors=[index.d.ts]
 
 ## Instructions
 

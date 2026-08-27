@@ -17,6 +17,10 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "generated_client_index_d_useravgorderbyaggregateinput": "UserAvgOrderByAggregateInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L40816 | neighbors=[index.d.ts]
+- "generated_client_index_d_usercountaggregateinputtype": "UserCountAggregateInputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L6948 | neighbors=[index.d.ts]
+- "generated_client_index_d_usercountaggregateoutputtype": "UserCountAggregateOutputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L6874 | neighbors=[index.d.ts]
+- "generated_client_index_d_usercountargs": "UserCountArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L7177 | neighbors=[index.d.ts]
 - "generated_client_index_d_usercountorderbyaggregateinput": "UserCountOrderByAggregateInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L40796 | neighbors=[index.d.ts]
 - "generated_client_index_d_usercountoutputtype": "UserCountOutputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L3280 | neighbors=[index.d.ts]
 - "generated_client_index_d_usercountoutputtypeargs": "UserCountOutputTypeArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L54278 | neighbors=[index.d.ts]
@@ -53,10 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "generated_client_index_d_usergetpayload": "UserGetPayload" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L7175 | neighbors=[index.d.ts]
 - "generated_client_index_d_usergroupbyargs": "UserGroupByArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L7041 | neighbors=[index.d.ts]
 - "generated_client_index_d_usergroupbyoutputtype": "UserGroupByOutputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L7055 | neighbors=[index.d.ts]
-- "generated_client_index_d_userinclude": "UserInclude" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L7139 | neighbors=[index.d.ts]
-- "generated_client_index_d_userlistrelationfilter": "UserListRelationFilter" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L40443 | neighbors=[index.d.ts]
-- "generated_client_index_d_usermaxaggregateinputtype": "UserMaxAggregateInputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L6928 | neighbors=[index.d.ts]
-- "generated_client_index_d_usermaxaggregateoutputtype": "UserMaxAggregateOutputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L6854 | neighbors=[index.d.ts]
 
 ## Instructions
 

@@ -17,6 +17,10 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "generated_client_index_d_testdepartmentgroupbyoutputtype": "TestDepartmentGroupByOutputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L28942 | neighbors=[index.d.ts]
+- "generated_client_index_d_testdepartmentinclude": "TestDepartmentInclude" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L28985 | neighbors=[index.d.ts]
+- "generated_client_index_d_testdepartmentmaxaggregateinputtype": "TestDepartmentMaxAggregateInputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L28841 | neighbors=[index.d.ts]
+- "generated_client_index_d_testdepartmentmaxaggregateoutputtype": "TestDepartmentMaxAggregateOutputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L28810 | neighbors=[index.d.ts]
 - "generated_client_index_d_testdepartmentmaxorderbyaggregateinput": "TestDepartmentMaxOrderByAggregateInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L42429 | neighbors=[index.d.ts]
 - "generated_client_index_d_testdepartmentminaggregateinputtype": "TestDepartmentMinAggregateInputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L28834 | neighbors=[index.d.ts]
 - "generated_client_index_d_testdepartmentminaggregateoutputtype": "TestDepartmentMinAggregateOutputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L28803 | neighbors=[index.d.ts]
@@ -53,10 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "generated_client_index_d_testfindfirstorthrowargs": "TestFindFirstOrThrowArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L16731 | neighbors=[index.d.ts]
 - "generated_client_index_d_testfindmanyargs": "TestFindManyArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L16779 | neighbors=[index.d.ts]
 - "generated_client_index_d_testfinduniqueargs": "TestFindUniqueArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L16647 | neighbors=[index.d.ts]
-- "generated_client_index_d_testfinduniqueorthrowargs": "TestFindUniqueOrThrowArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L16665 | neighbors=[index.d.ts]
-- "generated_client_index_d_testformula": "TestFormula" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L145 | neighbors=[index.d.ts]
-- "generated_client_index_d_testformula_workspaceargs": "TestFormula$workspaceArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L30698 | neighbors=[index.d.ts]
-- "generated_client_index_d_testformulaaggregateargs": "TestFormulaAggregateArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L29838 | neighbors=[index.d.ts]
 
 ## Instructions
 

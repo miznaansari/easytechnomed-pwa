@@ -63,7 +63,7 @@ one-sentence description — no prose, no markdown fences.
 - "commit:repo:github.com-personal/miznaansari/easytechnomed-pwa@eb8b1e55a4ac0099b81b812ad72ed96f863a41b6": "eb8b1e5 f" | kind=Commit | source=git | neighbors=[7d8c494 fxed, main, dbe1732 1.1.25, PWARegister.js, error.js, page.js]
 - "dashboard_dashboardcharts": "DashboardCharts.js" | kind=code-symbol | source=app/(customer)/(dashboard)/dashboard/DashboardCharts.js:L1 | neighbors=[252e194 e, CustomTooltip(), DepartmentDistributionChart(), ReferralChart(), RegistrationChart(), RevenueChart()]
 - "id_route": "route.js" | kind=code-symbol | source=app/api/registrations/[id]/route.js:L1 | neighbors=[252e194 e, d446d11 fixed code, DELETE(), GET(), PUT(), registrationSchema]
-- "payments_paymentsclient": "paymentsClient.jsx" | kind=code-symbol | source=app/(customer)/(dashboard)/settings/payments/paymentsClient.jsx:L1 | neighbors=[252e194 e, 532b740 fixed, 53ca5c1 stable version 1, cf2bb98 new, page.js, PaymentsClient()]
+- "offline_syncindicator": "SyncIndicator.jsx" | kind=code-symbol | source=components/offline/SyncIndicator.jsx:L1 | neighbors=[2b2534c f, 9f59247 expire token, af73a19 fixed, d446d11 fixed code, d84f15f f, f3857f9 f]
 
 ## Instructions
 

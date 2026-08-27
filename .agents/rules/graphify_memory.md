@@ -12,4 +12,12 @@
    - ALL forms and UI mutations must write/read directly to Dexie IndexedDB (0ms latency).
    - Background `syncManager` (`/api/offline/sync`) solely determines `POST` (for `isDirty`), `PUT` (for `isModified`), and `GET` (for cloud sync deltas).
 
+4. **Task Completion Protocol**:
+   - At the conclusion of every feature or bug fix:
+   1. Increment `package.json` version (patch bump).
+   2. Record the new version and changelog entry in `memory.md`.
+   3. Re-run Graphify update (`npx @sentropic/graphify update .`) to maintain an up-to-date knowledge graph.
+
+
+
 

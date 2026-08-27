@@ -17,6 +17,10 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "generated_client_index_d_adminaddressdelegate": "AdminAddressDelegate" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L24275 | neighbors=[index.d.ts]
+- "generated_client_index_d_adminaddressdeleteargs": "AdminAddressDeleteArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L24919 | neighbors=[index.d.ts]
+- "generated_client_index_d_adminaddressdeletemanyargs": "AdminAddressDeleteManyArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L24937 | neighbors=[index.d.ts]
+- "generated_client_index_d_adminaddressfieldrefs": "AdminAddressFieldRefs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L24633 | neighbors=[index.d.ts]
 - "generated_client_index_d_adminaddressfindfirstargs": "AdminAddressFindFirstArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L24689 | neighbors=[index.d.ts]
 - "generated_client_index_d_adminaddressfindfirstorthrowargs": "AdminAddressFindFirstOrThrowArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L24737 | neighbors=[index.d.ts]
 - "generated_client_index_d_adminaddressfindmanyargs": "AdminAddressFindManyArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L24785 | neighbors=[index.d.ts]
@@ -53,10 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "generated_client_index_d_adminaddressupdateargs": "AdminAddressUpdateArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L24857 | neighbors=[index.d.ts]
 - "generated_client_index_d_adminaddressupdateinput": "AdminAddressUpdateInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L39475 | neighbors=[index.d.ts]
 - "generated_client_index_d_adminaddressupdatemanyargs": "AdminAddressUpdateManyArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L24879 | neighbors=[index.d.ts]
-- "generated_client_index_d_adminaddressupdatemanymutationinput": "AdminAddressUpdateManyMutationInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L39519 | neighbors=[index.d.ts]
-- "generated_client_index_d_adminaddressupdateonewithoutadminnestedinput": "AdminAddressUpdateOneWithoutAdminNestedInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L43549 | neighbors=[index.d.ts]
-- "generated_client_index_d_adminaddressupdatetoonewithwherewithoutadmininput": "AdminAddressUpdateToOneWithWhereWithoutAdminInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L47133 | neighbors=[index.d.ts]
-- "generated_client_index_d_adminaddressupdatewithoutadmininput": "AdminAddressUpdateWithoutAdminInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L47138 | neighbors=[index.d.ts]
 
 ## Instructions
 

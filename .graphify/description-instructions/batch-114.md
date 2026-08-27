@@ -17,6 +17,10 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "generated_client_index_d_userroleupdatewithoutpermissionsinput": "UserRoleUpdateWithoutPermissionsInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L46783 | neighbors=[index.d.ts]
+- "generated_client_index_d_userroleupdatewithoutusersinput": "UserRoleUpdateWithoutUsersInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L46461 | neighbors=[index.d.ts]
+- "generated_client_index_d_userroleupsertargs": "UserRoleUpsertArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L9667 | neighbors=[index.d.ts]
+- "generated_client_index_d_userroleupsertwithoutpermissionsinput": "UserRoleUpsertWithoutPermissionsInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L46772 | neighbors=[index.d.ts]
 - "generated_client_index_d_userroleupsertwithoutusersinput": "UserRoleUpsertWithoutUsersInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L46450 | neighbors=[index.d.ts]
 - "generated_client_index_d_userrolewhereinput": "UserRoleWhereInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L34906 | neighbors=[index.d.ts]
 - "generated_client_index_d_userrolewhereuniqueinput": "UserRoleWhereUniqueInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L34923 | neighbors=[index.d.ts]
@@ -53,10 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "generated_client_index_d_usersessionfindfirstorthrowargs": "UserSessionFindFirstOrThrowArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L8625 | neighbors=[index.d.ts]
 - "generated_client_index_d_usersessionfindmanyargs": "UserSessionFindManyArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L8673 | neighbors=[index.d.ts]
 - "generated_client_index_d_usersessionfinduniqueargs": "UserSessionFindUniqueArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L8541 | neighbors=[index.d.ts]
-- "generated_client_index_d_usersessionfinduniqueorthrowargs": "UserSessionFindUniqueOrThrowArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L8559 | neighbors=[index.d.ts]
-- "generated_client_index_d_usersessiongetpayload": "UserSessionGetPayload" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L8161 | neighbors=[index.d.ts]
-- "generated_client_index_d_usersessiongroupbyargs": "UserSessionGroupByArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L8075 | neighbors=[index.d.ts]
-- "generated_client_index_d_usersessiongroupbyoutputtype": "UserSessionGroupByOutputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L8089 | neighbors=[index.d.ts]
 
 ## Instructions
 

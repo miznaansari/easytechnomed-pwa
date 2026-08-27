@@ -17,6 +17,10 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "generated_client_index_d_computeraw": "ComputeRaw" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L882 | neighbors=[index.d.ts]
+- "generated_client_index_d_datasource": "Datasource" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L3124 | neighbors=[index.d.ts]
+- "generated_client_index_d_datasources": "Datasources" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L1049 | neighbors=[index.d.ts]
+- "generated_client_index_d_datetimefieldrefinput": "DateTimeFieldRefInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L34459 | neighbors=[index.d.ts]
 - "generated_client_index_d_datetimefieldupdateoperationsinput": "DateTimeFieldUpdateOperationsInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L42883 | neighbors=[index.d.ts]
 - "generated_client_index_d_datetimefilter": "DateTimeFilter" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L40397 | neighbors=[index.d.ts]
 - "generated_client_index_d_datetimenullablefilter": "DateTimeNullableFilter" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L40408 | neighbors=[index.d.ts]
@@ -53,10 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "generated_client_index_d_doctorcountoutputtypedefaultargs": "DoctorCountOutputTypeDefaultArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L3456 | neighbors=[index.d.ts]
 - "generated_client_index_d_doctorcountoutputtypeselect": "DoctorCountOutputTypeSelect" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L3446 | neighbors=[index.d.ts]
 - "generated_client_index_d_doctorcreateargs": "DoctorCreateArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L15592 | neighbors=[index.d.ts]
-- "generated_client_index_d_doctorcreateinput": "DoctorCreateInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L38187 | neighbors=[index.d.ts]
-- "generated_client_index_d_doctorcreatemanyargs": "DoctorCreateManyArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L15610 | neighbors=[index.d.ts]
-- "generated_client_index_d_doctorcreatemanyinput": "DoctorCreateManyInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L38261 | neighbors=[index.d.ts]
-- "generated_client_index_d_doctorcreatemanyworkspaceinput": "DoctorCreateManyWorkspaceInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L51790 | neighbors=[index.d.ts]
 
 ## Instructions
 

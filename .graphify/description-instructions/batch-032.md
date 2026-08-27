@@ -17,6 +17,10 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "runtime_wasm_at": "at()" | kind=code-symbol | source=scratch/generated-client/runtime/wasm.js:L1 | neighbors=[wasm.js, ds(), to()]
+- "runtime_wasm_bi": "bi()" | kind=code-symbol | source=scratch/generated-client/runtime/wasm.js:L5 | neighbors=[wasm.js, isEmpty(), sr()]
+- "runtime_wasm_copy": "copy()" | kind=code-symbol | source=scratch/generated-client/runtime/wasm.js:L1 | neighbors=[wasm.js, V(), write()]
+- "runtime_wasm_createenginespan": "createEngineSpan()" | kind=code-symbol | source=scratch/generated-client/runtime/wasm.js:L21 | neighbors=[wasm.js, getGlobalTracingHelper(), logger()]
 - "runtime_wasm_da": "da()" | kind=code-symbol | source=scratch/generated-client/runtime/wasm.js:L5 | neighbors=[wasm.js, H(), Ie()]
 - "runtime_wasm_dt": "dt()" | kind=code-symbol | source=scratch/generated-client/runtime/wasm.js:L4 | neighbors=[wasm.js, e(), Xn()]
 - "runtime_wasm_emit": "emit()" | kind=code-symbol | source=scratch/generated-client/runtime/wasm.js:L1 | neighbors=[wasm.js, handleAndLogRequestError(), logger()]
@@ -53,10 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "runtime_wasm_ve": "Ve()" | kind=code-symbol | source=scratch/generated-client/runtime/wasm.js:L1 | neighbors=[wasm.js, getGlobalOmit(), ls()]
 - "runtime_wasm_vt": "vt()" | kind=code-symbol | source=scratch/generated-client/runtime/wasm.js:L5 | neighbors=[wasm.js, tt(), Wr()]
 - "runtime_wasm_wt": "wt()" | kind=code-symbol | source=scratch/generated-client/runtime/wasm.js:L5 | neighbors=[wasm.js, constructor(), hi()]
-- "runtime_wasm_xs": "Xs()" | kind=code-symbol | source=scratch/generated-client/runtime/wasm.js:L5 | neighbors=[wasm.js, si(), addItem()]
-- "runtime_wasm_ya": "ya()" | kind=code-symbol | source=scratch/generated-client/runtime/wasm.js:L5 | neighbors=[wasm.js, Ir(), mr()]
-- "runtime_wasm_za": "za()" | kind=code-symbol | source=scratch/generated-client/runtime/wasm.js:L21 | neighbors=[wasm.js, be(), xo()]
-- "scratch_test_calc_calculatealldependents": "calculateAllDependents()" | kind=code-symbol | source=scratch/test-calc.js:L76 | neighbors=[test-calc.js, checkFormulaDependencies(), evaluateExpression()]
 
 ## Instructions
 

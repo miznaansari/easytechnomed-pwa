@@ -17,6 +17,10 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "generated_client_index_d_testupdateonerequiredwithoutregistrationsnestedinput": "TestUpdateOneRequiredWithoutRegistrationsNestedInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L44341 | neighbors=[index.d.ts]
+- "generated_client_index_d_testupdatetoonewithwherewithoutformulasinput": "TestUpdateToOneWithWhereWithoutFormulasInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L51038 | neighbors=[index.d.ts]
+- "generated_client_index_d_testupdatetoonewithwherewithoutinterpretationrulesinput": "TestUpdateToOneWithWhereWithoutInterpretationRulesInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L51432 | neighbors=[index.d.ts]
+- "generated_client_index_d_testupdatetoonewithwherewithoutparametersinput": "TestUpdateToOneWithWhereWithoutParametersInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L49843 | neighbors=[index.d.ts]
 - "generated_client_index_d_testupdatetoonewithwherewithoutregistrationsinput": "TestUpdateToOneWithWhereWithoutRegistrationsInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L49141 | neighbors=[index.d.ts]
 - "generated_client_index_d_testupdatewithoutdepartmentinput": "TestUpdateWithoutDepartmentInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L54186 | neighbors=[index.d.ts]
 - "generated_client_index_d_testupdatewithoutformulasinput": "TestUpdateWithoutFormulasInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L51043 | neighbors=[index.d.ts]
@@ -53,10 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "generated_client_index_d_userargs": "UserArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L54330 | neighbors=[index.d.ts]
 - "generated_client_index_d_useravgaggregateinputtype": "UserAvgAggregateInputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L6896 | neighbors=[index.d.ts]
 - "generated_client_index_d_useravgaggregateoutputtype": "UserAvgAggregateOutputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L6822 | neighbors=[index.d.ts]
-- "generated_client_index_d_useravgorderbyaggregateinput": "UserAvgOrderByAggregateInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L40816 | neighbors=[index.d.ts]
-- "generated_client_index_d_usercountaggregateinputtype": "UserCountAggregateInputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L6948 | neighbors=[index.d.ts]
-- "generated_client_index_d_usercountaggregateoutputtype": "UserCountAggregateOutputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L6874 | neighbors=[index.d.ts]
-- "generated_client_index_d_usercountargs": "UserCountArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L7177 | neighbors=[index.d.ts]
 
 ## Instructions
 

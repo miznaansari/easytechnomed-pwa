@@ -17,6 +17,10 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "runtime_library_d_extendedspanoptions": "ExtendedSpanOptions" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L1248 | neighbors=[_d()]
+- "runtime_library_d_extendshook": "ExtendsHook" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L1260 | neighbors=[_d()]
+- "runtime_library_d_extensionargs": "ExtensionArgs" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L1294 | neighbors=[_d()]
+- "runtime_library_d_extractglobalomit": "ExtractGlobalOmit" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L1345 | neighbors=[_d()]
 - "runtime_library_d_fetch": "Fetch" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L1351 | neighbors=[_d()]
 - "runtime_library_d_field": "Field" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L702 | neighbors=[_d()]
 - "runtime_library_d_fielddefault": "FieldDefault" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L726 | neighbors=[_d()]
@@ -53,10 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "runtime_library_d_inputjsonobject": "InputJsonObject" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L1746 | neighbors=[_d()]
 - "runtime_library_d_inputjsonvalue": "InputJsonValue" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L1763 | neighbors=[_d()]
 - "runtime_library_d_inputtype": "InputType" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L811 | neighbors=[_d()]
-- "runtime_library_d_inputtyperef": "InputTypeRef" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L784 | neighbors=[_d()]
-- "runtime_library_d_instance": "Instance" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L329 | neighbors=[_d()]
-- "runtime_library_d_interactivetransactioninfo": "InteractiveTransactionInfo" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L1767 | neighbors=[_d()]
-- "runtime_library_d_interactivetransactionoptions": "InteractiveTransactionOptions" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L1780 | neighbors=[_d()]
 
 ## Instructions
 

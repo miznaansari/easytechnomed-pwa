@@ -17,6 +17,10 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "generated_client_index_d_admincreateorconnectwithoutroleinput": "AdminCreateOrConnectWithoutRoleInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L47434 | neighbors=[index.d.ts]
+- "generated_client_index_d_admincreateorconnectwithoutsessionsinput": "AdminCreateOrConnectWithoutSessionsInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L47300 | neighbors=[index.d.ts]
+- "generated_client_index_d_admincreateorconnectwithouttrackingsinput": "AdminCreateOrConnectWithoutTrackingsInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L50584 | neighbors=[index.d.ts]
+- "generated_client_index_d_admincreateorconnectwithoutworkspaceinput": "AdminCreateOrConnectWithoutWorkspaceInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L45177 | neighbors=[index.d.ts]
 - "generated_client_index_d_admincreatewithoutaddressinput": "AdminCreateWithoutAddressInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L50197 | neighbors=[index.d.ts]
 - "generated_client_index_d_admincreatewithoutregistrationsinput": "AdminCreateWithoutRegistrationsInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L48460 | neighbors=[index.d.ts]
 - "generated_client_index_d_admincreatewithoutroleinput": "AdminCreateWithoutRoleInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L47375 | neighbors=[index.d.ts]
@@ -53,10 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "generated_client_index_d_adminrole": "AdminRole" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L65 | neighbors=[index.d.ts]
 - "generated_client_index_d_adminrole_adminsargs": "AdminRole$adminsArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L13753 | neighbors=[index.d.ts]
 - "generated_client_index_d_adminrole_permissionsargs": "AdminRole$permissionsArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L13773 | neighbors=[index.d.ts]
-- "generated_client_index_d_adminroleaggregateargs": "AdminRoleAggregateArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L12930 | neighbors=[index.d.ts]
-- "generated_client_index_d_adminroleargs": "AdminRoleArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L54354 | neighbors=[index.d.ts]
-- "generated_client_index_d_adminroleavgaggregateinputtype": "AdminRoleAvgAggregateInputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L12900 | neighbors=[index.d.ts]
-- "generated_client_index_d_adminroleavgaggregateoutputtype": "AdminRoleAvgAggregateOutputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L12869 | neighbors=[index.d.ts]
 
 ## Instructions
 

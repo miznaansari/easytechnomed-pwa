@@ -17,6 +17,10 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "generated_client_index_d_adminsessionavgaggregateoutputtype": "AdminSessionAvgAggregateOutputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L11930 | neighbors=[index.d.ts]
+- "generated_client_index_d_adminsessionavgorderbyaggregateinput": "AdminSessionAvgOrderByAggregateInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L41137 | neighbors=[index.d.ts]
+- "generated_client_index_d_adminsessioncountaggregateinputtype": "AdminSessionCountAggregateInputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L12002 | neighbors=[index.d.ts]
+- "generated_client_index_d_adminsessioncountaggregateoutputtype": "AdminSessionCountAggregateOutputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L11960 | neighbors=[index.d.ts]
 - "generated_client_index_d_adminsessioncountargs": "AdminSessionCountArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L12173 | neighbors=[index.d.ts]
 - "generated_client_index_d_adminsessioncountorderbyaggregateinput": "AdminSessionCountOrderByAggregateInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L41127 | neighbors=[index.d.ts]
 - "generated_client_index_d_adminsessioncreateargs": "AdminSessionCreateArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L12726 | neighbors=[index.d.ts]
@@ -53,10 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "generated_client_index_d_adminsessionorderbywithaggregationinput": "AdminSessionOrderByWithAggregationInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L35205 | neighbors=[index.d.ts]
 - "generated_client_index_d_adminsessionorderbywithrelationinput": "AdminSessionOrderByWithRelationInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L35180 | neighbors=[index.d.ts]
 - "generated_client_index_d_adminsessionpayload": "$AdminSessionPayload" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L12154 | neighbors=[index.d.ts]
-- "generated_client_index_d_adminsessionscalarfieldenum": "AdminSessionScalarFieldEnum" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L34024 | neighbors=[index.d.ts]
-- "generated_client_index_d_adminsessionscalarwhereinput": "AdminSessionScalarWhereInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L47181 | neighbors=[index.d.ts]
-- "generated_client_index_d_adminsessionscalarwherewithaggregatesinput": "AdminSessionScalarWhereWithAggregatesInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L35220 | neighbors=[index.d.ts]
-- "generated_client_index_d_adminsessionselect": "AdminSessionSelect" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L12128 | neighbors=[index.d.ts]
 
 ## Instructions
 

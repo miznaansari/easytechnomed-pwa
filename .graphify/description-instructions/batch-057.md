@@ -17,6 +17,10 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "generated_client_index_d_adminrolepermissionwhereuniqueinput": "AdminRolePermissionWhereUniqueInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L35305 | neighbors=[index.d.ts]
+- "generated_client_index_d_adminrolerelationfilter": "AdminRoleRelationFilter" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L40995 | neighbors=[index.d.ts]
+- "generated_client_index_d_adminrolescalarfieldenum": "AdminRoleScalarFieldEnum" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L34034 | neighbors=[index.d.ts]
+- "generated_client_index_d_adminrolescalarwherewithaggregatesinput": "AdminRoleScalarWhereWithAggregatesInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L35278 | neighbors=[index.d.ts]
 - "generated_client_index_d_adminroleselect": "AdminRoleSelect" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L13042 | neighbors=[index.d.ts]
 - "generated_client_index_d_adminroleselectscalar": "AdminRoleSelectScalar" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L13053 | neighbors=[index.d.ts]
 - "generated_client_index_d_adminrolesumaggregateinputtype": "AdminRoleSumAggregateInputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L12904 | neighbors=[index.d.ts]
@@ -53,10 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "generated_client_index_d_adminsessionaggregateargs": "AdminSessionAggregateArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L12013 | neighbors=[index.d.ts]
 - "generated_client_index_d_adminsessionargs": "AdminSessionArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L54350 | neighbors=[index.d.ts]
 - "generated_client_index_d_adminsessionavgaggregateinputtype": "AdminSessionAvgAggregateInputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L11972 | neighbors=[index.d.ts]
-- "generated_client_index_d_adminsessionavgaggregateoutputtype": "AdminSessionAvgAggregateOutputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L11930 | neighbors=[index.d.ts]
-- "generated_client_index_d_adminsessionavgorderbyaggregateinput": "AdminSessionAvgOrderByAggregateInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L41137 | neighbors=[index.d.ts]
-- "generated_client_index_d_adminsessioncountaggregateinputtype": "AdminSessionCountAggregateInputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L12002 | neighbors=[index.d.ts]
-- "generated_client_index_d_adminsessioncountaggregateoutputtype": "AdminSessionCountAggregateOutputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L11960 | neighbors=[index.d.ts]
 
 ## Instructions
 

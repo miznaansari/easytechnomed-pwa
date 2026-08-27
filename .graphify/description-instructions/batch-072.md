@@ -17,6 +17,10 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "generated_client_index_d_interpretationrulefindmanyargs": "InterpretationRuleFindManyArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L31517 | neighbors=[index.d.ts]
+- "generated_client_index_d_interpretationrulefinduniqueargs": "InterpretationRuleFindUniqueArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L31385 | neighbors=[index.d.ts]
+- "generated_client_index_d_interpretationrulefinduniqueorthrowargs": "InterpretationRuleFindUniqueOrThrowArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L31403 | neighbors=[index.d.ts]
+- "generated_client_index_d_interpretationrulegetpayload": "InterpretationRuleGetPayload" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L31002 | neighbors=[index.d.ts]
 - "generated_client_index_d_interpretationrulegroupbyargs": "InterpretationRuleGroupByArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L30906 | neighbors=[index.d.ts]
 - "generated_client_index_d_interpretationrulegroupbyoutputtype": "InterpretationRuleGroupByOutputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L30920 | neighbors=[index.d.ts]
 - "generated_client_index_d_interpretationruleinclude": "InterpretationRuleInclude" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L30976 | neighbors=[index.d.ts]
@@ -53,10 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "generated_client_index_d_interpretationruleuncheckedupdatemanywithouttestinput": "InterpretationRuleUncheckedUpdateManyWithoutTestInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L53801 | neighbors=[index.d.ts]
 - "generated_client_index_d_interpretationruleuncheckedupdatemanywithouttestnestedinput": "InterpretationRuleUncheckedUpdateManyWithoutTestNestedInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L44109 | neighbors=[index.d.ts]
 - "generated_client_index_d_interpretationruleuncheckedupdatemanywithoutworkspaceinput": "InterpretationRuleUncheckedUpdateManyWithoutWorkspaceInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L52607 | neighbors=[index.d.ts]
-- "generated_client_index_d_interpretationruleuncheckedupdatemanywithoutworkspacenestedinput": "InterpretationRuleUncheckedUpdateManyWithoutWorkspaceNestedInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L43147 | neighbors=[index.d.ts]
-- "generated_client_index_d_interpretationruleuncheckedupdatewithoutparameterinput": "InterpretationRuleUncheckedUpdateWithoutParameterInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L54104 | neighbors=[index.d.ts]
-- "generated_client_index_d_interpretationruleuncheckedupdatewithouttestinput": "InterpretationRuleUncheckedUpdateWithoutTestInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L53791 | neighbors=[index.d.ts]
-- "generated_client_index_d_interpretationruleuncheckedupdatewithoutworkspaceinput": "InterpretationRuleUncheckedUpdateWithoutWorkspaceInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L52597 | neighbors=[index.d.ts]
 
 ## Instructions
 

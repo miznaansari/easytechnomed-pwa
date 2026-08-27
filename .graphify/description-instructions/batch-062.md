@@ -17,6 +17,10 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "generated_client_index_d_adminuncheckedupdatewithoutregistrationsinput": "AdminUncheckedUpdateWithoutRegistrationsInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L48807 | neighbors=[index.d.ts]
+- "generated_client_index_d_adminuncheckedupdatewithoutroleinput": "AdminUncheckedUpdateWithoutRoleInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L53137 | neighbors=[index.d.ts]
+- "generated_client_index_d_adminuncheckedupdatewithoutsessionsinput": "AdminUncheckedUpdateWithoutSessionsInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L47345 | neighbors=[index.d.ts]
+- "generated_client_index_d_adminuncheckedupdatewithouttrackingsinput": "AdminUncheckedUpdateWithoutTrackingsInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L50629 | neighbors=[index.d.ts]
 - "generated_client_index_d_adminuncheckedupdatewithoutworkspaceinput": "AdminUncheckedUpdateWithoutWorkspaceInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L51999 | neighbors=[index.d.ts]
 - "generated_client_index_d_adminupdateargs": "AdminUpdateArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L11726 | neighbors=[index.d.ts]
 - "generated_client_index_d_adminupdateinput": "AdminUpdateInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L37890 | neighbors=[index.d.ts]
@@ -53,10 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "generated_client_index_d_adminwhereuniqueinput": "AdminWhereUniqueInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L35068 | neighbors=[index.d.ts]
 - "generated_client_index_d_aggregateadmin": "AggregateAdmin" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L10672 | neighbors=[index.d.ts]
 - "generated_client_index_d_aggregateadminaddress": "AggregateAdminAddress" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L23961 | neighbors=[index.d.ts]
-- "generated_client_index_d_aggregateadminrole": "AggregateAdminRole" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L12861 | neighbors=[index.d.ts]
-- "generated_client_index_d_aggregateadminrolepermission": "AggregateAdminRolePermission" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L13809 | neighbors=[index.d.ts]
-- "generated_client_index_d_aggregateadminsession": "AggregateAdminSession" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L11922 | neighbors=[index.d.ts]
-- "generated_client_index_d_aggregateadmintracking": "AggregateAdminTracking" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L26827 | neighbors=[index.d.ts]
 
 ## Instructions
 

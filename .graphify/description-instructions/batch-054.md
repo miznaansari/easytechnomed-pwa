@@ -17,6 +17,10 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "generated_client_index_d_adminroleaggregateargs": "AdminRoleAggregateArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L12930 | neighbors=[index.d.ts]
+- "generated_client_index_d_adminroleargs": "AdminRoleArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L54354 | neighbors=[index.d.ts]
+- "generated_client_index_d_adminroleavgaggregateinputtype": "AdminRoleAvgAggregateInputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L12900 | neighbors=[index.d.ts]
+- "generated_client_index_d_adminroleavgaggregateoutputtype": "AdminRoleAvgAggregateOutputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L12869 | neighbors=[index.d.ts]
 - "generated_client_index_d_adminroleavgorderbyaggregateinput": "AdminRoleAvgOrderByAggregateInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L41184 | neighbors=[index.d.ts]
 - "generated_client_index_d_adminrolecountaggregateinputtype": "AdminRoleCountAggregateInputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L12922 | neighbors=[index.d.ts]
 - "generated_client_index_d_adminrolecountaggregateoutputtype": "AdminRoleCountAggregateOutputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L12891 | neighbors=[index.d.ts]
@@ -53,10 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "generated_client_index_d_adminrolegroupbyoutputtype": "AdminRoleGroupByOutputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L13016 | neighbors=[index.d.ts]
 - "generated_client_index_d_adminroleinclude": "AdminRoleInclude" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L13060 | neighbors=[index.d.ts]
 - "generated_client_index_d_adminrolemaxaggregateinputtype": "AdminRoleMaxAggregateInputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L12915 | neighbors=[index.d.ts]
-- "generated_client_index_d_adminrolemaxaggregateoutputtype": "AdminRoleMaxAggregateOutputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L12884 | neighbors=[index.d.ts]
-- "generated_client_index_d_adminrolemaxorderbyaggregateinput": "AdminRoleMaxOrderByAggregateInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L41188 | neighbors=[index.d.ts]
-- "generated_client_index_d_adminroleminaggregateinputtype": "AdminRoleMinAggregateInputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L12908 | neighbors=[index.d.ts]
-- "generated_client_index_d_adminroleminaggregateoutputtype": "AdminRoleMinAggregateOutputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L12877 | neighbors=[index.d.ts]
 
 ## Instructions
 

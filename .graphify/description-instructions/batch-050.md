@@ -17,6 +17,10 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "dashboard_error_dashboarderrorboundary": "DashboardErrorBoundary()" | kind=code-symbol | source=app/(customer)/(dashboard)/error.js:L8 | neighbors=[error.js]
+- "dashboard_layout_admindashboardlayout": "AdminDashboardLayout()" | kind=code-symbol | source=app/(customer)/(dashboard)/layout.js:L7 | neighbors=[layout.js]
+- "dashboard_page_admindashboardpage": "AdminDashboardPage()" | kind=code-symbol | source=app/(customer)/(dashboard)/dashboard/page.js:L45 | neighbors=[page.js]
+- "dashboard_rangeselector_dashboardrangeselector": "DashboardRangeSelector()" | kind=code-symbol | source=app/(customer)/(dashboard)/dashboard/RangeSelector.js:L7 | neighbors=[RangeSelector.js]
 - "doctor_summary_page_doctorsummarypage": "DoctorSummaryPage()" | kind=code-symbol | source=app/(customer)/(dashboard)/doctor-summary/page.js:L60 | neighbors=[page.js]
 - "doctors_route_delete": "DELETE()" | kind=code-symbol | source=app/api/doctors/route.js:L170 | neighbors=[route.js]
 - "draft_route_post": "POST()" | kind=code-symbol | source=app/api/registrations/[id]/results/draft/route.js:L5 | neighbors=[route.js]
@@ -53,10 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "generated_client_index_d_adminaddresscreateorconnectwithoutadmininput": "AdminAddressCreateOrConnectWithoutAdminInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L46887 | neighbors=[index.d.ts]
 - "generated_client_index_d_adminaddresscreatewithoutadmininput": "AdminAddressCreateWithoutAdminInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L46860 | neighbors=[index.d.ts]
 - "generated_client_index_d_adminaddressdefaultargs": "AdminAddressDefaultArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L24947 | neighbors=[index.d.ts]
-- "generated_client_index_d_adminaddressdelegate": "AdminAddressDelegate" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L24275 | neighbors=[index.d.ts]
-- "generated_client_index_d_adminaddressdeleteargs": "AdminAddressDeleteArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L24919 | neighbors=[index.d.ts]
-- "generated_client_index_d_adminaddressdeletemanyargs": "AdminAddressDeleteManyArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L24937 | neighbors=[index.d.ts]
-- "generated_client_index_d_adminaddressfieldrefs": "AdminAddressFieldRefs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L24633 | neighbors=[index.d.ts]
 
 ## Instructions
 

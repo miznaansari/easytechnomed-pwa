@@ -17,6 +17,10 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "generated_client_index_d_registrationuncheckedcreateinput": "RegistrationUncheckedCreateInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L38531 | neighbors=[index.d.ts]
+- "generated_client_index_d_registrationuncheckedcreatenestedmanywithoutadmininput": "RegistrationUncheckedCreateNestedManyWithoutAdminInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L43524 | neighbors=[index.d.ts]
+- "generated_client_index_d_registrationuncheckedcreatenestedmanywithoutrefbyinput": "RegistrationUncheckedCreateNestedManyWithoutRefByInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L43792 | neighbors=[index.d.ts]
+- "generated_client_index_d_registrationuncheckedcreatenestedmanywithoutsecondrefinput": "RegistrationUncheckedCreateNestedManyWithoutSecondRefInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L43799 | neighbors=[index.d.ts]
 - "generated_client_index_d_registrationuncheckedcreatenestedmanywithoutworkspaceinput": "RegistrationUncheckedCreateNestedManyWithoutWorkspaceInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L42820 | neighbors=[index.d.ts]
 - "generated_client_index_d_registrationuncheckedcreatewithoutadmininput": "RegistrationUncheckedCreateWithoutAdminInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L46994 | neighbors=[index.d.ts]
 - "generated_client_index_d_registrationuncheckedcreatewithoutpaymentsinput": "RegistrationUncheckedCreateWithoutPaymentsInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L50375 | neighbors=[index.d.ts]
@@ -53,10 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "generated_client_index_d_registrationupdatemanywithwherewithoutadmininput": "RegistrationUpdateManyWithWhereWithoutAdminInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L47236 | neighbors=[index.d.ts]
 - "generated_client_index_d_registrationupdatemanywithwherewithoutrefbyinput": "RegistrationUpdateManyWithWhereWithoutRefByInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L47878 | neighbors=[index.d.ts]
 - "generated_client_index_d_registrationupdatemanywithwherewithoutsecondrefinput": "RegistrationUpdateManyWithWhereWithoutSecondRefInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L47894 | neighbors=[index.d.ts]
-- "generated_client_index_d_registrationupdatemanywithwherewithoutworkspaceinput": "RegistrationUpdateManyWithWhereWithoutWorkspaceInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L45815 | neighbors=[index.d.ts]
-- "generated_client_index_d_registrationupdateonerequiredwithoutpaymentsnestedinput": "RegistrationUpdateOneRequiredWithoutPaymentsNestedInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L44633 | neighbors=[index.d.ts]
-- "generated_client_index_d_registrationupdateonerequiredwithoutresultsnestedinput": "RegistrationUpdateOneRequiredWithoutResultsNestedInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L44597 | neighbors=[index.d.ts]
-- "generated_client_index_d_registrationupdateonerequiredwithouttestsnestedinput": "RegistrationUpdateOneRequiredWithoutTestsNestedInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L44333 | neighbors=[index.d.ts]
 
 ## Instructions
 

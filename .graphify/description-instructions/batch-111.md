@@ -17,6 +17,10 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "generated_client_index_d_userrolecreatewithoutusersinput": "UserRoleCreateWithoutUsersInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L46361 | neighbors=[index.d.ts]
+- "generated_client_index_d_userroledefaultargs": "UserRoleDefaultArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L9761 | neighbors=[index.d.ts]
+- "generated_client_index_d_userroledelegate": "UserRoleDelegate" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L9058 | neighbors=[index.d.ts]
+- "generated_client_index_d_userroledeleteargs": "UserRoleDeleteArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L9693 | neighbors=[index.d.ts]
 - "generated_client_index_d_userroledeletemanyargs": "UserRoleDeleteManyArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L9711 | neighbors=[index.d.ts]
 - "generated_client_index_d_userrolefieldrefs": "UserRoleFieldRefs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L9417 | neighbors=[index.d.ts]
 - "generated_client_index_d_userrolefindfirstargs": "UserRoleFindFirstArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L9463 | neighbors=[index.d.ts]
@@ -53,10 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "generated_client_index_d_userrolepermissioncreatemanyinput": "UserRolePermissionCreateManyInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L37813 | neighbors=[index.d.ts]
 - "generated_client_index_d_userrolepermissioncreatemanyroleinput": "UserRolePermissionCreateManyRoleInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L52749 | neighbors=[index.d.ts]
 - "generated_client_index_d_userrolepermissioncreatemanyroleinputenvelope": "UserRolePermissionCreateManyRoleInputEnvelope" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L46710 | neighbors=[index.d.ts]
-- "generated_client_index_d_userrolepermissioncreatenestedmanywithoutroleinput": "UserRolePermissionCreateNestedManyWithoutRoleInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L43374 | neighbors=[index.d.ts]
-- "generated_client_index_d_userrolepermissioncreateorconnectwithoutroleinput": "UserRolePermissionCreateOrConnectWithoutRoleInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L46705 | neighbors=[index.d.ts]
-- "generated_client_index_d_userrolepermissioncreatewithoutroleinput": "UserRolePermissionCreateWithoutRoleInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L46696 | neighbors=[index.d.ts]
-- "generated_client_index_d_userrolepermissiondefaultargs": "UserRolePermissionDefaultArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L10656 | neighbors=[index.d.ts]
 
 ## Instructions
 

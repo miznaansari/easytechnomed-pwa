@@ -17,6 +17,7 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "runtime_library_request": "request()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L111 | neighbors=[library.js, buildQueryError(), handleAndLogRequestError(), parseEngineResponse(), parseRequestError(), requestInternal()]
 - "runtime_library_requestbatch": "requestBatch()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L111 | neighbors=[library.js, buildQueryError(), Ft(), parseEngineResponse(), pl(), requestInternal()]
 - "runtime_library_runinchildspan": "runInChildSpan()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L121 | neighbors=[library.js, loadLibrary(), getGlobalTracingHelper(), t(), start(), stop()]
 - "runtime_library_start": "start()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L111 | neighbors=[library.js, metrics(), request(), requestBatch(), runInChildSpan(), transaction()]
@@ -56,7 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "runtime_wasm_ms": "Ms()" | kind=code-symbol | source=scratch/generated-client/runtime/wasm.js:L3 | neighbors=[wasm.js, addErrorMessage(), asObject(), getDeepSubSelectionValue(), getField(), markAsError()]
 - "runtime_wasm_nestselection": "nestSelection()" | kind=code-symbol | source=scratch/generated-client/runtime/wasm.js:L5 | neighbors=[wasm.js, ia(), concat(), e(), findField(), oa()]
 - "runtime_wasm_ns": "Ns()" | kind=code-symbol | source=scratch/generated-client/runtime/wasm.js:L4 | neighbors=[wasm.js, addErrorMessage(), ei(), Ks(), markAsError(), ti()]
-- "runtime_wasm_oi": "oi()" | kind=code-symbol | source=scratch/generated-client/runtime/wasm.js:L5 | neighbors=[wasm.js, addField(), Pa(), si(), t(), va()]
 
 ## Instructions
 

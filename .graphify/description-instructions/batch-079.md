@@ -17,6 +17,10 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "generated_client_index_d_parameterinclude": "ParameterInclude" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L20156 | neighbors=[index.d.ts]
+- "generated_client_index_d_parameterlistrelationfilter": "ParameterListRelationFilter" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L40449 | neighbors=[index.d.ts]
+- "generated_client_index_d_parametermaxaggregateinputtype": "ParameterMaxAggregateInputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L19854 | neighbors=[index.d.ts]
+- "generated_client_index_d_parametermaxaggregateoutputtype": "ParameterMaxAggregateOutputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L19684 | neighbors=[index.d.ts]
 - "generated_client_index_d_parametermaxorderbyaggregateinput": "ParameterMaxOrderByAggregateInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L41875 | neighbors=[index.d.ts]
 - "generated_client_index_d_parameterminaggregateinputtype": "ParameterMinAggregateInputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L19816 | neighbors=[index.d.ts]
 - "generated_client_index_d_parameterminaggregateoutputtype": "ParameterMinAggregateOutputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L19646 | neighbors=[index.d.ts]
@@ -53,10 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "generated_client_index_d_parameterupdatemanyargs": "ParameterUpdateManyArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L20849 | neighbors=[index.d.ts]
 - "generated_client_index_d_parameterupdatemanymutationinput": "ParameterUpdateManyMutationInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L39102 | neighbors=[index.d.ts]
 - "generated_client_index_d_parameterupdatemanywithoutworkspacenestedinput": "ParameterUpdateManyWithoutWorkspaceNestedInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L42969 | neighbors=[index.d.ts]
-- "generated_client_index_d_parameterupdatemanywithwherewithoutworkspaceinput": "ParameterUpdateManyWithWhereWithoutWorkspaceInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L45959 | neighbors=[index.d.ts]
-- "generated_client_index_d_parameterupdateonerequiredwithoutinterpretationrulesnestedinput": "ParameterUpdateOneRequiredWithoutInterpretationRulesNestedInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L44795 | neighbors=[index.d.ts]
-- "generated_client_index_d_parameterupdateonerequiredwithouttestformulasnestedinput": "ParameterUpdateOneRequiredWithoutTestFormulasNestedInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L44751 | neighbors=[index.d.ts]
-- "generated_client_index_d_parameterupdateonerequiredwithouttestmappingsnestedinput": "ParameterUpdateOneRequiredWithoutTestMappingsNestedInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L44555 | neighbors=[index.d.ts]
 
 ## Instructions
 

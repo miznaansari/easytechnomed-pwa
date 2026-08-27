@@ -17,6 +17,10 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "runtime_index_browser_d_jsonnull": "JsonNull" | kind=code-symbol | source=scratch/generated-client/runtime/index-browser.d.ts:L298 | neighbors=[index-browser.d.ts, NullTypesEnumValue]
+- "runtime_index_browser_getname": "_getName()" | kind=code-symbol | source=scratch/generated-client/runtime/index-browser.js:L1 | neighbors=[index-browser.js, constructor()]
+- "runtime_index_browser_getnamespace": "_getNamespace()" | kind=code-symbol | source=scratch/generated-client/runtime/index-browser.js:L1 | neighbors=[index-browser.js, constructor()]
+- "runtime_index_browser_i": "i()" | kind=code-symbol | source=scratch/generated-client/runtime/index-browser.js:L1 | neighbors=[index-browser.js, be()]
 - "runtime_index_browser_jn": "jn()" | kind=code-symbol | source=scratch/generated-client/runtime/index-browser.js:L1 | neighbors=[index-browser.js, p()]
 - "runtime_index_browser_ln": "ln()" | kind=code-symbol | source=scratch/generated-client/runtime/index-browser.js:L1 | neighbors=[index-browser.js, Rn()]
 - "runtime_index_browser_mn": "mn()" | kind=code-symbol | source=scratch/generated-client/runtime/index-browser.js:L1 | neighbors=[index-browser.js, L()]
@@ -53,10 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "runtime_library_da": "da()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L29 | neighbors=[library.js, isEmpty()]
 - "runtime_library_dd": "dd()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L29 | neighbors=[library.js, Se()]
 - "runtime_library_dl": "Dl()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L121 | neighbors=[library.js, fo()]
-- "runtime_library_dm": "dm()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L111 | neighbors=[library.js, pm()]
-- "runtime_library_do": "Do()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L5 | neighbors=[library.js, $u()]
-- "runtime_library_ei": "ei()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L1 | neighbors=[library.js, Qu()]
-- "runtime_library_el": "El()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L114 | neighbors=[library.js, jt()]
 
 ## Instructions
 

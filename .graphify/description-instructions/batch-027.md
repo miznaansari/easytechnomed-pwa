@@ -17,6 +17,10 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "runtime_edge_esm_ze": "ze()" | kind=code-symbol | source=scratch/generated-client/runtime/edge-esm.js:L1 | neighbors=[edge-esm.js, Da(), Pt()]
+- "runtime_edge_esm_zo": "zo()" | kind=code-symbol | source=scratch/generated-client/runtime/edge-esm.js:L6 | neighbors=[edge-esm.js, ic(), oc()]
+- "runtime_edge_extracthostandapikey": "extractHostAndApiKey()" | kind=code-symbol | source=scratch/generated-client/runtime/edge.js:L12 | neighbors=[edge.js, get(), yt()]
+- "runtime_edge_foreach": "forEach()" | kind=code-symbol | source=scratch/generated-client/runtime/edge.js:L12 | neighbors=[edge.js, emit(), propagateResponseExtensions()]
 - "runtime_edge_fu": "fu()" | kind=code-symbol | source=scratch/generated-client/runtime/edge.js:L2 | neighbors=[edge.js, bo(), yn()]
 - "runtime_edge_g": "g()" | kind=code-symbol | source=scratch/generated-client/runtime/edge.js:L1 | neighbors=[edge.js, a(), u()]
 - "runtime_edge_gc": "gc()" | kind=code-symbol | source=scratch/generated-client/runtime/edge.js:L6 | neighbors=[edge.js, ye(), N()]
@@ -53,10 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "runtime_edge_runinchildspan": "runInChildSpan()" | kind=code-symbol | source=scratch/generated-client/runtime/edge.js:L20 | neighbors=[edge.js, getGlobalTracingHelper(), uploadSchema()]
 - "runtime_edge_s": "S()" | kind=code-symbol | source=scratch/generated-client/runtime/edge.js:L1 | neighbors=[edge.js, v(), vn()]
 - "runtime_edge_setcolor": "setColor()" | kind=code-symbol | source=scratch/generated-client/runtime/edge.js:L3 | neighbors=[edge.js, write(), writeEmpty()]
-- "runtime_edge_shouldapplyglobalomit": "shouldApplyGlobalOmit()" | kind=code-symbol | source=scratch/generated-client/runtime/edge.js:L5 | neighbors=[edge.js, getGlobalOmit(), Pe()]
-- "runtime_edge_t": "T()" | kind=code-symbol | source=scratch/generated-client/runtime/edge.js:L1 | neighbors=[edge.js, on(), pi()]
-- "runtime_edge_text": "text()" | kind=code-symbol | source=scratch/generated-client/runtime/edge.js:L5 | neighbors=[edge.js, Fc(), rc()]
-- "runtime_edge_tr": "Tr()" | kind=code-symbol | source=scratch/generated-client/runtime/edge.js:L1 | neighbors=[edge.js, hl(), wl()]
 
 ## Instructions
 

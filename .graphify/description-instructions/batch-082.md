@@ -17,6 +17,10 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "generated_client_index_d_patientresultuncheckedcreatenestedmanywithoutregistrationinput": "PatientResultUncheckedCreateNestedManyWithoutRegistrationInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L44168 | neighbors=[index.d.ts]
+- "generated_client_index_d_patientresultuncheckedcreatenestedmanywithouttestparameterinput": "PatientResultUncheckedCreateNestedManyWithoutTestParameterInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L44524 | neighbors=[index.d.ts]
+- "generated_client_index_d_patientresultuncheckedcreatewithoutregistrationinput": "PatientResultUncheckedCreateWithoutRegistrationInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L48314 | neighbors=[index.d.ts]
+- "generated_client_index_d_patientresultuncheckedcreatewithouttestparameterinput": "PatientResultUncheckedCreateWithoutTestParameterInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L49517 | neighbors=[index.d.ts]
 - "generated_client_index_d_patientresultuncheckedupdateinput": "PatientResultUncheckedUpdateInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L39359 | neighbors=[index.d.ts]
 - "generated_client_index_d_patientresultuncheckedupdatemanyinput": "PatientResultUncheckedUpdateManyInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L39389 | neighbors=[index.d.ts]
 - "generated_client_index_d_patientresultuncheckedupdatemanywithoutregistrationinput": "PatientResultUncheckedUpdateManyWithoutRegistrationInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L53865 | neighbors=[index.d.ts]
@@ -53,10 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "generated_client_index_d_prisma_doctorincentiveclient": "Prisma__DoctorIncentiveClient" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L32267 | neighbors=[index.d.ts]
 - "generated_client_index_d_prisma_interpretationruleclient": "Prisma__InterpretationRuleClient" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L31336 | neighbors=[index.d.ts]
 - "generated_client_index_d_prisma_leadclient": "Prisma__LeadClient" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L23649 | neighbors=[index.d.ts]
-- "generated_client_index_d_prisma_leadcontactclient": "Prisma__LeadContactClient" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L26510 | neighbors=[index.d.ts]
-- "generated_client_index_d_prisma_parameterclient": "Prisma__ParameterClient" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L20546 | neighbors=[index.d.ts]
-- "generated_client_index_d_prisma_patientresultclient": "Prisma__PatientResultClient" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L22748 | neighbors=[index.d.ts]
-- "generated_client_index_d_prisma_pick": "Prisma__Pick" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L741 | neighbors=[index.d.ts]
 
 ## Instructions
 

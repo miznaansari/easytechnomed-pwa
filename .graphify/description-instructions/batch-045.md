@@ -17,6 +17,10 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "runtime_react_native_os": "os()" | kind=code-symbol | source=scratch/generated-client/runtime/react-native.js:L12 | neighbors=[react-native.js, isEmpty()]
+- "runtime_react_native_parseiniterror": "parseInitError()" | kind=code-symbol | source=scratch/generated-client/runtime/react-native.js:L60 | neighbors=[react-native.js, loadEngine()]
+- "runtime_react_native_parserequesterror": "parseRequestError()" | kind=code-symbol | source=scratch/generated-client/runtime/react-native.js:L60 | neighbors=[react-native.js, request()]
+- "runtime_react_native_pc": "pc()" | kind=code-symbol | source=scratch/generated-client/runtime/react-native.js:L10 | neighbors=[react-native.js, Rn()]
 - "runtime_react_native_pp": "pp()" | kind=code-symbol | source=scratch/generated-client/runtime/react-native.js:L69 | neighbors=[react-native.js, handleRequestError()]
 - "runtime_react_native_prometheus": "prometheus()" | kind=code-symbol | source=scratch/generated-client/runtime/react-native.js:L10 | neighbors=[react-native.js, metrics()]
 - "runtime_react_native_qi": "Qi()" | kind=code-symbol | source=scratch/generated-client/runtime/react-native.js:L2 | neighbors=[react-native.js, Zi()]
@@ -53,10 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "runtime_wasm_additem": "addItem()" | kind=code-symbol | source=scratch/generated-client/runtime/wasm.js:L3 | neighbors=[wasm.js, Xs()]
 - "runtime_wasm_addmarginsymbol": "addMarginSymbol()" | kind=code-symbol | source=scratch/generated-client/runtime/wasm.js:L2 | neighbors=[wasm.js, write()]
 - "runtime_wasm_al": "al()" | kind=code-symbol | source=scratch/generated-client/runtime/wasm.js:L31 | neighbors=[wasm.js, io()]
-- "runtime_wasm_allocunsafeslow": "allocUnsafeSlow()" | kind=code-symbol | source=scratch/generated-client/runtime/wasm.js:L1 | neighbors=[wasm.js, from()]
-- "runtime_wasm_ar": "Ar()" | kind=code-symbol | source=scratch/generated-client/runtime/wasm.js:L1 | neighbors=[wasm.js, Ce()]
-- "runtime_wasm_bo": "bo()" | kind=code-symbol | source=scratch/generated-client/runtime/wasm.js:L21 | neighbors=[wasm.js, en()]
-- "runtime_wasm_bytelength": "byteLength()" | kind=code-symbol | source=scratch/generated-client/runtime/wasm.js:L1 | neighbors=[wasm.js, gr()]
 
 ## Instructions
 

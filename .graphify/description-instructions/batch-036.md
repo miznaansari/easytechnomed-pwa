@@ -17,6 +17,10 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "reject_route": "route.js" | kind=code-symbol | source=app/api/approvals/reject/route.js:L1 | neighbors=[252e194 e, POST()]
+- "results_route_post": "POST()" | kind=code-symbol | source=app/api/registrations/[id]/results/route.js:L6 | neighbors=[route.js, PUT()]
+- "results_route_put": "PUT()" | kind=code-symbol | source=app/api/registrations/[id]/results/route.js:L108 | neighbors=[route.js, POST()]
+- "roles_route": "route.js" | kind=code-symbol | source=app/api/roles/route.js:L1 | neighbors=[252e194 e, GET()]
 - "runtime_edge_additem": "addItem()" | kind=code-symbol | source=scratch/generated-client/runtime/edge.js:L3 | neighbors=[edge.js, Lu()]
 - "runtime_edge_addmarginsymbol": "addMarginSymbol()" | kind=code-symbol | source=scratch/generated-client/runtime/edge.js:L2 | neighbors=[edge.js, write()]
 - "runtime_edge_ba": "Ba()" | kind=code-symbol | source=scratch/generated-client/runtime/edge.js:L1 | neighbors=[edge.js, Sa()]
@@ -53,10 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "runtime_edge_esm_getfields": "getFields()" | kind=code-symbol | source=scratch/generated-client/runtime/edge-esm.js:L3 | neighbors=[edge-esm.js, vu()]
 - "runtime_edge_esm_getnamespace": "_getNamespace()" | kind=code-symbol | source=scratch/generated-client/runtime/edge-esm.js:L4 | neighbors=[edge-esm.js, constructor()]
 - "runtime_edge_esm_getoutputtypedescription": "getOutputTypeDescription()" | kind=code-symbol | source=scratch/generated-client/runtime/edge-esm.js:L5 | neighbors=[edge-esm.js, fu()]
-- "runtime_edge_esm_getprintwidth": "getPrintWidth()" | kind=code-symbol | source=scratch/generated-client/runtime/edge-esm.js:L3 | neighbors=[edge-esm.js, values()]
-- "runtime_edge_esm_h": "h()" | kind=code-symbol | source=scratch/generated-client/runtime/edge-esm.js:L1 | neighbors=[edge-esm.js, v()]
-- "runtime_edge_esm_handleerror": "handleError()" | kind=code-symbol | source=scratch/generated-client/runtime/edge-esm.js:L12 | neighbors=[edge-esm.js, uploadSchema()]
-- "runtime_edge_esm_hn": "hn()" | kind=code-symbol | source=scratch/generated-client/runtime/edge-esm.js:L1 | neighbors=[edge-esm.js, ul()]
 
 ## Instructions
 

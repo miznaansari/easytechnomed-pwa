@@ -17,6 +17,10 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "scratch_test_user_cbc_result": "result" | kind=code-symbol | source=scratch/test-user-cbc.js:L55 | neighbors=[test-user-cbc.js]
+- "scratch_test_user_cbc_testdefinition": "testDefinition" | kind=code-symbol | source=scratch/test-user-cbc.js:L4 | neighbors=[test-user-cbc.js]
+- "scratch_test_user_lipid_addvaluetovaluesmap": "addValueToValuesMap()" | kind=code-symbol | source=scratch/test-user-lipid.js:L1 | neighbors=[test-user-lipid.js]
+- "scratch_test_user_lipid_checkformuladependencies": "checkFormulaDependencies()" | kind=code-symbol | source=scratch/test-user-lipid.js:L236 | neighbors=[test-user-lipid.js]
 - "scratch_test_user_lipid_evaluatedformulas": "evaluatedFormulas" | kind=code-symbol | source=scratch/test-user-lipid.js:L290 | neighbors=[test-user-lipid.js]
 - "scratch_test_user_lipid_evaluateexpression": "evaluateExpression()" | kind=code-symbol | source=scratch/test-user-lipid.js:L188 | neighbors=[test-user-lipid.js]
 - "scratch_test_user_lipid_formulas": "formulas" | kind=code-symbol | source=scratch/test-user-lipid.js:L263 | neighbors=[test-user-lipid.js]
@@ -53,10 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "tests_testsclient_common_lab_units": "COMMON_LAB_UNITS" | kind=code-symbol | source=app/(customer)/(dashboard)/settings/tests/testsClient.jsx:L50 | neighbors=[testsClient.jsx]
 - "tests_testsclient_testsclient": "TestsClient()" | kind=code-symbol | source=app/(customer)/(dashboard)/settings/tests/testsClient.jsx:L81 | neighbors=[testsClient.jsx]
 - "ui_alert_alert": "Alert()" | kind=code-symbol | source=components/ui/Alert.js:L4 | neighbors=[Alert.js]
-- "ui_avatar_avatar": "Avatar()" | kind=code-symbol | source=components/ui/Avatar.js:L3 | neighbors=[Avatar.js]
-- "ui_badge_badge": "Badge()" | kind=code-symbol | source=components/ui/Badge.js:L3 | neighbors=[Badge.js]
-- "ui_button_button": "Button()" | kind=code-symbol | source=components/ui/Button.js:L4 | neighbors=[Button.js]
-- "ui_card_card": "Card()" | kind=code-symbol | source=components/ui/Card.js:L3 | neighbors=[Card.js]
 
 ## Instructions
 

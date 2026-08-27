@@ -17,6 +17,10 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "generated_client_index_d_patientresultcreatenestedmanywithouttestparameterinput": "PatientResultCreateNestedManyWithoutTestParameterInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L44505 | neighbors=[index.d.ts]
+- "generated_client_index_d_patientresultcreateorconnectwithoutregistrationinput": "PatientResultCreateOrConnectWithoutRegistrationInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L48324 | neighbors=[index.d.ts]
+- "generated_client_index_d_patientresultcreateorconnectwithouttestparameterinput": "PatientResultCreateOrConnectWithoutTestParameterInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L49527 | neighbors=[index.d.ts]
+- "generated_client_index_d_patientresultcreatewithoutregistrationinput": "PatientResultCreateWithoutRegistrationInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L48305 | neighbors=[index.d.ts]
 - "generated_client_index_d_patientresultcreatewithouttestparameterinput": "PatientResultCreateWithoutTestParameterInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L49508 | neighbors=[index.d.ts]
 - "generated_client_index_d_patientresultdefaultargs": "PatientResultDefaultArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L23090 | neighbors=[index.d.ts]
 - "generated_client_index_d_patientresultdelegate": "PatientResultDelegate" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L22421 | neighbors=[index.d.ts]
@@ -53,10 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "generated_client_index_d_patientresultsumaggregateoutputtype": "PatientResultSumAggregateOutputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L22162 | neighbors=[index.d.ts]
 - "generated_client_index_d_patientresultsumorderbyaggregateinput": "PatientResultSumOrderByAggregateInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L42134 | neighbors=[index.d.ts]
 - "generated_client_index_d_patientresultuncheckedcreateinput": "PatientResultUncheckedCreateInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L39338 | neighbors=[index.d.ts]
-- "generated_client_index_d_patientresultuncheckedcreatenestedmanywithoutregistrationinput": "PatientResultUncheckedCreateNestedManyWithoutRegistrationInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L44168 | neighbors=[index.d.ts]
-- "generated_client_index_d_patientresultuncheckedcreatenestedmanywithouttestparameterinput": "PatientResultUncheckedCreateNestedManyWithoutTestParameterInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L44524 | neighbors=[index.d.ts]
-- "generated_client_index_d_patientresultuncheckedcreatewithoutregistrationinput": "PatientResultUncheckedCreateWithoutRegistrationInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L48314 | neighbors=[index.d.ts]
-- "generated_client_index_d_patientresultuncheckedcreatewithouttestparameterinput": "PatientResultUncheckedCreateWithoutTestParameterInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L49517 | neighbors=[index.d.ts]
 
 ## Instructions
 

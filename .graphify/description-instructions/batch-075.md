@@ -17,6 +17,10 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "generated_client_index_d_leadcontactscalarwherewithaggregatesinput": "LeadContactScalarWhereWithAggregatesInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L36649 | neighbors=[index.d.ts]
+- "generated_client_index_d_leadcontactselect": "LeadContactSelect" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L26133 | neighbors=[index.d.ts]
+- "generated_client_index_d_leadcontactselectscalar": "LeadContactSelectScalar" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L26146 | neighbors=[index.d.ts]
+- "generated_client_index_d_leadcontactsumaggregateinputtype": "LeadContactSumAggregateInputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L25975 | neighbors=[index.d.ts]
 - "generated_client_index_d_leadcontactsumaggregateoutputtype": "LeadContactSumAggregateOutputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L25929 | neighbors=[index.d.ts]
 - "generated_client_index_d_leadcontactsumorderbyaggregateinput": "LeadContactSumOrderByAggregateInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L42313 | neighbors=[index.d.ts]
 - "generated_client_index_d_leadcontactuncheckedcreateinput": "LeadContactUncheckedCreateInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L39631 | neighbors=[index.d.ts]
@@ -53,10 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "generated_client_index_d_leadmaxaggregateinputtype": "LeadMaxAggregateInputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L23160 | neighbors=[index.d.ts]
 - "generated_client_index_d_leadmaxaggregateoutputtype": "LeadMaxAggregateOutputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L23129 | neighbors=[index.d.ts]
 - "generated_client_index_d_leadmaxorderbyaggregateinput": "LeadMaxOrderByAggregateInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L42151 | neighbors=[index.d.ts]
-- "generated_client_index_d_leadminaggregateinputtype": "LeadMinAggregateInputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L23153 | neighbors=[index.d.ts]
-- "generated_client_index_d_leadminaggregateoutputtype": "LeadMinAggregateOutputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L23122 | neighbors=[index.d.ts]
-- "generated_client_index_d_leadminorderbyaggregateinput": "LeadMinOrderByAggregateInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L42158 | neighbors=[index.d.ts]
-- "generated_client_index_d_leadorderbywithaggregationinput": "LeadOrderByWithAggregationInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L36404 | neighbors=[index.d.ts]
 
 ## Instructions
 
