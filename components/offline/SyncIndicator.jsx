@@ -64,8 +64,8 @@ export default function SyncIndicator() {
           (typeof err.error === "string" && (err.error.includes("401") || err.error.includes("Unauthorized")))
       ));
 
-  // Effective online check
-  const effectiveOnline = isOnline !== false && (typeof navigator === "undefined" || navigator.onLine);
+  // Consistent online status across whole component
+  const isCurrentlyOnline = Boolean(isOnline !== false && (typeof navigator === "undefined" || navigator.onLine));
 
   // Determine icon and color based on sync state
   let iconComponent = null;
@@ -78,7 +78,7 @@ export default function SyncIndicator() {
     tooltipText = "Authentication expired (401). Re-login required to sync.";
     badgeContent = "!";
     badgeColor = "error";
-  } else if (!effectiveOnline) {
+  } else if (!isCurrentlyOnline) {
     iconComponent = <OfflineIcon sx={{ color: "#f59e0b" }} />;
     tooltipText = pendingCount > 0
       ? `Offline: ${pendingCount} change${pendingCount === 1 ? "" : "s"} saved in local database`
@@ -120,7 +120,6 @@ export default function SyncIndicator() {
     tooltipText = "Cloud Connected - All data synced";
   }
 
-
   return (
     <>
       <Tooltip title={tooltipText} arrow>
@@ -134,13 +133,13 @@ export default function SyncIndicator() {
             borderRadius: 2,
             backgroundColor: hasAuthError
               ? "rgba(239, 68, 68, 0.08)"
-              : !isOnline
+              : !isCurrentlyOnline
               ? "rgba(245, 158, 11, 0.08)"
               : "transparent",
             "&:hover": {
               backgroundColor: hasAuthError
                 ? "rgba(239, 68, 68, 0.16)"
-                : !isOnline
+                : !isCurrentlyOnline
                 ? "rgba(245, 158, 11, 0.16)"
                 : "rgba(15, 118, 110, 0.08)",
             },
@@ -207,19 +206,19 @@ export default function SyncIndicator() {
                   borderRadius: "10px",
                   backgroundColor: hasAuthError
                     ? "#fef2f2"
-                    : !isOnline
+                    : !isCurrentlyOnline
                     ? "#fffbeb"
                     : "#f0fdf4",
                   color: hasAuthError
                     ? "#dc2626"
-                    : !isOnline
+                    : !isCurrentlyOnline
                     ? "#d97706"
                     : "#16a34a",
                 }}
               >
                 {hasAuthError ? (
                   <ErrorIcon sx={{ fontSize: 20 }} />
-                ) : !isOnline ? (
+                ) : !isCurrentlyOnline ? (
                   <OfflineIcon sx={{ fontSize: 20 }} />
                 ) : (
                   <CloudDoneIcon sx={{ fontSize: 20 }} />
@@ -227,21 +226,22 @@ export default function SyncIndicator() {
               </Box>
               <Box>
                 <Typography variant="subtitle2" sx={{ fontWeight: 800, color: "#0f172a", fontSize: "0.9rem", lineHeight: 1.2 }}>
-                  {hasAuthError ? "Auth Expired" : !isOnline ? "Offline Mode" : "Cloud Connected"}
+                  {hasAuthError ? "Auth Expired" : !isCurrentlyOnline ? "Offline Mode" : "Cloud Connected"}
                 </Typography>
                 <Typography variant="caption" sx={{ color: "#64748b", fontSize: "0.7rem", fontWeight: 500 }}>
-                  {hasAuthError ? "Re-login required" : !isOnline ? "Local DB active" : "Real-time sync"}
+                  {hasAuthError ? "Re-login required" : !isCurrentlyOnline ? "Local DB active" : "Real-time sync"}
                 </Typography>
               </Box>
             </Box>
 
             <Chip
               size="small"
-              label={hasAuthError ? "AUTH REQ" : !isOnline ? "OFFLINE" : syncStatus.toUpperCase()}
-              color={hasAuthError || syncStatus === "error" ? "error" : !isOnline ? "warning" : "success"}
+              label={hasAuthError ? "AUTH REQ" : !isCurrentlyOnline ? "OFFLINE" : (syncStatus === "synced" ? "SYNCED" : syncStatus.toUpperCase())}
+              color={hasAuthError || syncStatus === "error" ? "error" : !isCurrentlyOnline ? "warning" : "success"}
               sx={{ fontWeight: 800, fontSize: "0.65rem", height: 22, borderRadius: "6px" }}
             />
           </Box>
+
 
           <Divider sx={{ mb: 2, borderColor: "#f1f5f9" }} />
 
