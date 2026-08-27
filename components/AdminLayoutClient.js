@@ -165,7 +165,7 @@ export default function AdminLayoutClient({ admin: initialAdmin, children }) {
         if (local) {
           setAdmin(local);
         }
-      } catch {}
+      } catch { }
     }
     hydrateAdmin();
   }, [initialAdmin]);
@@ -224,7 +224,7 @@ export default function AdminLayoutClient({ admin: initialAdmin, children }) {
     routesToPrefetch.forEach((r) => {
       try {
         router.prefetch(r);
-      } catch {}
+      } catch { }
     });
   }, [router]);
 
@@ -272,18 +272,19 @@ export default function AdminLayoutClient({ admin: initialAdmin, children }) {
   const performLogout = async () => {
     try {
       await clearLocalSession();
-      const res = await fetch("/api/auth/logout", {
-        method: "POST",
-      }).then((r) => r.json());
-      if (res?.success) {
-        router.push(res.redirect || "/");
-      } else {
-        router.push("/");
+      try {
+        await fetch("/api/auth/logout", {
+          method: "POST",
+        });
+      } catch (e) {
+        console.warn("[AdminLayout] Server logout call failed (offline mode):", e);
       }
+      window.location.href = "/";
     } catch (err) {
-      router.push("/");
+      window.location.href = "/";
     }
   };
+
 
   const handleSyncAndLogout = async () => {
     await sync();
