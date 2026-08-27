@@ -1,6 +1,6 @@
 {
     "name": "pathlab",
-    "version": "2.0.24",
+    "version": "3.0.0",
     "private": true,
     "scripts": {
         "dev": "next dev",
@@ -13,8 +13,6 @@
         "graphify:studio": "npx @sentropic/graphify studio export .graphify/studio"
     },
     "dependencies": {
-
-
         "@aws-sdk/client-s3": "^3.1079.0",
         "@emotion/react": "^11.14.0",
         "@emotion/styled": "^11.14.1",
