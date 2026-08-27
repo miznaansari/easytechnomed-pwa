@@ -5,6 +5,7 @@ import { OfflineSyncContext } from "@/context/OfflineSyncContext";
 import { networkMonitor } from "@/lib/offline/network";
 import { syncManager } from "@/lib/offline/sync/syncManager";
 import db from "@/lib/offline/db";
+import ReLoginModal from "@/components/offline/ReLoginModal";
 
 export default function OfflineProvider({ children }) {
   const [isOnline, setIsOnline] = useState(() => typeof navigator !== "undefined" ? navigator.onLine : true);
@@ -12,6 +13,8 @@ export default function OfflineProvider({ children }) {
   const [pendingCount, setPendingCount] = useState(0);
   const [syncErrors, setSyncErrors] = useState([]);
   const [lastSyncTime, setLastSyncTime] = useState(null);
+  const [isAuthRequired, setIsAuthRequired] = useState(false);
+  const [isAuthModalOpen, setIsAuthModalOpen] = useState(false);
   const prevOnlineRef = useRef(isOnline);
 
   // Refresh pending count from IndexedDB
@@ -40,9 +43,14 @@ export default function OfflineProvider({ children }) {
     if (result.success) {
       setSyncStatus("synced");
       setSyncErrors([]);
+      setIsAuthRequired(false);
     } else {
       setSyncStatus("error");
       setSyncErrors(result.errors || []);
+      if (result.isAuthError) {
+        setIsAuthRequired(true);
+        setIsAuthModalOpen(true);
+      }
     }
     return result;
   }, [refreshPendingCount]);
@@ -79,9 +87,16 @@ export default function OfflineProvider({ children }) {
       }
     };
 
+    const handleAuthRequired = (e) => {
+      console.warn("[OfflineProvider] Auth required event caught:", e?.detail);
+      setIsAuthRequired(true);
+      setIsAuthModalOpen(true);
+    };
+
     window.addEventListener("online", handleOnline);
     window.addEventListener("offline", handleOffline);
     window.addEventListener("easytechnomed:data-mutated", handleDataMutated);
+    window.addEventListener("easytechnomed:auth-required", handleAuthRequired);
 
     const unsubscribeNetwork = networkMonitor.subscribe((online) => {
       setIsOnline(online);
@@ -99,6 +114,7 @@ export default function OfflineProvider({ children }) {
       window.removeEventListener("online", handleOnline);
       window.removeEventListener("offline", handleOffline);
       window.removeEventListener("easytechnomed:data-mutated", handleDataMutated);
+      window.removeEventListener("easytechnomed:auth-required", handleAuthRequired);
       unsubscribeNetwork();
     };
   }, [debouncedTriggerSync, refreshPendingCount]);
@@ -113,9 +129,14 @@ export default function OfflineProvider({ children }) {
       } else if (syncState.syncErrors && syncState.syncErrors.length > 0) {
         setSyncStatus("error");
         setSyncErrors(syncState.syncErrors);
+        const hasAuthErr = syncState.syncErrors.some((e) => e.isAuthError || e.status === 401);
+        if (hasAuthErr) {
+          setIsAuthRequired(true);
+        }
       } else if (syncState.lastSyncTime) {
         setSyncStatus("synced");
         setLastSyncTime(syncState.lastSyncTime);
+        setIsAuthRequired(false);
       }
     });
 
@@ -161,6 +182,13 @@ export default function OfflineProvider({ children }) {
     return () => clearInterval(interval);
   }, [refreshPendingCount, triggerSync]);
 
+  const handleLoginSuccess = async () => {
+    setIsAuthRequired(false);
+    setIsAuthModalOpen(false);
+    console.log("[OfflineProvider] Re-authentication completed. Resuming sync...");
+    await triggerSync();
+  };
+
   const value = {
     isOnline,
     syncStatus,
@@ -168,6 +196,10 @@ export default function OfflineProvider({ children }) {
     syncErrors,
     lastSyncTime,
     hasUnsyncedChanges: pendingCount > 0,
+    isAuthRequired,
+    isAuthModalOpen,
+    openAuthModal: () => setIsAuthModalOpen(true),
+    closeAuthModal: () => setIsAuthModalOpen(false),
     triggerSync,
     refreshPendingCount,
   };
@@ -175,6 +207,13 @@ export default function OfflineProvider({ children }) {
   return (
     <OfflineSyncContext.Provider value={value}>
       {children}
+      <ReLoginModal
+        open={isAuthModalOpen}
+        onClose={() => setIsAuthModalOpen(false)}
+        onLoginSuccess={handleLoginSuccess}
+        pendingCount={pendingCount}
+      />
     </OfflineSyncContext.Provider>
   );
 }
+

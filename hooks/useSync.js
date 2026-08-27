@@ -10,6 +10,10 @@ export function useSync() {
     syncErrors,
     lastSyncTime,
     hasUnsyncedChanges,
+    isAuthRequired,
+    isAuthModalOpen,
+    openAuthModal,
+    closeAuthModal,
     triggerSync,
     refreshPendingCount,
   } = useOfflineSync();
@@ -20,6 +24,10 @@ export function useSync() {
     isSynced: syncStatus === "synced",
     isError: syncStatus === "error",
     isOffline: syncStatus === "offline",
+    isAuthRequired,
+    isAuthModalOpen,
+    openAuthModal,
+    closeAuthModal,
     syncStatus,
     pendingCount,
     syncErrors,
@@ -31,3 +39,4 @@ export function useSync() {
 }
 
 export default useSync;
+

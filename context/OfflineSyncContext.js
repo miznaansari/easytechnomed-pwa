@@ -9,8 +9,13 @@ export const OfflineSyncContext = createContext({
   syncErrors: [],
   lastSyncTime: null,
   hasUnsyncedChanges: false,
+  isAuthRequired: false,
+  isAuthModalOpen: false,
+  openAuthModal: () => {},
+  closeAuthModal: () => {},
   triggerSync: async () => {},
   refreshPendingCount: async () => 0,
 });
 
 export const useOfflineSync = () => useContext(OfflineSyncContext);
+

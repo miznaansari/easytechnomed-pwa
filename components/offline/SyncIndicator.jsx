@@ -24,6 +24,7 @@ import {
   Refresh as RefreshIcon,
   WifiOff as WifiOffIcon,
   CloudDone as CloudDoneIcon,
+  LockReset as ReAuthIcon,
 } from "@mui/icons-material";
 import { useSync } from "@/hooks/useSync";
 import { formatLocalDisplay } from "@/lib/offline/timestamps";
@@ -36,6 +37,8 @@ export default function SyncIndicator() {
     syncErrors,
     lastSyncTime,
     hasUnsyncedChanges,
+    isAuthRequired,
+    openAuthModal,
     sync,
   } = useSync();
 
@@ -51,13 +54,28 @@ export default function SyncIndicator() {
 
   const open = Boolean(anchorEl);
 
+  const hasAuthError =
+    isAuthRequired ||
+    (syncErrors &&
+      syncErrors.some(
+        (err) =>
+          err.isAuthError ||
+          err.status === 401 ||
+          (typeof err.error === "string" && (err.error.includes("401") || err.error.includes("Unauthorized")))
+      ));
+
   // Determine icon and color based on sync state
   let iconComponent = null;
   let tooltipText = "";
   let badgeContent = null;
   let badgeColor = "default";
 
-  if (!isOnline) {
+  if (hasAuthError) {
+    iconComponent = <ErrorIcon sx={{ color: "#ef4444" }} />;
+    tooltipText = "Authentication expired (401). Re-login required to sync.";
+    badgeContent = "!";
+    badgeColor = "error";
+  } else if (!isOnline) {
     iconComponent = <SyncedIcon sx={{ color: "#10b981" }} />;
     tooltipText = pendingCount > 0
       ? `${pendingCount} changes saved locally (IndexedDB)`
@@ -166,8 +184,8 @@ export default function SyncIndicator() {
           </Box>
           <Chip
             size="small"
-            label={syncStatus === "offline" ? "LOCAL" : syncStatus.toUpperCase()}
-            color={syncStatus === "error" ? "error" : "success"}
+            label={hasAuthError ? "AUTH REQ" : syncStatus === "offline" ? "LOCAL" : syncStatus.toUpperCase()}
+            color={hasAuthError || syncStatus === "error" ? "error" : "success"}
             sx={{ fontWeight: 700, fontSize: "0.65rem", height: 20 }}
           />
         </Box>
@@ -197,7 +215,36 @@ export default function SyncIndicator() {
           </Box>
         </Box>
 
-        {syncErrors && syncErrors.length > 0 && (
+        {hasAuthError ? (
+          <Box sx={{ mt: 1, mb: 1.5, p: 1.5, bgcolor: "#fef2f2", border: "1px solid #fee2e2", borderRadius: 1.5 }}>
+            <Typography variant="caption" sx={{ fontWeight: 700, color: "#991b1b", display: "block" }}>
+              Session Expired (401)
+            </Typography>
+            <Typography variant="caption" sx={{ color: "#b91c1c", display: "block", mt: 0.2 }}>
+              Re-login to resume cloud sync.
+            </Typography>
+            <Button
+              fullWidth
+              variant="contained"
+              size="small"
+              color="error"
+              onClick={() => {
+                handleClose();
+                openAuthModal();
+              }}
+              startIcon={<ReAuthIcon fontSize="small" />}
+              sx={{
+                mt: 1,
+                py: 0.6,
+                fontWeight: 700,
+                fontSize: "0.75rem",
+                borderRadius: 1.5,
+              }}
+            >
+              Re-Login to Resume Sync
+            </Button>
+          </Box>
+        ) : syncErrors && syncErrors.length > 0 ? (
           <Box sx={{ mt: 1, mb: 1.5, p: 1, bgcolor: "error.light", borderRadius: 1.5, opacity: 0.9 }}>
             <Typography variant="caption" sx={{ fontWeight: 700, color: "error.contrastText", display: "block" }}>
               Failed Sync Items:
@@ -217,7 +264,7 @@ export default function SyncIndicator() {
               ))}
             </List>
           </Box>
-        )}
+        ) : null}
 
         <Divider sx={{ my: 1 }} />
 
@@ -254,3 +301,4 @@ export default function SyncIndicator() {
     </>
   );
 }
+

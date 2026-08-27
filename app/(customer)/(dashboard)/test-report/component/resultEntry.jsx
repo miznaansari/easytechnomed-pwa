@@ -305,8 +305,8 @@ export default function ResultEntry({ open, onClose, selectedReg, onSaveSuccess,
         if (onSaveSuccess) onSaveSuccess();
       }
 
-      // 2. Trigger background auto-sync if online (fire-and-forget)
-      if (typeof navigator !== "undefined" && navigator.onLine) {
+      // 2. Trigger background auto-sync ONLY on manual explicit saves, not on silent auto-draft typing
+      if (!isSilent && typeof navigator !== "undefined" && navigator.onLine) {
         import("@/lib/offline/sync/syncManager").then(({ syncManager }) => syncManager.sync()).catch(() => {});
       }
       return;
