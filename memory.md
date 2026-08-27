@@ -2,8 +2,9 @@
 
 ## 1. Project Overview
 - **Name**: EasyTechnoMed PWA / LIMS (Laboratory Information Management System)
-- **Current Version**: `v3.0.7`
+- **Current Version**: `v3.0.9`
 - **Framework**: Next.js (App Router), React 19, Material-UI (MUI v7), Dexie.js (v4.4+), Prisma ORM, MySQL.
+
 
 
 
@@ -93,6 +94,7 @@
 
 | Version | Date | Key Changes & Milestones |
 | :--- | :--- | :--- |
+| `v3.0.9` | 2026-08-28 | Fixed auto-redirect loop on login page after logout; Guarded `LoginPageClient.js` and `offlineAuth.js` with `etm_logged_out` flag so logged-out users stay securely on the login screen. |
 | `v3.0.7` | 2026-08-28 | Fixed logout flow in `AdminLayoutClient.js` with hard window redirect to `/auth/login` and offline safety fallback. |
 | `v3.0.6` | 2026-08-28 | Fixed missing `useEffect` import in `SyncIndicator.jsx` that was triggering `ReferenceError: useEffect is not defined` inside `AdminLayoutClient`. |
 | `v3.0.5` | 2026-08-28 | Added direct native `window.addEventListener('online'/'offline')` reactive subscription inside `SyncIndicator.jsx` to guarantee instantaneous icon & popover switch to Offline Mode when internet disconnects. |
@@ -101,6 +103,7 @@
 | `v3.0.2` | 2026-08-28 | Enforced automated version bump, `memory.md` sync, and Graphify AST refresh protocol in `AGENTS.md` and agent rules; MySQL schema confirmed. |
 | `v3.0.1` | 2026-08-28 | Unified Navbar Sync Indicator online state with Popover; Switched heartbeat to `GET` for ServiceWorker resilience; Integrated Graphify AST Knowledge Graph (5,906 nodes, 8,924 edges); Configured Dexie `liveQuery` reactive table updates; Standardized Zod numeric coercion (`z.coerce.number()`); Enforced MySQL + IndexedDB memory rules. |
 | `v3.0.0` | 2026-08-27 | Initial dual-layer offline sync architecture release with Dexie `EasyTechnoMedOfflineDB` and Prisma ORM. |
+
 
 
 

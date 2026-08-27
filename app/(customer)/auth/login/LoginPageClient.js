@@ -37,26 +37,16 @@ export default function CustomerLoginPage() {
     async function checkAutoRedirect() {
       if (typeof window === "undefined") return;
 
-      // 1. If currently offline, check local IndexedDB session and redirect to dashboard
-      if (typeof navigator !== "undefined" && !navigator.onLine) {
-        try {
-          const { getCachedSession } = await import("@/lib/auth/offlineAuth");
-          const session = await getCachedSession();
-          if (session) {
-            router.replace("/dashboard");
-            return;
-          }
-        } catch {
-          router.replace("/dashboard");
-          return;
-        }
+      // 1. If user explicitly logged out, DO NOT auto-redirect
+      if (localStorage.getItem("etm_logged_out") === "1") {
+        return;
       }
 
-      // 2. If online or session/cookie already exists, redirect to dashboard
+      // 2. If valid session or cookie exists, redirect to dashboard
       try {
         const { getCachedSession } = await import("@/lib/auth/offlineAuth");
         const session = await getCachedSession();
-        const hasTokenCookie = document.cookie.includes("admin_token=") || document.cookie.includes("token=");
+        const hasTokenCookie = document.cookie.includes("admin_session_token=");
         if (session || hasTokenCookie) {
           router.replace("/dashboard");
         }
@@ -83,6 +73,7 @@ export default function CustomerLoginPage() {
     try {
       // 1. If currently offline, directly enter dashboard without checking credentials
       if (typeof navigator !== "undefined" && !navigator.onLine) {
+        if (typeof window !== "undefined") localStorage.removeItem("etm_logged_out");
         router.push("/dashboard");
         return;
       }
@@ -95,6 +86,7 @@ export default function CustomerLoginPage() {
       }).then((r) => r.json());
 
       if (res.success) {
+        if (typeof window !== "undefined") localStorage.removeItem("etm_logged_out");
         toast.loading("Synchronizing laboratory database...", { id: "login-sync" });
         try {
           const { syncManager } = await import("@/lib/offline/sync/syncManager");
@@ -108,6 +100,7 @@ export default function CustomerLoginPage() {
         toast.success(res.message || "Login successful!", { id: "login-sync" });
         router.push(res.redirect || "/dashboard");
       } else {
+
         toast.error(res.message);
         setIsLoading(false);
       }
