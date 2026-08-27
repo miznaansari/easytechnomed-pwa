@@ -428,12 +428,14 @@ export default function ShowResult({ open, onClose, selectedReg }) {
               color="primary"
               size="small"
               startIcon={<DownloadIcon />}
-              onClick={() => {
-                if (typeof navigator !== "undefined" && !navigator.onLine) {
-                  printReportOffline(previewData.id || previewData.regNo, { withFrame: false });
-                  return;
+              onClick={async () => {
+                try {
+                  await printReportOffline(previewData.id || previewData.regNo, { withFrame: false });
+                } catch (e) {
+                  if (typeof navigator !== "undefined" && navigator.onLine) {
+                    window.open(`/api/print-report/${previewData.regNo || previewData.id}?withFrame=false`, "_blank");
+                  }
                 }
-                window.open(`/api/print-report/${previewData.regNo || previewData.id}?withFrame=false`, "_blank");
               }}
             >
               Download Without Frame
@@ -443,12 +445,14 @@ export default function ShowResult({ open, onClose, selectedReg }) {
               color="primary"
               size="small"
               startIcon={<DownloadIcon />}
-              onClick={() => {
-                if (typeof navigator !== "undefined" && !navigator.onLine) {
-                  printReportOffline(previewData.id || previewData.regNo, { withFrame: true });
-                  return;
+              onClick={async () => {
+                try {
+                  await printReportOffline(previewData.id || previewData.regNo, { withFrame: true });
+                } catch (e) {
+                  if (typeof navigator !== "undefined" && navigator.onLine) {
+                    window.open(`/api/print-report/${previewData.regNo || previewData.id}?withFrame=true`, "_blank");
+                  }
                 }
-                window.open(`/api/print-report/${previewData.regNo || previewData.id}?withFrame=true`, "_blank");
               }}
             >
               Download With Frame

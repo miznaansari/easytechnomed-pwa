@@ -497,12 +497,14 @@ export default function ShowResultMobile({ open, onClose, previewLoading, previe
               size="small"
               fullWidth
               startIcon={<DownloadIcon fontSize="small" />}
-              onClick={() => {
-                if (typeof navigator !== "undefined" && !navigator.onLine) {
-                  printReportOffline(previewData.id || previewData.regNo, { withFrame: false });
-                  return;
+              onClick={async () => {
+                try {
+                  await printReportOffline(previewData.id || previewData.regNo, { withFrame: false });
+                } catch (e) {
+                  if (typeof navigator !== "undefined" && navigator.onLine) {
+                    window.open(`/api/print-report/${previewData.regNo || previewData.id}?withFrame=false`, "_blank");
+                  }
                 }
-                window.open(`/api/print-report/${previewData.regNo || previewData.id}?withFrame=false`, "_blank");
               }}
               sx={{ py: 1, borderRadius: 2, fontWeight: 700, fontSize: "0.78rem", textTransform: "none" }}
             >
@@ -514,12 +516,14 @@ export default function ShowResultMobile({ open, onClose, previewLoading, previe
               size="small"
               fullWidth
               startIcon={<DownloadIcon fontSize="small" />}
-              onClick={() => {
-                if (typeof navigator !== "undefined" && !navigator.onLine) {
-                  printReportOffline(previewData.id || previewData.regNo, { withFrame: true });
-                  return;
+              onClick={async () => {
+                try {
+                  await printReportOffline(previewData.id || previewData.regNo, { withFrame: true });
+                } catch (e) {
+                  if (typeof navigator !== "undefined" && navigator.onLine) {
+                    window.open(`/api/print-report/${previewData.regNo || previewData.id}?withFrame=true`, "_blank");
+                  }
                 }
-                window.open(`/api/print-report/${previewData.regNo || previewData.id}?withFrame=true`, "_blank");
               }}
               sx={{ py: 1, borderRadius: 2, fontWeight: 800, fontSize: "0.78rem", textTransform: "none" }}
             >

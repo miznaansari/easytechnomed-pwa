@@ -227,13 +227,15 @@ export default function MoneyRecipt({ open, onClose, selectedReg, onSaveSuccess,
     }
   };
 
-  const handlePrintReceipt = (reg) => {
+  const handlePrintReceipt = async (reg) => {
     if (!reg) return;
-    if (typeof navigator !== "undefined" && !navigator.onLine) {
-      printBillOffline(reg.id);
-      return;
+    try {
+      await printBillOffline(reg.id || reg.regNo);
+    } catch (e) {
+      if (typeof navigator !== "undefined" && navigator.onLine) {
+        window.open(`/api/print-bill/${reg.id || reg.regNo}`, "_blank");
+      }
     }
-    window.open(`/api/print-bill/${reg.id}`, "_blank");
   };
 
   if (!open) return null;

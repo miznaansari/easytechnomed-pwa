@@ -2,8 +2,8 @@
 
 ## 1. Project Overview
 - **Name**: EasyTechnoMed PWA / LIMS (Laboratory Information Management System)
-- **Current Version**: `v3.0.12`
-- **Framework**: Next.js (App Router), React 19, Material-UI (MUI v7), Dexie.js (v4.4+), Prisma ORM, MySQL.
+- **Current Version**: `v3.0.17`
+- **Framework**: Next.js (App Router), React 19, Material-UI (MUI v7), Dexie.js (v4.4+), Prisma ORM, MySQL, pdf-lib.
 
 
 
@@ -30,7 +30,15 @@
    - Server-side authoritative storage with multi-tenant workspace isolation.
 
 
-### B. Synchronization Engine (`lib/offline/sync/syncManager.js` & `modelRegistry.js`)
+### B. Client-Side Offline PDF & Bill Print Engine (`lib/offline/print/`)
+- **Report PDF Generation (`lib/offline/print/reportPdfGenerator.js` & `lib/offline/offlinePdfGenerator.js`)**:
+  - Uses browser-compatible `pdf-lib` to generate identical pathology report PDFs locally in 0ms from IndexedDB (`db.registrations`, `db.patientResults`, `db.testParameters`, `db.workspacePdf`, `db.doctors`).
+  - Completely eliminates server-side DNS lookups (`ERR_NAME_NOT_RESOLVED`) by generating in-memory `Blob` and opening via `URL.createObjectURL(blob)`.
+- **Bill / Receipt Generation (`lib/offline/print/billHtmlGenerator.js` & `lib/offline/offlinePrint.js`)**:
+  - Itemizes investigations, calculated payments, number-to-words currency, and triggers print dialogs locally without server reliance.
+
+
+### C. Synchronization Engine (`lib/offline/sync/syncManager.js` & `modelRegistry.js`)
 - **Flags**:
   - `isDirty: true` — Newly created locally, pending POST sync.
   - `isModified: true` — Existing record edited locally, pending PUT sync.
@@ -44,7 +52,7 @@
   - When sync endpoints return `401 Unauthorized`, `triggerAuthRequired()` fires `easytechnomed:auth-required`.
   - Opens `ReLoginModal.jsx`, takes password, posts to `/api/auth/login`, saves new session, and resumes sync.
 
-### C. Real-Time Reactivity (`Dexie.liveQuery`)
+### D. Real-Time Reactivity (`Dexie.liveQuery`)
 - Pages like `test-report/page.js` use `liveQuery(() => db.registrations.filter(...).toArray())`.
 - Provides instant UI updates without whole-page reloading or loading flash when background sync or local edits occur.
 
@@ -96,6 +104,9 @@
 
 | Version | Date | Key Changes & Milestones |
 | :--- | :--- | :--- |
+| `v3.0.17` | 2026-08-28 | 100% Ditto copy offline PDF generator in `reportPdfGenerator.js` matching `/api/print-report` feature-by-feature; Full support for `framePdfBase64`/`framePdfBytes`, CBC sorting, hierarchical parent-child test parameters, dynamic column widths, and markdown summary remarks. |
+| `v3.0.16` | 2026-08-28 | Fixed `handleExecutePrint` async definition in `test-report/page.js`; Integrated `framePdfBase64` & `framePdfBytes` letterhead templates in `reportPdfGenerator.js`. |
+| `v3.0.15` | 2026-08-28 | Implemented 100% Client-Side Offline PDF Report & Money Receipt Print Engine (`pdf-lib` + IndexedDB); Fixed `ERR_NAME_NOT_RESOLVED` on print actions when offline; Integrated seamless offline PDF generation in `test-report`, `showResult`, `showResultMobile`, `MoneyRecipt`, and `doctor-summary`. |
 | `v3.0.12` | 2026-08-28 | Unified Navbar Sync Indicator with full PWA standalone support; Enhanced popover with Offline Information Banner, PWA/Web status, queued changes counter, and zero-API offline protection. |
 | `v3.0.10` | 2026-08-28 | Enforced strict zero-API offline guards across `syncManager.js` and `OfflineProvider.jsx`; Filtered out network disconnect errors so offline mode operates with zero network traffic and zero red error banners. |
 | `v3.0.9` | 2026-08-28 | Fixed auto-redirect loop on login page after logout; Guarded `LoginPageClient.js` and `offlineAuth.js` with `etm_logged_out` flag so logged-out users stay securely on the login screen. |

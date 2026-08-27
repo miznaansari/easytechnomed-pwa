@@ -56,6 +56,7 @@ import AddDoctorDrawer from "@/components/AddDoctorDrawer";
 import { useSync } from "@/hooks/useSync";
 import { syncManager } from "@/lib/offline/sync/syncManager";
 import db from "@/lib/offline/db";
+import { printReportOffline, printBillOffline } from "@/lib/offline/offlinePrint";
 
 export default function DoctorSummaryPage() {
   const [openAddDocDrawer, setOpenAddDocDrawer] = useState(false);
@@ -1057,7 +1058,15 @@ export default function DoctorSummaryPage() {
                                               <IconButton
                                                 size="small"
                                                 color="primary"
-                                                onClick={() => window.open(`/api/print-bill/${reg.id}`, "_blank")}
+                                                onClick={async () => {
+                                                  try {
+                                                    await printBillOffline(reg.id || reg.regNo);
+                                                  } catch (e) {
+                                                    if (typeof navigator !== "undefined" && navigator.onLine) {
+                                                      window.open(`/api/print-bill/${reg.id}`, "_blank");
+                                                    }
+                                                  }
+                                                }}
                                                 sx={{ mr: 0.5 }}
                                               >
                                                 <ReceiptIcon fontSize="small" />
@@ -1067,7 +1076,15 @@ export default function DoctorSummaryPage() {
                                               <IconButton
                                                 size="small"
                                                 color="success"
-                                                onClick={() => window.open(`/api/print-report/${reg.regNo}?withFrame=true`, "_blank")}
+                                                onClick={async () => {
+                                                  try {
+                                                    await printReportOffline(reg.regNo || reg.id, { withFrame: true });
+                                                  } catch (e) {
+                                                    if (typeof navigator !== "undefined" && navigator.onLine) {
+                                                      window.open(`/api/print-report/${reg.regNo}?withFrame=true`, "_blank");
+                                                    }
+                                                  }
+                                                }}
                                               >
                                                 <ReportIcon fontSize="small" />
                                               </IconButton>

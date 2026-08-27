@@ -414,24 +414,25 @@ export default function TestReportPage() {
     }
   };
 
-  const handleExecutePrint = (withFrame) => {
+  const handleExecutePrint = async (withFrame) => {
     if (!selectedReg?.regNo && !selectedReg?.id) return;
     if (selectedTestIdsForPrint.length === 0) {
       showToast("Please select at least one test to print", "warning");
       return;
     }
 
-    if (typeof navigator !== "undefined" && !navigator.onLine) {
-      printReportOffline(selectedReg.id || selectedReg.regNo, {
+    try {
+      await printReportOffline(selectedReg.id || selectedReg.regNo, {
         withFrame,
         testIds: selectedTestIdsForPrint,
       });
-      setPrintDialogOpen(false);
-      return;
+    } catch (err) {
+      console.warn("Client offline PDF generation fallback:", err);
+      if (typeof navigator !== "undefined" && navigator.onLine) {
+        const testIdsQuery = `&testIds=${selectedTestIdsForPrint.join(",")}`;
+        window.open(`/api/print-report/${selectedReg.regNo || selectedReg.id}?withFrame=${withFrame}${testIdsQuery}`, "_blank");
+      }
     }
-
-    const testIdsQuery = `&testIds=${selectedTestIdsForPrint.join(",")}`;
-    window.open(`/api/print-report/${selectedReg.regNo || selectedReg.id}?withFrame=${withFrame}${testIdsQuery}`, "_blank");
     setPrintDialogOpen(false);
   };
 
