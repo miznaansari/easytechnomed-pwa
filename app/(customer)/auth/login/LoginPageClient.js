@@ -34,10 +34,36 @@ export default function CustomerLoginPage() {
   const [identifierValue, setIdentifierValue] = useState("");
 
   React.useEffect(() => {
-    // If offline, immediately enter dashboard with 0 authentication barriers
-    if (typeof navigator !== "undefined" && !navigator.onLine) {
-      router.replace("/dashboard");
+    async function checkAutoRedirect() {
+      if (typeof window === "undefined") return;
+
+      // 1. If currently offline, check local IndexedDB session and redirect to dashboard
+      if (typeof navigator !== "undefined" && !navigator.onLine) {
+        try {
+          const { getCachedSession } = await import("@/lib/auth/offlineAuth");
+          const session = await getCachedSession();
+          if (session) {
+            router.replace("/dashboard");
+            return;
+          }
+        } catch {
+          router.replace("/dashboard");
+          return;
+        }
+      }
+
+      // 2. If online or session/cookie already exists, redirect to dashboard
+      try {
+        const { getCachedSession } = await import("@/lib/auth/offlineAuth");
+        const session = await getCachedSession();
+        const hasTokenCookie = document.cookie.includes("admin_token=") || document.cookie.includes("token=");
+        if (session || hasTokenCookie) {
+          router.replace("/dashboard");
+        }
+      } catch {}
     }
+
+    checkAutoRedirect();
   }, [router]);
 
   const {
