@@ -64,6 +64,9 @@ export default function SyncIndicator() {
           (typeof err.error === "string" && (err.error.includes("401") || err.error.includes("Unauthorized")))
       ));
 
+  // Effective online check
+  const effectiveOnline = isOnline !== false && (typeof navigator === "undefined" || navigator.onLine);
+
   // Determine icon and color based on sync state
   let iconComponent = null;
   let tooltipText = "";
@@ -75,14 +78,14 @@ export default function SyncIndicator() {
     tooltipText = "Authentication expired (401). Re-login required to sync.";
     badgeContent = "!";
     badgeColor = "error";
-  } else if (!isOnline) {
-    iconComponent = <SyncedIcon sx={{ color: "#10b981" }} />;
+  } else if (!effectiveOnline) {
+    iconComponent = <OfflineIcon sx={{ color: "#f59e0b" }} />;
     tooltipText = pendingCount > 0
-      ? `${pendingCount} changes saved locally (IndexedDB)`
-      : "Working locally in IndexedDB";
+      ? `Offline: ${pendingCount} change${pendingCount === 1 ? "" : "s"} saved in local database`
+      : "Offline: Working in local IndexedDB";
     if (pendingCount > 0) {
       badgeContent = pendingCount;
-      badgeColor = "primary";
+      badgeColor = "warning";
     }
   } else if (syncStatus === "syncing") {
     iconComponent = (
@@ -107,15 +110,16 @@ export default function SyncIndicator() {
     tooltipText = `Sync error (${syncErrors.length} failed)`;
     badgeContent = syncErrors.length;
     badgeColor = "error";
-  } else if (hasUnsyncedChanges) {
-    iconComponent = <SyncedIcon sx={{ color: "#10b981" }} />;
-    tooltipText = `${pendingCount} changes saved locally`;
+  } else if (hasUnsyncedChanges || pendingCount > 0) {
+    iconComponent = <CloudDoneIcon sx={{ color: "#0284c7" }} />;
+    tooltipText = `${pendingCount} changes saved locally (pending sync)`;
     badgeContent = pendingCount;
     badgeColor = "info";
   } else {
-    iconComponent = <SyncedIcon sx={{ color: "#10b981" }} />;
-    tooltipText = "All changes synced";
+    iconComponent = <CloudDoneIcon sx={{ color: "#10b981" }} />;
+    tooltipText = "Cloud Connected - All data synced";
   }
+
 
   return (
     <>
@@ -124,11 +128,21 @@ export default function SyncIndicator() {
           onClick={handleClick}
           size="small"
           sx={{
-            p: 1,
+            width: 38,
+            height: 38,
+            p: 0.75,
             borderRadius: 2,
-            backgroundColor: "transparent",
+            backgroundColor: hasAuthError
+              ? "rgba(239, 68, 68, 0.08)"
+              : !isOnline
+              ? "rgba(245, 158, 11, 0.08)"
+              : "transparent",
             "&:hover": {
-              backgroundColor: "rgba(15, 118, 110, 0.08)",
+              backgroundColor: hasAuthError
+                ? "rgba(239, 68, 68, 0.16)"
+                : !isOnline
+                ? "rgba(245, 158, 11, 0.16)"
+                : "rgba(15, 118, 110, 0.08)",
             },
           }}
         >
@@ -142,6 +156,7 @@ export default function SyncIndicator() {
                   height: 16,
                   minWidth: 16,
                   padding: "0 4px",
+                  fontWeight: 700,
                 },
               }}
             >
@@ -165,138 +180,200 @@ export default function SyncIndicator() {
           vertical: "top",
           horizontal: "right",
         }}
-        PaperProps={{
-          sx: {
-            width: 320,
-            p: 2,
-            borderRadius: 2,
-            boxShadow: "0 10px 25px -5px rgba(0,0,0,0.1), 0 8px 10px -6px rgba(0,0,0,0.1)",
-            border: "1px solid #e2e8f0",
+        slotProps={{
+          paper: {
+            elevation: 8,
+            sx: {
+              mt: 1.5,
+              borderRadius: "16px",
+              border: "1px solid #e2e8f0",
+              boxShadow: "0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04)",
+              overflow: "hidden",
+            },
           },
         }}
       >
-        <Box sx={{ display: "flex", alignItems: "center", justifyContent: "space-between", mb: 1.5 }}>
-          <Box sx={{ display: "flex", alignItems: "center", gap: 1 }}>
-            <CloudDoneIcon sx={{ color: "#10b981", fontSize: 20 }} />
-            <Typography variant="subtitle2" sx={{ fontWeight: 700, color: "text.primary" }}>
-              {isOnline ? "Cloud Connected" : "Local Database Active"}
-            </Typography>
-          </Box>
-          <Chip
-            size="small"
-            label={hasAuthError ? "AUTH REQ" : syncStatus === "offline" ? "LOCAL" : syncStatus.toUpperCase()}
-            color={hasAuthError || syncStatus === "error" ? "error" : "success"}
-            sx={{ fontWeight: 700, fontSize: "0.65rem", height: 20 }}
-          />
-        </Box>
+        <Box sx={{ width: 310, p: 2.5, boxSizing: "border-box" }}>
+          {/* Header Row */}
+          <Box sx={{ display: "flex", alignItems: "center", justifyContent: "space-between", mb: 2 }}>
+            <Box sx={{ display: "flex", alignItems: "center", gap: 1.25 }}>
+              <Box
+                sx={{
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: "center",
+                  width: 34,
+                  height: 34,
+                  borderRadius: "10px",
+                  backgroundColor: hasAuthError
+                    ? "#fef2f2"
+                    : !isOnline
+                    ? "#fffbeb"
+                    : "#f0fdf4",
+                  color: hasAuthError
+                    ? "#dc2626"
+                    : !isOnline
+                    ? "#d97706"
+                    : "#16a34a",
+                }}
+              >
+                {hasAuthError ? (
+                  <ErrorIcon sx={{ fontSize: 20 }} />
+                ) : !isOnline ? (
+                  <OfflineIcon sx={{ fontSize: 20 }} />
+                ) : (
+                  <CloudDoneIcon sx={{ fontSize: 20 }} />
+                )}
+              </Box>
+              <Box>
+                <Typography variant="subtitle2" sx={{ fontWeight: 800, color: "#0f172a", fontSize: "0.9rem", lineHeight: 1.2 }}>
+                  {hasAuthError ? "Auth Expired" : !isOnline ? "Offline Mode" : "Cloud Connected"}
+                </Typography>
+                <Typography variant="caption" sx={{ color: "#64748b", fontSize: "0.7rem", fontWeight: 500 }}>
+                  {hasAuthError ? "Re-login required" : !isOnline ? "Local DB active" : "Real-time sync"}
+                </Typography>
+              </Box>
+            </Box>
 
-        <Divider sx={{ my: 1 }} />
-
-        <Box sx={{ display: "flex", flexDirection: "column", gap: 1, py: 1 }}>
-          <Box sx={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
-            <Typography variant="caption" sx={{ color: "text.secondary", fontWeight: 500 }}>
-              Pending Changes:
-            </Typography>
-            <Typography
-              variant="caption"
-              sx={{ fontWeight: 700, color: pendingCount > 0 ? "warning.main" : "text.primary" }}
-            >
-              {pendingCount} records
-            </Typography>
-          </Box>
-
-          <Box sx={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
-            <Typography variant="caption" sx={{ color: "text.secondary", fontWeight: 500 }}>
-              Last Synced:
-            </Typography>
-            <Typography variant="caption" sx={{ fontWeight: 600, color: "text.primary" }}>
-              {lastSyncTime ? formatLocalDisplay(lastSyncTime) : "Not yet"}
-            </Typography>
-          </Box>
-        </Box>
-
-        {hasAuthError ? (
-          <Box sx={{ mt: 1, mb: 1.5, p: 1.5, bgcolor: "#fef2f2", border: "1px solid #fee2e2", borderRadius: 1.5 }}>
-            <Typography variant="caption" sx={{ fontWeight: 700, color: "#991b1b", display: "block" }}>
-              Session Expired (401)
-            </Typography>
-            <Typography variant="caption" sx={{ color: "#b91c1c", display: "block", mt: 0.2 }}>
-              Re-login to resume cloud sync.
-            </Typography>
-            <Button
-              fullWidth
-              variant="contained"
+            <Chip
               size="small"
-              color="error"
-              onClick={() => {
-                handleClose();
-                openAuthModal();
-              }}
-              startIcon={<ReAuthIcon fontSize="small" />}
-              sx={{
-                mt: 1,
-                py: 0.6,
-                fontWeight: 700,
-                fontSize: "0.75rem",
-                borderRadius: 1.5,
-              }}
-            >
-              Re-Login to Resume Sync
-            </Button>
+              label={hasAuthError ? "AUTH REQ" : !isOnline ? "OFFLINE" : syncStatus.toUpperCase()}
+              color={hasAuthError || syncStatus === "error" ? "error" : !isOnline ? "warning" : "success"}
+              sx={{ fontWeight: 800, fontSize: "0.65rem", height: 22, borderRadius: "6px" }}
+            />
           </Box>
-        ) : syncErrors && syncErrors.length > 0 ? (
-          <Box sx={{ mt: 1, mb: 1.5, p: 1, bgcolor: "error.light", borderRadius: 1.5, opacity: 0.9 }}>
-            <Typography variant="caption" sx={{ fontWeight: 700, color: "error.contrastText", display: "block" }}>
-              Failed Sync Items:
-            </Typography>
-            <List dense disablePadding sx={{ maxHeight: 100, overflowY: "auto", mt: 0.5 }}>
-              {syncErrors.map((err, idx) => (
-                <ListItem key={idx} disablePadding sx={{ py: 0.2 }}>
-                  <ListItemText
-                    primary={err.error || err.message || "Unknown error"}
-                    primaryTypographyProps={{
-                      fontSize: "0.7rem",
-                      color: "error.contrastText",
-                      fontWeight: 500,
-                    }}
-                  />
-                </ListItem>
-              ))}
-            </List>
+
+          <Divider sx={{ mb: 2, borderColor: "#f1f5f9" }} />
+
+          {/* Sync Stats Info */}
+          <Box
+            sx={{
+              display: "flex",
+              flexDirection: "column",
+              gap: 1.25,
+              p: 1.5,
+              backgroundColor: "#f8fafc",
+              borderRadius: "12px",
+              border: "1px solid #f1f5f9",
+              mb: 2,
+            }}
+          >
+            <Box sx={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
+              <Typography variant="caption" sx={{ color: "#64748b", fontWeight: 600, fontSize: "0.78rem" }}>
+                Pending Changes:
+              </Typography>
+              <Box sx={{ display: "flex", alignItems: "center", gap: 0.5 }}>
+                <Typography
+                  variant="caption"
+                  sx={{
+                    fontWeight: 800,
+                    fontSize: "0.78rem",
+                    color: pendingCount > 0 ? "#d97706" : "#16a34a",
+                  }}
+                >
+                  {pendingCount} {pendingCount === 1 ? "record" : "records"}
+                </Typography>
+              </Box>
+            </Box>
+
+            <Box sx={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
+              <Typography variant="caption" sx={{ color: "#64748b", fontWeight: 600, fontSize: "0.78rem" }}>
+                Last Synced:
+              </Typography>
+              <Typography variant="caption" sx={{ fontWeight: 700, color: "#1e293b", fontSize: "0.78rem" }}>
+                {lastSyncTime ? formatLocalDisplay(lastSyncTime) : "Not yet"}
+              </Typography>
+            </Box>
           </Box>
-        ) : null}
 
-        <Divider sx={{ my: 1 }} />
+          {/* Auth Error Banner & Action */}
+          {hasAuthError && (
+            <Box sx={{ mb: 2, p: 1.5, bgcolor: "#fef2f2", border: "1px solid #fee2e2", borderRadius: "12px" }}>
+              <Typography variant="caption" sx={{ fontWeight: 800, color: "#991b1b", display: "block", fontSize: "0.75rem" }}>
+                Session Expired (401)
+              </Typography>
+              <Typography variant="caption" sx={{ color: "#b91c1c", display: "block", mt: 0.25, fontSize: "0.7rem", lineHeight: 1.3 }}>
+                Your token has expired. Please re-login to synchronize with cloud.
+              </Typography>
+              <Button
+                fullWidth
+                variant="contained"
+                size="small"
+                color="error"
+                onClick={() => {
+                  handleClose();
+                  openAuthModal();
+                }}
+                startIcon={<ReAuthIcon sx={{ fontSize: 16 }} />}
+                sx={{
+                  mt: 1.25,
+                  py: 0.75,
+                  fontWeight: 700,
+                  fontSize: "0.75rem",
+                  borderRadius: "8px",
+                  textTransform: "none",
+                }}
+              >
+                Re-Login to Resume Sync
+              </Button>
+            </Box>
+          )}
 
-        <Button
-          fullWidth
-          variant="contained"
-          size="small"
-          disabled={!isOnline || syncStatus === "syncing"}
-          onClick={() => {
-            sync();
-          }}
-          startIcon={
-            syncStatus === "syncing" ? (
-              <CircularProgress size={14} color="inherit" />
-            ) : (
-              <RefreshIcon fontSize="small" />
-            )
-          }
-          sx={{
-            mt: 0.5,
-            py: 0.8,
-            backgroundColor: "#0f766e",
-            fontWeight: 700,
-            fontSize: "0.8rem",
-            borderRadius: 1.5,
-            "&:hover": {
-              backgroundColor: "#0d645d",
-            },
-          }}
-        >
-          {syncStatus === "syncing" ? "Syncing in progress..." : "Sync Now"}
-        </Button>
+          {/* Failed Sync Items (if any non-auth errors) */}
+          {!hasAuthError && syncErrors && syncErrors.length > 0 && (
+            <Box sx={{ mb: 2, p: 1.5, bgcolor: "#fef2f2", border: "1px solid #fee2e2", borderRadius: "12px" }}>
+              <Typography variant="caption" sx={{ fontWeight: 800, color: "#991b1b", display: "block", fontSize: "0.75rem" }}>
+                Failed Sync Items:
+              </Typography>
+              <List dense disablePadding sx={{ maxHeight: 90, overflowY: "auto", mt: 0.5 }}>
+                {syncErrors.map((err, idx) => (
+                  <ListItem key={idx} disablePadding sx={{ py: 0.25 }}>
+                    <ListItemText
+                      primary={err.error || err.message || "Sync failed"}
+                      primaryTypographyProps={{
+                        fontSize: "0.7rem",
+                        color: "#b91c1c",
+                        fontWeight: 600,
+                      }}
+                    />
+                  </ListItem>
+                ))}
+              </List>
+            </Box>
+          )}
+
+          {/* Sync Now Action Button */}
+          <Button
+            fullWidth
+            variant="contained"
+            disabled={!isOnline || syncStatus === "syncing"}
+            onClick={() => {
+              sync();
+            }}
+            startIcon={
+              syncStatus === "syncing" ? (
+                <CircularProgress size={16} color="inherit" />
+              ) : (
+                <RefreshIcon sx={{ fontSize: 18 }} />
+              )
+            }
+            sx={{
+              py: 1.1,
+              backgroundColor: "#0f766e",
+              fontWeight: 700,
+              fontSize: "0.85rem",
+              borderRadius: "10px",
+              textTransform: "none",
+              boxShadow: "0 2px 4px rgba(15, 118, 110, 0.2)",
+              "&:hover": {
+                backgroundColor: "#0d645d",
+                boxShadow: "0 4px 8px rgba(15, 118, 110, 0.3)",
+              },
+            }}
+          >
+            {syncStatus === "syncing" ? "Syncing in progress..." : "Sync Now"}
+          </Button>
+        </Box>
       </Popover>
     </>
   );

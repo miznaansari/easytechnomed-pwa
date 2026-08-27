@@ -95,7 +95,9 @@ import SyncStatusIcon from "@/components/offline/SyncStatusIcon";
 import { useSync } from "@/hooks/useSync";
 import { syncManager } from "@/lib/offline/sync/syncManager";
 import db from "@/lib/offline/db";
+import { liveQuery } from "dexie";
 import { printReportOffline } from "@/lib/offline/offlinePrint";
+
 
 
 const menuButtonStyle = {
@@ -471,8 +473,10 @@ export default function TestReportPage() {
     fetchSettings();
   }, [printDialogOpen]);
 
-  const loadData = async () => {
-    setLoading(true);
+  const loadData = async (showSpinner = false) => {
+    if (showSpinner) {
+      setLoading(true);
+    }
     try {
       // 1. Immediately query and filter directly from IndexedDB (0ms latency)
       let allLocal = await db.registrations.filter((r) => !r.isDeleted).toArray();
@@ -527,52 +531,73 @@ export default function TestReportPage() {
         setTotal(localData.length);
       } catch (dbErr) { }
     } finally {
-      setLoading(false);
+      if (showSpinner) {
+        setLoading(false);
+      }
     }
   };
 
-  const { isSyncing, lastSyncTime } = useSync();
-  const isSyncingPrevRef = React.useRef(false);
-
-  // Auto-reload registrations whenever a background or manual sync completes
+  // Reactive Dexie liveQuery subscription: instantly and silently reflects per-row sync without reloading
   useEffect(() => {
-    if (isSyncingPrevRef.current && !isSyncing) {
-      loadData();
+    let isSubscribed = true;
+    let subscription = null;
+
+    try {
+      subscription = liveQuery(() => db.registrations.filter((r) => !r.isDeleted).toArray()).subscribe({
+        next: (allLocal) => {
+          if (!isSubscribed) return;
+          let filtered = allLocal || [];
+
+          // Filter by Date Range
+          if (startDate) {
+            const startTimestamp = new Date(startDate).setHours(0, 0, 0, 0);
+            filtered = filtered.filter((r) => r.date && new Date(r.date).getTime() >= startTimestamp);
+          }
+          if (endDate) {
+            const endTimestamp = new Date(endDate).setHours(23, 59, 59, 999);
+            filtered = filtered.filter((r) => r.date && new Date(r.date).getTime() <= endTimestamp);
+          }
+
+          // Filter by Search
+          if (search) {
+            const q = search.toLowerCase().trim();
+            filtered = filtered.filter(
+              (r) =>
+                (r.name && r.name.toLowerCase().includes(q)) ||
+                (r.regNo && r.regNo.toLowerCase().includes(q)) ||
+                (r.mobileNo && r.mobileNo.includes(q))
+            );
+          }
+
+          // Sort by date descending
+          filtered.sort((a, b) => new Date(b.date || 0).getTime() - new Date(a.date || 0).getTime());
+
+          const totalCount = filtered.length;
+          const startIndex = (page - 1) * limit;
+          const paginated = filtered.slice(startIndex, startIndex + limit);
+
+          setRegistrations(paginated);
+          setTotal(totalCount);
+          setLoading(false);
+        },
+        error: (err) => {
+          console.warn("[TestReport] liveQuery error, fallback to loadData:", err);
+          loadData(false);
+        },
+      });
+    } catch (err) {
+      console.warn("[TestReport] liveQuery init failed, fallback to loadData:", err);
+      loadData(false);
     }
-    isSyncingPrevRef.current = isSyncing;
-  }, [isSyncing]);
-
-  useEffect(() => {
-    if (lastSyncTime) {
-      loadData();
-    }
-  }, [lastSyncTime]);
-
-  useEffect(() => {
-    const handleSyncEvent = () => {
-      loadData();
-    };
-    window.addEventListener("easytechnomed:sync-complete", handleSyncEvent);
-    window.addEventListener("easytechnomed:sync-state-change", handleSyncEvent);
-
-    const unsubscribe = syncManager.subscribe((state) => {
-      if (!state.isSyncing && state.lastSyncTime) {
-        loadData();
-      }
-    });
 
     return () => {
-      window.removeEventListener("easytechnomed:sync-complete", handleSyncEvent);
-      window.removeEventListener("easytechnomed:sync-state-change", handleSyncEvent);
-      unsubscribe();
+      isSubscribed = false;
+      if (subscription && typeof subscription.unsubscribe === "function") {
+        subscription.unsubscribe();
+      }
     };
-  }, []);
+  }, [startDate, endDate, search, page, limit]);
 
-  useEffect(() => {
-    // eslint-disable-next-line react-hooks/set-state-in-effect
-    loadData();
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [startDate, endDate, page, limit]);
 
   const handleSearchSubmit = (e) => {
     e.preventDefault();
@@ -581,6 +606,7 @@ export default function TestReportPage() {
       loadData();
     }
   };
+
 
   const handleResetFilters = () => {
     setRange("thismonth");
@@ -1183,7 +1209,6 @@ export default function TestReportPage() {
                           isDirty={reg.isDirty}
                           isModified={reg.isModified}
                           isError={reg.isError}
-                          isSyncing={isSyncing && (reg.isDirty || reg.isModified)}
                           errorInfo={reg.errorInfo}
                         />
                       </TableCell>

@@ -36,3 +36,8 @@ export async function GET() {
     return NextResponse.json({ success: true, isLoggedIn: false });
   }
 }
+
+export async function HEAD() {
+  return new Response(null, { status: 200 });
+}
+

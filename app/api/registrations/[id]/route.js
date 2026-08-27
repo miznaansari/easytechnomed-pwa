@@ -15,11 +15,11 @@ const registrationSchema = z.object({
   title: z.string(),
   name: z.string().min(2, "Patient name must be at least 2 characters"),
   city: z.string().default("-NA-"),
-  age: z.number().positive("Age must be positive"),
+  age: z.coerce.number().positive("Age must be positive"),
   ageUnit: z.string().default("Year"),
   gender: z.string(),
-  refById: z.number().nullable().optional(),
-  secondRefById: z.number().nullable().optional(),
+  refById: z.coerce.number().nullable().optional(),
+  secondRefById: z.coerce.number().nullable().optional(),
   remark: z.string().nullable().optional(),
   colType: z.string().default("Camp"),
   expRptDate: z.string().nullable().optional(),
@@ -28,15 +28,16 @@ const registrationSchema = z.object({
   sampleBy: z.string().default("-NA-"),
   paymentMode: z.string().default("Cash"),
   paymentRefNo: z.string().nullable().optional(),
-  totalAmount: z.number().default(0),
-  collectionCharge: z.number().default(0),
-  discountPercent: z.number().default(0),
-  discountAmount: z.number().default(0),
-  receivedAmount: z.number().default(0),
-  dueAmount: z.number().default(0),
-  stickerCount: z.number().default(1),
-  testIds: z.array(z.number()).min(1, "At least one test must be selected"),
+  totalAmount: z.coerce.number().default(0),
+  collectionCharge: z.coerce.number().default(0),
+  discountPercent: z.coerce.number().default(0),
+  discountAmount: z.coerce.number().default(0),
+  receivedAmount: z.coerce.number().default(0),
+  dueAmount: z.coerce.number().default(0),
+  stickerCount: z.coerce.number().default(1),
+  testIds: z.array(z.coerce.number()).min(1, "At least one test must be selected"),
 });
+
 
 export async function GET(req, { params }) {
   try {
@@ -239,12 +240,14 @@ export async function PUT(req, { params }) {
     return NextResponse.json({ success: true, message: "Registration updated successfully!", registration: serializeData(result) });
   } catch (error) {
     console.error("Workspace Registration PUT ID Error:", error);
-    if (error instanceof z.ZodError) {
-      return NextResponse.json({ success: false, message: error.errors[0]?.message || "Validation error" }, { status: 400 });
+    if (error instanceof z.ZodError || error.name === "ZodError") {
+      const msg = (error.issues && error.issues[0]?.message) || (error.errors && error.errors[0]?.message) || "Validation error";
+      return NextResponse.json({ success: false, message: msg }, { status: 400 });
     }
     return NextResponse.json({ success: false, error: error.message }, { status: 500 });
   }
 }
+
 
 export async function DELETE(req, { params }) {
   try {

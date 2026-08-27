@@ -18,7 +18,13 @@ export default function SyncStatusIcon({
   errorInfo = "",
   size = 18,
 }) {
-  if (isSyncing && (isDirty || isModified)) {
+  // Parse truthy flags (handling booleans, numbers 0/1, and strings "0"/"1"/"true")
+  const isPendingDirty = isDirty === true || isDirty === 1 || isDirty === "1" || isDirty === "true";
+  const isPendingModified =
+    (isModified === true || isModified === 1 || isModified === "1" || isModified === "true") && !isPendingDirty;
+  const hasError = isError === true || isError === 1 || isError === "1" || Boolean(errorInfo);
+
+  if (isSyncing && (isPendingDirty || isPendingModified)) {
     return (
       <Tooltip title="Synchronizing with server..." arrow>
         <Box
@@ -39,7 +45,7 @@ export default function SyncStatusIcon({
     );
   }
 
-  if (isError) {
+  if (hasError) {
     return (
       <Tooltip title={`Sync Failed: ${errorInfo || "Click sync to retry"}`} arrow>
         <Box component="span" sx={{ display: "inline-flex", alignItems: "center", cursor: "pointer" }}>
@@ -49,7 +55,7 @@ export default function SyncStatusIcon({
     );
   }
 
-  if (isDirty) {
+  if (isPendingDirty) {
     return (
       <Tooltip title="Newly created offline (pending sync)" arrow>
         <Box component="span" sx={{ display: "inline-flex", alignItems: "center" }}>
@@ -59,7 +65,7 @@ export default function SyncStatusIcon({
     );
   }
 
-  if (isModified) {
+  if (isPendingModified) {
     return (
       <Tooltip title="Modified offline (pending sync)" arrow>
         <Box component="span" sx={{ display: "inline-flex", alignItems: "center" }}>
@@ -69,11 +75,13 @@ export default function SyncStatusIcon({
     );
   }
 
+  // Row is Synced (isDirty: 0/false, isModified: 0/false) -> Green check icon
   return (
     <Tooltip title="Synced with server" arrow>
       <Box component="span" sx={{ display: "inline-flex", alignItems: "center" }}>
-        <SyncedIcon sx={{ color: "#10b981", fontSize: size, opacity: 0.8 }} />
+        <SyncedIcon sx={{ color: "#10b981", fontSize: size }} />
       </Box>
     </Tooltip>
   );
 }
+

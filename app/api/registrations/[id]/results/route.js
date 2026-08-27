@@ -104,3 +104,8 @@ export async function POST(req, { params }) {
     return NextResponse.json({ success: false, error: error.message }, { status: 500 });
   }
 }
+
+export async function PUT(req, context) {
+  return POST(req, context);
+}
+
