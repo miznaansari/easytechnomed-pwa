@@ -92,18 +92,13 @@ export default function SyncIndicator() {
   );
 
 
-  // Determine icon and color based on sync state
+  // Determine icon and color based on sync state - OFFLINE takes topmost priority
   let iconComponent = null;
   let tooltipText = "";
   let badgeContent = null;
   let badgeColor = "default";
 
-  if (hasAuthError) {
-    iconComponent = <ErrorIcon sx={{ color: "#ef4444" }} />;
-    tooltipText = "Authentication expired (401). Re-login required to sync.";
-    badgeContent = "!";
-    badgeColor = "error";
-  } else if (!isCurrentlyOnline) {
+  if (!isCurrentlyOnline) {
     iconComponent = <OfflineIcon sx={{ color: "#f59e0b" }} />;
     tooltipText = pendingCount > 0
       ? `Offline: ${pendingCount} change${pendingCount === 1 ? "" : "s"} saved in local database`
@@ -112,28 +107,26 @@ export default function SyncIndicator() {
       badgeContent = pendingCount;
       badgeColor = "warning";
     }
+  } else if (hasAuthError) {
+    iconComponent = <ErrorIcon sx={{ color: "#ef4444" }} />;
+    tooltipText = "Authentication expired (401). Re-login required to sync.";
+    badgeContent = "!";
+    badgeColor = "error";
   } else if (syncStatus === "syncing") {
     iconComponent = (
-      <SyncingIcon
-        sx={{
-          color: "#0f766e",
-          animation: "spin 1.5s linear infinite",
-          "@keyframes spin": {
-            "0%": { transform: "rotate(0deg)" },
-            "100%": { transform: "rotate(360deg)" },
-          },
-        }}
+      <CircularProgress
+        size={20}
+        thickness={5}
+        sx={{ color: "#0f766e" }}
       />
     );
-    tooltipText = pendingCount > 0 ? `Syncing ${pendingCount} changes...` : "Syncing...";
-    if (pendingCount > 0) {
-      badgeContent = pendingCount;
-      badgeColor = "primary";
-    }
+    tooltipText = "Synchronizing with cloud...";
   } else if (syncStatus === "error" || (syncErrors && syncErrors.length > 0)) {
     iconComponent = <ErrorIcon sx={{ color: "#ef4444" }} />;
-    tooltipText = `Sync error (${syncErrors.length} failed)`;
-    badgeContent = syncErrors.length;
+    tooltipText = syncErrors && syncErrors.length > 0
+      ? `Sync error: ${syncErrors[0]?.error || "Check connection"}`
+      : "Sync error - will retry automatically";
+    badgeContent = "!";
     badgeColor = "error";
   } else if (hasUnsyncedChanges || pendingCount > 0) {
     iconComponent = <CloudDoneIcon sx={{ color: "#0284c7" }} />;
@@ -144,6 +137,7 @@ export default function SyncIndicator() {
     iconComponent = <CloudDoneIcon sx={{ color: "#10b981" }} />;
     tooltipText = "Cloud Connected - All data synced";
   }
+
 
   return (
     <>

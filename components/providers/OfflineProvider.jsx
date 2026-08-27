@@ -31,16 +31,21 @@ export default function OfflineProvider({ children }) {
 
   // Manual or automatic sync trigger
   const triggerSync = useCallback(async () => {
+    // STRICT ZERO-API OFFLINE GUARD: Never attempt network call when offline
     if (typeof navigator !== "undefined" && !navigator.onLine) {
       setSyncStatus("offline");
-      return { success: false, message: "Offline" };
+      setSyncErrors([]);
+      return { success: false, message: "Offline", isOffline: true };
     }
 
     setSyncStatus("syncing");
     const result = await syncManager.sync();
     await refreshPendingCount();
 
-    if (result.success) {
+    if (result?.isOffline || (typeof navigator !== "undefined" && !navigator.onLine)) {
+      setSyncStatus("offline");
+      setSyncErrors([]);
+    } else if (result.success) {
       setSyncStatus("synced");
       setSyncErrors([]);
       setIsAuthRequired(false);
@@ -54,6 +59,7 @@ export default function OfflineProvider({ children }) {
     }
     return result;
   }, [refreshPendingCount]);
+
 
   const debounceTimerRef = useRef(null);
 
