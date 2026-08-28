@@ -1,4 +1,4 @@
-# Node Description Batch 35 of 148
+# Node Description Batch 35 of 149
 
 Graphify is running in assistant/skill mode (no API key). You are the host
 assistant (Claude Code / Codex / Gemini CLI). Read the prompt below and write
@@ -12,13 +12,49 @@ describing what it is or does. Use only the provided context.
 For a code symbol (kind=code-symbol — a function, class, or constant),
 describe what the function/symbol does based on its name, source location
 and neighbors — e.g. "Resolves the configured ontology profile from graphify.yaml.".
+For an entity node (any other kind — e.g. a person, place, event, object),
+describe what the entity is and its role, grounded in its type, its
+relations (neighbors) and the provided citations/evidence — e.g.
+"Lady Carfax, a wealthy heiress who disappears en route to Lausanne.".
+Ground entity descriptions in the citations/evidence when present; do not
+speculate beyond the context, so a node with no supporting context may be
+left out of the reply.
 Write every description in English (en). Do not switch languages.
 No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "suggestion_route": "route.js" | kind=code-symbol | source=app/api/ai/suggestion/route.js:L1 | neighbors=[252e194 e, callGeminiModels(), POST()]
+- "sync_route": "route.js" | kind=code-symbol | source=app/api/offline/sync/route.js:L1 | neighbors=[2b2534c f, 7d8c494 fxed, POST()]
+- "sync_syncmanager_syncmanager_notifystate": ".notifyState()" | kind=code-symbol | source=lib/offline/sync/syncManager.js:L45 | neighbors=[SyncManager, .subscribe(), .sync()]
+- "tests_page": "page.js" | kind=code-symbol | source=app/(customer)/(dashboard)/settings/tests/page.js:L1 | neighbors=[252e194 e, SettingsTestsPage(), testsClient.jsx]
+- "tests_route_serializesingletest": "serializeSingleTest()" | kind=code-symbol | source=app/api/tests/route.js:L37 | neighbors=[route.js, POST(), PUT()]
+- "ui_dropdown": "Dropdown.js" | kind=code-symbol | source=components/ui/Dropdown.js:L1 | neighbors=[252e194 e, Dropdown(), DropdownItem()]
+- "ui_loader": "Loader.js" | kind=code-symbol | source=components/ui/Loader.js:L1 | neighbors=[252e194 e, Button.js, Loader()]
+- "userapprove_userapprovetable": "UserApproveTable.js" | kind=code-symbol | source=app/(customer)/(dashboard)/userApprove/UserApproveTable.js:L1 | neighbors=[252e194 e, page.js, UserApproveTable()]
+- "admin_route": "route.js" | kind=code-symbol | source=app/api/tracking/admin/route.js:L1 | neighbors=[POST(), 252e194 e]
+- "app_robots": "robots.js" | kind=code-symbol | source=app/robots.js:L1 | neighbors=[robots(), 252e194 e]
+- "app_sitemap": "sitemap.js" | kind=code-symbol | source=app/sitemap.js:L1 | neighbors=[sitemap(), 252e194 e]
+- "approvals_route": "route.js" | kind=code-symbol | source=app/api/approvals/route.js:L1 | neighbors=[GET(), 252e194 e]
+- "approve_route": "route.js" | kind=code-symbol | source=app/api/approvals/approve/route.js:L1 | neighbors=[POST(), 252e194 e]
+- "auth_offlineauth_islocalsessionvalid": "isLocalSessionValid()" | kind=code-symbol | source=lib/auth/offlineAuth.js:L117 | neighbors=[offlineAuth.js, getCachedSession()]
+- "by_mobile_route_get": "GET()" | kind=code-symbol | source=app/api/registrations/by-mobile/route.js:L10 | neighbors=[route.js, serializeData()]
+- "by_mobile_route_serializedata": "serializeData()" | kind=code-symbol | source=app/api/registrations/by-mobile/route.js:L6 | neighbors=[route.js, GET()]
+- "change_role_route": "route.js" | kind=code-symbol | source=app/api/approvals/change-role/route.js:L1 | neighbors=[POST(), 252e194 e]
+- "commit:repo:github.com-personal/miznaansari/easytechnomed-pwa@9d71afcc23862c5fffbd639f60476f1ad073ffc7": "9d71afc 3.0.22" | kind=Commit | source=git | neighbors=[47b2032 ios issue pwa, main]
+- "component_differentialcounttracker_isdifferentialheader": "isDifferentialHeader()" | kind=code-symbol | source=app/(customer)/(dashboard)/test-report/component/DifferentialCountTracker.jsx:L76 | neighbors=[DifferentialCountTracker.jsx, DifferentialHeaderBadge()]
+- "component_differentialcounttracker_validatedifferentialonsave": "validateDifferentialOnSave()" | kind=code-symbol | source=app/(customer)/(dashboard)/test-report/component/DifferentialCountTracker.jsx:L178 | neighbors=[DifferentialCountTracker.jsx, calculateDifferentialSummary()]
+- "component_showresult_isoutofrange": "isOutOfRange()" | kind=code-symbol | source=app/(customer)/(dashboard)/test-report/component/showResult.jsx:L92 | neighbors=[showResult.jsx, isQualitativeAbnormal()]
+- "component_showresult_isqualitativeabnormal": "isQualitativeAbnormal()" | kind=code-symbol | source=app/(customer)/(dashboard)/test-report/component/showResult.jsx:L62 | neighbors=[showResult.jsx, isOutOfRange()]
+- "component_showresultmobile_isoutofrange": "isOutOfRange()" | kind=code-symbol | source=app/(customer)/(dashboard)/test-report/component/showResultMobile.jsx:L74 | neighbors=[showResultMobile.jsx, isQualitativeAbnormal()]
+- "component_showresultmobile_isqualitativeabnormal": "isQualitativeAbnormal()" | kind=code-symbol | source=app/(customer)/(dashboard)/test-report/component/showResultMobile.jsx:L48 | neighbors=[showResultMobile.jsx, isOutOfRange()]
+- "components_expiredplanview": "ExpiredPlanView.jsx" | kind=code-symbol | source=components/ExpiredPlanView.jsx:L1 | neighbors=[252e194 e, ExpiredPlanView()]
+- "components_toastprovider": "ToastProvider.js" | kind=code-symbol | source=components/ToastProvider.js:L1 | neighbors=[252e194 e, ToastProvider()]
+- "contact_route": "route.js" | kind=code-symbol | source=app/api/contact/route.js:L1 | neighbors=[252e194 e, POST()]
+- "dashboard_dashboardcharts_departmentdistributionchart": "DepartmentDistributionChart()" | kind=code-symbol | source=app/(customer)/(dashboard)/dashboard/DashboardCharts.js:L88 | neighbors=[DashboardCharts.js, page.js]
+- "dashboard_dashboardcharts_referralchart": "ReferralChart()" | kind=code-symbol | source=app/(customer)/(dashboard)/dashboard/DashboardCharts.js:L201 | neighbors=[DashboardCharts.js, page.js]
+- "dashboard_dashboardcharts_registrationchart": "RegistrationChart()" | kind=code-symbol | source=app/(customer)/(dashboard)/dashboard/DashboardCharts.js:L52 | neighbors=[DashboardCharts.js, page.js]
 - "dashboard_dashboardcharts_revenuechart": "RevenueChart()" | kind=code-symbol | source=app/(customer)/(dashboard)/dashboard/DashboardCharts.js:L104 | neighbors=[DashboardCharts.js, page.js]
-- "dashboard_rangeselector": "RangeSelector.js" | kind=code-symbol | source=app/(customer)/(dashboard)/dashboard/RangeSelector.js:L1 | neighbors=[252e194 e, DashboardRangeSelector()]
 - "doctor_summary_route_get": "GET()" | kind=code-symbol | source=app/api/doctor-summary/route.js:L10 | neighbors=[route.js, serializeData()]
 - "doctor_summary_route_serializedata": "serializeData()" | kind=code-symbol | source=app/api/doctor-summary/route.js:L6 | neighbors=[route.js, GET()]
 - "doctors_route_get": "GET()" | kind=code-symbol | source=app/api/doctors/route.js:L10 | neighbors=[route.js, serializeData()]
@@ -28,35 +64,6 @@ one-sentence description — no prose, no markdown fences.
 - "eslint_config": "eslint.config.mjs" | kind=code-symbol | source=eslint.config.mjs:L1 | neighbors=[252e194 e, eslintConfig]
 - "generated_client_default": "default.js" | kind=code-symbol | source=scratch/generated-client/default.js:L1 | neighbors=[252e194 e, edge.d.ts]
 - "generated_client_default_d": "default.d.ts" | kind=code-symbol | source=scratch/generated-client/default.d.ts:L1 | neighbors=[252e194 e, index.js]
-- "generated_client_edge_d": "edge.d.ts" | kind=code-symbol | source=scratch/generated-client/edge.d.ts:L1 | neighbors=[252e194 e, default.js]
-- "generated_client_index_browser_prismaclient": "PrismaClient" | kind=code-symbol | source=scratch/generated-client/index-browser.js:L607 | neighbors=[index-browser.js, .constructor()]
-- "generated_client_wasm_d": "wasm.d.ts" | kind=code-symbol | source=scratch/generated-client/wasm.d.ts:L1 | neighbors=[252e194 e, index.js]
-- "generated_client_wasm_prismaclient": "PrismaClient" | kind=code-symbol | source=scratch/generated-client/wasm.js:L607 | neighbors=[wasm.js, .constructor()]
-- "google_route": "route.js" | kind=code-symbol | source=app/api/authas/google/route.js:L1 | neighbors=[252e194 e, POST()]
-- "hooks_useoffline": "useOffline.js" | kind=code-symbol | source=hooks/useOffline.js:L1 | neighbors=[2b2534c f, useOffline()]
-- "hooks_usesync_usesync": "useSync()" | kind=code-symbol | source=hooks/useSync.js:L5 | neighbors=[useOfflineData.js, useSync.js]
-- "id_route_get": "GET()" | kind=code-symbol | source=app/api/registrations/[id]/route.js:L42 | neighbors=[route.js, serializeData()]
-- "id_route_put": "PUT()" | kind=code-symbol | source=app/api/registrations/[id]/route.js:L79 | neighbors=[route.js, serializeData()]
-- "improve_route_callgemini": "callGemini()" | kind=code-symbol | source=app/api/ai/improve/route.js:L6 | neighbors=[route.js, POST()]
-- "improve_route_post": "POST()" | kind=code-symbol | source=app/api/ai/improve/route.js:L44 | neighbors=[route.js, callGemini()]
-- "indexeddb_db": "db.js" | kind=code-symbol | source=app/indexedDB/db.js:L1 | neighbors=[252e194 e, 2b2534c f]
-- "leads_route": "route.js" | kind=code-symbol | source=app/api/leads/route.js:L1 | neighbors=[252e194 e, POST()]
-- "lib_auth_requireadmin": "requireAdmin()" | kind=code-symbol | source=lib/auth.js:L81 | neighbors=[auth.js, verifyToken()]
-- "lib_auth_requiresuperadmin": "requireSuperAdmin()" | kind=code-symbol | source=lib/auth.js:L156 | neighbors=[auth.js, verifyToken()]
-- "lib_auth_requireuser": "requireUser()" | kind=code-symbol | source=lib/auth.js:L23 | neighbors=[auth.js, verifyToken()]
-- "lib_auth_verifysuperadminapi": "verifySuperAdminAPI()" | kind=code-symbol | source=lib/auth.js:L190 | neighbors=[auth.js, verifyToken()]
-- "lib_db": "db.js" | kind=code-symbol | source=lib/db.js:L1 | neighbors=[252e194 e, auth.js]
-- "lib_formulautils_determineflag": "determineFlag()" | kind=code-symbol | source=lib/formulaUtils.js:L565 | neighbors=[formulaEngine.js, formulaUtils.js]
-- "lib_formulautils_getrangeandcriticalthresholds": "getRangeAndCriticalThresholds()" | kind=code-symbol | source=lib/formulaUtils.js:L479 | neighbors=[formulaEngine.js, formulaUtils.js]
-- "lib_formulautils_validatedifferentialcount": "validateDifferentialCount()" | kind=code-symbol | source=lib/formulaUtils.js:L771 | neighbors=[formulaEngine.js, formulaUtils.js]
-- "lib_pdftheme_computecolumnlayout": "computeColumnLayout()" | kind=code-symbol | source=lib/pdfTheme.js:L68 | neighbors=[pdfTheme.js, test-pdf-customization.mjs]
-- "lib_pdftheme_default_columns": "DEFAULT_COLUMNS" | kind=code-symbol | source=lib/pdfTheme.js:L57 | neighbors=[pdfTheme.js, test-pdf-customization.mjs]
-- "lib_pdftheme_getfontfamilydefinitions": "getFontFamilyDefinitions()" | kind=code-symbol | source=lib/pdfTheme.js:L30 | neighbors=[pdfTheme.js, test-pdf-customization.mjs]
-- "lib_pdftheme_hextorgb": "hexToRgb()" | kind=code-symbol | source=lib/pdfTheme.js:L6 | neighbors=[pdfTheme.js, test-pdf-customization.mjs]
-- "lib_pdftheme_pdf_theme_presets": "PDF_THEME_PRESETS" | kind=code-symbol | source=lib/pdfTheme.js:L114 | neighbors=[pdfTheme.js, test-pdf-customization.mjs]
-- "login_loginpageclient_customerloginpage": "CustomerLoginPage()" | kind=code-symbol | source=app/(customer)/auth/login/LoginPageClient.js:L31 | neighbors=[LoginPageClient.js, isLikelyMobile()]
-- "login_loginpageclient_islikelymobile": "isLikelyMobile()" | kind=code-symbol | source=app/(customer)/auth/login/LoginPageClient.js:L15 | neighbors=[LoginPageClient.js, CustomerLoginPage()]
-- "login_route": "route.js" | kind=code-symbol | source=app/api/authas/login/route.js:L1 | neighbors=[252e194 e, POST()]
 
 ## Instructions
 

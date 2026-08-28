@@ -1,4 +1,4 @@
-# Node Description Batch 14 of 148
+# Node Description Batch 14 of 149
 
 Graphify is running in assistant/skill mode (no API key). You are the host
 assistant (Claude Code / Codex / Gemini CLI). Read the prompt below and write
@@ -17,6 +17,17 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "runtime_edge_ln": "ln()" | kind=code-symbol | source=scratch/generated-client/runtime/edge.js:L1 | neighbors=[edge.js, Aa(), gi(), Ia(), ql()]
+- "runtime_edge_me": "me()" | kind=code-symbol | source=scratch/generated-client/runtime/edge.js:L1 | neighbors=[edge.js, fo(), Oe(), Y(), vn()]
+- "runtime_edge_mo": "mo()" | kind=code-symbol | source=scratch/generated-client/runtime/edge.js:L1 | neighbors=[edge.js, jl(), e(), r(), vl()]
+- "runtime_edge_mr": "mr()" | kind=code-symbol | source=scratch/generated-client/runtime/edge.js:L1 | neighbors=[edge.js, Da(), ka(), Ma(), Oa()]
+- "runtime_edge_n": "N()" | kind=code-symbol | source=scratch/generated-client/runtime/edge.js:L1 | neighbors=[edge.js, gc(), getAllModelExtensions(), te(), yc()]
+- "runtime_edge_nestselection": "nestSelection()" | kind=code-symbol | source=scratch/generated-client/runtime/edge.js:L5 | neighbors=[edge.js, Gu(), ju(), e(), findField()]
+- "runtime_edge_on": "on()" | kind=code-symbol | source=scratch/generated-client/runtime/edge.js:L1 | neighbors=[edge.js, di(), sn(), xe(), T()]
+- "runtime_edge_pe": "Pe()" | kind=code-symbol | source=scratch/generated-client/runtime/edge.js:L1 | neighbors=[edge.js, ht(), jc(), ou(), shouldApplyGlobalOmit()]
+- "runtime_edge_pu": "pu()" | kind=code-symbol | source=scratch/generated-client/runtime/edge.js:L2 | neighbors=[edge.js, cu(), addErrorMessage(), Ao(), markAsError()]
+- "runtime_edge_qt": "Qt()" | kind=code-symbol | source=scratch/generated-client/runtime/edge.js:L6 | neighbors=[edge.js, getAllClientExtensions(), te(), wc(), us()]
+- "runtime_edge_rn": "rn()" | kind=code-symbol | source=scratch/generated-client/runtime/edge.js:L1 | neighbors=[edge.js, Aa(), Ca(), sn(), xe()]
 - "runtime_edge_rt": "Rt()" | kind=code-symbol | source=scratch/generated-client/runtime/edge.js:L1 | neighbors=[edge.js, ms(), iu(), ol(), ou()]
 - "runtime_edge_sn": "sn()" | kind=code-symbol | source=scratch/generated-client/runtime/edge.js:L1 | neighbors=[edge.js, Aa(), on(), rn(), toString()]
 - "runtime_edge_so": "So()" | kind=code-symbol | source=scratch/generated-client/runtime/edge.js:L4 | neighbors=[edge.js, cu(), ou(), addSuggestion(), hasField()]
@@ -46,17 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "runtime_library_getselectionparent": "getSelectionParent()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L27 | neighbors=[library.js, getDeepSelectionParent(), asObject(), getField(), getSubSelectionValue()]
 - "runtime_library_handlerequesterror": "handleRequestError()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L121 | neighbors=[library.js, handleAndLogRequestError(), sanitizeMessage(), Tt(), wn()]
 - "runtime_library_ja": "Ja()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L45 | neighbors=[library.js, Dn(), kn(), Xe(), za()]
-- "runtime_library_ln": "ln()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L21 | neighbors=[library.js, toString(), qc(), sa(), Xs()]
-- "runtime_library_logger": "logger()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L112 | neighbors=[library.js, createEngineSpan(), fm(), gm(), parseEngineResponse()]
-- "runtime_library_metrics": "metrics()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L111 | neighbors=[library.js, json(), parseEngineResponse(), start(), prometheus()]
-- "runtime_library_mt": "mt()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L4 | neighbors=[library.js, Fu(), Mu(), ui(), Vu()]
-- "runtime_library_mu": "Mu()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L5 | neighbors=[library.js, Lo(), mt(), otherwise(), with()]
-- "runtime_library_na": "na()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L29 | neighbors=[library.js, getAllQueryCallbacks(), isEmpty(), values(), nd()]
-- "runtime_library_nt": "nt()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L5 | neighbors=[library.js, getCurrentBinaryTarget(), Mo(), za(), Zd()]
-- "runtime_library_or": "or()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L28 | neighbors=[library.js, e(), qt(), tm(), qs()]
-- "runtime_library_pe": "pe()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L4 | neighbors=[library.js, Au(), Iu(), j(), Oo()]
-- "runtime_library_se": "Se()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L29 | neighbors=[library.js, ji(), Oa(), dd(), Yr()]
-- "runtime_library_si": "Si()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L21 | neighbors=[library.js, en(), ie(), slice(), we()]
 
 ## Instructions
 

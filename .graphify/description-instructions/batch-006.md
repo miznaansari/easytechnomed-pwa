@@ -1,4 +1,4 @@
-# Node Description Batch 7 of 148
+# Node Description Batch 7 of 149
 
 Graphify is running in assistant/skill mode (no API key). You are the host
 assistant (Claude Code / Codex / Gemini CLI). Read the prompt below and write
@@ -12,12 +12,25 @@ describing what it is or does. Use only the provided context.
 For a code symbol (kind=code-symbol — a function, class, or constant),
 describe what the function/symbol does based on its name, source location
 and neighbors — e.g. "Resolves the configured ontology profile from graphify.yaml.".
+For an entity node (any other kind — e.g. a person, place, event, object),
+describe what the entity is and its role, grounded in its type, its
+relations (neighbors) and the provided citations/evidence — e.g.
+"Lady Carfax, a wealthy heiress who disappears en route to Lausanne.".
+Ground entity descriptions in the citations/evidence when present; do not
+speculate beyond the context, so a node with no supporting context may be
+left out of the reply.
 Write every description in English (en). Do not switch languages.
 No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "commit:repo:github.com-personal/miznaansari/easytechnomed-pwa@6fcf01513cf102294115509392d599808735935d": "6fcf015 f" | kind=Commit | source=git | neighbors=[main, cc4c427 1.1.26, page.js, SyncStatusIcon.jsx, syncManager.js, page.js]
+- "commit:repo:github.com-personal/miznaansari/easytechnomed-pwa@eb8b1e55a4ac0099b81b812ad72ed96f863a41b6": "eb8b1e5 f" | kind=Commit | source=git | neighbors=[7d8c494 fxed, main, dbe1732 1.1.25, PWARegister.js, error.js, page.js]
+- "dashboard_dashboardcharts": "DashboardCharts.js" | kind=code-symbol | source=app/(customer)/(dashboard)/dashboard/DashboardCharts.js:L1 | neighbors=[252e194 e, CustomTooltip(), DepartmentDistributionChart(), RegistrationChart(), page.js, ReferralChart()]
+- "id_route": "route.js" | kind=code-symbol | source=app/api/registrations/[id]/route.js:L1 | neighbors=[252e194 e, d446d11 fixed code, DELETE(), GET(), PUT(), registrationSchema]
 - "payments_paymentsclient": "paymentsClient.jsx" | kind=code-symbol | source=app/(customer)/(dashboard)/settings/payments/paymentsClient.jsx:L1 | neighbors=[252e194 e, 532b740 fixed, 53ca5c1 stable version 1, cf2bb98 new, page.js, PaymentsClient()]
+- "print_openprint": "openPrint.js" | kind=code-symbol | source=lib/offline/print/openPrint.js:L1 | neighbors=[8b1f3d8 a, billHtmlGenerator.js, generateOfflineBillHtml(), openOfflineBillPrint(), openOfflineReportPrint(), reportPdfGenerator.js]
+- "providers_offlineprovider": "OfflineProvider.jsx" | kind=code-symbol | source=components/providers/OfflineProvider.jsx:L1 | neighbors=[2b2534c f, 7d8c494 fxed, 84a8ff2 full indexeddb based, 9e25c19 f, 9f59247 expire token, b5dedb0 f]
 - "registrationid_route": "route.js" | kind=code-symbol | source=app/api/print-report/[registrationId]/route.js:L1 | neighbors=[252e194 e, formatDate(), GET(), getReferenceRange(), isOutOfRange(), isQualitativeAbnormal()]
 - "runtime_edge_aa": "Aa()" | kind=code-symbol | source=scratch/generated-client/runtime/edge.js:L1 | neighbors=[edge.js, ln(), r(), rn(), sn(), xe()]
 - "runtime_edge_bu": "bu()" | kind=code-symbol | source=scratch/generated-client/runtime/edge.js:L4 | neighbors=[edge.js, addErrorMessage(), Ao(), getDeepSelectionParent(), isEmpty(), removeAllFields()]
@@ -51,12 +64,6 @@ one-sentence description — no prose, no markdown fences.
 - "runtime_library_getselectionpath": "getSelectionPath()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L29 | neighbors=[library.js, aa(), ed(), I(), od(), rd()]
 - "runtime_library_gp": "gp()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L21 | neighbors=[library.js, addErrorMessage(), asObject(), getDeepFieldValue(), getDeepSubSelectionValue(), getFields()]
 - "runtime_library_ha": "ha()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L29 | neighbors=[library.js, Dn(), kn(), Ot(), toString(), write()]
-- "runtime_library_lo": "Lo()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L4 | neighbors=[library.js, Lu(), Mu(), rl(), $u(), Uu()]
-- "runtime_library_loadlibrary": "loadLibrary()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L111 | neighbors=[library.js, loadEngine(), In(), runInChildSpan(), ui(), Yn()]
-- "runtime_library_mp": "Mp()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L28 | neighbors=[library.js, addErrorMessage(), asObject(), getDeepSubSelectionValue(), getField(), markAsError()]
-- "runtime_library_mr": "mr()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L29 | neighbors=[library.js, id(), aa(), ed(), isPreviewFeatureOn(), rd()]
-- "runtime_library_op": "op()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L21 | neighbors=[library.js, addErrorMessage(), addSuggestion(), getDeepSelectionParent(), getField(), ir()]
-- "runtime_library_re": "Re()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L29 | neighbors=[library.js, aa(), id(), ka(), nd(), od()]
 
 ## Instructions
 

@@ -1,4 +1,4 @@
-# Node Description Batch 6 of 148
+# Node Description Batch 6 of 149
 
 Graphify is running in assistant/skill mode (no API key). You are the host
 assistant (Claude Code / Codex / Gemini CLI). Read the prompt below and write
@@ -24,6 +24,10 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "runtime_edge_r": "r()" | kind=code-symbol | source=scratch/generated-client/runtime/edge.js:L1 | neighbors=[edge.js, Aa(), getOrCreate(), mo(), Qe(), us()]
+- "runtime_edge_throwvalidationerror": "throwValidationError()" | kind=code-symbol | source=scratch/generated-client/runtime/edge.js:L5 | neighbors=[edge.js, bo(), In(), ju(), qu(), Fr()]
+- "runtime_edge_yu": "yu()" | kind=code-symbol | source=scratch/generated-client/runtime/edge.js:L3 | neighbors=[edge.js, Ar(), addErrorMessage(), addSuggestion(), getDeepSelectionParent(), getField()]
+- "runtime_edge_zc": "zc()" | kind=code-symbol | source=scratch/generated-client/runtime/edge.js:L25 | neighbors=[edge.js, addErrorMessage(), dt(), getDeepField(), getDeepFieldValue(), getField()]
 - "runtime_library_hasfield": "hasField()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L27 | neighbors=[library.js, getField(), jp(), kp(), ks(), qp()]
 - "runtime_library_hs": "Hs()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L28 | neighbors=[library.js, asObject(), getDeepSubSelectionValue(), getField(), getFieldValue(), ir()]
 - "runtime_library_id": "id()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L29 | neighbors=[library.js, findField(), getComputedFields(), Lt(), mr(), nestSelection()]
@@ -59,11 +63,7 @@ one-sentence description — no prose, no markdown fences.
 - "runtime_wasm_values": "values()" | kind=code-symbol | source=scratch/generated-client/runtime/wasm.js:L5 | neighbors=[wasm.js, as(), ci(), getPrintWidth(), ui(), unpack()]
 - "sync_modelregistry": "modelRegistry.js" | kind=code-symbol | source=lib/offline/sync/modelRegistry.js:L1 | neighbors=[2b2534c f, 56f4d63 f, 7d8c494 fxed, 84a8ff2 full indexeddb based, d446d11 fixed code, f3857f9 f]
 - "tests_route": "route.js" | kind=code-symbol | source=app/api/tests/route.js:L1 | neighbors=[252e194 e, 7d8c494 fxed, DELETE(), GET(), POST(), PUT()]
-- "commit:repo:github.com-personal/miznaansari/easytechnomed-pwa@6fcf01513cf102294115509392d599808735935d": "6fcf015 f" | kind=Commit | source=git | neighbors=[main, cc4c427 1.1.26, page.js, SyncStatusIcon.jsx, syncManager.js, page.js]
-- "commit:repo:github.com-personal/miznaansari/easytechnomed-pwa@eb8b1e55a4ac0099b81b812ad72ed96f863a41b6": "eb8b1e5 f" | kind=Commit | source=git | neighbors=[7d8c494 fxed, main, dbe1732 1.1.25, PWARegister.js, error.js, page.js]
-- "dashboard_dashboardcharts": "DashboardCharts.js" | kind=code-symbol | source=app/(customer)/(dashboard)/dashboard/DashboardCharts.js:L1 | neighbors=[252e194 e, CustomTooltip(), DepartmentDistributionChart(), ReferralChart(), RegistrationChart(), RevenueChart()]
-- "id_route": "route.js" | kind=code-symbol | source=app/api/registrations/[id]/route.js:L1 | neighbors=[252e194 e, d446d11 fixed code, DELETE(), GET(), PUT(), registrationSchema]
-- "offline_syncindicator": "SyncIndicator.jsx" | kind=code-symbol | source=components/offline/SyncIndicator.jsx:L1 | neighbors=[2b2534c f, 9f59247 expire token, af73a19 fixed, d446d11 fixed code, d84f15f f, f3857f9 f]
+- "commit:repo:github.com-personal/miznaansari/easytechnomed-pwa@2582be7e5cb0ce4ac0f6544d7b325a2fc7cc8f2a": "2582be7 fixed zoom issue" | kind=Commit | source=git | neighbors=[layout.js, main, 20dc303 3.0.19, LoginPageClient.js, RegisterPageClient.js, Input.js]
 
 ## Instructions
 

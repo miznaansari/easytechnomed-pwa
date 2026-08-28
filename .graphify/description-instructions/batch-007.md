@@ -1,4 +1,4 @@
-# Node Description Batch 8 of 148
+# Node Description Batch 8 of 149
 
 Graphify is running in assistant/skill mode (no API key). You are the host
 assistant (Claude Code / Codex / Gemini CLI). Read the prompt below and write
@@ -17,6 +17,12 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "runtime_library_lo": "Lo()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L4 | neighbors=[library.js, Lu(), Mu(), rl(), $u(), Uu()]
+- "runtime_library_loadlibrary": "loadLibrary()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L111 | neighbors=[library.js, loadEngine(), In(), runInChildSpan(), ui(), Yn()]
+- "runtime_library_mp": "Mp()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L28 | neighbors=[library.js, addErrorMessage(), asObject(), getDeepSubSelectionValue(), getField(), markAsError()]
+- "runtime_library_mr": "mr()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L29 | neighbors=[library.js, id(), aa(), ed(), isPreviewFeatureOn(), rd()]
+- "runtime_library_op": "op()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L21 | neighbors=[library.js, addErrorMessage(), addSuggestion(), getDeepSelectionParent(), getField(), ir()]
+- "runtime_library_re": "Re()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L29 | neighbors=[library.js, aa(), id(), ka(), nd(), od()]
 - "runtime_library_request": "request()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L111 | neighbors=[library.js, buildQueryError(), handleAndLogRequestError(), parseEngineResponse(), parseRequestError(), requestInternal()]
 - "runtime_library_requestbatch": "requestBatch()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L111 | neighbors=[library.js, buildQueryError(), Ft(), parseEngineResponse(), pl(), requestInternal()]
 - "runtime_library_runinchildspan": "runInChildSpan()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L121 | neighbors=[library.js, loadLibrary(), getGlobalTracingHelper(), t(), start(), stop()]
@@ -51,12 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "runtime_wasm_ds": "ds()" | kind=code-symbol | source=scratch/generated-client/runtime/wasm.js:L1 | neighbors=[wasm.js, at(), addErrorMessage(), ei(), getDeepSelectionParent(), isEmpty()]
 - "runtime_wasm_fill": "fill()" | kind=code-symbol | source=scratch/generated-client/runtime/wasm.js:L1 | neighbors=[wasm.js, alloc(), from(), nn(), slice(), V()]
 - "runtime_wasm_getselectionpath": "getSelectionPath()" | kind=code-symbol | source=scratch/generated-client/runtime/wasm.js:L5 | neighbors=[wasm.js, aa(), di(), Dr(), fi(), ia()]
-- "runtime_wasm_gs": "gs()" | kind=code-symbol | source=scratch/generated-client/runtime/wasm.js:L1 | neighbors=[wasm.js, addErrorMessage(), asObject(), getDeepFieldValue(), getDeepSubSelectionValue(), getFields()]
-- "runtime_wasm_ispreviewfeatureon": "isPreviewFeatureOn()" | kind=code-symbol | source=scratch/generated-client/runtime/wasm.js:L5 | neighbors=[wasm.js, Dr(), fi(), includes(), na(), ra()]
-- "runtime_wasm_it": "It()" | kind=code-symbol | source=scratch/generated-client/runtime/wasm.js:L1 | neighbors=[wasm.js, compare(), equals(), ae(), D(), slice()]
-- "runtime_wasm_ms": "Ms()" | kind=code-symbol | source=scratch/generated-client/runtime/wasm.js:L3 | neighbors=[wasm.js, addErrorMessage(), asObject(), getDeepSubSelectionValue(), getField(), markAsError()]
-- "runtime_wasm_nestselection": "nestSelection()" | kind=code-symbol | source=scratch/generated-client/runtime/wasm.js:L5 | neighbors=[wasm.js, ia(), concat(), e(), findField(), oa()]
-- "runtime_wasm_ns": "Ns()" | kind=code-symbol | source=scratch/generated-client/runtime/wasm.js:L4 | neighbors=[wasm.js, addErrorMessage(), ei(), Ks(), markAsError(), ti()]
 
 ## Instructions
 

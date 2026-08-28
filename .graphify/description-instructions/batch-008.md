@@ -1,4 +1,4 @@
-# Node Description Batch 9 of 148
+# Node Description Batch 9 of 149
 
 Graphify is running in assistant/skill mode (no API key). You are the host
 assistant (Claude Code / Codex / Gemini CLI). Read the prompt below and write
@@ -19,11 +19,17 @@ relations (neighbors) and the provided citations/evidence — e.g.
 Ground entity descriptions in the citations/evidence when present; do not
 speculate beyond the context, so a node with no supporting context may be
 left out of the reply.
-Write every description in English (en). Do not switch languages.
+Write every description in Portuguese (pt). Do not switch languages.
 No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "runtime_wasm_gs": "gs()" | kind=code-symbol | source=scratch/generated-client/runtime/wasm.js:L1 | neighbors=[wasm.js, addErrorMessage(), asObject(), getDeepFieldValue(), getDeepSubSelectionValue(), getFields()]
+- "runtime_wasm_ispreviewfeatureon": "isPreviewFeatureOn()" | kind=code-symbol | source=scratch/generated-client/runtime/wasm.js:L5 | neighbors=[wasm.js, Dr(), fi(), includes(), na(), ra()]
+- "runtime_wasm_it": "It()" | kind=code-symbol | source=scratch/generated-client/runtime/wasm.js:L1 | neighbors=[wasm.js, compare(), equals(), ae(), D(), slice()]
+- "runtime_wasm_ms": "Ms()" | kind=code-symbol | source=scratch/generated-client/runtime/wasm.js:L3 | neighbors=[wasm.js, addErrorMessage(), asObject(), getDeepSubSelectionValue(), getField(), markAsError()]
+- "runtime_wasm_nestselection": "nestSelection()" | kind=code-symbol | source=scratch/generated-client/runtime/wasm.js:L5 | neighbors=[wasm.js, ia(), concat(), e(), findField(), oa()]
+- "runtime_wasm_ns": "Ns()" | kind=code-symbol | source=scratch/generated-client/runtime/wasm.js:L4 | neighbors=[wasm.js, addErrorMessage(), ei(), Ks(), markAsError(), ti()]
 - "runtime_wasm_oi": "oi()" | kind=code-symbol | source=scratch/generated-client/runtime/wasm.js:L5 | neighbors=[wasm.js, addField(), Pa(), si(), t(), va()]
 - "runtime_wasm_ra": "ra()" | kind=code-symbol | source=scratch/generated-client/runtime/wasm.js:L5 | neighbors=[wasm.js, getSelectionPath(), isPreviewFeatureOn(), na(), sa(), throwValidationError()]
 - "runtime_wasm_ui": "ui()" | kind=code-symbol | source=scratch/generated-client/runtime/wasm.js:L5 | neighbors=[wasm.js, sa(), _a(), et(), ge(), getAllComputedFields()]
@@ -36,8 +42,9 @@ one-sentence description — no prose, no markdown fences.
 - "scratch_test_reg_17": "test-reg-17.js" | kind=code-symbol | source=scratch/test-reg-17.js:L1 | neighbors=[252e194 e, addValueToValuesMap(), checkFormulaDependencies(), evaluateExpression(), inputValues, regPayload]
 - "ui_card": "Card.js" | kind=code-symbol | source=components/ui/Card.js:L1 | neighbors=[252e194 e, Card(), CardContent(), CardDescription(), CardFooter(), CardHeader()]
 - "ui_table": "Table.js" | kind=code-symbol | source=components/ui/Table.js:L1 | neighbors=[252e194 e, Table(), TableBody(), TableCell(), TableHead(), TableHeader()]
-- "app_layout": "layout.js" | kind=code-symbol | source=app/layout.js:L1 | neighbors=[metadata, outfit, RootLayout(), viewport, 252e194 e, 2b2534c f]
 - "commit:repo:github.com-personal/miznaansari/easytechnomed-pwa@4d7570f34d922bf4ce09e2e9653537c79141d117": "4d7570f fixed" | kind=Commit | source=git | neighbors=[offlineAuth.js, main, 7ec76ba 2.0.12, clientAuth.js, LoginPageClient.js, 5ff2734 2.0.11]
+- "commit:repo:github.com-personal/miznaansari/easytechnomed-pwa@a712d0ec90e4494b2f72928b5f7b27f9e8b414d8": "a712d0e ios issue pwa" | kind=Commit | source=git | neighbors=[20dc303 3.0.19, layout.js, main, a09f0a9 3.0.21, PWARegister.js, Input.js]
+- "commit:repo:github.com-personal/miznaansari/easytechnomed-pwa@b5dedb0193beae683457aa771ab1058ec8687da3": "b5dedb0 f" | kind=Commit | source=git | neighbors=[main, c41a815 3.0.11, SyncIndicator.jsx, OfflineProvider.jsx, syncManager.js, c82cfd7 3.0.10]
 - "commit:repo:github.com-personal/miznaansari/easytechnomed-pwa@bcee6c81e72a8453b6902e188d64625b1f3bda36": "bcee6c8 fi" | kind=Commit | source=git | neighbors=[main, cfa3879 f, AdminLayoutClient.js, layout.js, LoginPageClient.js, e9caab3 2.0.15]
 - "component_differentialcounttracker": "DifferentialCountTracker.jsx" | kind=code-symbol | source=app/(customer)/(dashboard)/test-report/component/DifferentialCountTracker.jsx:L1 | neighbors=[252e194 e, calculateDifferentialSummary(), DifferentialHeaderBadge(), DLC_DEFINITIONS, isDifferentialHeader(), validateDifferentialOnSave()]
 - "doctors_route": "route.js" | kind=code-symbol | source=app/api/doctors/route.js:L1 | neighbors=[252e194 e, DELETE(), GET(), POST(), PUT(), serializeData()]
@@ -46,7 +53,6 @@ one-sentence description — no prose, no markdown fences.
   Pr…, empty()]
 - "lib_pdftheme": "pdfTheme.js" | kind=code-symbol | source=lib/pdfTheme.js:L1 | neighbors=[252e194 e, computeColumnLayout(), DEFAULT_COLUMNS, getFontFamilyDefinitions(), hexToRgb(), PDF_THEME_PRESETS]
 - "pdf_route": "route.js" | kind=code-symbol | source=app/api/settings/pdf/route.js:L1 | neighbors=[252e194 e, f3857f9 f, DEFAULT_COLUMN_ORDER, DEFAULT_PDF_SETTINGS, GET(), POST()]
-- "providers_offlineprovider": "OfflineProvider.jsx" | kind=code-symbol | source=components/providers/OfflineProvider.jsx:L1 | neighbors=[2b2534c f, 7d8c494 fxed, 84a8ff2 full indexeddb based, 9e25c19 f, 9f59247 expire token, OfflineProvider()]
 - "proxy": "proxy.js" | kind=code-symbol | source=proxy.js:L1 | neighbors=[252e194 e, 5e3d9ef d, c070c55 fixed, config, JWT_SECRET, proxy()]
 - "runtime_edge_constructor": "constructor()" | kind=code-symbol | source=scratch/generated-client/runtime/edge.js:L1 | neighbors=[edge.js, get(), _getName(), _getNamespace(), Ut(), ys()]
 - "runtime_edge_esm_be": "be()" | kind=code-symbol | source=scratch/generated-client/runtime/edge-esm.js:L1 | neighbors=[edge-esm.js, ga(), ha(), tn(), wa(), Xr()]
@@ -60,12 +66,6 @@ one-sentence description — no prose, no markdown fences.
 - "runtime_edge_esm_kr": "kr()" | kind=code-symbol | source=scratch/generated-client/runtime/edge-esm.js:L5 | neighbors=[edge-esm.js, Dr(), hc(), renderAllMessages(), toString(), write()]
 - "runtime_edge_esm_kt": "kt()" | kind=code-symbol | source=scratch/generated-client/runtime/edge-esm.js:L4 | neighbors=[edge-esm.js, co(), mu(), uu(), wu(), yu()]
 - "runtime_edge_esm_nestselection": "nestSelection()" | kind=code-symbol | source=scratch/generated-client/runtime/edge-esm.js:L5 | neighbors=[edge-esm.js, fu(), lu(), e(), findField(), u()]
-- "runtime_edge_esm_ut": "Ut()" | kind=code-symbol | source=scratch/generated-client/runtime/edge-esm.js:L5 | neighbors=[edge-esm.js, Cn(), fu(), lu(), isPreviewFeatureOn(), qo()]
-- "runtime_edge_esm_wa": "wa()" | kind=code-symbol | source=scratch/generated-client/runtime/edge-esm.js:L1 | neighbors=[edge-esm.js, si(), be(), on(), rn(), Xr()]
-- "runtime_edge_esm_withindent": "withIndent()" | kind=code-symbol | source=scratch/generated-client/runtime/edge-esm.js:L2 | neighbors=[edge-esm.js, indent(), unindent(), write(), writeWithContents(), writeWithItems()]
-- "runtime_edge_esm_yn": "yn()" | kind=code-symbol | source=scratch/generated-client/runtime/edge-esm.js:L1 | neighbors=[edge-esm.js, hr(), me(), ne(), po(), S()]
-- "runtime_edge_getdeepfield": "getDeepField()" | kind=code-symbol | source=scratch/generated-client/runtime/edge.js:L3 | neighbors=[edge.js, cu(), getField(), getDeepFieldValue(), iu(), zc()]
-- "runtime_edge_getdeepselectionparent": "getDeepSelectionParent()" | kind=code-symbol | source=scratch/generated-client/runtime/edge.js:L3 | neighbors=[edge.js, bu(), getFieldValue(), getSelectionParent(), xu(), yu()]
 
 ## Instructions
 

@@ -1,4 +1,4 @@
-# Node Description Batch 16 of 148
+# Node Description Batch 16 of 149
 
 Graphify is running in assistant/skill mode (no API key). You are the host
 assistant (Claude Code / Codex / Gemini CLI). Read the prompt below and write
@@ -12,18 +12,22 @@ describing what it is or does. Use only the provided context.
 For a code symbol (kind=code-symbol — a function, class, or constant),
 describe what the function/symbol does based on its name, source location
 and neighbors — e.g. "Resolves the configured ontology profile from graphify.yaml.".
-For an entity node (any other kind — e.g. a person, place, event, object),
-describe what the entity is and its role, grounded in its type, its
-relations (neighbors) and the provided citations/evidence — e.g.
-"Lady Carfax, a wealthy heiress who disappears en route to Lausanne.".
-Ground entity descriptions in the citations/evidence when present; do not
-speculate beyond the context, so a node with no supporting context may be
-left out of the reply.
-Write every description in Portuguese (pt). Do not switch languages.
+Write every description in English (en). Do not switch languages.
 No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "runtime_react_native_ku": "ku()" | kind=code-symbol | source=scratch/generated-client/runtime/react-native.js:L7 | neighbors=[react-native.js, addSuggestion(), fn(), hasField(), po()]
+- "runtime_react_native_metrics": "metrics()" | kind=code-symbol | source=scratch/generated-client/runtime/react-native.js:L60 | neighbors=[react-native.js, json(), parseEngineResponse(), start(), prometheus()]
+- "runtime_react_native_n": "$n()" | kind=code-symbol | source=scratch/generated-client/runtime/react-native.js:L12 | neighbors=[react-native.js, Ae(), getAllModelExtensions(), Ht(), Vc()]
+- "runtime_react_native_ot": "ot()" | kind=code-symbol | source=scratch/generated-client/runtime/react-native.js:L2 | neighbors=[react-native.js, gu(), mu(), rt(), unpack()]
+- "runtime_react_native_rs": "rs()" | kind=code-symbol | source=scratch/generated-client/runtime/react-native.js:L12 | neighbors=[react-native.js, append(), e(), r(), Yt()]
+- "runtime_react_native_wa": "wa()" | kind=code-symbol | source=scratch/generated-client/runtime/react-native.js:L1 | neighbors=[react-native.js, ti(), ni(), Wr(), ye()]
+- "runtime_react_native_wr": "Wr()" | kind=code-symbol | source=scratch/generated-client/runtime/react-native.js:L1 | neighbors=[react-native.js, ba(), wa(), Oe(), zr()]
+- "runtime_react_native_writeline": "writeLine()" | kind=code-symbol | source=scratch/generated-client/runtime/react-native.js:L7 | neighbors=[react-native.js, write(), newLine(), writeWithContents(), writeWithItems()]
+- "runtime_react_native_writewithcontents": "writeWithContents()" | kind=code-symbol | source=scratch/generated-client/runtime/react-native.js:L8 | neighbors=[react-native.js, write(), afterNextNewline(), withIndent(), writeLine()]
+- "runtime_react_native_writewithitems": "writeWithItems()" | kind=code-symbol | source=scratch/generated-client/runtime/react-native.js:L8 | neighbors=[react-native.js, write(), afterNextNewline(), withIndent(), writeLine()]
+- "runtime_react_native_xi": "Xi()" | kind=code-symbol | source=scratch/generated-client/runtime/react-native.js:L2 | neighbors=[react-native.js, e(), r(), Xl(), zl()]
 - "runtime_react_native_zr": "zr()" | kind=code-symbol | source=scratch/generated-client/runtime/react-native.js:L1 | neighbors=[react-native.js, ba(), Hr(), Wr(), toString()]
 - "runtime_wasm_ae": "ae()" | kind=code-symbol | source=scratch/generated-client/runtime/wasm.js:L1 | neighbors=[wasm.js, Pe(), cn(), It(), ke()]
 - "runtime_wasm_alloc": "alloc()" | kind=code-symbol | source=scratch/generated-client/runtime/wasm.js:L1 | neighbors=[wasm.js, allocUnsafe(), fill(), nn(), concat()]
@@ -53,17 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "runtime_wasm_writewithitems": "writeWithItems()" | kind=code-symbol | source=scratch/generated-client/runtime/wasm.js:L3 | neighbors=[wasm.js, write(), afterNextNewline(), withIndent(), writeLine()]
 - "runtime_wasm_ye": "Ye()" | kind=code-symbol | source=scratch/generated-client/runtime/wasm.js:L5 | neighbors=[wasm.js, ci(), nl(), oi(), zt()]
 - "scratch_backfill_counters": "scratch-backfill-counters.js" | kind=code-symbol | source=scratch-backfill-counters.js:L1 | neighbors=[252e194 e, generateRandomSuffix(), main(), prisma, { PrismaClient }]
-- "scratch_test_patient_context": "test-patient-context.js" | kind=code-symbol | source=scratch/test-patient-context.js:L1 | neighbors=[252e194 e, addPatientContextToValuesMap(), valuesMap1, valuesMap2, valuesMap3]
-- "scratch_test_user_cbc": "test-user-cbc.js" | kind=code-symbol | source=scratch/test-user-cbc.js:L1 | neighbors=[252e194 e, calculateAllDependents(), inputValues, result, testDefinition]
-- "auth_offlineauth_getcachedsession": "getCachedSession()" | kind=code-symbol | source=lib/auth/offlineAuth.js:L71 | neighbors=[offlineAuth.js, saveAuthenticatedSession(), getOrCreateOfflineSession(), isLocalSessionValid()]
-- "check_route": "route.js" | kind=code-symbol | source=app/api/auth/check/route.js:L1 | neighbors=[GET(), HEAD(), 252e194 e, d446d11 fixed code]
-- "commit:repo:github.com-personal/miznaansari/easytechnomed-pwa@14fa292a5b0d0d359673fa5f43e1a99e00e1fd9d": "14fa292 f" | kind=Commit | source=git | neighbors=[main, 48cc7ec 2.0.22, LoginPageClient.js, f4e1e65 2.0.21]
-- "commit:repo:github.com-personal/miznaansari/easytechnomed-pwa@37ee548f75528c10f3b6dc026a6c0127527cf9ff": "37ee548 f" | kind=Commit | source=git | neighbors=[1ba5187 2.0.17, main, dad94e1 2.0.18, AdminLayoutClient.js]
-- "commit:repo:github.com-personal/miznaansari/easytechnomed-pwa@3c7e66b6e8b2bb160a8c8250a028cfcc607c94d8": "3c7e66b f" | kind=Commit | source=git | neighbors=[main, 2ef3785 2.0.1, syncManager.js, 3f7f1b4 2.0.0]
-- "commit:repo:github.com-personal/miznaansari/easytechnomed-pwa@66182613cbf1407454f175eca3ebc193d824cf50": "6618261 f" | kind=Commit | source=git | neighbors=[main, e9f3af9 2.0.6, sw.js, a4a950a 2.0.5]
-- "commit:repo:github.com-personal/miznaansari/easytechnomed-pwa@cea69a2d1359d130ffb3efc703dd40b8d9119e94": "cea69a2 d" | kind=Commit | source=git | neighbors=[main, 2476fb6 2.0.9, sw.js, f9e9bea 2.0.8]
-- "commit:repo:github.com-personal/miznaansari/easytechnomed-pwa@cfa38796993167732f743648a5ba5eb5185d81b5": "cfa3879 f" | kind=Commit | source=git | neighbors=[bcee6c8 fi, main, eb42395 2.0.16, layout.js]
-- "commit:repo:github.com-personal/miznaansari/easytechnomed-pwa@d87cf8780d5acfad16d6d403dbb15777bcfebd11": "d87cf87 d" | kind=Commit | source=git | neighbors=[main, 7134058 1.1.29, sw.js, f9a9e52 1.1.28]
 
 ## Instructions
 

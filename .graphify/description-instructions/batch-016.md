@@ -1,4 +1,4 @@
-# Node Description Batch 17 of 148
+# Node Description Batch 17 of 149
 
 Graphify is running in assistant/skill mode (no API key). You are the host
 assistant (Claude Code / Codex / Gemini CLI). Read the prompt below and write
@@ -19,15 +19,33 @@ relations (neighbors) and the provided citations/evidence — e.g.
 Ground entity descriptions in the citations/evidence when present; do not
 speculate beyond the context, so a node with no supporting context may be
 left out of the reply.
-Write every description in English (en). Do not switch languages.
+Write every description in Portuguese (pt). Do not switch languages.
 No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "scratch_test_patient_context": "test-patient-context.js" | kind=code-symbol | source=scratch/test-patient-context.js:L1 | neighbors=[252e194 e, addPatientContextToValuesMap(), valuesMap1, valuesMap2, valuesMap3]
+- "scratch_test_user_cbc": "test-user-cbc.js" | kind=code-symbol | source=scratch/test-user-cbc.js:L1 | neighbors=[252e194 e, calculateAllDependents(), inputValues, result, testDefinition]
+- "auth_offlineauth_getcachedsession": "getCachedSession()" | kind=code-symbol | source=lib/auth/offlineAuth.js:L73 | neighbors=[offlineAuth.js, saveAuthenticatedSession(), getOrCreateOfflineSession(), isLocalSessionValid()]
+- "check_route": "route.js" | kind=code-symbol | source=app/api/auth/check/route.js:L1 | neighbors=[GET(), HEAD(), 252e194 e, d446d11 fixed code]
+- "commit:repo:github.com-personal/miznaansari/easytechnomed-pwa@14fa292a5b0d0d359673fa5f43e1a99e00e1fd9d": "14fa292 f" | kind=Commit | source=git | neighbors=[main, 48cc7ec 2.0.22, LoginPageClient.js, f4e1e65 2.0.21]
+- "commit:repo:github.com-personal/miznaansari/easytechnomed-pwa@2daebb8689d13f76c6f393560192812886da597a": "2daebb8 f" | kind=Commit | source=git | neighbors=[main, 8065d22 3.0.8, AdminLayoutClient.js, 3e84241 3.0.7]
+- "commit:repo:github.com-personal/miznaansari/easytechnomed-pwa@37ee548f75528c10f3b6dc026a6c0127527cf9ff": "37ee548 f" | kind=Commit | source=git | neighbors=[1ba5187 2.0.17, main, dad94e1 2.0.18, AdminLayoutClient.js]
+- "commit:repo:github.com-personal/miznaansari/easytechnomed-pwa@3c7e66b6e8b2bb160a8c8250a028cfcc607c94d8": "3c7e66b f" | kind=Commit | source=git | neighbors=[main, 2ef3785 2.0.1, syncManager.js, 3f7f1b4 2.0.0]
+- "commit:repo:github.com-personal/miznaansari/easytechnomed-pwa@66182613cbf1407454f175eca3ebc193d824cf50": "6618261 f" | kind=Commit | source=git | neighbors=[main, e9f3af9 2.0.6, sw.js, a4a950a 2.0.5]
+- "commit:repo:github.com-personal/miznaansari/easytechnomed-pwa@8184d3220868fc63d1733f795d71eba6e0d66694": "8184d32 f" | kind=Commit | source=git | neighbors=[main, 124b88b 3.0.13, SyncIndicator.jsx, c41a815 3.0.11]
+- "commit:repo:github.com-personal/miznaansari/easytechnomed-pwa@a356e4110184f7632ae4a93517343d1f4f4f4b4e": "a356e41 f" | kind=Commit | source=git | neighbors=[462f542 3.0.4, main, 005eea6 f, SyncIndicator.jsx]
+- "commit:repo:github.com-personal/miznaansari/easytechnomed-pwa@c15ae1e299fea68996b95acc05fb409a770f9fb0": "c15ae1e fixed" | kind=Commit | source=git | neighbors=[9a50d76 3.0.2, main, 462f542 3.0.4, network.js]
+- "commit:repo:github.com-personal/miznaansari/easytechnomed-pwa@c6b79b3c499a6bcbc28fc6cd35d2774333ca8d06": "c6b79b3 f" | kind=Commit | source=git | neighbors=[005eea6 f, main, 3e84241 3.0.7, SyncIndicator.jsx]
+- "commit:repo:github.com-personal/miznaansari/easytechnomed-pwa@cea69a2d1359d130ffb3efc703dd40b8d9119e94": "cea69a2 d" | kind=Commit | source=git | neighbors=[main, 2476fb6 2.0.9, sw.js, f9e9bea 2.0.8]
+- "commit:repo:github.com-personal/miznaansari/easytechnomed-pwa@cfa38796993167732f743648a5ba5eb5185d81b5": "cfa3879 f" | kind=Commit | source=git | neighbors=[bcee6c8 fi, main, eb42395 2.0.16, layout.js]
+- "commit:repo:github.com-personal/miznaansari/easytechnomed-pwa@d87cf8780d5acfad16d6d403dbb15777bcfebd11": "d87cf87 d" | kind=Commit | source=git | neighbors=[main, 7134058 1.1.29, sw.js, f9a9e52 1.1.28]
 - "commit:repo:github.com-personal/miznaansari/easytechnomed-pwa@fafa3d9183637b6a594e9828f4bb2d45607463f1": "fafa3d9 f" | kind=Commit | source=git | neighbors=[9deec8f 2.0.4, main, a4a950a 2.0.5, sw.js]
+- "components_pwaregister": "PWARegister.js" | kind=code-symbol | source=components/PWARegister.js:L1 | neighbors=[252e194 e, a712d0e ios issue pwa, eb8b1e5 f, PWARegister()]
 - "context_offlinesynccontext": "OfflineSyncContext.js" | kind=code-symbol | source=context/OfflineSyncContext.js:L1 | neighbors=[2b2534c f, 9f59247 expire token, OfflineSyncContext, useOfflineSync()]
 - "customer_layout": "layout.jsx" | kind=code-symbol | source=app/(customer)/layout.jsx:L1 | neighbors=[252e194 e, 5e3d9ef d, CustomerLayout(), theme]
 - "dashboard_error": "error.js" | kind=code-symbol | source=app/(customer)/(dashboard)/error.js:L1 | neighbors=[5e3d9ef d, cf2bb98 new, eb8b1e5 f, DashboardErrorBoundary()]
+- "dashboard_rangeselector": "RangeSelector.js" | kind=code-symbol | source=app/(customer)/(dashboard)/dashboard/RangeSelector.js:L1 | neighbors=[252e194 e, page.js, DashboardRangeSelector(), quickRanges]
 - "doctors_route_serializedata": "serializeData()" | kind=code-symbol | source=app/api/doctors/route.js:L6 | neighbors=[route.js, GET(), POST(), PUT()]
 - "generated_client_index_browser": "index-browser.js" | kind=code-symbol | source=scratch/generated-client/index-browser.js:L1 | neighbors=[252e194 e, {
   Decimal,
@@ -45,31 +63,13 @@ one-sentence description — no prose, no markdown fences.
 - "lib_saasinvoice": "saasInvoice.js" | kind=code-symbol | source=lib/saasInvoice.js:L1 | neighbors=[252e194 e, decodePaymentUid(), encodePaymentUid(), KEY]
 - "login_page": "page.js" | kind=code-symbol | source=app/(customer)/auth/login/page.js:L1 | neighbors=[252e194 e, LoginPageClient.js, metadata, Page()]
 - "members_route": "route.js" | kind=code-symbol | source=app/api/members/route.js:L1 | neighbors=[252e194 e, GET(), PATCH(), POST()]
-- "offline_network": "network.js" | kind=code-symbol | source=lib/offline/network.js:L1 | neighbors=[2b2534c f, af73a19 fixed, NetworkMonitor, syncManager.js]
 - "offline_offlinepdfgenerator_generatereportpdfoffline": "generateReportPdfOffline()" | kind=code-symbol | source=lib/offline/offlinePdfGenerator.js:L271 | neighbors=[offlinePdfGenerator.js, layoutMarkdownLines(), parseMarkdownTokens(), offlinePrint.js]
 - "offline_syncstatusicon": "SyncStatusIcon.jsx" | kind=code-symbol | source=components/offline/SyncStatusIcon.jsx:L1 | neighbors=[2b2534c f, 6fcf015 f, d446d11 fixed code, SyncStatusIcon()]
 - "parameters_route": "route.js" | kind=code-symbol | source=app/api/registrations/[id]/parameters/route.js:L1 | neighbors=[252e194 e, GET(), POST(), serializeRegistration()]
 - "paymentid_route_get": "GET()" | kind=code-symbol | source=app/api/print-subscription-invoice/[paymentId]/route.js:L74 | neighbors=[route.js, formatDate(), formatDateTime(), numberToWords()]
+- "print_billhtmlgenerator_generateofflinebillhtml": "generateOfflineBillHtml()" | kind=code-symbol | source=lib/offline/print/billHtmlGenerator.js:L60 | neighbors=[billHtmlGenerator.js, formatDate(), numberToWords(), openPrint.js]
+- "print_reportpdfgenerator_generateofflinereportpdf": "generateOfflineReportPdf()" | kind=code-symbol | source=lib/offline/print/reportPdfGenerator.js:L129 | neighbors=[offlinePrint.js, openPrint.js, reportPdfGenerator.js, getReferenceRange()]
 - "prisma_seed_main": "main()" | kind=code-symbol | source=prisma/seed.js:L5 | neighbors=[seed.js, getDepartmentName(), processTestParameters(), seedLimsFormulasAndConfigurations()]
-- "register_page": "page.js" | kind=code-symbol | source=app/(customer)/auth/register/page.js:L1 | neighbors=[252e194 e, metadata, Page(), RegisterPageClient.js]
-- "register_registerpageclient": "RegisterPageClient.js" | kind=code-symbol | source=app/(customer)/auth/register/RegisterPageClient.js:L1 | neighbors=[252e194 e, page.js, CustomerRegisterPage(), registerSchema]
-- "registrationid_route_get": "GET()" | kind=code-symbol | source=app/api/print-report/[registrationId]/route.js:L94 | neighbors=[route.js, formatDate(), getReferenceRange(), numberToWords()]
-- "results_route": "route.js" | kind=code-symbol | source=app/api/registrations/[id]/results/route.js:L1 | neighbors=[252e194 e, d446d11 fixed code, POST(), PUT()]
-- "runtime_edge_addfield": "addField()" | kind=code-symbol | source=scratch/generated-client/runtime/edge.js:L3 | neighbors=[edge.js, Au(), ko(), xu()]
-- "runtime_edge_afternextnewline": "afterNextNewline()" | kind=code-symbol | source=scratch/generated-client/runtime/edge.js:L2 | neighbors=[edge.js, write(), writeWithContents(), writeWithItems()]
-- "runtime_edge_bc": "bc()" | kind=code-symbol | source=scratch/generated-client/runtime/edge.js:L6 | neighbors=[edge.js, te(), Ve(), cs()]
-- "runtime_edge_build": "build()" | kind=code-symbol | source=scratch/generated-client/runtime/edge.js:L12 | neighbors=[edge.js, buildCaptureSettings(), getTraceParent(), isEnabled()]
-- "runtime_edge_cr": "Cr()" | kind=code-symbol | source=scratch/generated-client/runtime/edge.js:L1 | neighbors=[edge.js, bo(), toString(), Do()]
-- "runtime_edge_de": "de()" | kind=code-symbol | source=scratch/generated-client/runtime/edge.js:L1 | neighbors=[edge.js, Ca(), fi(), pi()]
-- "runtime_edge_emit": "emit()" | kind=code-symbol | source=scratch/generated-client/runtime/edge.js:L1 | neighbors=[edge.js, forEach(), handleAndLogRequestError(), withRetry()]
-- "runtime_edge_esm_addfield": "addField()" | kind=code-symbol | source=scratch/generated-client/runtime/edge-esm.js:L3 | neighbors=[edge-esm.js, Io(), mu(), wu()]
-- "runtime_edge_esm_afternextnewline": "afterNextNewline()" | kind=code-symbol | source=scratch/generated-client/runtime/edge-esm.js:L2 | neighbors=[edge-esm.js, write(), writeWithContents(), writeWithItems()]
-- "runtime_edge_esm_au": "Au()" | kind=code-symbol | source=scratch/generated-client/runtime/edge-esm.js:L4 | neighbors=[edge-esm.js, addSuggestion(), hasField(), hu()]
-- "runtime_edge_esm_br": "Br()" | kind=code-symbol | source=scratch/generated-client/runtime/edge-esm.js:L6 | neighbors=[edge-esm.js, as(), e(), ss()]
-- "runtime_edge_esm_build": "build()" | kind=code-symbol | source=scratch/generated-client/runtime/edge-esm.js:L12 | neighbors=[edge-esm.js, buildCaptureSettings(), getTraceParent(), isEnabled()]
-- "runtime_edge_esm_cl": "cl()" | kind=code-symbol | source=scratch/generated-client/runtime/edge-esm.js:L1 | neighbors=[edge-esm.js, e(), Pr(), tt()]
-- "runtime_edge_esm_da": "Da()" | kind=code-symbol | source=scratch/generated-client/runtime/edge-esm.js:L1 | neighbors=[edge-esm.js, Pt(), ze(), yi()]
-- "runtime_edge_esm_de": "de()" | kind=code-symbol | source=scratch/generated-client/runtime/edge-esm.js:L1 | neighbors=[edge-esm.js, si(), ui(), ya()]
 
 ## Instructions
 

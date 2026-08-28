@@ -1,4 +1,4 @@
-# Node Description Batch 12 of 148
+# Node Description Batch 12 of 149
 
 Graphify is running in assistant/skill mode (no API key). You are the host
 assistant (Claude Code / Codex / Gemini CLI). Read the prompt below and write
@@ -26,6 +26,12 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "runtime_wasm_parseengineresponse": "parseEngineResponse()" | kind=code-symbol | source=scratch/generated-client/runtime/wasm.js:L11 | neighbors=[wasm.js, logger(), metrics(), request(), requestBatch(), transaction()] | lang=en
+- "runtime_wasm_pt": "pt()" | kind=code-symbol | source=scratch/generated-client/runtime/wasm.js:L4 | neighbors=[wasm.js, Bs(), fs(), Is(), _s(), ti()] | lang=en
+- "runtime_wasm_qi": "qi()" | kind=code-symbol | source=scratch/generated-client/runtime/wasm.js:L6 | neighbors=[wasm.js, de(), getAllQueryCallbacks(), isEmpty(), ji(), sr()] | lang=en
+- "runtime_wasm_r": "r()" | kind=code-symbol | source=scratch/generated-client/runtime/wasm.js:L1 | neighbors=[wasm.js, getOrCreate(), gi(), ko(), ni(), write()] | lang=en
+- "runtime_wasm_request": "request()" | kind=code-symbol | source=scratch/generated-client/runtime/wasm.js:L11 | neighbors=[wasm.js, buildQueryError(), handleAndLogRequestError(), parseEngineResponse(), parseRequestError(), start()] | lang=en
+- "runtime_wasm_start": "start()" | kind=code-symbol | source=scratch/generated-client/runtime/wasm.js:L11 | neighbors=[wasm.js, metrics(), request(), requestBatch(), runInChildSpan(), transaction()] | lang=en
 - "runtime_wasm_wr": "Wr()" | kind=code-symbol | source=scratch/generated-client/runtime/wasm.js:L6 | neighbors=[wasm.js, ge(), getAllModelExtensions(), H(), ka(), vt()] | lang=en
 - "runtime_wasm_zt": "zt()" | kind=code-symbol | source=scratch/generated-client/runtime/wasm.js:L5 | neighbors=[wasm.js, handleRequestError(), throwValidationError(), Ht(), xt(), Ye()] | lang=en
 - "scratch_test_dlc_calc": "test-dlc-calc.js" | kind=code-symbol | source=scratch/test-dlc-calc.js:L1 | neighbors=[252e194 e, calculateDifferentialSummary(), { calculateDifferentialSummary }, params, values1, values2] | lang=en
@@ -33,7 +39,9 @@ one-sentence description — no prose, no markdown fences.
 - "test_route": "route.js" | kind=code-symbol | source=app/api/n8n/test/route.js:L1 | neighbors=[252e194 e, GET(), parseNullableFloat(), parseNullableOptions(), parseNullableString(), POST()] | lang=en
 - "address_page": "page.js" | kind=code-symbol | source=app/(customer)/(dashboard)/settings/address/page.js:L1 | neighbors=[AddressSettingsPage(), 252e194 e, 84a8ff2 full indexeddb based, aae6bad fixed, cf2bb98 new] | lang=en
 - "app_manifest": "manifest.js" | kind=code-symbol | source=app/manifest.js:L1 | neighbors=[manifest(), 252e194 e, 37dcb32 fixed, 4ba60cc fixed, 5e3d9ef d] | lang=en
+- "commit:repo:github.com-personal/miznaansari/easytechnomed-pwa@165f0578340e3cacf36b181128a45d5d4cb3be36": "165f057 f" | kind=Commit | source=git | neighbors=[offlineAuth.js, main, c82cfd7 3.0.10, LoginPageClient.js, 8065d22 3.0.8] | lang=en
 - "commit:repo:github.com-personal/miznaansari/easytechnomed-pwa@37dcb32f78d04df212ec59d53db20e631fe28445": "37dcb32 fixed" | kind=Commit | source=git | neighbors=[manifest.js, main, f9e9bea 2.0.8, AdminLayoutClient.js, ec70d21 2.0.7] | lang=en
+- "commit:repo:github.com-personal/miznaansari/easytechnomed-pwa@47b203242f9b38ab41626f6c5e7a4bab998b6664": "47b2032 ios issue pwa" | kind=Commit | source=git | neighbors=[layout.js, main, 9d71afc 3.0.22, sw.js, a09f0a9 3.0.21] | lang=en
 - "commit:repo:github.com-personal/miznaansari/easytechnomed-pwa@4ba60cc54091accaf3a5e235ffb096bfc635a7c2": "4ba60cc fixed" | kind=Commit | source=git | neighbors=[manifest.js, main, ec70d21 2.0.7, LoginPageClient.js, e9f3af9 2.0.6] | lang=en
 - "commit:repo:github.com-personal/miznaansari/easytechnomed-pwa@91c4f7af40a2d44bc187b24e524af3343a1bcd2b": "91c4f7a feat: complete offline support for all routes in (customer)/(dashboard)" | kind=Commit | source=git | neighbors=[42773a1 1.1.31, main, e710341 1.1.32, sw.js, syncManager.js] | lang=en
 - "commit:repo:github.com-personal/miznaansari/easytechnomed-pwa@a409645460f2c4149bc071edaf14308a60d4a49d": "a409645 fix: resolve Chrome reload loop and ensure robust offline App Shell loa…" | kind=Commit | source=git | neighbors=[main, 026962b 1.1.33, sw.js, syncManager.js, e710341 1.1.32] | lang=en
@@ -52,20 +60,12 @@ one-sentence description — no prose, no markdown fences.
 - "lib_formulaengine_runformulaengine": "runFormulaEngine()" | kind=code-symbol | source=lib/formulaEngine.js:L33 | neighbors=[formulaEngine.js, check-reg-17.js, test-fix-reg-17.js, test-formula-run.js, test-reg-15.js] | lang=en
 - "lib_mail": "mail.js" | kind=code-symbol | source=lib/mail.js:L1 | neighbors=[252e194 e, sendApprovalEmail(), sendRejectionEmail(), sendVerificationEmail(), transporter] | lang=en
 - "members_page": "page.js" | kind=code-symbol | source=app/(customer)/(dashboard)/members/page.js:L1 | neighbors=[252e194 e, 84a8ff2 full indexeddb based, aae6bad fixed, cf2bb98 new, WorkspaceMembersPage()] | lang=en
+- "offline_network": "network.js" | kind=code-symbol | source=lib/offline/network.js:L1 | neighbors=[2b2534c f, af73a19 fixed, c15ae1e fixed, NetworkMonitor, syncManager.js] | lang=en
 - "paymentid_route": "route.js" | kind=code-symbol | source=app/api/print-subscription-invoice/[paymentId]/route.js:L1 | neighbors=[252e194 e, formatDate(), formatDateTime(), GET(), numberToWords()] | lang=en
+- "print_billhtmlgenerator": "billHtmlGenerator.js" | kind=code-symbol | source=lib/offline/print/billHtmlGenerator.js:L1 | neighbors=[8b1f3d8 a, formatDate(), generateOfflineBillHtml(), numberToWords(), openPrint.js] | lang=en
 - "prisma_process_dynamic_parameters": "process-dynamic-parameters.js" | kind=code-symbol | source=prisma/process-dynamic-parameters.js:L1 | neighbors=[252e194 e, main(), prisma, { PrismaClient }, processTestParameters()] | lang=en
+- "register_registerpageclient": "RegisterPageClient.js" | kind=code-symbol | source=app/(customer)/auth/register/RegisterPageClient.js:L1 | neighbors=[252e194 e, 2582be7 fixed zoom issue, page.js, CustomerRegisterPage(), registerSchema] | lang=en
 - "runtime_edge_ao": "Ao()" | kind=code-symbol | source=scratch/generated-client/runtime/edge.js:L4 | neighbors=[edge.js, addSuggestion(), hasField(), bu(), pu()] | lang=en
-- "runtime_edge_ca": "Ca()" | kind=code-symbol | source=scratch/generated-client/runtime/edge.js:L1 | neighbors=[edge.js, de(), mi(), rn(), pi()] | lang=en
-- "runtime_edge_ce": "ce()" | kind=code-symbol | source=scratch/generated-client/runtime/edge.js:L1 | neighbors=[edge.js, e(), O(), go(), rl()] | lang=en
-- "runtime_edge_cs": "cs()" | kind=code-symbol | source=scratch/generated-client/runtime/edge.js:L6 | neighbors=[edge.js, bc(), getAllComputedFields(), gt(), values()] | lang=en
-- "runtime_edge_dt": "dt()" | kind=code-symbol | source=scratch/generated-client/runtime/edge.js:L5 | neighbors=[edge.js, ko(), Fr(), Yo(), zc()] | lang=en
-- "runtime_edge_esm_ao": "Ao()" | kind=code-symbol | source=scratch/generated-client/runtime/edge-esm.js:L4 | neighbors=[edge-esm.js, addSuggestion(), hasField(), pu(), yu()] | lang=en
-- "runtime_edge_esm_ce": "ce()" | kind=code-symbol | source=scratch/generated-client/runtime/edge-esm.js:L1 | neighbors=[edge-esm.js, e(), O(), el(), mo()] | lang=en
-- "runtime_edge_esm_cr": "cr()" | kind=code-symbol | source=scratch/generated-client/runtime/edge-esm.js:L1 | neighbors=[edge-esm.js, Ca(), Pa(), Ta(), va()] | lang=en
-- "runtime_edge_esm_dc": "dc()" | kind=code-symbol | source=scratch/generated-client/runtime/edge-esm.js:L6 | neighbors=[edge-esm.js, he(), Qe(), text(), N()] | lang=en
-- "runtime_edge_esm_findfield": "findField()" | kind=code-symbol | source=scratch/generated-client/runtime/edge-esm.js:L5 | neighbors=[edge-esm.js, fu(), lu(), nestSelection(), u()] | lang=en
-- "runtime_edge_esm_ft": "ft()" | kind=code-symbol | source=scratch/generated-client/runtime/edge-esm.js:L6 | neighbors=[edge-esm.js, tc(), ic(), rc(), wo()] | lang=en
-- "runtime_edge_esm_getselectionparent": "getSelectionParent()" | kind=code-symbol | source=scratch/generated-client/runtime/edge-esm.js:L3 | neighbors=[edge-esm.js, getDeepSelectionParent(), asObject(), getField(), getSubSelectionValue()] | lang=en
 
 ## Instructions
 

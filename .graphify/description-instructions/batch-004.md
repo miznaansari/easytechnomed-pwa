@@ -1,4 +1,4 @@
-# Node Description Batch 5 of 148
+# Node Description Batch 5 of 149
 
 Graphify is running in assistant/skill mode (no API key). You are the host
 assistant (Claude Code / Codex / Gemini CLI). Read the prompt below and write
@@ -24,6 +24,9 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "runtime_index_browser_e": "e()" | kind=code-symbol | source=scratch/generated-client/runtime/index-browser.js:L1 | neighbors=[index-browser.js, be(), Ae(), L(), j(), se()]
+- "runtime_index_browser_p": "p()" | kind=code-symbol | source=scratch/generated-client/runtime/index-browser.js:L1 | neighbors=[index-browser.js, B(), Ee(), jn(), L(), Nn()]
+- "runtime_library_addsuggestion": "addSuggestion()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L27 | neighbors=[library.js, dp(), Fp(), jp(), ks(), op()]
 - "runtime_library_constructor": "constructor()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L4 | neighbors=[library.js, get(), _getName(), _getNamespace(), il(), instantiateLibrary()]
 - "runtime_library_getdeepfieldvalue": "getDeepFieldValue()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L27 | neighbors=[library.js, getDeepField(), gp(), jp(), om(), _p()]
 - "runtime_library_jp": "jp()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L28 | neighbors=[library.js, addErrorMessage(), addSuggestion(), asObject(), getDeepFieldValue(), getDeepSubSelectionValue()]
@@ -46,6 +49,7 @@ one-sentence description — no prose, no markdown fences.
 - "component_resultentry": "resultEntry.jsx" | kind=code-symbol | source=app/(customer)/(dashboard)/test-report/component/resultEntry.jsx:L1 | neighbors=[252e194 e, 2b2534c f, 7d8c494 fxed, 84a8ff2 full indexeddb based, 9f59247 expire token, ResultEntry()]
 - "lib_formulautils_calculatealldependents": "calculateAllDependents()" | kind=code-symbol | source=lib/formulaUtils.js:L680 | neighbors=[formulaEngine.js, formulaUtils.js, addPatientContextToValuesMap(), addValueToValuesMap(), checkFormulaDependencies(), evaluateExpression()]
 - "offline_timestamps": "timestamps.js" | kind=code-symbol | source=lib/offline/timestamps.js:L1 | neighbors=[2b2534c f, db.js, compareUtc(), formatLocalDisplay(), getUtcIsoNow(), isServerNewer()]
+- "print_reportpdfgenerator": "reportPdfGenerator.js" | kind=code-symbol | source=lib/offline/print/reportPdfGenerator.js:L1 | neighbors=[8b1f3d8 a, offlinePrint.js, openPrint.js, formatDate(), generateOfflineReportPdf(), getReferenceRange()]
 - "prisma_seed": "seed.js" | kind=code-symbol | source=prisma/seed.js:L1 | neighbors=[252e194 e, bcrypt, getDepartmentName(), main(), prisma, { PrismaClient }]
 - "registrations_route": "route.js" | kind=code-symbol | source=app/api/registrations/route.js:L1 | neighbors=[252e194 e, 7d8c494 fxed, d446d11 fixed code, generateRandomSuffix(), GET(), POST()]
 - "runtime_edge_esm_gt": "Gt()" | kind=code-symbol | source=scratch/generated-client/runtime/edge-esm.js:L6 | neighbors=[edge-esm.js, Ee(), gc(), getAllClientExtensions(), jt(), qn()]
@@ -60,10 +64,6 @@ one-sentence description — no prose, no markdown fences.
 - "runtime_edge_ou": "ou()" | kind=code-symbol | source=scratch/generated-client/runtime/edge.js:L1 | neighbors=[edge.js, addErrorMessage(), asObject(), getDeepFieldValue(), getDeepSubSelectionValue(), Pe()]
 - "runtime_edge_pi": "pi()" | kind=code-symbol | source=scratch/generated-client/runtime/edge.js:L1 | neighbors=[edge.js, Aa(), Ca(), de(), mi(), Ta()]
 - "runtime_edge_qu": "qu()" | kind=code-symbol | source=scratch/generated-client/runtime/edge.js:L5 | neighbors=[edge.js, no(), getArgumentName(), getArgumentPath(), getSelectionPath(), nestArgument()]
-- "runtime_edge_r": "r()" | kind=code-symbol | source=scratch/generated-client/runtime/edge.js:L1 | neighbors=[edge.js, Aa(), getOrCreate(), mo(), Qe(), us()]
-- "runtime_edge_throwvalidationerror": "throwValidationError()" | kind=code-symbol | source=scratch/generated-client/runtime/edge.js:L5 | neighbors=[edge.js, bo(), In(), ju(), qu(), Fr()]
-- "runtime_edge_yu": "yu()" | kind=code-symbol | source=scratch/generated-client/runtime/edge.js:L3 | neighbors=[edge.js, Ar(), addErrorMessage(), addSuggestion(), getDeepSelectionParent(), getField()]
-- "runtime_edge_zc": "zc()" | kind=code-symbol | source=scratch/generated-client/runtime/edge.js:L25 | neighbors=[edge.js, addErrorMessage(), dt(), getDeepField(), getDeepFieldValue(), getField()]
 
 ## Instructions
 

@@ -1,4 +1,4 @@
-# Node Description Batch 11 of 148
+# Node Description Batch 11 of 149
 
 Graphify is running in assistant/skill mode (no API key). You are the host
 assistant (Claude Code / Codex / Gemini CLI). Read the prompt below and write
@@ -17,6 +17,12 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "runtime_library_ri": "ri()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L1 | neighbors=[library.js, K(), Qo(), rr(), slice(), y()]
+- "runtime_library_td": "td()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L29 | neighbors=[library.js, ed(), isPreviewFeatureOn(), isRawAction(), nd(), rd()]
+- "runtime_library_transaction": "transaction()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L111 | neighbors=[library.js, getExternalAdapterError(), hm(), parseEngineResponse(), start(), withRetry()]
+- "runtime_library_when": "when()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L4 | neighbors=[library.js, Fu(), ui(), e(), r(), t()]
+- "runtime_library_wn": "wn()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L29 | neighbors=[library.js, handleRequestError(), throwValidationError(), Ot(), pn(), Tt()]
+- "runtime_library_yr": "Yr()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L21 | neighbors=[library.js, getExternalAdapterError(), Bd(), getAllClientExtensions(), gr(), Se()]
 - "runtime_library_za": "za()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L64 | neighbors=[library.js, loadLibrary(), Ja(), li(), nt(), Zd()]
 - "runtime_react_native_constructor": "constructor()" | kind=code-symbol | source=scratch/generated-client/runtime/react-native.js:L1 | neighbors=[react-native.js, cs(), _getName(), _getNamespace(), instantiateLibrary(), Jt()]
 - "runtime_react_native_getdeepfield": "getDeepField()" | kind=code-symbol | source=scratch/generated-client/runtime/react-native.js:L8 | neighbors=[react-native.js, getField(), getDeepFieldValue(), hp(), ju(), qu()]
@@ -51,12 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "runtime_wasm_ht": "Ht()" | kind=code-symbol | source=scratch/generated-client/runtime/wasm.js:L5 | neighbors=[wasm.js, renderAllMessages(), toString(), write(), nl(), zt()]
 - "runtime_wasm_indexof": "indexOf()" | kind=code-symbol | source=scratch/generated-client/runtime/wasm.js:L1 | neighbors=[wasm.js, F(), includes(), from(), lastIndexOf(), sn()]
 - "runtime_wasm_na": "na()" | kind=code-symbol | source=scratch/generated-client/runtime/wasm.js:L5 | neighbors=[wasm.js, ia(), isPreviewFeatureOn(), isRawAction(), oa(), ra()]
-- "runtime_wasm_parseengineresponse": "parseEngineResponse()" | kind=code-symbol | source=scratch/generated-client/runtime/wasm.js:L11 | neighbors=[wasm.js, logger(), metrics(), request(), requestBatch(), transaction()]
-- "runtime_wasm_pt": "pt()" | kind=code-symbol | source=scratch/generated-client/runtime/wasm.js:L4 | neighbors=[wasm.js, Bs(), fs(), Is(), _s(), ti()]
-- "runtime_wasm_qi": "qi()" | kind=code-symbol | source=scratch/generated-client/runtime/wasm.js:L6 | neighbors=[wasm.js, de(), getAllQueryCallbacks(), isEmpty(), ji(), sr()]
-- "runtime_wasm_r": "r()" | kind=code-symbol | source=scratch/generated-client/runtime/wasm.js:L1 | neighbors=[wasm.js, getOrCreate(), gi(), ko(), ni(), write()]
-- "runtime_wasm_request": "request()" | kind=code-symbol | source=scratch/generated-client/runtime/wasm.js:L11 | neighbors=[wasm.js, buildQueryError(), handleAndLogRequestError(), parseEngineResponse(), parseRequestError(), start()]
-- "runtime_wasm_start": "start()" | kind=code-symbol | source=scratch/generated-client/runtime/wasm.js:L11 | neighbors=[wasm.js, metrics(), request(), requestBatch(), runInChildSpan(), transaction()]
 
 ## Instructions
 

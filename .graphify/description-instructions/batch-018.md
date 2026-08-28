@@ -1,4 +1,4 @@
-# Node Description Batch 19 of 148
+# Node Description Batch 19 of 149
 
 Graphify is running in assistant/skill mode (no API key). You are the host
 assistant (Claude Code / Codex / Gemini CLI). Read the prompt below and write
@@ -17,6 +17,24 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "runtime_edge_esm_nu": "nu()" | kind=code-symbol | source=scratch/generated-client/runtime/edge-esm.js:L2 | neighbors=[edge-esm.js, isPreviewFeatureOn(), isRawAction(), ru()]
+- "runtime_edge_esm_on": "on()" | kind=code-symbol | source=scratch/generated-client/runtime/edge-esm.js:L1 | neighbors=[edge-esm.js, ci(), wa(), xa()]
+- "runtime_edge_esm_po": "po()" | kind=code-symbol | source=scratch/generated-client/runtime/edge-esm.js:L1 | neighbors=[edge-esm.js, me(), Dt(), yn()]
+- "runtime_edge_esm_ps": "ps()" | kind=code-symbol | source=scratch/generated-client/runtime/edge-esm.js:L6 | neighbors=[edge-esm.js, cs(), getAllQueryCallbacks(), isEmpty()]
+- "runtime_edge_esm_pt": "Pt()" | kind=code-symbol | source=scratch/generated-client/runtime/edge-esm.js:L1 | neighbors=[edge-esm.js, Da(), Io(), ze()]
+- "runtime_edge_esm_ra": "Ra()" | kind=code-symbol | source=scratch/generated-client/runtime/edge-esm.js:L1 | neighbors=[edge-esm.js, pi(), bt(), r()]
+- "runtime_edge_esm_requestinternal": "requestInternal()" | kind=code-symbol | source=scratch/generated-client/runtime/edge-esm.js:L12 | neighbors=[edge-esm.js, request(), requestBatch(), withRetry()]
+- "runtime_edge_esm_ss": "ss()" | kind=code-symbol | source=scratch/generated-client/runtime/edge-esm.js:L6 | neighbors=[edge-esm.js, Br(), Ct(), ye()]
+- "runtime_edge_esm_t": "T()" | kind=code-symbol | source=scratch/generated-client/runtime/edge-esm.js:L1 | neighbors=[edge-esm.js, bt(), si(), tn()]
+- "runtime_edge_esm_tc": "tc()" | kind=code-symbol | source=scratch/generated-client/runtime/edge-esm.js:L6 | neighbors=[edge-esm.js, ft(), text(), values()]
+- "runtime_edge_esm_to": "to()" | kind=code-symbol | source=scratch/generated-client/runtime/edge-esm.js:L1 | neighbors=[edge-esm.js, addSuggestion(), hasField(), uo()]
+- "runtime_edge_esm_tt": "tt()" | kind=code-symbol | source=scratch/generated-client/runtime/edge-esm.js:L1 | neighbors=[edge-esm.js, cl(), ll(), e()]
+- "runtime_edge_esm_tu": "tu()" | kind=code-symbol | source=scratch/generated-client/runtime/edge-esm.js:L1 | neighbors=[edge-esm.js, ot(), addSuggestion(), hasField()]
+- "runtime_edge_esm_uc": "uc()" | kind=code-symbol | source=scratch/generated-client/runtime/edge-esm.js:L6 | neighbors=[edge-esm.js, ts(), Hs(), xe()]
+- "runtime_edge_esm_underline": "underline()" | kind=code-symbol | source=scratch/generated-client/runtime/edge-esm.js:L3 | neighbors=[edge-esm.js, ru(), write(), writeEmpty()]
+- "runtime_edge_esm_uo": "uo()" | kind=code-symbol | source=scratch/generated-client/runtime/edge-esm.js:L1 | neighbors=[edge-esm.js, ul(), e(), to()]
+- "runtime_edge_esm_v": "v()" | kind=code-symbol | source=scratch/generated-client/runtime/edge-esm.js:L1 | neighbors=[edge-esm.js, gn(), S(), h()]
+- "runtime_edge_esm_ve": "Ve()" | kind=code-symbol | source=scratch/generated-client/runtime/edge-esm.js:L5 | neighbors=[edge-esm.js, fc(), gc(), yc()]
 - "runtime_edge_esm_vr": "vr()" | kind=code-symbol | source=scratch/generated-client/runtime/edge-esm.js:L1 | neighbors=[edge-esm.js, lo(), Oo(), toString()]
 - "runtime_edge_esm_wi": "wi()" | kind=code-symbol | source=scratch/generated-client/runtime/edge-esm.js:L1 | neighbors=[edge-esm.js, Ta(), ui(), Na()]
 - "runtime_edge_esm_writeempty": "writeEmpty()" | kind=code-symbol | source=scratch/generated-client/runtime/edge-esm.js:L3 | neighbors=[edge-esm.js, write(), setColor(), underline()]
@@ -39,24 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "runtime_edge_it": "it()" | kind=code-symbol | source=scratch/generated-client/runtime/edge.js:L1 | neighbors=[edge.js, bo(), ht(), qs()]
 - "runtime_edge_jr": "jr()" | kind=code-symbol | source=scratch/generated-client/runtime/edge.js:L6 | neighbors=[edge.js, e(), ps(), xo()]
 - "runtime_edge_ko": "ko()" | kind=code-symbol | source=scratch/generated-client/runtime/edge.js:L5 | neighbors=[edge.js, Do(), dt(), addField()]
-- "runtime_edge_l": "l()" | kind=code-symbol | source=scratch/generated-client/runtime/edge.js:L1 | neighbors=[edge.js, ai(), a(), O()]
-- "runtime_edge_ms": "ms()" | kind=code-symbol | source=scratch/generated-client/runtime/edge.js:L6 | neighbors=[edge.js, Rt(), xc(), yt()]
-- "runtime_edge_mu": "mu()" | kind=code-symbol | source=scratch/generated-client/runtime/edge.js:L2 | neighbors=[edge.js, du(), addSuggestion(), hasField()]
-- "runtime_edge_nestargument": "nestArgument()" | kind=code-symbol | source=scratch/generated-client/runtime/edge.js:L5 | neighbors=[edge.js, e(), qu(), Uo()]
-- "runtime_edge_no": "no()" | kind=code-symbol | source=scratch/generated-client/runtime/edge.js:L1 | neighbors=[edge.js, qu(), ye(), po()]
-- "runtime_edge_nt": "nt()" | kind=code-symbol | source=scratch/generated-client/runtime/edge.js:L1 | neighbors=[edge.js, getGlobalOmit(), e(), wu()]
-- "runtime_edge_nu": "nu()" | kind=code-symbol | source=scratch/generated-client/runtime/edge.js:L1 | neighbors=[edge.js, addSuggestion(), hasField(), O()]
-- "runtime_edge_ot": "ot()" | kind=code-symbol | source=scratch/generated-client/runtime/edge.js:L1 | neighbors=[edge.js, bo(), Do(), ht()]
-- "runtime_edge_po": "po()" | kind=code-symbol | source=scratch/generated-client/runtime/edge.js:L1 | neighbors=[edge.js, e(), no(), yl()]
-- "runtime_edge_pt": "pt()" | kind=code-symbol | source=scratch/generated-client/runtime/edge.js:L4 | neighbors=[edge.js, bo(), Do(), ht()]
-- "runtime_edge_qs": "qs()" | kind=code-symbol | source=scratch/generated-client/runtime/edge.js:L13 | neighbors=[edge.js, Bs(), it(), toString()]
-- "runtime_edge_rc": "rc()" | kind=code-symbol | source=scratch/generated-client/runtime/edge.js:L5 | neighbors=[edge.js, gt(), text(), values()]
-- "runtime_edge_requestinternal": "requestInternal()" | kind=code-symbol | source=scratch/generated-client/runtime/edge.js:L12 | neighbors=[edge.js, request(), requestBatch(), withRetry()]
-- "runtime_edge_tt": "Tt()" | kind=code-symbol | source=scratch/generated-client/runtime/edge.js:L1 | neighbors=[edge.js, e(), ze(), Ua()]
-- "runtime_edge_underline": "underline()" | kind=code-symbol | source=scratch/generated-client/runtime/edge.js:L3 | neighbors=[edge.js, cu(), write(), writeEmpty()]
-- "runtime_edge_unpack": "unpack()" | kind=code-symbol | source=scratch/generated-client/runtime/edge.js:L20 | neighbors=[edge.js, mapQueryEngineResult(), values(), zs()]
-- "runtime_edge_v": "v()" | kind=code-symbol | source=scratch/generated-client/runtime/edge.js:L1 | neighbors=[edge.js, S(), h(), xn()]
-- "runtime_edge_ve": "Ve()" | kind=code-symbol | source=scratch/generated-client/runtime/edge.js:L5 | neighbors=[edge.js, bc(), wc(), yc()]
 
 ## Instructions
 

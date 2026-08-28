@@ -1,4 +1,4 @@
-# Node Description Batch 10 of 148
+# Node Description Batch 10 of 149
 
 Graphify is running in assistant/skill mode (no API key). You are the host
 assistant (Claude Code / Codex / Gemini CLI). Read the prompt below and write
@@ -17,6 +17,12 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "runtime_edge_esm_ut": "Ut()" | kind=code-symbol | source=scratch/generated-client/runtime/edge-esm.js:L5 | neighbors=[edge-esm.js, Cn(), fu(), lu(), isPreviewFeatureOn(), qo()]
+- "runtime_edge_esm_wa": "wa()" | kind=code-symbol | source=scratch/generated-client/runtime/edge-esm.js:L1 | neighbors=[edge-esm.js, si(), be(), on(), rn(), Xr()]
+- "runtime_edge_esm_withindent": "withIndent()" | kind=code-symbol | source=scratch/generated-client/runtime/edge-esm.js:L2 | neighbors=[edge-esm.js, indent(), unindent(), write(), writeWithContents(), writeWithItems()]
+- "runtime_edge_esm_yn": "yn()" | kind=code-symbol | source=scratch/generated-client/runtime/edge-esm.js:L1 | neighbors=[edge-esm.js, hr(), me(), ne(), po(), S()]
+- "runtime_edge_getdeepfield": "getDeepField()" | kind=code-symbol | source=scratch/generated-client/runtime/edge.js:L3 | neighbors=[edge.js, cu(), getField(), getDeepFieldValue(), iu(), zc()]
+- "runtime_edge_getdeepselectionparent": "getDeepSelectionParent()" | kind=code-symbol | source=scratch/generated-client/runtime/edge.js:L3 | neighbors=[edge.js, bu(), getFieldValue(), getSelectionParent(), xu(), yu()]
 - "runtime_edge_getglobaltracinghelper": "getGlobalTracingHelper()" | kind=code-symbol | source=scratch/generated-client/runtime/edge.js:L20 | neighbors=[edge.js, createEngineSpan(), getActiveContext(), getTraceParent(), isEnabled(), runInChildSpan()]
 - "runtime_edge_getorcreate": "getOrCreate()" | kind=code-symbol | source=scratch/generated-client/runtime/edge.js:L5 | neighbors=[edge.js, getAllComputedFields(), getAllModelExtensions(), getAllQueryCallbacks(), get(), r()]
 - "runtime_edge_handlerequesterror": "handleRequestError()" | kind=code-symbol | source=scratch/generated-client/runtime/edge.js:L20 | neighbors=[edge.js, handleAndLogRequestError(), Fr(), sanitizeMessage(), st(), Xs()]
@@ -51,12 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "runtime_library_oa": "Oa()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L31 | neighbors=[library.js, Gd(), getAllComputedFields(), Se(), Ud(), values()]
 - "runtime_library_otherwise": "otherwise()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L4 | neighbors=[library.js, Fu(), Mu(), t(), ui(), Vu()]
 - "runtime_library_parseengineresponse": "parseEngineResponse()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L112 | neighbors=[library.js, logger(), metrics(), request(), requestBatch(), transaction()]
-- "runtime_library_ri": "ri()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L1 | neighbors=[library.js, K(), Qo(), rr(), slice(), y()]
-- "runtime_library_td": "td()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L29 | neighbors=[library.js, ed(), isPreviewFeatureOn(), isRawAction(), nd(), rd()]
-- "runtime_library_transaction": "transaction()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L111 | neighbors=[library.js, getExternalAdapterError(), hm(), parseEngineResponse(), start(), withRetry()]
-- "runtime_library_when": "when()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L4 | neighbors=[library.js, Fu(), ui(), e(), r(), t()]
-- "runtime_library_wn": "wn()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L29 | neighbors=[library.js, handleRequestError(), throwValidationError(), Ot(), pn(), Tt()]
-- "runtime_library_yr": "Yr()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L21 | neighbors=[library.js, getExternalAdapterError(), Bd(), getAllClientExtensions(), gr(), Se()]
 
 ## Instructions
 
