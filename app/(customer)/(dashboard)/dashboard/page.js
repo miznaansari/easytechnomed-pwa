@@ -1,20 +1,20 @@
 "use client";
 
-import React, { useState, useEffect, useCallback } from "react";
+import React, { useState, useEffect, useCallback, Suspense } from "react";
 import Link from "next/link";
 import { useRouter, useSearchParams } from "next/navigation";
 import db from "@/lib/offline/db";
 import { useSync } from "@/hooks/useSync";
 import { syncManager } from "@/lib/offline/sync/syncManager";
 import { useAdminPermissions } from "@/lib/clientAuth";
-import { RegistrationChart, RevenueChart, DepartmentDistributionChart, ReferralChart } from "./DashboardCharts";
+import DashboardRangeSelector from "./RangeSelector";
+import { RegistrationChart, DepartmentDistributionChart } from "./DashboardCharts";
 import {
   Grid,
   Card,
   CardContent,
   Typography,
   Box,
-  Divider,
   Button,
   Table,
   TableBody,
@@ -24,31 +24,26 @@ import {
   TableRow,
   TableFooter,
   Paper,
-  Chip,
-  FormControl,
-  InputLabel,
-  Select,
-  MenuItem,
-  CircularProgress
+  Chip
 } from "@mui/material";
 import {
   AppRegistration as RegisterIcon,
-  Assignment as ReportIcon,
   CheckCircle as CheckedIcon,
   PendingActions as PendingIcon,
-  TrendingUp as TrendingUpIcon,
+  AccountBalanceWallet as WalletIcon,
   TableChart as TableChartIcon,
-  CalendarMonth as CalendarIcon,
-  Refresh as RefreshIcon
+  Add as AddIcon,
+  ArrowForward as ArrowForwardIcon,
+  Assignment as ReportIcon
 } from "@mui/icons-material";
 
-export default function AdminDashboardPage() {
+function DashboardContent() {
   const router = useRouter();
   const searchParams = useSearchParams();
   const rangeParam = searchParams.get("range") || "7days";
   const [range, setRange] = useState(rangeParam);
   const [loading, setLoading] = useState(true);
-  const [adminProfile, setAdminProfile] = useState({ name: "User" });
+  const [adminProfile, setAdminProfile] = useState({ name: "User", workspaceName: "Diagnostic Laboratory" });
 
   const { hasPermission, role } = useAdminPermissions();
 
@@ -57,10 +52,8 @@ export default function AdminDashboardPage() {
     totalRegistrations: 0,
     pendingRegistrations: 0,
     completedRegistrations: 0,
-    avgTAT: "0.0",
   });
   const [departmentData, setDepartmentData] = useState([]);
-  const [referralData, setReferralData] = useState([]);
   const [chartData, setChartData] = useState([]);
   const [summaryTableRows, setSummaryTableRows] = useState([]);
   const [financials, setFinancials] = useState({
@@ -71,7 +64,34 @@ export default function AdminDashboardPage() {
     totalTableCompleted: 0,
   });
   const [periodDateRangeStr, setPeriodDateRangeStr] = useState("");
-  const [isMonthlyView, setIsMonthlyView] = useState(false);
+
+  // Role permissions check
+  useEffect(() => {
+    if (role && Object.keys(role).length > 0) {
+      const roleNameUpper = role?.name?.toUpperCase() || "";
+      const isSuperRole = roleNameUpper === "ADMIN" || roleNameUpper === "OWNER";
+      const hasAllPermission = role?.permissions?.some(p => p.permission?.toUpperCase() === "ALL") || false;
+      const userPerms = role?.permissions?.map(p => p.permission) || [];
+      const hasDashboardView = isSuperRole || hasAllPermission || userPerms.includes("DASHBOARD_VIEW") || (hasPermission && hasPermission("DASHBOARD_VIEW"));
+
+      if (!hasDashboardView) {
+        if (userPerms.includes("REGISTRATION_READ") || userPerms.includes("REGISTRATION_WRITE")) {
+          router.push("/registration");
+        } else if (userPerms.includes("DOCTOR_READ") || userPerms.includes("DOCTOR_WRITE")) {
+          router.push("/doctor-summary");
+        } else if (userPerms.includes("MEMBER_READ") || userPerms.includes("MEMBER_WRITE")) {
+          router.push("/members");
+        } else if (
+          userPerms.includes("SETTINGS_READ") || userPerms.includes("SETTINGS_WRITE") ||
+          userPerms.includes("TEST_READ") || userPerms.includes("TEST_WRITE")
+        ) {
+          router.push("/settings");
+        } else {
+          router.push("/auth/login?error=unauthorized");
+        }
+      }
+    }
+  }, [role, hasPermission, router]);
 
   // Sync range state if url search params change
   useEffect(() => {
@@ -80,10 +100,8 @@ export default function AdminDashboardPage() {
     }
   }, [rangeParam]);
 
-  const handleRangeChange = (e) => {
-    const val = e.target.value;
-    setRange(val);
-    router.push(`/dashboard?range=${val}`);
+  const handleRangeChange = (newRange) => {
+    setRange(newRange);
   };
 
   const calculateDateFilter = (selectedRange) => {
@@ -127,7 +145,6 @@ export default function AdminDashboardPage() {
     return d.toLocaleDateString("en-US", {
       month: "short",
       day: "numeric",
-      year: "numeric",
     });
   };
 
@@ -135,31 +152,32 @@ export default function AdminDashboardPage() {
   const computeDashboardData = useCallback(async () => {
     setLoading(true);
     try {
-      // 1. Fetch admin profile from IndexedDB session or table
-      const [cachedAdmins, cachedSession, allRegs, allDocs, allTests, allDepts, allPayments] = await Promise.all([
+      // 1. Fetch admin & workspace profile from IndexedDB session or tables
+      const [cachedAdmins, cachedSession, cachedWorkspaces, allRegs, allTests, allDepts, allPayments] = await Promise.all([
         db.admins.toArray(),
         db.offlineSession.get(1),
+        db.workspaces.toArray(),
         db.registrations.filter((r) => !r.isDeleted).toArray(),
-        db.doctors.filter((d) => !d.isDeleted).toArray(),
         db.tests.filter((t) => !t.isDeleted).toArray(),
         db.testDepartments.toArray(),
         db.registrationPayments.toArray(),
       ]);
 
-      const currentAdmin = cachedAdmins?.[0] || cachedSession?.admin;
-      if (currentAdmin) {
-        setAdminProfile(currentAdmin);
-      }
+      const currentAdmin = cachedAdmins?.[0] || cachedSession?.admin || {};
+      const currentWorkspace = cachedWorkspaces?.[0] || cachedSession?.workspace || {};
+      setAdminProfile({
+        name: currentAdmin.name || "User",
+        workspaceName: currentAdmin.workspaceName || currentWorkspace.name || "Diagnostic Laboratory",
+      });
 
-      // If IndexedDB is empty and we are online and not initial synced, trigger bootstrap in background
+      // If IndexedDB is empty and online, trigger background bootstrap
       if (allRegs.length === 0 && typeof navigator !== "undefined" && navigator.onLine && localStorage.getItem("isInitialSynced") !== "1") {
         syncManager.bootstrapInitialData().catch((err) => console.warn("[Dashboard] Bootstrap error:", err));
       }
 
       const { startDate, endDate } = calculateDateFilter(range);
       const isMonthly = ["3months", "6months", "year"].includes(range);
-      setIsMonthlyView(isMonthly);
-      setPeriodDateRangeStr(`${formatPeriodDate(startDate)} - ${formatPeriodDate(endDate)}`);
+      setPeriodDateRangeStr(`${formatPeriodDate(startDate)} – ${formatPeriodDate(endDate)}`);
 
       const startMs = startDate.getTime();
       const endMs = endDate.getTime();
@@ -179,38 +197,27 @@ export default function AdminDashboardPage() {
         return t >= startMs && t <= endMs;
       });
 
-      // Stats counts
+      // 1. Core counts
       const totalCount = periodRegs.length;
       let pendingCount = 0;
       let completedCount = 0;
-      let totalTatMs = 0;
-      let tatCount = 0;
 
       periodRegs.forEach((r) => {
         if (r.status === "Completed") {
           completedCount++;
-          if (r.createdAt && r.updatedAt) {
-            const diff = new Date(r.updatedAt).getTime() - new Date(r.createdAt).getTime();
-            if (diff > 0) {
-              totalTatMs += diff;
-              tatCount++;
-            }
-          }
         } else {
           pendingCount++;
         }
       });
 
-      const avgTatHours = tatCount > 0 ? (totalTatMs / tatCount / (1000 * 60 * 60)).toFixed(1) : "0.0";
       setStats({
         totalRegistrations: totalCount,
         pendingRegistrations: pendingCount,
         completedRegistrations: completedCount,
-        avgTAT: avgTatHours,
       });
 
-      // Department Distribution
-      const deptCountMap = {};
+      // 2. Department Breakdown
+      const deptAggregation = {};
       const testMap = new Map();
       allTests.forEach((t) => testMap.set(t.id, t));
       const deptMap = new Map();
@@ -221,109 +228,97 @@ export default function AdminDashboardPage() {
         rTests.forEach((rt) => {
           const tId = rt.testId || rt.id || rt.test?.id;
           const fullTest = tId ? testMap.get(tId) || rt.test : rt.test;
-          const dName = fullTest?.department?.name || (fullTest?.departmentId ? deptMap.get(fullTest.departmentId) : null) || "General";
-          deptCountMap[dName] = (deptCountMap[dName] || 0) + 1;
+          const deptName = fullTest?.department?.name || (fullTest?.departmentId ? deptMap.get(fullTest.departmentId) : null) || "General";
+          deptAggregation[deptName] = (deptAggregation[deptName] || 0) + 1;
         });
       });
 
-      const deptDataList = Object.entries(deptCountMap).map(([name, value]) => ({ name, value }));
-      setDepartmentData(deptDataList);
+      const departmentDataList = Object.entries(deptAggregation).map(([name, value]) => ({
+        name,
+        value,
+      }));
+      setDepartmentData(departmentDataList);
 
-      // Doctor Referral Split
-      const docMap = new Map();
-      allDocs.forEach((d) => docMap.set(d.id, d.name));
-      const refCountMap = {};
-
-      periodRegs.forEach((r) => {
-        const dId = r.refById || r.refBy?.id;
-        const dName = dId ? docMap.get(dId) || r.refBy?.name || "Self" : (r.refBy?.name || "Self");
-        refCountMap[dName] = (refCountMap[dName] || 0) + 1;
-      });
-
-      const refDataList = Object.entries(refCountMap)
-        .map(([name, value]) => ({ name, value }))
-        .sort((a, b) => b.value - a.value)
-        .slice(0, 5);
-      setReferralData(refDataList);
-
-      // Generate date keys for charts & tables
-      const aggregated = {};
+      // 3. Time Series Aggregation for charts and tables
+      const aggregatedData = {};
       if (isMonthly) {
-        const temp = new Date(startDate.getFullYear(), startDate.getMonth(), 1);
+        const tempDate = new Date(startDate.getFullYear(), startDate.getMonth(), 1);
         const endLimit = new Date(endDate.getFullYear(), endDate.getMonth(), 1);
-        while (temp <= endLimit) {
-          const year = temp.getFullYear();
-          const month = String(temp.getMonth() + 1).padStart(2, "0");
+        while (tempDate <= endLimit) {
+          const year = tempDate.getFullYear();
+          const month = String(tempDate.getMonth() + 1).padStart(2, "0");
           const key = `${year}-${month}`;
-          aggregated[key] = { registered: 0, completed: 0, revenue: 0, received: 0 };
-          temp.setMonth(temp.getMonth() + 1);
+          aggregatedData[key] = { registered: 0, completed: 0, revenue: 0, received: 0 };
+          tempDate.setMonth(tempDate.getMonth() + 1);
         }
       } else {
-        const temp = new Date(startDate);
-        while (temp <= endDate) {
-          const year = temp.getFullYear();
-          const month = String(temp.getMonth() + 1).padStart(2, "0");
-          const day = String(temp.getDate()).padStart(2, "0");
+        const tempDate = new Date(startDate);
+        while (tempDate <= endDate) {
+          const year = tempDate.getFullYear();
+          const month = String(tempDate.getMonth() + 1).padStart(2, "0");
+          const day = String(tempDate.getDate()).padStart(2, "0");
           const key = `${year}-${month}-${day}`;
-          aggregated[key] = { registered: 0, completed: 0, revenue: 0, received: 0 };
-          temp.setDate(temp.getDate() + 1);
+          aggregatedData[key] = { registered: 0, completed: 0, revenue: 0, received: 0 };
+          tempDate.setDate(tempDate.getDate() + 1);
         }
       }
 
-      // Populate registrations into keys
-      periodRegs.forEach((r) => {
-        const rDate = new Date(r.date);
+      periodRegs.forEach((reg) => {
+        const regDate = new Date(reg.date);
         let key;
         if (isMonthly) {
-          key = `${rDate.getFullYear()}-${String(rDate.getMonth() + 1).padStart(2, "0")}`;
+          const year = regDate.getFullYear();
+          const month = String(regDate.getMonth() + 1).padStart(2, "0");
+          key = `${year}-${month}`;
         } else {
-          key = `${rDate.getFullYear()}-${String(rDate.getMonth() + 1).padStart(2, "0")}-${String(rDate.getDate()).padStart(2, "0")}`;
+          const year = regDate.getFullYear();
+          const month = String(regDate.getMonth() + 1).padStart(2, "0");
+          const day = String(regDate.getDate()).padStart(2, "0");
+          key = `${year}-${month}-${day}`;
         }
 
-        if (!aggregated[key]) {
-          aggregated[key] = { registered: 0, completed: 0, revenue: 0, received: 0 };
+        if (!aggregatedData[key]) {
+          aggregatedData[key] = { registered: 0, completed: 0, revenue: 0, received: 0 };
         }
-
-        aggregated[key].registered += 1;
-        if (r.status === "Completed") {
-          aggregated[key].completed += 1;
+        aggregatedData[key].registered += 1;
+        if (reg.status === "Completed") {
+          aggregatedData[key].completed += 1;
         }
+        const regRevenue = (Number(reg.totalAmount) || 0) + (Number(reg.collectionCharge) || 0) - (Number(reg.discountAmount) || 0);
+        aggregatedData[key].revenue += regRevenue;
 
-        const total = Number(r.totalAmount) || 0;
-        const colCharge = Number(r.collectionCharge) || 0;
-        const discount = Number(r.discountAmount) || 0;
-        const netRev = total + colCharge - discount;
-        aggregated[key].revenue += netRev;
-
-        // Add received amount fallback if no payments array
-        if ((!r.payments || r.payments.length === 0) && Number(r.receivedAmount || 0) > 0) {
-          aggregated[key].received += Number(r.receivedAmount || 0);
+        if ((!reg.payments || reg.payments.length === 0) && Number(reg.receivedAmount || 0) > 0) {
+          aggregatedData[key].received += Number(reg.receivedAmount || 0);
         }
       });
 
-      // Populate separate payments into keys
-      periodPayments.forEach((p) => {
-        const pDate = new Date(p.createdAt || p.updatedAt);
-        let key;
+      periodPayments.forEach((payment) => {
+        const payDate = new Date(payment.createdAt || payment.updatedAt);
+        let pKey;
         if (isMonthly) {
-          key = `${pDate.getFullYear()}-${String(pDate.getMonth() + 1).padStart(2, "0")}`;
+          const year = payDate.getFullYear();
+          const month = String(payDate.getMonth() + 1).padStart(2, "0");
+          pKey = `${year}-${month}`;
         } else {
-          key = `${pDate.getFullYear()}-${String(pDate.getMonth() + 1).padStart(2, "0")}-${String(pDate.getDate()).padStart(2, "0")}`;
+          const year = payDate.getFullYear();
+          const month = String(payDate.getMonth() + 1).padStart(2, "0");
+          const day = String(payDate.getDate()).padStart(2, "0");
+          pKey = `${year}-${month}-${day}`;
         }
 
-        if (!aggregated[key]) {
-          aggregated[key] = { registered: 0, completed: 0, revenue: 0, received: 0 };
+        if (!aggregatedData[pKey]) {
+          aggregatedData[pKey] = { registered: 0, completed: 0, revenue: 0, received: 0 };
         }
-        aggregated[key].received += Number(p.amount || 0);
+        aggregatedData[pKey].received += Number(payment.amount || 0);
       });
 
-      // Format Chart Data
-      const cData = Object.entries(aggregated).map(([key, val]) => {
+      // 4. Chart Data
+      const chartDataList = Object.entries(aggregatedData).map(([key, val]) => {
         let label = "";
         if (isMonthly) {
           const [year, month] = key.split("-");
           const dateObj = new Date(Number(year), Number(month) - 1, 1);
-          label = dateObj.toLocaleDateString("en-US", { month: "short", year: "2-digit" });
+          label = dateObj.toLocaleDateString("en-US", { month: "short" });
         } else {
           const [year, month, day] = key.split("-");
           const dateObj = new Date(Number(year), Number(month) - 1, Number(day));
@@ -336,10 +331,10 @@ export default function AdminDashboardPage() {
           revenue: val.revenue,
         };
       });
-      setChartData(cData);
+      setChartData(chartDataList);
 
-      // Format Summary Table Rows (newest first)
-      const tableRows = Object.entries(aggregated)
+      // 5. Summary Table Rows (newest first)
+      const tableRows = Object.entries(aggregatedData)
         .map(([key, val]) => {
           let formattedDate = "";
           if (isMonthly) {
@@ -353,7 +348,6 @@ export default function AdminDashboardPage() {
               weekday: "short",
               day: "2-digit",
               month: "short",
-              year: "numeric",
             });
           }
           return {
@@ -369,16 +363,16 @@ export default function AdminDashboardPage() {
 
       setSummaryTableRows(tableRows);
 
-      // Calculate totals
       const totalBilling = tableRows.reduce((sum, r) => sum + r.revenue, 0);
       const totalCollected = tableRows.reduce((sum, r) => sum + r.received, 0);
       const totalTableRegistered = tableRows.reduce((sum, r) => sum + r.registered, 0);
       const totalTableCompleted = tableRows.reduce((sum, r) => sum + r.completed, 0);
+      const dueBalance = totalBilling - totalCollected;
 
       setFinancials({
         totalBilling,
         totalCollected,
-        dueBalance: totalBilling - totalCollected,
+        dueBalance,
         totalTableRegistered,
         totalTableCompleted,
       });
@@ -429,350 +423,373 @@ export default function AdminDashboardPage() {
     };
   }, [computeDashboardData]);
 
-  const statCards = [
-    {
-      title: "Registrations",
-      value: stats.totalRegistrations,
-      icon: <RegisterIcon sx={{ fontSize: 32, color: "#0f766e" }} />,
-      bgColor: "#ccfbf1",
-    },
-    {
-      title: "Pending Reports",
-      value: stats.pendingRegistrations,
-      icon: <PendingIcon sx={{ fontSize: 32, color: "#d97706" }} />,
-      bgColor: "#fef3c7",
-    },
-    {
-      title: "Completed Tests",
-      value: stats.completedRegistrations,
-      icon: <CheckedIcon sx={{ fontSize: 32, color: "#16a34a" }} />,
-      bgColor: "#dcfce7",
-    },
-  ];
-
   return (
-    <Box sx={{ flexGrow: 1, overflowX: "hidden", pt: 2, pb: 4 }}>
-      {/* Header Overview */}
-      <Box sx={{ display: "flex", justifyContent: "space-between", alignItems: "center", flexWrap: "wrap", gap: 2, mb: 4 }}>
+    <Box sx={{ flexGrow: 1, minWidth: 0, pb: 4, pt: 1 }}>
+      
+      {/* 1. Header Bar: Minimal, Direct, Impactful */}
+      <Box
+        sx={{
+          bgcolor: "#FFFFFF",
+          border: "1.5px solid #E2E8F0",
+          borderRadius: "12px",
+          p: { xs: 2, sm: 2.5 },
+          mb: 2.5,
+          display: "flex",
+          flexDirection: { xs: "column", sm: "row" },
+          justifyContent: "space-between",
+          alignItems: { xs: "flex-start", sm: "center" },
+          gap: 1.5,
+        }}
+      >
         <Box>
-          <Typography variant="h5" sx={{ fontWeight: 800, color: "primary.main" }}>
-            Welcome back{adminProfile.name ? `, ${adminProfile.name}` : ""}!
+          <Typography
+            variant="h5"
+            sx={{
+              fontWeight: 800,
+              fontSize: { xs: "1.25rem", sm: "1.45rem" },
+              color: "#0F172A",
+              letterSpacing: "-0.01em",
+            }}
+          >
+            Welcome, <Box component="span" sx={{ color: "#10b6a5" }}>{adminProfile.name}</Box>
           </Typography>
-          <Typography variant="body2" sx={{ color: "text.secondary", mt: 0.5 }}>
-            Here is the current real-time overview of your laboratory operations, patient registrations, and accounts.
+          <Typography variant="caption" sx={{ color: "#64748B", fontWeight: 600, display: "block", mt: 0.25 }}>
+            {adminProfile.workspaceName || "Diagnostic Laboratory"} • Period: <Box component="span" sx={{ fontWeight: 700, color: "#1E293B" }}>{periodDateRangeStr}</Box>
           </Typography>
         </Box>
-        <Box sx={{ display: "flex", flexDirection: "column", alignItems: { xs: "flex-start", sm: "flex-end" }, gap: 0.5 }}>
-          <Box sx={{ display: "flex", alignItems: "center", gap: 1 }}>
-            <FormControl size="small" sx={{ minWidth: 160, mt: 1 }}>
-              <InputLabel id="range-select-label">Date Period</InputLabel>
-              <Select
-                labelId="range-select-label"
-                value={range}
-                label="Date Period"
-                onChange={handleRangeChange}
-                sx={{ bgcolor: "background.paper" }}
-              >
-                <MenuItem value="7days">Last 7 Days</MenuItem>
-                <MenuItem value="30days">Last 30 Days</MenuItem>
-                <MenuItem value="thismonth">This Month</MenuItem>
-                <MenuItem value="prevmonth">Previous Month</MenuItem>
-                <MenuItem value="3months">Last 3 Months</MenuItem>
-                <MenuItem value="6months">Last 6 Months</MenuItem>
-                <MenuItem value="year">Last Year</MenuItem>
-              </Select>
-            </FormControl>
-            <Button
-              variant="outlined"
-              size="small"
-              onClick={computeDashboardData}
-              sx={{ minWidth: 40, height: 40, mt: 1, p: 0 }}
-              title="Refresh local data"
-            >
-              <RefreshIcon fontSize="small" />
-            </Button>
+
+        {/* Action + Time Filter (50% each side-by-side on mobile) */}
+        <Box
+          sx={{
+            display: "flex",
+            alignItems: "center",
+            gap: 1.5,
+            width: { xs: "100%", sm: "auto" },
+          }}
+        >
+          <Box sx={{ flex: { xs: "1 1 50%", sm: "none" }, width: { xs: "50%", sm: "auto" } }}>
+            <DashboardRangeSelector initialRange={range} value={range} onChange={handleRangeChange} />
           </Box>
-          <Typography variant="caption" sx={{ color: "text.secondary", fontWeight: 700, mt: 0.5 }}>
-            Period: {periodDateRangeStr}
-          </Typography>
+          
+          <Link href="/registration" style={{ textDecoration: "none", flex: "1 1 50%", width: "100%" }}>
+            <Button
+              fullWidth
+              variant="contained"
+              size="small"
+              startIcon={<AddIcon />}
+              sx={{
+                bgcolor: "#0f766e",
+                color: "#FFFFFF",
+                fontWeight: 800,
+                fontSize: "0.8rem",
+                py: 0.8,
+                px: 2,
+                borderRadius: "8px",
+                boxShadow: "none !important",
+                whiteSpace: "nowrap",
+                "&:hover": { bgcolor: "#115e59" },
+              }}
+            >
+              + Patient
+            </Button>
+          </Link>
         </Box>
       </Box>
 
-      {/* Loading indicator */}
-      {loading && (
-        <Box sx={{ display: "flex", alignItems: "center", gap: 1.5, mb: 3 }}>
-          <CircularProgress size={20} color="primary" />
-          <Typography variant="caption" color="text.secondary">
-            Reading latest analytics from local database...
-          </Typography>
-        </Box>
-      )}
-
-      {/* Stats Grid */}
-      <Grid container spacing={3} sx={{ mb: 4 }}>
-        {statCards.map((stat, idx) => (
-          <Grid size={{ xs: 12, sm: 6, md: 4 }} key={idx}>
-            <Card variant="outlined" sx={{ borderRadius: 2 }}>
-              <CardContent sx={{ display: "flex", alignItems: "center", gap: 2 }}>
-                <Box
-                  sx={{
-                    p: 1.5,
-                    borderRadius: 2,
-                    bgcolor: stat.bgColor,
-                    display: "flex",
-                    alignItems: "center",
-                    justifyContent: "center",
-                  }}
-                >
-                  {stat.icon}
-                </Box>
-                <Box>
-                  <Typography variant="caption" sx={{ color: "text.secondary", fontWeight: 700, textTransform: "uppercase", letterSpacing: 0.5 }}>
-                    {stat.title}
-                  </Typography>
-                  <Typography variant="h4" sx={{ fontWeight: 800, mt: 0.5 }}>
-                    {stat.value}
-                  </Typography>
-                </Box>
-              </CardContent>
-            </Card>
-          </Grid>
-        ))}
-      </Grid>
-
-      {/* Dynamic Trends Charts */}
-      <Grid container spacing={3} sx={{ mb: 4 }}>
-        <Grid size={{ xs: 12, md: 6 }}>
-          <Card variant="outlined" sx={{ borderRadius: 2 }}>
-            <CardContent>
-              <Typography variant="subtitle1" sx={{ fontWeight: 700 }}>
-                Patient Registrations Trend
-              </Typography>
-              <Typography variant="caption" color="text.secondary">
-                {isMonthlyView ? "Monthly count of patient registrations in this period" : "Daily count of patient registrations in this period"}
-              </Typography>
-              <RegistrationChart data={chartData} />
-            </CardContent>
-          </Card>
-        </Grid>
-
-        <Grid size={{ xs: 12, md: 6 }}>
-          <Card variant="outlined" sx={{ borderRadius: 2 }}>
-            <CardContent>
-              <Typography variant="subtitle1" sx={{ fontWeight: 700 }}>
-                Revenue Collection Trend
-              </Typography>
-              <Typography variant="caption" color="text.secondary">
-                {isMonthlyView ? "Monthly invoiced billing amount (₹) in this period" : "Daily invoiced billing amount (₹) in this period"}
-              </Typography>
-              <RevenueChart data={chartData} />
-            </CardContent>
-          </Card>
-        </Grid>
-      </Grid>
-
-      {/* Daily / Monthly Operational & Financial Breakdown Table */}
-      <Card variant="outlined" sx={{ mb: 4, borderRadius: 2 }}>
-        <CardContent sx={{ p: { xs: 2, sm: 3 } }}>
-          <Box sx={{ display: "flex", justifyContent: "space-between", alignItems: "center", flexWrap: "wrap", gap: 1.5, mb: 2 }}>
-            <Box>
-              <Typography variant="subtitle1" sx={{ fontWeight: 800, display: "flex", alignItems: "center", gap: 1, color: "text.primary" }}>
-                <TableChartIcon sx={{ color: "primary.main", fontSize: 22 }} />
-                {isMonthlyView ? "Monthly Operational & Revenue Summary" : "Daily Operational & Revenue Summary"}
-              </Typography>
-              <Typography variant="caption" color="text.secondary">
-                {isMonthlyView
-                  ? "Month-wise breakdown of registrations, completed tests, billed revenue, and cash collections"
-                  : "Date-wise breakdown of registrations, completed tests, billed revenue, and cash collections"}
-              </Typography>
-            </Box>
-            <Chip
-              icon={<CalendarIcon sx={{ fontSize: "16px !important" }} />}
-              label={isMonthlyView ? "Month-wise View" : "Date-wise View"}
-              size="small"
-              color="primary"
-              variant="outlined"
-              sx={{ fontWeight: 700, borderRadius: 1.5 }}
-            />
-          </Box>
-
-          <TableContainer
-            component={Paper}
+      {/* 2. 4 Core Numbers (Instant Understanding) */}
+      <Grid container spacing={{ xs: 1.5, sm: 2 }} sx={{ mb: 2.5 }}>
+        
+        {/* Total Patients */}
+        <Grid size={{ xs: 6, sm: 6, md: 3 }}>
+          <Card
             elevation={0}
             sx={{
-              border: "1px solid",
-              borderColor: "divider",
-              borderRadius: 2,
-              maxHeight: 440,
-              overflow: "auto",
+              height: "100%",
+              bgcolor: "#FFFFFF",
+              border: "1.5px solid #E2E8F0",
+              borderRadius: "12px",
+              p: { xs: 1.5, sm: 2 },
             }}
           >
-            <Table stickyHeader size="small">
-              <TableHead>
-                <TableRow>
-                  <TableCell sx={{ fontWeight: 700, bgcolor: "background.paper", width: { xs: "30%", sm: "28%" }, py: 1.5 }}>
-                    {isMonthlyView ? "Month" : "Date"}
-                  </TableCell>
-                  <TableCell align="center" sx={{ fontWeight: 700, bgcolor: "background.paper", width: "18%", py: 1.5 }}>
-                    Registered
-                  </TableCell>
-                  <TableCell align="center" sx={{ fontWeight: 700, bgcolor: "background.paper", width: "18%", py: 1.5 }}>
-                    Completed
-                  </TableCell>
-                  <TableCell align="right" sx={{ fontWeight: 700, bgcolor: "background.paper", width: "18%", py: 1.5 }}>
-                    Revenue (₹)
-                  </TableCell>
-                  <TableCell align="right" sx={{ fontWeight: 700, bgcolor: "background.paper", width: "18%", py: 1.5 }}>
-                    Received (₹)
-                  </TableCell>
-                </TableRow>
-              </TableHead>
-
-              <TableBody>
-                {summaryTableRows.length === 0 ? (
-                  <TableRow>
-                    <TableCell colSpan={5} align="center" sx={{ py: 4, color: "text.secondary" }}>
-                      <Typography variant="body2">No registration or revenue activity found for this period.</Typography>
-                    </TableCell>
-                  </TableRow>
-                ) : (
-                  summaryTableRows.map((row) => (
-                    <TableRow
-                      key={row.key}
-                      hover
-                      sx={{
-                        "&:last-child td, &:last-child th": { border: 0 },
-                        transition: "background-color 0.15s ease",
-                      }}
-                    >
-                      <TableCell sx={{ fontWeight: 600, color: "text.primary", py: 1.2 }}>
-                        {row.dateLabel}
-                      </TableCell>
-                      <TableCell align="center" sx={{ py: 1.2 }}>
-                        <Chip
-                          size="small"
-                          label={row.registered}
-                          sx={{
-                            fontWeight: 700,
-                            minWidth: 38,
-                            bgcolor: row.registered > 0 ? "rgba(15, 118, 110, 0.1)" : "action.hover",
-                            color: row.registered > 0 ? "#0f766e" : "text.secondary",
-                            borderRadius: 1.5,
-                          }}
-                        />
-                      </TableCell>
-                      <TableCell align="center" sx={{ py: 1.2 }}>
-                        <Chip
-                          size="small"
-                          label={row.completed}
-                          sx={{
-                            fontWeight: 700,
-                            minWidth: 38,
-                            bgcolor: row.completed > 0 ? "#dcfce7" : "action.hover",
-                            color: row.completed > 0 ? "#15803d" : "text.secondary",
-                            borderRadius: 1.5,
-                          }}
-                        />
-                      </TableCell>
-                      <TableCell align="right" sx={{ fontWeight: 700, color: row.revenue > 0 ? "text.primary" : "text.secondary", py: 1.2 }}>
-                        ₹{row.revenue.toLocaleString("en-IN", { minimumFractionDigits: 2, maximumFractionDigits: 2 })}
-                      </TableCell>
-                      <TableCell align="right" sx={{ fontWeight: 700, color: row.received > 0 ? "success.main" : "text.secondary", py: 1.2 }}>
-                        ₹{row.received.toLocaleString("en-IN", { minimumFractionDigits: 2, maximumFractionDigits: 2 })}
-                      </TableCell>
-                    </TableRow>
-                  ))
-                )}
-              </TableBody>
-
-              <TableFooter>
-                <TableRow sx={{ bgcolor: "action.hover" }}>
-                  <TableCell sx={{ fontWeight: 800, color: "text.primary", py: 1.5 }}>
-                    Total ({summaryTableRows.length} {isMonthlyView ? "Months" : "Days"})
-                  </TableCell>
-                  <TableCell align="center" sx={{ fontWeight: 800, color: "primary.main", py: 1.5 }}>
-                    {financials.totalTableRegistered}
-                  </TableCell>
-                  <TableCell align="center" sx={{ fontWeight: 800, color: "#15803d", py: 1.5 }}>
-                    {financials.totalTableCompleted}
-                  </TableCell>
-                  <TableCell align="right" sx={{ fontWeight: 800, color: "text.primary", py: 1.5 }}>
-                    ₹{financials.totalBilling.toLocaleString("en-IN", { minimumFractionDigits: 2, maximumFractionDigits: 2 })}
-                  </TableCell>
-                  <TableCell align="right" sx={{ fontWeight: 800, color: "success.main", py: 1.5 }}>
-                    ₹{financials.totalCollected.toLocaleString("en-IN", { minimumFractionDigits: 2, maximumFractionDigits: 2 })}
-                  </TableCell>
-                </TableRow>
-              </TableFooter>
-            </Table>
-          </TableContainer>
-        </CardContent>
-      </Card>
-
-      {/* Financials & Analytical Charts */}
-      <Grid container spacing={4}>
-        {/* Financials summary */}
-        <Grid size={{ xs: 12, md: 4 }} sx={{ display: "flex", flexDirection: "column", gap: 4 }}>
-          <Card variant="outlined" sx={{ borderRadius: 2 }}>
-            <CardContent>
-              <Typography variant="subtitle1" sx={{ fontWeight: 700, mb: 2, display: "flex", alignItems: "center", gap: 1 }}>
-                <TrendingUpIcon color="primary" /> Financial Overview
+            <Box sx={{ display: "flex", alignItems: "center", justifyContent: "space-between", mb: 1 }}>
+              <Typography variant="caption" sx={{ color: "#64748B", fontWeight: 800, textTransform: "uppercase", fontSize: "0.7rem" }}>
+                Total Patients
               </Typography>
-              <Divider sx={{ mb: 2 }} />
-              <Box sx={{ display: "flex", justifyContent: "space-between", mb: 1.5 }}>
-                <Typography variant="body2" color="text.secondary">Total Invoiced Billing:</Typography>
-                <Typography variant="body2" sx={{ fontWeight: 700 }}>
-                  ₹{financials.totalBilling.toLocaleString("en-IN", { minimumFractionDigits: 2, maximumFractionDigits: 2 })}
-                </Typography>
+              <Box sx={{ width: 32, height: 32, borderRadius: "8px", bgcolor: "rgba(15, 118, 110, 0.12)", color: "#0f766e", display: "flex", alignItems: "center", justifyContent: "center" }}>
+                <RegisterIcon sx={{ fontSize: 18 }} />
               </Box>
-              <Box sx={{ display: "flex", justifyContent: "space-between", mb: 1.5 }}>
-                <Typography variant="body2" color="text.secondary">Total Cash Collected:</Typography>
-                <Typography variant="body2" sx={{ fontWeight: 700, color: "success.main" }}>
-                  ₹{financials.totalCollected.toLocaleString("en-IN", { minimumFractionDigits: 2, maximumFractionDigits: 2 })}
-                </Typography>
-              </Box>
-              <Box sx={{ display: "flex", justifyContent: "space-between" }}>
-                <Typography variant="body2" color="text.secondary">Due Balance:</Typography>
-                <Typography variant="body2" sx={{ fontWeight: 700, color: financials.dueBalance > 0 ? "error.main" : "text.primary" }}>
-                  ₹{financials.dueBalance.toLocaleString("en-IN", { minimumFractionDigits: 2, maximumFractionDigits: 2 })}
-                </Typography>
-              </Box>
-            </CardContent>
+            </Box>
+            <Typography variant="h4" sx={{ fontWeight: 800, color: "#0F172A", fontSize: { xs: "1.5rem", sm: "1.85rem" }, lineHeight: 1 }}>
+              {stats.totalRegistrations}
+            </Typography>
+            <Typography variant="caption" sx={{ color: "#0f766e", fontWeight: 700, mt: 0.75, display: "block", fontSize: "0.72rem" }}>
+              Registered in period
+            </Typography>
           </Card>
         </Grid>
 
-        {/* Analytical Charts */}
-        <Grid size={{ xs: 12, md: 8 }}>
-          <Grid container spacing={3}>
-            <Grid size={{ xs: 12, sm: 6 }}>
-              <Card variant="outlined" sx={{ height: "100%", borderRadius: 2 }}>
-                <CardContent>
-                  <Typography variant="subtitle1" sx={{ fontWeight: 700 }}>
-                    Test Department Split
-                  </Typography>
-                  <Typography variant="caption" color="text.secondary">
-                    Distribution of ordered tests by laboratory section
-                  </Typography>
-                  <DepartmentDistributionChart data={departmentData} />
-                </CardContent>
-              </Card>
-            </Grid>
-            <Grid size={{ xs: 12, sm: 6 }}>
-              <Card variant="outlined" sx={{ height: "100%", borderRadius: 2 }}>
-                <CardContent>
-                  <Typography variant="subtitle1" sx={{ fontWeight: 700 }}>
-                    Top Referrals
-                  </Typography>
-                  <Typography variant="caption" color="text.secondary">
-                    Top 5 referring doctors / clinical partners
-                  </Typography>
-                  <ReferralChart data={referralData} />
-                </CardContent>
-              </Card>
-            </Grid>
-          </Grid>
+        {/* Pending Tests */}
+        <Grid size={{ xs: 6, sm: 6, md: 3 }}>
+          <Card
+            elevation={0}
+            sx={{
+              height: "100%",
+              bgcolor: "#FFFFFF",
+              border: "1.5px solid #E2E8F0",
+              borderRadius: "12px",
+              p: { xs: 1.5, sm: 2 },
+            }}
+          >
+            <Box sx={{ display: "flex", alignItems: "center", justifyContent: "space-between", mb: 1 }}>
+              <Typography variant="caption" sx={{ color: "#64748B", fontWeight: 800, textTransform: "uppercase", fontSize: "0.7rem" }}>
+                Pending Tests
+              </Typography>
+              <Box sx={{ width: 32, height: 32, borderRadius: "8px", bgcolor: "rgba(245, 158, 11, 0.12)", color: "#D97706", display: "flex", alignItems: "center", justifyContent: "center" }}>
+                <PendingIcon sx={{ fontSize: 18 }} />
+              </Box>
+            </Box>
+            <Typography variant="h4" sx={{ fontWeight: 800, color: stats.pendingRegistrations > 0 ? "#D97706" : "#0F172A", fontSize: { xs: "1.5rem", sm: "1.85rem" }, lineHeight: 1 }}>
+              {stats.pendingRegistrations}
+            </Typography>
+            <Typography variant="caption" sx={{ color: stats.pendingRegistrations > 0 ? "#D97706" : "#10B981", fontWeight: 700, mt: 0.75, display: "block", fontSize: "0.72rem" }}>
+              {stats.pendingRegistrations > 0 ? "⚠️ Awaiting Results" : "✓ Worklist Clear"}
+            </Typography>
+          </Card>
+        </Grid>
+
+        {/* Completed Tests */}
+        <Grid size={{ xs: 6, sm: 6, md: 3 }}>
+          <Card
+            elevation={0}
+            sx={{
+              height: "100%",
+              bgcolor: "#FFFFFF",
+              border: "1.5px solid #E2E8F0",
+              borderRadius: "12px",
+              p: { xs: 1.5, sm: 2 },
+            }}
+          >
+            <Box sx={{ display: "flex", alignItems: "center", justifyContent: "space-between", mb: 1 }}>
+              <Typography variant="caption" sx={{ color: "#64748B", fontWeight: 800, textTransform: "uppercase", fontSize: "0.7rem" }}>
+                Completed Tests
+              </Typography>
+              <Box sx={{ width: 32, height: 32, borderRadius: "8px", bgcolor: "rgba(16, 185, 129, 0.12)", color: "#10B981", display: "flex", alignItems: "center", justifyContent: "center" }}>
+                <CheckedIcon sx={{ fontSize: 18 }} />
+              </Box>
+            </Box>
+            <Typography variant="h4" sx={{ fontWeight: 800, color: "#0F172A", fontSize: { xs: "1.5rem", sm: "1.85rem" }, lineHeight: 1 }}>
+              {stats.completedRegistrations}
+            </Typography>
+            <Typography variant="caption" sx={{ color: "#10B981", fontWeight: 700, mt: 0.75, display: "block", fontSize: "0.72rem" }}>
+              ✓ Reports Ready
+            </Typography>
+          </Card>
+        </Grid>
+
+        {/* Collections */}
+        <Grid size={{ xs: 6, sm: 6, md: 3 }}>
+          <Card
+            elevation={0}
+            sx={{
+              height: "100%",
+              bgcolor: "#FFFFFF",
+              border: "1.5px solid #E2E8F0",
+              borderRadius: "12px",
+              p: { xs: 1.5, sm: 2 },
+            }}
+          >
+            <Box sx={{ display: "flex", alignItems: "center", justifyContent: "space-between", mb: 1 }}>
+              <Typography variant="caption" sx={{ color: "#64748B", fontWeight: 800, textTransform: "uppercase", fontSize: "0.7rem" }}>
+                Collections
+              </Typography>
+              <Box sx={{ width: 32, height: 32, borderRadius: "8px", bgcolor: "rgba(59, 130, 246, 0.12)", color: "#2563EB", display: "flex", alignItems: "center", justifyContent: "center" }}>
+                <WalletIcon sx={{ fontSize: 18 }} />
+              </Box>
+            </Box>
+            <Typography variant="h4" sx={{ fontWeight: 800, color: "#0F172A", fontSize: { xs: "1.35rem", sm: "1.7rem" }, lineHeight: 1 }}>
+              ₹{financials.totalCollected.toLocaleString("en-IN", { maximumFractionDigits: 0 })}
+            </Typography>
+            <Typography variant="caption" sx={{ color: financials.dueBalance > 0 ? "#DC2626" : "#10B981", fontWeight: 700, mt: 0.75, display: "block", fontSize: "0.72rem" }}>
+              {financials.dueBalance > 0 ? `₹${financials.dueBalance.toLocaleString("en-IN", { maximumFractionDigits: 0 })} due balance` : "All dues cleared"}
+            </Typography>
+          </Card>
         </Grid>
       </Grid>
+
+      {/* 3. Visual Overview: Patient Trend & Department Split */}
+      <Grid container spacing={{ xs: 1.5, sm: 2 }} sx={{ mb: 2.5 }}>
+        
+        {/* Patient Volume Trend */}
+        <Grid size={{ xs: 12, md: 7 }}>
+          <Card elevation={0} sx={{ height: "100%", bgcolor: "#FFFFFF", border: "1.5px solid #E2E8F0", borderRadius: "12px", p: { xs: 2, sm: 2.5 } }}>
+            <Box sx={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
+              <Typography variant="subtitle2" sx={{ fontWeight: 800, color: "#0F172A", fontSize: "0.95rem" }}>
+                Patient Volume Trend
+              </Typography>
+              <Chip
+                label={`${stats.totalRegistrations} Patients`}
+                size="small"
+                sx={{ fontWeight: 800, bgcolor: "rgba(15, 118, 110, 0.12)", color: "#0f766e", borderRadius: "6px", fontSize: "0.72rem" }}
+              />
+            </Box>
+            <RegistrationChart data={chartData} />
+          </Card>
+        </Grid>
+
+        {/* Department Breakdown */}
+        <Grid size={{ xs: 12, md: 5 }}>
+          <Card elevation={0} sx={{ height: "100%", bgcolor: "#FFFFFF", border: "1.5px solid #E2E8F0", borderRadius: "12px", p: { xs: 2, sm: 2.5 } }}>
+            <Typography variant="subtitle2" sx={{ fontWeight: 800, color: "#0F172A", fontSize: "0.95rem" }}>
+              Test Department Split
+            </Typography>
+            <DepartmentDistributionChart data={departmentData} />
+          </Card>
+        </Grid>
+      </Grid>
+
+      {/* 4. Simple Operational Activity Log */}
+      <Card elevation={0} sx={{ bgcolor: "#FFFFFF", border: "1.5px solid #E2E8F0", borderRadius: "12px", p: { xs: 2, sm: 2.5 } }}>
+        <Box sx={{ display: "flex", justifyContent: "space-between", alignItems: "center", mb: 2, flexWrap: "wrap", gap: 1 }}>
+          <Box sx={{ display: "flex", alignItems: "center", gap: 1 }}>
+            <TableChartIcon sx={{ color: "#0f766e", fontSize: 18 }} />
+            <Typography variant="subtitle2" sx={{ fontWeight: 800, color: "#0F172A", fontSize: "0.95rem" }}>
+              Recent Activity Breakdown
+            </Typography>
+          </Box>
+          <Link href="/registration" style={{ textDecoration: "none" }}>
+            <Typography variant="caption" sx={{ color: "#0f766e", fontWeight: 800, display: "flex", alignItems: "center", gap: 0.5 }}>
+              View All Patients <ArrowForwardIcon sx={{ fontSize: 13 }} />
+            </Typography>
+          </Link>
+        </Box>
+
+        <TableContainer
+          component={Paper}
+          elevation={0}
+          sx={{
+            border: "1px solid #E2E8F0",
+            borderRadius: "8px",
+            maxHeight: 380,
+            overflowX: "auto",
+          }}
+        >
+          <Table stickyHeader size="small" sx={{ minWidth: 500 }}>
+            <TableHead>
+              <TableRow>
+                <TableCell sx={{ fontWeight: 800, bgcolor: "#F8FAFC", color: "#475569", py: 1.2, fontSize: "0.78rem" }}>
+                  Date
+                </TableCell>
+                <TableCell align="center" sx={{ fontWeight: 800, bgcolor: "#F8FAFC", color: "#475569", py: 1.2, fontSize: "0.78rem" }}>
+                  Registered
+                </TableCell>
+                <TableCell align="center" sx={{ fontWeight: 800, bgcolor: "#F8FAFC", color: "#475569", py: 1.2, fontSize: "0.78rem" }}>
+                  Completed
+                </TableCell>
+                <TableCell align="right" sx={{ fontWeight: 800, bgcolor: "#F8FAFC", color: "#475569", py: 1.2, fontSize: "0.78rem" }}>
+                  Invoiced (₹)
+                </TableCell>
+                <TableCell align="right" sx={{ fontWeight: 800, bgcolor: "#F8FAFC", color: "#475569", py: 1.2, fontSize: "0.78rem" }}>
+                  Collected (₹)
+                </TableCell>
+              </TableRow>
+            </TableHead>
+
+            <TableBody>
+              {summaryTableRows.length === 0 ? (
+                <TableRow>
+                  <TableCell colSpan={5} align="center" sx={{ py: 4, color: "#64748B" }}>
+                    <Typography variant="caption" sx={{ fontWeight: 600 }}>No registrations found for this period.</Typography>
+                  </TableCell>
+                </TableRow>
+              ) : (
+                summaryTableRows.slice(0, 10).map((row) => (
+                  <TableRow
+                    key={row.key}
+                    hover
+                    sx={{
+                      "&:last-child td, &:last-child th": { border: 0 },
+                      "&:hover": { bgcolor: "#F8FAFC" }
+                    }}
+                  >
+                    <TableCell sx={{ fontWeight: 700, color: "#0F172A", py: 1.1, fontSize: "0.8rem" }}>
+                      {row.dateLabel}
+                    </TableCell>
+                    <TableCell align="center" sx={{ py: 1.1 }}>
+                      <Box
+                        sx={{
+                          display: "inline-block",
+                          minWidth: 28,
+                          px: 0.75,
+                          py: 0.2,
+                          borderRadius: "4px",
+                          fontWeight: 800,
+                          fontSize: "0.75rem",
+                          bgcolor: row.registered > 0 ? "rgba(16, 182, 165, 0.15)" : "#F1F5F9",
+                          color: row.registered > 0 ? "#10b6a5" : "#64748B",
+                        }}
+                      >
+                        {row.registered}
+                      </Box>
+                    </TableCell>
+                    <TableCell align="center" sx={{ py: 1.1 }}>
+                      <Box
+                        sx={{
+                          display: "inline-block",
+                          minWidth: 28,
+                          px: 0.75,
+                          py: 0.2,
+                          borderRadius: "4px",
+                          fontWeight: 800,
+                          fontSize: "0.75rem",
+                          bgcolor: row.completed > 0 ? "rgba(16, 185, 129, 0.15)" : "#F1F5F9",
+                          color: row.completed > 0 ? "#059669" : "#64748B",
+                        }}
+                      >
+                        {row.completed}
+                      </Box>
+                    </TableCell>
+                    <TableCell align="right" sx={{ fontWeight: 700, color: "#0F172A", py: 1.1, fontSize: "0.8rem" }}>
+                      ₹{row.revenue.toLocaleString("en-IN", { maximumFractionDigits: 0 })}
+                    </TableCell>
+                    <TableCell align="right" sx={{ fontWeight: 800, color: "#059669", py: 1.1, fontSize: "0.8rem" }}>
+                      ₹{row.received.toLocaleString("en-IN", { maximumFractionDigits: 0 })}
+                    </TableCell>
+                  </TableRow>
+                ))
+              )}
+            </TableBody>
+
+            <TableFooter>
+              <TableRow sx={{ bgcolor: "#F8FAFC" }}>
+                <TableCell sx={{ fontWeight: 800, color: "#0F172A", py: 1.2, fontSize: "0.8rem" }}>
+                  Total
+                </TableCell>
+                <TableCell align="center" sx={{ fontWeight: 800, color: "#10b6a5", py: 1.2, fontSize: "0.82rem" }}>
+                  {financials.totalTableRegistered}
+                </TableCell>
+                <TableCell align="center" sx={{ fontWeight: 800, color: "#059669", py: 1.2, fontSize: "0.82rem" }}>
+                  {financials.totalTableCompleted}
+                </TableCell>
+                <TableCell align="right" sx={{ fontWeight: 800, color: "#0F172A", py: 1.2, fontSize: "0.82rem" }}>
+                  ₹{financials.totalBilling.toLocaleString("en-IN", { maximumFractionDigits: 0 })}
+                </TableCell>
+                <TableCell align="right" sx={{ fontWeight: 800, color: "#059669", py: 1.2, fontSize: "0.82rem" }}>
+                  ₹{financials.totalCollected.toLocaleString("en-IN", { maximumFractionDigits: 0 })}
+                </TableCell>
+              </TableRow>
+            </TableFooter>
+          </Table>
+        </TableContainer>
+      </Card>
+
     </Box>
+  );
+}
+
+export default function AdminDashboardPage() {
+  return (
+    <Suspense fallback={<Box sx={{ p: 4, textAlign: "center" }}><Typography variant="body2" color="text.secondary">Loading dashboard...</Typography></Box>}>
+      <DashboardContent />
+    </Suspense>
   );
 }

@@ -125,6 +125,9 @@
       "lib/offline/network.js",
       "lib/offline/offlinePdfGenerator.js",
       "lib/offline/offlinePrint.js",
+      "lib/offline/print/billHtmlGenerator.js",
+      "lib/offline/print/openPrint.js",
+      "lib/offline/print/reportPdfGenerator.js",
       "lib/offline/sync/modelRegistry.js",
       "lib/offline/sync/syncManager.js",
       "lib/offline/timestamps.js",
@@ -376,17 +379,17 @@
     ],
     "video": []
   },
-  "total_files": 366,
-  "total_words": 542206,
+  "total_files": 369,
+  "total_words": 550258,
   "needs_graph": true,
-  "warning": "Large corpus: 366 files · ~542,206 words. Semantic extraction will be expensive (many Claude tokens). Consider running on a subfolder, or use --no-semantic to run AST-only.",
+  "warning": "Large corpus: 369 files · ~550,258 words. Semantic extraction will be expensive (many Claude tokens). Consider running on a subfolder, or use --no-semantic to run AST-only.",
   "skipped_sensitive": [
     "test unit.xlsx [office conversion requires async - use pipeline]"
   ],
   "graphifyignore_patterns": 22,
   "git": {
     "source_owner": "git",
-    "source_hash": "9a50d76fdc96edbbcfaff30fb952ad24910efa0a",
+    "source_hash": "9d71afcc23862c5fffbd639f60476f1ad073ffc7",
     "branches": [
       "main"
     ],
@@ -399,11 +402,11 @@
     "source": "default-auto",
     "root": ".",
     "git_root": ".",
-    "head": "9a50d76fdc96edbbcfaff30fb952ad24910efa0a",
-    "candidate_count": 592,
-    "included_count": 366,
+    "head": "9d71afcc23862c5fffbd639f60476f1ad073ffc7",
+    "candidate_count": 597,
+    "included_count": 369,
     "excluded_untracked_count": 0,
-    "excluded_ignored_count": 120668,
+    "excluded_ignored_count": 120965,
     "excluded_sensitive_count": 0,
     "missing_committed_count": 0,
     "warnings": [],

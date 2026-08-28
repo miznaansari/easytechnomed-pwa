@@ -2,7 +2,7 @@
 
 ## 1. Project Overview
 - **Name**: EasyTechnoMed PWA / LIMS (Laboratory Information Management System)
-- **Current Version**: `v3.0.21`
+- **Current Version**: `v3.0.23`
 - **Framework**: Next.js (App Router), React 19, Material-UI (MUI v7), Dexie.js (v4.4+), Prisma ORM, MySQL, pdf-lib.
 
 
@@ -104,6 +104,7 @@
 
 | Version | Date | Key Changes & Milestones |
 | :--- | :--- | :--- |
+| `v3.0.23` | 2026-08-29 | Integrated latest high-performance Dashboard UI design from `pathlab` into `new/components`; Updated Header Bar with minimal direct styling & button RangeSelector, 4 Core Metric cards (Total Patients, Pending Tests with warning badge, Completed Tests, Collections with due balance badge), Patient Volume BarChart, Test Department Split Donut + progress bar breakdown, and Recent Activity Breakdown table with 0ms IndexedDB offline-first calculation. |
 | `v3.0.21` | 2026-08-28 | Fixed iOS Safari WebKit error *"The response served by the ServiceWorker has a redirect"* by sanitizing all redirected fetch/cache responses in `public/sw.js` (v11); Fully optimized `site.webmanifest`, `manifest.json`, and `app/layout.js` with `apple-touch-icon.png` (180x180), `startupImage`, and Apple PWA standalone headers. |
 | `v3.0.20` | 2026-08-28 | Fixed iOS Safari Service Worker registration in `PWARegister.js` for instant hydration (`document.readyState`), added persistent storage grant request (`navigator.storage.persist()`), and added web app manifest metadata in `layout.js` & `manifest.json`. |
 | `v3.0.18` | 2026-08-28 | Enforced `text-sm` and anti-zoom viewport settings across `LoginPageClient.js`, `RegisterPageClient.js`, and `Input.js` to eliminate unexpected mobile zoom on field focus. |
