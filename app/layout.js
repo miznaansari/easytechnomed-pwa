@@ -35,6 +35,11 @@ export const metadata = {
     capable: true,
     statusBarStyle: "default",
     title: "EasyTechnoMed",
+    startupImage: ["/apple-touch-icon.png"],
+  },
+  other: {
+    "apple-mobile-web-app-capable": "yes",
+    "mobile-web-app-capable": "yes",
   },
 };
 

@@ -1,4 +1,4 @@
-const CACHE_NAME = "easytechnomed-pwa-v10";
+const CACHE_NAME = "easytechnomed-pwa-v11";
 const OFFLINE_URL = "/offline.html";
 
 // Core routes and critical static assets to pre-cache on install
@@ -15,29 +15,29 @@ const PRECACHE_ROUTES = [
   "/settings/pdf",
   "/settings/payments",
   "/members",
+  "/auth/login",
   "/favicon.ico",
   "/apple-touch-icon.png",
   "/android-chrome-192x192.png",
   "/android-chrome-512x512.png",
   "/logo/logobg.png",
   "/logo/customer_login_bg.png",
+  "/site.webmanifest",
+  "/manifest.json",
 ];
 
 // Helper: Extract all JS/CSS asset URLs from HTML string
 function extractAssetsFromHtml(htmlText) {
   const assets = new Set();
-  // Match <script src="...">
   const scriptRegex = /<script[^>]+src=["'](\/_next\/static\/[^"']+)["']/g;
   let match;
   while ((match = scriptRegex.exec(htmlText)) !== null) {
     assets.add(match[1]);
   }
-  // Match <link rel="preload" href="..."> and <link rel="stylesheet" href="...">
   const linkRegex = /<link[^>]+href=["'](\/_next\/static\/[^"']+)["']/g;
   while ((match = linkRegex.exec(htmlText)) !== null) {
     assets.add(match[1]);
   }
-  // Match chunk filenames mentioned in JSON / RSC flight scripts
   const chunkRegex = /"\/_next\/static\/chunks\/[^"]+\.js"/g;
   while ((match = chunkRegex.exec(htmlText)) !== null) {
     const clean = match[0].replace(/"/g, "");
@@ -46,39 +46,72 @@ function extractAssetsFromHtml(htmlText) {
   return Array.from(assets);
 }
 
-// Install event: cache offline fallback page, core dashboard routes, AND all JS chunks
+// Helper: Sanitize responses for iOS WebKit (Safari throws if redirected === true)
+function createCleanResponse(body, headers = {}, status = 200) {
+  return new Response(body, {
+    status,
+    statusText: status === 200 ? "OK" : "Status",
+    headers: {
+      "Content-Type": headers["content-type"] || "text/html; charset=utf-8",
+      ...headers,
+    },
+  });
+}
+
+function sanitizeResponse(response) {
+  if (!response) return null;
+  // If response has redirected flag or status >= 300, recreate clean 200 response so Safari doesn't throw
+  if (response.redirected || (response.status >= 300 && response.status < 400)) {
+    return new Response(response.body, {
+      status: 200,
+      statusText: "OK",
+      headers: response.headers,
+    });
+  }
+  return response;
+}
+
+// Install event: cache offline fallback page, core dashboard routes, and JS chunks
 self.addEventListener("install", (event) => {
   event.waitUntil(
     caches
       .open(CACHE_NAME)
       .then(async (cache) => {
-        console.log("[Service Worker] Pre-caching core offline assets & routes...");
+        console.log("[Service Worker] Pre-caching core offline assets & routes for iOS/PWA...");
         const extractedAssets = new Set();
 
         await Promise.allSettled(
           PRECACHE_ROUTES.map(async (route) => {
             try {
-              // 1. Pre-cache standard page HTML document
-              const res = await fetch(route, { cache: "reload" });
+              // 1. Pre-cache page HTML (Sanitize to prevent iOS WebKit redirect errors)
+              const res = await fetch(route, { cache: "reload", redirect: "follow" });
               if (res.ok) {
-                const text = await res.clone().text();
-                await cache.put(route, res);
+                const text = await res.text();
+                const cleanRes = createCleanResponse(text, {
+                  "content-type": res.headers.get("content-type") || "text/html; charset=utf-8",
+                });
+                await cache.put(route, cleanRes);
 
                 // Extract all JS chunks and CSS files referenced in this page
                 const assets = extractAssetsFromHtml(text);
                 assets.forEach((a) => extractedAssets.add(a));
               }
 
-              // 2. Pre-cache RSC data separately for app routes so client-side navigation is instant
+              // 2. Pre-cache RSC data separately for client-side navigation
               if (route.startsWith("/") && !route.includes(".")) {
                 try {
                   const rscRes = await fetch(route, {
                     headers: { RSC: "1" },
                     cache: "reload",
+                    redirect: "follow",
                   });
                   if (rscRes.ok) {
-                    const rscText = await rscRes.clone().text();
-                    await cache.put(`${route}?_rsc=1`, rscRes);
+                    const rscText = await rscRes.text();
+                    const cleanRsc = new Response(rscText, {
+                      status: 200,
+                      headers: { "Content-Type": "text/x-component" },
+                    });
+                    await cache.put(`${route}?_rsc=1`, cleanRsc);
 
                     const rscAssets = extractAssetsFromHtml(rscText);
                     rscAssets.forEach((a) => extractedAssets.add(a));
@@ -92,13 +125,15 @@ self.addEventListener("install", (event) => {
         );
 
         // 3. Pre-cache all discovered Next.js JS chunks and stylesheets
-        console.log(`[Service Worker] Pre-caching ${extractedAssets.size} JS chunks & assets...`);
         await Promise.allSettled(
           Array.from(extractedAssets).map(async (assetUrl) => {
             try {
-              const aRes = await fetch(assetUrl, { cache: "reload" });
+              const aRes = await fetch(assetUrl, { cache: "reload", redirect: "follow" });
               if (aRes.ok) {
-                await cache.put(assetUrl, aRes);
+                const cleanAsset = aRes.redirected
+                  ? new Response(await aRes.blob(), { status: 200, headers: aRes.headers })
+                  : aRes;
+                await cache.put(assetUrl, cleanAsset);
               }
             } catch {}
           })
@@ -127,7 +162,6 @@ self.addEventListener("activate", (event) => {
   );
 });
 
-// Helper: Check if response is valid HTML
 function isHtmlResponse(response) {
   if (!response || !response.headers) return false;
   const ct = response.headers.get("content-type") || "";
@@ -136,20 +170,18 @@ function isHtmlResponse(response) {
 
 // Fetch event: handle offline navigation, Next.js RSC requests, and asset caching
 self.addEventListener("fetch", (event) => {
-  // Only handle GET requests
   if (event.request.method !== "GET") return;
 
   const url = new URL(event.request.url);
 
-  // Ignore unsupported schemes (e.g. chrome-extension, data:)
   if (url.protocol !== "http:" && url.protocol !== "https:") return;
 
-  // Never cache API requests in Service Worker - persistent offline data belongs in IndexedDB!
+  // Never intercept API endpoints in service worker - IndexedDB handles offline data!
   if (url.pathname.startsWith("/api/")) {
     return;
   }
 
-  // 1. Next.js React Server Component (RSC) requests (used for client-side navigation between pages)
+  // 1. Next.js React Server Component (RSC) requests
   const isRSCRequest =
     url.searchParams.has("_rsc") ||
     event.request.headers.get("RSC") === "1" ||
@@ -157,28 +189,38 @@ self.addEventListener("fetch", (event) => {
 
   if (isRSCRequest) {
     event.respondWith(
-      fetch(event.request)
-        .then((networkResponse) => {
-          if (networkResponse && networkResponse.status === 200) {
-            const clone1 = networkResponse.clone();
-            const clone2 = networkResponse.clone();
+      fetch(event.request, { redirect: "follow" })
+        .then(async (networkResponse) => {
+          if (networkResponse && (networkResponse.status === 200 || networkResponse.ok)) {
+            const bodyText = await networkResponse.text();
+            const cleanRes1 = new Response(bodyText, {
+              status: 200,
+              headers: { "Content-Type": "text/x-component" },
+            });
+            const cleanRes2 = new Response(bodyText, {
+              status: 200,
+              headers: { "Content-Type": "text/x-component" },
+            });
             caches.open(CACHE_NAME).then((cache) => {
-              cache.put(event.request, clone1);
-              cache.put(`${url.pathname}?_rsc=1`, clone2);
+              cache.put(event.request, cleanRes1);
+              cache.put(`${url.pathname}?_rsc=1`, cleanRes2);
             }).catch(() => {});
+            return new Response(bodyText, {
+              status: 200,
+              headers: { "Content-Type": "text/x-component" },
+            });
           }
           return networkResponse;
         })
         .catch(async () => {
-          // Network failed -> return cached RSC payload
           const cached = await caches.match(event.request);
-          if (cached) return cached;
+          if (cached) return sanitizeResponse(cached);
 
           const rscCached = await caches.match(`${url.pathname}?_rsc=1`);
-          if (rscCached) return rscCached;
+          if (rscCached) return sanitizeResponse(rscCached);
 
           const dashboardRsc = await caches.match("/dashboard?_rsc=1");
-          if (dashboardRsc) return dashboardRsc;
+          if (dashboardRsc) return sanitizeResponse(dashboardRsc);
 
           return new Response("", {
             status: 200,
@@ -189,100 +231,113 @@ self.addEventListener("fetch", (event) => {
     return;
   }
 
-  // 2. Full Page HTML Navigation Requests (Reloads, entering URLs, hard navigations)
+  // 2. Full Page HTML Navigation Requests (iOS Safari / PWA Compatible)
   if (event.request.mode === "navigate") {
     event.respondWith(
       (async () => {
-        // A. If offline, instantly serve cached HTML page
+        // A. If offline, serve clean cached HTML
         if (typeof self.navigator !== "undefined" && !self.navigator.onLine) {
           const cached = await caches.match(event.request, { ignoreSearch: true });
-          if (cached && isHtmlResponse(cached)) return cached;
+          if (cached && isHtmlResponse(cached)) return sanitizeResponse(cached);
 
           const pathnameCached = await caches.match(url.pathname, { ignoreSearch: true });
-          if (pathnameCached && isHtmlResponse(pathnameCached)) return pathnameCached;
+          if (pathnameCached && isHtmlResponse(pathnameCached)) return sanitizeResponse(pathnameCached);
 
           const fallbackCache = await caches.open(CACHE_NAME);
           if (url.pathname.startsWith("/registration")) {
             const regFallback = await fallbackCache.match("/registration");
-            if (regFallback && isHtmlResponse(regFallback)) return regFallback;
+            if (regFallback && isHtmlResponse(regFallback)) return sanitizeResponse(regFallback);
           }
           if (url.pathname.startsWith("/test-report")) {
             const trFallback = await fallbackCache.match("/test-report");
-            if (trFallback && isHtmlResponse(trFallback)) return trFallback;
+            if (trFallback && isHtmlResponse(trFallback)) return sanitizeResponse(trFallback);
           }
           if (url.pathname.startsWith("/members")) {
             const memFallback = await fallbackCache.match("/members");
-            if (memFallback && isHtmlResponse(memFallback)) return memFallback;
+            if (memFallback && isHtmlResponse(memFallback)) return sanitizeResponse(memFallback);
           }
           if (url.pathname.startsWith("/settings")) {
             const setFallback = await fallbackCache.match("/settings");
-            if (setFallback && isHtmlResponse(setFallback)) return setFallback;
+            if (setFallback && isHtmlResponse(setFallback)) return sanitizeResponse(setFallback);
           }
           if (url.pathname.startsWith("/doctor-summary")) {
             const docFallback = await fallbackCache.match("/doctor-summary");
-            if (docFallback && isHtmlResponse(docFallback)) return docFallback;
+            if (docFallback && isHtmlResponse(docFallback)) return sanitizeResponse(docFallback);
           }
 
           const dashboardFallback = await fallbackCache.match("/dashboard");
-          if (dashboardFallback && isHtmlResponse(dashboardFallback)) return dashboardFallback;
+          if (dashboardFallback && isHtmlResponse(dashboardFallback)) return sanitizeResponse(dashboardFallback);
 
           const rootFallback = await fallbackCache.match("/");
-          if (rootFallback && isHtmlResponse(rootFallback)) return rootFallback;
+          if (rootFallback && isHtmlResponse(rootFallback)) return sanitizeResponse(rootFallback);
 
           const offlineFallback = await fallbackCache.match(OFFLINE_URL);
-          if (offlineFallback) return offlineFallback;
+          if (offlineFallback) return sanitizeResponse(offlineFallback);
         }
 
-        // B. If online, fetch from network and cache
+        // B. If online, fetch from network with redirect sanitization for iOS Safari
         try {
-          const networkResponse = await fetch(event.request);
+          const networkResponse = await fetch(event.request, { redirect: "follow" });
+
+          // CRITICAL iOS Safari FIX: If response was redirected, reconstruct a clean 200 response
+          if (networkResponse && networkResponse.redirected) {
+            const bodyText = await networkResponse.text();
+            const cleanRedirectResponse = createCleanResponse(bodyText, {
+              "content-type": networkResponse.headers.get("content-type") || "text/html; charset=utf-8",
+            });
+
+            const cache = await caches.open(CACHE_NAME);
+            cache.put(event.request, cleanRedirectResponse.clone()).catch(() => {});
+            cache.put(url.pathname, cleanRedirectResponse.clone()).catch(() => {});
+            return cleanRedirectResponse;
+          }
+
           if (networkResponse && networkResponse.status === 200 && isHtmlResponse(networkResponse)) {
-            const clone1 = networkResponse.clone();
-            const clone2 = networkResponse.clone();
+            const clone = networkResponse.clone();
             caches.open(CACHE_NAME).then((cache) => {
-              cache.put(event.request, clone1);
-              cache.put(url.pathname, clone2);
+              cache.put(event.request, clone);
+              cache.put(url.pathname, clone.clone());
             }).catch(() => {});
           }
           return networkResponse;
         } catch {
           // Network failed (offline / lost connection) -> Fallback to Cache
           const cached = await caches.match(event.request, { ignoreSearch: true });
-          if (cached && isHtmlResponse(cached)) return cached;
+          if (cached && isHtmlResponse(cached)) return sanitizeResponse(cached);
 
           const pathnameCached = await caches.match(url.pathname, { ignoreSearch: true });
-          if (pathnameCached && isHtmlResponse(pathnameCached)) return pathnameCached;
+          if (pathnameCached && isHtmlResponse(pathnameCached)) return sanitizeResponse(pathnameCached);
 
           const fallbackCache = await caches.open(CACHE_NAME);
           if (url.pathname.startsWith("/registration")) {
             const regFallback = await fallbackCache.match("/registration");
-            if (regFallback && isHtmlResponse(regFallback)) return regFallback;
+            if (regFallback && isHtmlResponse(regFallback)) return sanitizeResponse(regFallback);
           }
           if (url.pathname.startsWith("/test-report")) {
             const trFallback = await fallbackCache.match("/test-report");
-            if (trFallback && isHtmlResponse(trFallback)) return trFallback;
+            if (trFallback && isHtmlResponse(trFallback)) return sanitizeResponse(trFallback);
           }
           if (url.pathname.startsWith("/members")) {
             const memFallback = await fallbackCache.match("/members");
-            if (memFallback && isHtmlResponse(memFallback)) return memFallback;
+            if (memFallback && isHtmlResponse(memFallback)) return sanitizeResponse(memFallback);
           }
           if (url.pathname.startsWith("/settings")) {
             const setFallback = await fallbackCache.match("/settings");
-            if (setFallback && isHtmlResponse(setFallback)) return setFallback;
+            if (setFallback && isHtmlResponse(setFallback)) return sanitizeResponse(setFallback);
           }
           if (url.pathname.startsWith("/doctor-summary")) {
             const docFallback = await fallbackCache.match("/doctor-summary");
-            if (docFallback && isHtmlResponse(docFallback)) return docFallback;
+            if (docFallback && isHtmlResponse(docFallback)) return sanitizeResponse(docFallback);
           }
 
           const dashboardFallback = await fallbackCache.match("/dashboard");
-          if (dashboardFallback && isHtmlResponse(dashboardFallback)) return dashboardFallback;
+          if (dashboardFallback && isHtmlResponse(dashboardFallback)) return sanitizeResponse(dashboardFallback);
 
           const rootFallback = await fallbackCache.match("/");
-          if (rootFallback && isHtmlResponse(rootFallback)) return rootFallback;
+          if (rootFallback && isHtmlResponse(rootFallback)) return sanitizeResponse(rootFallback);
 
           const offlineFallback = await fallbackCache.match(OFFLINE_URL);
-          if (offlineFallback) return offlineFallback;
+          if (offlineFallback) return sanitizeResponse(offlineFallback);
 
           return new Response(
             "<!DOCTYPE html><html><head><meta http-equiv='refresh' content='0; url=/dashboard'><script>window.location.replace('/dashboard');</script></head><body></body></html>",
@@ -297,7 +352,7 @@ self.addEventListener("fetch", (event) => {
     return;
   }
 
-  // 3. Static Assets (Next.js JS bundles, CSS, Fonts, Images, Manifest) - Cache-First with Network Revalidation & Offline Fallback
+  // 3. Static Assets (Next.js JS bundles, CSS, Fonts, Images, Manifest)
   const isStaticAsset =
     url.pathname.startsWith("/_next/") ||
     url.pathname.endsWith(".js") ||
@@ -310,36 +365,35 @@ self.addEventListener("fetch", (event) => {
     url.pathname.endsWith(".woff") ||
     url.pathname.endsWith(".woff2") ||
     url.pathname.endsWith(".ttf") ||
-    url.pathname.endsWith(".webmanifest");
+    url.pathname.endsWith(".webmanifest") ||
+    url.pathname.endsWith(".json");
 
   if (isStaticAsset) {
     event.respondWith(
       caches.match(event.request).then(async (cachedResponse) => {
         if (cachedResponse) {
-          // Revalidate in background if online
           if (typeof self.navigator !== "undefined" && self.navigator.onLine) {
-            fetch(event.request)
-              .then((networkResponse) => {
+            fetch(event.request, { redirect: "follow" })
+              .then(async (networkResponse) => {
                 if (networkResponse && networkResponse.status === 200) {
                   const clone = networkResponse.clone();
-                  caches.open(CACHE_NAME).then((cache) => cache.put(event.request, clone));
+                  const cache = await caches.open(CACHE_NAME);
+                  cache.put(event.request, clone);
                 }
               })
               .catch(() => {});
           }
-          return cachedResponse;
+          return sanitizeResponse(cachedResponse);
         }
 
-        // Not in cache: Try network
         try {
-          const networkResponse = await fetch(event.request);
+          const networkResponse = await fetch(event.request, { redirect: "follow" });
           if (networkResponse && networkResponse.status === 200) {
             const clone = networkResponse.clone();
             caches.open(CACHE_NAME).then((cache) => cache.put(event.request, clone));
           }
-          return networkResponse;
-        } catch (fetchErr) {
-          // Fallback for failed JS chunk when offline: Return a valid empty JS module so React/Webpack doesn't throw fatal ChunkLoadError!
+          return sanitizeResponse(networkResponse);
+        } catch {
           if (url.pathname.endsWith(".js")) {
             return new Response("/* Offline Empty Chunk Fallback */", {
               status: 200,
@@ -361,10 +415,12 @@ self.addEventListener("fetch", (event) => {
 
   // 4. Default fallback for other non-API requests
   event.respondWith(
-    fetch(event.request).catch(async () => {
-      const cached = await caches.match(event.request, { ignoreSearch: true });
-      if (cached) return cached;
-      return new Response("", { status: 408, statusText: "Offline" });
-    })
+    fetch(event.request, { redirect: "follow" })
+      .then((res) => sanitizeResponse(res))
+      .catch(async () => {
+        const cached = await caches.match(event.request, { ignoreSearch: true });
+        if (cached) return sanitizeResponse(cached);
+        return new Response("", { status: 408, statusText: "Offline" });
+      })
   );
 });
