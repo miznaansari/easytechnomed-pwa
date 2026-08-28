@@ -2,8 +2,8 @@
 
 ## 1. Project Overview
 - **Name**: EasyTechnoMed PWA / LIMS (Laboratory Information Management System)
-- **Current Version**: `v3.0.23`
-- **Framework**: Next.js (App Router), React 19, Material-UI (MUI v7), Dexie.js (v4.4+), Prisma ORM, MySQL, pdf-lib.
+- **Current Version**: `v3.0.26`
+- **Framework**: Next.js (App Router), React 19, Material-UI (MUI v7), Dexie.js (v4.4+), Prisma ORM, MySQL, pdf-lib, qrcode.
 
 
 
@@ -33,6 +33,7 @@
 ### B. Client-Side Offline PDF & Bill Print Engine (`lib/offline/print/`)
 - **Report PDF Generation (`lib/offline/print/reportPdfGenerator.js` & `lib/offline/offlinePdfGenerator.js`)**:
   - Uses browser-compatible `pdf-lib` to generate identical pathology report PDFs locally in 0ms from IndexedDB (`db.registrations`, `db.patientResults`, `db.testParameters`, `db.workspacePdf`, `db.doctors`).
+  - Embeds 100% offline QR codes generated locally via `lib/offline/print/qrGenerator.js` pointing to public encrypted verification route `/q?v=...`.
   - Completely eliminates server-side DNS lookups (`ERR_NAME_NOT_RESOLVED`) by generating in-memory `Blob` and opening via `URL.createObjectURL(blob)`.
 - **Bill / Receipt Generation (`lib/offline/print/billHtmlGenerator.js` & `lib/offline/offlinePrint.js`)**:
   - Itemizes investigations, calculated payments, number-to-words currency, and triggers print dialogs locally without server reliance.
@@ -40,14 +41,15 @@
 
 ### C. Synchronization Engine (`lib/offline/sync/syncManager.js` & `modelRegistry.js`)
 - **Flags**:
-  - `isDirty: true` — Newly created locally, pending POST sync.
-  - `isModified: true` — Existing record edited locally, pending PUT sync.
-  - `isDirty: false, isModified: false, isError: false` (or `0`) — Synced with server.
+   - `isDirty: true` — Newly created locally, pending POST sync.
+   - `isModified: true` — Existing record edited locally, pending PUT sync.
+   - `isDirty: false, isModified: false, isError: false` (or `0`) — Synced with server.
 - **Sync Workflow**:
-  - `processPostOperations`: Pushes locally created dirty records via POST.
-  - `processPutOperations`: Pushes locally modified records via PUT (numbers are sanitized/coerced with `parseFloat`/`parseInt`).
-  - `processPendingPatientResults`: Batch upserts results to `/api/registrations/[id]/results`.
-  - `markSynced`: Clears dirty/modified flags on Dexie records after server confirmation.
+   - `processPostOperations`: Pushes locally created dirty records via POST (handles `registrations`, `registrationPayments`, `doctors`, `tests`, etc.).
+   - `processPutOperations`: Pushes locally modified records via PUT (numbers are sanitized/coerced with `parseFloat`/`parseInt`).
+   - `processPendingPatientResults`: Batch upserts results to `/api/registrations/[id]/results`.
+   - `markSynced`: Clears dirty/modified flags on Dexie records after server confirmation.
+   - `Registration ID Cascade`: When server assigns new authoritative ID to a registration, cascades ID updates to `patientResults`, `registrationTests`, and `registrationPayments` in Dexie.
 - **401 Unauthorized Interception**:
   - When sync endpoints return `401 Unauthorized`, `triggerAuthRequired()` fires `easytechnomed:auth-required`.
   - Opens `ReLoginModal.jsx`, takes password, posts to `/api/auth/login`, saves new session, and resumes sync.
