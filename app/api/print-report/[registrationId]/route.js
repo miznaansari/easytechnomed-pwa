@@ -3,6 +3,8 @@ import { prisma } from "@/lib/db";
 import { PDFDocument, rgb } from "pdf-lib";
 import { cookies } from "next/headers";
 import { verifyToken } from "@/lib/auth";
+import { generateReportToken, verifyReportToken } from "@/lib/reportSecurity";
+import { generateQrCodePngBytes } from "@/lib/offline/print/qrGenerator";
 import {
   hexToRgb,
   getFontFamilyDefinitions,
@@ -217,10 +219,12 @@ export async function GET(req, { params }) {
 
     // ── PUBLIC ACCESS SECURITY CHECKS (If not authenticated as own lab staff) ──
     if (!isStaff) {
+      const vToken = (searchParams.get("v") || searchParams.get("token") || "").trim();
+      const isTokenValid = vToken ? verifyReportToken(vToken, reg) : false;
+
       let reqOtp = (
         searchParams.get("otp") ||
         searchParams.get("otp?") ||
-        searchParams.get("token") ||
         searchParams.get("code") ||
         ""
       ).trim();
@@ -228,15 +232,15 @@ export async function GET(req, { params }) {
       if (!reqOtp) {
         for (const [key, value] of searchParams.entries()) {
           const cleanKey = key.replace(/[^a-zA-Z0-9]/g, "").toLowerCase();
-          if (cleanKey === "otp" || cleanKey === "token" || cleanKey === "code") {
+          if (cleanKey === "otp" || cleanKey === "code") {
             reqOtp = String(value).trim();
             break;
           }
         }
       }
 
-      // Check 1: Security Access Code (OTP) Verification
-      if (!reqOtp || reqOtp !== String(reg.pdfOtp).trim()) {
+      // Check 1: Security Access Code (OTP / Token) Verification
+      if (!isTokenValid && (!reqOtp || reqOtp !== String(reg.pdfOtp).trim())) {
         const isWrong = Boolean(reqOtp && reqOtp !== String(reg.pdfOtp).trim());
         const invalidOtpHtml = `
           <!DOCTYPE html>
@@ -511,13 +515,10 @@ export async function GET(req, { params }) {
     let qrImage = null;
     if (showQrCode) {
       try {
-        const qrData = `${req.nextUrl.origin}/api/print-report/${reg.regNo}?otp=${reg.pdfOtp || ""}&withFrame=true`;
-        const qrUrl = `https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=${encodeURIComponent(qrData)}`;
-        const qrRes = await fetch(qrUrl);
-        if (qrRes.ok) {
-          const qrBytes = await qrRes.arrayBuffer();
-          qrImage = await pdfDoc.embedPng(qrBytes);
-        }
+        const publicToken = generateReportToken(reg);
+        const qrData = `${req.nextUrl.origin}/q?v=${encodeURIComponent(publicToken)}`;
+        const qrBytes = await generateQrCodePngBytes(qrData, { width: 150, margin: 1 });
+        qrImage = await pdfDoc.embedPng(qrBytes);
       } catch (err) {
         console.error("Failed to fetch/embed QR code:", err);
       }

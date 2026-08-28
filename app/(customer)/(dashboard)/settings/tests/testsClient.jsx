@@ -198,7 +198,7 @@ export default function TestsClient() {
         try {
           await syncManager.bootstrapInitialData();
           cachedTests = await db.tests.filter((t) => !t.isDeleted).toArray();
-        } catch (e) {}
+        } catch (e) { }
       }
 
       let filtered = cachedTests;
@@ -342,7 +342,7 @@ export default function TestsClient() {
 
       // Background auto-sync trigger
       if (typeof navigator !== "undefined" && navigator.onLine) {
-        import("@/lib/offline/sync/syncManager").then(({ syncManager }) => syncManager.sync()).catch(() => {});
+        import("@/lib/offline/sync/syncManager").then(({ syncManager }) => syncManager.sync()).catch(() => { });
       }
     } catch (err) {
       console.error(err);
@@ -386,7 +386,7 @@ export default function TestsClient() {
 
       // Background auto-sync trigger
       if (typeof navigator !== "undefined" && navigator.onLine) {
-        import("@/lib/offline/sync/syncManager").then(({ syncManager }) => syncManager.sync()).catch(() => {});
+        import("@/lib/offline/sync/syncManager").then(({ syncManager }) => syncManager.sync()).catch(() => { });
       }
     } catch (err) {
       console.error(err);
@@ -727,7 +727,7 @@ export default function TestsClient() {
 
       // 2. Trigger background auto-sync if online
       if (typeof navigator !== "undefined" && navigator.onLine) {
-        import("@/lib/offline/sync/syncManager").then(({ syncManager }) => syncManager.sync()).catch(() => {});
+        import("@/lib/offline/sync/syncManager").then(({ syncManager }) => syncManager.sync()).catch(() => { });
       }
     } catch (err) {
       console.error(err);

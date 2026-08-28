@@ -44,6 +44,12 @@ const registrationSchema = z.object({
   receivedAmount: z.coerce.number().default(0),
   dueAmount: z.coerce.number().default(0),
   stickerCount: z.coerce.number().default(1),
+  regNo: z.string().nullable().optional(),
+  labId: z.string().nullable().optional(),
+  pdfOtp: z.string().nullable().optional(),
+  barcode: z.string().nullable().optional(),
+  date: z.string().nullable().optional(),
+  status: z.string().nullable().optional(),
   testIds: z.array(z.coerce.number()).min(1, "At least one test must be selected"),
 });
 
@@ -121,21 +127,65 @@ export async function POST(req) {
     const sampleDate = validatedData.sampleDate ? new Date(validatedData.sampleDate) : null;
 
     const result = await prisma.$transaction(async (tx) => {
-      // Atomic increment of workspace counter
-      const workspace = await tx.workspace.update({
-        where: { id: admin.workspaceId },
-        data: {
-          nextSequence: { increment: 1 }
-        },
-        select: {
-          nextSequence: true
-        }
-      });
+      let finalRegNo = validatedData.regNo;
+      let finalLabId = validatedData.labId;
+      let finalPdfOtp = validatedData.pdfOtp;
+      let finalBarcode = validatedData.barcode || barcode;
+      let finalDate = validatedData.date ? new Date(validatedData.date) : new Date();
 
-      const currentSeq = workspace.nextSequence - 1;
-      const labId = String(currentSeq).padStart(3, '0');
-      const randomPart = generateRandomSuffix(4);
-      const regNo = `ETM-${randomPart}-${String(currentSeq).padStart(5, '0')}`;
+      // If client provided an existing regNo, check for idempotency / re-sync
+      if (finalRegNo) {
+        const existing = await tx.registration.findFirst({
+          where: { regNo: finalRegNo, isDeleted: false },
+          include: {
+            refBy: true,
+            tests: { include: { test: true } },
+            results: true,
+            payments: true,
+          },
+        });
+        if (existing) {
+          return existing;
+        }
+      }
+
+      // If regNo & labId were provided by offline registration:
+      if (finalRegNo && finalLabId) {
+        const numPart = parseInt(finalLabId);
+        if (!isNaN(numPart) && numPart > 0) {
+          const ws = await tx.workspace.findUnique({
+            where: { id: admin.workspaceId },
+            select: { nextSequence: true },
+          });
+          if (ws && numPart >= ws.nextSequence) {
+            await tx.workspace.update({
+              where: { id: admin.workspaceId },
+              data: { nextSequence: numPart + 1 },
+            });
+          }
+        }
+      } else {
+        // Auto-generate if not provided by client
+        const workspace = await tx.workspace.update({
+          where: { id: admin.workspaceId },
+          data: {
+            nextSequence: { increment: 1 }
+          },
+          select: {
+            nextSequence: true
+          }
+        });
+
+        const currentSeq = workspace.nextSequence - 1;
+        finalLabId = String(currentSeq).padStart(3, '0');
+        const randomPart = generateRandomSuffix(4);
+        finalRegNo = `ETM-${randomPart}-${String(currentSeq).padStart(5, '0')}`;
+        finalPdfOtp = Math.floor(100000 + Math.random() * 900000).toString();
+      }
+
+      if (!finalPdfOtp) {
+        finalPdfOtp = Math.floor(100000 + Math.random() * 900000).toString();
+      }
 
       let refByIncentive = 0.00;
       let secondRefIncentive = 0.00;
@@ -160,8 +210,9 @@ export async function POST(req) {
         data: {
           billOn: validatedData.billOn,
           mobileNo: validatedData.mobileNo,
-          labId,
-          regNo,
+          labId: finalLabId,
+          regNo: finalRegNo,
+          date: finalDate,
           title: validatedData.title,
           name: validatedData.name,
           city: validatedData.city,
@@ -187,9 +238,9 @@ export async function POST(req) {
           receivedAmount: validatedData.receivedAmount,
           dueAmount: validatedData.dueAmount,
           stickerCount: validatedData.stickerCount,
-          barcode,
-          pdfOtp: Math.floor(100000 + Math.random() * 900000).toString(),
-          status: validatedData.dueAmount > 0 ? "Pending" : "Completed",
+          barcode: finalBarcode,
+          pdfOtp: finalPdfOtp,
+          status: validatedData.status || (validatedData.dueAmount > 0 ? "Pending" : "Completed"),
           workspaceId: admin.workspaceId,
           adminId: admin.id,
         },

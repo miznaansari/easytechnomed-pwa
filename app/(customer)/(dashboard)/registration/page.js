@@ -48,6 +48,8 @@ import { useAdminPermissions } from "@/lib/clientAuth";
 import { City, State } from "country-state-city";
 import db from "@/lib/offline/db";
 import { useSync } from "@/hooks/useSync";
+import { generateNextRegistrationIdentity } from "@/lib/offline/registrationIdentity";
+import { generateReportToken } from "@/lib/reportSecurity";
 
 const filter = createFilterOptions({
   limit: 100,
@@ -585,7 +587,9 @@ export default function RegistrationPage() {
     if (cleanMobile.length < 10) return null;
     const phone = cleanMobile.length === 10 ? `91${cleanMobile}` : cleanMobile;
 
-    const reportUrl = `${window.location.origin}/api/print-report/${reg.regNo}?otp=${reg.pdfOtp || ""}&withFrame=true`;
+    const publicToken = generateReportToken(reg);
+    const origin = typeof window !== "undefined" ? window.location.origin : (process.env.NEXT_PUBLIC_APP_URL || "");
+    const reportUrl = publicToken ? `${origin}/q?v=${encodeURIComponent(publicToken)}` : `${origin}/api/print-report/${reg.regNo}?otp=${reg.pdfOtp || ""}&withFrame=true`;
     const patientTitle = reg.title ? `${reg.title} ` : "";
     const totalAmt = parseFloat(reg.totalAmount || 0).toFixed(2);
     const dueAmt = parseFloat(reg.dueAmount || 0).toFixed(2);
@@ -664,14 +668,39 @@ _Thank you for choosing us for your health diagnostics!_`;
         })),
       };
 
-      const localSeq = Date.now().toString().slice(-4);
-      const labId = `OFFL-${localSeq}`;
-      const regNo = `ETM-OFFL-${Date.now().toString().slice(-6)}`;
+      let labId, regNo, pdfOtp, barcode;
+      let existingRecord = null;
+
+      if (editId) {
+        existingRecord = await db.registrations.get(parseInt(editId));
+        labId = existingRecord?.labId;
+        regNo = existingRecord?.regNo;
+        pdfOtp = existingRecord?.pdfOtp;
+        barcode = existingRecord?.barcode;
+      }
+
+      const cachedAdmin = await db.admins.toArray();
+      const cachedSession = await db.offlineSession.get(1);
+      const wsId = cachedAdmin?.[0]?.workspaceId || cachedSession?.admin?.workspaceId || 1;
+      const adminId = cachedAdmin?.[0]?.id || cachedSession?.admin?.id || null;
+
+      if (!regNo || !labId) {
+        const identity = await generateNextRegistrationIdentity(wsId);
+        labId = identity.labId;
+        regNo = identity.regNo;
+        pdfOtp = identity.pdfOtp;
+        barcode = identity.barcode;
+      }
+
       const localRecord = {
         ...payload,
         labId,
         regNo,
-        date: new Date().toISOString(),
+        pdfOtp: pdfOtp || Math.floor(100000 + Math.random() * 900000).toString(),
+        barcode,
+        workspaceId: wsId,
+        adminId: adminId,
+        date: editId && existingRecord?.date ? existingRecord.date : new Date().toISOString(),
         status: payload.dueAmount > 0 ? "Pending" : "Completed",
       };
 

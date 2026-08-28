@@ -2,6 +2,8 @@ import { NextResponse } from "next/server";
 import { cookies } from "next/headers";
 import { prisma } from "@/lib/db";
 import { verifyToken } from "@/lib/auth";
+import { generateReportToken, verifyReportToken } from "@/lib/reportSecurity";
+import { generateQrCodeDataUrl } from "@/lib/offline/print/qrGenerator";
 
 const formatDate = (dateStr) => {
   if (!dateStr) return "-";
@@ -173,10 +175,12 @@ export async function GET(req, { params }) {
     // ── PUBLIC ACCESS SECURITY CHECKS (If not authenticated as own lab staff) ──
     if (!isStaff) {
       const searchParams = req.nextUrl?.searchParams || new URL(req.url).searchParams;
+      const vToken = (searchParams.get("v") || searchParams.get("token") || "").trim();
+      const isTokenValid = vToken ? verifyReportToken(vToken, reg) : false;
+
       let reqOtp = (
         searchParams.get("otp") ||
         searchParams.get("otp?") ||
-        searchParams.get("token") ||
         searchParams.get("code") ||
         ""
       ).trim();
@@ -184,15 +188,15 @@ export async function GET(req, { params }) {
       if (!reqOtp) {
         for (const [key, value] of searchParams.entries()) {
           const cleanKey = key.replace(/[^a-zA-Z0-9]/g, "").toLowerCase();
-          if (cleanKey === "otp" || cleanKey === "token" || cleanKey === "code") {
+          if (cleanKey === "otp" || cleanKey === "code") {
             reqOtp = String(value).trim();
             break;
           }
         }
       }
 
-      // Security Access Code (OTP) Verification
-      if (!reqOtp || reqOtp !== String(reg.pdfOtp).trim()) {
+      // Check 1: Security Access Code (OTP / Token) Verification
+      if (!isTokenValid && (!reqOtp || reqOtp !== String(reg.pdfOtp).trim())) {
         const isWrong = Boolean(reqOtp && reqOtp !== String(reg.pdfOtp).trim());
         const invalidOtpHtml = `
           <!DOCTYPE html>
@@ -298,12 +302,13 @@ export async function GET(req, { params }) {
     const currentDateStr = new Date().toLocaleString("en-IN", { dateStyle: "short", timeStyle: "short" });
     const regDateStr = formatDate(reg.date);
 
-    // QR Codes with regNo and pdfOtp
-    const qrReportData = `${req.nextUrl.origin}/api/print-report/${reg.regNo}?otp=${reg.pdfOtp}&withFrame=true`;
-    const qrReportUrl = `https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=${encodeURIComponent(qrReportData)}`;
+    // QR Codes with public encrypted token via /q
+    const publicToken = generateReportToken(reg);
+    const qrReportData = `${req.nextUrl.origin}/q?v=${encodeURIComponent(publicToken)}`;
+    const qrReportUrl = await generateQrCodeDataUrl(qrReportData, { width: 150, margin: 1 });
 
-    const qrPaymentData = `${req.nextUrl.origin}/api/print-bill/${reg.regNo}?otp=${reg.pdfOtp}`;
-    const qrPaymentUrl = `https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=${encodeURIComponent(qrPaymentData)}`;
+    const qrPaymentData = `${req.nextUrl.origin}/q?v=${encodeURIComponent(publicToken)}&type=bill`;
+    const qrPaymentUrl = await generateQrCodeDataUrl(qrPaymentData, { width: 150, margin: 1 });
 
     const receivedAmt = parseFloat(reg.receivedAmount || 0);
     const receivedWords = numberToWords(receivedAmt);
