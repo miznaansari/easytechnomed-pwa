@@ -97,11 +97,18 @@ export default function PWARegister() {
         });
       };
 
-      window.addEventListener("load", () => {
+      const registerSW = () => {
         navigator.serviceWorker
-          .register("/sw.js")
+          .register("/sw.js", { scope: "/" })
           .then((registration) => {
-            console.log("Service Worker registered successfully:", registration.scope);
+            console.log("[PWA] Service Worker registered successfully with scope:", registration.scope);
+
+            // Request persistent storage for iOS & Android
+            if (navigator.storage && navigator.storage.persist) {
+              navigator.storage.persist().then((persistent) => {
+                console.log("[PWA] Persistent storage granted:", persistent);
+              }).catch(() => {});
+            }
 
             // Listen for service worker installation updates
             registration.addEventListener("updatefound", () => {
@@ -116,9 +123,15 @@ export default function PWARegister() {
             });
           })
           .catch((error) => {
-            console.error("Service Worker registration failed:", error);
+            console.error("[PWA] Service Worker registration failed:", error);
           });
-      });
+      };
+
+      if (document.readyState === "complete" || document.readyState === "interactive") {
+        registerSW();
+      } else {
+        window.addEventListener("load", registerSW);
+      }
 
       // Listen for controllerchange when the new service worker takes over control
       let refreshing = false;
