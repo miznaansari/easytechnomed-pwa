@@ -142,7 +142,7 @@ export default function CustomerRegisterPage() {
                       type="text"
                       placeholder="John Doe"
                       error={errors.name?.message}
-                      className="bg-white/80 pl-11 pr-4 border-l-4 border-l-teal-600 border-t-slate-200 border-r-slate-200 border-b-slate-200 text-slate-800 placeholder-slate-400 focus:border-teal-500 focus:ring-4 focus:ring-teal-500/5 rounded-r-xl rounded-l-none transition-all duration-300 py-2 shadow-sm font-medium"
+                      className="bg-white/80 pl-11 pr-4 border-l-4 border-l-teal-600 border-t-slate-200 border-r-slate-200 border-b-slate-200 text-slate-800 placeholder-slate-400 focus:border-teal-500 focus:ring-4 focus:ring-teal-500/5 rounded-r-xl rounded-l-none transition-all duration-300 py-2 shadow-sm font-medium text-sm"
                       {...register("name")}
                     />
                   </div>
@@ -158,7 +158,7 @@ export default function CustomerRegisterPage() {
                       type="email"
                       placeholder="name@workspace.com"
                       error={errors.email?.message}
-                      className="bg-white/80 pl-11 pr-4 border-l-4 border-l-teal-600 border-t-slate-200 border-r-slate-200 border-b-slate-200 text-slate-800 placeholder-slate-400 focus:border-teal-500 focus:ring-4 focus:ring-teal-500/5 rounded-r-xl rounded-l-none transition-all duration-300 py-2 shadow-sm font-medium"
+                      className="bg-white/80 pl-11 pr-4 border-l-4 border-l-teal-600 border-t-slate-200 border-r-slate-200 border-b-slate-200 text-slate-800 placeholder-slate-400 focus:border-teal-500 focus:ring-4 focus:ring-teal-500/5 rounded-r-xl rounded-l-none transition-all duration-300 py-2 shadow-sm font-medium text-sm"
                       {...register("email")}
                     />
                   </div>
@@ -174,7 +174,7 @@ export default function CustomerRegisterPage() {
                       type="password"
                       placeholder="••••••••"
                       error={errors.password?.message}
-                      className="bg-white/80 pl-11 pr-4 border-l-4 border-l-teal-600 border-t-slate-200 border-r-slate-200 border-b-slate-200 text-slate-800 placeholder-slate-400 focus:border-teal-500 focus:ring-4 focus:ring-teal-500/5 rounded-r-xl rounded-l-none transition-all duration-300 py-2 shadow-sm font-medium"
+                      className="bg-white/80 pl-11 pr-4 border-l-4 border-l-teal-600 border-t-slate-200 border-r-slate-200 border-b-slate-200 text-slate-800 placeholder-slate-400 focus:border-teal-500 focus:ring-4 focus:ring-teal-500/5 rounded-r-xl rounded-l-none transition-all duration-300 py-2 shadow-sm font-medium text-sm"
                       {...register("password")}
                     />
                   </div>
@@ -190,7 +190,7 @@ export default function CustomerRegisterPage() {
                       type="password"
                       placeholder="••••••••"
                       error={errors.confirmPassword?.message}
-                      className="bg-white/80 pl-11 pr-4 border-l-4 border-l-teal-600 border-t-slate-200 border-r-slate-200 border-b-slate-200 text-slate-800 placeholder-slate-400 focus:border-teal-500 focus:ring-4 focus:ring-teal-500/5 rounded-r-xl rounded-l-none transition-all duration-300 py-2 shadow-sm font-medium"
+                      className="bg-white/80 pl-11 pr-4 border-l-4 border-l-teal-600 border-t-slate-200 border-r-slate-200 border-b-slate-200 text-slate-800 placeholder-slate-400 focus:border-teal-500 focus:ring-4 focus:ring-teal-500/5 rounded-r-xl rounded-l-none transition-all duration-300 py-2 shadow-sm font-medium text-sm"
                       {...register("confirmPassword")}
                     />
                   </div>

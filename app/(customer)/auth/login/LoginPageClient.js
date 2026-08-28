@@ -183,7 +183,7 @@ export default function CustomerLoginPage() {
                       type="text"
                       placeholder="name@workspace.com or 9876543210"
                       error={errors.identifier?.message}
-                      className="bg-white/80 pl-11 pr-4 border-l-4 border-l-teal-600 border-t-slate-200 border-r-slate-200 border-b-slate-200 text-slate-800 placeholder-slate-400 focus:border-teal-500 focus:ring-4 focus:ring-teal-500/5 rounded-r-xl rounded-l-none transition-all duration-300 py-3 shadow-sm font-medium"
+                      className="bg-white/80 pl-11 pr-4 border-l-4 border-l-teal-600 border-t-slate-200 border-r-slate-200 border-b-slate-200 text-slate-800 placeholder-slate-400 focus:border-teal-500 focus:ring-4 focus:ring-teal-500/5 rounded-r-xl rounded-l-none transition-all duration-300 py-3 shadow-sm font-medium text-sm"
                       {...register("identifier", {
                         onChange: (e) => setIdentifierValue(e.target.value),
                       })}
@@ -203,7 +203,7 @@ export default function CustomerLoginPage() {
                       type="password"
                       placeholder="••••••••"
                       error={errors.password?.message}
-                      className="bg-white/80 pl-11 pr-4 border-l-4 border-l-teal-600 border-t-slate-200 border-r-slate-200 border-b-slate-200 text-slate-800 placeholder-slate-400 focus:border-teal-500 focus:ring-4 focus:ring-teal-500/5 rounded-r-xl rounded-l-none transition-all duration-300 py-3 shadow-sm font-medium"
+                      className="bg-white/80 pl-11 pr-4 border-l-4 border-l-teal-600 border-t-slate-200 border-r-slate-200 border-b-slate-200 text-slate-800 placeholder-slate-400 focus:border-teal-500 focus:ring-4 focus:ring-teal-500/5 rounded-r-xl rounded-l-none transition-all duration-300 py-3 shadow-sm font-medium text-sm"
                       {...register("password")}
                     />
                   </div>

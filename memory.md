@@ -2,7 +2,7 @@
 
 ## 1. Project Overview
 - **Name**: EasyTechnoMed PWA / LIMS (Laboratory Information Management System)
-- **Current Version**: `v3.0.17`
+- **Current Version**: `v3.0.18`
 - **Framework**: Next.js (App Router), React 19, Material-UI (MUI v7), Dexie.js (v4.4+), Prisma ORM, MySQL, pdf-lib.
 
 
@@ -104,6 +104,7 @@
 
 | Version | Date | Key Changes & Milestones |
 | :--- | :--- | :--- |
+| `v3.0.18` | 2026-08-28 | Enforced `text-sm` and anti-zoom viewport settings across `LoginPageClient.js`, `RegisterPageClient.js`, and `Input.js` to eliminate unexpected mobile zoom on field focus. |
 | `v3.0.17` | 2026-08-28 | 100% Ditto copy offline PDF generator in `reportPdfGenerator.js` matching `/api/print-report` feature-by-feature; Full support for `framePdfBase64`/`framePdfBytes`, CBC sorting, hierarchical parent-child test parameters, dynamic column widths, and markdown summary remarks. |
 | `v3.0.16` | 2026-08-28 | Fixed `handleExecutePrint` async definition in `test-report/page.js`; Integrated `framePdfBase64` & `framePdfBytes` letterhead templates in `reportPdfGenerator.js`. |
 | `v3.0.15` | 2026-08-28 | Implemented 100% Client-Side Offline PDF Report & Money Receipt Print Engine (`pdf-lib` + IndexedDB); Fixed `ERR_NAME_NOT_RESOLVED` on print actions when offline; Integrated seamless offline PDF generation in `test-report`, `showResult`, `showResultMobile`, `MoneyRecipt`, and `doctor-summary`. |
