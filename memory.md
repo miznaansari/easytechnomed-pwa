@@ -2,7 +2,7 @@
 
 ## 1. Project Overview
 - **Name**: EasyTechnoMed PWA / LIMS (Laboratory Information Management System)
-- **Current Version**: `v3.1.18`
+- **Current Version**: `v3.1.21`
 - **Framework**: Next.js (App Router), React 19, Material-UI (MUI v7), Dexie.js (v4.4+), Prisma ORM, MySQL, pdf-lib, qrcode.
 
 
@@ -106,6 +106,7 @@
 
 | Version | Date | Key Changes & Milestones |
 | :--- | :--- | :--- |
+| `v3.1.21` | 2026-08-30 | Customer Auth Modernization & Forgot Password Integration: Upgraded `app/(customer)/auth` to the latest UI from `pathlab`; Integrated modal-based Forgot Password flow in `LoginPageClient.js` connected to `/api/auth/forgot-password`; Added dedicated secure password reset page `/auth/reset-password` (`ResetPasswordClient.js`) and API `/api/auth/reset-password`; Updated `RegisterPageClient.js` with modern MUI inputs and 5-day trial header; Configured EasyTechnoMed branded reset emails in `lib/mail.js` while maintaining offline-first session caching and sync bootstrap. |
 | `v3.1.18` | 2026-08-30 | Fixed Bill PDF Bottom Layout & Vector Barcode: Replaced the fixed grey box with true Code 39 vector barcode lines drawn in `billPdfGenerator.js`; Fixed text clipping on registration number; Perfectly centered QR code captions and balanced the Authorized Signatory section across the footer. |
 | `v3.1.17` | 2026-08-30 | Native PDF Format for Money Receipt & Bill Print: Built `generateOfflineBillPdf()` with `pdf-lib` in `lib/offline/print/billPdfGenerator.js`; Bills and Money Receipts now generate and open as genuine `application/pdf` binary documents in the browser's built-in PDF viewer with zoom, download, and print controls matching the medical test report PDF experience. |
 | `v3.1.16` | 2026-08-30 | 1:1 Offline Money Receipt & Bill Print Engine: Fully replicated the official `/api/print-bill/[registrationId]` HTML/CSS print template into client-side `lib/offline/print/billHtmlGenerator.js`; Includes exact laboratory header branding, patient info grid, investigations table, financial calculations, barcode (`Libre Barcode 39`), report & payment QR codes (`/q?v=...`), and authorized signatory; Integrated `openOfflineBillPrint()` into `MoneyRecipt.jsx` for instant 0ms offline receipt printing. |
