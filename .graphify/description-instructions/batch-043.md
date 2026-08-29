@@ -17,6 +17,10 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "runtime_library_getoutputtypedescription": "getOutputTypeDescription()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L29 | neighbors=[library.js, rd()]
+- "runtime_library_getprintwidth": "getPrintWidth()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L27 | neighbors=[library.js, values()]
+- "runtime_library_gl": "Gl()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L126 | neighbors=[library.js, r()]
+- "runtime_library_gm": "gm()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L111 | neighbors=[library.js, logger()]
 - "runtime_library_handleerror": "handleError()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L111 | neighbors=[library.js, uploadSchema()]
 - "runtime_library_hi": "hi()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L18 | neighbors=[library.js, kd()]
 - "runtime_library_hl": "hl()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L113 | neighbors=[library.js, Yt()]
@@ -53,10 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "runtime_library_prometheus": "prometheus()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L29 | neighbors=[library.js, metrics()]
 - "runtime_library_qc": "qc()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L21 | neighbors=[library.js, ln()]
 - "runtime_library_qn": "Qn()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L4 | neighbors=[library.js, instantiateLibrary()]
-- "runtime_library_qo": "Qo()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L1 | neighbors=[library.js, ri()]
-- "runtime_library_qs": "qs()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L26 | neighbors=[library.js, or()]
-- "runtime_library_qt": "qt()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L110 | neighbors=[library.js, or()]
-- "runtime_library_removefield": "removeField()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L27 | neighbors=[library.js, qp()]
 
 ## Instructions
 

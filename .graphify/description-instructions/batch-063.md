@@ -17,6 +17,10 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "generated_client_index_d_admintrackingupdatewithwhereuniquewithoutadmininput": "AdminTrackingUpdateWithWhereUniqueWithoutAdminInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L47200 | neighbors=[index.d.ts]
+- "generated_client_index_d_admintrackingupsertargs": "AdminTrackingUpsertArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L27722 | neighbors=[index.d.ts]
+- "generated_client_index_d_admintrackingupsertwithwhereuniquewithoutadmininput": "AdminTrackingUpsertWithWhereUniqueWithoutAdminInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L47194 | neighbors=[index.d.ts]
+- "generated_client_index_d_admintrackingwhereinput": "AdminTrackingWhereInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L36664 | neighbors=[index.d.ts]
 - "generated_client_index_d_admintrackingwhereuniqueinput": "AdminTrackingWhereUniqueInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L36693 | neighbors=[index.d.ts]
 - "generated_client_index_d_adminuncheckedcreateinput": "AdminUncheckedCreateInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L37859 | neighbors=[index.d.ts]
 - "generated_client_index_d_adminuncheckedcreatenestedmanywithoutroleinput": "AdminUncheckedCreateNestedManyWithoutRoleInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L43681 | neighbors=[index.d.ts]
@@ -53,10 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "generated_client_index_d_adminupdateonewithouttrackingsnestedinput": "AdminUpdateOneWithoutTrackingsNestedInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L44647 | neighbors=[index.d.ts]
 - "generated_client_index_d_adminupdatetoonewithwherewithoutaddressinput": "AdminUpdateToOneWithWhereWithoutAddressInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L50267 | neighbors=[index.d.ts]
 - "generated_client_index_d_adminupdatetoonewithwherewithoutregistrationsinput": "AdminUpdateToOneWithWhereWithoutRegistrationsInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L48773 | neighbors=[index.d.ts]
-- "generated_client_index_d_adminupdatetoonewithwherewithoutsessionsinput": "AdminUpdateToOneWithWhereWithoutSessionsInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L47311 | neighbors=[index.d.ts]
-- "generated_client_index_d_adminupdatetoonewithwherewithouttrackingsinput": "AdminUpdateToOneWithWhereWithoutTrackingsInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L50595 | neighbors=[index.d.ts]
-- "generated_client_index_d_adminupdatewithoutaddressinput": "AdminUpdateWithoutAddressInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L50272 | neighbors=[index.d.ts]
-- "generated_client_index_d_adminupdatewithoutregistrationsinput": "AdminUpdateWithoutRegistrationsInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L48778 | neighbors=[index.d.ts]
 
 ## Instructions
 

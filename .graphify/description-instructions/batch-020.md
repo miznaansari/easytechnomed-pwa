@@ -17,6 +17,7 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "runtime_index_browser_ke": "ke()" | kind=code-symbol | source=scratch/generated-client/runtime/index-browser.js:L1 | neighbors=[index-browser.js, F(), ie(), Ve()]
 - "runtime_index_browser_l": "L()" | kind=code-symbol | source=scratch/generated-client/runtime/index-browser.js:L1 | neighbors=[index-browser.js, e(), p(), mn()]
 - "runtime_index_browser_on": "on()" | kind=code-symbol | source=scratch/generated-client/runtime/index-browser.js:L1 | neighbors=[index-browser.js, ie(), p(), ue()]
 - "runtime_index_browser_se": "se()" | kind=code-symbol | source=scratch/generated-client/runtime/index-browser.js:L1 | neighbors=[index-browser.js, B(), e(), p()]
@@ -56,7 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "runtime_library_nn": "nn()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L21 | neighbors=[library.js, He(), e(), y()]
 - "runtime_library_np": "np()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L21 | neighbors=[library.js, addErrorMessage(), Hs(), markAsError()]
 - "runtime_library_ns": "ns()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L18 | neighbors=[library.js, ac(), rs(), zt()]
-- "runtime_library_oc": "oc()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L3 | neighbors=[library.js, ci(), forEach(), ic()]
 
 ## Instructions
 

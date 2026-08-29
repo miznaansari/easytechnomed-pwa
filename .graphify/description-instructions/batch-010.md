@@ -17,6 +17,7 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "runtime_library_mo": "Mo()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L5 | neighbors=[library.js, ju(), Lo(), Vu(), nt(), Yn()]
 - "runtime_library_nestselection": "nestSelection()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L29 | neighbors=[library.js, id(), nd(), e(), findField(), rd()]
 - "runtime_library_oa": "Oa()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L31 | neighbors=[library.js, Gd(), getAllComputedFields(), Se(), Ud(), values()]
 - "runtime_library_otherwise": "otherwise()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L4 | neighbors=[library.js, Fu(), Mu(), t(), ui(), Vu()]
@@ -56,7 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "runtime_wasm_getdeepfield": "getDeepField()" | kind=code-symbol | source=scratch/generated-client/runtime/wasm.js:L3 | neighbors=[wasm.js, Bs(), getField(), getDeepFieldValue(), nl(), qs()]
 - "runtime_wasm_getdeepselectionparent": "getDeepSelectionParent()" | kind=code-symbol | source=scratch/generated-client/runtime/wasm.js:L3 | neighbors=[wasm.js, ds(), fs(), getFieldValue(), getSelectionParent(), Is()]
 - "runtime_wasm_getglobaltracinghelper": "getGlobalTracingHelper()" | kind=code-symbol | source=scratch/generated-client/runtime/wasm.js:L21 | neighbors=[wasm.js, createEngineSpan(), getActiveContext(), getTraceParent(), isEnabled(), runInChildSpan()]
-- "runtime_wasm_getorcreate": "getOrCreate()" | kind=code-symbol | source=scratch/generated-client/runtime/wasm.js:L5 | neighbors=[wasm.js, getAllComputedFields(), getAllModelExtensions(), getAllQueryCallbacks(), get(), r()]
 
 ## Instructions
 

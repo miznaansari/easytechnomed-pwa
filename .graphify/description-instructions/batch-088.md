@@ -17,6 +17,10 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "generated_client_index_d_registrationpaymentfinduniqueorthrowargs": "RegistrationPaymentFindUniqueOrThrowArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L25625 | neighbors=[index.d.ts]
+- "generated_client_index_d_registrationpaymentgetpayload": "RegistrationPaymentGetPayload" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L25226 | neighbors=[index.d.ts]
+- "generated_client_index_d_registrationpaymentgroupbyargs": "RegistrationPaymentGroupByArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L25136 | neighbors=[index.d.ts]
+- "generated_client_index_d_registrationpaymentgroupbyoutputtype": "RegistrationPaymentGroupByOutputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L25150 | neighbors=[index.d.ts]
 - "generated_client_index_d_registrationpaymentinclude": "RegistrationPaymentInclude" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L25204 | neighbors=[index.d.ts]
 - "generated_client_index_d_registrationpaymentlistrelationfilter": "RegistrationPaymentListRelationFilter" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L41517 | neighbors=[index.d.ts]
 - "generated_client_index_d_registrationpaymentmaxaggregateinputtype": "RegistrationPaymentMaxAggregateInputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L25041 | neighbors=[index.d.ts]
@@ -53,10 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "generated_client_index_d_registrationpaymentupdatemanywithwherewithoutregistrationinput": "RegistrationPaymentUpdateManyWithWhereWithoutRegistrationInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L48848 | neighbors=[index.d.ts]
 - "generated_client_index_d_registrationpaymentupdatewithoutregistrationinput": "RegistrationPaymentUpdateWithoutRegistrationInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L53875 | neighbors=[index.d.ts]
 - "generated_client_index_d_registrationpaymentupdatewithwhereuniquewithoutregistrationinput": "RegistrationPaymentUpdateWithWhereUniqueWithoutRegistrationInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L48843 | neighbors=[index.d.ts]
-- "generated_client_index_d_registrationpaymentupsertargs": "RegistrationPaymentUpsertArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L25847 | neighbors=[index.d.ts]
-- "generated_client_index_d_registrationpaymentupsertwithwhereuniquewithoutregistrationinput": "RegistrationPaymentUpsertWithWhereUniqueWithoutRegistrationInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L48837 | neighbors=[index.d.ts]
-- "generated_client_index_d_registrationpaymentwhereinput": "RegistrationPaymentWhereInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L36518 | neighbors=[index.d.ts]
-- "generated_client_index_d_registrationpaymentwhereuniqueinput": "RegistrationPaymentWhereUniqueInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L36545 | neighbors=[index.d.ts]
 
 ## Instructions
 

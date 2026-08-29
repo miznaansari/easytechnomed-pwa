@@ -17,6 +17,10 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "generated_client_index_d_leadcontactdeleteargs": "LeadContactDeleteArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L26791 | neighbors=[index.d.ts]
+- "generated_client_index_d_leadcontactdeletemanyargs": "LeadContactDeleteManyArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L26805 | neighbors=[index.d.ts]
+- "generated_client_index_d_leadcontactfieldrefs": "LeadContactFieldRefs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L26540 | neighbors=[index.d.ts]
+- "generated_client_index_d_leadcontactfindfirstargs": "LeadContactFindFirstArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L26585 | neighbors=[index.d.ts]
 - "generated_client_index_d_leadcontactfindfirstorthrowargs": "LeadContactFindFirstOrThrowArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L26629 | neighbors=[index.d.ts]
 - "generated_client_index_d_leadcontactfindmanyargs": "LeadContactFindManyArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L26673 | neighbors=[index.d.ts]
 - "generated_client_index_d_leadcontactfinduniqueargs": "LeadContactFindUniqueArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L26557 | neighbors=[index.d.ts]
@@ -53,10 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "generated_client_index_d_leadcountaggregateinputtype": "LeadCountAggregateInputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L23167 | neighbors=[index.d.ts]
 - "generated_client_index_d_leadcountaggregateoutputtype": "LeadCountAggregateOutputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L23136 | neighbors=[index.d.ts]
 - "generated_client_index_d_leadcountargs": "LeadCountArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L23317 | neighbors=[index.d.ts]
-- "generated_client_index_d_leadcountorderbyaggregateinput": "LeadCountOrderByAggregateInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L42140 | neighbors=[index.d.ts]
-- "generated_client_index_d_leadcreateargs": "LeadCreateArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L23846 | neighbors=[index.d.ts]
-- "generated_client_index_d_leadcreateinput": "LeadCreateInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L39400 | neighbors=[index.d.ts]
-- "generated_client_index_d_leadcreatemanyargs": "LeadCreateManyArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L23860 | neighbors=[index.d.ts]
 
 ## Instructions
 

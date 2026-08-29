@@ -17,6 +17,10 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "generated_client_index_d_adminfinduniqueorthrowargs": "AdminFindUniqueOrThrowArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L11540 | neighbors=[index.d.ts]
+- "generated_client_index_d_admingetpayload": "AdminGetPayload" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L11120 | neighbors=[index.d.ts]
+- "generated_client_index_d_admingroupbyargs": "AdminGroupByArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L10949 | neighbors=[index.d.ts]
+- "generated_client_index_d_admingroupbyoutputtype": "AdminGroupByOutputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L10963 | neighbors=[index.d.ts]
 - "generated_client_index_d_admininclude": "AdminInclude" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L11071 | neighbors=[index.d.ts]
 - "generated_client_index_d_adminlistrelationfilter": "AdminListRelationFilter" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L40419 | neighbors=[index.d.ts]
 - "generated_client_index_d_adminmaxaggregateinputtype": "AdminMaxAggregateInputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L10822 | neighbors=[index.d.ts]
@@ -53,10 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "generated_client_index_d_adminrolecreateinput": "AdminRoleCreateInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L38095 | neighbors=[index.d.ts]
 - "generated_client_index_d_adminrolecreatemanyargs": "AdminRoleCreateManyArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L13652 | neighbors=[index.d.ts]
 - "generated_client_index_d_adminrolecreatemanyinput": "AdminRoleCreateManyInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L38129 | neighbors=[index.d.ts]
-- "generated_client_index_d_adminrolecreatenestedonewithoutadminsinput": "AdminRoleCreateNestedOneWithoutAdminsInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L43465 | neighbors=[index.d.ts]
-- "generated_client_index_d_adminrolecreatenestedonewithoutpermissionsinput": "AdminRoleCreateNestedOneWithoutPermissionsInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L43751 | neighbors=[index.d.ts]
-- "generated_client_index_d_adminrolecreateorconnectwithoutadminsinput": "AdminRoleCreateOrConnectWithoutAdminsInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L46809 | neighbors=[index.d.ts]
-- "generated_client_index_d_adminrolecreateorconnectwithoutpermissionsinput": "AdminRoleCreateOrConnectWithoutPermissionsInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L47519 | neighbors=[index.d.ts]
 
 ## Instructions
 

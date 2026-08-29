@@ -17,6 +17,10 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "generated_client_index_d_doctor_incentivehistoryargs": "Doctor$incentiveHistoryArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L15766 | neighbors=[index.d.ts]
+- "generated_client_index_d_doctor_registrationsargs": "Doctor$registrationsArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L15726 | neighbors=[index.d.ts]
+- "generated_client_index_d_doctor_secondregistrationsargs": "Doctor$secondRegistrationsArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L15746 | neighbors=[index.d.ts]
+- "generated_client_index_d_doctor_workspaceargs": "Doctor$workspaceArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L15711 | neighbors=[index.d.ts]
 - "generated_client_index_d_doctoraggregateargs": "DoctorAggregateArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L14835 | neighbors=[index.d.ts]
 - "generated_client_index_d_doctorargs": "DoctorArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L54362 | neighbors=[index.d.ts]
 - "generated_client_index_d_doctoravgaggregateinputtype": "DoctorAvgAggregateInputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L14774 | neighbors=[index.d.ts]
@@ -53,10 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "generated_client_index_d_doctorcreatewithoutworkspaceinput": "DoctorCreateWithoutWorkspaceInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L45187 | neighbors=[index.d.ts]
 - "generated_client_index_d_doctordefaultargs": "DoctorDefaultArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L15786 | neighbors=[index.d.ts]
 - "generated_client_index_d_doctordelegate": "DoctorDelegate" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L15035 | neighbors=[index.d.ts]
-- "generated_client_index_d_doctordeleteargs": "DoctorDeleteArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L15683 | neighbors=[index.d.ts]
-- "generated_client_index_d_doctordeletemanyargs": "DoctorDeleteManyArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L15701 | neighbors=[index.d.ts]
-- "generated_client_index_d_doctorfieldrefs": "DoctorFieldRefs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L15396 | neighbors=[index.d.ts]
-- "generated_client_index_d_doctorfindfirstargs": "DoctorFindFirstArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L15453 | neighbors=[index.d.ts]
 
 ## Instructions
 

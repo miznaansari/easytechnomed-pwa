@@ -17,6 +17,10 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "runtime_wasm_swap32": "swap32()" | kind=code-symbol | source=scratch/generated-client/runtime/wasm.js:L1 | neighbors=[wasm.js]
+- "runtime_wasm_swap64": "swap64()" | kind=code-symbol | source=scratch/generated-client/runtime/wasm.js:L1 | neighbors=[wasm.js]
+- "runtime_wasm_symbol_tostringtag": "[Symbol.toStringTag]()" | kind=code-symbol | source=scratch/generated-client/runtime/wasm.js:L1 | neighbors=[wasm.js]
+- "runtime_wasm_ta": "Ta()" | kind=code-symbol | source=scratch/generated-client/runtime/wasm.js:L6 | neighbors=[wasm.js]
 - "runtime_wasm_te": "Te()" | kind=code-symbol | source=scratch/generated-client/runtime/wasm.js:L6 | neighbors=[wasm.js]
 - "runtime_wasm_text": "text()" | kind=code-symbol | source=scratch/generated-client/runtime/wasm.js:L5 | neighbors=[wasm.js]
 - "runtime_wasm_tn": "tn()" | kind=code-symbol | source=scratch/generated-client/runtime/wasm.js:L21 | neighbors=[wasm.js]
@@ -53,10 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "scratch_check_formulas_2398_prismaclient": "{ PrismaClient }" | kind=code-symbol | source=scratch/check-formulas-2398.js:L1 | neighbors=[check-formulas-2398.js]
 - "scratch_check_formulas_main": "main()" | kind=code-symbol | source=scratch/check-formulas.js:L4 | neighbors=[check-formulas.js]
 - "scratch_check_formulas_prisma": "prisma" | kind=code-symbol | source=scratch/check-formulas.js:L2 | neighbors=[check-formulas.js]
-- "scratch_check_formulas_prismaclient": "{ PrismaClient }" | kind=code-symbol | source=scratch/check-formulas.js:L1 | neighbors=[check-formulas.js]
-- "scratch_check_kft_all_main": "main()" | kind=code-symbol | source=scratch/check-kft-all.js:L4 | neighbors=[check-kft-all.js]
-- "scratch_check_kft_all_prisma": "prisma" | kind=code-symbol | source=scratch/check-kft-all.js:L2 | neighbors=[check-kft-all.js]
-- "scratch_check_kft_all_prismaclient": "{ PrismaClient }" | kind=code-symbol | source=scratch/check-kft-all.js:L1 | neighbors=[check-kft-all.js]
 
 ## Instructions
 

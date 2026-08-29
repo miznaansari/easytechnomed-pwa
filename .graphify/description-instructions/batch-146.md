@@ -17,6 +17,10 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "scratch_check_formulas_prismaclient": "{ PrismaClient }" | kind=code-symbol | source=scratch/check-formulas.js:L1 | neighbors=[check-formulas.js]
+- "scratch_check_kft_all_main": "main()" | kind=code-symbol | source=scratch/check-kft-all.js:L4 | neighbors=[check-kft-all.js]
+- "scratch_check_kft_all_prisma": "prisma" | kind=code-symbol | source=scratch/check-kft-all.js:L2 | neighbors=[check-kft-all.js]
+- "scratch_check_kft_all_prismaclient": "{ PrismaClient }" | kind=code-symbol | source=scratch/check-kft-all.js:L1 | neighbors=[check-kft-all.js]
 - "scratch_check_reg_14_main": "main()" | kind=code-symbol | source=scratch/check-reg-14.js:L3 | neighbors=[check-reg-14.js]
 - "scratch_check_reg_17_main": "main()" | kind=code-symbol | source=scratch/check-reg-17.js:L6 | neighbors=[check-reg-17.js]
 - "scratch_check_reg_17_prisma": "prisma" | kind=code-symbol | source=scratch/check-reg-17.js:L4 | neighbors=[check-reg-17.js]
@@ -53,10 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "scratch_test_formula_calc_evaluateexpression": "evaluateExpression()" | kind=code-symbol | source=scratch/test-formula-calc.js:L1 | neighbors=[test-formula-calc.js]
 - "scratch_test_formula_calc_resf": "resF" | kind=code-symbol | source=scratch/test-formula-calc.js:L141 | neighbors=[test-formula-calc.js]
 - "scratch_test_formula_calc_resm": "resM" | kind=code-symbol | source=scratch/test-formula-calc.js:L146 | neighbors=[test-formula-calc.js]
-- "scratch_test_formula_calc_valuesfemale": "valuesFemale" | kind=code-symbol | source=scratch/test-formula-calc.js:L110 | neighbors=[test-formula-calc.js]
-- "scratch_test_formula_calc_valuesmale": "valuesMale" | kind=code-symbol | source=scratch/test-formula-calc.js:L124 | neighbors=[test-formula-calc.js]
-- "scratch_test_formula_run_main": "main()" | kind=code-symbol | source=scratch/test-formula-run.js:L6 | neighbors=[test-formula-run.js]
-- "scratch_test_formula_run_prisma": "prisma" | kind=code-symbol | source=scratch/test-formula-run.js:L4 | neighbors=[test-formula-run.js]
 
 ## Instructions
 

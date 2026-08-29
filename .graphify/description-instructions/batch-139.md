@@ -17,6 +17,10 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "runtime_library_d_resultargs": "ResultArgs" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L2805 | neighbors=[_d()]
+- "runtime_library_d_resultargsfieldcompute": "ResultArgsFieldCompute" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L2811 | neighbors=[_d()]
+- "runtime_library_d_resultfielddefinition": "ResultFieldDefinition" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L2813 | neighbors=[_d()]
+- "runtime_library_d_resultset": "ResultSet" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L2820 | neighbors=[_d()]
 - "runtime_library_d_return": "Return" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L2842 | neighbors=[_d()]
 - "runtime_library_d_rounding": "Rounding" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L330 | neighbors=[_d()]
 - "runtime_library_d_runtime": "Runtime" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L2844 | neighbors=[_d()]
@@ -53,10 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "runtime_library_d_transactionoptions_2": "TransactionOptions_2" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L3267 | neighbors=[_d()]
 - "runtime_library_d_typedsql": "TypedSql" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L3275 | neighbors=[_d()]
 - "runtime_library_d_typemapcbdef": "TypeMapCbDef" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L3282 | neighbors=[_d()]
-- "runtime_library_d_typemapdef": "TypeMapDef" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L3288 | neighbors=[_d()]
-- "runtime_library_d_typeref": "TypeRef" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L778 | neighbors=[_d()]
-- "runtime_library_d_uniqueindex": "uniqueIndex" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L681 | neighbors=[_d()]
-- "runtime_library_d_unknownerrorparams": "UnknownErrorParams" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L3305 | neighbors=[_d()]
 
 ## Instructions
 

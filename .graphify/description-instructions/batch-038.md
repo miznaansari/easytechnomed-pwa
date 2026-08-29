@@ -17,6 +17,10 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "runtime_edge_esm_ca": "Ca()" | kind=code-symbol | source=scratch/generated-client/runtime/edge-esm.js:L1 | neighbors=[edge-esm.js, cr()]
+- "runtime_edge_esm_cc": "Cc()" | kind=code-symbol | source=scratch/generated-client/runtime/edge-esm.js:L11 | neighbors=[edge-esm.js, vs()]
+- "runtime_edge_esm_cn": "Cn()" | kind=code-symbol | source=scratch/generated-client/runtime/edge-esm.js:L5 | neighbors=[edge-esm.js, Ut()]
+- "runtime_edge_esm_cs": "cs()" | kind=code-symbol | source=scratch/generated-client/runtime/edge-esm.js:L6 | neighbors=[edge-esm.js, ps()]
 - "runtime_edge_esm_ct": "Ct()" | kind=code-symbol | source=scratch/generated-client/runtime/edge-esm.js:L1 | neighbors=[edge-esm.js, ss()]
 - "runtime_edge_esm_di": "di()" | kind=code-symbol | source=scratch/generated-client/runtime/edge-esm.js:L1 | neighbors=[edge-esm.js, yi()]
 - "runtime_edge_esm_el": "el()" | kind=code-symbol | source=scratch/generated-client/runtime/edge-esm.js:L1 | neighbors=[edge-esm.js, ce()]
@@ -53,10 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "runtime_edge_esm_mi": "mi()" | kind=code-symbol | source=scratch/generated-client/runtime/edge-esm.js:L1 | neighbors=[edge-esm.js, yi()]
 - "runtime_edge_esm_mt": "mt()" | kind=code-symbol | source=scratch/generated-client/runtime/edge-esm.js:L5 | neighbors=[edge-esm.js, os()]
 - "runtime_edge_esm_na": "Na()" | kind=code-symbol | source=scratch/generated-client/runtime/edge-esm.js:L1 | neighbors=[edge-esm.js, wi()]
-- "runtime_edge_esm_nc": "nc()" | kind=code-symbol | source=scratch/generated-client/runtime/edge-esm.js:L6 | neighbors=[edge-esm.js, ko()]
-- "runtime_edge_esm_nl": "Nl()" | kind=code-symbol | source=scratch/generated-client/runtime/edge-esm.js:L1 | neighbors=[edge-esm.js, co()]
-- "runtime_edge_esm_nr": "nr()" | kind=code-symbol | source=scratch/generated-client/runtime/edge-esm.js:L11 | neighbors=[edge-esm.js, wt()]
-- "runtime_edge_esm_oa": "Oa()" | kind=code-symbol | source=scratch/generated-client/runtime/edge-esm.js:L1 | neighbors=[edge-esm.js, ba()]
 
 ## Instructions
 

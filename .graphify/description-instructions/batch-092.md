@@ -17,6 +17,10 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "generated_client_index_d_registrationuncheckedupdatemanywithoutsecondrefnestedinput": "RegistrationUncheckedUpdateManyWithoutSecondRefNestedInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L43887 | neighbors=[index.d.ts]
+- "generated_client_index_d_registrationuncheckedupdatemanywithoutworkspaceinput": "RegistrationUncheckedUpdateManyWithoutWorkspaceInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L52194 | neighbors=[index.d.ts]
+- "generated_client_index_d_registrationuncheckedupdatemanywithoutworkspacenestedinput": "RegistrationUncheckedUpdateManyWithoutWorkspaceNestedInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L43063 | neighbors=[index.d.ts]
+- "generated_client_index_d_registrationuncheckedupdatewithoutadmininput": "RegistrationUncheckedUpdateWithoutAdminInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L52990 | neighbors=[index.d.ts]
 - "generated_client_index_d_registrationuncheckedupdatewithoutpaymentsinput": "RegistrationUncheckedUpdateWithoutPaymentsInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L50480 | neighbors=[index.d.ts]
 - "generated_client_index_d_registrationuncheckedupdatewithoutrefbyinput": "RegistrationUncheckedUpdateWithoutRefByInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L53341 | neighbors=[index.d.ts]
 - "generated_client_index_d_registrationuncheckedupdatewithoutresultsinput": "RegistrationUncheckedUpdateWithoutResultsInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L50098 | neighbors=[index.d.ts]
@@ -53,10 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "generated_client_index_d_registrationupdatewithwhereuniquewithoutsecondrefinput": "RegistrationUpdateWithWhereUniqueWithoutSecondRefInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L47889 | neighbors=[index.d.ts]
 - "generated_client_index_d_registrationupdatewithwhereuniquewithoutworkspaceinput": "RegistrationUpdateWithWhereUniqueWithoutWorkspaceInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L45810 | neighbors=[index.d.ts]
 - "generated_client_index_d_registrationupsertargs": "RegistrationUpsertArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L18377 | neighbors=[index.d.ts]
-- "generated_client_index_d_registrationupsertwithoutpaymentsinput": "RegistrationUpsertWithoutPaymentsInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L50425 | neighbors=[index.d.ts]
-- "generated_client_index_d_registrationupsertwithoutresultsinput": "RegistrationUpsertWithoutResultsInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L50043 | neighbors=[index.d.ts]
-- "generated_client_index_d_registrationupsertwithouttestsinput": "RegistrationUpsertWithoutTestsInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L49035 | neighbors=[index.d.ts]
-- "generated_client_index_d_registrationupsertwithwhereuniquewithoutadmininput": "RegistrationUpsertWithWhereUniqueWithoutAdminInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L47225 | neighbors=[index.d.ts]
 
 ## Instructions
 

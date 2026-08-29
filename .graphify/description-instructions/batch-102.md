@@ -17,6 +17,10 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "generated_client_index_d_testdepartmentuncheckedcreateinput": "TestDepartmentUncheckedCreateInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L39868 | neighbors=[index.d.ts]
+- "generated_client_index_d_testdepartmentuncheckedcreatewithouttestsinput": "TestDepartmentUncheckedCreateWithoutTestsInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L47931 | neighbors=[index.d.ts]
+- "generated_client_index_d_testdepartmentuncheckedupdateinput": "TestDepartmentUncheckedUpdateInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L39883 | neighbors=[index.d.ts]
+- "generated_client_index_d_testdepartmentuncheckedupdatemanyinput": "TestDepartmentUncheckedUpdateManyInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L39904 | neighbors=[index.d.ts]
 - "generated_client_index_d_testdepartmentuncheckedupdatewithouttestsinput": "TestDepartmentUncheckedUpdateWithoutTestsInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L48163 | neighbors=[index.d.ts]
 - "generated_client_index_d_testdepartmentupdateargs": "TestDepartmentUpdateArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L29585 | neighbors=[index.d.ts]
 - "generated_client_index_d_testdepartmentupdateinput": "TestDepartmentUpdateInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L39876 | neighbors=[index.d.ts]
@@ -53,10 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "generated_client_index_d_testformulacreatemanyoutputparameterinput": "TestFormulaCreateManyOutputParameterInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L53970 | neighbors=[index.d.ts]
 - "generated_client_index_d_testformulacreatemanyoutputparameterinputenvelope": "TestFormulaCreateManyOutputParameterInputEnvelope" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L49328 | neighbors=[index.d.ts]
 - "generated_client_index_d_testformulacreatemanytestinput": "TestFormulaCreateManyTestInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L53612 | neighbors=[index.d.ts]
-- "generated_client_index_d_testformulacreatemanytestinputenvelope": "TestFormulaCreateManyTestInputEnvelope" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L48112 | neighbors=[index.d.ts]
-- "generated_client_index_d_testformulacreatemanyworkspaceinput": "TestFormulaCreateManyWorkspaceInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L51947 | neighbors=[index.d.ts]
-- "generated_client_index_d_testformulacreatemanyworkspaceinputenvelope": "TestFormulaCreateManyWorkspaceInputEnvelope" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L45615 | neighbors=[index.d.ts]
-- "generated_client_index_d_testformulacreatenestedmanywithoutoutputparameterinput": "TestFormulaCreateNestedManyWithoutOutputParameterInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L44362 | neighbors=[index.d.ts]
 
 ## Instructions
 

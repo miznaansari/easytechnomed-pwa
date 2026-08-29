@@ -17,6 +17,10 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "runtime_react_native_nextid": "nextId()" | kind=code-symbol | source=scratch/generated-client/runtime/react-native.js:L78 | neighbors=[react-native.js]
+- "runtime_react_native_nl": "Nl()" | kind=code-symbol | source=scratch/generated-client/runtime/react-native.js:L2 | neighbors=[react-native.js]
+- "runtime_react_native_no": "No()" | kind=code-symbol | source=scratch/generated-client/runtime/react-native.js:L10 | neighbors=[react-native.js]
+- "runtime_react_native_ol": "Ol()" | kind=code-symbol | source=scratch/generated-client/runtime/react-native.js:L2 | neighbors=[react-native.js]
 - "runtime_react_native_on": "on()" | kind=code-symbol | source=scratch/generated-client/runtime/react-native.js:L1 | neighbors=[react-native.js]
 - "runtime_react_native_onbeforeexit": "onBeforeExit()" | kind=code-symbol | source=scratch/generated-client/runtime/react-native.js:L60 | neighbors=[react-native.js]
 - "runtime_react_native_ou": "ou()" | kind=code-symbol | source=scratch/generated-client/runtime/react-native.js:L2 | neighbors=[react-native.js]
@@ -53,10 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "runtime_react_native_yr": "Yr()" | kind=code-symbol | source=scratch/generated-client/runtime/react-native.js:L1 | neighbors=[react-native.js]
 - "runtime_react_native_zo": "zo()" | kind=code-symbol | source=scratch/generated-client/runtime/react-native.js:L12 | neighbors=[react-native.js]
 - "runtime_wasm_an": "an()" | kind=code-symbol | source=scratch/generated-client/runtime/wasm.js:L1 | neighbors=[wasm.js]
-- "runtime_wasm_applypendingmigrations": "applyPendingMigrations()" | kind=code-symbol | source=scratch/generated-client/runtime/wasm.js:L11 | neighbors=[wasm.js]
-- "runtime_wasm_ca": "ca()" | kind=code-symbol | source=scratch/generated-client/runtime/wasm.js:L5 | neighbors=[wasm.js]
-- "runtime_wasm_debugpanic": "debugPanic()" | kind=code-symbol | source=scratch/generated-client/runtime/wasm.js:L11 | neighbors=[wasm.js]
-- "runtime_wasm_deref": "deref()" | kind=code-symbol | source=scratch/generated-client/runtime/wasm.js:L1 | neighbors=[wasm.js]
 
 ## Instructions
 

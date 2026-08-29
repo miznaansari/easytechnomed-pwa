@@ -17,6 +17,10 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "runtime_library_mc": "mc()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L21 | neighbors=[library.js]
+- "runtime_library_mi": "mi()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L18 | neighbors=[library.js]
+- "runtime_library_middlewareargstorequestargs": "middlewareArgsToRequestArgs()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L121 | neighbors=[library.js]
+- "runtime_library_nextid": "nextId()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L130 | neighbors=[library.js]
 - "runtime_library_oi": "Oi()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L28 | neighbors=[library.js]
 - "runtime_library_onbeforeexit": "onBeforeExit()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L111 | neighbors=[library.js]
 - "runtime_library_pa": "pa()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L29 | neighbors=[library.js]
@@ -53,10 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "runtime_react_native_dc": "Dc()" | kind=code-symbol | source=scratch/generated-client/runtime/react-native.js:L12 | neighbors=[react-native.js]
 - "runtime_react_native_debugpanic": "debugPanic()" | kind=code-symbol | source=scratch/generated-client/runtime/react-native.js:L60 | neighbors=[react-native.js]
 - "runtime_react_native_deref": "deref()" | kind=code-symbol | source=scratch/generated-client/runtime/react-native.js:L1 | neighbors=[react-native.js]
-- "runtime_react_native_disable": "disable()" | kind=code-symbol | source=scratch/generated-client/runtime/react-native.js:L1 | neighbors=[react-native.js]
-- "runtime_react_native_disconnect": "disconnect()" | kind=code-symbol | source=scratch/generated-client/runtime/react-native.js:L60 | neighbors=[react-native.js]
-- "runtime_react_native_dispatchbatches": "dispatchBatches()" | kind=code-symbol | source=scratch/generated-client/runtime/react-native.js:L69 | neighbors=[react-native.js]
-- "runtime_react_native_dmmf": "dmmf()" | kind=code-symbol | source=scratch/generated-client/runtime/react-native.js:L60 | neighbors=[react-native.js]
 
 ## Instructions
 

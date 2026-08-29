@@ -24,6 +24,7 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "runtime_edge_ar": "Ar()" | kind=code-symbol | source=scratch/generated-client/runtime/edge.js:L3 | neighbors=[edge.js, Au(), bo(), hu(), ku(), Su()]
 - "runtime_edge_esm_addsuggestion": "addSuggestion()" | kind=code-symbol | source=scratch/generated-client/runtime/edge-esm.js:L3 | neighbors=[edge-esm.js, Ao(), Au(), cu(), mu(), pu()]
 - "runtime_edge_esm_co": "co()" | kind=code-symbol | source=scratch/generated-client/runtime/edge-esm.js:L1 | neighbors=[edge-esm.js, asObject(), e(), getDeepSubSelectionValue(), getField(), getFieldValue()]
 - "runtime_edge_esm_get": "get()" | kind=code-symbol | source=scratch/generated-client/runtime/edge-esm.js:L5 | neighbors=[edge-esm.js, constructor(), extractHostAndApiKey(), getAllBatchQueryCallbacks(), getAllClientExtensions(), getOrCreate()]
@@ -63,7 +64,6 @@ one-sentence description — no prose, no markdown fences.
 - "registrations_route": "route.js" | kind=code-symbol | source=app/api/registrations/route.js:L1 | neighbors=[252e194 e, 6c2dfe4 test, 7d8c494 fxed, d446d11 fixed code, generateRandomSuffix(), GET()]
 - "runtime_edge_esm_getdeepfieldvalue": "getDeepFieldValue()" | kind=code-symbol | source=scratch/generated-client/runtime/edge-esm.js:L3 | neighbors=[edge-esm.js, bu(), Eu(), getDeepField(), hc(), pu()]
 - "runtime_edge_esm_pu": "pu()" | kind=code-symbol | source=scratch/generated-client/runtime/edge-esm.js:L4 | neighbors=[edge-esm.js, cu(), addErrorMessage(), addSuggestion(), Ao(), asObject()]
-- "runtime_edge_esm_u": "u()" | kind=code-symbol | source=scratch/generated-client/runtime/edge-esm.js:L1 | neighbors=[edge-esm.js, g(), An(), findField(), getComputedFields(), getGlobalOmit()]
 
 ## Instructions
 

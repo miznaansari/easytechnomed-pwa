@@ -17,6 +17,13 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "runtime_library_buildcapturesettings": "buildCaptureSettings()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L111 | neighbors=[library.js, build(), isEnabled()]
+- "runtime_library_ci": "ci()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L3 | neighbors=[library.js, slice(), oc()]
+- "runtime_library_d_driveradapter": "DriverAdapter" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L875 | neighbors=[_d(), Queryable, ErrorCapturingDriverAdapter]
+- "runtime_library_d_errorwithbatchindex": "ErrorWithBatchIndex" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L1208 | neighbors=[_d(), PrismaClientKnownRequestError, PrismaClientUnknownRequestError]
+- "runtime_library_d_prismaclientknownrequesterror": "PrismaClientKnownRequestError" | kind=code-symbol | neighbors=[_d(), NotFoundError, ErrorWithBatchIndex]
+- "runtime_library_dn": "Dn()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L43 | neighbors=[library.js, ha(), Ja()]
+- "runtime_library_empty": "empty()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L29 | neighbors=[index.js, library.js, e()]
 - "runtime_library_foreach": "forEach()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L111 | neighbors=[library.js, oc(), propagateResponseExtensions()]
 - "runtime_library_fromcontent": "fromContent()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L21 | neighbors=[library.js, e(), read()]
 - "runtime_library_getallclientextensions": "getAllClientExtensions()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L29 | neighbors=[library.js, get(), Yr()]
@@ -50,13 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "runtime_library_qa": "qa()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L31 | neighbors=[library.js, On(), Xe()]
 - "runtime_library_qd": "qd()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L31 | neighbors=[library.js, ji(), Te()]
 - "runtime_library_qr": "qr()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L4 | neighbors=[library.js, Bu(), ya()]
-- "runtime_library_qu": "Qu()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L1 | neighbors=[library.js, ei(), ti()]
-- "runtime_library_ra": "ra()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L29 | neighbors=[library.js, id(), values()]
-- "runtime_library_read": "read()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L21 | neighbors=[library.js, fromContent(), wp()]
-- "runtime_library_removeallfields": "removeAllFields()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L27 | neighbors=[library.js, dp(), _p()]
-- "runtime_library_rp": "rp()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L21 | neighbors=[library.js, get(), values()]
-- "runtime_library_rr": "rr()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L21 | neighbors=[library.js, He(), ri()]
-- "runtime_library_rs": "rs()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L9 | neighbors=[library.js, ns(), r()]
 
 ## Instructions
 

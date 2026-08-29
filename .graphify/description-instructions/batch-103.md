@@ -17,6 +17,10 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "generated_client_index_d_testformulacreatemanytestinputenvelope": "TestFormulaCreateManyTestInputEnvelope" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L48112 | neighbors=[index.d.ts]
+- "generated_client_index_d_testformulacreatemanyworkspaceinput": "TestFormulaCreateManyWorkspaceInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L51947 | neighbors=[index.d.ts]
+- "generated_client_index_d_testformulacreatemanyworkspaceinputenvelope": "TestFormulaCreateManyWorkspaceInputEnvelope" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L45615 | neighbors=[index.d.ts]
+- "generated_client_index_d_testformulacreatenestedmanywithoutoutputparameterinput": "TestFormulaCreateNestedManyWithoutOutputParameterInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L44362 | neighbors=[index.d.ts]
 - "generated_client_index_d_testformulacreatenestedmanywithouttestinput": "TestFormulaCreateNestedManyWithoutTestInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L43941 | neighbors=[index.d.ts]
 - "generated_client_index_d_testformulacreatenestedmanywithoutworkspaceinput": "TestFormulaCreateNestedManyWithoutWorkspaceInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L42786 | neighbors=[index.d.ts]
 - "generated_client_index_d_testformulacreateorconnectwithoutoutputparameterinput": "TestFormulaCreateOrConnectWithoutOutputParameterInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L49323 | neighbors=[index.d.ts]
@@ -53,10 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "generated_client_index_d_testformulascalarfieldenum": "TestFormulaScalarFieldEnum" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L34348 | neighbors=[index.d.ts]
 - "generated_client_index_d_testformulascalarwhereinput": "TestFormulaScalarWhereInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L46062 | neighbors=[index.d.ts]
 - "generated_client_index_d_testformulascalarwherewithaggregatesinput": "TestFormulaScalarWhereWithAggregatesInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L36947 | neighbors=[index.d.ts]
-- "generated_client_index_d_testformulaselect": "TestFormulaSelect" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L29957 | neighbors=[index.d.ts]
-- "generated_client_index_d_testformulaselectscalar": "TestFormulaSelectScalar" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L29975 | neighbors=[index.d.ts]
-- "generated_client_index_d_testformulasumaggregateinputtype": "TestFormulaSumAggregateInputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L29787 | neighbors=[index.d.ts]
-- "generated_client_index_d_testformulasumaggregateoutputtype": "TestFormulaSumAggregateOutputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L29727 | neighbors=[index.d.ts]
 
 ## Instructions
 

@@ -17,6 +17,7 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "runtime_react_native_fe": "Fe()" | kind=code-symbol | source=scratch/generated-client/runtime/react-native.js:L2 | neighbors=[react-native.js, gu(), shouldApplyGlobalOmit(), up(), Zt()]
 - "runtime_react_native_findfield": "findField()" | kind=code-symbol | source=scratch/generated-client/runtime/react-native.js:L10 | neighbors=[react-native.js, ac(), nestSelection(), oc(), sc()]
 - "runtime_react_native_fs": "Fs()" | kind=code-symbol | source=scratch/generated-client/runtime/react-native.js:L62 | neighbors=[react-native.js, at(), Ms(), np(), toString()]
 - "runtime_react_native_getexternaladaptererror": "getExternalAdapterError()" | kind=code-symbol | source=scratch/generated-client/runtime/react-native.js:L61 | neighbors=[react-native.js, buildQueryError(), ar(), consumeError(), transaction()]
@@ -56,7 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "runtime_wasm_runinchildspan": "runInChildSpan()" | kind=code-symbol | source=scratch/generated-client/runtime/wasm.js:L21 | neighbors=[wasm.js, getGlobalTracingHelper(), t(), start(), stop()]
 - "runtime_wasm_tojson": "toJSON()" | kind=code-symbol | source=scratch/generated-client/runtime/wasm.js:L1 | neighbors=[wasm.js, ao(), di(), so(), from()]
 - "runtime_wasm_transaction": "transaction()" | kind=code-symbol | source=scratch/generated-client/runtime/wasm.js:L11 | neighbors=[wasm.js, getExternalAdapterError(), ja(), parseEngineResponse(), start()]
-- "runtime_wasm_writeline": "writeLine()" | kind=code-symbol | source=scratch/generated-client/runtime/wasm.js:L2 | neighbors=[wasm.js, write(), newLine(), writeWithContents(), writeWithItems()]
 
 ## Instructions
 

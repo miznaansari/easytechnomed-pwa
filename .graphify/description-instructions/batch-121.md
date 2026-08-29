@@ -17,6 +17,10 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "generated_client_index_d_workspacepdfavgaggregateoutputtype": "WorkspacePdfAvgAggregateOutputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L32628 | neighbors=[index.d.ts]
+- "generated_client_index_d_workspacepdfavgorderbyaggregateinput": "WorkspacePdfAvgOrderByAggregateInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L42637 | neighbors=[index.d.ts]
+- "generated_client_index_d_workspacepdfcountaggregateinputtype": "WorkspacePdfCountAggregateInputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L32866 | neighbors=[index.d.ts]
+- "generated_client_index_d_workspacepdfcountaggregateoutputtype": "WorkspacePdfCountAggregateOutputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L32728 | neighbors=[index.d.ts]
 - "generated_client_index_d_workspacepdfcountargs": "WorkspacePdfCountArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L33167 | neighbors=[index.d.ts]
 - "generated_client_index_d_workspacepdfcountorderbyaggregateinput": "WorkspacePdfCountOrderByAggregateInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L42601 | neighbors=[index.d.ts]
 - "generated_client_index_d_workspacepdfcreateargs": "WorkspacePdfCreateArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L33746 | neighbors=[index.d.ts]
@@ -53,10 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "generated_client_index_d_workspacepdfscalarfieldenum": "WorkspacePdfScalarFieldEnum" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L34411 | neighbors=[index.d.ts]
 - "generated_client_index_d_workspacepdfscalarwherewithaggregatesinput": "WorkspacePdfScalarWhereWithAggregatesInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L37252 | neighbors=[index.d.ts]
 - "generated_client_index_d_workspacepdfselect": "WorkspacePdfSelect" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L33044 | neighbors=[index.d.ts]
-- "generated_client_index_d_workspacepdfselectscalar": "WorkspacePdfSelectScalar" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L33082 | neighbors=[index.d.ts]
-- "generated_client_index_d_workspacepdfsumaggregateinputtype": "WorkspacePdfSumAggregateInputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L32780 | neighbors=[index.d.ts]
-- "generated_client_index_d_workspacepdfsumaggregateoutputtype": "WorkspacePdfSumAggregateOutputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L32642 | neighbors=[index.d.ts]
-- "generated_client_index_d_workspacepdfsumorderbyaggregateinput": "WorkspacePdfSumOrderByAggregateInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L42723 | neighbors=[index.d.ts]
 
 ## Instructions
 

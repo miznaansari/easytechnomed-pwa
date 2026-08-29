@@ -17,6 +17,7 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "runtime_react_native_it": "it()" | kind=code-symbol | source=scratch/generated-client/runtime/react-native.js:L2 | neighbors=[react-native.js, Al(), e(), Sl()]
 - "runtime_react_native_loadengine": "loadEngine()" | kind=code-symbol | source=scratch/generated-client/runtime/react-native.js:L60 | neighbors=[react-native.js, instantiateLibrary(), loadLibrary(), parseInitError()]
 - "runtime_react_native_lt": "lt()" | kind=code-symbol | source=scratch/generated-client/runtime/react-native.js:L2 | neighbors=[react-native.js, fo(), to(), Zt()]
 - "runtime_react_native_lu": "lu()" | kind=code-symbol | source=scratch/generated-client/runtime/react-native.js:L2 | neighbors=[react-native.js, addErrorMessage(), addSuggestion(), removeAllFields()]
@@ -56,7 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "runtime_wasm_getfieldvalue": "getFieldValue()" | kind=code-symbol | source=scratch/generated-client/runtime/wasm.js:L3 | neighbors=[wasm.js, getDeepSelectionParent(), getField(), ti()]
 - "runtime_wasm_getglobalomit": "getGlobalOmit()" | kind=code-symbol | source=scratch/generated-client/runtime/wasm.js:L5 | neighbors=[wasm.js, shouldApplyGlobalOmit(), Ve(), oa()]
 - "runtime_wasm_getname": "_getName()" | kind=code-symbol | source=scratch/generated-client/runtime/wasm.js:L4 | neighbors=[wasm.js, constructor(), di(), si()]
-- "runtime_wasm_handleandlogrequesterror": "handleAndLogRequestError()" | kind=code-symbol | source=scratch/generated-client/runtime/wasm.js:L21 | neighbors=[wasm.js, emit(), handleRequestError(), request()]
 
 ## Instructions
 

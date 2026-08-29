@@ -17,6 +17,10 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "generated_client_index_d_adminrolecreatenestedonewithoutadminsinput": "AdminRoleCreateNestedOneWithoutAdminsInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L43465 | neighbors=[index.d.ts]
+- "generated_client_index_d_adminrolecreatenestedonewithoutpermissionsinput": "AdminRoleCreateNestedOneWithoutPermissionsInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L43751 | neighbors=[index.d.ts]
+- "generated_client_index_d_adminrolecreateorconnectwithoutadminsinput": "AdminRoleCreateOrConnectWithoutAdminsInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L46809 | neighbors=[index.d.ts]
+- "generated_client_index_d_adminrolecreateorconnectwithoutpermissionsinput": "AdminRoleCreateOrConnectWithoutPermissionsInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L47519 | neighbors=[index.d.ts]
 - "generated_client_index_d_adminrolecreatewithoutadminsinput": "AdminRoleCreateWithoutAdminsInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L46794 | neighbors=[index.d.ts]
 - "generated_client_index_d_adminrolecreatewithoutpermissionsinput": "AdminRoleCreateWithoutPermissionsInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L47504 | neighbors=[index.d.ts]
 - "generated_client_index_d_adminroledefaultargs": "AdminRoleDefaultArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L13793 | neighbors=[index.d.ts]
@@ -53,10 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "generated_client_index_d_adminrolepermissioncountargs": "AdminRolePermissionCountArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L14020 | neighbors=[index.d.ts]
 - "generated_client_index_d_adminrolepermissioncountorderbyaggregateinput": "AdminRolePermissionCountOrderByAggregateInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L41211 | neighbors=[index.d.ts]
 - "generated_client_index_d_adminrolepermissioncreateargs": "AdminRolePermissionCreateArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L14569 | neighbors=[index.d.ts]
-- "generated_client_index_d_adminrolepermissioncreateinput": "AdminRolePermissionCreateInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L38149 | neighbors=[index.d.ts]
-- "generated_client_index_d_adminrolepermissioncreatemanyargs": "AdminRolePermissionCreateManyArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L14587 | neighbors=[index.d.ts]
-- "generated_client_index_d_adminrolepermissioncreatemanyinput": "AdminRolePermissionCreateManyInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L38171 | neighbors=[index.d.ts]
-- "generated_client_index_d_adminrolepermissioncreatemanyroleinput": "AdminRolePermissionCreateManyRoleInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L53103 | neighbors=[index.d.ts]
 
 ## Instructions
 

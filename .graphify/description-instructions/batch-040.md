@@ -17,6 +17,10 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "runtime_edge_getcurrentlinelength": "getCurrentLineLength()" | kind=code-symbol | source=scratch/generated-client/runtime/edge.js:L3 | neighbors=[edge.js, write()]
+- "runtime_edge_getfields": "getFields()" | kind=code-symbol | source=scratch/generated-client/runtime/edge.js:L3 | neighbors=[edge.js, ku()]
+- "runtime_edge_getnamespace": "_getNamespace()" | kind=code-symbol | source=scratch/generated-client/runtime/edge.js:L4 | neighbors=[edge.js, constructor()]
+- "runtime_edge_getoutputtypedescription": "getOutputTypeDescription()" | kind=code-symbol | source=scratch/generated-client/runtime/edge.js:L5 | neighbors=[edge.js, ju()]
 - "runtime_edge_getprintwidth": "getPrintWidth()" | kind=code-symbol | source=scratch/generated-client/runtime/edge.js:L3 | neighbors=[edge.js, values()]
 - "runtime_edge_gr": "Gr()" | kind=code-symbol | source=scratch/generated-client/runtime/edge.js:L8 | neighbors=[edge.js, yt()]
 - "runtime_edge_gs": "gs()" | kind=code-symbol | source=scratch/generated-client/runtime/edge.js:L6 | neighbors=[edge.js, hs()]
@@ -53,10 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "runtime_edge_sanitizemessage": "sanitizeMessage()" | kind=code-symbol | source=scratch/generated-client/runtime/edge.js:L20 | neighbors=[edge.js, handleRequestError()]
 - "runtime_edge_sc": "sc()" | kind=code-symbol | source=scratch/generated-client/runtime/edge.js:L6 | neighbors=[edge.js, es()]
 - "runtime_edge_single": "single()" | kind=code-symbol | source=scratch/generated-client/runtime/edge.js:L5 | neighbors=[edge.js, e()]
-- "runtime_edge_sql": "sql()" | kind=code-symbol | source=scratch/generated-client/runtime/edge.js:L5 | neighbors=[edge.js, get()]
-- "runtime_edge_ss": "ss()" | kind=code-symbol | source=scratch/generated-client/runtime/edge.js:L6 | neighbors=[edge.js, dc()]
-- "runtime_edge_start": "start()" | kind=code-symbol | source=scratch/generated-client/runtime/edge.js:L12 | neighbors=[edge.js, url()]
-- "runtime_edge_transaction": "transaction()" | kind=code-symbol | source=scratch/generated-client/runtime/edge.js:L12 | neighbors=[edge.js, withRetry()]
 
 ## Instructions
 

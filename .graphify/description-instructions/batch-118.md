@@ -17,6 +17,10 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "generated_client_index_d_useruncheckedupdatewithoutroleinput": "UserUncheckedUpdateWithoutRoleInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L52773 | neighbors=[index.d.ts]
+- "generated_client_index_d_useruncheckedupdatewithoutsessionsinput": "UserUncheckedUpdateWithoutSessionsInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L46627 | neighbors=[index.d.ts]
+- "generated_client_index_d_useruncheckedupdatewithoutworkspaceinput": "UserUncheckedUpdateWithoutWorkspaceInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L52331 | neighbors=[index.d.ts]
+- "generated_client_index_d_userupdateargs": "UserUpdateArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L7771 | neighbors=[index.d.ts]
 - "generated_client_index_d_userupdateinput": "UserUpdateInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L37587 | neighbors=[index.d.ts]
 - "generated_client_index_d_userupdatemanyargs": "UserUpdateManyArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L7793 | neighbors=[index.d.ts]
 - "generated_client_index_d_userupdatemanymutationinput": "UserUpdateManyMutationInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L37648 | neighbors=[index.d.ts]
@@ -53,10 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "generated_client_index_d_workspaceargs": "WorkspaceArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L54318 | neighbors=[index.d.ts]
 - "generated_client_index_d_workspaceavgaggregateinputtype": "WorkspaceAvgAggregateInputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L3767 | neighbors=[index.d.ts]
 - "generated_client_index_d_workspaceavgaggregateoutputtype": "WorkspaceAvgAggregateOutputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L3719 | neighbors=[index.d.ts]
-- "generated_client_index_d_workspaceavgorderbyaggregateinput": "WorkspaceAvgOrderByAggregateInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L40531 | neighbors=[index.d.ts]
-- "generated_client_index_d_workspacecountaggregateinputtype": "WorkspaceCountAggregateInputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L3801 | neighbors=[index.d.ts]
-- "generated_client_index_d_workspacecountaggregateoutputtype": "WorkspaceCountAggregateOutputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L3753 | neighbors=[index.d.ts]
-- "generated_client_index_d_workspacecountargs": "WorkspaceCountArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L4011 | neighbors=[index.d.ts]
 
 ## Instructions
 

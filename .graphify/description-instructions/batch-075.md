@@ -17,6 +17,10 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "generated_client_index_d_interpretationruleupdatewithwhereuniquewithoutworkspaceinput": "InterpretationRuleUpdateWithWhereUniqueWithoutWorkspaceInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L46085 | neighbors=[index.d.ts]
+- "generated_client_index_d_interpretationruleupsertargs": "InterpretationRuleUpsertArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L31625 | neighbors=[index.d.ts]
+- "generated_client_index_d_interpretationruleupsertwithwhereuniquewithoutparameterinput": "InterpretationRuleUpsertWithWhereUniqueWithoutParameterInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L49446 | neighbors=[index.d.ts]
+- "generated_client_index_d_interpretationruleupsertwithwhereuniquewithouttestinput": "InterpretationRuleUpsertWithWhereUniqueWithoutTestInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L48289 | neighbors=[index.d.ts]
 - "generated_client_index_d_interpretationruleupsertwithwhereuniquewithoutworkspaceinput": "InterpretationRuleUpsertWithWhereUniqueWithoutWorkspaceInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L46079 | neighbors=[index.d.ts]
 - "generated_client_index_d_interpretationrulewhereinput": "InterpretationRuleWhereInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L36964 | neighbors=[index.d.ts]
 - "generated_client_index_d_interpretationrulewhereuniqueinput": "InterpretationRuleWhereUniqueInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L36995 | neighbors=[index.d.ts]
@@ -53,10 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "generated_client_index_d_leadcontactcreatemanyinput": "LeadContactCreateManyInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L39666 | neighbors=[index.d.ts]
 - "generated_client_index_d_leadcontactdefaultargs": "LeadContactDefaultArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L26815 | neighbors=[index.d.ts]
 - "generated_client_index_d_leadcontactdelegate": "LeadContactDelegate" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L26183 | neighbors=[index.d.ts]
-- "generated_client_index_d_leadcontactdeleteargs": "LeadContactDeleteArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L26791 | neighbors=[index.d.ts]
-- "generated_client_index_d_leadcontactdeletemanyargs": "LeadContactDeleteManyArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L26805 | neighbors=[index.d.ts]
-- "generated_client_index_d_leadcontactfieldrefs": "LeadContactFieldRefs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L26540 | neighbors=[index.d.ts]
-- "generated_client_index_d_leadcontactfindfirstargs": "LeadContactFindFirstArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L26585 | neighbors=[index.d.ts]
 
 ## Instructions
 

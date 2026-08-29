@@ -17,6 +17,13 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "runtime_react_native_et": "et()" | kind=code-symbol | source=scratch/generated-client/runtime/react-native.js:L1 | neighbors=[react-native.js, Ia(), Tt()]
+- "runtime_react_native_fromcontent": "fromContent()" | kind=code-symbol | source=scratch/generated-client/runtime/react-native.js:L2 | neighbors=[react-native.js, e(), read()]
+- "runtime_react_native_g": "g()" | kind=code-symbol | source=scratch/generated-client/runtime/react-native.js:L1 | neighbors=[react-native.js, a(), u()]
+- "runtime_react_native_gc": "Gc()" | kind=code-symbol | source=scratch/generated-client/runtime/react-native.js:L12 | neighbors=[react-native.js, He(), Yt()]
+- "runtime_react_native_getallclientextensions": "getAllClientExtensions()" | kind=code-symbol | source=scratch/generated-client/runtime/react-native.js:L10 | neighbors=[react-native.js, get(), Yt()]
+- "runtime_react_native_getallmodelextensions": "getAllModelExtensions()" | kind=code-symbol | source=scratch/generated-client/runtime/react-native.js:L10 | neighbors=[react-native.js, getOrCreate(), $n()]
+- "runtime_react_native_getallquerycallbacks": "getAllQueryCallbacks()" | kind=code-symbol | source=scratch/generated-client/runtime/react-native.js:L10 | neighbors=[react-native.js, getOrCreate(), us()]
 - "runtime_react_native_getlocation": "getLocation()" | kind=code-symbol | source=scratch/generated-client/runtime/react-native.js:L12 | neighbors=[react-native.js, Qo(), pu()]
 - "runtime_react_native_getsubselectionvalue": "getSubSelectionValue()" | kind=code-symbol | source=scratch/generated-client/runtime/react-native.js:L8 | neighbors=[react-native.js, getDeepSubSelectionValue(), getSelectionParent()]
 - "runtime_react_native_gr": "gr()" | kind=code-symbol | source=scratch/generated-client/runtime/react-native.js:L2 | neighbors=[react-native.js, Al(), Sl()]
@@ -50,13 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "runtime_react_native_se": "se()" | kind=code-symbol | source=scratch/generated-client/runtime/react-native.js:L2 | neighbors=[react-native.js, bn(), nu()]
 - "runtime_react_native_setcolor": "setColor()" | kind=code-symbol | source=scratch/generated-client/runtime/react-native.js:L8 | neighbors=[react-native.js, write(), writeEmpty()]
 - "runtime_react_native_shouldapplyglobalomit": "shouldApplyGlobalOmit()" | kind=code-symbol | source=scratch/generated-client/runtime/react-native.js:L10 | neighbors=[react-native.js, getGlobalOmit(), Fe()]
-- "runtime_react_native_si": "si()" | kind=code-symbol | source=scratch/generated-client/runtime/react-native.js:L1 | neighbors=[react-native.js, Sa(), xa()]
-- "runtime_react_native_so": "so()" | kind=code-symbol | source=scratch/generated-client/runtime/react-native.js:L2 | neighbors=[react-native.js, slice(), values()]
-- "runtime_react_native_st": "st()" | kind=code-symbol | source=scratch/generated-client/runtime/react-native.js:L2 | neighbors=[react-native.js, getGlobalOmit(), u()]
-- "runtime_react_native_su": "su()" | kind=code-symbol | source=scratch/generated-client/runtime/react-native.js:L2 | neighbors=[react-native.js, get(), values()]
-- "runtime_react_native_ta": "Ta()" | kind=code-symbol | source=scratch/generated-client/runtime/react-native.js:L1 | neighbors=[react-native.js, Na(), nr()]
-- "runtime_react_native_tt": "Tt()" | kind=code-symbol | source=scratch/generated-client/runtime/react-native.js:L1 | neighbors=[react-native.js, Ia(), et()]
-- "runtime_react_native_ui": "ui()" | kind=code-symbol | source=scratch/generated-client/runtime/react-native.js:L1 | neighbors=[react-native.js, ci(), pi()]
 
 ## Instructions
 

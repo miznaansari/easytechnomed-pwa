@@ -17,6 +17,10 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "generated_client_index_d_admin_sessionsargs": "Admin$sessionsArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L11846 | neighbors=[index.d.ts]
+- "generated_client_index_d_admin_trackingsargs": "Admin$trackingsArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L11866 | neighbors=[index.d.ts]
+- "generated_client_index_d_admin_workspaceargs": "Admin$workspaceArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L11816 | neighbors=[index.d.ts]
+- "generated_client_index_d_adminaddress": "AdminAddress" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L115 | neighbors=[index.d.ts]
 - "generated_client_index_d_adminaddressaggregateargs": "AdminAddressAggregateArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L24090 | neighbors=[index.d.ts]
 - "generated_client_index_d_adminaddressargs": "AdminAddressArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L54394 | neighbors=[index.d.ts]
 - "generated_client_index_d_adminaddressavgaggregateinputtype": "AdminAddressAvgAggregateInputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L24030 | neighbors=[index.d.ts]
@@ -53,10 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "generated_client_index_d_adminaddressminaggregateinputtype": "AdminAddressMinAggregateInputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L24044 | neighbors=[index.d.ts]
 - "generated_client_index_d_adminaddressminaggregateoutputtype": "AdminAddressMinAggregateOutputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L23983 | neighbors=[index.d.ts]
 - "generated_client_index_d_adminaddressminorderbyaggregateinput": "AdminAddressMinOrderByAggregateInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L42206 | neighbors=[index.d.ts]
-- "generated_client_index_d_adminaddressnullablerelationfilter": "AdminAddressNullableRelationFilter" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L41000 | neighbors=[index.d.ts]
-- "generated_client_index_d_adminaddressorderbywithaggregationinput": "AdminAddressOrderByWithAggregationInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L36480 | neighbors=[index.d.ts]
-- "generated_client_index_d_adminaddressorderbywithrelationinput": "AdminAddressOrderByWithRelationInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L36445 | neighbors=[index.d.ts]
-- "generated_client_index_d_adminaddresspayload": "$AdminAddressPayload" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L24246 | neighbors=[index.d.ts]
 
 ## Instructions
 

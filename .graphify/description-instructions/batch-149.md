@@ -17,6 +17,10 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "ui_dropdown_dropdown": "Dropdown()" | kind=code-symbol | source=components/ui/Dropdown.js:L5 | neighbors=[Dropdown.js]
+- "ui_dropdown_dropdownitem": "DropdownItem()" | kind=code-symbol | source=components/ui/Dropdown.js:L45 | neighbors=[Dropdown.js]
+- "ui_input_input": "Input" | kind=code-symbol | source=components/ui/Input.js:L3 | neighbors=[Input.js]
+- "ui_label_label": "Label()" | kind=code-symbol | source=components/ui/Label.js:L3 | neighbors=[Label.js]
 - "ui_skeleton_skeleton": "Skeleton()" | kind=code-symbol | source=components/ui/Skeleton.js:L3 | neighbors=[Skeleton.js]
 - "ui_table_table": "Table()" | kind=code-symbol | source=components/ui/Table.js:L3 | neighbors=[Table.js]
 - "ui_table_tablebody": "TableBody()" | kind=code-symbol | source=components/ui/Table.js:L21 | neighbors=[Table.js]
@@ -29,6 +33,11 @@ one-sentence description — no prose, no markdown fences.
 - "userapprove_userapprovetable_userapprovetable": "UserApproveTable()" | kind=code-symbol | source=app/(customer)/(dashboard)/userApprove/UserApproveTable.js:L16 | neighbors=[UserApproveTable.js]
 - "utils_debounce_debounce": "debounce()" | kind=code-symbol | source=app/utils/debounce.js:L1 | neighbors=[debounce.js]
 - "verify_email_route_get": "GET()" | kind=code-symbol | source=app/api/authas/verify-email/route.js:L4 | neighbors=[route.js]
+- "version_route_default_initial_changes": "DEFAULT_INITIAL_CHANGES" | kind=code-symbol | source=app/api/version/route.js:L6 | neighbors=[route.js]
+- "version_route_get": "GET()" | kind=code-symbol | source=app/api/version/route.js:L14 | neighbors=[route.js]
+- "version_route_post": "POST()" | kind=code-symbol | source=app/api/version/route.js:L81 | neighbors=[route.js]
+- "version_versionupdatenotifier_compareversions": "compareVersions()" | kind=code-symbol | source=components/version/VersionUpdateNotifier.jsx:L30 | neighbors=[VersionUpdateNotifier.jsx]
+- "version_versionupdatenotifier_versionupdatenotifier": "VersionUpdateNotifier()" | kind=code-symbol | source=components/version/VersionUpdateNotifier.jsx:L47 | neighbors=[VersionUpdateNotifier.jsx]
 
 ## Instructions
 

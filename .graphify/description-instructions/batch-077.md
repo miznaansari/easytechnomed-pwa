@@ -17,6 +17,10 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "generated_client_index_d_leadcountorderbyaggregateinput": "LeadCountOrderByAggregateInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L42140 | neighbors=[index.d.ts]
+- "generated_client_index_d_leadcreateargs": "LeadCreateArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L23846 | neighbors=[index.d.ts]
+- "generated_client_index_d_leadcreateinput": "LeadCreateInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L39400 | neighbors=[index.d.ts]
+- "generated_client_index_d_leadcreatemanyargs": "LeadCreateManyArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L23860 | neighbors=[index.d.ts]
 - "generated_client_index_d_leadcreatemanyinput": "LeadCreateManyInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L39426 | neighbors=[index.d.ts]
 - "generated_client_index_d_leaddefaultargs": "LeadDefaultArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L23949 | neighbors=[index.d.ts]
 - "generated_client_index_d_leaddelegate": "LeadDelegate" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L23322 | neighbors=[index.d.ts]
@@ -53,10 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "generated_client_index_d_leadupdateargs": "LeadUpdateArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L23871 | neighbors=[index.d.ts]
 - "generated_client_index_d_leadupdateinput": "LeadUpdateInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L39413 | neighbors=[index.d.ts]
 - "generated_client_index_d_leadupdatemanyargs": "LeadUpdateManyArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L23889 | neighbors=[index.d.ts]
-- "generated_client_index_d_leadupdatemanymutationinput": "LeadUpdateManyMutationInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L39433 | neighbors=[index.d.ts]
-- "generated_client_index_d_leadupsertargs": "LeadUpsertArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L23903 | neighbors=[index.d.ts]
-- "generated_client_index_d_leadwhereinput": "LeadWhereInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L36377 | neighbors=[index.d.ts]
-- "generated_client_index_d_leadwhereuniqueinput": "LeadWhereUniqueInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L36394 | neighbors=[index.d.ts]
 
 ## Instructions
 

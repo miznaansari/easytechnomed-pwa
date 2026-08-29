@@ -17,6 +17,10 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "generated_client_index_d_parameterworkspaceidnamecompounduniqueinput": "ParameterWorkspaceIdNameCompoundUniqueInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L41805 | neighbors=[index.d.ts]
+- "generated_client_index_d_patchundefined": "PatchUndefined" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L854 | neighbors=[index.d.ts]
+- "generated_client_index_d_patientresult": "PatientResult" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L105 | neighbors=[index.d.ts]
+- "generated_client_index_d_patientresultaggregateargs": "PatientResultAggregateArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L22249 | neighbors=[index.d.ts]
 - "generated_client_index_d_patientresultargs": "PatientResultArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L54386 | neighbors=[index.d.ts]
 - "generated_client_index_d_patientresultavgaggregateinputtype": "PatientResultAvgAggregateInputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L22203 | neighbors=[index.d.ts]
 - "generated_client_index_d_patientresultavgaggregateoutputtype": "PatientResultAvgAggregateOutputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L22156 | neighbors=[index.d.ts]
@@ -53,10 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "generated_client_index_d_patientresultgroupbyargs": "PatientResultGroupByArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L22321 | neighbors=[index.d.ts]
 - "generated_client_index_d_patientresultgroupbyoutputtype": "PatientResultGroupByOutputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L22335 | neighbors=[index.d.ts]
 - "generated_client_index_d_patientresultinclude": "PatientResultInclude" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L22390 | neighbors=[index.d.ts]
-- "generated_client_index_d_patientresultlistrelationfilter": "PatientResultListRelationFilter" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L41501 | neighbors=[index.d.ts]
-- "generated_client_index_d_patientresultmaxaggregateinputtype": "PatientResultMaxAggregateInputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L22226 | neighbors=[index.d.ts]
-- "generated_client_index_d_patientresultmaxaggregateoutputtype": "PatientResultMaxAggregateOutputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L22179 | neighbors=[index.d.ts]
-- "generated_client_index_d_patientresultmaxorderbyaggregateinput": "PatientResultMaxOrderByAggregateInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L42112 | neighbors=[index.d.ts]
 
 ## Instructions
 

@@ -17,6 +17,10 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "generated_client_index_d_workspacecreateorconnectwithouttestsinput": "WorkspaceCreateOrConnectWithoutTestsInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L48024 | neighbors=[index.d.ts]
+- "generated_client_index_d_workspacecreateorconnectwithoutusersinput": "WorkspaceCreateOrConnectWithoutUsersInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L46418 | neighbors=[index.d.ts]
+- "generated_client_index_d_workspacecreatewithoutadminsinput": "WorkspaceCreateWithoutAdminsInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L46814 | neighbors=[index.d.ts]
+- "generated_client_index_d_workspacecreatewithoutdoctorsinput": "WorkspaceCreateWithoutDoctorsInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L47550 | neighbors=[index.d.ts]
 - "generated_client_index_d_workspacecreatewithoutinterpretationrulesinput": "WorkspaceCreateWithoutInterpretationRulesInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L51186 | neighbors=[index.d.ts]
 - "generated_client_index_d_workspacecreatewithoutparametersinput": "WorkspaceCreateWithoutParametersInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L49199 | neighbors=[index.d.ts]
 - "generated_client_index_d_workspacecreatewithoutpdfsettinginput": "WorkspaceCreateWithoutPdfSettingInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L51666 | neighbors=[index.d.ts]
@@ -53,10 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "generated_client_index_d_workspacepdfaggregateargs": "WorkspacePdfAggregateArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L32903 | neighbors=[index.d.ts]
 - "generated_client_index_d_workspacepdfargs": "WorkspacePdfArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L54430 | neighbors=[index.d.ts]
 - "generated_client_index_d_workspacepdfavgaggregateinputtype": "WorkspacePdfAvgAggregateInputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L32766 | neighbors=[index.d.ts]
-- "generated_client_index_d_workspacepdfavgaggregateoutputtype": "WorkspacePdfAvgAggregateOutputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L32628 | neighbors=[index.d.ts]
-- "generated_client_index_d_workspacepdfavgorderbyaggregateinput": "WorkspacePdfAvgOrderByAggregateInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L42637 | neighbors=[index.d.ts]
-- "generated_client_index_d_workspacepdfcountaggregateinputtype": "WorkspacePdfCountAggregateInputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L32866 | neighbors=[index.d.ts]
-- "generated_client_index_d_workspacepdfcountaggregateoutputtype": "WorkspacePdfCountAggregateOutputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L32728 | neighbors=[index.d.ts]
 
 ## Instructions
 

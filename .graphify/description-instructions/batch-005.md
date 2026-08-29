@@ -17,6 +17,8 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "runtime_edge_esm_uu": "uu()" | kind=code-symbol | source=scratch/generated-client/runtime/edge-esm.js:L3 | neighbors=[edge-esm.js, Tr(), addErrorMessage(), addSuggestion(), getDeepSelectionParent(), getField()]
+- "runtime_edge_gu": "Gu()" | kind=code-symbol | source=scratch/generated-client/runtime/edge.js:L5 | neighbors=[edge.js, findField(), getComputedFields(), In(), nestSelection(), Vt()]
 - "runtime_edge_hasfield": "hasField()" | kind=code-symbol | source=scratch/generated-client/runtime/edge.js:L3 | neighbors=[edge.js, Ao(), du(), getField(), mu(), nu()]
 - "runtime_edge_ou": "ou()" | kind=code-symbol | source=scratch/generated-client/runtime/edge.js:L1 | neighbors=[edge.js, addErrorMessage(), asObject(), getDeepFieldValue(), getDeepSubSelectionValue(), Pe()]
 - "runtime_edge_pi": "pi()" | kind=code-symbol | source=scratch/generated-client/runtime/edge.js:L1 | neighbors=[edge.js, Aa(), Ca(), de(), mi(), Ta()]
@@ -55,8 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "runtime_wasm_ls": "ls()" | kind=code-symbol | source=scratch/generated-client/runtime/wasm.js:L1 | neighbors=[wasm.js, addErrorMessage(), asObject(), getDeepSubSelectionValue(), getField(), hasField()]
 - "runtime_wasm_nl": "nl()" | kind=code-symbol | source=scratch/generated-client/runtime/wasm.js:L26 | neighbors=[wasm.js, addErrorMessage(), getDeepField(), getDeepFieldValue(), getField(), Ht()]
 - "runtime_wasm_qs": "qs()" | kind=code-symbol | source=scratch/generated-client/runtime/wasm.js:L4 | neighbors=[wasm.js, addErrorMessage(), asObject(), getDeepField(), getDeepSubSelectionValue(), getField()]
-- "runtime_wasm_throwvalidationerror": "throwValidationError()" | kind=code-symbol | source=scratch/generated-client/runtime/wasm.js:L5 | neighbors=[wasm.js, aa(), di(), Dr(), fi(), ia()]
-- "runtime_wasm_ti": "ti()" | kind=code-symbol | source=scratch/generated-client/runtime/wasm.js:L4 | neighbors=[wasm.js, Ns(), asObject(), getDeepSubSelectionValue(), getField(), getFieldValue()]
 
 ## Instructions
 

@@ -17,6 +17,10 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "generated_client_index_d_superadmincountoutputtypecounttrackingsargs": "SuperAdminCountOutputTypeCountTrackingsArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L3271 | neighbors=[index.d.ts]
+- "generated_client_index_d_superadmincountoutputtypedefaultargs": "SuperAdminCountOutputTypeDefaultArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L3254 | neighbors=[index.d.ts]
+- "generated_client_index_d_superadmincountoutputtypeselect": "SuperAdminCountOutputTypeSelect" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L3245 | neighbors=[index.d.ts]
+- "generated_client_index_d_superadmincreateargs": "SuperAdminCreateArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L5700 | neighbors=[index.d.ts]
 - "generated_client_index_d_superadmincreateinput": "SuperAdminCreateInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L37412 | neighbors=[index.d.ts]
 - "generated_client_index_d_superadmincreatemanyargs": "SuperAdminCreateManyArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L5718 | neighbors=[index.d.ts]
 - "generated_client_index_d_superadmincreatemanyinput": "SuperAdminCreateManyInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L37454 | neighbors=[index.d.ts]
@@ -53,10 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "generated_client_index_d_superadminrelationfilter": "SuperAdminRelationFilter" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L40703 | neighbors=[index.d.ts]
 - "generated_client_index_d_superadminscalarfieldenum": "SuperAdminScalarFieldEnum" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L33915 | neighbors=[index.d.ts]
 - "generated_client_index_d_superadminscalarwherewithaggregatesinput": "SuperAdminScalarWhereWithAggregatesInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L34637 | neighbors=[index.d.ts]
-- "generated_client_index_d_superadminselect": "SuperAdminSelect" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L5100 | neighbors=[index.d.ts]
-- "generated_client_index_d_superadminselectscalar": "SuperAdminSelectScalar" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L5113 | neighbors=[index.d.ts]
-- "generated_client_index_d_superadminsession": "SuperAdminSession" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L30 | neighbors=[index.d.ts]
-- "generated_client_index_d_superadminsessionaggregateargs": "SuperAdminSessionAggregateArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L5966 | neighbors=[index.d.ts]
 
 ## Instructions
 

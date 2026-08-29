@@ -17,6 +17,10 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "generated_client_index_d_registrationupsertwithoutpaymentsinput": "RegistrationUpsertWithoutPaymentsInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L50425 | neighbors=[index.d.ts]
+- "generated_client_index_d_registrationupsertwithoutresultsinput": "RegistrationUpsertWithoutResultsInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L50043 | neighbors=[index.d.ts]
+- "generated_client_index_d_registrationupsertwithouttestsinput": "RegistrationUpsertWithoutTestsInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L49035 | neighbors=[index.d.ts]
+- "generated_client_index_d_registrationupsertwithwhereuniquewithoutadmininput": "RegistrationUpsertWithWhereUniqueWithoutAdminInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L47225 | neighbors=[index.d.ts]
 - "generated_client_index_d_registrationupsertwithwhereuniquewithoutrefbyinput": "RegistrationUpsertWithWhereUniqueWithoutRefByInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L47867 | neighbors=[index.d.ts]
 - "generated_client_index_d_registrationupsertwithwhereuniquewithoutsecondrefinput": "RegistrationUpsertWithWhereUniqueWithoutSecondRefInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L47883 | neighbors=[index.d.ts]
 - "generated_client_index_d_registrationupsertwithwhereuniquewithoutworkspaceinput": "RegistrationUpsertWithWhereUniqueWithoutWorkspaceInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L45804 | neighbors=[index.d.ts]
@@ -53,10 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "generated_client_index_d_superadmincountoutputtype": "SuperAdminCountOutputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L3240 | neighbors=[index.d.ts]
 - "generated_client_index_d_superadmincountoutputtypeargs": "SuperAdminCountOutputTypeArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L54274 | neighbors=[index.d.ts]
 - "generated_client_index_d_superadmincountoutputtypecountsessionsargs": "SuperAdminCountOutputTypeCountSessionsArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L3264 | neighbors=[index.d.ts]
-- "generated_client_index_d_superadmincountoutputtypecounttrackingsargs": "SuperAdminCountOutputTypeCountTrackingsArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L3271 | neighbors=[index.d.ts]
-- "generated_client_index_d_superadmincountoutputtypedefaultargs": "SuperAdminCountOutputTypeDefaultArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L3254 | neighbors=[index.d.ts]
-- "generated_client_index_d_superadmincountoutputtypeselect": "SuperAdminCountOutputTypeSelect" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L3245 | neighbors=[index.d.ts]
-- "generated_client_index_d_superadmincreateargs": "SuperAdminCreateArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L5700 | neighbors=[index.d.ts]
 
 ## Instructions
 

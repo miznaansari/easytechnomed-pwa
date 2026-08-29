@@ -17,6 +17,10 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "runtime_index_browser_ze": "Ze()" | kind=code-symbol | source=scratch/generated-client/runtime/index-browser.js:L1 | neighbors=[index-browser.js]
+- "runtime_library_ao": "Ao()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L4 | neighbors=[library.js]
+- "runtime_library_apikey": "apiKey()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L111 | neighbors=[library.js]
+- "runtime_library_applypendingmigrations": "applyPendingMigrations()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L111 | neighbors=[library.js]
 - "runtime_library_ba": "Ba()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L31 | neighbors=[library.js]
 - "runtime_library_bc": "Bc()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L21 | neighbors=[library.js]
 - "runtime_library_bo": "bo()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L3 | neighbors=[library.js]
@@ -53,10 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "runtime_library_d_clientargs": "ClientArgs" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L140 | neighbors=[_d()]
 - "runtime_library_d_clientbuiltinprop": "ClientBuiltInProp" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L144 | neighbors=[_d()]
 - "runtime_library_d_clientoptiondef": "ClientOptionDef" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L146 | neighbors=[_d()]
-- "runtime_library_d_clientotherops": "ClientOtherOps" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L150 | neighbors=[_d()]
-- "runtime_library_d_columntype": "ColumnType" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L159 | neighbors=[_d()]
-- "runtime_library_d_compute": "Compute" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L196 | neighbors=[_d()]
-- "runtime_library_d_computedeep": "ComputeDeep" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L200 | neighbors=[_d()]
 
 ## Instructions
 

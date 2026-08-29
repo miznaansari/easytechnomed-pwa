@@ -17,6 +17,10 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "scratch_test_user_lipid_valuesmap": "valuesMap" | kind=code-symbol | source=scratch/test-user-lipid.js:L279 | neighbors=[test-user-lipid.js]
+- "scratch_test_whatsapp_url_getregistrationwhatsappurl": "getRegistrationWhatsappUrl()" | kind=code-symbol | source=scratch/test-whatsapp-url.mjs:L1 | neighbors=[test-whatsapp-url.mjs]
+- "scratch_test_whatsapp_url_samplereg": "sampleReg" | kind=code-symbol | source=scratch/test-whatsapp-url.mjs:L29 | neighbors=[test-whatsapp-url.mjs]
+- "scratch_test_whatsapp_url_url": "url" | kind=code-symbol | source=scratch/test-whatsapp-url.mjs:L40 | neighbors=[test-whatsapp-url.mjs]
 - "scratch_trigger_sync_main": "main()" | kind=code-symbol | source=scratch/trigger-sync.js:L4 | neighbors=[trigger-sync.js]
 - "scratch_trigger_sync_prisma": "prisma" | kind=code-symbol | source=scratch/trigger-sync.js:L2 | neighbors=[trigger-sync.js]
 - "scratch_trigger_sync_prismaclient": "{ PrismaClient }" | kind=code-symbol | source=scratch/trigger-sync.js:L1 | neighbors=[trigger-sync.js]
@@ -53,10 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "ui_card_cardheader": "CardHeader()" | kind=code-symbol | source=components/ui/Card.js:L14 | neighbors=[Card.js]
 - "ui_card_cardtitle": "CardTitle()" | kind=code-symbol | source=components/ui/Card.js:L22 | neighbors=[Card.js]
 - "ui_dialog_dialog": "Dialog()" | kind=code-symbol | source=components/ui/Dialog.js:L4 | neighbors=[Dialog.js]
-- "ui_dropdown_dropdown": "Dropdown()" | kind=code-symbol | source=components/ui/Dropdown.js:L5 | neighbors=[Dropdown.js]
-- "ui_dropdown_dropdownitem": "DropdownItem()" | kind=code-symbol | source=components/ui/Dropdown.js:L45 | neighbors=[Dropdown.js]
-- "ui_input_input": "Input" | kind=code-symbol | source=components/ui/Input.js:L3 | neighbors=[Input.js]
-- "ui_label_label": "Label()" | kind=code-symbol | source=components/ui/Label.js:L3 | neighbors=[Label.js]
 
 ## Instructions
 

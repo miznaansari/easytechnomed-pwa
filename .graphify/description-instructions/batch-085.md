@@ -17,6 +17,10 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "generated_client_index_d_prisma_workspacepdfclient": "Prisma__WorkspacePdfClient" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L33499 | neighbors=[index.d.ts]
+- "generated_client_index_d_prismaaction": "PrismaAction" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L3075 | neighbors=[index.d.ts]
+- "generated_client_index_d_prismaclient": "PrismaClient" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L176 | neighbors=[index.d.ts]
+- "generated_client_index_d_prismaclientoptions": "PrismaClientOptions" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L3004 | neighbors=[index.d.ts]
 - "generated_client_index_d_prismapromise": "PrismaPromise" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L13 | neighbors=[index.d.ts]
 - "generated_client_index_d_prismaversion": "PrismaVersion" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L636 | neighbors=[index.d.ts]
 - "generated_client_index_d_promisereturntype": "PromiseReturnType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L736 | neighbors=[index.d.ts]
@@ -53,10 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "generated_client_index_d_registrationcreatemanyadmininputenvelope": "RegistrationCreateManyAdminInputEnvelope" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L47044 | neighbors=[index.d.ts]
 - "generated_client_index_d_registrationcreatemanyargs": "RegistrationCreateManyArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L18330 | neighbors=[index.d.ts]
 - "generated_client_index_d_registrationcreatemanyinput": "RegistrationCreateManyInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L38668 | neighbors=[index.d.ts]
-- "generated_client_index_d_registrationcreatemanyrefbyinput": "RegistrationCreateManyRefByInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L53207 | neighbors=[index.d.ts]
-- "generated_client_index_d_registrationcreatemanyrefbyinputenvelope": "RegistrationCreateManyRefByInputEnvelope" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L47690 | neighbors=[index.d.ts]
-- "generated_client_index_d_registrationcreatemanysecondrefinput": "RegistrationCreateManySecondRefInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L53249 | neighbors=[index.d.ts]
-- "generated_client_index_d_registrationcreatemanysecondrefinputenvelope": "RegistrationCreateManySecondRefInputEnvelope" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L47789 | neighbors=[index.d.ts]
 
 ## Instructions
 

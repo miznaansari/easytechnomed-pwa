@@ -17,6 +17,10 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "runtime_library_d_dynamicqueryextensioncbargs": "DynamicQueryExtensionCbArgs" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L995 | neighbors=[_d()]
+- "runtime_library_d_dynamicqueryextensioncbargsargs": "DynamicQueryExtensionCbArgsArgs" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L1004 | neighbors=[_d()]
+- "runtime_library_d_dynamicresultextensionargs": "DynamicResultExtensionArgs" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L1007 | neighbors=[_d()]
+- "runtime_library_d_dynamicresultextensiondata": "DynamicResultExtensionData" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L1016 | neighbors=[_d()]
 - "runtime_library_d_dynamicresultextensionneeds": "DynamicResultExtensionNeeds" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L1020 | neighbors=[_d()]
 - "runtime_library_d_emptytounknown": "EmptyToUnknown" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L1031 | neighbors=[_d()]
 - "runtime_library_d_engine": "Engine" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L1033 | neighbors=[_d()]
@@ -53,10 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "runtime_library_d_fieldkind": "FieldKind" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L699 | neighbors=[_d()]
 - "runtime_library_d_fieldlocation": "FieldLocation" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L701 | neighbors=[_d()]
 - "runtime_library_d_fieldnamespace": "FieldNamespace" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L700 | neighbors=[_d()]
-- "runtime_library_d_fieldref": "FieldRef" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L1356 | neighbors=[_d()]
-- "runtime_library_d_fieldrefallowtype": "FieldRefAllowType" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L828 | neighbors=[_d()]
-- "runtime_library_d_fieldreftype": "FieldRefType" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L823 | neighbors=[_d()]
-- "runtime_library_d_fluentoperation": "FluentOperation" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L1363 | neighbors=[_d()]
 
 ## Instructions
 

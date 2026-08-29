@@ -17,6 +17,10 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "runtime_library_bd": "Bd()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L31 | neighbors=[library.js, Yr()]
+- "runtime_library_bl": "Bl()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L126 | neighbors=[library.js, im()]
+- "runtime_library_bs": "bs()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L21 | neighbors=[library.js, Os()]
+- "runtime_library_cc": "cc()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L20 | neighbors=[library.js, toString()]
 - "runtime_library_cd": "Cd()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L31 | neighbors=[library.js, ya()]
 - "runtime_library_cm": "cm()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L111 | neighbors=[library.js, um()]
 - "runtime_library_cn": "Cn()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L29 | neighbors=[library.js, va()]
@@ -53,10 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "runtime_library_getcurrentlinelength": "getCurrentLineLength()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L27 | neighbors=[library.js, write()]
 - "runtime_library_getfields": "getFields()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L27 | neighbors=[library.js, gp()]
 - "runtime_library_getnamespace": "_getNamespace()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L28 | neighbors=[library.js, constructor()]
-- "runtime_library_getoutputtypedescription": "getOutputTypeDescription()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L29 | neighbors=[library.js, rd()]
-- "runtime_library_getprintwidth": "getPrintWidth()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L27 | neighbors=[library.js, values()]
-- "runtime_library_gl": "Gl()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L126 | neighbors=[library.js, r()]
-- "runtime_library_gm": "gm()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L111 | neighbors=[library.js, logger()]
 
 ## Instructions
 

@@ -17,6 +17,10 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "generated_client_index_d_registrationpaymentupsertargs": "RegistrationPaymentUpsertArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L25847 | neighbors=[index.d.ts]
+- "generated_client_index_d_registrationpaymentupsertwithwhereuniquewithoutregistrationinput": "RegistrationPaymentUpsertWithWhereUniqueWithoutRegistrationInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L48837 | neighbors=[index.d.ts]
+- "generated_client_index_d_registrationpaymentwhereinput": "RegistrationPaymentWhereInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L36518 | neighbors=[index.d.ts]
+- "generated_client_index_d_registrationpaymentwhereuniqueinput": "RegistrationPaymentWhereUniqueInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L36545 | neighbors=[index.d.ts]
 - "generated_client_index_d_registrationrelationfilter": "RegistrationRelationFilter" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L41717 | neighbors=[index.d.ts]
 - "generated_client_index_d_registrationscalarfieldenum": "RegistrationScalarFieldEnum" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L34135 | neighbors=[index.d.ts]
 - "generated_client_index_d_registrationscalarwhereinput": "RegistrationScalarWhereInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L45820 | neighbors=[index.d.ts]
@@ -53,10 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "generated_client_index_d_registrationtestdefaultargs": "RegistrationTestDefaultArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L19568 | neighbors=[index.d.ts]
 - "generated_client_index_d_registrationtestdelegate": "RegistrationTestDelegate" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L18894 | neighbors=[index.d.ts]
 - "generated_client_index_d_registrationtestdeleteargs": "RegistrationTestDeleteArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L19540 | neighbors=[index.d.ts]
-- "generated_client_index_d_registrationtestdeletemanyargs": "RegistrationTestDeleteManyArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L19558 | neighbors=[index.d.ts]
-- "generated_client_index_d_registrationtestfieldrefs": "RegistrationTestFieldRefs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L19253 | neighbors=[index.d.ts]
-- "generated_client_index_d_registrationtestfindfirstargs": "RegistrationTestFindFirstArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L19310 | neighbors=[index.d.ts]
-- "generated_client_index_d_registrationtestfindfirstorthrowargs": "RegistrationTestFindFirstOrThrowArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L19358 | neighbors=[index.d.ts]
 
 ## Instructions
 

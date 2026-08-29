@@ -17,6 +17,10 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "generated_client_index_d_nullabledatetimefieldupdateoperationsinput": "NullableDateTimeFieldUpdateOperationsInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L42887 | neighbors=[index.d.ts]
+- "generated_client_index_d_nullabledecimalfieldupdateoperationsinput": "NullableDecimalFieldUpdateOperationsInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L43983 | neighbors=[index.d.ts]
+- "generated_client_index_d_nullablefloatfieldupdateoperationsinput": "NullableFloatFieldUpdateOperationsInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L44397 | neighbors=[index.d.ts]
+- "generated_client_index_d_nullableintfieldupdateoperationsinput": "NullableIntFieldUpdateOperationsInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L43331 | neighbors=[index.d.ts]
 - "generated_client_index_d_nullablestringfieldupdateoperationsinput": "NullableStringFieldUpdateOperationsInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L43261 | neighbors=[index.d.ts]
 - "generated_client_index_d_nullsorder": "NullsOrder" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L34427 | neighbors=[index.d.ts]
 - "generated_client_index_d_optionalflat": "OptionalFlat" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L886 | neighbors=[index.d.ts]
@@ -53,10 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "generated_client_index_d_parametercreatenestedonewithoutinterpretationrulesinput": "ParameterCreateNestedOneWithoutInterpretationRulesInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L44771 | neighbors=[index.d.ts]
 - "generated_client_index_d_parametercreatenestedonewithouttestformulasinput": "ParameterCreateNestedOneWithoutTestFormulasInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L44727 | neighbors=[index.d.ts]
 - "generated_client_index_d_parametercreatenestedonewithouttestmappingsinput": "ParameterCreateNestedOneWithoutTestMappingsInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L44512 | neighbors=[index.d.ts]
-- "generated_client_index_d_parametercreateorconnectwithoutinterpretationrulesinput": "ParameterCreateOrConnectWithoutInterpretationRulesInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L51369 | neighbors=[index.d.ts]
-- "generated_client_index_d_parametercreateorconnectwithouttestformulasinput": "ParameterCreateOrConnectWithoutTestFormulasInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L50975 | neighbors=[index.d.ts]
-- "generated_client_index_d_parametercreateorconnectwithouttestmappingsinput": "ParameterCreateOrConnectWithoutTestMappingsInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L49616 | neighbors=[index.d.ts]
-- "generated_client_index_d_parametercreateorconnectwithoutworkspaceinput": "ParameterCreateOrConnectWithoutWorkspaceInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L45522 | neighbors=[index.d.ts]
 
 ## Instructions
 

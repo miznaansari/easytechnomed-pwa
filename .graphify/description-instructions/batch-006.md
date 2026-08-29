@@ -24,6 +24,8 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "runtime_wasm_throwvalidationerror": "throwValidationError()" | kind=code-symbol | source=scratch/generated-client/runtime/wasm.js:L5 | neighbors=[wasm.js, aa(), di(), Dr(), fi(), ia()]
+- "runtime_wasm_ti": "ti()" | kind=code-symbol | source=scratch/generated-client/runtime/wasm.js:L4 | neighbors=[wasm.js, Ns(), asObject(), getDeepSubSelectionValue(), getField(), getFieldValue()]
 - "runtime_wasm_values": "values()" | kind=code-symbol | source=scratch/generated-client/runtime/wasm.js:L5 | neighbors=[wasm.js, as(), ci(), getPrintWidth(), ui(), unpack()]
 - "scratch_test_identity_and_qr": "test_identity_and_qr.mjs" | kind=code-symbol | source=scratch/test_identity_and_qr.mjs:L1 | neighbors=[6c2dfe4 test, decryptReportToken(), generateReportToken(), verifyReportToken(), generateRandomSuffix(), generateQrCodeDataUrl()]
 - "tests_route": "route.js" | kind=code-symbol | source=app/api/tests/route.js:L1 | neighbors=[252e194 e, 7d8c494 fxed, DELETE(), GET(), POST(), PUT()]
@@ -33,7 +35,6 @@ one-sentence description — no prose, no markdown fences.
 - "id_route": "route.js" | kind=code-symbol | source=app/api/registrations/[id]/route.js:L1 | neighbors=[252e194 e, d446d11 fixed code, DELETE(), GET(), PUT(), registrationSchema]
 - "payments_paymentsclient": "paymentsClient.jsx" | kind=code-symbol | source=app/(customer)/(dashboard)/settings/payments/paymentsClient.jsx:L1 | neighbors=[252e194 e, 532b740 fixed, 53ca5c1 stable version 1, cf2bb98 new, page.js, PaymentsClient()]
 - "print_openprint": "openPrint.js" | kind=code-symbol | source=lib/offline/print/openPrint.js:L1 | neighbors=[8b1f3d8 a, billHtmlGenerator.js, generateOfflineBillHtml(), openOfflineBillPrint(), openOfflineReportPrint(), reportPdfGenerator.js]
-- "providers_offlineprovider": "OfflineProvider.jsx" | kind=code-symbol | source=components/providers/OfflineProvider.jsx:L1 | neighbors=[2b2534c f, 7d8c494 fxed, 84a8ff2 full indexeddb based, 9e25c19 f, 9f59247 expire token, b5dedb0 f]
 - "runtime_edge_aa": "Aa()" | kind=code-symbol | source=scratch/generated-client/runtime/edge.js:L1 | neighbors=[edge.js, ln(), r(), rn(), sn(), xe()]
 - "runtime_edge_bu": "bu()" | kind=code-symbol | source=scratch/generated-client/runtime/edge.js:L4 | neighbors=[edge.js, addErrorMessage(), Ao(), getDeepSelectionParent(), isEmpty(), removeAllFields()]
 - "runtime_edge_do": "Do()" | kind=code-symbol | source=scratch/generated-client/runtime/edge.js:L5 | neighbors=[edge.js, Cr(), _getName(), ko(), Lu(), ot()]
@@ -63,7 +64,6 @@ one-sentence description — no prose, no markdown fences.
 - "runtime_library_bp": "Bp()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L28 | neighbors=[library.js, addErrorMessage(), asObject(), getDeepField(), getDeepSubSelectionValue(), markAsError()]
 - "runtime_library_br": "Br()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L4 | neighbors=[library.js, Fe(), It(), Pt(), slice(), vt()]
 - "runtime_library_fe": "Fe()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L21 | neighbors=[library.js, Br(), dp(), e(), y(), shouldApplyGlobalOmit()]
-- "runtime_library_getselectionpath": "getSelectionPath()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L29 | neighbors=[library.js, aa(), ed(), I(), od(), rd()]
 
 ## Instructions
 

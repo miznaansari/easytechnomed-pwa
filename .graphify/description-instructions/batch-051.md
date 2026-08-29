@@ -17,6 +17,10 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "components_adddoctordrawer_adddoctordrawer": "AddDoctorDrawer()" | kind=code-symbol | source=components/AddDoctorDrawer.js:L28 | neighbors=[AddDoctorDrawer.js]
+- "components_adminlayoutclient_adminlayoutclient": "AdminLayoutClient()" | kind=code-symbol | source=components/AdminLayoutClient.js:L135 | neighbors=[AdminLayoutClient.js]
+- "components_adminlayoutclient_getexpirymessage": "getExpiryMessage()" | kind=code-symbol | source=components/AdminLayoutClient.js:L101 | neighbors=[AdminLayoutClient.js]
+- "components_adminlayoutclient_theme": "theme" | kind=code-symbol | source=components/AdminLayoutClient.js:L55 | neighbors=[AdminLayoutClient.js]
 - "components_expiredplanview_expiredplanview": "ExpiredPlanView()" | kind=code-symbol | source=components/ExpiredPlanView.jsx:L30 | neighbors=[ExpiredPlanView.jsx]
 - "components_pwaregister_pwaregister": "PWARegister()" | kind=code-symbol | source=components/PWARegister.js:L6 | neighbors=[PWARegister.js]
 - "components_toastprovider_toastprovider": "ToastProvider()" | kind=code-symbol | source=components/ToastProvider.js:L5 | neighbors=[ToastProvider.js]
@@ -53,10 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "generated_client_index_d_admin": "Admin" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L55 | neighbors=[index.d.ts]
 - "generated_client_index_d_admin_addressargs": "Admin$addressArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L11831 | neighbors=[index.d.ts]
 - "generated_client_index_d_admin_registrationsargs": "Admin$registrationsArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L11886 | neighbors=[index.d.ts]
-- "generated_client_index_d_admin_sessionsargs": "Admin$sessionsArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L11846 | neighbors=[index.d.ts]
-- "generated_client_index_d_admin_trackingsargs": "Admin$trackingsArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L11866 | neighbors=[index.d.ts]
-- "generated_client_index_d_admin_workspaceargs": "Admin$workspaceArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L11816 | neighbors=[index.d.ts]
-- "generated_client_index_d_adminaddress": "AdminAddress" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L115 | neighbors=[index.d.ts]
 
 ## Instructions
 

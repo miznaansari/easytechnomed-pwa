@@ -17,6 +17,10 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "runtime_edge_esm_ei": "ei()" | kind=code-symbol | source=scratch/generated-client/runtime/edge-esm.js:L20 | neighbors=[edge-esm.js]
+- "runtime_edge_esm_enable": "enable()" | kind=code-symbol | source=scratch/generated-client/runtime/edge-esm.js:L1 | neighbors=[edge-esm.js]
+- "runtime_edge_esm_ep": "ep()" | kind=code-symbol | source=scratch/generated-client/runtime/edge-esm.js:L30 | neighbors=[edge-esm.js]
+- "runtime_edge_esm_fa": "fa()" | kind=code-symbol | source=scratch/generated-client/runtime/edge-esm.js:L1 | neighbors=[edge-esm.js]
 - "runtime_edge_esm_fe": "Fe()" | kind=code-symbol | source=scratch/generated-client/runtime/edge-esm.js:L6 | neighbors=[edge-esm.js]
 - "runtime_edge_esm_fn": "Fn()" | kind=code-symbol | source=scratch/generated-client/runtime/edge-esm.js:L6 | neighbors=[edge-esm.js]
 - "runtime_edge_esm_fo": "fo()" | kind=code-symbol | source=scratch/generated-client/runtime/edge-esm.js:L1 | neighbors=[edge-esm.js]
@@ -53,10 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "runtime_edge_esm_rl": "Rl()" | kind=code-symbol | source=scratch/generated-client/runtime/edge-esm.js:L1 | neighbors=[edge-esm.js]
 - "runtime_edge_esm_ro": "ro()" | kind=code-symbol | source=scratch/generated-client/runtime/edge-esm.js:L1 | neighbors=[edge-esm.js]
 - "runtime_edge_esm_rs": "rs()" | kind=code-symbol | source=scratch/generated-client/runtime/edge-esm.js:L6 | neighbors=[edge-esm.js]
-- "runtime_edge_esm_sc": "sc()" | kind=code-symbol | source=scratch/generated-client/runtime/edge-esm.js:L6 | neighbors=[edge-esm.js]
-- "runtime_edge_esm_set": "set()" | kind=code-symbol | source=scratch/generated-client/runtime/edge-esm.js:L5 | neighbors=[edge-esm.js]
-- "runtime_edge_esm_sr": "Sr()" | kind=code-symbol | source=scratch/generated-client/runtime/edge-esm.js:L4 | neighbors=[edge-esm.js]
-- "runtime_edge_esm_statement": "statement()" | kind=code-symbol | source=scratch/generated-client/runtime/edge-esm.js:L5 | neighbors=[edge-esm.js]
 
 ## Instructions
 

@@ -17,6 +17,10 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "runtime_edge_sql": "sql()" | kind=code-symbol | source=scratch/generated-client/runtime/edge.js:L5 | neighbors=[edge.js, get()]
+- "runtime_edge_ss": "ss()" | kind=code-symbol | source=scratch/generated-client/runtime/edge.js:L6 | neighbors=[edge.js, dc()]
+- "runtime_edge_start": "start()" | kind=code-symbol | source=scratch/generated-client/runtime/edge.js:L12 | neighbors=[edge.js, url()]
+- "runtime_edge_transaction": "transaction()" | kind=code-symbol | source=scratch/generated-client/runtime/edge.js:L12 | neighbors=[edge.js, withRetry()]
 - "runtime_edge_unindent": "unindent()" | kind=code-symbol | source=scratch/generated-client/runtime/edge.js:L2 | neighbors=[edge.js, withIndent()]
 - "runtime_edge_url": "url()" | kind=code-symbol | source=scratch/generated-client/runtime/edge.js:L12 | neighbors=[edge.js, start()]
 - "runtime_edge_uu": "uu()" | kind=code-symbol | source=scratch/generated-client/runtime/edge.js:L1 | neighbors=[edge.js, st()]
@@ -53,10 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "runtime_library_am": "Am()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L126 | neighbors=[library.js, vt()]
 - "runtime_library_ap": "ap()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L21 | neighbors=[library.js, y()]
 - "runtime_library_au": "Au()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L4 | neighbors=[library.js, pe()]
-- "runtime_library_bd": "Bd()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L31 | neighbors=[library.js, Yr()]
-- "runtime_library_bl": "Bl()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L126 | neighbors=[library.js, im()]
-- "runtime_library_bs": "bs()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L21 | neighbors=[library.js, Os()]
-- "runtime_library_cc": "cc()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L20 | neighbors=[library.js, toString()]
 
 ## Instructions
 

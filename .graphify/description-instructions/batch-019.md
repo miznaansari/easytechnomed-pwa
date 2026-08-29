@@ -17,6 +17,7 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "runtime_edge_getfieldvalue": "getFieldValue()" | kind=code-symbol | source=scratch/generated-client/runtime/edge.js:L3 | neighbors=[edge.js, getDeepSelectionParent(), getField(), ro()]
 - "runtime_edge_getglobalomit": "getGlobalOmit()" | kind=code-symbol | source=scratch/generated-client/runtime/edge.js:L5 | neighbors=[edge.js, nt(), shouldApplyGlobalOmit(), ju()]
 - "runtime_edge_getname": "_getName()" | kind=code-symbol | source=scratch/generated-client/runtime/edge.js:L4 | neighbors=[edge.js, bo(), constructor(), Do()]
 - "runtime_edge_handleandlogrequesterror": "handleAndLogRequestError()" | kind=code-symbol | source=scratch/generated-client/runtime/edge.js:L20 | neighbors=[edge.js, emit(), handleRequestError(), request()]
@@ -56,7 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "runtime_index_browser_be": "be()" | kind=code-symbol | source=scratch/generated-client/runtime/index-browser.js:L1 | neighbors=[index-browser.js, e(), i(), Re()]
 - "runtime_index_browser_ee": "Ee()" | kind=code-symbol | source=scratch/generated-client/runtime/index-browser.js:L1 | neighbors=[index-browser.js, O(), p(), x()]
 - "runtime_index_browser_j": "j()" | kind=code-symbol | source=scratch/generated-client/runtime/index-browser.js:L1 | neighbors=[index-browser.js, e(), sn(), un()]
-- "runtime_index_browser_ke": "ke()" | kind=code-symbol | source=scratch/generated-client/runtime/index-browser.js:L1 | neighbors=[index-browser.js, F(), ie(), Ve()]
 
 ## Instructions
 

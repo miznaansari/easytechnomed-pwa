@@ -17,6 +17,10 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "scratch_test_formula_calc_valuesfemale": "valuesFemale" | kind=code-symbol | source=scratch/test-formula-calc.js:L110 | neighbors=[test-formula-calc.js]
+- "scratch_test_formula_calc_valuesmale": "valuesMale" | kind=code-symbol | source=scratch/test-formula-calc.js:L124 | neighbors=[test-formula-calc.js]
+- "scratch_test_formula_run_main": "main()" | kind=code-symbol | source=scratch/test-formula-run.js:L6 | neighbors=[test-formula-run.js]
+- "scratch_test_formula_run_prisma": "prisma" | kind=code-symbol | source=scratch/test-formula-run.js:L4 | neighbors=[test-formula-run.js]
 - "scratch_test_formula_verification_overrides1": "overrides1" | kind=code-symbol | source=scratch/test-formula-verification.mjs:L44 | neighbors=[test-formula-verification.mjs]
 - "scratch_test_formula_verification_overrides2": "overrides2" | kind=code-symbol | source=scratch/test-formula-verification.mjs:L58 | neighbors=[test-formula-verification.mjs]
 - "scratch_test_formula_verification_result1": "result1" | kind=code-symbol | source=scratch/test-formula-verification.mjs:L45 | neighbors=[test-formula-verification.mjs]
@@ -53,10 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "scratch_test_user_lipid_res": "res" | kind=code-symbol | source=scratch/test-user-lipid.js:L287 | neighbors=[test-user-lipid.js]
 - "scratch_test_user_lipid_typedvalues": "typedValues" | kind=code-symbol | source=scratch/test-user-lipid.js:L273 | neighbors=[test-user-lipid.js]
 - "scratch_test_user_lipid_userparams": "userParams" | kind=code-symbol | source=scratch/test-user-lipid.js:L251 | neighbors=[test-user-lipid.js]
-- "scratch_test_user_lipid_valuesmap": "valuesMap" | kind=code-symbol | source=scratch/test-user-lipid.js:L279 | neighbors=[test-user-lipid.js]
-- "scratch_test_whatsapp_url_getregistrationwhatsappurl": "getRegistrationWhatsappUrl()" | kind=code-symbol | source=scratch/test-whatsapp-url.mjs:L1 | neighbors=[test-whatsapp-url.mjs]
-- "scratch_test_whatsapp_url_samplereg": "sampleReg" | kind=code-symbol | source=scratch/test-whatsapp-url.mjs:L29 | neighbors=[test-whatsapp-url.mjs]
-- "scratch_test_whatsapp_url_url": "url" | kind=code-symbol | source=scratch/test-whatsapp-url.mjs:L40 | neighbors=[test-whatsapp-url.mjs]
 
 ## Instructions
 

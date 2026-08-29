@@ -17,6 +17,10 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "generated_client_index_d_adminsessionfieldrefs": "AdminSessionFieldRefs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L12536 | neighbors=[index.d.ts]
+- "generated_client_index_d_adminsessionfindfirstargs": "AdminSessionFindFirstArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L12587 | neighbors=[index.d.ts]
+- "generated_client_index_d_adminsessionfindfirstorthrowargs": "AdminSessionFindFirstOrThrowArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L12635 | neighbors=[index.d.ts]
+- "generated_client_index_d_adminsessionfindmanyargs": "AdminSessionFindManyArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L12683 | neighbors=[index.d.ts]
 - "generated_client_index_d_adminsessionfinduniqueargs": "AdminSessionFindUniqueArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L12551 | neighbors=[index.d.ts]
 - "generated_client_index_d_adminsessionfinduniqueorthrowargs": "AdminSessionFindUniqueOrThrowArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L12569 | neighbors=[index.d.ts]
 - "generated_client_index_d_adminsessiongetpayload": "AdminSessionGetPayload" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L12171 | neighbors=[index.d.ts]
@@ -53,10 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "generated_client_index_d_adminsessionupdateargs": "AdminSessionUpdateArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L12755 | neighbors=[index.d.ts]
 - "generated_client_index_d_adminsessionupdateinput": "AdminSessionUpdateInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L38048 | neighbors=[index.d.ts]
 - "generated_client_index_d_adminsessionupdatemanyargs": "AdminSessionUpdateManyArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L12777 | neighbors=[index.d.ts]
-- "generated_client_index_d_adminsessionupdatemanymutationinput": "AdminSessionUpdateManyMutationInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L38077 | neighbors=[index.d.ts]
-- "generated_client_index_d_adminsessionupdatemanywithoutadminnestedinput": "AdminSessionUpdateManyWithoutAdminNestedInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L43559 | neighbors=[index.d.ts]
-- "generated_client_index_d_adminsessionupdatemanywithwherewithoutadmininput": "AdminSessionUpdateManyWithWhereWithoutAdminInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L47176 | neighbors=[index.d.ts]
-- "generated_client_index_d_adminsessionupdatewithoutadmininput": "AdminSessionUpdateWithoutAdminInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L52888 | neighbors=[index.d.ts]
 
 ## Instructions
 

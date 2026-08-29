@@ -17,6 +17,10 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "generated_client_index_d_testformulaupsertwithwhereuniquewithoutoutputparameterinput": "TestFormulaUpsertWithWhereUniqueWithoutOutputParameterInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L49430 | neighbors=[index.d.ts]
+- "generated_client_index_d_testformulaupsertwithwhereuniquewithouttestinput": "TestFormulaUpsertWithWhereUniqueWithoutTestInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L48273 | neighbors=[index.d.ts]
+- "generated_client_index_d_testformulaupsertwithwhereuniquewithoutworkspaceinput": "TestFormulaUpsertWithWhereUniqueWithoutWorkspaceInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L46046 | neighbors=[index.d.ts]
+- "generated_client_index_d_testformulawhereinput": "TestFormulaWhereInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L36870 | neighbors=[index.d.ts]
 - "generated_client_index_d_testformulawhereuniqueinput": "TestFormulaWhereUniqueInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L36907 | neighbors=[index.d.ts]
 - "generated_client_index_d_testformulaworkspaceidtestidoutputparameteridcompounduniqueinput": "TestFormulaWorkspaceIdTestIdOutputParameterIdCompoundUniqueInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L42447 | neighbors=[index.d.ts]
 - "generated_client_index_d_testgetpayload": "TestGetPayload" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L16248 | neighbors=[index.d.ts]
@@ -53,10 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "generated_client_index_d_testparametercreateargs": "TestParameterCreateArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L21978 | neighbors=[index.d.ts]
 - "generated_client_index_d_testparametercreateinput": "TestParameterCreateInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L39176 | neighbors=[index.d.ts]
 - "generated_client_index_d_testparametercreatemanyargs": "TestParameterCreateManyArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L21996 | neighbors=[index.d.ts]
-- "generated_client_index_d_testparametercreatemanyinput": "TestParameterCreateManyInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L39266 | neighbors=[index.d.ts]
-- "generated_client_index_d_testparametercreatemanyparameterinput": "TestParameterCreateManyParameterInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L53949 | neighbors=[index.d.ts]
-- "generated_client_index_d_testparametercreatemanyparameterinputenvelope": "TestParameterCreateManyParameterInputEnvelope" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L49293 | neighbors=[index.d.ts]
-- "generated_client_index_d_testparametercreatemanytestinput": "TestParameterCreateManyTestInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L53591 | neighbors=[index.d.ts]
 
 ## Instructions
 

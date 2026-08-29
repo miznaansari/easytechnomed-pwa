@@ -24,6 +24,9 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "commit:repo:github.com-personal/miznaansari/easytechnomed-pwa@713405831eef818366ebb6342eb43cd7340a4a62": "7134058 1.1.29" | kind=Commit | source=git | neighbors=[main, b5ea15f d, d87cf87 d]
+- "commit:repo:github.com-personal/miznaansari/easytechnomed-pwa@720f0160e2a9e5247fee57dd7f67464920beaa7c": "720f016 2.0.13" | kind=Commit | source=git | neighbors=[main, 905ef50 fixed, c070c55 fixed]
+- "commit:repo:github.com-personal/miznaansari/easytechnomed-pwa@7ec66e7df558d9a5ccbcadcf69502606866a22f3": "7ec66e7 3.0.18" | kind=Commit | source=git | neighbors=[main, 2582be7 fixed zoom issue, 8b1f3d8 a]
 - "commit:repo:github.com-personal/miznaansari/easytechnomed-pwa@7ec76baa937c381ba6859cd5d0cfe2bb9a34815d": "7ec76ba 2.0.12" | kind=Commit | source=git | neighbors=[4d7570f fixed, main, c070c55 fixed]
 - "commit:repo:github.com-personal/miznaansari/easytechnomed-pwa@7fcf80494a27d4ec2c960aafbecce7822f0a3df5": "7fcf804 1.1.30" | kind=Commit | source=git | neighbors=[main, a4caf17 fix: ensure Service Worker only…, b5ea15f d]
 - "commit:repo:github.com-personal/miznaansari/easytechnomed-pwa@8065d22d01c683faaa33c19410974d6979d7d1fe": "8065d22 3.0.8" | kind=Commit | source=git | neighbors=[2daebb8 f, main, 165f057 f]
@@ -43,6 +46,7 @@ one-sentence description — no prose, no markdown fences.
 - "commit:repo:github.com-personal/miznaansari/easytechnomed-pwa@cc4c42700f90d3aaec33239797a4bf165ff759d3": "cc4c427 1.1.26" | kind=Commit | source=git | neighbors=[6fcf015 f, main, 56f4d63 f]
 - "commit:repo:github.com-personal/miznaansari/easytechnomed-pwa@dad94e154d28d52e1022bfb4ad46b292c0217a63": "dad94e1 2.0.18" | kind=Commit | source=git | neighbors=[37ee548 f, main, 9e25c19 f]
 - "commit:repo:github.com-personal/miznaansari/easytechnomed-pwa@dbe17328a3c0ed13c2d1fc9400bad8257f433f7c": "dbe1732 1.1.25" | kind=Commit | source=git | neighbors=[main, 6fcf015 f, eb8b1e5 f]
+- "commit:repo:github.com-personal/miznaansari/easytechnomed-pwa@e01658c7ee068df1118ba443c9b24f5f56e20f03": "e01658c 3.1.0" | kind=Commit | source=git | neighbors=[67434f2 payment issue only, main, 6236f60 new update]
 - "commit:repo:github.com-personal/miznaansari/easytechnomed-pwa@e7103414d8890eb785205bb901bf456f01bd4be6": "e710341 1.1.32" | kind=Commit | source=git | neighbors=[91c4f7a feat: complete offline support …, main, a409645 fix: resolve Chrome reload loop…]
 - "commit:repo:github.com-personal/miznaansari/easytechnomed-pwa@e9caab3ea343ad7030c27e2201023719ed930428": "e9caab3 2.0.15" | kind=Commit | source=git | neighbors=[cb86968 fixed, main, bcee6c8 fi]
 - "commit:repo:github.com-personal/miznaansari/easytechnomed-pwa@e9f3af911d7a7f7a10c4bf02f044a25f7b5e1801": "e9f3af9 2.0.6" | kind=Commit | source=git | neighbors=[6618261 f, main, 4ba60cc fixed]
@@ -58,12 +62,8 @@ one-sentence description — no prose, no markdown fences.
 - "component_moneyreciptmobile": "MoneyReciptMobile.jsx" | kind=code-symbol | source=app/(customer)/(dashboard)/test-report/component/MoneyReciptMobile.jsx:L1 | neighbors=[252e194 e, MoneyRecipt.jsx, MoneyReciptMobile()]
 - "component_resultentrymobile": "resultEntryMobile.jsx" | kind=code-symbol | source=app/(customer)/(dashboard)/test-report/component/resultEntryMobile.jsx:L1 | neighbors=[252e194 e, resultEntry.jsx, ResultEntryMobile()]
 - "components_adddoctordrawer": "AddDoctorDrawer.js" | kind=code-symbol | source=components/AddDoctorDrawer.js:L1 | neighbors=[252e194 e, 84a8ff2 full indexeddb based, AddDoctorDrawer()]
+- "components_expiredplanview": "ExpiredPlanView.jsx" | kind=code-symbol | source=components/ExpiredPlanView.jsx:L1 | neighbors=[252e194 e, 6236f60 new update, ExpiredPlanView()]
 - "doctor_summary_route": "route.js" | kind=code-symbol | source=app/api/doctor-summary/route.js:L1 | neighbors=[252e194 e, GET(), serializeData()]
-- "id_route_serializedata": "serializeData()" | kind=code-symbol | source=app/api/registrations/[id]/route.js:L7 | neighbors=[route.js, GET(), PUT()]
-- "improve_route": "route.js" | kind=code-symbol | source=app/api/ai/improve/route.js:L1 | neighbors=[252e194 e, callGemini(), POST()]
-- "lib_formulautils_addpatientcontexttovaluesmap": "addPatientContextToValuesMap()" | kind=code-symbol | source=lib/formulaUtils.js:L278 | neighbors=[formulaEngine.js, formulaUtils.js, calculateAllDependents()]
-- "lib_formulautils_addvaluetovaluesmap": "addValueToValuesMap()" | kind=code-symbol | source=lib/formulaUtils.js:L10 | neighbors=[formulaEngine.js, formulaUtils.js, calculateAllDependents()]
-- "lib_formulautils_isoutofrange": "isOutOfRange()" | kind=code-symbol | source=lib/formulaUtils.js:L550 | neighbors=[formulaEngine.js, formulaUtils.js, isQualitativeAbnormal()]
 
 ## Instructions
 

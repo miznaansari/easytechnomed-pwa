@@ -17,6 +17,10 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "generated_client_index_d_testparametercreatemanyinput": "TestParameterCreateManyInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L39266 | neighbors=[index.d.ts]
+- "generated_client_index_d_testparametercreatemanyparameterinput": "TestParameterCreateManyParameterInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L53949 | neighbors=[index.d.ts]
+- "generated_client_index_d_testparametercreatemanyparameterinputenvelope": "TestParameterCreateManyParameterInputEnvelope" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L49293 | neighbors=[index.d.ts]
+- "generated_client_index_d_testparametercreatemanytestinput": "TestParameterCreateManyTestInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L53591 | neighbors=[index.d.ts]
 - "generated_client_index_d_testparametercreatemanytestinputenvelope": "TestParameterCreateManyTestInputEnvelope" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L48077 | neighbors=[index.d.ts]
 - "generated_client_index_d_testparametercreatemanyworkspaceinput": "TestParameterCreateManyWorkspaceInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L51926 | neighbors=[index.d.ts]
 - "generated_client_index_d_testparametercreatemanyworkspaceinputenvelope": "TestParameterCreateManyWorkspaceInputEnvelope" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L45580 | neighbors=[index.d.ts]
@@ -53,10 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "generated_client_index_d_testparameterminaggregateinputtype": "TestParameterMinAggregateInputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L21124 | neighbors=[index.d.ts]
 - "generated_client_index_d_testparameterminaggregateoutputtype": "TestParameterMinAggregateOutputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L21036 | neighbors=[index.d.ts]
 - "generated_client_index_d_testparameterminorderbyaggregateinput": "TestParameterMinOrderByAggregateInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L42053 | neighbors=[index.d.ts]
-- "generated_client_index_d_testparameterorderbyrelationaggregateinput": "TestParameterOrderByRelationAggregateInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L40507 | neighbors=[index.d.ts]
-- "generated_client_index_d_testparameterorderbywithaggregationinput": "TestParameterOrderByWithAggregationInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L36249 | neighbors=[index.d.ts]
-- "generated_client_index_d_testparameterorderbywithrelationinput": "TestParameterOrderByWithRelationInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L36194 | neighbors=[index.d.ts]
-- "generated_client_index_d_testparameterpayload": "$TestParameterPayload" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L21376 | neighbors=[index.d.ts]
 
 ## Instructions
 

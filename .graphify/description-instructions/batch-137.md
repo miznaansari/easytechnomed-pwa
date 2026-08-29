@@ -17,6 +17,10 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "runtime_library_d_modelmapping": "ModelMapping" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L829 | neighbors=[_d()]
+- "runtime_library_d_modelqueryoptionscb": "ModelQueryOptionsCb" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L2148 | neighbors=[_d()]
+- "runtime_library_d_modelqueryoptionscbargs": "ModelQueryOptionsCbArgs" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L2150 | neighbors=[_d()]
+- "runtime_library_d_modulo": "Modulo" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L331 | neighbors=[_d()]
 - "runtime_library_d_nameargs": "NameArgs" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L2157 | neighbors=[_d()]
 - "runtime_library_d_narrow": "Narrow" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L2161 | neighbors=[_d()]
 - "runtime_library_d_narrowable": "Narrowable" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L2165 | neighbors=[_d()]
@@ -53,10 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "runtime_library_d_prismapromisecallback": "PrismaPromiseCallback" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L2454 | neighbors=[_d()]
 - "runtime_library_d_prismapromisefactory": "PrismaPromiseFactory" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L2465 | neighbors=[_d()]
 - "runtime_library_d_prismapromiseinteractivetransaction": "PrismaPromiseInteractiveTransaction" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L2467 | neighbors=[_d()]
-- "runtime_library_d_prismapromisetransaction": "PrismaPromiseTransaction" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L2473 | neighbors=[_d()]
-- "runtime_library_d_query": "Query" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L768 | neighbors=[_d()]
-- "runtime_library_d_queryenginebatchgraphqlrequest": "QueryEngineBatchGraphQLRequest" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L2521 | neighbors=[_d()]
-- "runtime_library_d_queryenginebatchrequest": "QueryEngineBatchRequest" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L2527 | neighbors=[_d()]
 
 ## Instructions
 

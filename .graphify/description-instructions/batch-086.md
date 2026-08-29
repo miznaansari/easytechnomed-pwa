@@ -17,6 +17,10 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "generated_client_index_d_registrationcreatemanyrefbyinput": "RegistrationCreateManyRefByInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L53207 | neighbors=[index.d.ts]
+- "generated_client_index_d_registrationcreatemanyrefbyinputenvelope": "RegistrationCreateManyRefByInputEnvelope" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L47690 | neighbors=[index.d.ts]
+- "generated_client_index_d_registrationcreatemanysecondrefinput": "RegistrationCreateManySecondRefInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L53249 | neighbors=[index.d.ts]
+- "generated_client_index_d_registrationcreatemanysecondrefinputenvelope": "RegistrationCreateManySecondRefInputEnvelope" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L47789 | neighbors=[index.d.ts]
 - "generated_client_index_d_registrationcreatemanyworkspaceinput": "RegistrationCreateManyWorkspaceInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L51805 | neighbors=[index.d.ts]
 - "generated_client_index_d_registrationcreatemanyworkspaceinputenvelope": "RegistrationCreateManyWorkspaceInputEnvelope" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L45326 | neighbors=[index.d.ts]
 - "generated_client_index_d_registrationcreatenestedmanywithoutadmininput": "RegistrationCreateNestedManyWithoutAdminInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L43497 | neighbors=[index.d.ts]
@@ -53,10 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "generated_client_index_d_registrationgetpayload": "RegistrationGetPayload" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L17718 | neighbors=[index.d.ts]
 - "generated_client_index_d_registrationgroupbyargs": "RegistrationGroupByArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L17480 | neighbors=[index.d.ts]
 - "generated_client_index_d_registrationgroupbyoutputtype": "RegistrationGroupByOutputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L17494 | neighbors=[index.d.ts]
-- "generated_client_index_d_registrationinclude": "RegistrationInclude" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L17651 | neighbors=[index.d.ts]
-- "generated_client_index_d_registrationlistrelationfilter": "RegistrationListRelationFilter" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L40431 | neighbors=[index.d.ts]
-- "generated_client_index_d_registrationmaxaggregateinputtype": "RegistrationMaxAggregateInputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L17321 | neighbors=[index.d.ts]
-- "generated_client_index_d_registrationmaxaggregateoutputtype": "RegistrationMaxAggregateOutputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L17154 | neighbors=[index.d.ts]
 
 ## Instructions
 

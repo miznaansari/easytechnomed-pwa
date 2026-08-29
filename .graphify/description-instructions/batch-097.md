@@ -17,6 +17,10 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "generated_client_index_d_superadmintrackingargs": "SuperAdminTrackingArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L54410 | neighbors=[index.d.ts]
+- "generated_client_index_d_superadmintrackingavgaggregateinputtype": "SuperAdminTrackingAvgAggregateInputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L27865 | neighbors=[index.d.ts]
+- "generated_client_index_d_superadmintrackingavgaggregateoutputtype": "SuperAdminTrackingAvgAggregateOutputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L27815 | neighbors=[index.d.ts]
+- "generated_client_index_d_superadmintrackingavgorderbyaggregateinput": "SuperAdminTrackingAvgOrderByAggregateInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L42382 | neighbors=[index.d.ts]
 - "generated_client_index_d_superadmintrackingcountaggregateinputtype": "SuperAdminTrackingCountAggregateInputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L27901 | neighbors=[index.d.ts]
 - "generated_client_index_d_superadmintrackingcountaggregateoutputtype": "SuperAdminTrackingCountAggregateOutputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L27851 | neighbors=[index.d.ts]
 - "generated_client_index_d_superadmintrackingcountargs": "SuperAdminTrackingCountArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L28082 | neighbors=[index.d.ts]
@@ -53,10 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "generated_client_index_d_superadmintrackingminorderbyaggregateinput": "SuperAdminTrackingMinOrderByAggregateInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L42400 | neighbors=[index.d.ts]
 - "generated_client_index_d_superadmintrackingorderbyrelationaggregateinput": "SuperAdminTrackingOrderByRelationAggregateInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L40650 | neighbors=[index.d.ts]
 - "generated_client_index_d_superadmintrackingorderbywithaggregationinput": "SuperAdminTrackingOrderByWithAggregationInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L36786 | neighbors=[index.d.ts]
-- "generated_client_index_d_superadmintrackingorderbywithrelationinput": "SuperAdminTrackingOrderByWithRelationInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L36757 | neighbors=[index.d.ts]
-- "generated_client_index_d_superadmintrackingpayload": "$SuperAdminTrackingPayload" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L28061 | neighbors=[index.d.ts]
-- "generated_client_index_d_superadmintrackingscalarfieldenum": "SuperAdminTrackingScalarFieldEnum" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L34321 | neighbors=[index.d.ts]
-- "generated_client_index_d_superadmintrackingscalarwhereinput": "SuperAdminTrackingScalarWhereInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L46292 | neighbors=[index.d.ts]
 
 ## Instructions
 

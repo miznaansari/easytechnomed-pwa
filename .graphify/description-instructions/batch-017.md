@@ -17,6 +17,7 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "login_page": "page.js" | kind=code-symbol | source=app/(customer)/auth/login/page.js:L1 | neighbors=[252e194 e, LoginPageClient.js, metadata, Page()]
 - "members_route": "route.js" | kind=code-symbol | source=app/api/members/route.js:L1 | neighbors=[252e194 e, GET(), PATCH(), POST()]
 - "offline_offlinepdfgenerator_generatereportpdfoffline": "generateReportPdfOffline()" | kind=code-symbol | source=lib/offline/offlinePdfGenerator.js:L271 | neighbors=[offlinePdfGenerator.js, layoutMarkdownLines(), parseMarkdownTokens(), offlinePrint.js]
 - "offline_registrationidentity": "registrationIdentity.js" | kind=code-symbol | source=lib/offline/registrationIdentity.js:L1 | neighbors=[6c2dfe4 test, db.js, generateNextRegistrationIdentity(), generateRandomSuffix()]
@@ -56,7 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "runtime_edge_esm_getcomputedfields": "getComputedFields()" | kind=code-symbol | source=scratch/generated-client/runtime/edge-esm.js:L5 | neighbors=[edge-esm.js, getAllComputedFields(), lu(), u()]
 - "runtime_edge_esm_getfieldvalue": "getFieldValue()" | kind=code-symbol | source=scratch/generated-client/runtime/edge-esm.js:L3 | neighbors=[edge-esm.js, co(), getDeepSelectionParent(), getField()]
 - "runtime_edge_esm_getglobalomit": "getGlobalOmit()" | kind=code-symbol | source=scratch/generated-client/runtime/edge-esm.js:L5 | neighbors=[edge-esm.js, rt(), shouldApplyGlobalOmit(), u()]
-- "runtime_edge_esm_getname": "_getName()" | kind=code-symbol | source=scratch/generated-client/runtime/edge-esm.js:L4 | neighbors=[edge-esm.js, constructor(), lo(), Oo()]
 
 ## Instructions
 

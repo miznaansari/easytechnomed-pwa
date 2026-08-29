@@ -17,6 +17,10 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "lib_firebase_googleprovider": "googleProvider" | kind=code-symbol | source=lib/firebase.js:L16 | neighbors=[firebase.js]
+- "lib_formulautils_getreferencerange": "getReferenceRange()" | kind=code-symbol | source=lib/formulaUtils.js:L446 | neighbors=[formulaUtils.js]
+- "lib_mail_sendapprovalemail": "sendApprovalEmail()" | kind=code-symbol | source=lib/mail.js:L54 | neighbors=[mail.js]
+- "lib_mail_sendrejectionemail": "sendRejectionEmail()" | kind=code-symbol | source=lib/mail.js:L87 | neighbors=[mail.js]
 - "lib_mail_sendverificationemail": "sendVerificationEmail()" | kind=code-symbol | source=lib/mail.js:L19 | neighbors=[mail.js]
 - "lib_mail_transporter": "transporter" | kind=code-symbol | source=lib/mail.js:L8 | neighbors=[mail.js]
 - "lib_r2_s3client": "s3Client" | kind=code-symbol | source=lib/r2.js:L3 | neighbors=[r2.js]
@@ -53,10 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "offline_syncindicator_syncindicator": "SyncIndicator()" | kind=code-symbol | source=components/offline/SyncIndicator.jsx:L34 | neighbors=[SyncIndicator.jsx]
 - "offline_syncstatusicon_syncstatusicon": "SyncStatusIcon()" | kind=code-symbol | source=components/offline/SyncStatusIcon.jsx:L13 | neighbors=[SyncStatusIcon.jsx]
 - "offline_timestamps_compareutc": "compareUtc()" | kind=code-symbol | source=lib/offline/timestamps.js:L37 | neighbors=[timestamps.js]
-- "offline_timestamps_formatlocaldisplay": "formatLocalDisplay()" | kind=code-symbol | source=lib/offline/timestamps.js:L61 | neighbors=[timestamps.js]
-- "offline_unsyncedlogoutmodal_unsyncedlogoutmodal": "UnsyncedLogoutModal()" | kind=code-symbol | source=components/offline/UnsyncedLogoutModal.jsx:L20 | neighbors=[UnsyncedLogoutModal.jsx]
-- "parameters_route_post": "POST()" | kind=code-symbol | source=app/api/registrations/[id]/parameters/route.js:L93 | neighbors=[route.js]
-- "payment_route_post": "POST()" | kind=code-symbol | source=app/api/registrations/[id]/payment/route.js:L5 | neighbors=[route.js]
 
 ## Instructions
 

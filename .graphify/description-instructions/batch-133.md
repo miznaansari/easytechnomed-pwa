@@ -17,6 +17,10 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "runtime_library_d_clientotherops": "ClientOtherOps" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L150 | neighbors=[_d()]
+- "runtime_library_d_columntype": "ColumnType" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L159 | neighbors=[_d()]
+- "runtime_library_d_compute": "Compute" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L196 | neighbors=[_d()]
+- "runtime_library_d_computedeep": "ComputeDeep" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L200 | neighbors=[_d()]
 - "runtime_library_d_computedfield": "ComputedField" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L204 | neighbors=[_d()]
 - "runtime_library_d_computedfieldsmap": "ComputedFieldsMap" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L210 | neighbors=[_d()]
 - "runtime_library_d_config": "Config" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L335 | neighbors=[_d()]
@@ -53,10 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "runtime_library_d_dynamicmodelextensionthis": "DynamicModelExtensionThis" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L967 | neighbors=[_d()]
 - "runtime_library_d_dynamicqueryextensionargs": "DynamicQueryExtensionArgs" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L980 | neighbors=[_d()]
 - "runtime_library_d_dynamicqueryextensioncb": "DynamicQueryExtensionCb" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L993 | neighbors=[_d()]
-- "runtime_library_d_dynamicqueryextensioncbargs": "DynamicQueryExtensionCbArgs" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L995 | neighbors=[_d()]
-- "runtime_library_d_dynamicqueryextensioncbargsargs": "DynamicQueryExtensionCbArgsArgs" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L1004 | neighbors=[_d()]
-- "runtime_library_d_dynamicresultextensionargs": "DynamicResultExtensionArgs" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L1007 | neighbors=[_d()]
-- "runtime_library_d_dynamicresultextensiondata": "DynamicResultExtensionData" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L1016 | neighbors=[_d()]
 
 ## Instructions
 

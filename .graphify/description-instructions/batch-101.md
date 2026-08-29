@@ -17,6 +17,10 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "generated_client_index_d_testdepartmentcountoutputtypedefaultargs": "TestDepartmentCountOutputTypeDefaultArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L3688 | neighbors=[index.d.ts]
+- "generated_client_index_d_testdepartmentcountoutputtypeselect": "TestDepartmentCountOutputTypeSelect" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L3680 | neighbors=[index.d.ts]
+- "generated_client_index_d_testdepartmentcreateargs": "TestDepartmentCreateArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L29556 | neighbors=[index.d.ts]
+- "generated_client_index_d_testdepartmentcreateinput": "TestDepartmentCreateInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L39861 | neighbors=[index.d.ts]
 - "generated_client_index_d_testdepartmentcreatemanyargs": "TestDepartmentCreateManyArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L29574 | neighbors=[index.d.ts]
 - "generated_client_index_d_testdepartmentcreatemanyinput": "TestDepartmentCreateManyInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L39891 | neighbors=[index.d.ts]
 - "generated_client_index_d_testdepartmentcreatenestedonewithouttestsinput": "TestDepartmentCreateNestedOneWithoutTestsInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L43915 | neighbors=[index.d.ts]
@@ -53,10 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "generated_client_index_d_testdepartmentsumaggregateinputtype": "TestDepartmentSumAggregateInputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L28830 | neighbors=[index.d.ts]
 - "generated_client_index_d_testdepartmentsumaggregateoutputtype": "TestDepartmentSumAggregateOutputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L28799 | neighbors=[index.d.ts]
 - "generated_client_index_d_testdepartmentsumorderbyaggregateinput": "TestDepartmentSumOrderByAggregateInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L42443 | neighbors=[index.d.ts]
-- "generated_client_index_d_testdepartmentuncheckedcreateinput": "TestDepartmentUncheckedCreateInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L39868 | neighbors=[index.d.ts]
-- "generated_client_index_d_testdepartmentuncheckedcreatewithouttestsinput": "TestDepartmentUncheckedCreateWithoutTestsInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L47931 | neighbors=[index.d.ts]
-- "generated_client_index_d_testdepartmentuncheckedupdateinput": "TestDepartmentUncheckedUpdateInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L39883 | neighbors=[index.d.ts]
-- "generated_client_index_d_testdepartmentuncheckedupdatemanyinput": "TestDepartmentUncheckedUpdateManyInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L39904 | neighbors=[index.d.ts]
 
 ## Instructions
 

@@ -2,7 +2,7 @@
 
 ## 1. Project Overview
 - **Name**: EasyTechnoMed PWA / LIMS (Laboratory Information Management System)
-- **Current Version**: `v3.1.3`
+- **Current Version**: `v3.1.5`
 - **Framework**: Next.js (App Router), React 19, Material-UI (MUI v7), Dexie.js (v4.4+), Prisma ORM, MySQL, pdf-lib, qrcode.
 
 
@@ -106,6 +106,8 @@
 
 | Version | Date | Key Changes & Milestones |
 | :--- | :--- | :--- |
+| `v3.1.5` | 2026-08-30 | Removed hardcoded dummy data ("PathLab Admin", "admin@pathlab.local", "admin@pathlab.com", "System Admin"): Removed `DEFAULT_OFFLINE_ADMIN` in `lib/auth/offlineAuth.js` so only authentic sessions from login/IndexedDB are loaded; Updated `AdminLayoutClient.js` profile avatar, user name, and email displays to use live authenticated admin attributes only. |
+| `v3.1.4` | 2026-08-30 | Production release with database versioning, "What's New" PWA update dialog, cache-busting hard reload engine, and `/` landing page session expired suppression. |
 | `v3.1.3` | 2026-08-30 | Suppressed "Session Expired" / `ReLoginModal` popup on root `/` and auth routes: Added `usePathname` route guards in `OfflineProvider.jsx` and `ReLoginModal.jsx`; Prevented background sync bootstrap attempts when unauthenticated on public landing/login pages; Fixed MUI icon import in `VersionUpdateNotifier.jsx`. |
 | `v3.1.2` | 2026-08-30 | Database-Driven App Version Tracking, "What's New" Changelog Display & PWA Hard Refresh: Added `AppVersion` model in MySQL Prisma + `appVersions` Dexie store; Implemented `/api/version` endpoint with auto-seeding; Built `<VersionUpdateNotifier />` client modal displaying update highlights ("Naya kya aaya" list) and one-click "Hard Refresh & Update Now" button with complete CacheStorage and ServiceWorker cache purge (`SKIP_WAITING` + `CLEAR_ALL_CACHES`). |
 | `v3.1.1` | 2026-08-29 | Complete client-side storage & IndexedDB purge on user logout: Added `db.clearAllData()` in `lib/offline/db.js` clearing all 17+ Dexie tables (`workspaces`, `admins`, `doctors`, `tests`, `parameters`, `registrations`, `patientResults`, `workspacePdf`, etc.); Updated `clearLocalSession()` in `lib/auth/offlineAuth.js` to execute full IndexedDB wipe, `sessionStorage.clear()`, and `localStorage.clear()` (retaining only `etm_logged_out: 1`); Integrated in `AdminLayoutClient`, `ExpiredPlanView`, `UserApproveTable`, and `UnsyncedLogoutModal`. |

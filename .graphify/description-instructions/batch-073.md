@@ -17,6 +17,10 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "generated_client_index_d_interpretationrulecreatemanyparameterinputenvelope": "InterpretationRuleCreateManyParameterInputEnvelope" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L49357 | neighbors=[index.d.ts]
+- "generated_client_index_d_interpretationrulecreatemanytestinput": "InterpretationRuleCreateManyTestInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L53625 | neighbors=[index.d.ts]
+- "generated_client_index_d_interpretationrulecreatemanytestinputenvelope": "InterpretationRuleCreateManyTestInputEnvelope" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L48141 | neighbors=[index.d.ts]
+- "generated_client_index_d_interpretationrulecreatemanyworkspaceinput": "InterpretationRuleCreateManyWorkspaceInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L51960 | neighbors=[index.d.ts]
 - "generated_client_index_d_interpretationrulecreatemanyworkspaceinputenvelope": "InterpretationRuleCreateManyWorkspaceInputEnvelope" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L45644 | neighbors=[index.d.ts]
 - "generated_client_index_d_interpretationrulecreatenestedmanywithoutparameterinput": "InterpretationRuleCreateNestedManyWithoutParameterInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L44369 | neighbors=[index.d.ts]
 - "generated_client_index_d_interpretationrulecreatenestedmanywithouttestinput": "InterpretationRuleCreateNestedManyWithoutTestInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L43948 | neighbors=[index.d.ts]
@@ -53,10 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "generated_client_index_d_interpretationruleorderbywithrelationinput": "InterpretationRuleOrderByWithRelationInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L36981 | neighbors=[index.d.ts]
 - "generated_client_index_d_interpretationrulepayload": "$InterpretationRulePayload" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L30982 | neighbors=[index.d.ts]
 - "generated_client_index_d_interpretationrulescalarfieldenum": "InterpretationRuleScalarFieldEnum" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L34362 | neighbors=[index.d.ts]
-- "generated_client_index_d_interpretationrulescalarwhereinput": "InterpretationRuleScalarWhereInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L46095 | neighbors=[index.d.ts]
-- "generated_client_index_d_interpretationrulescalarwherewithaggregatesinput": "InterpretationRuleScalarWhereWithAggregatesInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L37028 | neighbors=[index.d.ts]
-- "generated_client_index_d_interpretationruleselect": "InterpretationRuleSelect" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L30950 | neighbors=[index.d.ts]
-- "generated_client_index_d_interpretationruleselectscalar": "InterpretationRuleSelectScalar" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L30965 | neighbors=[index.d.ts]
 
 ## Instructions
 

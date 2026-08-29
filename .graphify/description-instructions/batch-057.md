@@ -17,6 +17,10 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "generated_client_index_d_adminrolepermissioncreateinput": "AdminRolePermissionCreateInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L38149 | neighbors=[index.d.ts]
+- "generated_client_index_d_adminrolepermissioncreatemanyargs": "AdminRolePermissionCreateManyArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L14587 | neighbors=[index.d.ts]
+- "generated_client_index_d_adminrolepermissioncreatemanyinput": "AdminRolePermissionCreateManyInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L38171 | neighbors=[index.d.ts]
+- "generated_client_index_d_adminrolepermissioncreatemanyroleinput": "AdminRolePermissionCreateManyRoleInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L53103 | neighbors=[index.d.ts]
 - "generated_client_index_d_adminrolepermissioncreatemanyroleinputenvelope": "AdminRolePermissionCreateManyRoleInputEnvelope" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L47458 | neighbors=[index.d.ts]
 - "generated_client_index_d_adminrolepermissioncreatenestedmanywithoutroleinput": "AdminRolePermissionCreateNestedManyWithoutRoleInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L43674 | neighbors=[index.d.ts]
 - "generated_client_index_d_adminrolepermissioncreateorconnectwithoutroleinput": "AdminRolePermissionCreateOrConnectWithoutRoleInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L47453 | neighbors=[index.d.ts]
@@ -53,10 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "generated_client_index_d_adminrolepermissionselect": "AdminRolePermissionSelect" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L13987 | neighbors=[index.d.ts]
 - "generated_client_index_d_adminrolepermissionselectscalar": "AdminRolePermissionSelectScalar" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L13995 | neighbors=[index.d.ts]
 - "generated_client_index_d_adminrolepermissionsumaggregateinputtype": "AdminRolePermissionSumAggregateInputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L13852 | neighbors=[index.d.ts]
-- "generated_client_index_d_adminrolepermissionsumaggregateoutputtype": "AdminRolePermissionSumAggregateOutputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L13822 | neighbors=[index.d.ts]
-- "generated_client_index_d_adminrolepermissionsumorderbyaggregateinput": "AdminRolePermissionSumOrderByAggregateInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L41234 | neighbors=[index.d.ts]
-- "generated_client_index_d_adminrolepermissionuncheckedcreateinput": "AdminRolePermissionUncheckedCreateInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L38154 | neighbors=[index.d.ts]
-- "generated_client_index_d_adminrolepermissionuncheckedcreatenestedmanywithoutroleinput": "AdminRolePermissionUncheckedCreateNestedManyWithoutRoleInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L43688 | neighbors=[index.d.ts]
 
 ## Instructions
 

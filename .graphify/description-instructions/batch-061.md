@@ -17,6 +17,10 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "generated_client_index_d_adminsessionupdatemanymutationinput": "AdminSessionUpdateManyMutationInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L38077 | neighbors=[index.d.ts]
+- "generated_client_index_d_adminsessionupdatemanywithoutadminnestedinput": "AdminSessionUpdateManyWithoutAdminNestedInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L43559 | neighbors=[index.d.ts]
+- "generated_client_index_d_adminsessionupdatemanywithwherewithoutadmininput": "AdminSessionUpdateManyWithWhereWithoutAdminInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L47176 | neighbors=[index.d.ts]
+- "generated_client_index_d_adminsessionupdatewithoutadmininput": "AdminSessionUpdateWithoutAdminInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L52888 | neighbors=[index.d.ts]
 - "generated_client_index_d_adminsessionupdatewithwhereuniquewithoutadmininput": "AdminSessionUpdateWithWhereUniqueWithoutAdminInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L47171 | neighbors=[index.d.ts]
 - "generated_client_index_d_adminsessionupsertargs": "AdminSessionUpsertArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L12791 | neighbors=[index.d.ts]
 - "generated_client_index_d_adminsessionupsertwithwhereuniquewithoutadmininput": "AdminSessionUpsertWithWhereUniqueWithoutAdminInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L47165 | neighbors=[index.d.ts]
@@ -53,10 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "generated_client_index_d_admintrackingfindfirstargs": "AdminTrackingFindFirstArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L27518 | neighbors=[index.d.ts]
 - "generated_client_index_d_admintrackingfindfirstorthrowargs": "AdminTrackingFindFirstOrThrowArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L27566 | neighbors=[index.d.ts]
 - "generated_client_index_d_admintrackingfindmanyargs": "AdminTrackingFindManyArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L27614 | neighbors=[index.d.ts]
-- "generated_client_index_d_admintrackingfinduniqueargs": "AdminTrackingFindUniqueArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L27482 | neighbors=[index.d.ts]
-- "generated_client_index_d_admintrackingfinduniqueorthrowargs": "AdminTrackingFindUniqueOrThrowArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L27500 | neighbors=[index.d.ts]
-- "generated_client_index_d_admintrackinggetpayload": "AdminTrackingGetPayload" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L27100 | neighbors=[index.d.ts]
-- "generated_client_index_d_admintrackinggroupbyargs": "AdminTrackingGroupByArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L27006 | neighbors=[index.d.ts]
 
 ## Instructions
 

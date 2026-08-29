@@ -17,6 +17,10 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "generated_client_index_d_usersessionselect": "UserSessionSelect" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L8118 | neighbors=[index.d.ts]
+- "generated_client_index_d_usersessionselectscalar": "UserSessionSelectScalar" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L8130 | neighbors=[index.d.ts]
+- "generated_client_index_d_usersessionsumaggregateinputtype": "UserSessionSumAggregateInputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L7967 | neighbors=[index.d.ts]
+- "generated_client_index_d_usersessionsumaggregateoutputtype": "UserSessionSumAggregateOutputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L7925 | neighbors=[index.d.ts]
 - "generated_client_index_d_usersessionsumorderbyaggregateinput": "UserSessionSumOrderByAggregateInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L40924 | neighbors=[index.d.ts]
 - "generated_client_index_d_usersessionuncheckedcreateinput": "UserSessionUncheckedCreateInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L37694 | neighbors=[index.d.ts]
 - "generated_client_index_d_usersessionuncheckedcreatenestedmanywithoutuserinput": "UserSessionUncheckedCreateNestedManyWithoutUserInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L43292 | neighbors=[index.d.ts]
@@ -53,10 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "generated_client_index_d_useruncheckedupdatemanywithoutrolenestedinput": "UserUncheckedUpdateManyWithoutRoleNestedInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L43423 | neighbors=[index.d.ts]
 - "generated_client_index_d_useruncheckedupdatemanywithoutworkspaceinput": "UserUncheckedUpdateManyWithoutWorkspaceInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L52351 | neighbors=[index.d.ts]
 - "generated_client_index_d_useruncheckedupdatemanywithoutworkspacenestedinput": "UserUncheckedUpdateManyWithoutWorkspaceNestedInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L43091 | neighbors=[index.d.ts]
-- "generated_client_index_d_useruncheckedupdatewithoutroleinput": "UserUncheckedUpdateWithoutRoleInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L52773 | neighbors=[index.d.ts]
-- "generated_client_index_d_useruncheckedupdatewithoutsessionsinput": "UserUncheckedUpdateWithoutSessionsInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L46627 | neighbors=[index.d.ts]
-- "generated_client_index_d_useruncheckedupdatewithoutworkspaceinput": "UserUncheckedUpdateWithoutWorkspaceInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L52331 | neighbors=[index.d.ts]
-- "generated_client_index_d_userupdateargs": "UserUpdateArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L7771 | neighbors=[index.d.ts]
 
 ## Instructions
 

@@ -17,6 +17,10 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "generated_client_index_d_getsuperadminsessiongroupbypayload": "GetSuperAdminSessionGroupByPayload" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L6067 | neighbors=[index.d.ts]
+- "generated_client_index_d_getsuperadmintrackingaggregatetype": "GetSuperAdminTrackingAggregateType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L27975 | neighbors=[index.d.ts]
+- "generated_client_index_d_getsuperadmintrackinggroupbypayload": "GetSuperAdminTrackingGroupByPayload" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L28017 | neighbors=[index.d.ts]
+- "generated_client_index_d_gettestaggregatetype": "GetTestAggregateType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L16078 | neighbors=[index.d.ts]
 - "generated_client_index_d_gettestdepartmentaggregatetype": "GetTestDepartmentAggregateType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L28917 | neighbors=[index.d.ts]
 - "generated_client_index_d_gettestdepartmentgroupbypayload": "GetTestDepartmentGroupByPayload" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L28954 | neighbors=[index.d.ts]
 - "generated_client_index_d_gettestformulaaggregatetype": "GetTestFormulaAggregateType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L29899 | neighbors=[index.d.ts]
@@ -53,10 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "generated_client_index_d_interpretationrulecreatemanyargs": "InterpretationRuleCreateManyArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L31578 | neighbors=[index.d.ts]
 - "generated_client_index_d_interpretationrulecreatemanyinput": "InterpretationRuleCreateManyInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L40045 | neighbors=[index.d.ts]
 - "generated_client_index_d_interpretationrulecreatemanyparameterinput": "InterpretationRuleCreateManyParameterInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L53983 | neighbors=[index.d.ts]
-- "generated_client_index_d_interpretationrulecreatemanyparameterinputenvelope": "InterpretationRuleCreateManyParameterInputEnvelope" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L49357 | neighbors=[index.d.ts]
-- "generated_client_index_d_interpretationrulecreatemanytestinput": "InterpretationRuleCreateManyTestInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L53625 | neighbors=[index.d.ts]
-- "generated_client_index_d_interpretationrulecreatemanytestinputenvelope": "InterpretationRuleCreateManyTestInputEnvelope" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L48141 | neighbors=[index.d.ts]
-- "generated_client_index_d_interpretationrulecreatemanyworkspaceinput": "InterpretationRuleCreateManyWorkspaceInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L51960 | neighbors=[index.d.ts]
 
 ## Instructions
 

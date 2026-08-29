@@ -17,6 +17,7 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "runtime_wasm_handleandlogrequesterror": "handleAndLogRequestError()" | kind=code-symbol | source=scratch/generated-client/runtime/wasm.js:L21 | neighbors=[wasm.js, emit(), handleRequestError(), request()]
 - "runtime_wasm_handlerequesterror": "handleRequestError()" | kind=code-symbol | source=scratch/generated-client/runtime/wasm.js:L21 | neighbors=[wasm.js, handleAndLogRequestError(), sanitizeMessage(), zt()]
 - "runtime_wasm_ie": "Ie()" | kind=code-symbol | source=scratch/generated-client/runtime/wasm.js:L5 | neighbors=[wasm.js, da(), ia(), la()]
 - "runtime_wasm_indentedcurrentline": "indentedCurrentLine()" | kind=code-symbol | source=scratch/generated-client/runtime/wasm.js:L3 | neighbors=[wasm.js, slice(), newLine(), toString()]
@@ -56,7 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "scratch_check_kft_all": "check-kft-all.js" | kind=code-symbol | source=scratch/check-kft-all.js:L1 | neighbors=[252e194 e, main(), prisma, { PrismaClient }]
 - "scratch_check_reg_17": "check-reg-17.js" | kind=code-symbol | source=scratch/check-reg-17.js:L1 | neighbors=[252e194 e, runFormulaEngine(), main(), prisma]
 - "scratch_cleanup_cbc": "cleanup-cbc.js" | kind=code-symbol | source=scratch/cleanup-cbc.js:L1 | neighbors=[252e194 e, main(), prisma, { PrismaClient }]
-- "scratch_inspect_cbc": "inspect-cbc.js" | kind=code-symbol | source=scratch/inspect-cbc.js:L1 | neighbors=[252e194 e, main(), prisma, { PrismaClient }]
 
 ## Instructions
 

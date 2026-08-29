@@ -17,6 +17,11 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "id_route_serializedata": "serializeData()" | kind=code-symbol | source=app/api/registrations/[id]/route.js:L7 | neighbors=[route.js, GET(), PUT()]
+- "improve_route": "route.js" | kind=code-symbol | source=app/api/ai/improve/route.js:L1 | neighbors=[252e194 e, callGemini(), POST()]
+- "lib_formulautils_addpatientcontexttovaluesmap": "addPatientContextToValuesMap()" | kind=code-symbol | source=lib/formulaUtils.js:L278 | neighbors=[formulaEngine.js, formulaUtils.js, calculateAllDependents()]
+- "lib_formulautils_addvaluetovaluesmap": "addValueToValuesMap()" | kind=code-symbol | source=lib/formulaUtils.js:L10 | neighbors=[formulaEngine.js, formulaUtils.js, calculateAllDependents()]
+- "lib_formulautils_isoutofrange": "isOutOfRange()" | kind=code-symbol | source=lib/formulaUtils.js:L550 | neighbors=[formulaEngine.js, formulaUtils.js, isQualitativeAbnormal()]
 - "lib_formulautils_isqualitativeabnormal": "isQualitativeAbnormal()" | kind=code-symbol | source=lib/formulaUtils.js:L517 | neighbors=[formulaEngine.js, formulaUtils.js, isOutOfRange()]
 - "lib_r2": "r2.js" | kind=code-symbol | source=lib/r2.js:L1 | neighbors=[252e194 e, s3Client, uploadFileToR2()]
 - "lib_reportsecurity_getkeyring": "getKeyRing()" | kind=code-symbol | source=lib/reportSecurity.js:L12 | neighbors=[reportSecurity.js, decryptReportToken(), generateReportToken()]
@@ -25,7 +30,9 @@ one-sentence description — no prose, no markdown fences.
 - "offline_network_networkmonitor_handlestatuschange": ".handleStatusChange()" | kind=code-symbol | source=lib/offline/network.js:L17 | neighbors=[NetworkMonitor, .checkConnection(), .notifyListeners()]
 - "offline_offlineprint_printbilloffline": "printBillOffline()" | kind=code-symbol | source=lib/offline/offlinePrint.js:L57 | neighbors=[offlinePrint.js, formatDate(), numberToWords()]
 - "offline_registrationidentity_generaterandomsuffix": "generateRandomSuffix()" | kind=code-symbol | source=lib/offline/registrationIdentity.js:L8 | neighbors=[registrationIdentity.js, generateNextRegistrationIdentity(), test_identity_and_qr.mjs]
+- "offline_reloginmodal": "ReLoginModal.jsx" | kind=code-symbol | source=components/offline/ReLoginModal.jsx:L1 | neighbors=[6236f60 new update, 9f59247 expire token, ReLoginModal()]
 - "offline_timestamps_getutcisonow": "getUtcIsoNow()" | kind=code-symbol | source=lib/offline/timestamps.js:L10 | neighbors=[db.js, timestamps.js, syncManager.js]
+- "offline_unsyncedlogoutmodal": "UnsyncedLogoutModal.jsx" | kind=code-symbol | source=components/offline/UnsyncedLogoutModal.jsx:L1 | neighbors=[2b2534c f, 6236f60 new update, UnsyncedLogoutModal()]
 - "payments_page": "page.js" | kind=code-symbol | source=app/(customer)/(dashboard)/settings/payments/page.js:L1 | neighbors=[252e194 e, SettingsPaymentsPage(), paymentsClient.jsx]
 - "pdf_page": "page.js" | kind=code-symbol | source=app/(customer)/(dashboard)/settings/pdf/page.js:L1 | neighbors=[252e194 e, SettingsPdfPage(), pdfClient.jsx]
 - "preview_pdf_route": "route.js" | kind=code-symbol | source=app/api/settings/preview-pdf/route.js:L1 | neighbors=[252e194 e, formatDate(), GET()]
@@ -50,13 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "runtime_edge_esm_append": "append()" | kind=code-symbol | source=scratch/generated-client/runtime/edge-esm.js:L5 | neighbors=[edge-esm.js, e(), is()]
 - "runtime_edge_esm_as": "as()" | kind=code-symbol | source=scratch/generated-client/runtime/edge-esm.js:L6 | neighbors=[edge-esm.js, Br(), isEmpty()]
 - "runtime_edge_esm_bt": "bt()" | kind=code-symbol | source=scratch/generated-client/runtime/edge-esm.js:L25 | neighbors=[edge-esm.js, Ra(), T()]
-- "runtime_edge_esm_buildcapturesettings": "buildCaptureSettings()" | kind=code-symbol | source=scratch/generated-client/runtime/edge-esm.js:L12 | neighbors=[edge-esm.js, build(), isEnabled()]
-- "runtime_edge_esm_c": "$c()" | kind=code-symbol | source=scratch/generated-client/runtime/edge-esm.js:L20 | neighbors=[edge-esm.js, jr(), handleRequestError()]
-- "runtime_edge_esm_ci": "ci()" | kind=code-symbol | source=scratch/generated-client/runtime/edge-esm.js:L1 | neighbors=[edge-esm.js, on(), ri()]
-- "runtime_edge_esm_createenginespan": "createEngineSpan()" | kind=code-symbol | source=scratch/generated-client/runtime/edge-esm.js:L20 | neighbors=[edge-esm.js, getGlobalTracingHelper(), propagateResponseExtensions()]
-- "runtime_edge_esm_do": "Do()" | kind=code-symbol | source=scratch/generated-client/runtime/edge-esm.js:L5 | neighbors=[edge-esm.js, he(), ko()]
-- "runtime_edge_esm_ds": "ds()" | kind=code-symbol | source=scratch/generated-client/runtime/edge-esm.js:L6 | neighbors=[edge-esm.js, constructor(), toString()]
-- "runtime_edge_esm_dt": "Dt()" | kind=code-symbol | source=scratch/generated-client/runtime/edge-esm.js:L4 | neighbors=[edge-esm.js, e(), po()]
 
 ## Instructions
 

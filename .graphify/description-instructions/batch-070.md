@@ -17,6 +17,10 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "generated_client_index_d_doctorupdateinput": "DoctorUpdateInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L38224 | neighbors=[index.d.ts]
+- "generated_client_index_d_doctorupdatemanyargs": "DoctorUpdateManyArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L15643 | neighbors=[index.d.ts]
+- "generated_client_index_d_doctorupdatemanymutationinput": "DoctorUpdateManyMutationInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L38277 | neighbors=[index.d.ts]
+- "generated_client_index_d_doctorupdatemanywithoutworkspacenestedinput": "DoctorUpdateManyWithoutWorkspaceNestedInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L42913 | neighbors=[index.d.ts]
 - "generated_client_index_d_doctorupdatemanywithwherewithoutworkspaceinput": "DoctorUpdateManyWithWhereWithoutWorkspaceInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L45780 | neighbors=[index.d.ts]
 - "generated_client_index_d_doctorupdateonerequiredwithoutincentivehistorynestedinput": "DoctorUpdateOneRequiredWithoutIncentiveHistoryNestedInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L44809 | neighbors=[index.d.ts]
 - "generated_client_index_d_doctorupdateonewithoutregistrationsnestedinput": "DoctorUpdateOneWithoutRegistrationsNestedInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L44211 | neighbors=[index.d.ts]
@@ -53,10 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "generated_client_index_d_floatfilter": "FloatFilter" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L41490 | neighbors=[index.d.ts]
 - "generated_client_index_d_floatnullablefilter": "FloatNullableFilter" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L41794 | neighbors=[index.d.ts]
 - "generated_client_index_d_floatnullablewithaggregatesfilter": "FloatNullableWithAggregatesFilter" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L41978 | neighbors=[index.d.ts]
-- "generated_client_index_d_floatwithaggregatesfilter": "FloatWithAggregatesFilter" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L41701 | neighbors=[index.d.ts]
-- "generated_client_index_d_getadminaddressaggregatetype": "GetAdminAddressAggregateType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L24151 | neighbors=[index.d.ts]
-- "generated_client_index_d_getadminaddressgroupbypayload": "GetAdminAddressGroupByPayload" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L24196 | neighbors=[index.d.ts]
-- "generated_client_index_d_getadminaggregatetype": "GetAdminAggregateType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L10938 | neighbors=[index.d.ts]
 
 ## Instructions
 

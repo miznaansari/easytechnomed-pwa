@@ -17,6 +17,10 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "generated_client_index_d_usercreatenestedmanywithoutworkspaceinput": "UserCreateNestedManyWithoutWorkspaceInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L42765 | neighbors=[index.d.ts]
+- "generated_client_index_d_usercreatenestedonewithoutsessionsinput": "UserCreateNestedOneWithoutSessionsInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L43353 | neighbors=[index.d.ts]
+- "generated_client_index_d_usercreateorconnectwithoutroleinput": "UserCreateOrConnectWithoutRoleInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L46686 | neighbors=[index.d.ts]
+- "generated_client_index_d_usercreateorconnectwithoutsessionsinput": "UserCreateOrConnectWithoutSessionsInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L46592 | neighbors=[index.d.ts]
 - "generated_client_index_d_usercreateorconnectwithoutworkspaceinput": "UserCreateOrConnectWithoutWorkspaceInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L45433 | neighbors=[index.d.ts]
 - "generated_client_index_d_usercreatewithoutroleinput": "UserCreateWithoutRoleInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L46647 | neighbors=[index.d.ts]
 - "generated_client_index_d_usercreatewithoutsessionsinput": "UserCreateWithoutSessionsInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L46553 | neighbors=[index.d.ts]
@@ -53,10 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "generated_client_index_d_userroleaggregateargs": "UserRoleAggregateArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L8908 | neighbors=[index.d.ts]
 - "generated_client_index_d_userroleargs": "UserRoleArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L54338 | neighbors=[index.d.ts]
 - "generated_client_index_d_userroleavgaggregateinputtype": "UserRoleAvgAggregateInputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L8884 | neighbors=[index.d.ts]
-- "generated_client_index_d_userroleavgaggregateoutputtype": "UserRoleAvgAggregateOutputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L8859 | neighbors=[index.d.ts]
-- "generated_client_index_d_userroleavgorderbyaggregateinput": "UserRoleAvgOrderByAggregateInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L40944 | neighbors=[index.d.ts]
-- "generated_client_index_d_userrolecountaggregateinputtype": "UserRoleCountAggregateInputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L8902 | neighbors=[index.d.ts]
-- "generated_client_index_d_userrolecountaggregateoutputtype": "UserRoleCountAggregateOutputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L8877 | neighbors=[index.d.ts]
 
 ## Instructions
 

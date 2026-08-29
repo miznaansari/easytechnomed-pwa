@@ -17,6 +17,10 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "generated_client_index_d_userroleavgaggregateoutputtype": "UserRoleAvgAggregateOutputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L8859 | neighbors=[index.d.ts]
+- "generated_client_index_d_userroleavgorderbyaggregateinput": "UserRoleAvgOrderByAggregateInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L40944 | neighbors=[index.d.ts]
+- "generated_client_index_d_userrolecountaggregateinputtype": "UserRoleCountAggregateInputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L8902 | neighbors=[index.d.ts]
+- "generated_client_index_d_userrolecountaggregateoutputtype": "UserRoleCountAggregateOutputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L8877 | neighbors=[index.d.ts]
 - "generated_client_index_d_userrolecountargs": "UserRoleCountArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L9053 | neighbors=[index.d.ts]
 - "generated_client_index_d_userrolecountorderbyaggregateinput": "UserRoleCountOrderByAggregateInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L40939 | neighbors=[index.d.ts]
 - "generated_client_index_d_userrolecountoutputtype": "UserRoleCountOutputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L3311 | neighbors=[index.d.ts]
@@ -53,10 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "generated_client_index_d_userrolemaxaggregateoutputtype": "UserRoleMaxAggregateOutputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L8872 | neighbors=[index.d.ts]
 - "generated_client_index_d_userrolemaxorderbyaggregateinput": "UserRoleMaxOrderByAggregateInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L40948 | neighbors=[index.d.ts]
 - "generated_client_index_d_userroleminaggregateinputtype": "UserRoleMinAggregateInputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L8892 | neighbors=[index.d.ts]
-- "generated_client_index_d_userroleminaggregateoutputtype": "UserRoleMinAggregateOutputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L8867 | neighbors=[index.d.ts]
-- "generated_client_index_d_userroleminorderbyaggregateinput": "UserRoleMinOrderByAggregateInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L40953 | neighbors=[index.d.ts]
-- "generated_client_index_d_userroleorderbywithaggregationinput": "UserRoleOrderByWithAggregationInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L34933 | neighbors=[index.d.ts]
-- "generated_client_index_d_userroleorderbywithrelationinput": "UserRoleOrderByWithRelationInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L34916 | neighbors=[index.d.ts]
 
 ## Instructions
 

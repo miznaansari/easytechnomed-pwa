@@ -17,6 +17,10 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "generated_client_index_d_registrationtestdeletemanyargs": "RegistrationTestDeleteManyArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L19558 | neighbors=[index.d.ts]
+- "generated_client_index_d_registrationtestfieldrefs": "RegistrationTestFieldRefs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L19253 | neighbors=[index.d.ts]
+- "generated_client_index_d_registrationtestfindfirstargs": "RegistrationTestFindFirstArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L19310 | neighbors=[index.d.ts]
+- "generated_client_index_d_registrationtestfindfirstorthrowargs": "RegistrationTestFindFirstOrThrowArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L19358 | neighbors=[index.d.ts]
 - "generated_client_index_d_registrationtestfindmanyargs": "RegistrationTestFindManyArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L19406 | neighbors=[index.d.ts]
 - "generated_client_index_d_registrationtestfinduniqueargs": "RegistrationTestFindUniqueArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L19274 | neighbors=[index.d.ts]
 - "generated_client_index_d_registrationtestfinduniqueorthrowargs": "RegistrationTestFindUniqueOrThrowArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L19292 | neighbors=[index.d.ts]
@@ -53,10 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "generated_client_index_d_registrationtestuncheckedupdatemanyinput": "RegistrationTestUncheckedUpdateManyInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L38886 | neighbors=[index.d.ts]
 - "generated_client_index_d_registrationtestuncheckedupdatemanywithoutregistrationinput": "RegistrationTestUncheckedUpdateManyWithoutRegistrationInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L53934 | neighbors=[index.d.ts]
 - "generated_client_index_d_registrationtestuncheckedupdatemanywithoutregistrationnestedinput": "RegistrationTestUncheckedUpdateManyWithoutRegistrationNestedInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L44307 | neighbors=[index.d.ts]
-- "generated_client_index_d_registrationtestuncheckedupdatemanywithouttestinput": "RegistrationTestUncheckedUpdateManyWithoutTestInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L53665 | neighbors=[index.d.ts]
-- "generated_client_index_d_registrationtestuncheckedupdatemanywithouttestnestedinput": "RegistrationTestUncheckedUpdateManyWithoutTestNestedInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L44067 | neighbors=[index.d.ts]
-- "generated_client_index_d_registrationtestuncheckedupdatewithoutregistrationinput": "RegistrationTestUncheckedUpdateWithoutRegistrationInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L53919 | neighbors=[index.d.ts]
-- "generated_client_index_d_registrationtestuncheckedupdatewithouttestinput": "RegistrationTestUncheckedUpdateWithoutTestInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L53650 | neighbors=[index.d.ts]
 
 ## Instructions
 

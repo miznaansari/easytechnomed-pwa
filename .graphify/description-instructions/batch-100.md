@@ -17,6 +17,10 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "generated_client_index_d_testcreatemanydepartmentinputenvelope": "TestCreateManyDepartmentInputEnvelope" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L50771 | neighbors=[index.d.ts]
+- "generated_client_index_d_testcreatemanyinput": "TestCreateManyInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L38417 | neighbors=[index.d.ts]
+- "generated_client_index_d_testcreatemanyworkspaceinput": "TestCreateManyWorkspaceInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L51847 | neighbors=[index.d.ts]
+- "generated_client_index_d_testcreatemanyworkspaceinputenvelope": "TestCreateManyWorkspaceInputEnvelope" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L45389 | neighbors=[index.d.ts]
 - "generated_client_index_d_testcreatenestedmanywithoutdepartmentinput": "TestCreateNestedManyWithoutDepartmentInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L44673 | neighbors=[index.d.ts]
 - "generated_client_index_d_testcreatenestedmanywithoutworkspaceinput": "TestCreateNestedManyWithoutWorkspaceInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L42758 | neighbors=[index.d.ts]
 - "generated_client_index_d_testcreatenestedonewithoutformulasinput": "TestCreateNestedOneWithoutFormulasInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L44721 | neighbors=[index.d.ts]
@@ -53,10 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "generated_client_index_d_testdepartmentcountoutputtype": "TestDepartmentCountOutputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L3676 | neighbors=[index.d.ts]
 - "generated_client_index_d_testdepartmentcountoutputtypeargs": "TestDepartmentCountOutputTypeArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L54314 | neighbors=[index.d.ts]
 - "generated_client_index_d_testdepartmentcountoutputtypecounttestsargs": "TestDepartmentCountOutputTypeCountTestsArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L3698 | neighbors=[index.d.ts]
-- "generated_client_index_d_testdepartmentcountoutputtypedefaultargs": "TestDepartmentCountOutputTypeDefaultArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L3688 | neighbors=[index.d.ts]
-- "generated_client_index_d_testdepartmentcountoutputtypeselect": "TestDepartmentCountOutputTypeSelect" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L3680 | neighbors=[index.d.ts]
-- "generated_client_index_d_testdepartmentcreateargs": "TestDepartmentCreateArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L29556 | neighbors=[index.d.ts]
-- "generated_client_index_d_testdepartmentcreateinput": "TestDepartmentCreateInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L39861 | neighbors=[index.d.ts]
 
 ## Instructions
 

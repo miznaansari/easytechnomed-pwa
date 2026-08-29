@@ -17,6 +17,10 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "generated_client_index_d_admintrackingfinduniqueargs": "AdminTrackingFindUniqueArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L27482 | neighbors=[index.d.ts]
+- "generated_client_index_d_admintrackingfinduniqueorthrowargs": "AdminTrackingFindUniqueOrThrowArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L27500 | neighbors=[index.d.ts]
+- "generated_client_index_d_admintrackinggetpayload": "AdminTrackingGetPayload" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L27100 | neighbors=[index.d.ts]
+- "generated_client_index_d_admintrackinggroupbyargs": "AdminTrackingGroupByArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L27006 | neighbors=[index.d.ts]
 - "generated_client_index_d_admintrackinggroupbyoutputtype": "AdminTrackingGroupByOutputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L27020 | neighbors=[index.d.ts]
 - "generated_client_index_d_admintrackinginclude": "AdminTrackingInclude" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L27077 | neighbors=[index.d.ts]
 - "generated_client_index_d_admintrackinglistrelationfilter": "AdminTrackingListRelationFilter" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L41011 | neighbors=[index.d.ts]
@@ -53,10 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "generated_client_index_d_admintrackingupdatemanywithoutadminnestedinput": "AdminTrackingUpdateManyWithoutAdminNestedInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L43573 | neighbors=[index.d.ts]
 - "generated_client_index_d_admintrackingupdatemanywithwherewithoutadmininput": "AdminTrackingUpdateManyWithWhereWithoutAdminInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L47205 | neighbors=[index.d.ts]
 - "generated_client_index_d_admintrackingupdatewithoutadmininput": "AdminTrackingUpdateWithoutAdminInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L52914 | neighbors=[index.d.ts]
-- "generated_client_index_d_admintrackingupdatewithwhereuniquewithoutadmininput": "AdminTrackingUpdateWithWhereUniqueWithoutAdminInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L47200 | neighbors=[index.d.ts]
-- "generated_client_index_d_admintrackingupsertargs": "AdminTrackingUpsertArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L27722 | neighbors=[index.d.ts]
-- "generated_client_index_d_admintrackingupsertwithwhereuniquewithoutadmininput": "AdminTrackingUpsertWithWhereUniqueWithoutAdminInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L47194 | neighbors=[index.d.ts]
-- "generated_client_index_d_admintrackingwhereinput": "AdminTrackingWhereInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L36664 | neighbors=[index.d.ts]
 
 ## Instructions
 

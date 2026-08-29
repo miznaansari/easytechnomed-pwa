@@ -17,6 +17,10 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "generated_client_index_d_registrationinclude": "RegistrationInclude" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L17651 | neighbors=[index.d.ts]
+- "generated_client_index_d_registrationlistrelationfilter": "RegistrationListRelationFilter" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L40431 | neighbors=[index.d.ts]
+- "generated_client_index_d_registrationmaxaggregateinputtype": "RegistrationMaxAggregateInputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L17321 | neighbors=[index.d.ts]
+- "generated_client_index_d_registrationmaxaggregateoutputtype": "RegistrationMaxAggregateOutputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L17154 | neighbors=[index.d.ts]
 - "generated_client_index_d_registrationmaxorderbyaggregateinput": "RegistrationMaxOrderByAggregateInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L41597 | neighbors=[index.d.ts]
 - "generated_client_index_d_registrationminaggregateinputtype": "RegistrationMinAggregateInputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L17278 | neighbors=[index.d.ts]
 - "generated_client_index_d_registrationminaggregateoutputtype": "RegistrationMinAggregateOutputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L17111 | neighbors=[index.d.ts]
@@ -53,10 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "generated_client_index_d_registrationpaymentfindfirstorthrowargs": "RegistrationPaymentFindFirstOrThrowArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L25691 | neighbors=[index.d.ts]
 - "generated_client_index_d_registrationpaymentfindmanyargs": "RegistrationPaymentFindManyArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L25739 | neighbors=[index.d.ts]
 - "generated_client_index_d_registrationpaymentfinduniqueargs": "RegistrationPaymentFindUniqueArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L25607 | neighbors=[index.d.ts]
-- "generated_client_index_d_registrationpaymentfinduniqueorthrowargs": "RegistrationPaymentFindUniqueOrThrowArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L25625 | neighbors=[index.d.ts]
-- "generated_client_index_d_registrationpaymentgetpayload": "RegistrationPaymentGetPayload" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L25226 | neighbors=[index.d.ts]
-- "generated_client_index_d_registrationpaymentgroupbyargs": "RegistrationPaymentGroupByArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L25136 | neighbors=[index.d.ts]
-- "generated_client_index_d_registrationpaymentgroupbyoutputtype": "RegistrationPaymentGroupByOutputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L25150 | neighbors=[index.d.ts]
 
 ## Instructions
 

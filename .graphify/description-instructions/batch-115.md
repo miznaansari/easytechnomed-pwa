@@ -17,6 +17,10 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "generated_client_index_d_userrolescalarwherewithaggregatesinput": "UserRoleScalarWhereWithAggregatesInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L34943 | neighbors=[index.d.ts]
+- "generated_client_index_d_userroleselect": "UserRoleSelect" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L9018 | neighbors=[index.d.ts]
+- "generated_client_index_d_userroleselectscalar": "UserRoleSelectScalar" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L9027 | neighbors=[index.d.ts]
+- "generated_client_index_d_userrolesumaggregateinputtype": "UserRoleSumAggregateInputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L8888 | neighbors=[index.d.ts]
 - "generated_client_index_d_userrolesumaggregateoutputtype": "UserRoleSumAggregateOutputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L8863 | neighbors=[index.d.ts]
 - "generated_client_index_d_userrolesumorderbyaggregateinput": "UserRoleSumOrderByAggregateInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L40958 | neighbors=[index.d.ts]
 - "generated_client_index_d_userroleuncheckedcreateinput": "UserRoleUncheckedCreateInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L37757 | neighbors=[index.d.ts]
@@ -53,10 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "generated_client_index_d_usersessionavgaggregateoutputtype": "UserSessionAvgAggregateOutputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L7920 | neighbors=[index.d.ts]
 - "generated_client_index_d_usersessionavgorderbyaggregateinput": "UserSessionAvgOrderByAggregateInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L40899 | neighbors=[index.d.ts]
 - "generated_client_index_d_usersessioncountaggregateinputtype": "UserSessionCountAggregateInputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L7992 | neighbors=[index.d.ts]
-- "generated_client_index_d_usersessioncountaggregateoutputtype": "UserSessionCountAggregateOutputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L7950 | neighbors=[index.d.ts]
-- "generated_client_index_d_usersessioncountargs": "UserSessionCountArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L8163 | neighbors=[index.d.ts]
-- "generated_client_index_d_usersessioncountorderbyaggregateinput": "UserSessionCountOrderByAggregateInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L40889 | neighbors=[index.d.ts]
-- "generated_client_index_d_usersessioncreateargs": "UserSessionCreateArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L8716 | neighbors=[index.d.ts]
 
 ## Instructions
 

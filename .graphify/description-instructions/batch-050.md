@@ -17,6 +17,10 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "tests_route_put": "PUT()" | kind=code-symbol | source=app/api/tests/route.js:L265 | neighbors=[route.js, serializeSingleTest()]
+- "tests_route_serializetests": "serializeTests()" | kind=code-symbol | source=app/api/tests/route.js:L6 | neighbors=[route.js, GET()]
+- "ui_alert": "Alert.js" | kind=code-symbol | source=components/ui/Alert.js:L1 | neighbors=[252e194 e, Alert()]
+- "ui_avatar": "Avatar.js" | kind=code-symbol | source=components/ui/Avatar.js:L1 | neighbors=[252e194 e, Avatar()]
 - "ui_badge": "Badge.js" | kind=code-symbol | source=components/ui/Badge.js:L1 | neighbors=[252e194 e, Badge()]
 - "ui_dialog": "Dialog.js" | kind=code-symbol | source=components/ui/Dialog.js:L1 | neighbors=[252e194 e, Dialog()]
 - "ui_label": "Label.js" | kind=code-symbol | source=components/ui/Label.js:L1 | neighbors=[252e194 e, Label()]
@@ -53,10 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "component_showresult_showresult": "ShowResult()" | kind=code-symbol | source=app/(customer)/(dashboard)/test-report/component/showResult.jsx:L104 | neighbors=[showResult.jsx]
 - "component_showresultmobile_getreferencerange": "getReferenceRange()" | kind=code-symbol | source=app/(customer)/(dashboard)/test-report/component/showResultMobile.jsx:L25 | neighbors=[showResultMobile.jsx]
 - "component_showresultmobile_showresultmobile": "ShowResultMobile()" | kind=code-symbol | source=app/(customer)/(dashboard)/test-report/component/showResultMobile.jsx:L86 | neighbors=[showResultMobile.jsx]
-- "components_adddoctordrawer_adddoctordrawer": "AddDoctorDrawer()" | kind=code-symbol | source=components/AddDoctorDrawer.js:L28 | neighbors=[AddDoctorDrawer.js]
-- "components_adminlayoutclient_adminlayoutclient": "AdminLayoutClient()" | kind=code-symbol | source=components/AdminLayoutClient.js:L135 | neighbors=[AdminLayoutClient.js]
-- "components_adminlayoutclient_getexpirymessage": "getExpiryMessage()" | kind=code-symbol | source=components/AdminLayoutClient.js:L101 | neighbors=[AdminLayoutClient.js]
-- "components_adminlayoutclient_theme": "theme" | kind=code-symbol | source=components/AdminLayoutClient.js:L55 | neighbors=[AdminLayoutClient.js]
 
 ## Instructions
 

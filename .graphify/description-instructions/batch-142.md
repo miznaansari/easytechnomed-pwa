@@ -17,6 +17,10 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "runtime_react_native_disable": "disable()" | kind=code-symbol | source=scratch/generated-client/runtime/react-native.js:L1 | neighbors=[react-native.js]
+- "runtime_react_native_disconnect": "disconnect()" | kind=code-symbol | source=scratch/generated-client/runtime/react-native.js:L60 | neighbors=[react-native.js]
+- "runtime_react_native_dispatchbatches": "dispatchBatches()" | kind=code-symbol | source=scratch/generated-client/runtime/react-native.js:L69 | neighbors=[react-native.js]
+- "runtime_react_native_dmmf": "dmmf()" | kind=code-symbol | source=scratch/generated-client/runtime/react-native.js:L60 | neighbors=[react-native.js]
 - "runtime_react_native_dn": "Dn()" | kind=code-symbol | source=scratch/generated-client/runtime/react-native.js:L12 | neighbors=[react-native.js]
 - "runtime_react_native_ds": "ds()" | kind=code-symbol | source=scratch/generated-client/runtime/react-native.js:L12 | neighbors=[react-native.js]
 - "runtime_react_native_enable": "enable()" | kind=code-symbol | source=scratch/generated-client/runtime/react-native.js:L1 | neighbors=[react-native.js]
@@ -53,10 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "runtime_react_native_middlewareargstorequestargs": "middlewareArgsToRequestArgs()" | kind=code-symbol | source=scratch/generated-client/runtime/react-native.js:L69 | neighbors=[react-native.js]
 - "runtime_react_native_mn": "Mn()" | kind=code-symbol | source=scratch/generated-client/runtime/react-native.js:L10 | neighbors=[react-native.js]
 - "runtime_react_native_ne": "Ne()" | kind=code-symbol | source=scratch/generated-client/runtime/react-native.js:L1 | neighbors=[react-native.js]
-- "runtime_react_native_nextid": "nextId()" | kind=code-symbol | source=scratch/generated-client/runtime/react-native.js:L78 | neighbors=[react-native.js]
-- "runtime_react_native_nl": "Nl()" | kind=code-symbol | source=scratch/generated-client/runtime/react-native.js:L2 | neighbors=[react-native.js]
-- "runtime_react_native_no": "No()" | kind=code-symbol | source=scratch/generated-client/runtime/react-native.js:L10 | neighbors=[react-native.js]
-- "runtime_react_native_ol": "Ol()" | kind=code-symbol | source=scratch/generated-client/runtime/react-native.js:L2 | neighbors=[react-native.js]
 
 ## Instructions
 

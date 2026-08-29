@@ -17,6 +17,10 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "generated_client_index_d_floatwithaggregatesfilter": "FloatWithAggregatesFilter" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L41701 | neighbors=[index.d.ts]
+- "generated_client_index_d_getadminaddressaggregatetype": "GetAdminAddressAggregateType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L24151 | neighbors=[index.d.ts]
+- "generated_client_index_d_getadminaddressgroupbypayload": "GetAdminAddressGroupByPayload" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L24196 | neighbors=[index.d.ts]
+- "generated_client_index_d_getadminaggregatetype": "GetAdminAggregateType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L10938 | neighbors=[index.d.ts]
 - "generated_client_index_d_getadmingroupbypayload": "GetAdminGroupByPayload" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L10995 | neighbors=[index.d.ts]
 - "generated_client_index_d_getadminroleaggregatetype": "GetAdminRoleAggregateType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L12991 | neighbors=[index.d.ts]
 - "generated_client_index_d_getadminrolegroupbypayload": "GetAdminRoleGroupByPayload" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L13028 | neighbors=[index.d.ts]
@@ -53,10 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "generated_client_index_d_getsuperadminaggregatetype": "GetSuperAdminAggregateType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L5047 | neighbors=[index.d.ts]
 - "generated_client_index_d_getsuperadmingroupbypayload": "GetSuperAdminGroupByPayload" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L5086 | neighbors=[index.d.ts]
 - "generated_client_index_d_getsuperadminsessionaggregatetype": "GetSuperAdminSessionAggregateType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L6027 | neighbors=[index.d.ts]
-- "generated_client_index_d_getsuperadminsessiongroupbypayload": "GetSuperAdminSessionGroupByPayload" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L6067 | neighbors=[index.d.ts]
-- "generated_client_index_d_getsuperadmintrackingaggregatetype": "GetSuperAdminTrackingAggregateType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L27975 | neighbors=[index.d.ts]
-- "generated_client_index_d_getsuperadmintrackinggroupbypayload": "GetSuperAdminTrackingGroupByPayload" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L28017 | neighbors=[index.d.ts]
-- "generated_client_index_d_gettestaggregatetype": "GetTestAggregateType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L16078 | neighbors=[index.d.ts]
 
 ## Instructions
 

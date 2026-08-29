@@ -17,6 +17,10 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "runtime_library_d_typemapdef": "TypeMapDef" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L3288 | neighbors=[_d()]
+- "runtime_library_d_typeref": "TypeRef" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L778 | neighbors=[_d()]
+- "runtime_library_d_uniqueindex": "uniqueIndex" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L681 | neighbors=[_d()]
+- "runtime_library_d_unknownerrorparams": "UnknownErrorParams" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L3305 | neighbors=[_d()]
 - "runtime_library_d_unknowntypedsql": "UnknownTypedSql" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L3310 | neighbors=[_d()]
 - "runtime_library_d_unpacker": "Unpacker" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L3312 | neighbors=[_d()]
 - "runtime_library_d_unwrappayload": "UnwrapPayload" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L3314 | neighbors=[_d()]
@@ -53,10 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "runtime_library_ld": "ld()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L29 | neighbors=[library.js]
 - "runtime_library_length": "length()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L121 | neighbors=[library.js]
 - "runtime_library_m": "M()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L3 | neighbors=[library.js]
-- "runtime_library_mc": "mc()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L21 | neighbors=[library.js]
-- "runtime_library_mi": "mi()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L18 | neighbors=[library.js]
-- "runtime_library_middlewareargstorequestargs": "middlewareArgsToRequestArgs()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L121 | neighbors=[library.js]
-- "runtime_library_nextid": "nextId()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L130 | neighbors=[library.js]
 
 ## Instructions
 

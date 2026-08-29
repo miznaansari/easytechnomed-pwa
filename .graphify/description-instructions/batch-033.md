@@ -17,6 +17,13 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "runtime_react_native_si": "si()" | kind=code-symbol | source=scratch/generated-client/runtime/react-native.js:L1 | neighbors=[react-native.js, Sa(), xa()]
+- "runtime_react_native_so": "so()" | kind=code-symbol | source=scratch/generated-client/runtime/react-native.js:L2 | neighbors=[react-native.js, slice(), values()]
+- "runtime_react_native_st": "st()" | kind=code-symbol | source=scratch/generated-client/runtime/react-native.js:L2 | neighbors=[react-native.js, getGlobalOmit(), u()]
+- "runtime_react_native_su": "su()" | kind=code-symbol | source=scratch/generated-client/runtime/react-native.js:L2 | neighbors=[react-native.js, get(), values()]
+- "runtime_react_native_ta": "Ta()" | kind=code-symbol | source=scratch/generated-client/runtime/react-native.js:L1 | neighbors=[react-native.js, Na(), nr()]
+- "runtime_react_native_tt": "Tt()" | kind=code-symbol | source=scratch/generated-client/runtime/react-native.js:L1 | neighbors=[react-native.js, Ia(), et()]
+- "runtime_react_native_ui": "ui()" | kind=code-symbol | source=scratch/generated-client/runtime/react-native.js:L1 | neighbors=[react-native.js, ci(), pi()]
 - "runtime_react_native_ur": "ur()" | kind=code-symbol | source=scratch/generated-client/runtime/react-native.js:L2 | neighbors=[react-native.js, bn(), Rl()]
 - "runtime_react_native_ut": "ut()" | kind=code-symbol | source=scratch/generated-client/runtime/react-native.js:L7 | neighbors=[react-native.js, handleRequestError(), Sr()]
 - "runtime_react_native_vc": "Vc()" | kind=code-symbol | source=scratch/generated-client/runtime/react-native.js:L12 | neighbors=[react-native.js, $n(), Pe()]
@@ -50,13 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "runtime_wasm_loadlibrary": "loadLibrary()" | kind=code-symbol | source=scratch/generated-client/runtime/wasm.js:L11 | neighbors=[wasm.js, loadEngine(), Ce()]
 - "runtime_wasm_makerequired": "makeRequired()" | kind=code-symbol | source=scratch/generated-client/runtime/wasm.js:L2 | neighbors=[wasm.js, fs(), _s()]
 - "runtime_wasm_nn": "nn()" | kind=code-symbol | source=scratch/generated-client/runtime/wasm.js:L1 | neighbors=[wasm.js, alloc(), fill()]
-- "runtime_wasm_on": "on()" | kind=code-symbol | source=scratch/generated-client/runtime/wasm.js:L1 | neighbors=[wasm.js, gr(), toString()]
-- "runtime_wasm_oo": "oo()" | kind=code-symbol | source=scratch/generated-client/runtime/wasm.js:L14 | neighbors=[wasm.js, ao(), toString()]
-- "runtime_wasm_or": "Or()" | kind=code-symbol | source=scratch/generated-client/runtime/wasm.js:L1 | neighbors=[wasm.js, t(), Os()]
-- "runtime_wasm_os": "Os()" | kind=code-symbol | source=scratch/generated-client/runtime/wasm.js:L2 | neighbors=[wasm.js, Kn(), Or()]
-- "runtime_wasm_pa": "Pa()" | kind=code-symbol | source=scratch/generated-client/runtime/wasm.js:L6 | neighbors=[wasm.js, oi(), tt()]
-- "runtime_wasm_pe": "Pe()" | kind=code-symbol | source=scratch/generated-client/runtime/wasm.js:L1 | neighbors=[wasm.js, ae(), ke()]
-- "runtime_wasm_removeallfields": "removeAllFields()" | kind=code-symbol | source=scratch/generated-client/runtime/wasm.js:L3 | neighbors=[wasm.js, ds(), _s()]
 
 ## Instructions
 

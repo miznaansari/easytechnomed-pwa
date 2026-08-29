@@ -17,6 +17,10 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "runtime_library_d_fieldref": "FieldRef" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L1356 | neighbors=[_d()]
+- "runtime_library_d_fieldrefallowtype": "FieldRefAllowType" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L828 | neighbors=[_d()]
+- "runtime_library_d_fieldreftype": "FieldRefType" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L823 | neighbors=[_d()]
+- "runtime_library_d_fluentoperation": "FluentOperation" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L1363 | neighbors=[_d()]
 - "runtime_library_d_fn": "Fn" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L1365 | neighbors=[_d()]
 - "runtime_library_d_generatorconfig": "GeneratorConfig" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L1370 | neighbors=[_d()]
 - "runtime_library_d_getaggregateresult": "GetAggregateResult" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L1393 | neighbors=[_d()]
@@ -53,10 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "runtime_library_d_job": "Job" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L1858 | neighbors=[_d()]
 - "runtime_library_d_jsargs": "JsArgs" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L1869 | neighbors=[_d()]
 - "runtime_library_d_jsinputvalue": "JsInputValue" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L1876 | neighbors=[_d()]
-- "runtime_library_d_jsonargumentvalue": "JsonArgumentValue" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L1880 | neighbors=[_d()]
-- "runtime_library_d_jsonarray": "JsonArray" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L1888 | neighbors=[_d()]
-- "runtime_library_d_jsonbatchquery": "JsonBatchQuery" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L1891 | neighbors=[_d()]
-- "runtime_library_d_jsonconvertible": "JsonConvertible" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L1898 | neighbors=[_d()]
 
 ## Instructions
 

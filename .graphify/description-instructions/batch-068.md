@@ -17,6 +17,10 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "generated_client_index_d_doctorincentivegetpayload": "DoctorIncentiveGetPayload" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L31933 | neighbors=[index.d.ts]
+- "generated_client_index_d_doctorincentivegroupbyargs": "DoctorIncentiveGroupByArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L31859 | neighbors=[index.d.ts]
+- "generated_client_index_d_doctorincentivegroupbyoutputtype": "DoctorIncentiveGroupByOutputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L31873 | neighbors=[index.d.ts]
+- "generated_client_index_d_doctorincentiveinclude": "DoctorIncentiveInclude" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L31915 | neighbors=[index.d.ts]
 - "generated_client_index_d_doctorincentivelistrelationfilter": "DoctorIncentiveListRelationFilter" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L41250 | neighbors=[index.d.ts]
 - "generated_client_index_d_doctorincentivemaxaggregateinputtype": "DoctorIncentiveMaxAggregateInputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L31772 | neighbors=[index.d.ts]
 - "generated_client_index_d_doctorincentivemaxaggregateoutputtype": "DoctorIncentiveMaxAggregateOutputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L31737 | neighbors=[index.d.ts]
@@ -53,10 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "generated_client_index_d_doctorincentiveupdatewithoutdoctorinput": "DoctorIncentiveUpdateWithoutDoctorInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L53559 | neighbors=[index.d.ts]
 - "generated_client_index_d_doctorincentiveupdatewithwhereuniquewithoutdoctorinput": "DoctorIncentiveUpdateWithWhereUniqueWithoutDoctorInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L47905 | neighbors=[index.d.ts]
 - "generated_client_index_d_doctorincentiveupsertargs": "DoctorIncentiveUpsertArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L32550 | neighbors=[index.d.ts]
-- "generated_client_index_d_doctorincentiveupsertwithwhereuniquewithoutdoctorinput": "DoctorIncentiveUpsertWithWhereUniqueWithoutDoctorInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L47899 | neighbors=[index.d.ts]
-- "generated_client_index_d_doctorincentivewhereinput": "DoctorIncentiveWhereInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L37042 | neighbors=[index.d.ts]
-- "generated_client_index_d_doctorincentivewhereuniqueinput": "DoctorIncentiveWhereUniqueInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L37061 | neighbors=[index.d.ts]
-- "generated_client_index_d_doctorinclude": "DoctorInclude" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L14994 | neighbors=[index.d.ts]
 
 ## Instructions
 

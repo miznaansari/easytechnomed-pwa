@@ -17,6 +17,13 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "runtime_edge_makerequired": "makeRequired()" | kind=code-symbol | source=scratch/generated-client/runtime/edge.js:L2 | neighbors=[edge.js, Au(), xu()]
+- "runtime_edge_metrics": "metrics()" | kind=code-symbol | source=scratch/generated-client/runtime/edge.js:L12 | neighbors=[edge.js, json(), prometheus()]
+- "runtime_edge_mi": "mi()" | kind=code-symbol | source=scratch/generated-client/runtime/edge.js:L1 | neighbors=[edge.js, Ca(), pi()]
+- "runtime_edge_newline": "newLine()" | kind=code-symbol | source=scratch/generated-client/runtime/edge.js:L2 | neighbors=[edge.js, indentedCurrentLine(), writeLine()]
+- "runtime_edge_nn": "nn()" | kind=code-symbol | source=scratch/generated-client/runtime/edge.js:L1 | neighbors=[edge.js, fi(), Oa()]
+- "runtime_edge_oa": "Oa()" | kind=code-symbol | source=scratch/generated-client/runtime/edge.js:L1 | neighbors=[edge.js, mr(), nn()]
+- "runtime_edge_oc": "oc()" | kind=code-symbol | source=scratch/generated-client/runtime/edge.js:L6 | neighbors=[edge.js, es(), ht()]
 - "runtime_edge_oe": "Oe()" | kind=code-symbol | source=scratch/generated-client/runtime/edge.js:L1 | neighbors=[edge.js, me(), Y()]
 - "runtime_edge_propagateresponseextensions": "propagateResponseExtensions()" | kind=code-symbol | source=scratch/generated-client/runtime/edge.js:L12 | neighbors=[edge.js, createEngineSpan(), forEach()]
 - "runtime_edge_ps": "ps()" | kind=code-symbol | source=scratch/generated-client/runtime/edge.js:L6 | neighbors=[edge.js, jr(), we()]
@@ -50,13 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "runtime_index_browser_x": "x()" | kind=code-symbol | source=scratch/generated-client/runtime/index-browser.js:L1 | neighbors=[index-browser.js, B(), Ee()]
 - "runtime_library_append": "append()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L29 | neighbors=[library.js, e(), Ia()]
 - "runtime_library_bu": "Bu()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L6 | neighbors=[library.js, e(), qr()]
-- "runtime_library_buildcapturesettings": "buildCaptureSettings()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L111 | neighbors=[library.js, build(), isEnabled()]
-- "runtime_library_ci": "ci()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L3 | neighbors=[library.js, slice(), oc()]
-- "runtime_library_d_driveradapter": "DriverAdapter" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L875 | neighbors=[_d(), Queryable, ErrorCapturingDriverAdapter]
-- "runtime_library_d_errorwithbatchindex": "ErrorWithBatchIndex" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L1208 | neighbors=[_d(), PrismaClientKnownRequestError, PrismaClientUnknownRequestError]
-- "runtime_library_d_prismaclientknownrequesterror": "PrismaClientKnownRequestError" | kind=code-symbol | neighbors=[_d(), NotFoundError, ErrorWithBatchIndex]
-- "runtime_library_dn": "Dn()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L43 | neighbors=[library.js, ha(), Ja()]
-- "runtime_library_empty": "empty()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L29 | neighbors=[index.js, library.js, e()]
 
 ## Instructions
 

@@ -17,6 +17,10 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "runtime_library_d_prismapromisetransaction": "PrismaPromiseTransaction" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L2473 | neighbors=[_d()]
+- "runtime_library_d_query": "Query" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L768 | neighbors=[_d()]
+- "runtime_library_d_queryenginebatchgraphqlrequest": "QueryEngineBatchGraphQLRequest" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L2521 | neighbors=[_d()]
+- "runtime_library_d_queryenginebatchrequest": "QueryEngineBatchRequest" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L2527 | neighbors=[_d()]
 - "runtime_library_d_queryengineconfig": "QueryEngineConfig" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L2529 | neighbors=[_d()]
 - "runtime_library_d_queryengineconstructor": "QueryEngineConstructor" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L2541 | neighbors=[_d()]
 - "runtime_library_d_queryengineinstance": "QueryEngineInstance" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L2545 | neighbors=[_d()]
@@ -53,10 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "runtime_library_d_result_2": "Result_2" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L2766 | neighbors=[_d()]
 - "runtime_library_d_result_4": "Result_4" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L2790 | neighbors=[_d()]
 - "runtime_library_d_resultarg": "ResultArg" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L2801 | neighbors=[_d()]
-- "runtime_library_d_resultargs": "ResultArgs" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L2805 | neighbors=[_d()]
-- "runtime_library_d_resultargsfieldcompute": "ResultArgsFieldCompute" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L2811 | neighbors=[_d()]
-- "runtime_library_d_resultfielddefinition": "ResultFieldDefinition" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L2813 | neighbors=[_d()]
-- "runtime_library_d_resultset": "ResultSet" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L2820 | neighbors=[_d()]
 
 ## Instructions
 

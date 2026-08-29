@@ -17,6 +17,10 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "generated_client_index_d_usersessioncountaggregateoutputtype": "UserSessionCountAggregateOutputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L7950 | neighbors=[index.d.ts]
+- "generated_client_index_d_usersessioncountargs": "UserSessionCountArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L8163 | neighbors=[index.d.ts]
+- "generated_client_index_d_usersessioncountorderbyaggregateinput": "UserSessionCountOrderByAggregateInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L40889 | neighbors=[index.d.ts]
+- "generated_client_index_d_usersessioncreateargs": "UserSessionCreateArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L8716 | neighbors=[index.d.ts]
 - "generated_client_index_d_usersessioncreateinput": "UserSessionCreateInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L37685 | neighbors=[index.d.ts]
 - "generated_client_index_d_usersessioncreatemanyargs": "UserSessionCreateManyArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L8734 | neighbors=[index.d.ts]
 - "generated_client_index_d_usersessioncreatemanyinput": "UserSessionCreateManyInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L37723 | neighbors=[index.d.ts]
@@ -53,10 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "generated_client_index_d_usersessionscalarfieldenum": "UserSessionScalarFieldEnum" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L33964 | neighbors=[index.d.ts]
 - "generated_client_index_d_usersessionscalarwhereinput": "UserSessionScalarWhereInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L46540 | neighbors=[index.d.ts]
 - "generated_client_index_d_usersessionscalarwherewithaggregatesinput": "UserSessionScalarWhereWithAggregatesInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L34893 | neighbors=[index.d.ts]
-- "generated_client_index_d_usersessionselect": "UserSessionSelect" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L8118 | neighbors=[index.d.ts]
-- "generated_client_index_d_usersessionselectscalar": "UserSessionSelectScalar" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L8130 | neighbors=[index.d.ts]
-- "generated_client_index_d_usersessionsumaggregateinputtype": "UserSessionSumAggregateInputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L7967 | neighbors=[index.d.ts]
-- "generated_client_index_d_usersessionsumaggregateoutputtype": "UserSessionSumAggregateOutputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L7925 | neighbors=[index.d.ts]
 
 ## Instructions
 

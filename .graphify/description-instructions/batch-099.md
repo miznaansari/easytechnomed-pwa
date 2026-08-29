@@ -17,6 +17,10 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "generated_client_index_d_superadminupdatemanymutationinput": "SuperAdminUpdateManyMutationInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L37463 | neighbors=[index.d.ts]
+- "generated_client_index_d_superadminupdateonerequiredwithoutsessionsnestedinput": "SuperAdminUpdateOneRequiredWithoutSessionsNestedInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L43265 | neighbors=[index.d.ts]
+- "generated_client_index_d_superadminupdateonewithouttrackingsnestedinput": "SuperAdminUpdateOneWithoutTrackingsNestedInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L44663 | neighbors=[index.d.ts]
+- "generated_client_index_d_superadminupdatetoonewithwherewithoutsessionsinput": "SuperAdminUpdateToOneWithWhereWithoutSessionsInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L46337 | neighbors=[index.d.ts]
 - "generated_client_index_d_superadminupdatetoonewithwherewithouttrackingsinput": "SuperAdminUpdateToOneWithWhereWithoutTrackingsInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L50689 | neighbors=[index.d.ts]
 - "generated_client_index_d_superadminupdatewithoutsessionsinput": "SuperAdminUpdateWithoutSessionsInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L46342 | neighbors=[index.d.ts]
 - "generated_client_index_d_superadminupdatewithouttrackingsinput": "SuperAdminUpdateWithoutTrackingsInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L50694 | neighbors=[index.d.ts]
@@ -53,10 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "generated_client_index_d_testcreateinput": "TestCreateInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L38307 | neighbors=[index.d.ts]
 - "generated_client_index_d_testcreatemanyargs": "TestCreateManyArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L16840 | neighbors=[index.d.ts]
 - "generated_client_index_d_testcreatemanydepartmentinput": "TestCreateManyDepartmentInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L54163 | neighbors=[index.d.ts]
-- "generated_client_index_d_testcreatemanydepartmentinputenvelope": "TestCreateManyDepartmentInputEnvelope" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L50771 | neighbors=[index.d.ts]
-- "generated_client_index_d_testcreatemanyinput": "TestCreateManyInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L38417 | neighbors=[index.d.ts]
-- "generated_client_index_d_testcreatemanyworkspaceinput": "TestCreateManyWorkspaceInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L51847 | neighbors=[index.d.ts]
-- "generated_client_index_d_testcreatemanyworkspaceinputenvelope": "TestCreateManyWorkspaceInputEnvelope" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L45389 | neighbors=[index.d.ts]
 
 ## Instructions
 

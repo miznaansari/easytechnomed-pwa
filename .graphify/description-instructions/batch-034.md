@@ -12,18 +12,18 @@ describing what it is or does. Use only the provided context.
 For a code symbol (kind=code-symbol — a function, class, or constant),
 describe what the function/symbol does based on its name, source location
 and neighbors — e.g. "Resolves the configured ontology profile from graphify.yaml.".
-For an entity node (any other kind — e.g. a person, place, event, object),
-describe what the entity is and its role, grounded in its type, its
-relations (neighbors) and the provided citations/evidence — e.g.
-"Lady Carfax, a wealthy heiress who disappears en route to Lausanne.".
-Ground entity descriptions in the citations/evidence when present; do not
-speculate beyond the context, so a node with no supporting context may be
-left out of the reply.
 Write every description in English (en). Do not switch languages.
 No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "runtime_wasm_on": "on()" | kind=code-symbol | source=scratch/generated-client/runtime/wasm.js:L1 | neighbors=[wasm.js, gr(), toString()]
+- "runtime_wasm_oo": "oo()" | kind=code-symbol | source=scratch/generated-client/runtime/wasm.js:L14 | neighbors=[wasm.js, ao(), toString()]
+- "runtime_wasm_or": "Or()" | kind=code-symbol | source=scratch/generated-client/runtime/wasm.js:L1 | neighbors=[wasm.js, t(), Os()]
+- "runtime_wasm_os": "Os()" | kind=code-symbol | source=scratch/generated-client/runtime/wasm.js:L2 | neighbors=[wasm.js, Kn(), Or()]
+- "runtime_wasm_pa": "Pa()" | kind=code-symbol | source=scratch/generated-client/runtime/wasm.js:L6 | neighbors=[wasm.js, oi(), tt()]
+- "runtime_wasm_pe": "Pe()" | kind=code-symbol | source=scratch/generated-client/runtime/wasm.js:L1 | neighbors=[wasm.js, ae(), ke()]
+- "runtime_wasm_removeallfields": "removeAllFields()" | kind=code-symbol | source=scratch/generated-client/runtime/wasm.js:L3 | neighbors=[wasm.js, ds(), _s()]
 - "runtime_wasm_reverse": "reverse()" | kind=code-symbol | source=scratch/generated-client/runtime/wasm.js:L1 | neighbors=[wasm.js, mn(), un()]
 - "runtime_wasm_setcolor": "setColor()" | kind=code-symbol | source=scratch/generated-client/runtime/wasm.js:L3 | neighbors=[wasm.js, write(), writeEmpty()]
 - "runtime_wasm_shouldapplyglobalomit": "shouldApplyGlobalOmit()" | kind=code-symbol | source=scratch/generated-client/runtime/wasm.js:L5 | neighbors=[wasm.js, getGlobalOmit(), be()]
@@ -48,7 +48,7 @@ one-sentence description — no prose, no markdown fences.
 - "tests_route_serializesingletest": "serializeSingleTest()" | kind=code-symbol | source=app/api/tests/route.js:L37 | neighbors=[route.js, POST(), PUT()]
 - "ui_dropdown": "Dropdown.js" | kind=code-symbol | source=components/ui/Dropdown.js:L1 | neighbors=[252e194 e, Dropdown(), DropdownItem()]
 - "ui_loader": "Loader.js" | kind=code-symbol | source=components/ui/Loader.js:L1 | neighbors=[252e194 e, Button.js, Loader()]
-- "userapprove_userapprovetable": "UserApproveTable.js" | kind=code-symbol | source=app/(customer)/(dashboard)/userApprove/UserApproveTable.js:L1 | neighbors=[252e194 e, page.js, UserApproveTable()]
+- "version_versionupdatenotifier": "VersionUpdateNotifier.jsx" | kind=code-symbol | source=components/version/VersionUpdateNotifier.jsx:L1 | neighbors=[6236f60 new update, compareVersions(), VersionUpdateNotifier()]
 - "admin_route": "route.js" | kind=code-symbol | source=app/api/tracking/admin/route.js:L1 | neighbors=[POST(), 252e194 e]
 - "app_robots": "robots.js" | kind=code-symbol | source=app/robots.js:L1 | neighbors=[robots(), 252e194 e]
 - "app_sitemap": "sitemap.js" | kind=code-symbol | source=app/sitemap.js:L1 | neighbors=[sitemap(), 252e194 e]
@@ -57,13 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "auth_offlineauth_islocalsessionvalid": "isLocalSessionValid()" | kind=code-symbol | source=lib/auth/offlineAuth.js:L117 | neighbors=[offlineAuth.js, getCachedSession()]
 - "by_mobile_route_get": "GET()" | kind=code-symbol | source=app/api/registrations/by-mobile/route.js:L10 | neighbors=[route.js, serializeData()]
 - "by_mobile_route_serializedata": "serializeData()" | kind=code-symbol | source=app/api/registrations/by-mobile/route.js:L6 | neighbors=[route.js, GET()]
-- "change_role_route": "route.js" | kind=code-symbol | source=app/api/approvals/change-role/route.js:L1 | neighbors=[POST(), 252e194 e]
-- "commit:repo:github.com-personal/miznaansari/easytechnomed-pwa@e01658c7ee068df1118ba443c9b24f5f56e20f03": "e01658c 3.1.0" | kind=Commit | source=git | neighbors=[67434f2 payment issue only, main]
-- "component_differentialcounttracker_isdifferentialheader": "isDifferentialHeader()" | kind=code-symbol | source=app/(customer)/(dashboard)/test-report/component/DifferentialCountTracker.jsx:L76 | neighbors=[DifferentialCountTracker.jsx, DifferentialHeaderBadge()]
-- "component_differentialcounttracker_validatedifferentialonsave": "validateDifferentialOnSave()" | kind=code-symbol | source=app/(customer)/(dashboard)/test-report/component/DifferentialCountTracker.jsx:L178 | neighbors=[DifferentialCountTracker.jsx, calculateDifferentialSummary()]
-- "component_showresult_isoutofrange": "isOutOfRange()" | kind=code-symbol | source=app/(customer)/(dashboard)/test-report/component/showResult.jsx:L92 | neighbors=[showResult.jsx, isQualitativeAbnormal()]
-- "component_showresult_isqualitativeabnormal": "isQualitativeAbnormal()" | kind=code-symbol | source=app/(customer)/(dashboard)/test-report/component/showResult.jsx:L62 | neighbors=[showResult.jsx, isOutOfRange()]
-- "component_showresultmobile_isoutofrange": "isOutOfRange()" | kind=code-symbol | source=app/(customer)/(dashboard)/test-report/component/showResultMobile.jsx:L74 | neighbors=[showResultMobile.jsx, isQualitativeAbnormal()]
 
 ## Instructions
 

@@ -17,6 +17,10 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "runtime_library_d_jsonargumentvalue": "JsonArgumentValue" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L1880 | neighbors=[_d()]
+- "runtime_library_d_jsonarray": "JsonArray" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L1888 | neighbors=[_d()]
+- "runtime_library_d_jsonbatchquery": "JsonBatchQuery" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L1891 | neighbors=[_d()]
+- "runtime_library_d_jsonconvertible": "JsonConvertible" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L1898 | neighbors=[_d()]
 - "runtime_library_d_jsonfieldselection": "JsonFieldSelection" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L1902 | neighbors=[_d()]
 - "runtime_library_d_jsonobject": "JsonObject" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L1915 | neighbors=[_d()]
 - "runtime_library_d_jsonquery": "JsonQuery" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L1919 | neighbors=[_d()]
@@ -53,10 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "runtime_library_d_modelarg": "ModelArg" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L2136 | neighbors=[_d()]
 - "runtime_library_d_modelargs": "ModelArgs" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L2140 | neighbors=[_d()]
 - "runtime_library_d_modelkey": "ModelKey" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L2146 | neighbors=[_d()]
-- "runtime_library_d_modelmapping": "ModelMapping" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L829 | neighbors=[_d()]
-- "runtime_library_d_modelqueryoptionscb": "ModelQueryOptionsCb" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L2148 | neighbors=[_d()]
-- "runtime_library_d_modelqueryoptionscbargs": "ModelQueryOptionsCbArgs" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L2150 | neighbors=[_d()]
-- "runtime_library_d_modulo": "Modulo" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L331 | neighbors=[_d()]
 
 ## Instructions
 

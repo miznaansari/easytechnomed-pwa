@@ -17,6 +17,10 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "generated_client_index_d_leadupdatemanymutationinput": "LeadUpdateManyMutationInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L39433 | neighbors=[index.d.ts]
+- "generated_client_index_d_leadupsertargs": "LeadUpsertArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L23903 | neighbors=[index.d.ts]
+- "generated_client_index_d_leadwhereinput": "LeadWhereInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L36377 | neighbors=[index.d.ts]
+- "generated_client_index_d_leadwhereuniqueinput": "LeadWhereUniqueInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L36394 | neighbors=[index.d.ts]
 - "generated_client_index_d_logdefinition": "LogDefinition" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L3049 | neighbors=[index.d.ts]
 - "generated_client_index_d_logevent": "LogEvent" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L3067 | neighbors=[index.d.ts]
 - "generated_client_index_d_loglevel": "LogLevel" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L3048 | neighbors=[index.d.ts]
@@ -53,10 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "generated_client_index_d_nestedstringwithaggregatesfilter": "NestedStringWithAggregatesFilter" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L44910 | neighbors=[index.d.ts]
 - "generated_client_index_d_noexpand": "NoExpand" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L895 | neighbors=[index.d.ts]
 - "generated_client_index_d_not": "Not" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L926 | neighbors=[index.d.ts]
-- "generated_client_index_d_nullabledatetimefieldupdateoperationsinput": "NullableDateTimeFieldUpdateOperationsInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L42887 | neighbors=[index.d.ts]
-- "generated_client_index_d_nullabledecimalfieldupdateoperationsinput": "NullableDecimalFieldUpdateOperationsInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L43983 | neighbors=[index.d.ts]
-- "generated_client_index_d_nullablefloatfieldupdateoperationsinput": "NullableFloatFieldUpdateOperationsInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L44397 | neighbors=[index.d.ts]
-- "generated_client_index_d_nullableintfieldupdateoperationsinput": "NullableIntFieldUpdateOperationsInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L43331 | neighbors=[index.d.ts]
 
 ## Instructions
 

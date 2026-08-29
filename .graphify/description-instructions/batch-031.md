@@ -17,6 +17,13 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "runtime_library_qu": "Qu()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L1 | neighbors=[library.js, ei(), ti()]
+- "runtime_library_ra": "ra()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L29 | neighbors=[library.js, id(), values()]
+- "runtime_library_read": "read()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L21 | neighbors=[library.js, fromContent(), wp()]
+- "runtime_library_removeallfields": "removeAllFields()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L27 | neighbors=[library.js, dp(), _p()]
+- "runtime_library_rp": "rp()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L21 | neighbors=[library.js, get(), values()]
+- "runtime_library_rr": "rr()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L21 | neighbors=[library.js, He(), ri()]
+- "runtime_library_rs": "rs()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L9 | neighbors=[library.js, ns(), r()]
 - "runtime_library_s": "_s()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L21 | neighbors=[library.js, highlight(), hp()]
 - "runtime_library_sc": "sc()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L10 | neighbors=[library.js, is(), zt()]
 - "runtime_library_setcolor": "setColor()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L27 | neighbors=[library.js, write(), writeEmpty()]
@@ -50,13 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "runtime_react_native_ea": "Ea()" | kind=code-symbol | source=scratch/generated-client/runtime/react-native.js:L1 | neighbors=[react-native.js, r(), xt()]
 - "runtime_react_native_ec": "ec()" | kind=code-symbol | source=scratch/generated-client/runtime/react-native.js:L10 | neighbors=[react-native.js, Ao(), rt()]
 - "runtime_react_native_emit": "emit()" | kind=code-symbol | source=scratch/generated-client/runtime/react-native.js:L1 | neighbors=[react-native.js, handleAndLogRequestError(), logger()]
-- "runtime_react_native_et": "et()" | kind=code-symbol | source=scratch/generated-client/runtime/react-native.js:L1 | neighbors=[react-native.js, Ia(), Tt()]
-- "runtime_react_native_fromcontent": "fromContent()" | kind=code-symbol | source=scratch/generated-client/runtime/react-native.js:L2 | neighbors=[react-native.js, e(), read()]
-- "runtime_react_native_g": "g()" | kind=code-symbol | source=scratch/generated-client/runtime/react-native.js:L1 | neighbors=[react-native.js, a(), u()]
-- "runtime_react_native_gc": "Gc()" | kind=code-symbol | source=scratch/generated-client/runtime/react-native.js:L12 | neighbors=[react-native.js, He(), Yt()]
-- "runtime_react_native_getallclientextensions": "getAllClientExtensions()" | kind=code-symbol | source=scratch/generated-client/runtime/react-native.js:L10 | neighbors=[react-native.js, get(), Yt()]
-- "runtime_react_native_getallmodelextensions": "getAllModelExtensions()" | kind=code-symbol | source=scratch/generated-client/runtime/react-native.js:L10 | neighbors=[react-native.js, getOrCreate(), $n()]
-- "runtime_react_native_getallquerycallbacks": "getAllQueryCallbacks()" | kind=code-symbol | source=scratch/generated-client/runtime/react-native.js:L10 | neighbors=[react-native.js, getOrCreate(), us()]
 
 ## Instructions
 

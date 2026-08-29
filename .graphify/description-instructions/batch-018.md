@@ -17,6 +17,7 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "runtime_edge_esm_getname": "_getName()" | kind=code-symbol | source=scratch/generated-client/runtime/edge-esm.js:L4 | neighbors=[edge-esm.js, constructor(), lo(), Oo()]
 - "runtime_edge_esm_gu": "gu()" | kind=code-symbol | source=scratch/generated-client/runtime/edge-esm.js:L4 | neighbors=[edge-esm.js, addErrorMessage(), markAsError(), Tr()]
 - "runtime_edge_esm_handleandlogrequesterror": "handleAndLogRequestError()" | kind=code-symbol | source=scratch/generated-client/runtime/edge-esm.js:L20 | neighbors=[edge-esm.js, emit(), handleRequestError(), request()]
 - "runtime_edge_esm_io": "Io()" | kind=code-symbol | source=scratch/generated-client/runtime/edge-esm.js:L5 | neighbors=[edge-esm.js, addField(), Oo(), Pt()]
@@ -56,7 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "runtime_edge_getargumentname": "getArgumentName()" | kind=code-symbol | source=scratch/generated-client/runtime/edge.js:L5 | neighbors=[edge.js, bo(), qu(), Uo()]
 - "runtime_edge_getargumentpath": "getArgumentPath()" | kind=code-symbol | source=scratch/generated-client/runtime/edge.js:L5 | neighbors=[edge.js, bo(), qu(), Uo()]
 - "runtime_edge_getcomputedfields": "getComputedFields()" | kind=code-symbol | source=scratch/generated-client/runtime/edge.js:L5 | neighbors=[edge.js, getAllComputedFields(), Gu(), ju()]
-- "runtime_edge_getfieldvalue": "getFieldValue()" | kind=code-symbol | source=scratch/generated-client/runtime/edge.js:L3 | neighbors=[edge.js, getDeepSelectionParent(), getField(), ro()]
 
 ## Instructions
 

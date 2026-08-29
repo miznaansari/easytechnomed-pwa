@@ -17,6 +17,10 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "generated_client_index_d_workspaceuncheckedcreatewithoutusersinput": "WorkspaceUncheckedCreateWithoutUsersInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L46397 | neighbors=[index.d.ts]
+- "generated_client_index_d_workspaceuncheckedupdateinput": "WorkspaceUncheckedUpdateInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L37355 | neighbors=[index.d.ts]
+- "generated_client_index_d_workspaceuncheckedupdatemanyinput": "WorkspaceUncheckedUpdateManyInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L37400 | neighbors=[index.d.ts]
+- "generated_client_index_d_workspaceuncheckedupdatewithoutadminsinput": "WorkspaceUncheckedUpdateWithoutAdminsInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L47106 | neighbors=[index.d.ts]
 - "generated_client_index_d_workspaceuncheckedupdatewithoutdoctorsinput": "WorkspaceUncheckedUpdateWithoutDoctorsInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L47846 | neighbors=[index.d.ts]
 - "generated_client_index_d_workspaceuncheckedupdatewithoutinterpretationrulesinput": "WorkspaceUncheckedUpdateWithoutInterpretationRulesInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L51405 | neighbors=[index.d.ts]
 - "generated_client_index_d_workspaceuncheckedupdatewithoutparametersinput": "WorkspaceUncheckedUpdateWithoutParametersInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L49393 | neighbors=[index.d.ts]
@@ -53,10 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "generated_client_index_d_workspaceupdatewithoutadminsinput": "WorkspaceUpdateWithoutAdminsInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L47086 | neighbors=[index.d.ts]
 - "generated_client_index_d_workspaceupdatewithoutdoctorsinput": "WorkspaceUpdateWithoutDoctorsInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L47826 | neighbors=[index.d.ts]
 - "generated_client_index_d_workspaceupdatewithoutinterpretationrulesinput": "WorkspaceUpdateWithoutInterpretationRulesInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L51385 | neighbors=[index.d.ts]
-- "generated_client_index_d_workspaceupdatewithoutparametersinput": "WorkspaceUpdateWithoutParametersInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L49373 | neighbors=[index.d.ts]
-- "generated_client_index_d_workspaceupdatewithoutpdfsettinginput": "WorkspaceUpdateWithoutPdfSettingInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L51723 | neighbors=[index.d.ts]
-- "generated_client_index_d_workspaceupdatewithoutregistrationsinput": "WorkspaceUpdateWithoutRegistrationsInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L48726 | neighbors=[index.d.ts]
-- "generated_client_index_d_workspaceupdatewithouttestformulasinput": "WorkspaceUpdateWithoutTestFormulasInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L50991 | neighbors=[index.d.ts]
 
 ## Instructions
 

@@ -24,6 +24,7 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "runtime_wasm_writeline": "writeLine()" | kind=code-symbol | source=scratch/generated-client/runtime/wasm.js:L2 | neighbors=[wasm.js, write(), newLine(), writeWithContents(), writeWithItems()]
 - "runtime_wasm_writeuintbe": "writeUIntBE()" | kind=code-symbol | source=scratch/generated-client/runtime/wasm.js:L1 | neighbors=[wasm.js, writeIntBE(), B(), V(), Y()]
 - "runtime_wasm_writeuintle": "writeUIntLE()" | kind=code-symbol | source=scratch/generated-client/runtime/wasm.js:L1 | neighbors=[wasm.js, writeIntLE(), B(), V(), Y()]
 - "runtime_wasm_writewithcontents": "writeWithContents()" | kind=code-symbol | source=scratch/generated-client/runtime/wasm.js:L3 | neighbors=[wasm.js, write(), afterNextNewline(), withIndent(), writeLine()]
@@ -69,7 +70,6 @@ one-sentence description — no prose, no markdown fences.
 - "lib_reportsecurity_generatereporttoken": "generateReportToken()" | kind=code-symbol | source=lib/reportSecurity.js:L74 | neighbors=[reportSecurity.js, getKeyRing(), verifyReportToken(), test_identity_and_qr.mjs]
 - "lib_reportsecurity_verifyreporttoken": "verifyReportToken()" | kind=code-symbol | source=lib/reportSecurity.js:L173 | neighbors=[reportSecurity.js, decryptReportToken(), generateReportToken(), test_identity_and_qr.mjs]
 - "lib_saasinvoice": "saasInvoice.js" | kind=code-symbol | source=lib/saasInvoice.js:L1 | neighbors=[252e194 e, decodePaymentUid(), encodePaymentUid(), KEY]
-- "login_page": "page.js" | kind=code-symbol | source=app/(customer)/auth/login/page.js:L1 | neighbors=[252e194 e, LoginPageClient.js, metadata, Page()]
 
 ## Instructions
 

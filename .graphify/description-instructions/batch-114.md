@@ -17,6 +17,10 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "generated_client_index_d_userrolepermissionmaxaggregateoutputtype": "UserRolePermissionMaxAggregateOutputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L9801 | neighbors=[index.d.ts]
+- "generated_client_index_d_userrolepermissionmaxorderbyaggregateinput": "UserRolePermissionMaxOrderByAggregateInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L40978 | neighbors=[index.d.ts]
+- "generated_client_index_d_userrolepermissionminaggregateinputtype": "UserRolePermissionMinAggregateInputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L9825 | neighbors=[index.d.ts]
+- "generated_client_index_d_userrolepermissionminaggregateoutputtype": "UserRolePermissionMinAggregateOutputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L9795 | neighbors=[index.d.ts]
 - "generated_client_index_d_userrolepermissionminorderbyaggregateinput": "UserRolePermissionMinOrderByAggregateInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L40984 | neighbors=[index.d.ts]
 - "generated_client_index_d_userrolepermissionorderbyrelationaggregateinput": "UserRolePermissionOrderByRelationAggregateInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L40935 | neighbors=[index.d.ts]
 - "generated_client_index_d_userrolepermissionorderbywithaggregationinput": "UserRolePermissionOrderByWithAggregationInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L34979 | neighbors=[index.d.ts]
@@ -53,10 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "generated_client_index_d_userrolepermissionwhereuniqueinput": "UserRolePermissionWhereUniqueInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L34968 | neighbors=[index.d.ts]
 - "generated_client_index_d_userrolerelationfilter": "UserRoleRelationFilter" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L40776 | neighbors=[index.d.ts]
 - "generated_client_index_d_userrolescalarfieldenum": "UserRoleScalarFieldEnum" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L33972 | neighbors=[index.d.ts]
-- "generated_client_index_d_userrolescalarwherewithaggregatesinput": "UserRoleScalarWhereWithAggregatesInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L34943 | neighbors=[index.d.ts]
-- "generated_client_index_d_userroleselect": "UserRoleSelect" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L9018 | neighbors=[index.d.ts]
-- "generated_client_index_d_userroleselectscalar": "UserRoleSelectScalar" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L9027 | neighbors=[index.d.ts]
-- "generated_client_index_d_userrolesumaggregateinputtype": "UserRoleSumAggregateInputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L8888 | neighbors=[index.d.ts]
 
 ## Instructions
 

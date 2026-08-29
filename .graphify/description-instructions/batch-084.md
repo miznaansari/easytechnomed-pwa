@@ -17,6 +17,10 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "generated_client_index_d_patientresultupdatemanywithwherewithouttestparameterinput": "PatientResultUpdateManyWithWhereWithoutTestParameterInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L49742 | neighbors=[index.d.ts]
+- "generated_client_index_d_patientresultupdatewithoutregistrationinput": "PatientResultUpdateWithoutRegistrationInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L53846 | neighbors=[index.d.ts]
+- "generated_client_index_d_patientresultupdatewithouttestparameterinput": "PatientResultUpdateWithoutTestParameterInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L54134 | neighbors=[index.d.ts]
+- "generated_client_index_d_patientresultupdatewithwhereuniquewithoutregistrationinput": "PatientResultUpdateWithWhereUniqueWithoutRegistrationInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L48599 | neighbors=[index.d.ts]
 - "generated_client_index_d_patientresultupdatewithwhereuniquewithouttestparameterinput": "PatientResultUpdateWithWhereUniqueWithoutTestParameterInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L49737 | neighbors=[index.d.ts]
 - "generated_client_index_d_patientresultupsertargs": "PatientResultUpsertArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L23036 | neighbors=[index.d.ts]
 - "generated_client_index_d_patientresultupsertwithwhereuniquewithoutregistrationinput": "PatientResultUpsertWithWhereUniqueWithoutRegistrationInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L48593 | neighbors=[index.d.ts]
@@ -53,10 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "generated_client_index_d_prisma_userrolepermissionclient": "Prisma__UserRolePermissionClient" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L10320 | neighbors=[index.d.ts]
 - "generated_client_index_d_prisma_usersessionclient": "Prisma__UserSessionClient" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L8495 | neighbors=[index.d.ts]
 - "generated_client_index_d_prisma_workspaceclient": "Prisma__WorkspaceClient" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L4343 | neighbors=[index.d.ts]
-- "generated_client_index_d_prisma_workspacepdfclient": "Prisma__WorkspacePdfClient" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L33499 | neighbors=[index.d.ts]
-- "generated_client_index_d_prismaaction": "PrismaAction" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L3075 | neighbors=[index.d.ts]
-- "generated_client_index_d_prismaclient": "PrismaClient" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L176 | neighbors=[index.d.ts]
-- "generated_client_index_d_prismaclientoptions": "PrismaClientOptions" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L3004 | neighbors=[index.d.ts]
 
 ## Instructions
 

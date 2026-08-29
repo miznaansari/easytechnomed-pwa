@@ -12,13 +12,26 @@ describing what it is or does. Use only the provided context.
 For a code symbol (kind=code-symbol — a function, class, or constant),
 describe what the function/symbol does based on its name, source location
 and neighbors — e.g. "Resolves the configured ontology profile from graphify.yaml.".
+For an entity node (any other kind — e.g. a person, place, event, object),
+describe what the entity is and its role, grounded in its type, its
+relations (neighbors) and the provided citations/evidence — e.g.
+"Lady Carfax, a wealthy heiress who disappears en route to Lausanne.".
+Ground entity descriptions in the citations/evidence when present; do not
+speculate beyond the context, so a node with no supporting context may be
+left out of the reply.
 Write every description in English (en). Do not switch languages.
 No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "change_role_route": "route.js" | kind=code-symbol | source=app/api/approvals/change-role/route.js:L1 | neighbors=[POST(), 252e194 e]
+- "commit:repo:github.com-personal/miznaansari/easytechnomed-pwa@6adf5501e8593ddd4e13f315ccca1356b6194f3b": "6adf550 3.1.4" | kind=Commit | source=git | neighbors=[6236f60 new update, main]
+- "component_differentialcounttracker_isdifferentialheader": "isDifferentialHeader()" | kind=code-symbol | source=app/(customer)/(dashboard)/test-report/component/DifferentialCountTracker.jsx:L76 | neighbors=[DifferentialCountTracker.jsx, DifferentialHeaderBadge()]
+- "component_differentialcounttracker_validatedifferentialonsave": "validateDifferentialOnSave()" | kind=code-symbol | source=app/(customer)/(dashboard)/test-report/component/DifferentialCountTracker.jsx:L178 | neighbors=[DifferentialCountTracker.jsx, calculateDifferentialSummary()]
+- "component_showresult_isoutofrange": "isOutOfRange()" | kind=code-symbol | source=app/(customer)/(dashboard)/test-report/component/showResult.jsx:L92 | neighbors=[showResult.jsx, isQualitativeAbnormal()]
+- "component_showresult_isqualitativeabnormal": "isQualitativeAbnormal()" | kind=code-symbol | source=app/(customer)/(dashboard)/test-report/component/showResult.jsx:L62 | neighbors=[showResult.jsx, isOutOfRange()]
+- "component_showresultmobile_isoutofrange": "isOutOfRange()" | kind=code-symbol | source=app/(customer)/(dashboard)/test-report/component/showResultMobile.jsx:L74 | neighbors=[showResultMobile.jsx, isQualitativeAbnormal()]
 - "component_showresultmobile_isqualitativeabnormal": "isQualitativeAbnormal()" | kind=code-symbol | source=app/(customer)/(dashboard)/test-report/component/showResultMobile.jsx:L48 | neighbors=[showResultMobile.jsx, isOutOfRange()]
-- "components_expiredplanview": "ExpiredPlanView.jsx" | kind=code-symbol | source=components/ExpiredPlanView.jsx:L1 | neighbors=[252e194 e, ExpiredPlanView()]
 - "components_toastprovider": "ToastProvider.js" | kind=code-symbol | source=components/ToastProvider.js:L1 | neighbors=[252e194 e, ToastProvider()]
 - "contact_route": "route.js" | kind=code-symbol | source=app/api/contact/route.js:L1 | neighbors=[252e194 e, POST()]
 - "dashboard_dashboardcharts_departmentdistributionchart": "DepartmentDistributionChart()" | kind=code-symbol | source=app/(customer)/(dashboard)/dashboard/DashboardCharts.js:L88 | neighbors=[DashboardCharts.js, page.js]
@@ -51,12 +64,6 @@ one-sentence description — no prose, no markdown fences.
 - "lib_auth_requiresuperadmin": "requireSuperAdmin()" | kind=code-symbol | source=lib/auth.js:L156 | neighbors=[auth.js, verifyToken()]
 - "lib_auth_requireuser": "requireUser()" | kind=code-symbol | source=lib/auth.js:L23 | neighbors=[auth.js, verifyToken()]
 - "lib_auth_verifysuperadminapi": "verifySuperAdminAPI()" | kind=code-symbol | source=lib/auth.js:L190 | neighbors=[auth.js, verifyToken()]
-- "lib_db": "db.js" | kind=code-symbol | source=lib/db.js:L1 | neighbors=[252e194 e, auth.js]
-- "lib_formulautils_determineflag": "determineFlag()" | kind=code-symbol | source=lib/formulaUtils.js:L565 | neighbors=[formulaEngine.js, formulaUtils.js]
-- "lib_formulautils_getrangeandcriticalthresholds": "getRangeAndCriticalThresholds()" | kind=code-symbol | source=lib/formulaUtils.js:L479 | neighbors=[formulaEngine.js, formulaUtils.js]
-- "lib_formulautils_validatedifferentialcount": "validateDifferentialCount()" | kind=code-symbol | source=lib/formulaUtils.js:L771 | neighbors=[formulaEngine.js, formulaUtils.js]
-- "lib_pdftheme_computecolumnlayout": "computeColumnLayout()" | kind=code-symbol | source=lib/pdfTheme.js:L68 | neighbors=[pdfTheme.js, test-pdf-customization.mjs]
-- "lib_pdftheme_default_columns": "DEFAULT_COLUMNS" | kind=code-symbol | source=lib/pdfTheme.js:L57 | neighbors=[pdfTheme.js, test-pdf-customization.mjs]
 
 ## Instructions
 

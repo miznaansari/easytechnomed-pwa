@@ -17,6 +17,10 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "generated_client_index_d_testformulaselect": "TestFormulaSelect" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L29957 | neighbors=[index.d.ts]
+- "generated_client_index_d_testformulaselectscalar": "TestFormulaSelectScalar" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L29975 | neighbors=[index.d.ts]
+- "generated_client_index_d_testformulasumaggregateinputtype": "TestFormulaSumAggregateInputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L29787 | neighbors=[index.d.ts]
+- "generated_client_index_d_testformulasumaggregateoutputtype": "TestFormulaSumAggregateOutputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L29727 | neighbors=[index.d.ts]
 - "generated_client_index_d_testformulasumorderbyaggregateinput": "TestFormulaSumOrderByAggregateInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L42503 | neighbors=[index.d.ts]
 - "generated_client_index_d_testformulauncheckedcreateinput": "TestFormulaUncheckedCreateInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L39924 | neighbors=[index.d.ts]
 - "generated_client_index_d_testformulauncheckedcreatenestedmanywithoutoutputparameterinput": "TestFormulaUncheckedCreateNestedManyWithoutOutputParameterInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L44383 | neighbors=[index.d.ts]
@@ -53,10 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "generated_client_index_d_testformulaupdatewithwhereuniquewithouttestinput": "TestFormulaUpdateWithWhereUniqueWithoutTestInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L48279 | neighbors=[index.d.ts]
 - "generated_client_index_d_testformulaupdatewithwhereuniquewithoutworkspaceinput": "TestFormulaUpdateWithWhereUniqueWithoutWorkspaceInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L46052 | neighbors=[index.d.ts]
 - "generated_client_index_d_testformulaupsertargs": "TestFormulaUpsertArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L30644 | neighbors=[index.d.ts]
-- "generated_client_index_d_testformulaupsertwithwhereuniquewithoutoutputparameterinput": "TestFormulaUpsertWithWhereUniqueWithoutOutputParameterInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L49430 | neighbors=[index.d.ts]
-- "generated_client_index_d_testformulaupsertwithwhereuniquewithouttestinput": "TestFormulaUpsertWithWhereUniqueWithoutTestInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L48273 | neighbors=[index.d.ts]
-- "generated_client_index_d_testformulaupsertwithwhereuniquewithoutworkspaceinput": "TestFormulaUpsertWithWhereUniqueWithoutWorkspaceInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L46046 | neighbors=[index.d.ts]
-- "generated_client_index_d_testformulawhereinput": "TestFormulaWhereInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L36870 | neighbors=[index.d.ts]
 
 ## Instructions
 

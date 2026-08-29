@@ -24,6 +24,7 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "runtime_edge_esm_u": "u()" | kind=code-symbol | source=scratch/generated-client/runtime/edge-esm.js:L1 | neighbors=[edge-esm.js, g(), An(), findField(), getComputedFields(), getGlobalOmit()]
 - "runtime_edge_esm_vu": "vu()" | kind=code-symbol | source=scratch/generated-client/runtime/edge-esm.js:L4 | neighbors=[edge-esm.js, Tr(), addErrorMessage(), asObject(), getDeepFieldValue(), getDeepSubSelectionValue()]
 - "runtime_edge_getdeepfieldvalue": "getDeepFieldValue()" | kind=code-symbol | source=scratch/generated-client/runtime/edge.js:L3 | neighbors=[edge.js, Au(), cu(), getDeepField(), ku(), ou()]
 - "runtime_edge_ht": "ht()" | kind=code-symbol | source=scratch/generated-client/runtime/edge.js:L6 | neighbors=[edge.js, ac(), ic(), it(), ot(), Pe()]
@@ -55,6 +56,7 @@ one-sentence description — no prose, no markdown fences.
 - "lib_formulautils_calculatealldependents": "calculateAllDependents()" | kind=code-symbol | source=lib/formulaUtils.js:L680 | neighbors=[formulaEngine.js, formulaUtils.js, addPatientContextToValuesMap(), addValueToValuesMap(), checkFormulaDependencies(), evaluateExpression()]
 - "offline_timestamps": "timestamps.js" | kind=code-symbol | source=lib/offline/timestamps.js:L1 | neighbors=[2b2534c f, db.js, compareUtc(), formatLocalDisplay(), getUtcIsoNow(), isServerNewer()]
 - "prisma_seed": "seed.js" | kind=code-symbol | source=prisma/seed.js:L1 | neighbors=[252e194 e, bcrypt, getDepartmentName(), main(), prisma, { PrismaClient }]
+- "providers_offlineprovider": "OfflineProvider.jsx" | kind=code-symbol | source=components/providers/OfflineProvider.jsx:L1 | neighbors=[2b2534c f, 6236f60 new update, 7d8c494 fxed, 84a8ff2 full indexeddb based, 9e25c19 f, 9f59247 expire token]
 - "registrationid_route": "route.js" | kind=code-symbol | source=app/api/print-report/[registrationId]/route.js:L1 | neighbors=[252e194 e, 6c2dfe4 test, formatDate(), GET(), getReferenceRange(), isOutOfRange()]
 - "runtime_edge_esm_gt": "Gt()" | kind=code-symbol | source=scratch/generated-client/runtime/edge-esm.js:L6 | neighbors=[edge-esm.js, Ee(), gc(), getAllClientExtensions(), jt(), qn()]
 - "runtime_edge_esm_hc": "hc()" | kind=code-symbol | source=scratch/generated-client/runtime/edge-esm.js:L6 | neighbors=[edge-esm.js, addErrorMessage(), getDeepField(), getDeepFieldValue(), getField(), kr()]
@@ -62,8 +64,6 @@ one-sentence description — no prose, no markdown fences.
 - "runtime_edge_esm_qu": "qu()" | kind=code-symbol | source=scratch/generated-client/runtime/edge-esm.js:L5 | neighbors=[edge-esm.js, lo(), getArgumentName(), getArgumentPath(), getSelectionPath(), nestArgument()]
 - "runtime_edge_esm_r": "r()" | kind=code-symbol | source=scratch/generated-client/runtime/edge-esm.js:L1 | neighbors=[edge-esm.js, co(), getOrCreate(), is(), ms(), Qe()]
 - "runtime_edge_esm_throwvalidationerror": "throwValidationError()" | kind=code-symbol | source=scratch/generated-client/runtime/edge-esm.js:L5 | neighbors=[edge-esm.js, An(), fu(), lo(), mu(), qo()]
-- "runtime_edge_esm_uu": "uu()" | kind=code-symbol | source=scratch/generated-client/runtime/edge-esm.js:L3 | neighbors=[edge-esm.js, Tr(), addErrorMessage(), addSuggestion(), getDeepSelectionParent(), getField()]
-- "runtime_edge_gu": "Gu()" | kind=code-symbol | source=scratch/generated-client/runtime/edge.js:L5 | neighbors=[edge.js, findField(), getComputedFields(), In(), nestSelection(), Vt()]
 
 ## Instructions
 

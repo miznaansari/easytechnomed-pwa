@@ -26,6 +26,7 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "runtime_wasm_getorcreate": "getOrCreate()" | kind=code-symbol | source=scratch/generated-client/runtime/wasm.js:L5 | neighbors=[wasm.js, getAllComputedFields(), getAllModelExtensions(), getAllQueryCallbacks(), get(), r()] | lang=en
 - "runtime_wasm_gr": "gr()" | kind=code-symbol | source=scratch/generated-client/runtime/wasm.js:L1 | neighbors=[wasm.js, byteLength(), from(), on(), slice(), write()] | lang=en
 - "runtime_wasm_ht": "Ht()" | kind=code-symbol | source=scratch/generated-client/runtime/wasm.js:L5 | neighbors=[wasm.js, renderAllMessages(), toString(), write(), nl(), zt()] | lang=en
 - "runtime_wasm_indexof": "indexOf()" | kind=code-symbol | source=scratch/generated-client/runtime/wasm.js:L1 | neighbors=[wasm.js, F(), includes(), from(), lastIndexOf(), sn()] | lang=en
@@ -65,7 +66,6 @@ one-sentence description — no prose, no markdown fences.
 - "lib_clientauth": "clientAuth.js" | kind=code-symbol | source=lib/clientAuth.js:L1 | neighbors=[252e194 e, 4d7570f fixed, 84a8ff2 full indexeddb based, cf2bb98 new, useAdminPermissions()] | lang=en
 - "lib_formulaengine_runformulaengine": "runFormulaEngine()" | kind=code-symbol | source=lib/formulaEngine.js:L33 | neighbors=[formulaEngine.js, check-reg-17.js, test-fix-reg-17.js, test-formula-run.js, test-reg-15.js] | lang=en
 - "lib_mail": "mail.js" | kind=code-symbol | source=lib/mail.js:L1 | neighbors=[252e194 e, sendApprovalEmail(), sendRejectionEmail(), sendVerificationEmail(), transporter] | lang=en
-- "members_page": "page.js" | kind=code-symbol | source=app/(customer)/(dashboard)/members/page.js:L1 | neighbors=[252e194 e, 84a8ff2 full indexeddb based, aae6bad fixed, cf2bb98 new, WorkspaceMembersPage()] | lang=en
 
 ## Instructions
 

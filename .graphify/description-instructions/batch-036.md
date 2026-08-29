@@ -17,6 +17,12 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "lib_db": "db.js" | kind=code-symbol | source=lib/db.js:L1 | neighbors=[252e194 e, auth.js]
+- "lib_formulautils_determineflag": "determineFlag()" | kind=code-symbol | source=lib/formulaUtils.js:L565 | neighbors=[formulaEngine.js, formulaUtils.js]
+- "lib_formulautils_getrangeandcriticalthresholds": "getRangeAndCriticalThresholds()" | kind=code-symbol | source=lib/formulaUtils.js:L479 | neighbors=[formulaEngine.js, formulaUtils.js]
+- "lib_formulautils_validatedifferentialcount": "validateDifferentialCount()" | kind=code-symbol | source=lib/formulaUtils.js:L771 | neighbors=[formulaEngine.js, formulaUtils.js]
+- "lib_pdftheme_computecolumnlayout": "computeColumnLayout()" | kind=code-symbol | source=lib/pdfTheme.js:L68 | neighbors=[pdfTheme.js, test-pdf-customization.mjs]
+- "lib_pdftheme_default_columns": "DEFAULT_COLUMNS" | kind=code-symbol | source=lib/pdfTheme.js:L57 | neighbors=[pdfTheme.js, test-pdf-customization.mjs]
 - "lib_pdftheme_getfontfamilydefinitions": "getFontFamilyDefinitions()" | kind=code-symbol | source=lib/pdfTheme.js:L30 | neighbors=[pdfTheme.js, test-pdf-customization.mjs]
 - "lib_pdftheme_hextorgb": "hexToRgb()" | kind=code-symbol | source=lib/pdfTheme.js:L6 | neighbors=[pdfTheme.js, test-pdf-customization.mjs]
 - "lib_pdftheme_pdf_theme_presets": "PDF_THEME_PRESETS" | kind=code-symbol | source=lib/pdfTheme.js:L114 | neighbors=[pdfTheme.js, test-pdf-customization.mjs]
@@ -39,10 +45,8 @@ one-sentence description — no prose, no markdown fences.
 - "offline_offlineprint_formatdate": "formatDate()" | kind=code-symbol | source=lib/offline/offlinePrint.js:L4 | neighbors=[offlinePrint.js, printBillOffline()]
 - "offline_offlineprint_numbertowords": "numberToWords()" | kind=code-symbol | source=lib/offline/offlinePrint.js:L17 | neighbors=[offlinePrint.js, printBillOffline()]
 - "offline_registrationidentity_generatenextregistrationidentity": "generateNextRegistrationIdentity()" | kind=code-symbol | source=lib/offline/registrationIdentity.js:L32 | neighbors=[registrationIdentity.js, generateRandomSuffix()]
-- "offline_reloginmodal": "ReLoginModal.jsx" | kind=code-symbol | source=components/offline/ReLoginModal.jsx:L1 | neighbors=[9f59247 expire token, ReLoginModal()]
 - "offline_timestamps_isservernewer": "isServerNewer()" | kind=code-symbol | source=lib/offline/timestamps.js:L49 | neighbors=[timestamps.js, syncManager.js]
 - "offline_timestamps_toutciso": "toUtcIso()" | kind=code-symbol | source=lib/offline/timestamps.js:L20 | neighbors=[timestamps.js, syncManager.js]
-- "offline_unsyncedlogoutmodal": "UnsyncedLogoutModal.jsx" | kind=code-symbol | source=components/offline/UnsyncedLogoutModal.jsx:L1 | neighbors=[2b2534c f, UnsyncedLogoutModal()]
 - "parameters_route_get": "GET()" | kind=code-symbol | source=app/api/registrations/[id]/parameters/route.js:L43 | neighbors=[route.js, serializeRegistration()]
 - "parameters_route_serializeregistration": "serializeRegistration()" | kind=code-symbol | source=app/api/registrations/[id]/parameters/route.js:L6 | neighbors=[route.js, GET()]
 - "payment_route": "route.js" | kind=code-symbol | source=app/api/registrations/[id]/payment/route.js:L1 | neighbors=[252e194 e, POST()]
@@ -53,10 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "postcss_config": "postcss.config.mjs" | kind=code-symbol | source=postcss.config.mjs:L1 | neighbors=[252e194 e, config]
 - "preview_pdf_route_formatdate": "formatDate()" | kind=code-symbol | source=app/api/settings/preview-pdf/route.js:L13 | neighbors=[route.js, GET()]
 - "preview_pdf_route_get": "GET()" | kind=code-symbol | source=app/api/settings/preview-pdf/route.js:L25 | neighbors=[route.js, formatDate()]
-- "print_billhtmlgenerator_formatdate": "formatDate()" | kind=code-symbol | source=lib/offline/print/billHtmlGenerator.js:L3 | neighbors=[billHtmlGenerator.js, generateOfflineBillHtml()]
-- "print_billhtmlgenerator_numbertowords": "numberToWords()" | kind=code-symbol | source=lib/offline/print/billHtmlGenerator.js:L18 | neighbors=[billHtmlGenerator.js, generateOfflineBillHtml()]
-- "print_qrgenerator_generateqrcodedataurl": "generateQrCodeDataUrl()" | kind=code-symbol | source=lib/offline/print/qrGenerator.js:L50 | neighbors=[qrGenerator.js, test_identity_and_qr.mjs]
-- "print_reportpdfgenerator_getreferencerange": "getReferenceRange()" | kind=code-symbol | source=lib/offline/print/reportPdfGenerator.js:L87 | neighbors=[reportPdfGenerator.js, generateOfflineReportPdf()]
 
 ## Instructions
 

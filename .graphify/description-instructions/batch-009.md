@@ -17,6 +17,7 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "runtime_edge_esm_getorcreate": "getOrCreate()" | kind=code-symbol | source=scratch/generated-client/runtime/edge-esm.js:L5 | neighbors=[edge-esm.js, getAllComputedFields(), getAllModelExtensions(), getAllQueryCallbacks(), get(), r()]
 - "runtime_edge_esm_ispreviewfeatureon": "isPreviewFeatureOn()" | kind=code-symbol | source=scratch/generated-client/runtime/edge-esm.js:L5 | neighbors=[edge-esm.js, An(), mu(), nu(), qo(), Ut()]
 - "runtime_edge_esm_kr": "kr()" | kind=code-symbol | source=scratch/generated-client/runtime/edge-esm.js:L5 | neighbors=[edge-esm.js, Dr(), hc(), renderAllMessages(), toString(), write()]
 - "runtime_edge_esm_kt": "kt()" | kind=code-symbol | source=scratch/generated-client/runtime/edge-esm.js:L4 | neighbors=[edge-esm.js, co(), mu(), uu(), wu(), yu()]
@@ -56,7 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "runtime_library_ir": "ir()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L28 | neighbors=[library.js, Fp(), Hs(), op(), _p(), qp()]
 - "runtime_library_ispreviewfeatureon": "isPreviewFeatureOn()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L29 | neighbors=[library.js, aa(), ed(), I(), mr(), td()]
 - "runtime_library_ji": "ji()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L29 | neighbors=[library.js, getAllModelExtensions(), gr(), qd(), Se(), Vd()]
-- "runtime_library_mo": "Mo()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L5 | neighbors=[library.js, ju(), Lo(), Vu(), nt(), Yn()]
 
 ## Instructions
 

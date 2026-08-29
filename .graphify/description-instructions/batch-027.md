@@ -17,6 +17,13 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "runtime_edge_esm_buildcapturesettings": "buildCaptureSettings()" | kind=code-symbol | source=scratch/generated-client/runtime/edge-esm.js:L12 | neighbors=[edge-esm.js, build(), isEnabled()]
+- "runtime_edge_esm_c": "$c()" | kind=code-symbol | source=scratch/generated-client/runtime/edge-esm.js:L20 | neighbors=[edge-esm.js, jr(), handleRequestError()]
+- "runtime_edge_esm_ci": "ci()" | kind=code-symbol | source=scratch/generated-client/runtime/edge-esm.js:L1 | neighbors=[edge-esm.js, on(), ri()]
+- "runtime_edge_esm_createenginespan": "createEngineSpan()" | kind=code-symbol | source=scratch/generated-client/runtime/edge-esm.js:L20 | neighbors=[edge-esm.js, getGlobalTracingHelper(), propagateResponseExtensions()]
+- "runtime_edge_esm_do": "Do()" | kind=code-symbol | source=scratch/generated-client/runtime/edge-esm.js:L5 | neighbors=[edge-esm.js, he(), ko()]
+- "runtime_edge_esm_ds": "ds()" | kind=code-symbol | source=scratch/generated-client/runtime/edge-esm.js:L6 | neighbors=[edge-esm.js, constructor(), toString()]
+- "runtime_edge_esm_dt": "Dt()" | kind=code-symbol | source=scratch/generated-client/runtime/edge-esm.js:L4 | neighbors=[edge-esm.js, e(), po()]
 - "runtime_edge_esm_en": "en()" | kind=code-symbol | source=scratch/generated-client/runtime/edge-esm.js:L1 | neighbors=[edge-esm.js, Pa(), ui()]
 - "runtime_edge_esm_fi": "fi()" | kind=code-symbol | source=scratch/generated-client/runtime/edge-esm.js:L1 | neighbors=[edge-esm.js, gi(), hi()]
 - "runtime_edge_esm_foreach": "forEach()" | kind=code-symbol | source=scratch/generated-client/runtime/edge-esm.js:L12 | neighbors=[edge-esm.js, emit(), propagateResponseExtensions()]
@@ -50,13 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "runtime_edge_esm_pr": "Pr()" | kind=code-symbol | source=scratch/generated-client/runtime/edge-esm.js:L1 | neighbors=[edge-esm.js, cl(), ll()]
 - "runtime_edge_esm_propagateresponseextensions": "propagateResponseExtensions()" | kind=code-symbol | source=scratch/generated-client/runtime/edge-esm.js:L12 | neighbors=[edge-esm.js, createEngineSpan(), forEach()]
 - "runtime_edge_esm_qe": "Qe()" | kind=code-symbol | source=scratch/generated-client/runtime/edge-esm.js:L12 | neighbors=[edge-esm.js, dc(), r()]
-- "runtime_edge_esm_qn": "qn()" | kind=code-symbol | source=scratch/generated-client/runtime/edge-esm.js:L8 | neighbors=[edge-esm.js, Gt(), Es()]
-- "runtime_edge_esm_rc": "rc()" | kind=code-symbol | source=scratch/generated-client/runtime/edge-esm.js:L6 | neighbors=[edge-esm.js, ko(), ft()]
-- "runtime_edge_esm_removeallfields": "removeAllFields()" | kind=code-symbol | source=scratch/generated-client/runtime/edge-esm.js:L3 | neighbors=[edge-esm.js, du(), pu()]
-- "runtime_edge_esm_request": "request()" | kind=code-symbol | source=scratch/generated-client/runtime/edge-esm.js:L12 | neighbors=[edge-esm.js, handleAndLogRequestError(), requestInternal()]
-- "runtime_edge_esm_requestbatch": "requestBatch()" | kind=code-symbol | source=scratch/generated-client/runtime/edge-esm.js:L12 | neighbors=[edge-esm.js, Lr(), requestInternal()]
-- "runtime_edge_esm_ri": "ri()" | kind=code-symbol | source=scratch/generated-client/runtime/edge-esm.js:L1 | neighbors=[edge-esm.js, ci(), l()]
-- "runtime_edge_esm_rt": "rt()" | kind=code-symbol | source=scratch/generated-client/runtime/edge-esm.js:L1 | neighbors=[edge-esm.js, cu(), getGlobalOmit()]
 
 ## Instructions
 

@@ -17,6 +17,10 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "runtime_wasm_version": "version()" | kind=code-symbol | source=scratch/generated-client/runtime/wasm.js:L11 | neighbors=[wasm.js, instantiateLibrary()]
+- "runtime_wasm_wa": "wa()" | kind=code-symbol | source=scratch/generated-client/runtime/wasm.js:L6 | neighbors=[wasm.js, tt()]
+- "runtime_wasm_wo": "wo()" | kind=code-symbol | source=scratch/generated-client/runtime/wasm.js:L21 | neighbors=[wasm.js, unpack()]
+- "runtime_wasm_writeintbe": "writeIntBE()" | kind=code-symbol | source=scratch/generated-client/runtime/wasm.js:L1 | neighbors=[wasm.js, writeUIntBE()]
 - "runtime_wasm_writeintle": "writeIntLE()" | kind=code-symbol | source=scratch/generated-client/runtime/wasm.js:L1 | neighbors=[wasm.js, writeUIntLE()]
 - "runtime_wasm_writejoined": "writeJoined()" | kind=code-symbol | source=scratch/generated-client/runtime/wasm.js:L2 | neighbors=[wasm.js, write()]
 - "runtime_wasm_xa": "xa()" | kind=code-symbol | source=scratch/generated-client/runtime/wasm.js:L6 | neighbors=[wasm.js, si()]
@@ -53,10 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "test_route_post": "POST()" | kind=code-symbol | source=app/api/n8n/test/route.js:L61 | neighbors=[route.js, parseNullableString()]
 - "tests_route_get": "GET()" | kind=code-symbol | source=app/api/tests/route.js:L68 | neighbors=[route.js, serializeTests()]
 - "tests_route_post": "POST()" | kind=code-symbol | source=app/api/tests/route.js:L165 | neighbors=[route.js, serializeSingleTest()]
-- "tests_route_put": "PUT()" | kind=code-symbol | source=app/api/tests/route.js:L265 | neighbors=[route.js, serializeSingleTest()]
-- "tests_route_serializetests": "serializeTests()" | kind=code-symbol | source=app/api/tests/route.js:L6 | neighbors=[route.js, GET()]
-- "ui_alert": "Alert.js" | kind=code-symbol | source=components/ui/Alert.js:L1 | neighbors=[252e194 e, Alert()]
-- "ui_avatar": "Avatar.js" | kind=code-symbol | source=components/ui/Avatar.js:L1 | neighbors=[252e194 e, Avatar()]
 
 ## Instructions
 

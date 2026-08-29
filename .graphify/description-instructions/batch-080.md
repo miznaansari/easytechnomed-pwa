@@ -17,6 +17,10 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "generated_client_index_d_parametercreateorconnectwithoutinterpretationrulesinput": "ParameterCreateOrConnectWithoutInterpretationRulesInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L51369 | neighbors=[index.d.ts]
+- "generated_client_index_d_parametercreateorconnectwithouttestformulasinput": "ParameterCreateOrConnectWithoutTestFormulasInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L50975 | neighbors=[index.d.ts]
+- "generated_client_index_d_parametercreateorconnectwithouttestmappingsinput": "ParameterCreateOrConnectWithoutTestMappingsInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L49616 | neighbors=[index.d.ts]
+- "generated_client_index_d_parametercreateorconnectwithoutworkspaceinput": "ParameterCreateOrConnectWithoutWorkspaceInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L45522 | neighbors=[index.d.ts]
 - "generated_client_index_d_parametercreatewithoutinterpretationrulesinput": "ParameterCreateWithoutInterpretationRulesInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L51290 | neighbors=[index.d.ts]
 - "generated_client_index_d_parametercreatewithouttestformulasinput": "ParameterCreateWithoutTestFormulasInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L50896 | neighbors=[index.d.ts]
 - "generated_client_index_d_parametercreatewithouttestmappingsinput": "ParameterCreateWithoutTestMappingsInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L49537 | neighbors=[index.d.ts]
@@ -53,10 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "generated_client_index_d_parameterselect": "ParameterSelect" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L20074 | neighbors=[index.d.ts]
 - "generated_client_index_d_parameterselectscalar": "ParameterSelectScalar" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L20118 | neighbors=[index.d.ts]
 - "generated_client_index_d_parametersumaggregateinputtype": "ParameterSumAggregateInputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L19789 | neighbors=[index.d.ts]
-- "generated_client_index_d_parametersumaggregateoutputtype": "ParameterSumAggregateOutputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L19619 | neighbors=[index.d.ts]
-- "generated_client_index_d_parametersumorderbyaggregateinput": "ParameterSumOrderByAggregateInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L41951 | neighbors=[index.d.ts]
-- "generated_client_index_d_parameteruncheckedcreateinput": "ParameterUncheckedCreateInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L38942 | neighbors=[index.d.ts]
-- "generated_client_index_d_parameteruncheckedcreatenestedmanywithoutworkspaceinput": "ParameterUncheckedCreateNestedManyWithoutWorkspaceInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L42841 | neighbors=[index.d.ts]
 
 ## Instructions
 

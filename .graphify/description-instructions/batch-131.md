@@ -17,6 +17,10 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "runtime_edge_xt": "xt()" | kind=code-symbol | source=scratch/generated-client/runtime/edge.js:L13 | neighbors=[edge.js]
+- "runtime_edge_yi": "yi()" | kind=code-symbol | source=scratch/generated-client/runtime/edge.js:L1 | neighbors=[edge.js]
+- "runtime_edge_zl": "zl()" | kind=code-symbol | source=scratch/generated-client/runtime/edge.js:L1 | neighbors=[edge.js]
+- "runtime_edge_zo": "zo()" | kind=code-symbol | source=scratch/generated-client/runtime/edge.js:L5 | neighbors=[edge.js]
 - "runtime_edge_zu": "Zu()" | kind=code-symbol | source=scratch/generated-client/runtime/edge.js:L5 | neighbors=[edge.js]
 - "runtime_index_browser_an": "an()" | kind=code-symbol | source=scratch/generated-client/runtime/index-browser.js:L1 | neighbors=[index-browser.js]
 - "runtime_index_browser_bn": "bn()" | kind=code-symbol | source=scratch/generated-client/runtime/index-browser.js:L1 | neighbors=[index-browser.js]
@@ -53,10 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "runtime_index_browser_tn": "Tn()" | kind=code-symbol | source=scratch/generated-client/runtime/index-browser.js:L1 | neighbors=[index-browser.js]
 - "runtime_index_browser_vn": "vn()" | kind=code-symbol | source=scratch/generated-client/runtime/index-browser.js:L1 | neighbors=[index-browser.js]
 - "runtime_index_browser_wn": "wn()" | kind=code-symbol | source=scratch/generated-client/runtime/index-browser.js:L1 | neighbors=[index-browser.js]
-- "runtime_index_browser_ze": "Ze()" | kind=code-symbol | source=scratch/generated-client/runtime/index-browser.js:L1 | neighbors=[index-browser.js]
-- "runtime_library_ao": "Ao()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L4 | neighbors=[library.js]
-- "runtime_library_apikey": "apiKey()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L111 | neighbors=[library.js]
-- "runtime_library_applypendingmigrations": "applyPendingMigrations()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L111 | neighbors=[library.js]
 
 ## Instructions
 

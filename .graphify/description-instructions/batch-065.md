@@ -17,6 +17,10 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "generated_client_index_d_aggregatetestformula": "AggregateTestFormula" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L29711 | neighbors=[index.d.ts]
+- "generated_client_index_d_aggregatetestparameter": "AggregateTestParameter" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L21008 | neighbors=[index.d.ts]
+- "generated_client_index_d_aggregateuser": "AggregateUser" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L6814 | neighbors=[index.d.ts]
+- "generated_client_index_d_aggregateuserrole": "AggregateUserRole" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L8851 | neighbors=[index.d.ts]
 - "generated_client_index_d_aggregateuserrolepermission": "AggregateUserRolePermission" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L9777 | neighbors=[index.d.ts]
 - "generated_client_index_d_aggregateusersession": "AggregateUserSession" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L7912 | neighbors=[index.d.ts]
 - "generated_client_index_d_aggregateworkspace": "AggregateWorkspace" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L3711 | neighbors=[index.d.ts]
@@ -53,10 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "generated_client_index_d_decimalwithaggregatesfilter": "DecimalWithAggregatesFilter" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L41325 | neighbors=[index.d.ts]
 - "generated_client_index_d_defaultprismaclient": "DefaultPrismaClient" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L3002 | neighbors=[index.d.ts]
 - "generated_client_index_d_doctor": "Doctor" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L75 | neighbors=[index.d.ts]
-- "generated_client_index_d_doctor_incentivehistoryargs": "Doctor$incentiveHistoryArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L15766 | neighbors=[index.d.ts]
-- "generated_client_index_d_doctor_registrationsargs": "Doctor$registrationsArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L15726 | neighbors=[index.d.ts]
-- "generated_client_index_d_doctor_secondregistrationsargs": "Doctor$secondRegistrationsArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L15746 | neighbors=[index.d.ts]
-- "generated_client_index_d_doctor_workspaceargs": "Doctor$workspaceArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L15711 | neighbors=[index.d.ts]
 
 ## Instructions
 

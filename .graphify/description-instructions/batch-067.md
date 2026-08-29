@@ -17,6 +17,10 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "generated_client_index_d_doctordeleteargs": "DoctorDeleteArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L15683 | neighbors=[index.d.ts]
+- "generated_client_index_d_doctordeletemanyargs": "DoctorDeleteManyArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L15701 | neighbors=[index.d.ts]
+- "generated_client_index_d_doctorfieldrefs": "DoctorFieldRefs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L15396 | neighbors=[index.d.ts]
+- "generated_client_index_d_doctorfindfirstargs": "DoctorFindFirstArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L15453 | neighbors=[index.d.ts]
 - "generated_client_index_d_doctorfindfirstorthrowargs": "DoctorFindFirstOrThrowArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L15501 | neighbors=[index.d.ts]
 - "generated_client_index_d_doctorfindmanyargs": "DoctorFindManyArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L15549 | neighbors=[index.d.ts]
 - "generated_client_index_d_doctorfinduniqueargs": "DoctorFindUniqueArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L15417 | neighbors=[index.d.ts]
@@ -53,10 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "generated_client_index_d_doctorincentivefindmanyargs": "DoctorIncentiveFindManyArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L32442 | neighbors=[index.d.ts]
 - "generated_client_index_d_doctorincentivefinduniqueargs": "DoctorIncentiveFindUniqueArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L32310 | neighbors=[index.d.ts]
 - "generated_client_index_d_doctorincentivefinduniqueorthrowargs": "DoctorIncentiveFindUniqueOrThrowArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L32328 | neighbors=[index.d.ts]
-- "generated_client_index_d_doctorincentivegetpayload": "DoctorIncentiveGetPayload" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L31933 | neighbors=[index.d.ts]
-- "generated_client_index_d_doctorincentivegroupbyargs": "DoctorIncentiveGroupByArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L31859 | neighbors=[index.d.ts]
-- "generated_client_index_d_doctorincentivegroupbyoutputtype": "DoctorIncentiveGroupByOutputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L31873 | neighbors=[index.d.ts]
-- "generated_client_index_d_doctorincentiveinclude": "DoctorIncentiveInclude" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L31915 | neighbors=[index.d.ts]
 
 ## Instructions
 

@@ -17,6 +17,10 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "registration_page_getlocalisostring": "getLocalIsoString()" | kind=code-symbol | source=app/(customer)/(dashboard)/registration/page.js:L59 | neighbors=[page.js]
+- "registration_page_indiancities": "indianCities" | kind=code-symbol | source=app/(customer)/(dashboard)/registration/page.js:L82 | neighbors=[page.js]
+- "registration_page_indianstatesmap": "indianStatesMap" | kind=code-symbol | source=app/(customer)/(dashboard)/registration/page.js:L72 | neighbors=[page.js]
+- "registration_page_registrationpage": "RegistrationPage()" | kind=code-symbol | source=app/(customer)/(dashboard)/registration/page.js:L96 | neighbors=[page.js]
 - "registration_page_toutcstring": "toUtcString()" | kind=code-symbol | source=app/(customer)/(dashboard)/registration/page.js:L65 | neighbors=[page.js]
 - "registrations_route_generaterandomsuffix": "generateRandomSuffix()" | kind=code-symbol | source=app/api/registrations/route.js:L11 | neighbors=[route.js]
 - "registrations_route_registrationschema": "registrationSchema" | kind=code-symbol | source=app/api/registrations/route.js:L21 | neighbors=[route.js]
@@ -53,10 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "runtime_edge_esm_dispatchbatches": "dispatchBatches()" | kind=code-symbol | source=scratch/generated-client/runtime/edge-esm.js:L20 | neighbors=[edge-esm.js]
 - "runtime_edge_esm_dl": "dl()" | kind=code-symbol | source=scratch/generated-client/runtime/edge-esm.js:L1 | neighbors=[edge-esm.js]
 - "runtime_edge_esm_ea": "Ea()" | kind=code-symbol | source=scratch/generated-client/runtime/edge-esm.js:L1 | neighbors=[edge-esm.js]
-- "runtime_edge_esm_ei": "ei()" | kind=code-symbol | source=scratch/generated-client/runtime/edge-esm.js:L20 | neighbors=[edge-esm.js]
-- "runtime_edge_esm_enable": "enable()" | kind=code-symbol | source=scratch/generated-client/runtime/edge-esm.js:L1 | neighbors=[edge-esm.js]
-- "runtime_edge_esm_ep": "ep()" | kind=code-symbol | source=scratch/generated-client/runtime/edge-esm.js:L30 | neighbors=[edge-esm.js]
-- "runtime_edge_esm_fa": "fa()" | kind=code-symbol | source=scratch/generated-client/runtime/edge-esm.js:L1 | neighbors=[edge-esm.js]
 
 ## Instructions
 

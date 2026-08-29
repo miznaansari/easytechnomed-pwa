@@ -17,6 +17,10 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "generated_client_index_d_workspaceupdatewithoutparametersinput": "WorkspaceUpdateWithoutParametersInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L49373 | neighbors=[index.d.ts]
+- "generated_client_index_d_workspaceupdatewithoutpdfsettinginput": "WorkspaceUpdateWithoutPdfSettingInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L51723 | neighbors=[index.d.ts]
+- "generated_client_index_d_workspaceupdatewithoutregistrationsinput": "WorkspaceUpdateWithoutRegistrationsInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L48726 | neighbors=[index.d.ts]
+- "generated_client_index_d_workspaceupdatewithouttestformulasinput": "WorkspaceUpdateWithoutTestFormulasInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L50991 | neighbors=[index.d.ts]
 - "generated_client_index_d_workspaceupdatewithouttestparametersinput": "WorkspaceUpdateWithoutTestParametersInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L49690 | neighbors=[index.d.ts]
 - "generated_client_index_d_workspaceupdatewithouttestsinput": "WorkspaceUpdateWithoutTestsInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L48216 | neighbors=[index.d.ts]
 - "generated_client_index_d_workspaceupdatewithoutusersinput": "WorkspaceUpdateWithoutUsersInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L46483 | neighbors=[index.d.ts]
@@ -53,10 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "lib_clientauth_useadminpermissions": "useAdminPermissions()" | kind=code-symbol | source=lib/clientAuth.js:L4 | neighbors=[clientAuth.js]
 - "lib_firebase_auth": "auth" | kind=code-symbol | source=lib/firebase.js:L15 | neighbors=[firebase.js]
 - "lib_firebase_firebaseconfig": "firebaseConfig" | kind=code-symbol | source=lib/firebase.js:L4 | neighbors=[firebase.js]
-- "lib_firebase_googleprovider": "googleProvider" | kind=code-symbol | source=lib/firebase.js:L16 | neighbors=[firebase.js]
-- "lib_formulautils_getreferencerange": "getReferenceRange()" | kind=code-symbol | source=lib/formulaUtils.js:L446 | neighbors=[formulaUtils.js]
-- "lib_mail_sendapprovalemail": "sendApprovalEmail()" | kind=code-symbol | source=lib/mail.js:L54 | neighbors=[mail.js]
-- "lib_mail_sendrejectionemail": "sendRejectionEmail()" | kind=code-symbol | source=lib/mail.js:L87 | neighbors=[mail.js]
 
 ## Instructions
 

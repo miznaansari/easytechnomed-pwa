@@ -17,6 +17,10 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "generated_client_index_d_testparameterupdatemanywithwherewithoutparameterinput": "TestParameterUpdateManyWithWhereWithoutParameterInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L49425 | neighbors=[index.d.ts]
+- "generated_client_index_d_testparameterupdatemanywithwherewithouttestinput": "TestParameterUpdateManyWithWhereWithoutTestInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L48268 | neighbors=[index.d.ts]
+- "generated_client_index_d_testparameterupdatemanywithwherewithoutworkspaceinput": "TestParameterUpdateManyWithWhereWithoutWorkspaceInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L46016 | neighbors=[index.d.ts]
+- "generated_client_index_d_testparameterupdateonerequiredwithoutresultsnestedinput": "TestParameterUpdateOneRequiredWithoutResultsNestedInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L44605 | neighbors=[index.d.ts]
 - "generated_client_index_d_testparameterupdatetoonewithwherewithoutresultsinput": "TestParameterUpdateToOneWithWhereWithoutResultsInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L50149 | neighbors=[index.d.ts]
 - "generated_client_index_d_testparameterupdatewithoutparameterinput": "TestParameterUpdateWithoutParameterInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L53993 | neighbors=[index.d.ts]
 - "generated_client_index_d_testparameterupdatewithoutresultsinput": "TestParameterUpdateWithoutResultsInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L50154 | neighbors=[index.d.ts]
@@ -53,10 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "generated_client_index_d_testuncheckedcreatewithoutworkspaceinput": "TestUncheckedCreateWithoutWorkspaceInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L45357 | neighbors=[index.d.ts]
 - "generated_client_index_d_testuncheckedupdateinput": "TestUncheckedUpdateInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L38389 | neighbors=[index.d.ts]
 - "generated_client_index_d_testuncheckedupdatemanyinput": "TestUncheckedUpdateManyInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L38462 | neighbors=[index.d.ts]
-- "generated_client_index_d_testuncheckedupdatemanywithoutdepartmentinput": "TestUncheckedUpdateManyWithoutDepartmentInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L54239 | neighbors=[index.d.ts]
-- "generated_client_index_d_testuncheckedupdatemanywithoutdepartmentnestedinput": "TestUncheckedUpdateManyWithoutDepartmentNestedInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L44701 | neighbors=[index.d.ts]
-- "generated_client_index_d_testuncheckedupdatemanywithoutworkspaceinput": "TestUncheckedUpdateManyWithoutWorkspaceInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L52289 | neighbors=[index.d.ts]
-- "generated_client_index_d_testuncheckedupdatemanywithoutworkspacenestedinput": "TestUncheckedUpdateManyWithoutWorkspaceNestedInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L43077 | neighbors=[index.d.ts]
 
 ## Instructions
 

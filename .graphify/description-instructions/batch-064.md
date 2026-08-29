@@ -17,6 +17,10 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "generated_client_index_d_adminupdatetoonewithwherewithoutsessionsinput": "AdminUpdateToOneWithWhereWithoutSessionsInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L47311 | neighbors=[index.d.ts]
+- "generated_client_index_d_adminupdatetoonewithwherewithouttrackingsinput": "AdminUpdateToOneWithWhereWithoutTrackingsInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L50595 | neighbors=[index.d.ts]
+- "generated_client_index_d_adminupdatewithoutaddressinput": "AdminUpdateWithoutAddressInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L50272 | neighbors=[index.d.ts]
+- "generated_client_index_d_adminupdatewithoutregistrationsinput": "AdminUpdateWithoutRegistrationsInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L48778 | neighbors=[index.d.ts]
 - "generated_client_index_d_adminupdatewithoutroleinput": "AdminUpdateWithoutRoleInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L53108 | neighbors=[index.d.ts]
 - "generated_client_index_d_adminupdatewithoutsessionsinput": "AdminUpdateWithoutSessionsInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L47316 | neighbors=[index.d.ts]
 - "generated_client_index_d_adminupdatewithouttrackingsinput": "AdminUpdateWithoutTrackingsInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L50600 | neighbors=[index.d.ts]
@@ -53,10 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "generated_client_index_d_aggregatesuperadmintracking": "AggregateSuperAdminTracking" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L27807 | neighbors=[index.d.ts]
 - "generated_client_index_d_aggregatetest": "AggregateTest" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L15802 | neighbors=[index.d.ts]
 - "generated_client_index_d_aggregatetestdepartment": "AggregateTestDepartment" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L28787 | neighbors=[index.d.ts]
-- "generated_client_index_d_aggregatetestformula": "AggregateTestFormula" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L29711 | neighbors=[index.d.ts]
-- "generated_client_index_d_aggregatetestparameter": "AggregateTestParameter" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L21008 | neighbors=[index.d.ts]
-- "generated_client_index_d_aggregateuser": "AggregateUser" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L6814 | neighbors=[index.d.ts]
-- "generated_client_index_d_aggregateuserrole": "AggregateUserRole" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L8851 | neighbors=[index.d.ts]
 
 ## Instructions
 

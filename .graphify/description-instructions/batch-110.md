@@ -17,6 +17,10 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "generated_client_index_d_testupsertwithwhereuniquewithoutworkspaceinput": "TestUpsertWithWhereUniqueWithoutWorkspaceInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L45866 | neighbors=[index.d.ts]
+- "generated_client_index_d_testwhereinput": "TestWhereInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L35443 | neighbors=[index.d.ts]
+- "generated_client_index_d_testwhereuniqueinput": "TestWhereUniqueInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L35506 | neighbors=[index.d.ts]
+- "generated_client_index_d_testworkspaceidcodecompounduniqueinput": "TestWorkspaceIdCodeCompoundUniqueInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L41367 | neighbors=[index.d.ts]
 - "generated_client_index_d_transactionclient": "TransactionClient" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L3122 | neighbors=[index.d.ts]
 - "generated_client_index_d_transactionisolationlevel": "TransactionIsolationLevel" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L33888 | neighbors=[index.d.ts]
 - "generated_client_index_d_true": "True" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L919 | neighbors=[index.d.ts]
@@ -53,10 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "generated_client_index_d_usercreatemanyworkspaceinput": "UserCreateManyWorkspaceInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L51870 | neighbors=[index.d.ts]
 - "generated_client_index_d_usercreatemanyworkspaceinputenvelope": "UserCreateManyWorkspaceInputEnvelope" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L45438 | neighbors=[index.d.ts]
 - "generated_client_index_d_usercreatenestedmanywithoutroleinput": "UserCreateNestedManyWithoutRoleInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L43367 | neighbors=[index.d.ts]
-- "generated_client_index_d_usercreatenestedmanywithoutworkspaceinput": "UserCreateNestedManyWithoutWorkspaceInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L42765 | neighbors=[index.d.ts]
-- "generated_client_index_d_usercreatenestedonewithoutsessionsinput": "UserCreateNestedOneWithoutSessionsInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L43353 | neighbors=[index.d.ts]
-- "generated_client_index_d_usercreateorconnectwithoutroleinput": "UserCreateOrConnectWithoutRoleInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L46686 | neighbors=[index.d.ts]
-- "generated_client_index_d_usercreateorconnectwithoutsessionsinput": "UserCreateOrConnectWithoutSessionsInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L46592 | neighbors=[index.d.ts]
 
 ## Instructions
 

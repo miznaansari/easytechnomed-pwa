@@ -17,6 +17,10 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "generated_client_index_d_registrationtestuncheckedupdatemanywithouttestinput": "RegistrationTestUncheckedUpdateManyWithoutTestInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L53665 | neighbors=[index.d.ts]
+- "generated_client_index_d_registrationtestuncheckedupdatemanywithouttestnestedinput": "RegistrationTestUncheckedUpdateManyWithoutTestNestedInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L44067 | neighbors=[index.d.ts]
+- "generated_client_index_d_registrationtestuncheckedupdatewithoutregistrationinput": "RegistrationTestUncheckedUpdateWithoutRegistrationInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L53919 | neighbors=[index.d.ts]
+- "generated_client_index_d_registrationtestuncheckedupdatewithouttestinput": "RegistrationTestUncheckedUpdateWithoutTestInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L53650 | neighbors=[index.d.ts]
 - "generated_client_index_d_registrationtestupdateargs": "RegistrationTestUpdateArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L19478 | neighbors=[index.d.ts]
 - "generated_client_index_d_registrationtestupdateinput": "RegistrationTestUpdateInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L38824 | neighbors=[index.d.ts]
 - "generated_client_index_d_registrationtestupdatemanyargs": "RegistrationTestUpdateManyArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L19500 | neighbors=[index.d.ts]
@@ -53,10 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "generated_client_index_d_registrationuncheckedupdatemanywithoutrefbyinput": "RegistrationUncheckedUpdateManyWithoutRefByInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L53386 | neighbors=[index.d.ts]
 - "generated_client_index_d_registrationuncheckedupdatemanywithoutrefbynestedinput": "RegistrationUncheckedUpdateManyWithoutRefByNestedInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L43873 | neighbors=[index.d.ts]
 - "generated_client_index_d_registrationuncheckedupdatemanywithoutsecondrefinput": "RegistrationUncheckedUpdateManyWithoutSecondRefInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L53517 | neighbors=[index.d.ts]
-- "generated_client_index_d_registrationuncheckedupdatemanywithoutsecondrefnestedinput": "RegistrationUncheckedUpdateManyWithoutSecondRefNestedInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L43887 | neighbors=[index.d.ts]
-- "generated_client_index_d_registrationuncheckedupdatemanywithoutworkspaceinput": "RegistrationUncheckedUpdateManyWithoutWorkspaceInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L52194 | neighbors=[index.d.ts]
-- "generated_client_index_d_registrationuncheckedupdatemanywithoutworkspacenestedinput": "RegistrationUncheckedUpdateManyWithoutWorkspaceNestedInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L43063 | neighbors=[index.d.ts]
-- "generated_client_index_d_registrationuncheckedupdatewithoutadmininput": "RegistrationUncheckedUpdateWithoutAdminInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L52990 | neighbors=[index.d.ts]
 
 ## Instructions
 

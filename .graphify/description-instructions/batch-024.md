@@ -24,6 +24,7 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "scratch_inspect_cbc": "inspect-cbc.js" | kind=code-symbol | source=scratch/inspect-cbc.js:L1 | neighbors=[252e194 e, main(), prisma, { PrismaClient }]
 - "scratch_inspect_kft": "inspect-kft.js" | kind=code-symbol | source=scratch/inspect-kft.js:L1 | neighbors=[252e194 e, main(), prisma, { PrismaClient }]
 - "scratch_sync_expiry_to_workspace": "sync-expiry-to-workspace.js" | kind=code-symbol | source=scratch/sync-expiry-to-workspace.js:L1 | neighbors=[252e194 e, main(), prisma, { PrismaClient }]
 - "scratch_sync_kft_formulas": "sync-kft-formulas.js" | kind=code-symbol | source=scratch/sync-kft-formulas.js:L1 | neighbors=[252e194 e, main(), prisma, { PrismaClient }]
@@ -35,6 +36,8 @@ one-sentence description — no prose, no markdown fences.
 - "ui_button": "Button.js" | kind=code-symbol | source=components/ui/Button.js:L1 | neighbors=[252e194 e, Button(), Loader.js, Loader()]
 - "ui_input": "Input.js" | kind=code-symbol | source=components/ui/Input.js:L1 | neighbors=[252e194 e, 2582be7 fixed zoom issue, a712d0e ios issue pwa, Input]
 - "userapprove_page": "page.js" | kind=code-symbol | source=app/(customer)/(dashboard)/userApprove/page.js:L1 | neighbors=[252e194 e, aae6bad fixed, AdminUserApprovePage(), UserApproveTable.js]
+- "userapprove_userapprovetable": "UserApproveTable.js" | kind=code-symbol | source=app/(customer)/(dashboard)/userApprove/UserApproveTable.js:L1 | neighbors=[252e194 e, 6236f60 new update, page.js, UserApproveTable()]
+- "version_route": "route.js" | kind=code-symbol | source=app/api/version/route.js:L1 | neighbors=[6236f60 new update, DEFAULT_INITIAL_CHANGES, GET(), POST()]
 - "address_route": "route.js" | kind=code-symbol | source=app/api/settings/address/route.js:L1 | neighbors=[GET(), POST(), 252e194 e]
 - "auth_offlineauth_getorcreateofflinesession": "getOrCreateOfflineSession()" | kind=code-symbol | source=lib/auth/offlineAuth.js:L51 | neighbors=[offlineAuth.js, getCachedSession(), saveAuthenticatedSession()]
 - "auth_offlineauth_saveauthenticatedsession": "saveAuthenticatedSession()" | kind=code-symbol | source=lib/auth/offlineAuth.js:L21 | neighbors=[offlineAuth.js, getCachedSession(), getOrCreateOfflineSession()]
@@ -61,9 +64,6 @@ one-sentence description — no prose, no markdown fences.
 - "commit:repo:github.com-personal/miznaansari/easytechnomed-pwa@5ce0a2ea8942fa32ba4e3e1cffce040572cdebda": "5ce0a2e fixed" | kind=Commit | source=git | neighbors=[main, 9a50d76 3.0.2, c5cbecd 3.0.1]
 - "commit:repo:github.com-personal/miznaansari/easytechnomed-pwa@5ff27349a85485707e8d6ec1dbdf3a9164b29d0c": "5ff2734 2.0.11" | kind=Commit | source=git | neighbors=[main, 4d7570f fixed, aae6bad fixed]
 - "commit:repo:github.com-personal/miznaansari/easytechnomed-pwa@6325ac4601eac2f28c31d96812a3115d32258803": "6325ac4 2.0.20" | kind=Commit | source=git | neighbors=[main, f3857f9 f, d84f15f f]
-- "commit:repo:github.com-personal/miznaansari/easytechnomed-pwa@713405831eef818366ebb6342eb43cd7340a4a62": "7134058 1.1.29" | kind=Commit | source=git | neighbors=[main, b5ea15f d, d87cf87 d]
-- "commit:repo:github.com-personal/miznaansari/easytechnomed-pwa@720f0160e2a9e5247fee57dd7f67464920beaa7c": "720f016 2.0.13" | kind=Commit | source=git | neighbors=[main, 905ef50 fixed, c070c55 fixed]
-- "commit:repo:github.com-personal/miznaansari/easytechnomed-pwa@7ec66e7df558d9a5ccbcadcf69502606866a22f3": "7ec66e7 3.0.18" | kind=Commit | source=git | neighbors=[main, 2582be7 fixed zoom issue, 8b1f3d8 a]
 
 ## Instructions
 

@@ -17,6 +17,10 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "print_billhtmlgenerator_formatdate": "formatDate()" | kind=code-symbol | source=lib/offline/print/billHtmlGenerator.js:L3 | neighbors=[billHtmlGenerator.js, generateOfflineBillHtml()]
+- "print_billhtmlgenerator_numbertowords": "numberToWords()" | kind=code-symbol | source=lib/offline/print/billHtmlGenerator.js:L18 | neighbors=[billHtmlGenerator.js, generateOfflineBillHtml()]
+- "print_qrgenerator_generateqrcodedataurl": "generateQrCodeDataUrl()" | kind=code-symbol | source=lib/offline/print/qrGenerator.js:L50 | neighbors=[qrGenerator.js, test_identity_and_qr.mjs]
+- "print_reportpdfgenerator_getreferencerange": "getReferenceRange()" | kind=code-symbol | source=lib/offline/print/reportPdfGenerator.js:L87 | neighbors=[reportPdfGenerator.js, generateOfflineReportPdf()]
 - "print_reportpdfgenerator_isoutofrange": "isOutOfRange()" | kind=code-symbol | source=lib/offline/print/reportPdfGenerator.js:L75 | neighbors=[reportPdfGenerator.js, isQualitativeAbnormal()]
 - "print_reportpdfgenerator_isqualitativeabnormal": "isQualitativeAbnormal()" | kind=code-symbol | source=lib/offline/print/reportPdfGenerator.js:L12 | neighbors=[reportPdfGenerator.js, isOutOfRange()]
 - "prisma_process_dynamic_parameters_main": "main()" | kind=code-symbol | source=prisma/process-dynamic-parameters.js:L142 | neighbors=[process-dynamic-parameters.js, processTestParameters()]
@@ -53,10 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "runtime_edge_esm_addmarginsymbol": "addMarginSymbol()" | kind=code-symbol | source=scratch/generated-client/runtime/edge-esm.js:L2 | neighbors=[edge-esm.js, write()]
 - "runtime_edge_esm_bl": "bl()" | kind=code-symbol | source=scratch/generated-client/runtime/edge-esm.js:L1 | neighbors=[edge-esm.js, ne()]
 - "runtime_edge_esm_bs": "bs()" | kind=code-symbol | source=scratch/generated-client/runtime/edge-esm.js:L11 | neighbors=[edge-esm.js, withRetry()]
-- "runtime_edge_esm_ca": "Ca()" | kind=code-symbol | source=scratch/generated-client/runtime/edge-esm.js:L1 | neighbors=[edge-esm.js, cr()]
-- "runtime_edge_esm_cc": "Cc()" | kind=code-symbol | source=scratch/generated-client/runtime/edge-esm.js:L11 | neighbors=[edge-esm.js, vs()]
-- "runtime_edge_esm_cn": "Cn()" | kind=code-symbol | source=scratch/generated-client/runtime/edge-esm.js:L5 | neighbors=[edge-esm.js, Ut()]
-- "runtime_edge_esm_cs": "cs()" | kind=code-symbol | source=scratch/generated-client/runtime/edge-esm.js:L6 | neighbors=[edge-esm.js, ps()]
 
 ## Instructions
 

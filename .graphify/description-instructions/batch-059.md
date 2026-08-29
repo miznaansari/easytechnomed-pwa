@@ -17,6 +17,10 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "generated_client_index_d_adminroleupdatemanymutationinput": "AdminRoleUpdateManyMutationInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L38136 | neighbors=[index.d.ts]
+- "generated_client_index_d_adminroleupdateonerequiredwithoutadminsnestedinput": "AdminRoleUpdateOneRequiredWithoutAdminsNestedInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L43531 | neighbors=[index.d.ts]
+- "generated_client_index_d_adminroleupdateonerequiredwithoutpermissionsnestedinput": "AdminRoleUpdateOneRequiredWithoutPermissionsNestedInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L43757 | neighbors=[index.d.ts]
+- "generated_client_index_d_adminroleupdatetoonewithwherewithoutadminsinput": "AdminRoleUpdateToOneWithWhereWithoutAdminsInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L47055 | neighbors=[index.d.ts]
 - "generated_client_index_d_adminroleupdatetoonewithwherewithoutpermissionsinput": "AdminRoleUpdateToOneWithWhereWithoutPermissionsInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L47530 | neighbors=[index.d.ts]
 - "generated_client_index_d_adminroleupdatewithoutadminsinput": "AdminRoleUpdateWithoutAdminsInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L47060 | neighbors=[index.d.ts]
 - "generated_client_index_d_adminroleupdatewithoutpermissionsinput": "AdminRoleUpdateWithoutPermissionsInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L47535 | neighbors=[index.d.ts]
@@ -53,10 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "generated_client_index_d_adminsessiondelegate": "AdminSessionDelegate" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L12178 | neighbors=[index.d.ts]
 - "generated_client_index_d_adminsessiondeleteargs": "AdminSessionDeleteArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L12817 | neighbors=[index.d.ts]
 - "generated_client_index_d_adminsessiondeletemanyargs": "AdminSessionDeleteManyArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L12835 | neighbors=[index.d.ts]
-- "generated_client_index_d_adminsessionfieldrefs": "AdminSessionFieldRefs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L12536 | neighbors=[index.d.ts]
-- "generated_client_index_d_adminsessionfindfirstargs": "AdminSessionFindFirstArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L12587 | neighbors=[index.d.ts]
-- "generated_client_index_d_adminsessionfindfirstorthrowargs": "AdminSessionFindFirstOrThrowArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L12635 | neighbors=[index.d.ts]
-- "generated_client_index_d_adminsessionfindmanyargs": "AdminSessionFindManyArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L12683 | neighbors=[index.d.ts]
 
 ## Instructions
 

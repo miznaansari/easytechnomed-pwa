@@ -17,6 +17,10 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "generated_client_index_d_superadmintrackingorderbywithrelationinput": "SuperAdminTrackingOrderByWithRelationInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L36757 | neighbors=[index.d.ts]
+- "generated_client_index_d_superadmintrackingpayload": "$SuperAdminTrackingPayload" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L28061 | neighbors=[index.d.ts]
+- "generated_client_index_d_superadmintrackingscalarfieldenum": "SuperAdminTrackingScalarFieldEnum" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L34321 | neighbors=[index.d.ts]
+- "generated_client_index_d_superadmintrackingscalarwhereinput": "SuperAdminTrackingScalarWhereInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L46292 | neighbors=[index.d.ts]
 - "generated_client_index_d_superadmintrackingscalarwherewithaggregatesinput": "SuperAdminTrackingScalarWhereWithAggregatesInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L36803 | neighbors=[index.d.ts]
 - "generated_client_index_d_superadmintrackingselect": "SuperAdminTrackingSelect" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L28031 | neighbors=[index.d.ts]
 - "generated_client_index_d_superadmintrackingselectscalar": "SuperAdminTrackingSelectScalar" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L28045 | neighbors=[index.d.ts]
@@ -53,10 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "generated_client_index_d_superadminupdateargs": "SuperAdminUpdateArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L5729 | neighbors=[index.d.ts]
 - "generated_client_index_d_superadminupdateinput": "SuperAdminUpdateInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L37433 | neighbors=[index.d.ts]
 - "generated_client_index_d_superadminupdatemanyargs": "SuperAdminUpdateManyArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L5751 | neighbors=[index.d.ts]
-- "generated_client_index_d_superadminupdatemanymutationinput": "SuperAdminUpdateManyMutationInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L37463 | neighbors=[index.d.ts]
-- "generated_client_index_d_superadminupdateonerequiredwithoutsessionsnestedinput": "SuperAdminUpdateOneRequiredWithoutSessionsNestedInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L43265 | neighbors=[index.d.ts]
-- "generated_client_index_d_superadminupdateonewithouttrackingsnestedinput": "SuperAdminUpdateOneWithoutTrackingsNestedInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L44663 | neighbors=[index.d.ts]
-- "generated_client_index_d_superadminupdatetoonewithwherewithoutsessionsinput": "SuperAdminUpdateToOneWithWhereWithoutSessionsInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L46337 | neighbors=[index.d.ts]
 
 ## Instructions
 

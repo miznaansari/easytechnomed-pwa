@@ -492,15 +492,15 @@ export default function AdminLayoutClient({ admin: initialAdmin, children }) {
       <Box sx={{ p: 2, pb: 0, backgroundColor: "grey.50", display: "flex", flexDirection: "column", gap: 1 }}>
         <Box sx={{ display: "flex", alignItems: "center", gap: 1.5, justifyContent: isDrawerExpanded ? "initial" : "center" }}>
           <Avatar sx={{ bgcolor: "primary.main", width: 40, height: 40 }}>
-            {admin?.name?.charAt(0).toUpperCase() || "A"}
+            {admin?.name ? admin.name.charAt(0).toUpperCase() : (admin?.companyName ? admin.companyName.charAt(0).toUpperCase() : "")}
           </Avatar>
           {isDrawerExpanded && (
             <Box sx={{ minWidth: 0, flexGrow: 1 }}>
               <Typography variant="subtitle2" noWrap sx={{ fontWeight: 700, color: "text.primary" }}>
-                {admin?.name || "System Admin"}
+                {admin?.name || admin?.companyName || ""}
               </Typography>
               <Typography variant="caption" noWrap sx={{ display: "block", color: "text.secondary" }}>
-                {admin?.email || "admin@pathlab.com"}
+                {admin?.email || admin?.mobileNumber || ""}
               </Typography>
             </Box>
           )}
@@ -673,13 +673,13 @@ export default function AdminLayoutClient({ admin: initialAdmin, children }) {
                     onClick={handleProfileMenuOpen}
                     startIcon={
                       <Avatar sx={{ bgcolor: "primary.main", width: 32, height: 32, fontSize: "0.875rem" }}>
-                        {admin?.name?.charAt(0).toUpperCase() || "A"}
+                        {admin?.name ? admin.name.charAt(0).toUpperCase() : (admin?.companyName ? admin.companyName.charAt(0).toUpperCase() : "")}
                       </Avatar>
                     }
                     sx={{ color: "text.primary", px: 1.5, py: 0.5 }}
                   >
                     <Typography variant="subtitle2" sx={{ display: { xs: "none", sm: "block" }, fontWeight: 600, ml: 1 }}>
-                      {admin?.name || "Admin"}
+                      {admin?.name || admin?.companyName || ""}
                     </Typography>
                   </Button>
                   <Menu
@@ -701,10 +701,10 @@ export default function AdminLayoutClient({ admin: initialAdmin, children }) {
                   >
                     <Box sx={{ px: 2, py: 1.5 }}>
                       <Typography variant="subtitle2" sx={{ fontWeight: 700 }}>
-                        {admin?.name || "System Admin"}
+                        {admin?.name || admin?.companyName || ""}
                       </Typography>
                       <Typography variant="caption" sx={{ color: "text.secondary" }}>
-                        Role: {admin?.role?.name || "Admin"}
+                        Role: {admin?.role?.name || admin?.role || ""}
                       </Typography>
                     </Box>
                     <Divider />

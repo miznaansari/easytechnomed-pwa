@@ -17,6 +17,10 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "generated_client_index_d_admincountoutputtypecountregistrationsargs": "AdminCountOutputTypeCountRegistrationsArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L3391 | neighbors=[index.d.ts]
+- "generated_client_index_d_admincountoutputtypecountsessionsargs": "AdminCountOutputTypeCountSessionsArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L3377 | neighbors=[index.d.ts]
+- "generated_client_index_d_admincountoutputtypecounttrackingsargs": "AdminCountOutputTypeCountTrackingsArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L3384 | neighbors=[index.d.ts]
+- "generated_client_index_d_admincountoutputtypedefaultargs": "AdminCountOutputTypeDefaultArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L3367 | neighbors=[index.d.ts]
 - "generated_client_index_d_admincountoutputtypeselect": "AdminCountOutputTypeSelect" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L3357 | neighbors=[index.d.ts]
 - "generated_client_index_d_admincreateargs": "AdminCreateArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L11697 | neighbors=[index.d.ts]
 - "generated_client_index_d_admincreateinput": "AdminCreateInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L37829 | neighbors=[index.d.ts]
@@ -53,10 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "generated_client_index_d_adminfindfirstorthrowargs": "AdminFindFirstOrThrowArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L11606 | neighbors=[index.d.ts]
 - "generated_client_index_d_adminfindmanyargs": "AdminFindManyArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L11654 | neighbors=[index.d.ts]
 - "generated_client_index_d_adminfinduniqueargs": "AdminFindUniqueArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L11522 | neighbors=[index.d.ts]
-- "generated_client_index_d_adminfinduniqueorthrowargs": "AdminFindUniqueOrThrowArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L11540 | neighbors=[index.d.ts]
-- "generated_client_index_d_admingetpayload": "AdminGetPayload" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L11120 | neighbors=[index.d.ts]
-- "generated_client_index_d_admingroupbyargs": "AdminGroupByArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L10949 | neighbors=[index.d.ts]
-- "generated_client_index_d_admingroupbyoutputtype": "AdminGroupByOutputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L10963 | neighbors=[index.d.ts]
 
 ## Instructions
 

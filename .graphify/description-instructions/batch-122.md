@@ -17,6 +17,10 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "generated_client_index_d_workspacepdfselectscalar": "WorkspacePdfSelectScalar" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L33082 | neighbors=[index.d.ts]
+- "generated_client_index_d_workspacepdfsumaggregateinputtype": "WorkspacePdfSumAggregateInputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L32780 | neighbors=[index.d.ts]
+- "generated_client_index_d_workspacepdfsumaggregateoutputtype": "WorkspacePdfSumAggregateOutputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L32642 | neighbors=[index.d.ts]
+- "generated_client_index_d_workspacepdfsumorderbyaggregateinput": "WorkspacePdfSumOrderByAggregateInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L42723 | neighbors=[index.d.ts]
 - "generated_client_index_d_workspacepdfuncheckedcreateinput": "WorkspacePdfUncheckedCreateInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L40154 | neighbors=[index.d.ts]
 - "generated_client_index_d_workspacepdfuncheckedcreatenestedonewithoutworkspaceinput": "WorkspacePdfUncheckedCreateNestedOneWithoutWorkspaceInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L42869 | neighbors=[index.d.ts]
 - "generated_client_index_d_workspacepdfuncheckedcreatewithoutworkspaceinput": "WorkspacePdfUncheckedCreateWithoutWorkspaceInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L45683 | neighbors=[index.d.ts]
@@ -53,10 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "generated_client_index_d_workspaceuncheckedcreatewithouttestformulasinput": "WorkspaceUncheckedCreateWithoutTestFormulasInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L50812 | neighbors=[index.d.ts]
 - "generated_client_index_d_workspaceuncheckedcreatewithouttestparametersinput": "WorkspaceUncheckedCreateWithoutTestParametersInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L49482 | neighbors=[index.d.ts]
 - "generated_client_index_d_workspaceuncheckedcreatewithouttestsinput": "WorkspaceUncheckedCreateWithoutTestsInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L48003 | neighbors=[index.d.ts]
-- "generated_client_index_d_workspaceuncheckedcreatewithoutusersinput": "WorkspaceUncheckedCreateWithoutUsersInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L46397 | neighbors=[index.d.ts]
-- "generated_client_index_d_workspaceuncheckedupdateinput": "WorkspaceUncheckedUpdateInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L37355 | neighbors=[index.d.ts]
-- "generated_client_index_d_workspaceuncheckedupdatemanyinput": "WorkspaceUncheckedUpdateManyInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L37400 | neighbors=[index.d.ts]
-- "generated_client_index_d_workspaceuncheckedupdatewithoutadminsinput": "WorkspaceUncheckedUpdateWithoutAdminsInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L47106 | neighbors=[index.d.ts]
 
 ## Instructions
 

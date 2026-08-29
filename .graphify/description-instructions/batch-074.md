@@ -17,6 +17,10 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "generated_client_index_d_interpretationrulescalarwhereinput": "InterpretationRuleScalarWhereInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L46095 | neighbors=[index.d.ts]
+- "generated_client_index_d_interpretationrulescalarwherewithaggregatesinput": "InterpretationRuleScalarWhereWithAggregatesInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L37028 | neighbors=[index.d.ts]
+- "generated_client_index_d_interpretationruleselect": "InterpretationRuleSelect" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L30950 | neighbors=[index.d.ts]
+- "generated_client_index_d_interpretationruleselectscalar": "InterpretationRuleSelectScalar" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L30965 | neighbors=[index.d.ts]
 - "generated_client_index_d_interpretationrulesumaggregateinputtype": "InterpretationRuleSumAggregateInputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L30793 | neighbors=[index.d.ts]
 - "generated_client_index_d_interpretationrulesumaggregateoutputtype": "InterpretationRuleSumAggregateOutputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L30744 | neighbors=[index.d.ts]
 - "generated_client_index_d_interpretationrulesumorderbyaggregateinput": "InterpretationRuleSumOrderByAggregateInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L42551 | neighbors=[index.d.ts]
@@ -53,10 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "generated_client_index_d_interpretationruleupdatewithoutworkspaceinput": "InterpretationRuleUpdateWithoutWorkspaceInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L52588 | neighbors=[index.d.ts]
 - "generated_client_index_d_interpretationruleupdatewithwhereuniquewithoutparameterinput": "InterpretationRuleUpdateWithWhereUniqueWithoutParameterInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L49452 | neighbors=[index.d.ts]
 - "generated_client_index_d_interpretationruleupdatewithwhereuniquewithouttestinput": "InterpretationRuleUpdateWithWhereUniqueWithoutTestInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L48295 | neighbors=[index.d.ts]
-- "generated_client_index_d_interpretationruleupdatewithwhereuniquewithoutworkspaceinput": "InterpretationRuleUpdateWithWhereUniqueWithoutWorkspaceInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L46085 | neighbors=[index.d.ts]
-- "generated_client_index_d_interpretationruleupsertargs": "InterpretationRuleUpsertArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L31625 | neighbors=[index.d.ts]
-- "generated_client_index_d_interpretationruleupsertwithwhereuniquewithoutparameterinput": "InterpretationRuleUpsertWithWhereUniqueWithoutParameterInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L49446 | neighbors=[index.d.ts]
-- "generated_client_index_d_interpretationruleupsertwithwhereuniquewithouttestinput": "InterpretationRuleUpsertWithWhereUniqueWithoutTestInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L48289 | neighbors=[index.d.ts]
 
 ## Instructions
 

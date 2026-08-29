@@ -17,6 +17,10 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "generated_client_index_d_doctorincentiveupsertwithwhereuniquewithoutdoctorinput": "DoctorIncentiveUpsertWithWhereUniqueWithoutDoctorInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L47899 | neighbors=[index.d.ts]
+- "generated_client_index_d_doctorincentivewhereinput": "DoctorIncentiveWhereInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L37042 | neighbors=[index.d.ts]
+- "generated_client_index_d_doctorincentivewhereuniqueinput": "DoctorIncentiveWhereUniqueInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L37061 | neighbors=[index.d.ts]
+- "generated_client_index_d_doctorinclude": "DoctorInclude" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L14994 | neighbors=[index.d.ts]
 - "generated_client_index_d_doctorlistrelationfilter": "DoctorListRelationFilter" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L40425 | neighbors=[index.d.ts]
 - "generated_client_index_d_doctormaxaggregateinputtype": "DoctorMaxAggregateInputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L14802 | neighbors=[index.d.ts]
 - "generated_client_index_d_doctormaxaggregateoutputtype": "DoctorMaxAggregateOutputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L14740 | neighbors=[index.d.ts]
@@ -53,10 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "generated_client_index_d_doctoruncheckedupdatewithoutsecondregistrationsinput": "DoctorUncheckedUpdateWithoutSecondRegistrationsInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L48697 | neighbors=[index.d.ts]
 - "generated_client_index_d_doctoruncheckedupdatewithoutworkspaceinput": "DoctorUncheckedUpdateWithoutWorkspaceInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L52072 | neighbors=[index.d.ts]
 - "generated_client_index_d_doctorupdateargs": "DoctorUpdateArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L15621 | neighbors=[index.d.ts]
-- "generated_client_index_d_doctorupdateinput": "DoctorUpdateInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L38224 | neighbors=[index.d.ts]
-- "generated_client_index_d_doctorupdatemanyargs": "DoctorUpdateManyArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L15643 | neighbors=[index.d.ts]
-- "generated_client_index_d_doctorupdatemanymutationinput": "DoctorUpdateManyMutationInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L38277 | neighbors=[index.d.ts]
-- "generated_client_index_d_doctorupdatemanywithoutworkspacenestedinput": "DoctorUpdateManyWithoutWorkspaceNestedInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L42913 | neighbors=[index.d.ts]
 
 ## Instructions
 

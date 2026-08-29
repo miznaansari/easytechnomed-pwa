@@ -17,6 +17,10 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "generated_client_index_d_parametersumaggregateoutputtype": "ParameterSumAggregateOutputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L19619 | neighbors=[index.d.ts]
+- "generated_client_index_d_parametersumorderbyaggregateinput": "ParameterSumOrderByAggregateInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L41951 | neighbors=[index.d.ts]
+- "generated_client_index_d_parameteruncheckedcreateinput": "ParameterUncheckedCreateInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L38942 | neighbors=[index.d.ts]
+- "generated_client_index_d_parameteruncheckedcreatenestedmanywithoutworkspaceinput": "ParameterUncheckedCreateNestedManyWithoutWorkspaceInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L42841 | neighbors=[index.d.ts]
 - "generated_client_index_d_parameteruncheckedcreatewithoutinterpretationrulesinput": "ParameterUncheckedCreateWithoutInterpretationRulesInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L51329 | neighbors=[index.d.ts]
 - "generated_client_index_d_parameteruncheckedcreatewithouttestformulasinput": "ParameterUncheckedCreateWithoutTestFormulasInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L50935 | neighbors=[index.d.ts]
 - "generated_client_index_d_parameteruncheckedcreatewithouttestmappingsinput": "ParameterUncheckedCreateWithoutTestMappingsInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L49576 | neighbors=[index.d.ts]
@@ -53,10 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "generated_client_index_d_parameterupsertwithwhereuniquewithoutworkspaceinput": "ParameterUpsertWithWhereUniqueWithoutWorkspaceInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L45948 | neighbors=[index.d.ts]
 - "generated_client_index_d_parameterwhereinput": "ParameterWhereInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L35948 | neighbors=[index.d.ts]
 - "generated_client_index_d_parameterwhereuniqueinput": "ParameterWhereUniqueInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L36035 | neighbors=[index.d.ts]
-- "generated_client_index_d_parameterworkspaceidnamecompounduniqueinput": "ParameterWorkspaceIdNameCompoundUniqueInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L41805 | neighbors=[index.d.ts]
-- "generated_client_index_d_patchundefined": "PatchUndefined" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L854 | neighbors=[index.d.ts]
-- "generated_client_index_d_patientresult": "PatientResult" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L105 | neighbors=[index.d.ts]
-- "generated_client_index_d_patientresultaggregateargs": "PatientResultAggregateArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L22249 | neighbors=[index.d.ts]
 
 ## Instructions
 

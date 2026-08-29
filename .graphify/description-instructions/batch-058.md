@@ -17,6 +17,10 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "generated_client_index_d_adminrolepermissionsumaggregateoutputtype": "AdminRolePermissionSumAggregateOutputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L13822 | neighbors=[index.d.ts]
+- "generated_client_index_d_adminrolepermissionsumorderbyaggregateinput": "AdminRolePermissionSumOrderByAggregateInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L41234 | neighbors=[index.d.ts]
+- "generated_client_index_d_adminrolepermissionuncheckedcreateinput": "AdminRolePermissionUncheckedCreateInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L38154 | neighbors=[index.d.ts]
+- "generated_client_index_d_adminrolepermissionuncheckedcreatenestedmanywithoutroleinput": "AdminRolePermissionUncheckedCreateNestedManyWithoutRoleInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L43688 | neighbors=[index.d.ts]
 - "generated_client_index_d_adminrolepermissionuncheckedcreatewithoutroleinput": "AdminRolePermissionUncheckedCreateWithoutRoleInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L47448 | neighbors=[index.d.ts]
 - "generated_client_index_d_adminrolepermissionuncheckedupdateinput": "AdminRolePermissionUncheckedUpdateInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L38165 | neighbors=[index.d.ts]
 - "generated_client_index_d_adminrolepermissionuncheckedupdatemanyinput": "AdminRolePermissionUncheckedUpdateManyInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L38181 | neighbors=[index.d.ts]
@@ -53,10 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "generated_client_index_d_adminroleupdateargs": "AdminRoleUpdateArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L13663 | neighbors=[index.d.ts]
 - "generated_client_index_d_adminroleupdateinput": "AdminRoleUpdateInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L38112 | neighbors=[index.d.ts]
 - "generated_client_index_d_adminroleupdatemanyargs": "AdminRoleUpdateManyArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L13685 | neighbors=[index.d.ts]
-- "generated_client_index_d_adminroleupdatemanymutationinput": "AdminRoleUpdateManyMutationInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L38136 | neighbors=[index.d.ts]
-- "generated_client_index_d_adminroleupdateonerequiredwithoutadminsnestedinput": "AdminRoleUpdateOneRequiredWithoutAdminsNestedInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L43531 | neighbors=[index.d.ts]
-- "generated_client_index_d_adminroleupdateonerequiredwithoutpermissionsnestedinput": "AdminRoleUpdateOneRequiredWithoutPermissionsNestedInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L43757 | neighbors=[index.d.ts]
-- "generated_client_index_d_adminroleupdatetoonewithwherewithoutadminsinput": "AdminRoleUpdateToOneWithWhereWithoutAdminsInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L47055 | neighbors=[index.d.ts]
 
 ## Instructions
 

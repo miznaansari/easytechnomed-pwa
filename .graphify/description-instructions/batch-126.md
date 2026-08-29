@@ -17,6 +17,10 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "offline_timestamps_formatlocaldisplay": "formatLocalDisplay()" | kind=code-symbol | source=lib/offline/timestamps.js:L61 | neighbors=[timestamps.js]
+- "offline_unsyncedlogoutmodal_unsyncedlogoutmodal": "UnsyncedLogoutModal()" | kind=code-symbol | source=components/offline/UnsyncedLogoutModal.jsx:L20 | neighbors=[UnsyncedLogoutModal.jsx]
+- "parameters_route_post": "POST()" | kind=code-symbol | source=app/api/registrations/[id]/parameters/route.js:L93 | neighbors=[route.js]
+- "payment_route_post": "POST()" | kind=code-symbol | source=app/api/registrations/[id]/payment/route.js:L5 | neighbors=[route.js]
 - "payments_page_settingspaymentspage": "SettingsPaymentsPage()" | kind=code-symbol | source=app/(customer)/(dashboard)/settings/payments/page.js:L7 | neighbors=[page.js]
 - "payments_paymentsclient_paymentsclient": "PaymentsClient()" | kind=code-symbol | source=app/(customer)/(dashboard)/settings/payments/paymentsClient.jsx:L35 | neighbors=[paymentsClient.jsx]
 - "payments_route_get": "GET()" | kind=code-symbol | source=app/api/settings/payments/route.js:L6 | neighbors=[route.js]
@@ -53,10 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "register_registerpageclient_registerschema": "registerSchema" | kind=code-symbol | source=app/(customer)/auth/register/RegisterPageClient.js:L15 | neighbors=[RegisterPageClient.js]
 - "register_route_post": "POST()" | kind=code-symbol | source=app/api/authas/register/route.js:L7 | neighbors=[route.js]
 - "registration_page_filter": "filter" | kind=code-symbol | source=app/(customer)/(dashboard)/registration/page.js:L54 | neighbors=[page.js]
-- "registration_page_getlocalisostring": "getLocalIsoString()" | kind=code-symbol | source=app/(customer)/(dashboard)/registration/page.js:L59 | neighbors=[page.js]
-- "registration_page_indiancities": "indianCities" | kind=code-symbol | source=app/(customer)/(dashboard)/registration/page.js:L82 | neighbors=[page.js]
-- "registration_page_indianstatesmap": "indianStatesMap" | kind=code-symbol | source=app/(customer)/(dashboard)/registration/page.js:L72 | neighbors=[page.js]
-- "registration_page_registrationpage": "RegistrationPage()" | kind=code-symbol | source=app/(customer)/(dashboard)/registration/page.js:L96 | neighbors=[page.js]
 
 ## Instructions
 
