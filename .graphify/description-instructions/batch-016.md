@@ -33,7 +33,7 @@ one-sentence description — no prose, no markdown fences.
 - "scratch_backfill_counters": "scratch-backfill-counters.js" | kind=code-symbol | source=scratch-backfill-counters.js:L1 | neighbors=[252e194 e, generateRandomSuffix(), main(), prisma, { PrismaClient }]
 - "scratch_test_patient_context": "test-patient-context.js" | kind=code-symbol | source=scratch/test-patient-context.js:L1 | neighbors=[252e194 e, addPatientContextToValuesMap(), valuesMap1, valuesMap2, valuesMap3]
 - "scratch_test_user_cbc": "test-user-cbc.js" | kind=code-symbol | source=scratch/test-user-cbc.js:L1 | neighbors=[252e194 e, calculateAllDependents(), inputValues, result, testDefinition]
-- "auth_offlineauth_getcachedsession": "getCachedSession()" | kind=code-symbol | source=lib/auth/offlineAuth.js:L73 | neighbors=[offlineAuth.js, saveAuthenticatedSession(), getOrCreateOfflineSession(), isLocalSessionValid()]
+- "auth_offlineauth_getcachedsession": "getCachedSession()" | kind=code-symbol | source=lib/auth/offlineAuth.js:L56 | neighbors=[offlineAuth.js, saveAuthenticatedSession(), getOrCreateOfflineSession(), isLocalSessionValid()]
 - "check_route": "route.js" | kind=code-symbol | source=app/api/auth/check/route.js:L1 | neighbors=[GET(), HEAD(), 252e194 e, d446d11 fixed code]
 - "commit:repo:github.com-personal/miznaansari/easytechnomed-pwa@14fa292a5b0d0d359673fa5f43e1a99e00e1fd9d": "14fa292 f" | kind=Commit | source=git | neighbors=[main, 48cc7ec 2.0.22, LoginPageClient.js, f4e1e65 2.0.21]
 - "commit:repo:github.com-personal/miznaansari/easytechnomed-pwa@2daebb8689d13f76c6f393560192812886da597a": "2daebb8 f" | kind=Commit | source=git | neighbors=[main, 8065d22 3.0.8, AdminLayoutClient.js, 3e84241 3.0.7]
