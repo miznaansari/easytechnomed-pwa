@@ -17,6 +17,12 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "runtime_edge_ep": "ep()" | kind=code-symbol | source=scratch/generated-client/runtime/edge.js:L30 | neighbors=[edge.js, Ua()]
+- "runtime_edge_esm_aa": "Aa()" | kind=code-symbol | source=scratch/generated-client/runtime/edge-esm.js:L1 | neighbors=[edge-esm.js, ba()]
+- "runtime_edge_esm_additem": "addItem()" | kind=code-symbol | source=scratch/generated-client/runtime/edge-esm.js:L3 | neighbors=[edge-esm.js, iu()]
+- "runtime_edge_esm_addmarginsymbol": "addMarginSymbol()" | kind=code-symbol | source=scratch/generated-client/runtime/edge-esm.js:L2 | neighbors=[edge-esm.js, write()]
+- "runtime_edge_esm_bl": "bl()" | kind=code-symbol | source=scratch/generated-client/runtime/edge-esm.js:L1 | neighbors=[edge-esm.js, ne()]
+- "runtime_edge_esm_bs": "bs()" | kind=code-symbol | source=scratch/generated-client/runtime/edge-esm.js:L11 | neighbors=[edge-esm.js, withRetry()]
 - "runtime_edge_esm_ca": "Ca()" | kind=code-symbol | source=scratch/generated-client/runtime/edge-esm.js:L1 | neighbors=[edge-esm.js, cr()]
 - "runtime_edge_esm_cc": "Cc()" | kind=code-symbol | source=scratch/generated-client/runtime/edge-esm.js:L11 | neighbors=[edge-esm.js, vs()]
 - "runtime_edge_esm_cn": "Cn()" | kind=code-symbol | source=scratch/generated-client/runtime/edge-esm.js:L5 | neighbors=[edge-esm.js, Ut()]
@@ -51,12 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "runtime_edge_esm_kl": "kl()" | kind=code-symbol | source=scratch/generated-client/runtime/edge-esm.js:L1 | neighbors=[edge-esm.js, O()]
 - "runtime_edge_esm_ks": "ks()" | kind=code-symbol | source=scratch/generated-client/runtime/edge-esm.js:L13 | neighbors=[edge-esm.js, Et()]
 - "runtime_edge_esm_ln": "ln()" | kind=code-symbol | source=scratch/generated-client/runtime/edge-esm.js:L1 | neighbors=[edge-esm.js, Ol()]
-- "runtime_edge_esm_lr": "Lr()" | kind=code-symbol | source=scratch/generated-client/runtime/edge-esm.js:L5 | neighbors=[edge-esm.js, requestBatch()]
-- "runtime_edge_esm_ls": "ls()" | kind=code-symbol | source=scratch/generated-client/runtime/edge-esm.js:L6 | neighbors=[edge-esm.js, wc()]
-- "runtime_edge_esm_mapqueryengineresult": "mapQueryEngineResult()" | kind=code-symbol | source=scratch/generated-client/runtime/edge-esm.js:L20 | neighbors=[edge-esm.js, unpack()]
-- "runtime_edge_esm_mi": "mi()" | kind=code-symbol | source=scratch/generated-client/runtime/edge-esm.js:L1 | neighbors=[edge-esm.js, yi()]
-- "runtime_edge_esm_mt": "mt()" | kind=code-symbol | source=scratch/generated-client/runtime/edge-esm.js:L5 | neighbors=[edge-esm.js, os()]
-- "runtime_edge_esm_na": "Na()" | kind=code-symbol | source=scratch/generated-client/runtime/edge-esm.js:L1 | neighbors=[edge-esm.js, wi()]
 
 ## Instructions
 

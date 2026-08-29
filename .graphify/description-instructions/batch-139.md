@@ -17,6 +17,13 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "runtime_library_d_requestresponse": "RequestResponse" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L2728 | neighbors=[_d()]
+- "runtime_library_d_requiredextensionargs": "RequiredExtensionArgs" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L2738 | neighbors=[_d()]
+- "runtime_library_d_requiredkeys": "RequiredKeys" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L2742 | neighbors=[_d()]
+- "runtime_library_d_result": "Result" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L2753 | neighbors=[_d()]
+- "runtime_library_d_result_2": "Result_2" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L2766 | neighbors=[_d()]
+- "runtime_library_d_result_4": "Result_4" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L2790 | neighbors=[_d()]
+- "runtime_library_d_resultarg": "ResultArg" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L2801 | neighbors=[_d()]
 - "runtime_library_d_resultargs": "ResultArgs" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L2805 | neighbors=[_d()]
 - "runtime_library_d_resultargsfieldcompute": "ResultArgsFieldCompute" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L2811 | neighbors=[_d()]
 - "runtime_library_d_resultfielddefinition": "ResultFieldDefinition" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L2813 | neighbors=[_d()]
@@ -50,13 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "runtime_library_d_sql": "Sql" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L3153 | neighbors=[_d()]
 - "runtime_library_d_timeinput": "TimeInput" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L3178 | neighbors=[_d()]
 - "runtime_library_d_totuple": "ToTuple" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L3180 | neighbors=[_d()]
-- "runtime_library_d_tracestate": "TraceState" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L3182 | neighbors=[_d()]
-- "runtime_library_d_tracinghelper": "TracingHelper" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L3220 | neighbors=[_d()]
-- "runtime_library_d_transactionheaders": "TransactionHeaders" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L3259 | neighbors=[_d()]
-- "runtime_library_d_transactionoptions": "TransactionOptions" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L3263 | neighbors=[_d()]
-- "runtime_library_d_transactionoptions_2": "TransactionOptions_2" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L3267 | neighbors=[_d()]
-- "runtime_library_d_typedsql": "TypedSql" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L3275 | neighbors=[_d()]
-- "runtime_library_d_typemapcbdef": "TypeMapCbDef" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L3282 | neighbors=[_d()]
 
 ## Instructions
 

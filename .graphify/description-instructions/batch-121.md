@@ -17,6 +17,12 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "generated_client_index_d_workspaceorderbywithrelationinput": "WorkspaceOrderByWithRelationInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L34505 | neighbors=[index.d.ts]
+- "generated_client_index_d_workspacepayload": "$WorkspacePayload" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L3981 | neighbors=[index.d.ts]
+- "generated_client_index_d_workspacepdf": "WorkspacePdf" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L160 | neighbors=[index.d.ts]
+- "generated_client_index_d_workspacepdfaggregateargs": "WorkspacePdfAggregateArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L32903 | neighbors=[index.d.ts]
+- "generated_client_index_d_workspacepdfargs": "WorkspacePdfArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L54430 | neighbors=[index.d.ts]
+- "generated_client_index_d_workspacepdfavgaggregateinputtype": "WorkspacePdfAvgAggregateInputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L32766 | neighbors=[index.d.ts]
 - "generated_client_index_d_workspacepdfavgaggregateoutputtype": "WorkspacePdfAvgAggregateOutputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L32628 | neighbors=[index.d.ts]
 - "generated_client_index_d_workspacepdfavgorderbyaggregateinput": "WorkspacePdfAvgOrderByAggregateInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L42637 | neighbors=[index.d.ts]
 - "generated_client_index_d_workspacepdfcountaggregateinputtype": "WorkspacePdfCountAggregateInputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L32866 | neighbors=[index.d.ts]
@@ -51,12 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "generated_client_index_d_workspacepdfminaggregateoutputtype": "WorkspacePdfMinAggregateOutputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L32656 | neighbors=[index.d.ts]
 - "generated_client_index_d_workspacepdfminorderbyaggregateinput": "WorkspacePdfMinOrderByAggregateInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L42687 | neighbors=[index.d.ts]
 - "generated_client_index_d_workspacepdfnullablerelationfilter": "WorkspacePdfNullableRelationFilter" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L40473 | neighbors=[index.d.ts]
-- "generated_client_index_d_workspacepdforderbywithaggregationinput": "WorkspacePdfOrderByWithAggregationInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L37211 | neighbors=[index.d.ts]
-- "generated_client_index_d_workspacepdforderbywithrelationinput": "WorkspacePdfOrderByWithRelationInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L37134 | neighbors=[index.d.ts]
-- "generated_client_index_d_workspacepdfpayload": "$WorkspacePdfPayload" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L33122 | neighbors=[index.d.ts]
-- "generated_client_index_d_workspacepdfscalarfieldenum": "WorkspacePdfScalarFieldEnum" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L34411 | neighbors=[index.d.ts]
-- "generated_client_index_d_workspacepdfscalarwherewithaggregatesinput": "WorkspacePdfScalarWhereWithAggregatesInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L37252 | neighbors=[index.d.ts]
-- "generated_client_index_d_workspacepdfselect": "WorkspacePdfSelect" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L33044 | neighbors=[index.d.ts]
 
 ## Instructions
 

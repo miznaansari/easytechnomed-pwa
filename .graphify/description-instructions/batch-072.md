@@ -17,6 +17,12 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "generated_client_index_d_getregistrationtestaggregatetype": "GetRegistrationTestAggregateType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L18763 | neighbors=[index.d.ts]
+- "generated_client_index_d_getregistrationtestgroupbypayload": "GetRegistrationTestGroupByPayload" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L18809 | neighbors=[index.d.ts]
+- "generated_client_index_d_getscalartype": "GetScalarType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L964 | neighbors=[index.d.ts]
+- "generated_client_index_d_getsuperadminaggregatetype": "GetSuperAdminAggregateType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L5047 | neighbors=[index.d.ts]
+- "generated_client_index_d_getsuperadmingroupbypayload": "GetSuperAdminGroupByPayload" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L5086 | neighbors=[index.d.ts]
+- "generated_client_index_d_getsuperadminsessionaggregatetype": "GetSuperAdminSessionAggregateType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L6027 | neighbors=[index.d.ts]
 - "generated_client_index_d_getsuperadminsessiongroupbypayload": "GetSuperAdminSessionGroupByPayload" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L6067 | neighbors=[index.d.ts]
 - "generated_client_index_d_getsuperadmintrackingaggregatetype": "GetSuperAdminTrackingAggregateType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L27975 | neighbors=[index.d.ts]
 - "generated_client_index_d_getsuperadmintrackinggroupbypayload": "GetSuperAdminTrackingGroupByPayload" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L28017 | neighbors=[index.d.ts]
@@ -51,12 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "generated_client_index_d_interpretationrulecountaggregateinputtype": "InterpretationRuleCountAggregateInputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L30822 | neighbors=[index.d.ts]
 - "generated_client_index_d_interpretationrulecountaggregateoutputtype": "InterpretationRuleCountAggregateOutputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L30773 | neighbors=[index.d.ts]
 - "generated_client_index_d_interpretationrulecountargs": "InterpretationRuleCountArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L31004 | neighbors=[index.d.ts]
-- "generated_client_index_d_interpretationrulecountorderbyaggregateinput": "InterpretationRuleCountOrderByAggregateInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L42511 | neighbors=[index.d.ts]
-- "generated_client_index_d_interpretationrulecreateargs": "InterpretationRuleCreateArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L31560 | neighbors=[index.d.ts]
-- "generated_client_index_d_interpretationrulecreateinput": "InterpretationRuleCreateInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L40003 | neighbors=[index.d.ts]
-- "generated_client_index_d_interpretationrulecreatemanyargs": "InterpretationRuleCreateManyArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L31578 | neighbors=[index.d.ts]
-- "generated_client_index_d_interpretationrulecreatemanyinput": "InterpretationRuleCreateManyInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L40045 | neighbors=[index.d.ts]
-- "generated_client_index_d_interpretationrulecreatemanyparameterinput": "InterpretationRuleCreateManyParameterInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L53983 | neighbors=[index.d.ts]
 
 ## Instructions
 

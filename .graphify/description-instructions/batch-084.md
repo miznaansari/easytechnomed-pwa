@@ -17,6 +17,12 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "generated_client_index_d_patientresultupdateinput": "PatientResultUpdateInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L39349 | neighbors=[index.d.ts]
+- "generated_client_index_d_patientresultupdatemanyargs": "PatientResultUpdateManyArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L23022 | neighbors=[index.d.ts]
+- "generated_client_index_d_patientresultupdatemanymutationinput": "PatientResultUpdateManyMutationInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L39381 | neighbors=[index.d.ts]
+- "generated_client_index_d_patientresultupdatemanywithoutregistrationnestedinput": "PatientResultUpdateManyWithoutRegistrationNestedInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L44197 | neighbors=[index.d.ts]
+- "generated_client_index_d_patientresultupdatemanywithouttestparameternestedinput": "PatientResultUpdateManyWithoutTestParameterNestedInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L44541 | neighbors=[index.d.ts]
+- "generated_client_index_d_patientresultupdatemanywithwherewithoutregistrationinput": "PatientResultUpdateManyWithWhereWithoutRegistrationInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L48604 | neighbors=[index.d.ts]
 - "generated_client_index_d_patientresultupdatemanywithwherewithouttestparameterinput": "PatientResultUpdateManyWithWhereWithoutTestParameterInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L49742 | neighbors=[index.d.ts]
 - "generated_client_index_d_patientresultupdatewithoutregistrationinput": "PatientResultUpdateWithoutRegistrationInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L53846 | neighbors=[index.d.ts]
 - "generated_client_index_d_patientresultupdatewithouttestparameterinput": "PatientResultUpdateWithoutTestParameterInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L54134 | neighbors=[index.d.ts]
@@ -51,12 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "generated_client_index_d_prisma_testclient": "Prisma__TestClient" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L16582 | neighbors=[index.d.ts]
 - "generated_client_index_d_prisma_testdepartmentclient": "Prisma__TestDepartmentClient" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L29338 | neighbors=[index.d.ts]
 - "generated_client_index_d_prisma_testformulaclient": "Prisma__TestFormulaClient" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L30352 | neighbors=[index.d.ts]
-- "generated_client_index_d_prisma_testparameterclient": "Prisma__TestParameterClient" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L21742 | neighbors=[index.d.ts]
-- "generated_client_index_d_prisma_userclient": "Prisma__UserClient" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L7509 | neighbors=[index.d.ts]
-- "generated_client_index_d_prisma_userroleclient": "Prisma__UserRoleClient" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L9385 | neighbors=[index.d.ts]
-- "generated_client_index_d_prisma_userrolepermissionclient": "Prisma__UserRolePermissionClient" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L10320 | neighbors=[index.d.ts]
-- "generated_client_index_d_prisma_usersessionclient": "Prisma__UserSessionClient" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L8495 | neighbors=[index.d.ts]
-- "generated_client_index_d_prisma_workspaceclient": "Prisma__WorkspaceClient" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L4343 | neighbors=[index.d.ts]
 
 ## Instructions
 

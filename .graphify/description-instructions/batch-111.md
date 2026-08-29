@@ -17,6 +17,12 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "generated_client_index_d_usercreatemanyinput": "UserCreateManyInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L37628 | neighbors=[index.d.ts]
+- "generated_client_index_d_usercreatemanyroleinput": "UserCreateManyRoleInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L52730 | neighbors=[index.d.ts]
+- "generated_client_index_d_usercreatemanyroleinputenvelope": "UserCreateManyRoleInputEnvelope" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L46691 | neighbors=[index.d.ts]
+- "generated_client_index_d_usercreatemanyworkspaceinput": "UserCreateManyWorkspaceInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L51870 | neighbors=[index.d.ts]
+- "generated_client_index_d_usercreatemanyworkspaceinputenvelope": "UserCreateManyWorkspaceInputEnvelope" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L45438 | neighbors=[index.d.ts]
+- "generated_client_index_d_usercreatenestedmanywithoutroleinput": "UserCreateNestedManyWithoutRoleInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L43367 | neighbors=[index.d.ts]
 - "generated_client_index_d_usercreatenestedmanywithoutworkspaceinput": "UserCreateNestedManyWithoutWorkspaceInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L42765 | neighbors=[index.d.ts]
 - "generated_client_index_d_usercreatenestedonewithoutsessionsinput": "UserCreateNestedOneWithoutSessionsInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L43353 | neighbors=[index.d.ts]
 - "generated_client_index_d_usercreateorconnectwithoutroleinput": "UserCreateOrConnectWithoutRoleInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L46686 | neighbors=[index.d.ts]
@@ -51,12 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "generated_client_index_d_userorderbywithrelationinput": "UserOrderByWithRelationInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L34742 | neighbors=[index.d.ts]
 - "generated_client_index_d_userpayload": "$UserPayload" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L7146 | neighbors=[index.d.ts]
 - "generated_client_index_d_userrelationfilter": "UserRelationFilter" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L40884 | neighbors=[index.d.ts]
-- "generated_client_index_d_userrole": "UserRole" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L45 | neighbors=[index.d.ts]
-- "generated_client_index_d_userrole_permissionsargs": "UserRole$permissionsArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L9741 | neighbors=[index.d.ts]
-- "generated_client_index_d_userrole_usersargs": "UserRole$usersArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L9721 | neighbors=[index.d.ts]
-- "generated_client_index_d_userroleaggregateargs": "UserRoleAggregateArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L8908 | neighbors=[index.d.ts]
-- "generated_client_index_d_userroleargs": "UserRoleArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L54338 | neighbors=[index.d.ts]
-- "generated_client_index_d_userroleavgaggregateinputtype": "UserRoleAvgAggregateInputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L8884 | neighbors=[index.d.ts]
 
 ## Instructions
 

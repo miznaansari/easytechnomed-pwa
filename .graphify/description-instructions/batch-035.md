@@ -24,8 +24,14 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "app_sitemap": "sitemap.js" | kind=code-symbol | source=app/sitemap.js:L1 | neighbors=[sitemap(), 252e194 e]
+- "approvals_route": "route.js" | kind=code-symbol | source=app/api/approvals/route.js:L1 | neighbors=[GET(), 252e194 e]
+- "approve_route": "route.js" | kind=code-symbol | source=app/api/approvals/approve/route.js:L1 | neighbors=[POST(), 252e194 e]
+- "auth_offlineauth_islocalsessionvalid": "isLocalSessionValid()" | kind=code-symbol | source=lib/auth/offlineAuth.js:L100 | neighbors=[offlineAuth.js, getCachedSession()]
+- "by_mobile_route_get": "GET()" | kind=code-symbol | source=app/api/registrations/by-mobile/route.js:L10 | neighbors=[route.js, serializeData()]
+- "by_mobile_route_serializedata": "serializeData()" | kind=code-symbol | source=app/api/registrations/by-mobile/route.js:L6 | neighbors=[route.js, GET()]
 - "change_role_route": "route.js" | kind=code-symbol | source=app/api/approvals/change-role/route.js:L1 | neighbors=[POST(), 252e194 e]
-- "commit:repo:github.com-personal/miznaansari/easytechnomed-pwa@6adf5501e8593ddd4e13f315ccca1356b6194f3b": "6adf550 3.1.4" | kind=Commit | source=git | neighbors=[6236f60 new update, main]
+- "commit:repo:github.com-personal/miznaansari/easytechnomed-pwa@74d638d5e3b95cf9a5df4de84e4f874fd5e9c024": "74d638d 3.1.9" | kind=Commit | source=git | neighbors=[main, 78dd976 fixed]
 - "component_differentialcounttracker_isdifferentialheader": "isDifferentialHeader()" | kind=code-symbol | source=app/(customer)/(dashboard)/test-report/component/DifferentialCountTracker.jsx:L76 | neighbors=[DifferentialCountTracker.jsx, DifferentialHeaderBadge()]
 - "component_differentialcounttracker_validatedifferentialonsave": "validateDifferentialOnSave()" | kind=code-symbol | source=app/(customer)/(dashboard)/test-report/component/DifferentialCountTracker.jsx:L178 | neighbors=[DifferentialCountTracker.jsx, calculateDifferentialSummary()]
 - "component_showresult_isoutofrange": "isOutOfRange()" | kind=code-symbol | source=app/(customer)/(dashboard)/test-report/component/showResult.jsx:L92 | neighbors=[showResult.jsx, isQualitativeAbnormal()]
@@ -58,12 +64,6 @@ one-sentence description — no prose, no markdown fences.
 - "id_route_put": "PUT()" | kind=code-symbol | source=app/api/registrations/[id]/route.js:L79 | neighbors=[route.js, serializeData()]
 - "improve_route_callgemini": "callGemini()" | kind=code-symbol | source=app/api/ai/improve/route.js:L6 | neighbors=[route.js, POST()]
 - "improve_route_post": "POST()" | kind=code-symbol | source=app/api/ai/improve/route.js:L44 | neighbors=[route.js, callGemini()]
-- "indexeddb_db": "db.js" | kind=code-symbol | source=app/indexedDB/db.js:L1 | neighbors=[252e194 e, 2b2534c f]
-- "leads_route": "route.js" | kind=code-symbol | source=app/api/leads/route.js:L1 | neighbors=[252e194 e, POST()]
-- "lib_auth_requireadmin": "requireAdmin()" | kind=code-symbol | source=lib/auth.js:L81 | neighbors=[auth.js, verifyToken()]
-- "lib_auth_requiresuperadmin": "requireSuperAdmin()" | kind=code-symbol | source=lib/auth.js:L156 | neighbors=[auth.js, verifyToken()]
-- "lib_auth_requireuser": "requireUser()" | kind=code-symbol | source=lib/auth.js:L23 | neighbors=[auth.js, verifyToken()]
-- "lib_auth_verifysuperadminapi": "verifySuperAdminAPI()" | kind=code-symbol | source=lib/auth.js:L190 | neighbors=[auth.js, verifyToken()]
 
 ## Instructions
 

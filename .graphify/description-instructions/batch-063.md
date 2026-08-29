@@ -17,6 +17,12 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "generated_client_index_d_admintrackingupdateinput": "AdminTrackingUpdateInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L39724 | neighbors=[index.d.ts]
+- "generated_client_index_d_admintrackingupdatemanyargs": "AdminTrackingUpdateManyArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L27708 | neighbors=[index.d.ts]
+- "generated_client_index_d_admintrackingupdatemanymutationinput": "AdminTrackingUpdateManyMutationInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L39759 | neighbors=[index.d.ts]
+- "generated_client_index_d_admintrackingupdatemanywithoutadminnestedinput": "AdminTrackingUpdateManyWithoutAdminNestedInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L43573 | neighbors=[index.d.ts]
+- "generated_client_index_d_admintrackingupdatemanywithwherewithoutadmininput": "AdminTrackingUpdateManyWithWhereWithoutAdminInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L47205 | neighbors=[index.d.ts]
+- "generated_client_index_d_admintrackingupdatewithoutadmininput": "AdminTrackingUpdateWithoutAdminInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L52914 | neighbors=[index.d.ts]
 - "generated_client_index_d_admintrackingupdatewithwhereuniquewithoutadmininput": "AdminTrackingUpdateWithWhereUniqueWithoutAdminInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L47200 | neighbors=[index.d.ts]
 - "generated_client_index_d_admintrackingupsertargs": "AdminTrackingUpsertArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L27722 | neighbors=[index.d.ts]
 - "generated_client_index_d_admintrackingupsertwithwhereuniquewithoutadmininput": "AdminTrackingUpsertWithWhereUniqueWithoutAdminInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L47194 | neighbors=[index.d.ts]
@@ -51,12 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "generated_client_index_d_adminupdatemanywithoutworkspacenestedinput": "AdminUpdateManyWithoutWorkspaceNestedInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L42899 | neighbors=[index.d.ts]
 - "generated_client_index_d_adminupdatemanywithwherewithoutroleinput": "AdminUpdateManyWithWhereWithoutRoleInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L47474 | neighbors=[index.d.ts]
 - "generated_client_index_d_adminupdatemanywithwherewithoutworkspaceinput": "AdminUpdateManyWithWhereWithoutWorkspaceInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L45734 | neighbors=[index.d.ts]
-- "generated_client_index_d_adminupdateonerequiredwithoutaddressnestedinput": "AdminUpdateOneRequiredWithoutAddressNestedInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L44619 | neighbors=[index.d.ts]
-- "generated_client_index_d_adminupdateonerequiredwithoutsessionsnestedinput": "AdminUpdateOneRequiredWithoutSessionsNestedInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L43659 | neighbors=[index.d.ts]
-- "generated_client_index_d_adminupdateonewithoutregistrationsnestedinput": "AdminUpdateOneWithoutRegistrationsNestedInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L44241 | neighbors=[index.d.ts]
-- "generated_client_index_d_adminupdateonewithouttrackingsnestedinput": "AdminUpdateOneWithoutTrackingsNestedInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L44647 | neighbors=[index.d.ts]
-- "generated_client_index_d_adminupdatetoonewithwherewithoutaddressinput": "AdminUpdateToOneWithWhereWithoutAddressInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L50267 | neighbors=[index.d.ts]
-- "generated_client_index_d_adminupdatetoonewithwherewithoutregistrationsinput": "AdminUpdateToOneWithWhereWithoutRegistrationsInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L48773 | neighbors=[index.d.ts]
 
 ## Instructions
 

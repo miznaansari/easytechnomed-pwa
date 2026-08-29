@@ -17,6 +17,9 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "runtime_library_nn": "nn()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L21 | neighbors=[library.js, He(), e(), y()]
+- "runtime_library_np": "np()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L21 | neighbors=[library.js, addErrorMessage(), Hs(), markAsError()]
+- "runtime_library_ns": "ns()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L18 | neighbors=[library.js, ac(), rs(), zt()]
 - "runtime_library_oc": "oc()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L3 | neighbors=[library.js, ci(), forEach(), ic()]
 - "runtime_library_ot": "Ot()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L29 | neighbors=[library.js, ha(), om(), wn()]
 - "runtime_library_pt": "Pt()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L21 | neighbors=[library.js, Br(), sa(), xl()]
@@ -54,9 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "runtime_react_native_highlight": "highlight()" | kind=code-symbol | source=scratch/generated-client/runtime/react-native.js:L4 | neighbors=[react-native.js, e(), io(), toString()]
 - "runtime_react_native_hu": "Hu()" | kind=code-symbol | source=scratch/generated-client/runtime/react-native.js:L9 | neighbors=[react-native.js, addSuggestion(), hasField(), u()]
 - "runtime_react_native_ia": "Ia()" | kind=code-symbol | source=scratch/generated-client/runtime/react-native.js:L1 | neighbors=[react-native.js, di(), et(), Tt()]
-- "runtime_react_native_indentedcurrentline": "indentedCurrentLine()" | kind=code-symbol | source=scratch/generated-client/runtime/react-native.js:L8 | neighbors=[react-native.js, slice(), newLine(), toString()]
-- "runtime_react_native_io": "io()" | kind=code-symbol | source=scratch/generated-client/runtime/react-native.js:L2 | neighbors=[react-native.js, highlight(), An(), bu()]
-- "runtime_react_native_isempty": "isEmpty()" | kind=code-symbol | source=scratch/generated-client/runtime/react-native.js:L8 | neighbors=[react-native.js, nu(), os(), us()]
 
 ## Instructions
 

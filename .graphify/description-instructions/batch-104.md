@@ -17,6 +17,12 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "generated_client_index_d_testformulaorderbywithaggregationinput": "TestFormulaOrderByWithAggregationInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L36928 | neighbors=[index.d.ts]
+- "generated_client_index_d_testformulaorderbywithrelationinput": "TestFormulaOrderByWithRelationInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L36890 | neighbors=[index.d.ts]
+- "generated_client_index_d_testformulapayload": "$TestFormulaPayload" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L29995 | neighbors=[index.d.ts]
+- "generated_client_index_d_testformulascalarfieldenum": "TestFormulaScalarFieldEnum" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L34348 | neighbors=[index.d.ts]
+- "generated_client_index_d_testformulascalarwhereinput": "TestFormulaScalarWhereInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L46062 | neighbors=[index.d.ts]
+- "generated_client_index_d_testformulascalarwherewithaggregatesinput": "TestFormulaScalarWhereWithAggregatesInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L36947 | neighbors=[index.d.ts]
 - "generated_client_index_d_testformulaselect": "TestFormulaSelect" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L29957 | neighbors=[index.d.ts]
 - "generated_client_index_d_testformulaselectscalar": "TestFormulaSelectScalar" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L29975 | neighbors=[index.d.ts]
 - "generated_client_index_d_testformulasumaggregateinputtype": "TestFormulaSumAggregateInputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L29787 | neighbors=[index.d.ts]
@@ -51,12 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "generated_client_index_d_testformulaupdatemanywithwherewithouttestinput": "TestFormulaUpdateManyWithWhereWithoutTestInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L48284 | neighbors=[index.d.ts]
 - "generated_client_index_d_testformulaupdatemanywithwherewithoutworkspaceinput": "TestFormulaUpdateManyWithWhereWithoutWorkspaceInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L46057 | neighbors=[index.d.ts]
 - "generated_client_index_d_testformulaupdatewithoutoutputparameterinput": "TestFormulaUpdateWithoutOutputParameterInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L54057 | neighbors=[index.d.ts]
-- "generated_client_index_d_testformulaupdatewithouttestinput": "TestFormulaUpdateWithoutTestInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L53744 | neighbors=[index.d.ts]
-- "generated_client_index_d_testformulaupdatewithoutworkspaceinput": "TestFormulaUpdateWithoutWorkspaceInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L52550 | neighbors=[index.d.ts]
-- "generated_client_index_d_testformulaupdatewithwhereuniquewithoutoutputparameterinput": "TestFormulaUpdateWithWhereUniqueWithoutOutputParameterInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L49436 | neighbors=[index.d.ts]
-- "generated_client_index_d_testformulaupdatewithwhereuniquewithouttestinput": "TestFormulaUpdateWithWhereUniqueWithoutTestInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L48279 | neighbors=[index.d.ts]
-- "generated_client_index_d_testformulaupdatewithwhereuniquewithoutworkspaceinput": "TestFormulaUpdateWithWhereUniqueWithoutWorkspaceInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L46052 | neighbors=[index.d.ts]
-- "generated_client_index_d_testformulaupsertargs": "TestFormulaUpsertArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L30644 | neighbors=[index.d.ts]
 
 ## Instructions
 

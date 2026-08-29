@@ -17,6 +17,12 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "generated_client_index_d_registrationfindmanyargs": "RegistrationFindManyArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L18269 | neighbors=[index.d.ts]
+- "generated_client_index_d_registrationfinduniqueargs": "RegistrationFindUniqueArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L18137 | neighbors=[index.d.ts]
+- "generated_client_index_d_registrationfinduniqueorthrowargs": "RegistrationFindUniqueOrThrowArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L18155 | neighbors=[index.d.ts]
+- "generated_client_index_d_registrationgetpayload": "RegistrationGetPayload" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L17718 | neighbors=[index.d.ts]
+- "generated_client_index_d_registrationgroupbyargs": "RegistrationGroupByArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L17480 | neighbors=[index.d.ts]
+- "generated_client_index_d_registrationgroupbyoutputtype": "RegistrationGroupByOutputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L17494 | neighbors=[index.d.ts]
 - "generated_client_index_d_registrationinclude": "RegistrationInclude" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L17651 | neighbors=[index.d.ts]
 - "generated_client_index_d_registrationlistrelationfilter": "RegistrationListRelationFilter" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L40431 | neighbors=[index.d.ts]
 - "generated_client_index_d_registrationmaxaggregateinputtype": "RegistrationMaxAggregateInputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L17321 | neighbors=[index.d.ts]
@@ -51,12 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "generated_client_index_d_registrationpaymentdefaultargs": "RegistrationPaymentDefaultArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L25901 | neighbors=[index.d.ts]
 - "generated_client_index_d_registrationpaymentdelegate": "RegistrationPaymentDelegate" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L25233 | neighbors=[index.d.ts]
 - "generated_client_index_d_registrationpaymentdeleteargs": "RegistrationPaymentDeleteArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L25873 | neighbors=[index.d.ts]
-- "generated_client_index_d_registrationpaymentdeletemanyargs": "RegistrationPaymentDeleteManyArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L25891 | neighbors=[index.d.ts]
-- "generated_client_index_d_registrationpaymentfieldrefs": "RegistrationPaymentFieldRefs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L25591 | neighbors=[index.d.ts]
-- "generated_client_index_d_registrationpaymentfindfirstargs": "RegistrationPaymentFindFirstArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L25643 | neighbors=[index.d.ts]
-- "generated_client_index_d_registrationpaymentfindfirstorthrowargs": "RegistrationPaymentFindFirstOrThrowArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L25691 | neighbors=[index.d.ts]
-- "generated_client_index_d_registrationpaymentfindmanyargs": "RegistrationPaymentFindManyArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L25739 | neighbors=[index.d.ts]
-- "generated_client_index_d_registrationpaymentfinduniqueargs": "RegistrationPaymentFindUniqueArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L25607 | neighbors=[index.d.ts]
 
 ## Instructions
 

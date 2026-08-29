@@ -17,6 +17,12 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "generated_client_index_d_nestedstringfilter": "NestedStringFilter" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L44842 | neighbors=[index.d.ts]
+- "generated_client_index_d_nestedstringnullablefilter": "NestedStringNullableFilter" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L44974 | neighbors=[index.d.ts]
+- "generated_client_index_d_nestedstringnullablewithaggregatesfilter": "NestedStringNullableWithAggregatesFilter" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L44988 | neighbors=[index.d.ts]
+- "generated_client_index_d_nestedstringwithaggregatesfilter": "NestedStringWithAggregatesFilter" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L44910 | neighbors=[index.d.ts]
+- "generated_client_index_d_noexpand": "NoExpand" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L895 | neighbors=[index.d.ts]
+- "generated_client_index_d_not": "Not" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L926 | neighbors=[index.d.ts]
 - "generated_client_index_d_nullabledatetimefieldupdateoperationsinput": "NullableDateTimeFieldUpdateOperationsInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L42887 | neighbors=[index.d.ts]
 - "generated_client_index_d_nullabledecimalfieldupdateoperationsinput": "NullableDecimalFieldUpdateOperationsInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L43983 | neighbors=[index.d.ts]
 - "generated_client_index_d_nullablefloatfieldupdateoperationsinput": "NullableFloatFieldUpdateOperationsInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L44397 | neighbors=[index.d.ts]
@@ -51,12 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "generated_client_index_d_parametercreateinput": "ParameterCreateInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L38902 | neighbors=[index.d.ts]
 - "generated_client_index_d_parametercreatemanyargs": "ParameterCreateManyArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L20816 | neighbors=[index.d.ts]
 - "generated_client_index_d_parametercreatemanyinput": "ParameterCreateManyInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L39064 | neighbors=[index.d.ts]
-- "generated_client_index_d_parametercreatemanyworkspaceinput": "ParameterCreateManyWorkspaceInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L51889 | neighbors=[index.d.ts]
-- "generated_client_index_d_parametercreatemanyworkspaceinputenvelope": "ParameterCreateManyWorkspaceInputEnvelope" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L45527 | neighbors=[index.d.ts]
-- "generated_client_index_d_parametercreatenestedmanywithoutworkspaceinput": "ParameterCreateNestedManyWithoutWorkspaceInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L42772 | neighbors=[index.d.ts]
-- "generated_client_index_d_parametercreatenestedonewithoutinterpretationrulesinput": "ParameterCreateNestedOneWithoutInterpretationRulesInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L44771 | neighbors=[index.d.ts]
-- "generated_client_index_d_parametercreatenestedonewithouttestformulasinput": "ParameterCreateNestedOneWithoutTestFormulasInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L44727 | neighbors=[index.d.ts]
-- "generated_client_index_d_parametercreatenestedonewithouttestmappingsinput": "ParameterCreateNestedOneWithoutTestMappingsInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L44512 | neighbors=[index.d.ts]
 
 ## Instructions
 

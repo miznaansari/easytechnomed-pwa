@@ -17,6 +17,13 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "component_differentialcounttracker_calculatedifferentialsummary": "calculateDifferentialSummary()" | kind=code-symbol | source=app/(customer)/(dashboard)/test-report/component/DifferentialCountTracker.jsx:L91 | neighbors=[DifferentialCountTracker.jsx, DifferentialHeaderBadge(), validateDifferentialOnSave()]
+- "component_differentialcounttracker_differentialheaderbadge": "DifferentialHeaderBadge()" | kind=code-symbol | source=app/(customer)/(dashboard)/test-report/component/DifferentialCountTracker.jsx:L197 | neighbors=[DifferentialCountTracker.jsx, calculateDifferentialSummary(), isDifferentialHeader()]
+- "component_moneyreciptmobile": "MoneyReciptMobile.jsx" | kind=code-symbol | source=app/(customer)/(dashboard)/test-report/component/MoneyReciptMobile.jsx:L1 | neighbors=[252e194 e, MoneyRecipt.jsx, MoneyReciptMobile()]
+- "component_resultentrymobile": "resultEntryMobile.jsx" | kind=code-symbol | source=app/(customer)/(dashboard)/test-report/component/resultEntryMobile.jsx:L1 | neighbors=[252e194 e, resultEntry.jsx, ResultEntryMobile()]
+- "components_adddoctordrawer": "AddDoctorDrawer.js" | kind=code-symbol | source=components/AddDoctorDrawer.js:L1 | neighbors=[252e194 e, 84a8ff2 full indexeddb based, AddDoctorDrawer()]
+- "components_expiredplanview": "ExpiredPlanView.jsx" | kind=code-symbol | source=components/ExpiredPlanView.jsx:L1 | neighbors=[252e194 e, 6236f60 new update, ExpiredPlanView()]
+- "doctor_summary_route": "route.js" | kind=code-symbol | source=app/api/doctor-summary/route.js:L1 | neighbors=[252e194 e, GET(), serializeData()]
 - "id_route_serializedata": "serializeData()" | kind=code-symbol | source=app/api/registrations/[id]/route.js:L7 | neighbors=[route.js, GET(), PUT()]
 - "improve_route": "route.js" | kind=code-symbol | source=app/api/ai/improve/route.js:L1 | neighbors=[252e194 e, callGemini(), POST()]
 - "lib_formulautils_addpatientcontexttovaluesmap": "addPatientContextToValuesMap()" | kind=code-symbol | source=lib/formulaUtils.js:L278 | neighbors=[formulaEngine.js, formulaUtils.js, calculateAllDependents()]
@@ -30,7 +37,6 @@ one-sentence description — no prose, no markdown fences.
 - "offline_network_networkmonitor_handlestatuschange": ".handleStatusChange()" | kind=code-symbol | source=lib/offline/network.js:L17 | neighbors=[NetworkMonitor, .checkConnection(), .notifyListeners()]
 - "offline_offlineprint_printbilloffline": "printBillOffline()" | kind=code-symbol | source=lib/offline/offlinePrint.js:L57 | neighbors=[offlinePrint.js, formatDate(), numberToWords()]
 - "offline_registrationidentity_generaterandomsuffix": "generateRandomSuffix()" | kind=code-symbol | source=lib/offline/registrationIdentity.js:L8 | neighbors=[registrationIdentity.js, generateNextRegistrationIdentity(), test_identity_and_qr.mjs]
-- "offline_reloginmodal": "ReLoginModal.jsx" | kind=code-symbol | source=components/offline/ReLoginModal.jsx:L1 | neighbors=[6236f60 new update, 9f59247 expire token, ReLoginModal()]
 - "offline_timestamps_getutcisonow": "getUtcIsoNow()" | kind=code-symbol | source=lib/offline/timestamps.js:L10 | neighbors=[db.js, timestamps.js, syncManager.js]
 - "offline_unsyncedlogoutmodal": "UnsyncedLogoutModal.jsx" | kind=code-symbol | source=components/offline/UnsyncedLogoutModal.jsx:L1 | neighbors=[2b2534c f, 6236f60 new update, UnsyncedLogoutModal()]
 - "payments_page": "page.js" | kind=code-symbol | source=app/(customer)/(dashboard)/settings/payments/page.js:L1 | neighbors=[252e194 e, SettingsPaymentsPage(), paymentsClient.jsx]
@@ -51,12 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "runtime_edge_di": "di()" | kind=code-symbol | source=scratch/generated-client/runtime/edge.js:L1 | neighbors=[edge.js, on(), va()]
 - "runtime_edge_ei": "Ei()" | kind=code-symbol | source=scratch/generated-client/runtime/edge.js:L1 | neighbors=[edge.js, bi(), xi()]
 - "runtime_edge_empty": "empty()" | kind=code-symbol | source=scratch/generated-client/runtime/edge.js:L5 | neighbors=[edge.js, edge.js, e()]
-- "runtime_edge_es": "es()" | kind=code-symbol | source=scratch/generated-client/runtime/edge.js:L6 | neighbors=[edge.js, oc(), sc()]
-- "runtime_edge_esm_a": "a()" | kind=code-symbol | source=scratch/generated-client/runtime/edge-esm.js:L1 | neighbors=[edge-esm.js, g(), l()]
-- "runtime_edge_esm_ai": "ai()" | kind=code-symbol | source=scratch/generated-client/runtime/edge-esm.js:L1 | neighbors=[edge-esm.js, ga(), tn()]
-- "runtime_edge_esm_append": "append()" | kind=code-symbol | source=scratch/generated-client/runtime/edge-esm.js:L5 | neighbors=[edge-esm.js, e(), is()]
-- "runtime_edge_esm_as": "as()" | kind=code-symbol | source=scratch/generated-client/runtime/edge-esm.js:L6 | neighbors=[edge-esm.js, Br(), isEmpty()]
-- "runtime_edge_esm_bt": "bt()" | kind=code-symbol | source=scratch/generated-client/runtime/edge-esm.js:L25 | neighbors=[edge-esm.js, Ra(), T()]
 
 ## Instructions
 

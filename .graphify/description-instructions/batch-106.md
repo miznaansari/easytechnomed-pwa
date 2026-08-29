@@ -17,6 +17,12 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "generated_client_index_d_testparametercountoutputtypecountresultsargs": "TestParameterCountOutputTypeCountResultsArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L3667 | neighbors=[index.d.ts]
+- "generated_client_index_d_testparametercountoutputtypedefaultargs": "TestParameterCountOutputTypeDefaultArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L3657 | neighbors=[index.d.ts]
+- "generated_client_index_d_testparametercountoutputtypeselect": "TestParameterCountOutputTypeSelect" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L3649 | neighbors=[index.d.ts]
+- "generated_client_index_d_testparametercreateargs": "TestParameterCreateArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L21978 | neighbors=[index.d.ts]
+- "generated_client_index_d_testparametercreateinput": "TestParameterCreateInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L39176 | neighbors=[index.d.ts]
+- "generated_client_index_d_testparametercreatemanyargs": "TestParameterCreateManyArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L21996 | neighbors=[index.d.ts]
 - "generated_client_index_d_testparametercreatemanyinput": "TestParameterCreateManyInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L39266 | neighbors=[index.d.ts]
 - "generated_client_index_d_testparametercreatemanyparameterinput": "TestParameterCreateManyParameterInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L53949 | neighbors=[index.d.ts]
 - "generated_client_index_d_testparametercreatemanyparameterinputenvelope": "TestParameterCreateManyParameterInputEnvelope" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L49293 | neighbors=[index.d.ts]
@@ -51,12 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "generated_client_index_d_testparametergroupbyoutputtype": "TestParameterGroupByOutputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L21277 | neighbors=[index.d.ts]
 - "generated_client_index_d_testparameterinclude": "TestParameterInclude" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L21368 | neighbors=[index.d.ts]
 - "generated_client_index_d_testparameterlistrelationfilter": "TestParameterListRelationFilter" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L40455 | neighbors=[index.d.ts]
-- "generated_client_index_d_testparametermaxaggregateinputtype": "TestParameterMaxAggregateInputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L21146 | neighbors=[index.d.ts]
-- "generated_client_index_d_testparametermaxaggregateoutputtype": "TestParameterMaxAggregateOutputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L21058 | neighbors=[index.d.ts]
-- "generated_client_index_d_testparametermaxorderbyaggregateinput": "TestParameterMaxOrderByAggregateInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L42031 | neighbors=[index.d.ts]
-- "generated_client_index_d_testparameterminaggregateinputtype": "TestParameterMinAggregateInputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L21124 | neighbors=[index.d.ts]
-- "generated_client_index_d_testparameterminaggregateoutputtype": "TestParameterMinAggregateOutputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L21036 | neighbors=[index.d.ts]
-- "generated_client_index_d_testparameterminorderbyaggregateinput": "TestParameterMinOrderByAggregateInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L42053 | neighbors=[index.d.ts]
 
 ## Instructions
 

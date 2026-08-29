@@ -17,6 +17,12 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "generated_client_index_d_testcountoutputtypedefaultargs": "TestCountOutputTypeDefaultArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L3507 | neighbors=[index.d.ts]
+- "generated_client_index_d_testcountoutputtypeselect": "TestCountOutputTypeSelect" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L3496 | neighbors=[index.d.ts]
+- "generated_client_index_d_testcreateargs": "TestCreateArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L16822 | neighbors=[index.d.ts]
+- "generated_client_index_d_testcreateinput": "TestCreateInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L38307 | neighbors=[index.d.ts]
+- "generated_client_index_d_testcreatemanyargs": "TestCreateManyArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L16840 | neighbors=[index.d.ts]
+- "generated_client_index_d_testcreatemanydepartmentinput": "TestCreateManyDepartmentInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L54163 | neighbors=[index.d.ts]
 - "generated_client_index_d_testcreatemanydepartmentinputenvelope": "TestCreateManyDepartmentInputEnvelope" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L50771 | neighbors=[index.d.ts]
 - "generated_client_index_d_testcreatemanyinput": "TestCreateManyInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L38417 | neighbors=[index.d.ts]
 - "generated_client_index_d_testcreatemanyworkspaceinput": "TestCreateManyWorkspaceInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L51847 | neighbors=[index.d.ts]
@@ -51,12 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "generated_client_index_d_testdepartmentavgaggregateoutputtype": "TestDepartmentAvgAggregateOutputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L28795 | neighbors=[index.d.ts]
 - "generated_client_index_d_testdepartmentavgorderbyaggregateinput": "TestDepartmentAvgOrderByAggregateInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L42425 | neighbors=[index.d.ts]
 - "generated_client_index_d_testdepartmentcountaggregateinputtype": "TestDepartmentCountAggregateInputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L28848 | neighbors=[index.d.ts]
-- "generated_client_index_d_testdepartmentcountaggregateoutputtype": "TestDepartmentCountAggregateOutputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L28817 | neighbors=[index.d.ts]
-- "generated_client_index_d_testdepartmentcountargs": "TestDepartmentCountArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L29006 | neighbors=[index.d.ts]
-- "generated_client_index_d_testdepartmentcountorderbyaggregateinput": "TestDepartmentCountOrderByAggregateInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L42418 | neighbors=[index.d.ts]
-- "generated_client_index_d_testdepartmentcountoutputtype": "TestDepartmentCountOutputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L3676 | neighbors=[index.d.ts]
-- "generated_client_index_d_testdepartmentcountoutputtypeargs": "TestDepartmentCountOutputTypeArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L54314 | neighbors=[index.d.ts]
-- "generated_client_index_d_testdepartmentcountoutputtypecounttestsargs": "TestDepartmentCountOutputTypeCountTestsArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L3698 | neighbors=[index.d.ts]
 
 ## Instructions
 

@@ -44,6 +44,7 @@ one-sentence description — no prose, no markdown fences.
 - "test_route": "route.js" | kind=code-symbol | source=app/api/n8n/test/route.js:L1 | neighbors=[252e194 e, GET(), parseNullableFloat(), parseNullableOptions(), parseNullableString(), POST()] | lang=en
 - "address_page": "page.js" | kind=code-symbol | source=app/(customer)/(dashboard)/settings/address/page.js:L1 | neighbors=[AddressSettingsPage(), 252e194 e, 84a8ff2 full indexeddb based, aae6bad fixed, cf2bb98 new] | lang=en
 - "app_manifest": "manifest.js" | kind=code-symbol | source=app/manifest.js:L1 | neighbors=[manifest(), 252e194 e, 37dcb32 fixed, 4ba60cc fixed, 5e3d9ef d] | lang=en
+- "commit:repo:github.com-personal/miznaansari/easytechnomed-pwa@10501e3454d7177be010f1cff61c9e80f5a3c199": "10501e3 fixed" | kind=Commit | source=git | neighbors=[offlineAuth.js, main, 36209a9 3.1.6, AdminLayoutClient.js, 6adf550 3.1.4] | lang=en
 - "commit:repo:github.com-personal/miznaansari/easytechnomed-pwa@165f0578340e3cacf36b181128a45d5d4cb3be36": "165f057 f" | kind=Commit | source=git | neighbors=[offlineAuth.js, main, c82cfd7 3.0.10, LoginPageClient.js, 8065d22 3.0.8] | lang=en
 - "commit:repo:github.com-personal/miznaansari/easytechnomed-pwa@37dcb32f78d04df212ec59d53db20e631fe28445": "37dcb32 fixed" | kind=Commit | source=git | neighbors=[manifest.js, main, f9e9bea 2.0.8, AdminLayoutClient.js, ec70d21 2.0.7] | lang=en
 - "commit:repo:github.com-personal/miznaansari/easytechnomed-pwa@47b203242f9b38ab41626f6c5e7a4bab998b6664": "47b2032 ios issue pwa" | kind=Commit | source=git | neighbors=[layout.js, main, 9d71afc 3.0.22, sw.js, a09f0a9 3.0.21] | lang=en
@@ -65,7 +66,6 @@ one-sentence description — no prose, no markdown fences.
 - "lib_auth_verifytoken": "verifyToken()" | kind=code-symbol | source=lib/auth.js:L12 | neighbors=[auth.js, requireAdmin(), requireSuperAdmin(), requireUser(), verifySuperAdminAPI()] | lang=en
 - "lib_clientauth": "clientAuth.js" | kind=code-symbol | source=lib/clientAuth.js:L1 | neighbors=[252e194 e, 4d7570f fixed, 84a8ff2 full indexeddb based, cf2bb98 new, useAdminPermissions()] | lang=en
 - "lib_formulaengine_runformulaengine": "runFormulaEngine()" | kind=code-symbol | source=lib/formulaEngine.js:L33 | neighbors=[formulaEngine.js, check-reg-17.js, test-fix-reg-17.js, test-formula-run.js, test-reg-15.js] | lang=en
-- "lib_mail": "mail.js" | kind=code-symbol | source=lib/mail.js:L1 | neighbors=[252e194 e, sendApprovalEmail(), sendRejectionEmail(), sendVerificationEmail(), transporter] | lang=en
 
 ## Instructions
 

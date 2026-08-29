@@ -17,6 +17,13 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "scratch_check_data_prisma": "prisma" | kind=code-symbol | source=scratch/check-data.js:L2 | neighbors=[check-data.js]
+- "scratch_check_data_prismaclient": "{ PrismaClient }" | kind=code-symbol | source=scratch/check-data.js:L1 | neighbors=[check-data.js]
+- "scratch_check_formulas_2398_main": "main()" | kind=code-symbol | source=scratch/check-formulas-2398.js:L4 | neighbors=[check-formulas-2398.js]
+- "scratch_check_formulas_2398_prisma": "prisma" | kind=code-symbol | source=scratch/check-formulas-2398.js:L2 | neighbors=[check-formulas-2398.js]
+- "scratch_check_formulas_2398_prismaclient": "{ PrismaClient }" | kind=code-symbol | source=scratch/check-formulas-2398.js:L1 | neighbors=[check-formulas-2398.js]
+- "scratch_check_formulas_main": "main()" | kind=code-symbol | source=scratch/check-formulas.js:L4 | neighbors=[check-formulas.js]
+- "scratch_check_formulas_prisma": "prisma" | kind=code-symbol | source=scratch/check-formulas.js:L2 | neighbors=[check-formulas.js]
 - "scratch_check_formulas_prismaclient": "{ PrismaClient }" | kind=code-symbol | source=scratch/check-formulas.js:L1 | neighbors=[check-formulas.js]
 - "scratch_check_kft_all_main": "main()" | kind=code-symbol | source=scratch/check-kft-all.js:L4 | neighbors=[check-kft-all.js]
 - "scratch_check_kft_all_prisma": "prisma" | kind=code-symbol | source=scratch/check-kft-all.js:L2 | neighbors=[check-kft-all.js]
@@ -50,13 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "scratch_test_dlc_calc_calculatedifferentialsummary": "{ calculateDifferentialSummary }" | kind=code-symbol | source=scratch/test-dlc-calc.js:L1 | neighbors=[test-dlc-calc.js]
 - "scratch_test_dlc_calc_params": "params" | kind=code-symbol | source=scratch/test-dlc-calc.js:L4 | neighbors=[test-dlc-calc.js]
 - "scratch_test_dlc_calc_values1": "values1" | kind=code-symbol | source=scratch/test-dlc-calc.js:L19 | neighbors=[test-dlc-calc.js]
-- "scratch_test_dlc_calc_values2": "values2" | kind=code-symbol | source=scratch/test-dlc-calc.js:L32 | neighbors=[test-dlc-calc.js]
-- "scratch_test_fix_reg_17_main": "main()" | kind=code-symbol | source=scratch/test-fix-reg-17.js:L6 | neighbors=[test-fix-reg-17.js]
-- "scratch_test_fix_reg_17_prisma": "prisma" | kind=code-symbol | source=scratch/test-fix-reg-17.js:L4 | neighbors=[test-fix-reg-17.js]
-- "scratch_test_formula_calc_checkformuladependencies": "checkFormulaDependencies()" | kind=code-symbol | source=scratch/test-formula-calc.js:L87 | neighbors=[test-formula-calc.js]
-- "scratch_test_formula_calc_evaluateexpression": "evaluateExpression()" | kind=code-symbol | source=scratch/test-formula-calc.js:L1 | neighbors=[test-formula-calc.js]
-- "scratch_test_formula_calc_resf": "resF" | kind=code-symbol | source=scratch/test-formula-calc.js:L141 | neighbors=[test-formula-calc.js]
-- "scratch_test_formula_calc_resm": "resM" | kind=code-symbol | source=scratch/test-formula-calc.js:L146 | neighbors=[test-formula-calc.js]
 
 ## Instructions
 

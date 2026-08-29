@@ -17,6 +17,12 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "generated_client_index_d_doctoruncheckedupdatemanywithoutworkspacenestedinput": "DoctorUncheckedUpdateManyWithoutWorkspaceNestedInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L43049 | neighbors=[index.d.ts]
+- "generated_client_index_d_doctoruncheckedupdatewithoutincentivehistoryinput": "DoctorUncheckedUpdateWithoutIncentiveHistoryInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L51648 | neighbors=[index.d.ts]
+- "generated_client_index_d_doctoruncheckedupdatewithoutregistrationsinput": "DoctorUncheckedUpdateWithoutRegistrationsInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L48651 | neighbors=[index.d.ts]
+- "generated_client_index_d_doctoruncheckedupdatewithoutsecondregistrationsinput": "DoctorUncheckedUpdateWithoutSecondRegistrationsInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L48697 | neighbors=[index.d.ts]
+- "generated_client_index_d_doctoruncheckedupdatewithoutworkspaceinput": "DoctorUncheckedUpdateWithoutWorkspaceInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L52072 | neighbors=[index.d.ts]
+- "generated_client_index_d_doctorupdateargs": "DoctorUpdateArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L15621 | neighbors=[index.d.ts]
 - "generated_client_index_d_doctorupdateinput": "DoctorUpdateInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L38224 | neighbors=[index.d.ts]
 - "generated_client_index_d_doctorupdatemanyargs": "DoctorUpdateManyArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L15643 | neighbors=[index.d.ts]
 - "generated_client_index_d_doctorupdatemanymutationinput": "DoctorUpdateManyMutationInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L38277 | neighbors=[index.d.ts]
@@ -51,12 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "generated_client_index_d_false": "False" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L924 | neighbors=[index.d.ts]
 - "generated_client_index_d_fieldpaths": "FieldPaths" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L970 | neighbors=[index.d.ts]
 - "generated_client_index_d_fieldref": "FieldRef" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L1009 | neighbors=[index.d.ts]
-- "generated_client_index_d_fieldrefinputtype": "FieldRefInputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L1011 | neighbors=[index.d.ts]
-- "generated_client_index_d_floatfieldrefinput": "FloatFieldRefInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L34473 | neighbors=[index.d.ts]
-- "generated_client_index_d_floatfieldupdateoperationsinput": "FloatFieldUpdateOperationsInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L44189 | neighbors=[index.d.ts]
-- "generated_client_index_d_floatfilter": "FloatFilter" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L41490 | neighbors=[index.d.ts]
-- "generated_client_index_d_floatnullablefilter": "FloatNullableFilter" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L41794 | neighbors=[index.d.ts]
-- "generated_client_index_d_floatnullablewithaggregatesfilter": "FloatNullableWithAggregatesFilter" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L41978 | neighbors=[index.d.ts]
 
 ## Instructions
 

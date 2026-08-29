@@ -17,6 +17,12 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "generated_client_index_d_superadmincountaggregateoutputtype": "SuperAdminCountAggregateOutputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L4939 | neighbors=[index.d.ts]
+- "generated_client_index_d_superadmincountargs": "SuperAdminCountArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L5147 | neighbors=[index.d.ts]
+- "generated_client_index_d_superadmincountorderbyaggregateinput": "SuperAdminCountOrderByAggregateInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L40654 | neighbors=[index.d.ts]
+- "generated_client_index_d_superadmincountoutputtype": "SuperAdminCountOutputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L3240 | neighbors=[index.d.ts]
+- "generated_client_index_d_superadmincountoutputtypeargs": "SuperAdminCountOutputTypeArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L54274 | neighbors=[index.d.ts]
+- "generated_client_index_d_superadmincountoutputtypecountsessionsargs": "SuperAdminCountOutputTypeCountSessionsArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L3264 | neighbors=[index.d.ts]
 - "generated_client_index_d_superadmincountoutputtypecounttrackingsargs": "SuperAdminCountOutputTypeCountTrackingsArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L3271 | neighbors=[index.d.ts]
 - "generated_client_index_d_superadmincountoutputtypedefaultargs": "SuperAdminCountOutputTypeDefaultArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L3254 | neighbors=[index.d.ts]
 - "generated_client_index_d_superadmincountoutputtypeselect": "SuperAdminCountOutputTypeSelect" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L3245 | neighbors=[index.d.ts]
@@ -51,12 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "generated_client_index_d_superadminminaggregateoutputtype": "SuperAdminMinAggregateOutputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L4921 | neighbors=[index.d.ts]
 - "generated_client_index_d_superadminminorderbyaggregateinput": "SuperAdminMinOrderByAggregateInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L40676 | neighbors=[index.d.ts]
 - "generated_client_index_d_superadminnullablerelationfilter": "SuperAdminNullableRelationFilter" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L42365 | neighbors=[index.d.ts]
-- "generated_client_index_d_superadminorderbywithaggregationinput": "SuperAdminOrderByWithAggregationInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L34623 | neighbors=[index.d.ts]
-- "generated_client_index_d_superadminorderbywithrelationinput": "SuperAdminOrderByWithRelationInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L34598 | neighbors=[index.d.ts]
-- "generated_client_index_d_superadminpayload": "$SuperAdminPayload" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L5128 | neighbors=[index.d.ts]
-- "generated_client_index_d_superadminrelationfilter": "SuperAdminRelationFilter" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L40703 | neighbors=[index.d.ts]
-- "generated_client_index_d_superadminscalarfieldenum": "SuperAdminScalarFieldEnum" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L33915 | neighbors=[index.d.ts]
-- "generated_client_index_d_superadminscalarwherewithaggregatesinput": "SuperAdminScalarWhereWithAggregatesInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L34637 | neighbors=[index.d.ts]
 
 ## Instructions
 

@@ -17,6 +17,12 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "generated_client_index_d_adminrolepermissionscalarfieldenum": "AdminRolePermissionScalarFieldEnum" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L34043 | neighbors=[index.d.ts]
+- "generated_client_index_d_adminrolepermissionscalarwhereinput": "AdminRolePermissionScalarWhereInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L47495 | neighbors=[index.d.ts]
+- "generated_client_index_d_adminrolepermissionscalarwherewithaggregatesinput": "AdminRolePermissionScalarWhereWithAggregatesInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L35327 | neighbors=[index.d.ts]
+- "generated_client_index_d_adminrolepermissionselect": "AdminRolePermissionSelect" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L13987 | neighbors=[index.d.ts]
+- "generated_client_index_d_adminrolepermissionselectscalar": "AdminRolePermissionSelectScalar" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L13995 | neighbors=[index.d.ts]
+- "generated_client_index_d_adminrolepermissionsumaggregateinputtype": "AdminRolePermissionSumAggregateInputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L13852 | neighbors=[index.d.ts]
 - "generated_client_index_d_adminrolepermissionsumaggregateoutputtype": "AdminRolePermissionSumAggregateOutputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L13822 | neighbors=[index.d.ts]
 - "generated_client_index_d_adminrolepermissionsumorderbyaggregateinput": "AdminRolePermissionSumOrderByAggregateInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L41234 | neighbors=[index.d.ts]
 - "generated_client_index_d_adminrolepermissionuncheckedcreateinput": "AdminRolePermissionUncheckedCreateInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L38154 | neighbors=[index.d.ts]
@@ -51,12 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "generated_client_index_d_adminroleuncheckedcreatewithoutadminsinput": "AdminRoleUncheckedCreateWithoutAdminsInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L46801 | neighbors=[index.d.ts]
 - "generated_client_index_d_adminroleuncheckedcreatewithoutpermissionsinput": "AdminRoleUncheckedCreateWithoutPermissionsInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L47511 | neighbors=[index.d.ts]
 - "generated_client_index_d_adminroleuncheckedupdateinput": "AdminRoleUncheckedUpdateInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L38120 | neighbors=[index.d.ts]
-- "generated_client_index_d_adminroleuncheckedupdatemanyinput": "AdminRoleUncheckedUpdateManyInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L38142 | neighbors=[index.d.ts]
-- "generated_client_index_d_adminroleuncheckedupdatewithoutadminsinput": "AdminRoleUncheckedUpdateWithoutAdminsInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L47067 | neighbors=[index.d.ts]
-- "generated_client_index_d_adminroleuncheckedupdatewithoutpermissionsinput": "AdminRoleUncheckedUpdateWithoutPermissionsInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L47542 | neighbors=[index.d.ts]
-- "generated_client_index_d_adminroleupdateargs": "AdminRoleUpdateArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L13663 | neighbors=[index.d.ts]
-- "generated_client_index_d_adminroleupdateinput": "AdminRoleUpdateInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L38112 | neighbors=[index.d.ts]
-- "generated_client_index_d_adminroleupdatemanyargs": "AdminRoleUpdateManyArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L13685 | neighbors=[index.d.ts]
 
 ## Instructions
 

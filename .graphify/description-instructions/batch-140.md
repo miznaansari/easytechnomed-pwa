@@ -17,6 +17,13 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "runtime_library_d_tracestate": "TraceState" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L3182 | neighbors=[_d()]
+- "runtime_library_d_tracinghelper": "TracingHelper" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L3220 | neighbors=[_d()]
+- "runtime_library_d_transactionheaders": "TransactionHeaders" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L3259 | neighbors=[_d()]
+- "runtime_library_d_transactionoptions": "TransactionOptions" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L3263 | neighbors=[_d()]
+- "runtime_library_d_transactionoptions_2": "TransactionOptions_2" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L3267 | neighbors=[_d()]
+- "runtime_library_d_typedsql": "TypedSql" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L3275 | neighbors=[_d()]
+- "runtime_library_d_typemapcbdef": "TypeMapCbDef" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L3282 | neighbors=[_d()]
 - "runtime_library_d_typemapdef": "TypeMapDef" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L3288 | neighbors=[_d()]
 - "runtime_library_d_typeref": "TypeRef" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L778 | neighbors=[_d()]
 - "runtime_library_d_uniqueindex": "uniqueIndex" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L681 | neighbors=[_d()]
@@ -50,13 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "runtime_library_jc": "jc()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L21 | neighbors=[library.js]
 - "runtime_library_jd": "jd()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L31 | neighbors=[library.js]
 - "runtime_library_je": "je()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L4 | neighbors=[library.js]
-- "runtime_library_jl": "Jl()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L131 | neighbors=[library.js]
-- "runtime_library_js": "js()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L26 | neighbors=[library.js]
-- "runtime_library_kl": "kl()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L121 | neighbors=[library.js]
-- "runtime_library_lastlinenumber": "lastLineNumber()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L21 | neighbors=[library.js]
-- "runtime_library_ld": "ld()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L29 | neighbors=[library.js]
-- "runtime_library_length": "length()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L121 | neighbors=[library.js]
-- "runtime_library_m": "M()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L3 | neighbors=[library.js]
 
 ## Instructions
 

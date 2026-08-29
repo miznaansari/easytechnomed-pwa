@@ -17,6 +17,12 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "generated_client_index_d_useruncheckedupdateinput": "UserUncheckedUpdateInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L37607 | neighbors=[index.d.ts]
+- "generated_client_index_d_useruncheckedupdatemanyinput": "UserUncheckedUpdateManyInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L37665 | neighbors=[index.d.ts]
+- "generated_client_index_d_useruncheckedupdatemanywithoutroleinput": "UserUncheckedUpdateManyWithoutRoleInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L52793 | neighbors=[index.d.ts]
+- "generated_client_index_d_useruncheckedupdatemanywithoutrolenestedinput": "UserUncheckedUpdateManyWithoutRoleNestedInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L43423 | neighbors=[index.d.ts]
+- "generated_client_index_d_useruncheckedupdatemanywithoutworkspaceinput": "UserUncheckedUpdateManyWithoutWorkspaceInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L52351 | neighbors=[index.d.ts]
+- "generated_client_index_d_useruncheckedupdatemanywithoutworkspacenestedinput": "UserUncheckedUpdateManyWithoutWorkspaceNestedInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L43091 | neighbors=[index.d.ts]
 - "generated_client_index_d_useruncheckedupdatewithoutroleinput": "UserUncheckedUpdateWithoutRoleInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L52773 | neighbors=[index.d.ts]
 - "generated_client_index_d_useruncheckedupdatewithoutsessionsinput": "UserUncheckedUpdateWithoutSessionsInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L46627 | neighbors=[index.d.ts]
 - "generated_client_index_d_useruncheckedupdatewithoutworkspaceinput": "UserUncheckedUpdateWithoutWorkspaceInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L52331 | neighbors=[index.d.ts]
@@ -51,12 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "generated_client_index_d_workspace_registrationsargs": "Workspace$registrationsArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L4734 | neighbors=[index.d.ts]
 - "generated_client_index_d_workspace_testformulasargs": "Workspace$testFormulasArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L4834 | neighbors=[index.d.ts]
 - "generated_client_index_d_workspace_testparametersargs": "Workspace$testParametersArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L4814 | neighbors=[index.d.ts]
-- "generated_client_index_d_workspace_testsargs": "Workspace$testsArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L4754 | neighbors=[index.d.ts]
-- "generated_client_index_d_workspace_usersargs": "Workspace$usersArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L4774 | neighbors=[index.d.ts]
-- "generated_client_index_d_workspaceaggregateargs": "WorkspaceAggregateArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L3814 | neighbors=[index.d.ts]
-- "generated_client_index_d_workspaceargs": "WorkspaceArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L54318 | neighbors=[index.d.ts]
-- "generated_client_index_d_workspaceavgaggregateinputtype": "WorkspaceAvgAggregateInputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L3767 | neighbors=[index.d.ts]
-- "generated_client_index_d_workspaceavgaggregateoutputtype": "WorkspaceAvgAggregateOutputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L3719 | neighbors=[index.d.ts]
 
 ## Instructions
 

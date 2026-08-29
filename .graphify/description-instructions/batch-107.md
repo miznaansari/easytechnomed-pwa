@@ -17,6 +17,12 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "generated_client_index_d_testparametermaxaggregateinputtype": "TestParameterMaxAggregateInputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L21146 | neighbors=[index.d.ts]
+- "generated_client_index_d_testparametermaxaggregateoutputtype": "TestParameterMaxAggregateOutputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L21058 | neighbors=[index.d.ts]
+- "generated_client_index_d_testparametermaxorderbyaggregateinput": "TestParameterMaxOrderByAggregateInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L42031 | neighbors=[index.d.ts]
+- "generated_client_index_d_testparameterminaggregateinputtype": "TestParameterMinAggregateInputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L21124 | neighbors=[index.d.ts]
+- "generated_client_index_d_testparameterminaggregateoutputtype": "TestParameterMinAggregateOutputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L21036 | neighbors=[index.d.ts]
+- "generated_client_index_d_testparameterminorderbyaggregateinput": "TestParameterMinOrderByAggregateInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L42053 | neighbors=[index.d.ts]
 - "generated_client_index_d_testparameterorderbyrelationaggregateinput": "TestParameterOrderByRelationAggregateInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L40507 | neighbors=[index.d.ts]
 - "generated_client_index_d_testparameterorderbywithaggregationinput": "TestParameterOrderByWithAggregationInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L36249 | neighbors=[index.d.ts]
 - "generated_client_index_d_testparameterorderbywithrelationinput": "TestParameterOrderByWithRelationInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L36194 | neighbors=[index.d.ts]
@@ -51,12 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "generated_client_index_d_testparameteruncheckedupdatewithouttestinput": "TestParameterUncheckedUpdateWithoutTestInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L53701 | neighbors=[index.d.ts]
 - "generated_client_index_d_testparameteruncheckedupdatewithoutworkspaceinput": "TestParameterUncheckedUpdateWithoutWorkspaceInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L52507 | neighbors=[index.d.ts]
 - "generated_client_index_d_testparameterupdateargs": "TestParameterUpdateArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L22007 | neighbors=[index.d.ts]
-- "generated_client_index_d_testparameterupdateinput": "TestParameterUpdateInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L39221 | neighbors=[index.d.ts]
-- "generated_client_index_d_testparameterupdatemanyargs": "TestParameterUpdateManyArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L22029 | neighbors=[index.d.ts]
-- "generated_client_index_d_testparameterupdatemanymutationinput": "TestParameterUpdateManyMutationInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L39288 | neighbors=[index.d.ts]
-- "generated_client_index_d_testparameterupdatemanywithoutparameternestedinput": "TestParameterUpdateManyWithoutParameterNestedInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L44415 | neighbors=[index.d.ts]
-- "generated_client_index_d_testparameterupdatemanywithouttestnestedinput": "TestParameterUpdateManyWithoutTestNestedInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L44025 | neighbors=[index.d.ts]
-- "generated_client_index_d_testparameterupdatemanywithoutworkspacenestedinput": "TestParameterUpdateManyWithoutWorkspaceNestedInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L42983 | neighbors=[index.d.ts]
 
 ## Instructions
 

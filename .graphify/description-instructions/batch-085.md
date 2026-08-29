@@ -17,6 +17,12 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "generated_client_index_d_prisma_testparameterclient": "Prisma__TestParameterClient" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L21742 | neighbors=[index.d.ts]
+- "generated_client_index_d_prisma_userclient": "Prisma__UserClient" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L7509 | neighbors=[index.d.ts]
+- "generated_client_index_d_prisma_userroleclient": "Prisma__UserRoleClient" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L9385 | neighbors=[index.d.ts]
+- "generated_client_index_d_prisma_userrolepermissionclient": "Prisma__UserRolePermissionClient" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L10320 | neighbors=[index.d.ts]
+- "generated_client_index_d_prisma_usersessionclient": "Prisma__UserSessionClient" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L8495 | neighbors=[index.d.ts]
+- "generated_client_index_d_prisma_workspaceclient": "Prisma__WorkspaceClient" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L4343 | neighbors=[index.d.ts]
 - "generated_client_index_d_prisma_workspacepdfclient": "Prisma__WorkspacePdfClient" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L33499 | neighbors=[index.d.ts]
 - "generated_client_index_d_prismaaction": "PrismaAction" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L3075 | neighbors=[index.d.ts]
 - "generated_client_index_d_prismaclient": "PrismaClient" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L176 | neighbors=[index.d.ts]
@@ -51,12 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "generated_client_index_d_registrationcountoutputtypecounttestsargs": "RegistrationCountOutputTypeCountTestsArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L3587 | neighbors=[index.d.ts]
 - "generated_client_index_d_registrationcountoutputtypedefaultargs": "RegistrationCountOutputTypeDefaultArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L3563 | neighbors=[index.d.ts]
 - "generated_client_index_d_registrationcountoutputtypeselect": "RegistrationCountOutputTypeSelect" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L3553 | neighbors=[index.d.ts]
-- "generated_client_index_d_registrationcreateargs": "RegistrationCreateArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L18312 | neighbors=[index.d.ts]
-- "generated_client_index_d_registrationcreateinput": "RegistrationCreateInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L38486 | neighbors=[index.d.ts]
-- "generated_client_index_d_registrationcreatemanyadmininput": "RegistrationCreateManyAdminInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L52846 | neighbors=[index.d.ts]
-- "generated_client_index_d_registrationcreatemanyadmininputenvelope": "RegistrationCreateManyAdminInputEnvelope" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L47044 | neighbors=[index.d.ts]
-- "generated_client_index_d_registrationcreatemanyargs": "RegistrationCreateManyArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L18330 | neighbors=[index.d.ts]
-- "generated_client_index_d_registrationcreatemanyinput": "RegistrationCreateManyInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L38668 | neighbors=[index.d.ts]
 
 ## Instructions
 

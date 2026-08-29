@@ -17,6 +17,12 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "generated_client_index_d_doctorcreatewithoutincentivehistoryinput": "DoctorCreateWithoutIncentiveHistoryInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L51580 | neighbors=[index.d.ts]
+- "generated_client_index_d_doctorcreatewithoutregistrationsinput": "DoctorCreateWithoutRegistrationsInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L48334 | neighbors=[index.d.ts]
+- "generated_client_index_d_doctorcreatewithoutsecondregistrationsinput": "DoctorCreateWithoutSecondRegistrationsInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L48374 | neighbors=[index.d.ts]
+- "generated_client_index_d_doctorcreatewithoutworkspaceinput": "DoctorCreateWithoutWorkspaceInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L45187 | neighbors=[index.d.ts]
+- "generated_client_index_d_doctordefaultargs": "DoctorDefaultArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L15786 | neighbors=[index.d.ts]
+- "generated_client_index_d_doctordelegate": "DoctorDelegate" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L15035 | neighbors=[index.d.ts]
 - "generated_client_index_d_doctordeleteargs": "DoctorDeleteArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L15683 | neighbors=[index.d.ts]
 - "generated_client_index_d_doctordeletemanyargs": "DoctorDeleteManyArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L15701 | neighbors=[index.d.ts]
 - "generated_client_index_d_doctorfieldrefs": "DoctorFieldRefs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L15396 | neighbors=[index.d.ts]
@@ -51,12 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "generated_client_index_d_doctorincentivedelegate": "DoctorIncentiveDelegate" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L31940 | neighbors=[index.d.ts]
 - "generated_client_index_d_doctorincentivedeleteargs": "DoctorIncentiveDeleteArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L32576 | neighbors=[index.d.ts]
 - "generated_client_index_d_doctorincentivedeletemanyargs": "DoctorIncentiveDeleteManyArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L32594 | neighbors=[index.d.ts]
-- "generated_client_index_d_doctorincentivefieldrefs": "DoctorIncentiveFieldRefs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L32298 | neighbors=[index.d.ts]
-- "generated_client_index_d_doctorincentivefindfirstargs": "DoctorIncentiveFindFirstArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L32346 | neighbors=[index.d.ts]
-- "generated_client_index_d_doctorincentivefindfirstorthrowargs": "DoctorIncentiveFindFirstOrThrowArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L32394 | neighbors=[index.d.ts]
-- "generated_client_index_d_doctorincentivefindmanyargs": "DoctorIncentiveFindManyArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L32442 | neighbors=[index.d.ts]
-- "generated_client_index_d_doctorincentivefinduniqueargs": "DoctorIncentiveFindUniqueArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L32310 | neighbors=[index.d.ts]
-- "generated_client_index_d_doctorincentivefinduniqueorthrowargs": "DoctorIncentiveFindUniqueOrThrowArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L32328 | neighbors=[index.d.ts]
 
 ## Instructions
 

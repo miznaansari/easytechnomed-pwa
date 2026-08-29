@@ -17,6 +17,12 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "generated_client_index_d_workspacecreateorconnectwithoutinterpretationrulesinput": "WorkspaceCreateOrConnectWithoutInterpretationRulesInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L51227 | neighbors=[index.d.ts]
+- "generated_client_index_d_workspacecreateorconnectwithoutparametersinput": "WorkspaceCreateOrConnectWithoutParametersInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L49240 | neighbors=[index.d.ts]
+- "generated_client_index_d_workspacecreateorconnectwithoutpdfsettinginput": "WorkspaceCreateOrConnectWithoutPdfSettingInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L51707 | neighbors=[index.d.ts]
+- "generated_client_index_d_workspacecreateorconnectwithoutregistrationsinput": "WorkspaceCreateOrConnectWithoutRegistrationsInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L48455 | neighbors=[index.d.ts]
+- "generated_client_index_d_workspacecreateorconnectwithouttestformulasinput": "WorkspaceCreateOrConnectWithoutTestFormulasInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L50833 | neighbors=[index.d.ts]
+- "generated_client_index_d_workspacecreateorconnectwithouttestparametersinput": "WorkspaceCreateOrConnectWithoutTestParametersInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L49503 | neighbors=[index.d.ts]
 - "generated_client_index_d_workspacecreateorconnectwithouttestsinput": "WorkspaceCreateOrConnectWithoutTestsInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L48024 | neighbors=[index.d.ts]
 - "generated_client_index_d_workspacecreateorconnectwithoutusersinput": "WorkspaceCreateOrConnectWithoutUsersInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L46418 | neighbors=[index.d.ts]
 - "generated_client_index_d_workspacecreatewithoutadminsinput": "WorkspaceCreateWithoutAdminsInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L46814 | neighbors=[index.d.ts]
@@ -51,12 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "generated_client_index_d_workspaceminorderbyaggregateinput": "WorkspaceMinOrderByAggregateInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L40548 | neighbors=[index.d.ts]
 - "generated_client_index_d_workspacenullablerelationfilter": "WorkspaceNullableRelationFilter" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L40781 | neighbors=[index.d.ts]
 - "generated_client_index_d_workspaceorderbywithaggregationinput": "WorkspaceOrderByWithAggregationInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L34552 | neighbors=[index.d.ts]
-- "generated_client_index_d_workspaceorderbywithrelationinput": "WorkspaceOrderByWithRelationInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L34505 | neighbors=[index.d.ts]
-- "generated_client_index_d_workspacepayload": "$WorkspacePayload" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L3981 | neighbors=[index.d.ts]
-- "generated_client_index_d_workspacepdf": "WorkspacePdf" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L160 | neighbors=[index.d.ts]
-- "generated_client_index_d_workspacepdfaggregateargs": "WorkspacePdfAggregateArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L32903 | neighbors=[index.d.ts]
-- "generated_client_index_d_workspacepdfargs": "WorkspacePdfArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L54430 | neighbors=[index.d.ts]
-- "generated_client_index_d_workspacepdfavgaggregateinputtype": "WorkspacePdfAvgAggregateInputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L32766 | neighbors=[index.d.ts]
 
 ## Instructions
 

@@ -17,6 +17,12 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "runtime_library_ad": "ad()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L29 | neighbors=[library.js, sa()]
+- "runtime_library_additem": "addItem()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L27 | neighbors=[library.js, zp()]
+- "runtime_library_addmarginsymbol": "addMarginSymbol()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L26 | neighbors=[library.js, write()]
+- "runtime_library_am": "Am()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L126 | neighbors=[library.js, vt()]
+- "runtime_library_ap": "ap()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L21 | neighbors=[library.js, y()]
+- "runtime_library_au": "Au()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L4 | neighbors=[library.js, pe()]
 - "runtime_library_bd": "Bd()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L31 | neighbors=[library.js, Yr()]
 - "runtime_library_bl": "Bl()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L126 | neighbors=[library.js, im()]
 - "runtime_library_bs": "bs()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L21 | neighbors=[library.js, Os()]
@@ -51,12 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "runtime_library_fm": "fm()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L111 | neighbors=[library.js, logger()]
 - "runtime_library_fo": "fo()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L121 | neighbors=[library.js, Dl()]
 - "runtime_library_ft": "Ft()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L29 | neighbors=[library.js, requestBatch()]
-- "runtime_library_gd": "Gd()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L31 | neighbors=[library.js, Oa()]
-- "runtime_library_getactivecontext": "getActiveContext()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L121 | neighbors=[library.js, getGlobalTracingHelper()]
-- "runtime_library_getallbatchquerycallbacks": "getAllBatchQueryCallbacks()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L29 | neighbors=[library.js, get()]
-- "runtime_library_getcurrentlinelength": "getCurrentLineLength()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L27 | neighbors=[library.js, write()]
-- "runtime_library_getfields": "getFields()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L27 | neighbors=[library.js, gp()]
-- "runtime_library_getnamespace": "_getNamespace()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L28 | neighbors=[library.js, constructor()]
 
 ## Instructions
 

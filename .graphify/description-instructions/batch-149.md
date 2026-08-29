@@ -17,6 +17,13 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "ui_card_card": "Card()" | kind=code-symbol | source=components/ui/Card.js:L3 | neighbors=[Card.js]
+- "ui_card_cardcontent": "CardContent()" | kind=code-symbol | source=components/ui/Card.js:L44 | neighbors=[Card.js]
+- "ui_card_carddescription": "CardDescription()" | kind=code-symbol | source=components/ui/Card.js:L33 | neighbors=[Card.js]
+- "ui_card_cardfooter": "CardFooter()" | kind=code-symbol | source=components/ui/Card.js:L52 | neighbors=[Card.js]
+- "ui_card_cardheader": "CardHeader()" | kind=code-symbol | source=components/ui/Card.js:L14 | neighbors=[Card.js]
+- "ui_card_cardtitle": "CardTitle()" | kind=code-symbol | source=components/ui/Card.js:L22 | neighbors=[Card.js]
+- "ui_dialog_dialog": "Dialog()" | kind=code-symbol | source=components/ui/Dialog.js:L4 | neighbors=[Dialog.js]
 - "ui_dropdown_dropdown": "Dropdown()" | kind=code-symbol | source=components/ui/Dropdown.js:L5 | neighbors=[Dropdown.js]
 - "ui_dropdown_dropdownitem": "DropdownItem()" | kind=code-symbol | source=components/ui/Dropdown.js:L45 | neighbors=[Dropdown.js]
 - "ui_input_input": "Input" | kind=code-symbol | source=components/ui/Input.js:L3 | neighbors=[Input.js]

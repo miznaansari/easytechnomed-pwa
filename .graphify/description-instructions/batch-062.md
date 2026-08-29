@@ -17,6 +17,12 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "generated_client_index_d_admintrackingdeleteargs": "AdminTrackingDeleteArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L27748 | neighbors=[index.d.ts]
+- "generated_client_index_d_admintrackingdeletemanyargs": "AdminTrackingDeleteManyArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L27766 | neighbors=[index.d.ts]
+- "generated_client_index_d_admintrackingfieldrefs": "AdminTrackingFieldRefs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L27465 | neighbors=[index.d.ts]
+- "generated_client_index_d_admintrackingfindfirstargs": "AdminTrackingFindFirstArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L27518 | neighbors=[index.d.ts]
+- "generated_client_index_d_admintrackingfindfirstorthrowargs": "AdminTrackingFindFirstOrThrowArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L27566 | neighbors=[index.d.ts]
+- "generated_client_index_d_admintrackingfindmanyargs": "AdminTrackingFindManyArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L27614 | neighbors=[index.d.ts]
 - "generated_client_index_d_admintrackingfinduniqueargs": "AdminTrackingFindUniqueArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L27482 | neighbors=[index.d.ts]
 - "generated_client_index_d_admintrackingfinduniqueorthrowargs": "AdminTrackingFindUniqueOrThrowArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L27500 | neighbors=[index.d.ts]
 - "generated_client_index_d_admintrackinggetpayload": "AdminTrackingGetPayload" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L27100 | neighbors=[index.d.ts]
@@ -51,12 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "generated_client_index_d_admintrackinguncheckedupdatemanywithoutadminnestedinput": "AdminTrackingUncheckedUpdateManyWithoutAdminNestedInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L43625 | neighbors=[index.d.ts]
 - "generated_client_index_d_admintrackinguncheckedupdatewithoutadmininput": "AdminTrackingUncheckedUpdateWithoutAdminInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L52924 | neighbors=[index.d.ts]
 - "generated_client_index_d_admintrackingupdateargs": "AdminTrackingUpdateArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L27686 | neighbors=[index.d.ts]
-- "generated_client_index_d_admintrackingupdateinput": "AdminTrackingUpdateInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L39724 | neighbors=[index.d.ts]
-- "generated_client_index_d_admintrackingupdatemanyargs": "AdminTrackingUpdateManyArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L27708 | neighbors=[index.d.ts]
-- "generated_client_index_d_admintrackingupdatemanymutationinput": "AdminTrackingUpdateManyMutationInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L39759 | neighbors=[index.d.ts]
-- "generated_client_index_d_admintrackingupdatemanywithoutadminnestedinput": "AdminTrackingUpdateManyWithoutAdminNestedInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L43573 | neighbors=[index.d.ts]
-- "generated_client_index_d_admintrackingupdatemanywithwherewithoutadmininput": "AdminTrackingUpdateManyWithWhereWithoutAdminInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L47205 | neighbors=[index.d.ts]
-- "generated_client_index_d_admintrackingupdatewithoutadmininput": "AdminTrackingUpdateWithoutAdminInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L52914 | neighbors=[index.d.ts]
 
 ## Instructions
 

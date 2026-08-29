@@ -17,6 +17,9 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "runtime_wasm_getfieldvalue": "getFieldValue()" | kind=code-symbol | source=scratch/generated-client/runtime/wasm.js:L3 | neighbors=[wasm.js, getDeepSelectionParent(), getField(), ti()]
+- "runtime_wasm_getglobalomit": "getGlobalOmit()" | kind=code-symbol | source=scratch/generated-client/runtime/wasm.js:L5 | neighbors=[wasm.js, shouldApplyGlobalOmit(), Ve(), oa()]
+- "runtime_wasm_getname": "_getName()" | kind=code-symbol | source=scratch/generated-client/runtime/wasm.js:L4 | neighbors=[wasm.js, constructor(), di(), si()]
 - "runtime_wasm_handleandlogrequesterror": "handleAndLogRequestError()" | kind=code-symbol | source=scratch/generated-client/runtime/wasm.js:L21 | neighbors=[wasm.js, emit(), handleRequestError(), request()]
 - "runtime_wasm_handlerequesterror": "handleRequestError()" | kind=code-symbol | source=scratch/generated-client/runtime/wasm.js:L21 | neighbors=[wasm.js, handleAndLogRequestError(), sanitizeMessage(), zt()]
 - "runtime_wasm_ie": "Ie()" | kind=code-symbol | source=scratch/generated-client/runtime/wasm.js:L5 | neighbors=[wasm.js, da(), ia(), la()]
@@ -54,9 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "scratch_check_data": "check-data.js" | kind=code-symbol | source=scratch/check-data.js:L1 | neighbors=[252e194 e, main(), prisma, { PrismaClient }]
 - "scratch_check_formulas": "check-formulas.js" | kind=code-symbol | source=scratch/check-formulas.js:L1 | neighbors=[252e194 e, main(), prisma, { PrismaClient }]
 - "scratch_check_formulas_2398": "check-formulas-2398.js" | kind=code-symbol | source=scratch/check-formulas-2398.js:L1 | neighbors=[252e194 e, main(), prisma, { PrismaClient }]
-- "scratch_check_kft_all": "check-kft-all.js" | kind=code-symbol | source=scratch/check-kft-all.js:L1 | neighbors=[252e194 e, main(), prisma, { PrismaClient }]
-- "scratch_check_reg_17": "check-reg-17.js" | kind=code-symbol | source=scratch/check-reg-17.js:L1 | neighbors=[252e194 e, runFormulaEngine(), main(), prisma]
-- "scratch_cleanup_cbc": "cleanup-cbc.js" | kind=code-symbol | source=scratch/cleanup-cbc.js:L1 | neighbors=[252e194 e, main(), prisma, { PrismaClient }]
 
 ## Instructions
 

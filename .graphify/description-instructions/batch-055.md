@@ -17,6 +17,12 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "generated_client_index_d_admindeletemanyargs": "AdminDeleteManyArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L11806 | neighbors=[index.d.ts]
+- "generated_client_index_d_adminfieldrefs": "AdminFieldRefs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L11490 | neighbors=[index.d.ts]
+- "generated_client_index_d_adminfindfirstargs": "AdminFindFirstArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L11558 | neighbors=[index.d.ts]
+- "generated_client_index_d_adminfindfirstorthrowargs": "AdminFindFirstOrThrowArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L11606 | neighbors=[index.d.ts]
+- "generated_client_index_d_adminfindmanyargs": "AdminFindManyArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L11654 | neighbors=[index.d.ts]
+- "generated_client_index_d_adminfinduniqueargs": "AdminFindUniqueArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L11522 | neighbors=[index.d.ts]
 - "generated_client_index_d_adminfinduniqueorthrowargs": "AdminFindUniqueOrThrowArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L11540 | neighbors=[index.d.ts]
 - "generated_client_index_d_admingetpayload": "AdminGetPayload" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L11120 | neighbors=[index.d.ts]
 - "generated_client_index_d_admingroupbyargs": "AdminGroupByArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L10949 | neighbors=[index.d.ts]
@@ -51,12 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "generated_client_index_d_adminrolecountoutputtypeargs": "AdminRoleCountOutputTypeArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L54290 | neighbors=[index.d.ts]
 - "generated_client_index_d_adminrolecountoutputtypecountadminsargs": "AdminRoleCountOutputTypeCountAdminsArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L3424 | neighbors=[index.d.ts]
 - "generated_client_index_d_adminrolecountoutputtypecountpermissionsargs": "AdminRoleCountOutputTypeCountPermissionsArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L3431 | neighbors=[index.d.ts]
-- "generated_client_index_d_adminrolecountoutputtypedefaultargs": "AdminRoleCountOutputTypeDefaultArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L3414 | neighbors=[index.d.ts]
-- "generated_client_index_d_adminrolecountoutputtypeselect": "AdminRoleCountOutputTypeSelect" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L3405 | neighbors=[index.d.ts]
-- "generated_client_index_d_adminrolecreateargs": "AdminRoleCreateArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L13634 | neighbors=[index.d.ts]
-- "generated_client_index_d_adminrolecreateinput": "AdminRoleCreateInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L38095 | neighbors=[index.d.ts]
-- "generated_client_index_d_adminrolecreatemanyargs": "AdminRoleCreateManyArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L13652 | neighbors=[index.d.ts]
-- "generated_client_index_d_adminrolecreatemanyinput": "AdminRoleCreateManyInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L38129 | neighbors=[index.d.ts]
 
 ## Instructions
 

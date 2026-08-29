@@ -17,6 +17,13 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "runtime_library_d_prismaclientvalidationerror": "PrismaClientValidationError" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L2401 | neighbors=[_d()]
+- "runtime_library_d_prismapromise": "PrismaPromise" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L2410 | neighbors=[_d()]
+- "runtime_library_d_prismapromise_2": "PrismaPromise_2" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L2419 | neighbors=[_d()]
+- "runtime_library_d_prismapromisebatchtransaction": "PrismaPromiseBatchTransaction" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L2446 | neighbors=[_d()]
+- "runtime_library_d_prismapromisecallback": "PrismaPromiseCallback" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L2454 | neighbors=[_d()]
+- "runtime_library_d_prismapromisefactory": "PrismaPromiseFactory" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L2465 | neighbors=[_d()]
+- "runtime_library_d_prismapromiseinteractivetransaction": "PrismaPromiseInteractiveTransaction" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L2467 | neighbors=[_d()]
 - "runtime_library_d_prismapromisetransaction": "PrismaPromiseTransaction" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L2473 | neighbors=[_d()]
 - "runtime_library_d_query": "Query" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L768 | neighbors=[_d()]
 - "runtime_library_d_queryenginebatchgraphqlrequest": "QueryEngineBatchGraphQLRequest" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L2521 | neighbors=[_d()]
@@ -50,13 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "runtime_library_d_requestoptions": "RequestOptions" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L2696 | neighbors=[_d()]
 - "runtime_library_d_requestoptions_2": "RequestOptions_2" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L2702 | neighbors=[_d()]
 - "runtime_library_d_requestparams": "RequestParams" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L2710 | neighbors=[_d()]
-- "runtime_library_d_requestresponse": "RequestResponse" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L2728 | neighbors=[_d()]
-- "runtime_library_d_requiredextensionargs": "RequiredExtensionArgs" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L2738 | neighbors=[_d()]
-- "runtime_library_d_requiredkeys": "RequiredKeys" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L2742 | neighbors=[_d()]
-- "runtime_library_d_result": "Result" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L2753 | neighbors=[_d()]
-- "runtime_library_d_result_2": "Result_2" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L2766 | neighbors=[_d()]
-- "runtime_library_d_result_4": "Result_4" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L2790 | neighbors=[_d()]
-- "runtime_library_d_resultarg": "ResultArg" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L2801 | neighbors=[_d()]
 
 ## Instructions
 

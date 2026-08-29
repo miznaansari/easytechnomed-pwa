@@ -17,6 +17,12 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "generated_client_index_d_workspaceupdatetoonewithwherewithouttestparametersinput": "WorkspaceUpdateToOneWithWhereWithoutTestParametersInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L49685 | neighbors=[index.d.ts]
+- "generated_client_index_d_workspaceupdatetoonewithwherewithouttestsinput": "WorkspaceUpdateToOneWithWhereWithoutTestsInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L48211 | neighbors=[index.d.ts]
+- "generated_client_index_d_workspaceupdatetoonewithwherewithoutusersinput": "WorkspaceUpdateToOneWithWhereWithoutUsersInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L46478 | neighbors=[index.d.ts]
+- "generated_client_index_d_workspaceupdatewithoutadminsinput": "WorkspaceUpdateWithoutAdminsInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L47086 | neighbors=[index.d.ts]
+- "generated_client_index_d_workspaceupdatewithoutdoctorsinput": "WorkspaceUpdateWithoutDoctorsInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L47826 | neighbors=[index.d.ts]
+- "generated_client_index_d_workspaceupdatewithoutinterpretationrulesinput": "WorkspaceUpdateWithoutInterpretationRulesInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L51385 | neighbors=[index.d.ts]
 - "generated_client_index_d_workspaceupdatewithoutparametersinput": "WorkspaceUpdateWithoutParametersInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L49373 | neighbors=[index.d.ts]
 - "generated_client_index_d_workspaceupdatewithoutpdfsettinginput": "WorkspaceUpdateWithoutPdfSettingInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L51723 | neighbors=[index.d.ts]
 - "generated_client_index_d_workspaceupdatewithoutregistrationsinput": "WorkspaceUpdateWithoutRegistrationsInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L48726 | neighbors=[index.d.ts]
@@ -51,12 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "hooks_useoffline_useoffline": "useOffline()" | kind=code-symbol | source=hooks/useOffline.js:L5 | neighbors=[useOffline.js]
 - "hooks_useofflinedata_useofflinedata": "useOfflineData()" | kind=code-symbol | source=hooks/useOfflineData.js:L7 | neighbors=[useOfflineData.js]
 - "id_route_delete": "DELETE()" | kind=code-symbol | source=app/api/registrations/[id]/route.js:L252 | neighbors=[route.js]
-- "id_route_registrationschema": "registrationSchema" | kind=code-symbol | source=app/api/registrations/[id]/route.js:L12 | neighbors=[route.js]
-- "leads_route_post": "POST()" | kind=code-symbol | source=app/api/leads/route.js:L4 | neighbors=[route.js]
-- "lib_auth_signtoken": "signToken()" | kind=code-symbol | source=lib/auth.js:L8 | neighbors=[auth.js]
-- "lib_clientauth_useadminpermissions": "useAdminPermissions()" | kind=code-symbol | source=lib/clientAuth.js:L4 | neighbors=[clientAuth.js]
-- "lib_firebase_auth": "auth" | kind=code-symbol | source=lib/firebase.js:L15 | neighbors=[firebase.js]
-- "lib_firebase_firebaseconfig": "firebaseConfig" | kind=code-symbol | source=lib/firebase.js:L4 | neighbors=[firebase.js]
 
 ## Instructions
 

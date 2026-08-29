@@ -17,6 +17,12 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "generated_client_index_d_registrationcreateargs": "RegistrationCreateArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L18312 | neighbors=[index.d.ts]
+- "generated_client_index_d_registrationcreateinput": "RegistrationCreateInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L38486 | neighbors=[index.d.ts]
+- "generated_client_index_d_registrationcreatemanyadmininput": "RegistrationCreateManyAdminInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L52846 | neighbors=[index.d.ts]
+- "generated_client_index_d_registrationcreatemanyadmininputenvelope": "RegistrationCreateManyAdminInputEnvelope" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L47044 | neighbors=[index.d.ts]
+- "generated_client_index_d_registrationcreatemanyargs": "RegistrationCreateManyArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L18330 | neighbors=[index.d.ts]
+- "generated_client_index_d_registrationcreatemanyinput": "RegistrationCreateManyInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L38668 | neighbors=[index.d.ts]
 - "generated_client_index_d_registrationcreatemanyrefbyinput": "RegistrationCreateManyRefByInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L53207 | neighbors=[index.d.ts]
 - "generated_client_index_d_registrationcreatemanyrefbyinputenvelope": "RegistrationCreateManyRefByInputEnvelope" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L47690 | neighbors=[index.d.ts]
 - "generated_client_index_d_registrationcreatemanysecondrefinput": "RegistrationCreateManySecondRefInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L53249 | neighbors=[index.d.ts]
@@ -51,12 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "generated_client_index_d_registrationfieldrefs": "RegistrationFieldRefs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L18089 | neighbors=[index.d.ts]
 - "generated_client_index_d_registrationfindfirstargs": "RegistrationFindFirstArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L18173 | neighbors=[index.d.ts]
 - "generated_client_index_d_registrationfindfirstorthrowargs": "RegistrationFindFirstOrThrowArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L18221 | neighbors=[index.d.ts]
-- "generated_client_index_d_registrationfindmanyargs": "RegistrationFindManyArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L18269 | neighbors=[index.d.ts]
-- "generated_client_index_d_registrationfinduniqueargs": "RegistrationFindUniqueArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L18137 | neighbors=[index.d.ts]
-- "generated_client_index_d_registrationfinduniqueorthrowargs": "RegistrationFindUniqueOrThrowArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L18155 | neighbors=[index.d.ts]
-- "generated_client_index_d_registrationgetpayload": "RegistrationGetPayload" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L17718 | neighbors=[index.d.ts]
-- "generated_client_index_d_registrationgroupbyargs": "RegistrationGroupByArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L17480 | neighbors=[index.d.ts]
-- "generated_client_index_d_registrationgroupbyoutputtype": "RegistrationGroupByOutputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L17494 | neighbors=[index.d.ts]
 
 ## Instructions
 

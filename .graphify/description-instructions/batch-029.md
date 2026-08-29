@@ -17,6 +17,12 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "runtime_edge_ka": "ka()" | kind=code-symbol | source=scratch/generated-client/runtime/edge.js:L1 | neighbors=[edge.js, ja(), mr()]
+- "runtime_edge_kn": "kn()" | kind=code-symbol | source=scratch/generated-client/runtime/edge.js:L5 | neighbors=[edge.js, kc(), ku()]
+- "runtime_edge_ks": "ks()" | kind=code-symbol | source=scratch/generated-client/runtime/edge.js:L12 | neighbors=[edge.js, Fc(), ni()]
+- "runtime_edge_kt": "kt()" | kind=code-symbol | source=scratch/generated-client/runtime/edge.js:L1 | neighbors=[edge.js, ke(), xn()]
+- "runtime_edge_ls": "ls()" | kind=code-symbol | source=scratch/generated-client/runtime/edge.js:L6 | neighbors=[edge.js, Bs(), toString()]
+- "runtime_edge_lu": "Lu()" | kind=code-symbol | source=scratch/generated-client/runtime/edge.js:L5 | neighbors=[edge.js, Do(), addItem()]
 - "runtime_edge_makerequired": "makeRequired()" | kind=code-symbol | source=scratch/generated-client/runtime/edge.js:L2 | neighbors=[edge.js, Au(), xu()]
 - "runtime_edge_metrics": "metrics()" | kind=code-symbol | source=scratch/generated-client/runtime/edge.js:L12 | neighbors=[edge.js, json(), prometheus()]
 - "runtime_edge_mi": "mi()" | kind=code-symbol | source=scratch/generated-client/runtime/edge.js:L1 | neighbors=[edge.js, Ca(), pi()]
@@ -51,12 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "runtime_index_browser_constructor": "constructor()" | kind=code-symbol | source=scratch/generated-client/runtime/index-browser.js:L1 | neighbors=[index-browser.js, _getName(), _getNamespace()]
 - "runtime_index_browser_fe": "fe()" | kind=code-symbol | source=scratch/generated-client/runtime/index-browser.js:L1 | neighbors=[index-browser.js, sn(), un()]
 - "runtime_index_browser_ie": "ie()" | kind=code-symbol | source=scratch/generated-client/runtime/index-browser.js:L1 | neighbors=[index-browser.js, ke(), on()]
-- "runtime_index_browser_u": "U()" | kind=code-symbol | source=scratch/generated-client/runtime/index-browser.js:L1 | neighbors=[index-browser.js, F(), O()]
-- "runtime_index_browser_ue": "ue()" | kind=code-symbol | source=scratch/generated-client/runtime/index-browser.js:L1 | neighbors=[index-browser.js, on(), e()]
-- "runtime_index_browser_ve": "Ve()" | kind=code-symbol | source=scratch/generated-client/runtime/index-browser.js:L1 | neighbors=[index-browser.js, F(), ke()]
-- "runtime_index_browser_x": "x()" | kind=code-symbol | source=scratch/generated-client/runtime/index-browser.js:L1 | neighbors=[index-browser.js, B(), Ee()]
-- "runtime_library_append": "append()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L29 | neighbors=[library.js, e(), Ia()]
-- "runtime_library_bu": "Bu()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L6 | neighbors=[library.js, e(), qr()]
 
 ## Instructions
 

@@ -17,6 +17,12 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "generated_client_index_d_adminupdateonerequiredwithoutaddressnestedinput": "AdminUpdateOneRequiredWithoutAddressNestedInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L44619 | neighbors=[index.d.ts]
+- "generated_client_index_d_adminupdateonerequiredwithoutsessionsnestedinput": "AdminUpdateOneRequiredWithoutSessionsNestedInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L43659 | neighbors=[index.d.ts]
+- "generated_client_index_d_adminupdateonewithoutregistrationsnestedinput": "AdminUpdateOneWithoutRegistrationsNestedInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L44241 | neighbors=[index.d.ts]
+- "generated_client_index_d_adminupdateonewithouttrackingsnestedinput": "AdminUpdateOneWithoutTrackingsNestedInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L44647 | neighbors=[index.d.ts]
+- "generated_client_index_d_adminupdatetoonewithwherewithoutaddressinput": "AdminUpdateToOneWithWhereWithoutAddressInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L50267 | neighbors=[index.d.ts]
+- "generated_client_index_d_adminupdatetoonewithwherewithoutregistrationsinput": "AdminUpdateToOneWithWhereWithoutRegistrationsInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L48773 | neighbors=[index.d.ts]
 - "generated_client_index_d_adminupdatetoonewithwherewithoutsessionsinput": "AdminUpdateToOneWithWhereWithoutSessionsInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L47311 | neighbors=[index.d.ts]
 - "generated_client_index_d_adminupdatetoonewithwherewithouttrackingsinput": "AdminUpdateToOneWithWhereWithoutTrackingsInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L50595 | neighbors=[index.d.ts]
 - "generated_client_index_d_adminupdatewithoutaddressinput": "AdminUpdateWithoutAddressInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L50272 | neighbors=[index.d.ts]
@@ -51,12 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "generated_client_index_d_aggregatepatientresult": "AggregatePatientResult" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L22148 | neighbors=[index.d.ts]
 - "generated_client_index_d_aggregateregistration": "AggregateRegistration" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L17067 | neighbors=[index.d.ts]
 - "generated_client_index_d_aggregateregistrationpayment": "AggregateRegistrationPayment" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L24963 | neighbors=[index.d.ts]
-- "generated_client_index_d_aggregateregistrationtest": "AggregateRegistrationTest" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L18567 | neighbors=[index.d.ts]
-- "generated_client_index_d_aggregatesuperadmin": "AggregateSuperAdmin" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L4905 | neighbors=[index.d.ts]
-- "generated_client_index_d_aggregatesuperadminsession": "AggregateSuperAdminSession" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L5875 | neighbors=[index.d.ts]
-- "generated_client_index_d_aggregatesuperadmintracking": "AggregateSuperAdminTracking" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L27807 | neighbors=[index.d.ts]
-- "generated_client_index_d_aggregatetest": "AggregateTest" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L15802 | neighbors=[index.d.ts]
-- "generated_client_index_d_aggregatetestdepartment": "AggregateTestDepartment" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L28787 | neighbors=[index.d.ts]
 
 ## Instructions
 

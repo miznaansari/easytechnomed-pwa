@@ -17,6 +17,12 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "generated_client_index_d_usersessionorderbywithaggregationinput": "UserSessionOrderByWithAggregationInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L34878 | neighbors=[index.d.ts]
+- "generated_client_index_d_usersessionorderbywithrelationinput": "UserSessionOrderByWithRelationInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L34853 | neighbors=[index.d.ts]
+- "generated_client_index_d_usersessionpayload": "$UserSessionPayload" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L8144 | neighbors=[index.d.ts]
+- "generated_client_index_d_usersessionscalarfieldenum": "UserSessionScalarFieldEnum" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L33964 | neighbors=[index.d.ts]
+- "generated_client_index_d_usersessionscalarwhereinput": "UserSessionScalarWhereInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L46540 | neighbors=[index.d.ts]
+- "generated_client_index_d_usersessionscalarwherewithaggregatesinput": "UserSessionScalarWhereWithAggregatesInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L34893 | neighbors=[index.d.ts]
 - "generated_client_index_d_usersessionselect": "UserSessionSelect" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L8118 | neighbors=[index.d.ts]
 - "generated_client_index_d_usersessionselectscalar": "UserSessionSelectScalar" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L8130 | neighbors=[index.d.ts]
 - "generated_client_index_d_usersessionsumaggregateinputtype": "UserSessionSumAggregateInputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L7967 | neighbors=[index.d.ts]
@@ -51,12 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "generated_client_index_d_useruncheckedcreatewithoutroleinput": "UserUncheckedCreateWithoutRoleInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L46666 | neighbors=[index.d.ts]
 - "generated_client_index_d_useruncheckedcreatewithoutsessionsinput": "UserUncheckedCreateWithoutSessionsInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L46572 | neighbors=[index.d.ts]
 - "generated_client_index_d_useruncheckedcreatewithoutworkspaceinput": "UserUncheckedCreateWithoutWorkspaceInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L45413 | neighbors=[index.d.ts]
-- "generated_client_index_d_useruncheckedupdateinput": "UserUncheckedUpdateInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L37607 | neighbors=[index.d.ts]
-- "generated_client_index_d_useruncheckedupdatemanyinput": "UserUncheckedUpdateManyInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L37665 | neighbors=[index.d.ts]
-- "generated_client_index_d_useruncheckedupdatemanywithoutroleinput": "UserUncheckedUpdateManyWithoutRoleInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L52793 | neighbors=[index.d.ts]
-- "generated_client_index_d_useruncheckedupdatemanywithoutrolenestedinput": "UserUncheckedUpdateManyWithoutRoleNestedInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L43423 | neighbors=[index.d.ts]
-- "generated_client_index_d_useruncheckedupdatemanywithoutworkspaceinput": "UserUncheckedUpdateManyWithoutWorkspaceInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L52351 | neighbors=[index.d.ts]
-- "generated_client_index_d_useruncheckedupdatemanywithoutworkspacenestedinput": "UserUncheckedUpdateManyWithoutWorkspaceNestedInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L43091 | neighbors=[index.d.ts]
 
 ## Instructions
 

@@ -17,6 +17,12 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "generated_client_index_d_adminroleuncheckedupdatemanyinput": "AdminRoleUncheckedUpdateManyInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L38142 | neighbors=[index.d.ts]
+- "generated_client_index_d_adminroleuncheckedupdatewithoutadminsinput": "AdminRoleUncheckedUpdateWithoutAdminsInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L47067 | neighbors=[index.d.ts]
+- "generated_client_index_d_adminroleuncheckedupdatewithoutpermissionsinput": "AdminRoleUncheckedUpdateWithoutPermissionsInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L47542 | neighbors=[index.d.ts]
+- "generated_client_index_d_adminroleupdateargs": "AdminRoleUpdateArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L13663 | neighbors=[index.d.ts]
+- "generated_client_index_d_adminroleupdateinput": "AdminRoleUpdateInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L38112 | neighbors=[index.d.ts]
+- "generated_client_index_d_adminroleupdatemanyargs": "AdminRoleUpdateManyArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L13685 | neighbors=[index.d.ts]
 - "generated_client_index_d_adminroleupdatemanymutationinput": "AdminRoleUpdateManyMutationInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L38136 | neighbors=[index.d.ts]
 - "generated_client_index_d_adminroleupdateonerequiredwithoutadminsnestedinput": "AdminRoleUpdateOneRequiredWithoutAdminsNestedInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L43531 | neighbors=[index.d.ts]
 - "generated_client_index_d_adminroleupdateonerequiredwithoutpermissionsnestedinput": "AdminRoleUpdateOneRequiredWithoutPermissionsNestedInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L43757 | neighbors=[index.d.ts]
@@ -51,12 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "generated_client_index_d_adminsessioncreatemanyargs": "AdminSessionCreateManyArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L12744 | neighbors=[index.d.ts]
 - "generated_client_index_d_adminsessioncreatemanyinput": "AdminSessionCreateManyInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L38067 | neighbors=[index.d.ts]
 - "generated_client_index_d_adminsessioncreatenestedmanywithoutadmininput": "AdminSessionCreateNestedManyWithoutAdminInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L43483 | neighbors=[index.d.ts]
-- "generated_client_index_d_adminsessioncreateorconnectwithoutadmininput": "AdminSessionCreateOrConnectWithoutAdminInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L46909 | neighbors=[index.d.ts]
-- "generated_client_index_d_adminsessioncreatewithoutadmininput": "AdminSessionCreateWithoutAdminInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L46892 | neighbors=[index.d.ts]
-- "generated_client_index_d_adminsessiondefaultargs": "AdminSessionDefaultArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L12845 | neighbors=[index.d.ts]
-- "generated_client_index_d_adminsessiondelegate": "AdminSessionDelegate" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L12178 | neighbors=[index.d.ts]
-- "generated_client_index_d_adminsessiondeleteargs": "AdminSessionDeleteArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L12817 | neighbors=[index.d.ts]
-- "generated_client_index_d_adminsessiondeletemanyargs": "AdminSessionDeleteManyArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L12835 | neighbors=[index.d.ts]
 
 ## Instructions
 

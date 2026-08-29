@@ -17,6 +17,12 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "generated_client_index_d_leadcontactcreateargs": "LeadContactCreateArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L26712 | neighbors=[index.d.ts]
+- "generated_client_index_d_leadcontactcreateinput": "LeadContactCreateInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L39620 | neighbors=[index.d.ts]
+- "generated_client_index_d_leadcontactcreatemanyargs": "LeadContactCreateManyArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L26726 | neighbors=[index.d.ts]
+- "generated_client_index_d_leadcontactcreatemanyinput": "LeadContactCreateManyInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L39666 | neighbors=[index.d.ts]
+- "generated_client_index_d_leadcontactdefaultargs": "LeadContactDefaultArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L26815 | neighbors=[index.d.ts]
+- "generated_client_index_d_leadcontactdelegate": "LeadContactDelegate" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L26183 | neighbors=[index.d.ts]
 - "generated_client_index_d_leadcontactdeleteargs": "LeadContactDeleteArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L26791 | neighbors=[index.d.ts]
 - "generated_client_index_d_leadcontactdeletemanyargs": "LeadContactDeleteManyArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L26805 | neighbors=[index.d.ts]
 - "generated_client_index_d_leadcontactfieldrefs": "LeadContactFieldRefs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L26540 | neighbors=[index.d.ts]
@@ -51,12 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "generated_client_index_d_leadcontactupdateinput": "LeadContactUpdateInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L39643 | neighbors=[index.d.ts]
 - "generated_client_index_d_leadcontactupdatemanyargs": "LeadContactUpdateManyArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L26755 | neighbors=[index.d.ts]
 - "generated_client_index_d_leadcontactupdatemanymutationinput": "LeadContactUpdateManyMutationInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L39678 | neighbors=[index.d.ts]
-- "generated_client_index_d_leadcontactupsertargs": "LeadContactUpsertArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L26769 | neighbors=[index.d.ts]
-- "generated_client_index_d_leadcontactwhereinput": "LeadContactWhereInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L36590 | neighbors=[index.d.ts]
-- "generated_client_index_d_leadcontactwhereuniqueinput": "LeadContactWhereUniqueInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L36617 | neighbors=[index.d.ts]
-- "generated_client_index_d_leadcountaggregateinputtype": "LeadCountAggregateInputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L23167 | neighbors=[index.d.ts]
-- "generated_client_index_d_leadcountaggregateoutputtype": "LeadCountAggregateOutputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L23136 | neighbors=[index.d.ts]
-- "generated_client_index_d_leadcountargs": "LeadCountArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L23317 | neighbors=[index.d.ts]
 
 ## Instructions
 

@@ -17,6 +17,12 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "generated_client_index_d_adminrolepermissionavgorderbyaggregateinput": "AdminRolePermissionAvgOrderByAggregateInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L41217 | neighbors=[index.d.ts]
+- "generated_client_index_d_adminrolepermissioncountaggregateinputtype": "AdminRolePermissionCountAggregateInputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L13869 | neighbors=[index.d.ts]
+- "generated_client_index_d_adminrolepermissioncountaggregateoutputtype": "AdminRolePermissionCountAggregateOutputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L13839 | neighbors=[index.d.ts]
+- "generated_client_index_d_adminrolepermissioncountargs": "AdminRolePermissionCountArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L14020 | neighbors=[index.d.ts]
+- "generated_client_index_d_adminrolepermissioncountorderbyaggregateinput": "AdminRolePermissionCountOrderByAggregateInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L41211 | neighbors=[index.d.ts]
+- "generated_client_index_d_adminrolepermissioncreateargs": "AdminRolePermissionCreateArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L14569 | neighbors=[index.d.ts]
 - "generated_client_index_d_adminrolepermissioncreateinput": "AdminRolePermissionCreateInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L38149 | neighbors=[index.d.ts]
 - "generated_client_index_d_adminrolepermissioncreatemanyargs": "AdminRolePermissionCreateManyArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L14587 | neighbors=[index.d.ts]
 - "generated_client_index_d_adminrolepermissioncreatemanyinput": "AdminRolePermissionCreateManyInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L38171 | neighbors=[index.d.ts]
@@ -51,12 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "generated_client_index_d_adminrolepermissionorderbywithrelationinput": "AdminRolePermissionOrderByWithRelationInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L35298 | neighbors=[index.d.ts]
 - "generated_client_index_d_adminrolepermissionpayload": "$AdminRolePermissionPayload" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L14005 | neighbors=[index.d.ts]
 - "generated_client_index_d_adminrolepermissionroleidpermissioncompounduniqueinput": "AdminRolePermissionRoleIdPermissionCompoundUniqueInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L41206 | neighbors=[index.d.ts]
-- "generated_client_index_d_adminrolepermissionscalarfieldenum": "AdminRolePermissionScalarFieldEnum" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L34043 | neighbors=[index.d.ts]
-- "generated_client_index_d_adminrolepermissionscalarwhereinput": "AdminRolePermissionScalarWhereInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L47495 | neighbors=[index.d.ts]
-- "generated_client_index_d_adminrolepermissionscalarwherewithaggregatesinput": "AdminRolePermissionScalarWhereWithAggregatesInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L35327 | neighbors=[index.d.ts]
-- "generated_client_index_d_adminrolepermissionselect": "AdminRolePermissionSelect" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L13987 | neighbors=[index.d.ts]
-- "generated_client_index_d_adminrolepermissionselectscalar": "AdminRolePermissionSelectScalar" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L13995 | neighbors=[index.d.ts]
-- "generated_client_index_d_adminrolepermissionsumaggregateinputtype": "AdminRolePermissionSumAggregateInputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L13852 | neighbors=[index.d.ts]
 
 ## Instructions
 

@@ -17,6 +17,13 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "runtime_library_jl": "Jl()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L131 | neighbors=[library.js]
+- "runtime_library_js": "js()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L26 | neighbors=[library.js]
+- "runtime_library_kl": "kl()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L121 | neighbors=[library.js]
+- "runtime_library_lastlinenumber": "lastLineNumber()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L21 | neighbors=[library.js]
+- "runtime_library_ld": "ld()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L29 | neighbors=[library.js]
+- "runtime_library_length": "length()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L121 | neighbors=[library.js]
+- "runtime_library_m": "M()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L3 | neighbors=[library.js]
 - "runtime_library_mc": "mc()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L21 | neighbors=[library.js]
 - "runtime_library_mi": "mi()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L18 | neighbors=[library.js]
 - "runtime_library_middlewareargstorequestargs": "middlewareArgsToRequestArgs()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L121 | neighbors=[library.js]
@@ -50,13 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "runtime_library_yo": "yo()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L3 | neighbors=[library.js]
 - "runtime_library_ze": "Ze()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L31 | neighbors=[library.js]
 - "runtime_library_zl": "Zl()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L131 | neighbors=[library.js]
-- "runtime_react_native_bc": "Bc()" | kind=code-symbol | source=scratch/generated-client/runtime/react-native.js:L12 | neighbors=[react-native.js]
-- "runtime_react_native_ce": "Ce()" | kind=code-symbol | source=scratch/generated-client/runtime/react-native.js:L10 | neighbors=[react-native.js]
-- "runtime_react_native_cl": "cl()" | kind=code-symbol | source=scratch/generated-client/runtime/react-native.js:L1 | neighbors=[react-native.js]
-- "runtime_react_native_connect": "connect()" | kind=code-symbol | source=scratch/generated-client/runtime/react-native.js:L60 | neighbors=[react-native.js]
-- "runtime_react_native_dc": "Dc()" | kind=code-symbol | source=scratch/generated-client/runtime/react-native.js:L12 | neighbors=[react-native.js]
-- "runtime_react_native_debugpanic": "debugPanic()" | kind=code-symbol | source=scratch/generated-client/runtime/react-native.js:L60 | neighbors=[react-native.js]
-- "runtime_react_native_deref": "deref()" | kind=code-symbol | source=scratch/generated-client/runtime/react-native.js:L1 | neighbors=[react-native.js]
 
 ## Instructions
 

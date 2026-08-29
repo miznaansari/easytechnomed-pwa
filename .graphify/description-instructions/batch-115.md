@@ -17,6 +17,12 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "generated_client_index_d_userrolepermissionupsertargs": "UserRolePermissionUpsertArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L10602 | neighbors=[index.d.ts]
+- "generated_client_index_d_userrolepermissionupsertwithwhereuniquewithoutroleinput": "UserRolePermissionUpsertWithWhereUniqueWithoutRoleInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L46731 | neighbors=[index.d.ts]
+- "generated_client_index_d_userrolepermissionwhereinput": "UserRolePermissionWhereInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L34951 | neighbors=[index.d.ts]
+- "generated_client_index_d_userrolepermissionwhereuniqueinput": "UserRolePermissionWhereUniqueInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L34968 | neighbors=[index.d.ts]
+- "generated_client_index_d_userrolerelationfilter": "UserRoleRelationFilter" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L40776 | neighbors=[index.d.ts]
+- "generated_client_index_d_userrolescalarfieldenum": "UserRoleScalarFieldEnum" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L33972 | neighbors=[index.d.ts]
 - "generated_client_index_d_userrolescalarwherewithaggregatesinput": "UserRoleScalarWhereWithAggregatesInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L34943 | neighbors=[index.d.ts]
 - "generated_client_index_d_userroleselect": "UserRoleSelect" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L9018 | neighbors=[index.d.ts]
 - "generated_client_index_d_userroleselectscalar": "UserRoleSelectScalar" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L9027 | neighbors=[index.d.ts]
@@ -51,12 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "generated_client_index_d_userselect": "UserSelect" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L7094 | neighbors=[index.d.ts]
 - "generated_client_index_d_userselectscalar": "UserSelectScalar" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L7119 | neighbors=[index.d.ts]
 - "generated_client_index_d_usersession": "UserSession" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L40 | neighbors=[index.d.ts]
-- "generated_client_index_d_usersessionaggregateargs": "UserSessionAggregateArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L8003 | neighbors=[index.d.ts]
-- "generated_client_index_d_usersessionargs": "UserSessionArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L54334 | neighbors=[index.d.ts]
-- "generated_client_index_d_usersessionavgaggregateinputtype": "UserSessionAvgAggregateInputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L7962 | neighbors=[index.d.ts]
-- "generated_client_index_d_usersessionavgaggregateoutputtype": "UserSessionAvgAggregateOutputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L7920 | neighbors=[index.d.ts]
-- "generated_client_index_d_usersessionavgorderbyaggregateinput": "UserSessionAvgOrderByAggregateInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L40899 | neighbors=[index.d.ts]
-- "generated_client_index_d_usersessioncountaggregateinputtype": "UserSessionCountAggregateInputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L7992 | neighbors=[index.d.ts]
 
 ## Instructions
 

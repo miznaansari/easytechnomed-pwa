@@ -17,6 +17,12 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "generated_client_index_d_superadminorderbywithaggregationinput": "SuperAdminOrderByWithAggregationInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L34623 | neighbors=[index.d.ts]
+- "generated_client_index_d_superadminorderbywithrelationinput": "SuperAdminOrderByWithRelationInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L34598 | neighbors=[index.d.ts]
+- "generated_client_index_d_superadminpayload": "$SuperAdminPayload" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L5128 | neighbors=[index.d.ts]
+- "generated_client_index_d_superadminrelationfilter": "SuperAdminRelationFilter" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L40703 | neighbors=[index.d.ts]
+- "generated_client_index_d_superadminscalarfieldenum": "SuperAdminScalarFieldEnum" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L33915 | neighbors=[index.d.ts]
+- "generated_client_index_d_superadminscalarwherewithaggregatesinput": "SuperAdminScalarWhereWithAggregatesInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L34637 | neighbors=[index.d.ts]
 - "generated_client_index_d_superadminselect": "SuperAdminSelect" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L5100 | neighbors=[index.d.ts]
 - "generated_client_index_d_superadminselectscalar": "SuperAdminSelectScalar" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L5113 | neighbors=[index.d.ts]
 - "generated_client_index_d_superadminsession": "SuperAdminSession" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L30 | neighbors=[index.d.ts]
@@ -51,12 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "generated_client_index_d_superadminsessiongetpayload": "SuperAdminSessionGetPayload" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L6124 | neighbors=[index.d.ts]
 - "generated_client_index_d_superadminsessiongroupbyargs": "SuperAdminSessionGroupByArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L6038 | neighbors=[index.d.ts]
 - "generated_client_index_d_superadminsessiongroupbyoutputtype": "SuperAdminSessionGroupByOutputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L6052 | neighbors=[index.d.ts]
-- "generated_client_index_d_superadminsessioninclude": "SuperAdminSessionInclude" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L6103 | neighbors=[index.d.ts]
-- "generated_client_index_d_superadminsessionlistrelationfilter": "SuperAdminSessionListRelationFilter" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L40634 | neighbors=[index.d.ts]
-- "generated_client_index_d_superadminsessionmaxaggregateinputtype": "SuperAdminSessionMaxAggregateInputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L5945 | neighbors=[index.d.ts]
-- "generated_client_index_d_superadminsessionmaxaggregateoutputtype": "SuperAdminSessionMaxAggregateOutputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L5903 | neighbors=[index.d.ts]
-- "generated_client_index_d_superadminsessionmaxorderbyaggregateinput": "SuperAdminSessionMaxOrderByAggregateInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L40723 | neighbors=[index.d.ts]
-- "generated_client_index_d_superadminsessionminaggregateinputtype": "SuperAdminSessionMinAggregateInputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L5935 | neighbors=[index.d.ts]
 
 ## Instructions
 

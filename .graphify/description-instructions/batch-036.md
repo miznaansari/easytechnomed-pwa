@@ -17,6 +17,12 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "indexeddb_db": "db.js" | kind=code-symbol | source=app/indexedDB/db.js:L1 | neighbors=[252e194 e, 2b2534c f]
+- "leads_route": "route.js" | kind=code-symbol | source=app/api/leads/route.js:L1 | neighbors=[252e194 e, POST()]
+- "lib_auth_requireadmin": "requireAdmin()" | kind=code-symbol | source=lib/auth.js:L81 | neighbors=[auth.js, verifyToken()]
+- "lib_auth_requiresuperadmin": "requireSuperAdmin()" | kind=code-symbol | source=lib/auth.js:L156 | neighbors=[auth.js, verifyToken()]
+- "lib_auth_requireuser": "requireUser()" | kind=code-symbol | source=lib/auth.js:L23 | neighbors=[auth.js, verifyToken()]
+- "lib_auth_verifysuperadminapi": "verifySuperAdminAPI()" | kind=code-symbol | source=lib/auth.js:L190 | neighbors=[auth.js, verifyToken()]
 - "lib_db": "db.js" | kind=code-symbol | source=lib/db.js:L1 | neighbors=[252e194 e, auth.js]
 - "lib_formulautils_determineflag": "determineFlag()" | kind=code-symbol | source=lib/formulaUtils.js:L565 | neighbors=[formulaEngine.js, formulaUtils.js]
 - "lib_formulautils_getrangeandcriticalthresholds": "getRangeAndCriticalThresholds()" | kind=code-symbol | source=lib/formulaUtils.js:L479 | neighbors=[formulaEngine.js, formulaUtils.js]
@@ -31,8 +37,8 @@ one-sentence description — no prose, no markdown fences.
 - "login_route": "route.js" | kind=code-symbol | source=app/api/authas/login/route.js:L1 | neighbors=[252e194 e, POST()]
 - "next_config": "next.config.mjs" | kind=code-symbol | source=next.config.mjs:L1 | neighbors=[252e194 e, nextConfig]
 - "offline_db_appdatabase_deleteoffline": ".deleteOffline()" | kind=code-symbol | source=lib/offline/db.js:L105 | neighbors=[AppDatabase, .updateOffline()]
-- "offline_db_appdatabase_getallpendingrecords": ".getAllPendingRecords()" | kind=code-symbol | source=lib/offline/db.js:L168 | neighbors=[AppDatabase, .getPendingCount()]
-- "offline_db_appdatabase_getpendingcount": ".getPendingCount()" | kind=code-symbol | source=lib/offline/db.js:L197 | neighbors=[AppDatabase, .getAllPendingRecords()]
+- "offline_db_appdatabase_getallpendingrecords": ".getAllPendingRecords()" | kind=code-symbol | source=lib/offline/db.js:L170 | neighbors=[AppDatabase, .getPendingCount()]
+- "offline_db_appdatabase_getpendingcount": ".getPendingCount()" | kind=code-symbol | source=lib/offline/db.js:L240 | neighbors=[AppDatabase, .getAllPendingRecords()]
 - "offline_db_appdatabase_updateoffline": ".updateOffline()" | kind=code-symbol | source=lib/offline/db.js:L74 | neighbors=[AppDatabase, .deleteOffline()]
 - "offline_network_networkmonitor_checkconnection": ".checkConnection()" | kind=code-symbol | source=lib/offline/network.js:L52 | neighbors=[NetworkMonitor, .handleStatusChange()]
 - "offline_network_networkmonitor_constructor": ".constructor()" | kind=code-symbol | source=lib/offline/network.js:L7 | neighbors=[NetworkMonitor, .startHeartbeat()]
@@ -51,12 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "parameters_route_serializeregistration": "serializeRegistration()" | kind=code-symbol | source=app/api/registrations/[id]/parameters/route.js:L6 | neighbors=[route.js, GET()]
 - "payment_route": "route.js" | kind=code-symbol | source=app/api/registrations/[id]/payment/route.js:L1 | neighbors=[252e194 e, POST()]
 - "paymentid_route_formatdate": "formatDate()" | kind=code-symbol | source=app/api/print-subscription-invoice/[paymentId]/route.js:L7 | neighbors=[route.js, GET()]
-- "paymentid_route_formatdatetime": "formatDateTime()" | kind=code-symbol | source=app/api/print-subscription-invoice/[paymentId]/route.js:L18 | neighbors=[route.js, GET()]
-- "paymentid_route_numbertowords": "numberToWords()" | kind=code-symbol | source=app/api/print-subscription-invoice/[paymentId]/route.js:L33 | neighbors=[route.js, GET()]
-- "payments_route": "route.js" | kind=code-symbol | source=app/api/settings/payments/route.js:L1 | neighbors=[252e194 e, GET()]
-- "postcss_config": "postcss.config.mjs" | kind=code-symbol | source=postcss.config.mjs:L1 | neighbors=[252e194 e, config]
-- "preview_pdf_route_formatdate": "formatDate()" | kind=code-symbol | source=app/api/settings/preview-pdf/route.js:L13 | neighbors=[route.js, GET()]
-- "preview_pdf_route_get": "GET()" | kind=code-symbol | source=app/api/settings/preview-pdf/route.js:L25 | neighbors=[route.js, formatDate()]
 
 ## Instructions
 

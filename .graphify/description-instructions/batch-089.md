@@ -17,6 +17,12 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "generated_client_index_d_registrationpaymentupdatemanyargs": "RegistrationPaymentUpdateManyArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L25833 | neighbors=[index.d.ts]
+- "generated_client_index_d_registrationpaymentupdatemanymutationinput": "RegistrationPaymentUpdateManyMutationInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L39600 | neighbors=[index.d.ts]
+- "generated_client_index_d_registrationpaymentupdatemanywithoutregistrationnestedinput": "RegistrationPaymentUpdateManyWithoutRegistrationNestedInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L44251 | neighbors=[index.d.ts]
+- "generated_client_index_d_registrationpaymentupdatemanywithwherewithoutregistrationinput": "RegistrationPaymentUpdateManyWithWhereWithoutRegistrationInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L48848 | neighbors=[index.d.ts]
+- "generated_client_index_d_registrationpaymentupdatewithoutregistrationinput": "RegistrationPaymentUpdateWithoutRegistrationInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L53875 | neighbors=[index.d.ts]
+- "generated_client_index_d_registrationpaymentupdatewithwhereuniquewithoutregistrationinput": "RegistrationPaymentUpdateWithWhereUniqueWithoutRegistrationInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L48843 | neighbors=[index.d.ts]
 - "generated_client_index_d_registrationpaymentupsertargs": "RegistrationPaymentUpsertArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L25847 | neighbors=[index.d.ts]
 - "generated_client_index_d_registrationpaymentupsertwithwhereuniquewithoutregistrationinput": "RegistrationPaymentUpsertWithWhereUniqueWithoutRegistrationInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L48837 | neighbors=[index.d.ts]
 - "generated_client_index_d_registrationpaymentwhereinput": "RegistrationPaymentWhereInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L36518 | neighbors=[index.d.ts]
@@ -51,12 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "generated_client_index_d_registrationtestcreatenestedmanywithoutregistrationinput": "RegistrationTestCreateNestedManyWithoutRegistrationInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L44161 | neighbors=[index.d.ts]
 - "generated_client_index_d_registrationtestcreatenestedmanywithouttestinput": "RegistrationTestCreateNestedManyWithoutTestInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L43921 | neighbors=[index.d.ts]
 - "generated_client_index_d_registrationtestcreateorconnectwithoutregistrationinput": "RegistrationTestCreateOrConnectWithoutRegistrationInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L48583 | neighbors=[index.d.ts]
-- "generated_client_index_d_registrationtestcreateorconnectwithouttestinput": "RegistrationTestCreateOrConnectWithoutTestInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L47973 | neighbors=[index.d.ts]
-- "generated_client_index_d_registrationtestcreatewithoutregistrationinput": "RegistrationTestCreateWithoutRegistrationInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L48553 | neighbors=[index.d.ts]
-- "generated_client_index_d_registrationtestcreatewithouttestinput": "RegistrationTestCreateWithoutTestInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L47943 | neighbors=[index.d.ts]
-- "generated_client_index_d_registrationtestdefaultargs": "RegistrationTestDefaultArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L19568 | neighbors=[index.d.ts]
-- "generated_client_index_d_registrationtestdelegate": "RegistrationTestDelegate" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L18894 | neighbors=[index.d.ts]
-- "generated_client_index_d_registrationtestdeleteargs": "RegistrationTestDeleteArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L19540 | neighbors=[index.d.ts]
 
 ## Instructions
 

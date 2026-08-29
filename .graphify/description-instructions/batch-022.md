@@ -17,6 +17,9 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "runtime_react_native_indentedcurrentline": "indentedCurrentLine()" | kind=code-symbol | source=scratch/generated-client/runtime/react-native.js:L8 | neighbors=[react-native.js, slice(), newLine(), toString()]
+- "runtime_react_native_io": "io()" | kind=code-symbol | source=scratch/generated-client/runtime/react-native.js:L2 | neighbors=[react-native.js, highlight(), An(), bu()]
+- "runtime_react_native_isempty": "isEmpty()" | kind=code-symbol | source=scratch/generated-client/runtime/react-native.js:L8 | neighbors=[react-native.js, nu(), os(), us()]
 - "runtime_react_native_it": "it()" | kind=code-symbol | source=scratch/generated-client/runtime/react-native.js:L2 | neighbors=[react-native.js, Al(), e(), Sl()]
 - "runtime_react_native_loadengine": "loadEngine()" | kind=code-symbol | source=scratch/generated-client/runtime/react-native.js:L60 | neighbors=[react-native.js, instantiateLibrary(), loadLibrary(), parseInitError()]
 - "runtime_react_native_lt": "lt()" | kind=code-symbol | source=scratch/generated-client/runtime/react-native.js:L2 | neighbors=[react-native.js, fo(), to(), Zt()]
@@ -54,9 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "runtime_wasm_getargumentname": "getArgumentName()" | kind=code-symbol | source=scratch/generated-client/runtime/wasm.js:L5 | neighbors=[wasm.js, aa(), di(), fi()]
 - "runtime_wasm_getargumentpath": "getArgumentPath()" | kind=code-symbol | source=scratch/generated-client/runtime/wasm.js:L5 | neighbors=[wasm.js, aa(), di(), fi()]
 - "runtime_wasm_getcomputedfields": "getComputedFields()" | kind=code-symbol | source=scratch/generated-client/runtime/wasm.js:L5 | neighbors=[wasm.js, getAllComputedFields(), oa(), sa()]
-- "runtime_wasm_getfieldvalue": "getFieldValue()" | kind=code-symbol | source=scratch/generated-client/runtime/wasm.js:L3 | neighbors=[wasm.js, getDeepSelectionParent(), getField(), ti()]
-- "runtime_wasm_getglobalomit": "getGlobalOmit()" | kind=code-symbol | source=scratch/generated-client/runtime/wasm.js:L5 | neighbors=[wasm.js, shouldApplyGlobalOmit(), Ve(), oa()]
-- "runtime_wasm_getname": "_getName()" | kind=code-symbol | source=scratch/generated-client/runtime/wasm.js:L4 | neighbors=[wasm.js, constructor(), di(), si()]
 
 ## Instructions
 

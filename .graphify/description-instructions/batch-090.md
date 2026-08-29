@@ -17,6 +17,12 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "generated_client_index_d_registrationtestcreateorconnectwithouttestinput": "RegistrationTestCreateOrConnectWithoutTestInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L47973 | neighbors=[index.d.ts]
+- "generated_client_index_d_registrationtestcreatewithoutregistrationinput": "RegistrationTestCreateWithoutRegistrationInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L48553 | neighbors=[index.d.ts]
+- "generated_client_index_d_registrationtestcreatewithouttestinput": "RegistrationTestCreateWithoutTestInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L47943 | neighbors=[index.d.ts]
+- "generated_client_index_d_registrationtestdefaultargs": "RegistrationTestDefaultArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L19568 | neighbors=[index.d.ts]
+- "generated_client_index_d_registrationtestdelegate": "RegistrationTestDelegate" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L18894 | neighbors=[index.d.ts]
+- "generated_client_index_d_registrationtestdeleteargs": "RegistrationTestDeleteArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L19540 | neighbors=[index.d.ts]
 - "generated_client_index_d_registrationtestdeletemanyargs": "RegistrationTestDeleteManyArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L19558 | neighbors=[index.d.ts]
 - "generated_client_index_d_registrationtestfieldrefs": "RegistrationTestFieldRefs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L19253 | neighbors=[index.d.ts]
 - "generated_client_index_d_registrationtestfindfirstargs": "RegistrationTestFindFirstArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L19310 | neighbors=[index.d.ts]
@@ -51,12 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "generated_client_index_d_registrationtestuncheckedcreateinput": "RegistrationTestUncheckedCreateInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L38808 | neighbors=[index.d.ts]
 - "generated_client_index_d_registrationtestuncheckedcreatenestedmanywithoutregistrationinput": "RegistrationTestUncheckedCreateNestedManyWithoutRegistrationInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L44182 | neighbors=[index.d.ts]
 - "generated_client_index_d_registrationtestuncheckedcreatenestedmanywithouttestinput": "RegistrationTestUncheckedCreateNestedManyWithoutTestInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L43955 | neighbors=[index.d.ts]
-- "generated_client_index_d_registrationtestuncheckedcreatewithoutregistrationinput": "RegistrationTestUncheckedCreateWithoutRegistrationInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L48568 | neighbors=[index.d.ts]
-- "generated_client_index_d_registrationtestuncheckedcreatewithouttestinput": "RegistrationTestUncheckedCreateWithoutTestInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L47958 | neighbors=[index.d.ts]
-- "generated_client_index_d_registrationtestuncheckedupdateinput": "RegistrationTestUncheckedUpdateInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L38840 | neighbors=[index.d.ts]
-- "generated_client_index_d_registrationtestuncheckedupdatemanyinput": "RegistrationTestUncheckedUpdateManyInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L38886 | neighbors=[index.d.ts]
-- "generated_client_index_d_registrationtestuncheckedupdatemanywithoutregistrationinput": "RegistrationTestUncheckedUpdateManyWithoutRegistrationInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L53934 | neighbors=[index.d.ts]
-- "generated_client_index_d_registrationtestuncheckedupdatemanywithoutregistrationnestedinput": "RegistrationTestUncheckedUpdateManyWithoutRegistrationNestedInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L44307 | neighbors=[index.d.ts]
 
 ## Instructions
 

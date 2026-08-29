@@ -17,6 +17,12 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "generated_client_index_d_aggregateregistrationtest": "AggregateRegistrationTest" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L18567 | neighbors=[index.d.ts]
+- "generated_client_index_d_aggregatesuperadmin": "AggregateSuperAdmin" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L4905 | neighbors=[index.d.ts]
+- "generated_client_index_d_aggregatesuperadminsession": "AggregateSuperAdminSession" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L5875 | neighbors=[index.d.ts]
+- "generated_client_index_d_aggregatesuperadmintracking": "AggregateSuperAdminTracking" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L27807 | neighbors=[index.d.ts]
+- "generated_client_index_d_aggregatetest": "AggregateTest" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L15802 | neighbors=[index.d.ts]
+- "generated_client_index_d_aggregatetestdepartment": "AggregateTestDepartment" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L28787 | neighbors=[index.d.ts]
 - "generated_client_index_d_aggregatetestformula": "AggregateTestFormula" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L29711 | neighbors=[index.d.ts]
 - "generated_client_index_d_aggregatetestparameter": "AggregateTestParameter" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L21008 | neighbors=[index.d.ts]
 - "generated_client_index_d_aggregateuser": "AggregateUser" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L6814 | neighbors=[index.d.ts]
@@ -51,12 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "generated_client_index_d_decimalfieldrefinput": "DecimalFieldRefInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L34466 | neighbors=[index.d.ts]
 - "generated_client_index_d_decimalfieldupdateoperationsinput": "DecimalFieldUpdateOperationsInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L43813 | neighbors=[index.d.ts]
 - "generated_client_index_d_decimalfilter": "DecimalFilter" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L41239 | neighbors=[index.d.ts]
-- "generated_client_index_d_decimaljslike": "DecimalJsLike" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L612 | neighbors=[index.d.ts]
-- "generated_client_index_d_decimalnullablefilter": "DecimalNullableFilter" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L41341 | neighbors=[index.d.ts]
-- "generated_client_index_d_decimalnullablewithaggregatesfilter": "DecimalNullableWithAggregatesFilter" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L41474 | neighbors=[index.d.ts]
-- "generated_client_index_d_decimalwithaggregatesfilter": "DecimalWithAggregatesFilter" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L41325 | neighbors=[index.d.ts]
-- "generated_client_index_d_defaultprismaclient": "DefaultPrismaClient" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L3002 | neighbors=[index.d.ts]
-- "generated_client_index_d_doctor": "Doctor" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L75 | neighbors=[index.d.ts]
 
 ## Instructions
 

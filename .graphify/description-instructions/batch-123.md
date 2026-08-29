@@ -17,6 +17,12 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "generated_client_index_d_workspaceuncheckedcreatewithoutparametersinput": "WorkspaceUncheckedCreateWithoutParametersInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L49219 | neighbors=[index.d.ts]
+- "generated_client_index_d_workspaceuncheckedcreatewithoutpdfsettinginput": "WorkspaceUncheckedCreateWithoutPdfSettingInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L51686 | neighbors=[index.d.ts]
+- "generated_client_index_d_workspaceuncheckedcreatewithoutregistrationsinput": "WorkspaceUncheckedCreateWithoutRegistrationsInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L48434 | neighbors=[index.d.ts]
+- "generated_client_index_d_workspaceuncheckedcreatewithouttestformulasinput": "WorkspaceUncheckedCreateWithoutTestFormulasInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L50812 | neighbors=[index.d.ts]
+- "generated_client_index_d_workspaceuncheckedcreatewithouttestparametersinput": "WorkspaceUncheckedCreateWithoutTestParametersInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L49482 | neighbors=[index.d.ts]
+- "generated_client_index_d_workspaceuncheckedcreatewithouttestsinput": "WorkspaceUncheckedCreateWithoutTestsInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L48003 | neighbors=[index.d.ts]
 - "generated_client_index_d_workspaceuncheckedcreatewithoutusersinput": "WorkspaceUncheckedCreateWithoutUsersInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L46397 | neighbors=[index.d.ts]
 - "generated_client_index_d_workspaceuncheckedupdateinput": "WorkspaceUncheckedUpdateInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L37355 | neighbors=[index.d.ts]
 - "generated_client_index_d_workspaceuncheckedupdatemanyinput": "WorkspaceUncheckedUpdateManyInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L37400 | neighbors=[index.d.ts]
@@ -51,12 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "generated_client_index_d_workspaceupdatetoonewithwherewithoutpdfsettinginput": "WorkspaceUpdateToOneWithWhereWithoutPdfSettingInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L51718 | neighbors=[index.d.ts]
 - "generated_client_index_d_workspaceupdatetoonewithwherewithoutregistrationsinput": "WorkspaceUpdateToOneWithWhereWithoutRegistrationsInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L48721 | neighbors=[index.d.ts]
 - "generated_client_index_d_workspaceupdatetoonewithwherewithouttestformulasinput": "WorkspaceUpdateToOneWithWhereWithoutTestFormulasInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L50986 | neighbors=[index.d.ts]
-- "generated_client_index_d_workspaceupdatetoonewithwherewithouttestparametersinput": "WorkspaceUpdateToOneWithWhereWithoutTestParametersInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L49685 | neighbors=[index.d.ts]
-- "generated_client_index_d_workspaceupdatetoonewithwherewithouttestsinput": "WorkspaceUpdateToOneWithWhereWithoutTestsInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L48211 | neighbors=[index.d.ts]
-- "generated_client_index_d_workspaceupdatetoonewithwherewithoutusersinput": "WorkspaceUpdateToOneWithWhereWithoutUsersInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L46478 | neighbors=[index.d.ts]
-- "generated_client_index_d_workspaceupdatewithoutadminsinput": "WorkspaceUpdateWithoutAdminsInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L47086 | neighbors=[index.d.ts]
-- "generated_client_index_d_workspaceupdatewithoutdoctorsinput": "WorkspaceUpdateWithoutDoctorsInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L47826 | neighbors=[index.d.ts]
-- "generated_client_index_d_workspaceupdatewithoutinterpretationrulesinput": "WorkspaceUpdateWithoutInterpretationRulesInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L51385 | neighbors=[index.d.ts]
 
 ## Instructions
 

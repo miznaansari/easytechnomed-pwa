@@ -17,6 +17,13 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "runtime_library_d_middlewareargsmapper": "MiddlewareArgsMapper" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L2123 | neighbors=[_d()]
+- "runtime_library_d_middlewarehandler": "MiddlewareHandler" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L2128 | neighbors=[_d()]
+- "runtime_library_d_model": "Model" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L689 | neighbors=[_d()]
+- "runtime_library_d_modelaction": "ModelAction" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L851 | neighbors=[_d()]
+- "runtime_library_d_modelarg": "ModelArg" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L2136 | neighbors=[_d()]
+- "runtime_library_d_modelargs": "ModelArgs" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L2140 | neighbors=[_d()]
+- "runtime_library_d_modelkey": "ModelKey" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L2146 | neighbors=[_d()]
 - "runtime_library_d_modelmapping": "ModelMapping" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L829 | neighbors=[_d()]
 - "runtime_library_d_modelqueryoptionscb": "ModelQueryOptionsCb" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L2148 | neighbors=[_d()]
 - "runtime_library_d_modelqueryoptionscbargs": "ModelQueryOptionsCbArgs" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L2150 | neighbors=[_d()]
@@ -50,13 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "runtime_library_d_prismaclientinitializationerror": "PrismaClientInitializationError" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L2314 | neighbors=[_d()]
 - "runtime_library_d_prismaclientoptions": "PrismaClientOptions" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L2331 | neighbors=[_d()]
 - "runtime_library_d_prismaclientrustpanicerror": "PrismaClientRustPanicError" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L2388 | neighbors=[_d()]
-- "runtime_library_d_prismaclientvalidationerror": "PrismaClientValidationError" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L2401 | neighbors=[_d()]
-- "runtime_library_d_prismapromise": "PrismaPromise" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L2410 | neighbors=[_d()]
-- "runtime_library_d_prismapromise_2": "PrismaPromise_2" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L2419 | neighbors=[_d()]
-- "runtime_library_d_prismapromisebatchtransaction": "PrismaPromiseBatchTransaction" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L2446 | neighbors=[_d()]
-- "runtime_library_d_prismapromisecallback": "PrismaPromiseCallback" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L2454 | neighbors=[_d()]
-- "runtime_library_d_prismapromisefactory": "PrismaPromiseFactory" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L2465 | neighbors=[_d()]
-- "runtime_library_d_prismapromiseinteractivetransaction": "PrismaPromiseInteractiveTransaction" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L2467 | neighbors=[_d()]
 
 ## Instructions
 

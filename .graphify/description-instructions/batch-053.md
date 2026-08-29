@@ -17,6 +17,12 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "generated_client_index_d_adminaddressmaxaggregateinputtype": "AdminAddressMaxAggregateInputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L24059 | neighbors=[index.d.ts]
+- "generated_client_index_d_adminaddressmaxaggregateoutputtype": "AdminAddressMaxAggregateOutputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L23998 | neighbors=[index.d.ts]
+- "generated_client_index_d_adminaddressmaxorderbyaggregateinput": "AdminAddressMaxOrderByAggregateInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L42191 | neighbors=[index.d.ts]
+- "generated_client_index_d_adminaddressminaggregateinputtype": "AdminAddressMinAggregateInputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L24044 | neighbors=[index.d.ts]
+- "generated_client_index_d_adminaddressminaggregateoutputtype": "AdminAddressMinAggregateOutputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L23983 | neighbors=[index.d.ts]
+- "generated_client_index_d_adminaddressminorderbyaggregateinput": "AdminAddressMinOrderByAggregateInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L42206 | neighbors=[index.d.ts]
 - "generated_client_index_d_adminaddressnullablerelationfilter": "AdminAddressNullableRelationFilter" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L41000 | neighbors=[index.d.ts]
 - "generated_client_index_d_adminaddressorderbywithaggregationinput": "AdminAddressOrderByWithAggregationInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L36480 | neighbors=[index.d.ts]
 - "generated_client_index_d_adminaddressorderbywithrelationinput": "AdminAddressOrderByWithRelationInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L36445 | neighbors=[index.d.ts]
@@ -51,12 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "generated_client_index_d_adminavgaggregateinputtype": "AdminAvgAggregateInputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L10779 | neighbors=[index.d.ts]
 - "generated_client_index_d_adminavgaggregateoutputtype": "AdminAvgAggregateOutputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L10680 | neighbors=[index.d.ts]
 - "generated_client_index_d_adminavgorderbyaggregateinput": "AdminAvgOrderByAggregateInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L41052 | neighbors=[index.d.ts]
-- "generated_client_index_d_admincountaggregateinputtype": "AdminCountAggregateInputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L10849 | neighbors=[index.d.ts]
-- "generated_client_index_d_admincountaggregateoutputtype": "AdminCountAggregateOutputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L10750 | neighbors=[index.d.ts]
-- "generated_client_index_d_admincountargs": "AdminCountArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L11122 | neighbors=[index.d.ts]
-- "generated_client_index_d_admincountorderbyaggregateinput": "AdminCountOrderByAggregateInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L41025 | neighbors=[index.d.ts]
-- "generated_client_index_d_admincountoutputtype": "AdminCountOutputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L3351 | neighbors=[index.d.ts]
-- "generated_client_index_d_admincountoutputtypeargs": "AdminCountOutputTypeArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L54286 | neighbors=[index.d.ts]
 
 ## Instructions
 

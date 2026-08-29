@@ -473,19 +473,20 @@ export default function MoneyReciptMobile({
                       <Box sx={{ display: "flex", justifyContent: "space-between", alignItems: "flex-start" }}>
                         <Box>
                           <Typography variant="subtitle2" sx={{ fontWeight: 700 }}>
-                            {p.paymentMode || "Cash"}
+                            {p.paymentMode || p.mode || "Cash"}
+                            {p.remark ? ` • ${p.remark}` : ""}
                           </Typography>
-                          {p.paymentRefNo && (
+                          {(p.paymentRefNo || p.refNo) && (
                             <Typography variant="caption" color="text.secondary" sx={{ display: "block" }}>
-                              Ref: {p.paymentRefNo}
+                              Ref: {p.paymentRefNo || p.refNo}
                             </Typography>
                           )}
                           <Typography variant="caption" color="text.disabled" sx={{ display: "block", mt: 0.3 }}>
-                            {new Date(p.createdAt).toLocaleString(undefined, { dateStyle: "short", timeStyle: "short" })}
+                            {new Date(p.createdAt || p.date || selectedRegistration.date).toLocaleString(undefined, { dateStyle: "short", timeStyle: "short" })}
                           </Typography>
                         </Box>
                         <Chip
-                          label={`₹${parseFloat(p.amount).toFixed(2)}`}
+                          label={`₹${parseFloat(p.amount || 0).toFixed(2)}`}
                           color="success"
                           size="small"
                           sx={{ fontWeight: 800, fontSize: "0.82rem" }}

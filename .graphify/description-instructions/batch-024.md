@@ -24,6 +24,9 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "scratch_check_kft_all": "check-kft-all.js" | kind=code-symbol | source=scratch/check-kft-all.js:L1 | neighbors=[252e194 e, main(), prisma, { PrismaClient }]
+- "scratch_check_reg_17": "check-reg-17.js" | kind=code-symbol | source=scratch/check-reg-17.js:L1 | neighbors=[252e194 e, runFormulaEngine(), main(), prisma]
+- "scratch_cleanup_cbc": "cleanup-cbc.js" | kind=code-symbol | source=scratch/cleanup-cbc.js:L1 | neighbors=[252e194 e, main(), prisma, { PrismaClient }]
 - "scratch_inspect_cbc": "inspect-cbc.js" | kind=code-symbol | source=scratch/inspect-cbc.js:L1 | neighbors=[252e194 e, main(), prisma, { PrismaClient }]
 - "scratch_inspect_kft": "inspect-kft.js" | kind=code-symbol | source=scratch/inspect-kft.js:L1 | neighbors=[252e194 e, main(), prisma, { PrismaClient }]
 - "scratch_sync_expiry_to_workspace": "sync-expiry-to-workspace.js" | kind=code-symbol | source=scratch/sync-expiry-to-workspace.js:L1 | neighbors=[252e194 e, main(), prisma, { PrismaClient }]
@@ -54,16 +57,13 @@ one-sentence description — no prose, no markdown fences.
 - "commit:repo:github.com-personal/miznaansari/easytechnomed-pwa@20dc303b41e0ec95a716d05d525405c6bf88bace": "20dc303 3.0.19" | kind=Commit | source=git | neighbors=[main, a712d0e ios issue pwa, 2582be7 fixed zoom issue]
 - "commit:repo:github.com-personal/miznaansari/easytechnomed-pwa@2291b5b219512923f56c9243207e09ed0fbbd6c7": "2291b5b 2.0.2" | kind=Commit | source=git | neighbors=[main, 84a8ff2 full indexeddb based, cf2bb98 new]
 - "commit:repo:github.com-personal/miznaansari/easytechnomed-pwa@2476fb6811bfd0ea0c2be69c2f0e6584978025f6": "2476fb6 2.0.9" | kind=Commit | source=git | neighbors=[main, 5e3d9ef d, cea69a2 d]
+- "commit:repo:github.com-personal/miznaansari/easytechnomed-pwa@272c64d50ea12ecf90db19a61cebc538cbbd6e34": "272c64d fixed" | kind=Commit | source=git | neighbors=[main, 3917c34 3.1.7, 36209a9 3.1.6]
 - "commit:repo:github.com-personal/miznaansari/easytechnomed-pwa@2ef3785b62d6e83ce6505a9dc81cc501e8efe8eb": "2ef3785 2.0.1" | kind=Commit | source=git | neighbors=[main, cf2bb98 new, 3c7e66b f]
+- "commit:repo:github.com-personal/miznaansari/easytechnomed-pwa@36209a9af96bb0929bab65a718f755f8ba99c58a": "36209a9 3.1.6" | kind=Commit | source=git | neighbors=[10501e3 fixed, main, 272c64d fixed]
+- "commit:repo:github.com-personal/miznaansari/easytechnomed-pwa@3917c34bffb24a9251500540b80574e96449c824": "3917c34 3.1.7" | kind=Commit | source=git | neighbors=[272c64d fixed, main, 78dd976 fixed]
 - "commit:repo:github.com-personal/miznaansari/easytechnomed-pwa@3e84241fb483afc52ec34d972453dd2e97bb3c61": "3e84241 3.0.7" | kind=Commit | source=git | neighbors=[main, 2daebb8 f, c6b79b3 f]
 - "commit:repo:github.com-personal/miznaansari/easytechnomed-pwa@3f7f1b43875414ebdec1c6b147ae0a582a83e374": "3f7f1b4 2.0.0" | kind=Commit | source=git | neighbors=[main, 3c7e66b f, 53ca5c1 stable version 1]
 - "commit:repo:github.com-personal/miznaansari/easytechnomed-pwa@42773a17f7fafb1a10eb65d51c6d58114960246b": "42773a1 1.1.31" | kind=Commit | source=git | neighbors=[main, 91c4f7a feat: complete offline support …, a4caf17 fix: ensure Service Worker only…]
-- "commit:repo:github.com-personal/miznaansari/easytechnomed-pwa@44ad6b291634e03f879c81169447c20a2f87c7bc": "44ad6b2 new ui dashboard" | kind=Commit | source=git | neighbors=[main, b95c5bd 3.0.24, 6812ab9 new ui dashboard]
-- "commit:repo:github.com-personal/miznaansari/easytechnomed-pwa@462f542b7ee9e8bc36357c23ab77576e01bc53d9": "462f542 3.0.4" | kind=Commit | source=git | neighbors=[main, a356e41 f, c15ae1e fixed]
-- "commit:repo:github.com-personal/miznaansari/easytechnomed-pwa@48cc7ec32defe0b9c99dc02a05d23b2bfcbc86f7": "48cc7ec 2.0.22" | kind=Commit | source=git | neighbors=[14fa292 f, main, 9f59247 expire token]
-- "commit:repo:github.com-personal/miznaansari/easytechnomed-pwa@5ce0a2ea8942fa32ba4e3e1cffce040572cdebda": "5ce0a2e fixed" | kind=Commit | source=git | neighbors=[main, 9a50d76 3.0.2, c5cbecd 3.0.1]
-- "commit:repo:github.com-personal/miznaansari/easytechnomed-pwa@5ff27349a85485707e8d6ec1dbdf3a9164b29d0c": "5ff2734 2.0.11" | kind=Commit | source=git | neighbors=[main, 4d7570f fixed, aae6bad fixed]
-- "commit:repo:github.com-personal/miznaansari/easytechnomed-pwa@6325ac4601eac2f28c31d96812a3115d32258803": "6325ac4 2.0.20" | kind=Commit | source=git | neighbors=[main, f3857f9 f, d84f15f f]
 
 ## Instructions
 

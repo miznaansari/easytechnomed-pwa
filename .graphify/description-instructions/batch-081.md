@@ -17,6 +17,12 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "generated_client_index_d_parameterscalarfieldenum": "ParameterScalarFieldEnum" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L34195 | neighbors=[index.d.ts]
+- "generated_client_index_d_parameterscalarwhereinput": "ParameterScalarWhereInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L45964 | neighbors=[index.d.ts]
+- "generated_client_index_d_parameterscalarwherewithaggregatesinput": "ParameterScalarWhereWithAggregatesInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L36124 | neighbors=[index.d.ts]
+- "generated_client_index_d_parameterselect": "ParameterSelect" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L20074 | neighbors=[index.d.ts]
+- "generated_client_index_d_parameterselectscalar": "ParameterSelectScalar" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L20118 | neighbors=[index.d.ts]
+- "generated_client_index_d_parametersumaggregateinputtype": "ParameterSumAggregateInputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L19789 | neighbors=[index.d.ts]
 - "generated_client_index_d_parametersumaggregateoutputtype": "ParameterSumAggregateOutputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L19619 | neighbors=[index.d.ts]
 - "generated_client_index_d_parametersumorderbyaggregateinput": "ParameterSumOrderByAggregateInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L41951 | neighbors=[index.d.ts]
 - "generated_client_index_d_parameteruncheckedcreateinput": "ParameterUncheckedCreateInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L38942 | neighbors=[index.d.ts]
@@ -51,12 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "generated_client_index_d_parameterupdatewithoutworkspaceinput": "ParameterUpdateWithoutWorkspaceInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L52370 | neighbors=[index.d.ts]
 - "generated_client_index_d_parameterupdatewithwhereuniquewithoutworkspaceinput": "ParameterUpdateWithWhereUniqueWithoutWorkspaceInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L45954 | neighbors=[index.d.ts]
 - "generated_client_index_d_parameterupsertargs": "ParameterUpsertArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L20863 | neighbors=[index.d.ts]
-- "generated_client_index_d_parameterupsertwithoutinterpretationrulesinput": "ParameterUpsertWithoutInterpretationRulesInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L51490 | neighbors=[index.d.ts]
-- "generated_client_index_d_parameterupsertwithouttestformulasinput": "ParameterUpsertWithoutTestFormulasInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L51096 | neighbors=[index.d.ts]
-- "generated_client_index_d_parameterupsertwithouttestmappingsinput": "ParameterUpsertWithoutTestMappingsInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L49747 | neighbors=[index.d.ts]
-- "generated_client_index_d_parameterupsertwithwhereuniquewithoutworkspaceinput": "ParameterUpsertWithWhereUniqueWithoutWorkspaceInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L45948 | neighbors=[index.d.ts]
-- "generated_client_index_d_parameterwhereinput": "ParameterWhereInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L35948 | neighbors=[index.d.ts]
-- "generated_client_index_d_parameterwhereuniqueinput": "ParameterWhereUniqueInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L36035 | neighbors=[index.d.ts]
 
 ## Instructions
 

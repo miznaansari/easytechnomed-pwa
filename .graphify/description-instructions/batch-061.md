@@ -17,6 +17,12 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "generated_client_index_d_adminsessionuncheckedupdatemanywithoutadmininput": "AdminSessionUncheckedUpdateManyWithoutAdminInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L52905 | neighbors=[index.d.ts]
+- "generated_client_index_d_adminsessionuncheckedupdatemanywithoutadminnestedinput": "AdminSessionUncheckedUpdateManyWithoutAdminNestedInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L43611 | neighbors=[index.d.ts]
+- "generated_client_index_d_adminsessionuncheckedupdatewithoutadmininput": "AdminSessionUncheckedUpdateWithoutAdminInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L52896 | neighbors=[index.d.ts]
+- "generated_client_index_d_adminsessionupdateargs": "AdminSessionUpdateArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L12755 | neighbors=[index.d.ts]
+- "generated_client_index_d_adminsessionupdateinput": "AdminSessionUpdateInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L38048 | neighbors=[index.d.ts]
+- "generated_client_index_d_adminsessionupdatemanyargs": "AdminSessionUpdateManyArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L12777 | neighbors=[index.d.ts]
 - "generated_client_index_d_adminsessionupdatemanymutationinput": "AdminSessionUpdateManyMutationInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L38077 | neighbors=[index.d.ts]
 - "generated_client_index_d_adminsessionupdatemanywithoutadminnestedinput": "AdminSessionUpdateManyWithoutAdminNestedInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L43559 | neighbors=[index.d.ts]
 - "generated_client_index_d_adminsessionupdatemanywithwherewithoutadmininput": "AdminSessionUpdateManyWithWhereWithoutAdminInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L47176 | neighbors=[index.d.ts]
@@ -51,12 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "generated_client_index_d_admintrackingcreatewithoutadmininput": "AdminTrackingCreateWithoutAdminInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L46919 | neighbors=[index.d.ts]
 - "generated_client_index_d_admintrackingdefaultargs": "AdminTrackingDefaultArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L27791 | neighbors=[index.d.ts]
 - "generated_client_index_d_admintrackingdelegate": "AdminTrackingDelegate" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L27107 | neighbors=[index.d.ts]
-- "generated_client_index_d_admintrackingdeleteargs": "AdminTrackingDeleteArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L27748 | neighbors=[index.d.ts]
-- "generated_client_index_d_admintrackingdeletemanyargs": "AdminTrackingDeleteManyArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L27766 | neighbors=[index.d.ts]
-- "generated_client_index_d_admintrackingfieldrefs": "AdminTrackingFieldRefs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L27465 | neighbors=[index.d.ts]
-- "generated_client_index_d_admintrackingfindfirstargs": "AdminTrackingFindFirstArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L27518 | neighbors=[index.d.ts]
-- "generated_client_index_d_admintrackingfindfirstorthrowargs": "AdminTrackingFindFirstOrThrowArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L27566 | neighbors=[index.d.ts]
-- "generated_client_index_d_admintrackingfindmanyargs": "AdminTrackingFindManyArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L27614 | neighbors=[index.d.ts]
 
 ## Instructions
 

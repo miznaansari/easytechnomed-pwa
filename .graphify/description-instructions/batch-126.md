@@ -17,6 +17,12 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "offline_offlinepdfgenerator_wrapplaintextlines": "wrapPlainTextLines()" | kind=code-symbol | source=lib/offline/offlinePdfGenerator.js:L209 | neighbors=[offlinePdfGenerator.js]
+- "offline_offlineprint_printreportoffline": "printReportOffline()" | kind=code-symbol | source=lib/offline/offlinePrint.js:L200 | neighbors=[offlinePrint.js]
+- "offline_reloginmodal_reloginmodal": "ReLoginModal()" | kind=code-symbol | source=components/offline/ReLoginModal.jsx:L31 | neighbors=[ReLoginModal.jsx]
+- "offline_syncindicator_syncindicator": "SyncIndicator()" | kind=code-symbol | source=components/offline/SyncIndicator.jsx:L34 | neighbors=[SyncIndicator.jsx]
+- "offline_syncstatusicon_syncstatusicon": "SyncStatusIcon()" | kind=code-symbol | source=components/offline/SyncStatusIcon.jsx:L13 | neighbors=[SyncStatusIcon.jsx]
+- "offline_timestamps_compareutc": "compareUtc()" | kind=code-symbol | source=lib/offline/timestamps.js:L37 | neighbors=[timestamps.js]
 - "offline_timestamps_formatlocaldisplay": "formatLocalDisplay()" | kind=code-symbol | source=lib/offline/timestamps.js:L61 | neighbors=[timestamps.js]
 - "offline_unsyncedlogoutmodal_unsyncedlogoutmodal": "UnsyncedLogoutModal()" | kind=code-symbol | source=components/offline/UnsyncedLogoutModal.jsx:L20 | neighbors=[UnsyncedLogoutModal.jsx]
 - "parameters_route_post": "POST()" | kind=code-symbol | source=app/api/registrations/[id]/parameters/route.js:L93 | neighbors=[route.js]
@@ -51,12 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "public_sw_precache_routes": "PRECACHE_ROUTES" | kind=code-symbol | source=public/sw.js:L5 | neighbors=[sw.js]
 - "public_sw_sanitizeresponse": "sanitizeResponse()" | kind=code-symbol | source=public/sw.js:L61 | neighbors=[sw.js]
 - "q_route_get": "GET()" | kind=code-symbol | source=app/(printReport)/q/route.js:L4 | neighbors=[route.js]
-- "register_page_metadata": "metadata" | kind=code-symbol | source=app/(customer)/auth/register/page.js:L3 | neighbors=[page.js]
-- "register_page_page": "Page()" | kind=code-symbol | source=app/(customer)/auth/register/page.js:L11 | neighbors=[page.js]
-- "register_registerpageclient_customerregisterpage": "CustomerRegisterPage()" | kind=code-symbol | source=app/(customer)/auth/register/RegisterPageClient.js:L25 | neighbors=[RegisterPageClient.js]
-- "register_registerpageclient_registerschema": "registerSchema" | kind=code-symbol | source=app/(customer)/auth/register/RegisterPageClient.js:L15 | neighbors=[RegisterPageClient.js]
-- "register_route_post": "POST()" | kind=code-symbol | source=app/api/authas/register/route.js:L7 | neighbors=[route.js]
-- "registration_page_filter": "filter" | kind=code-symbol | source=app/(customer)/(dashboard)/registration/page.js:L54 | neighbors=[page.js]
 
 ## Instructions
 

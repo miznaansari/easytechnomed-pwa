@@ -17,6 +17,13 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "runtime_library_d_callsite": "CallSite" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L128 | neighbors=[_d()]
+- "runtime_library_d_cast": "Cast" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L132 | neighbors=[_d()]
+- "runtime_library_d_client": "Client" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L134 | neighbors=[_d()]
+- "runtime_library_d_clientarg": "ClientArg" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L136 | neighbors=[_d()]
+- "runtime_library_d_clientargs": "ClientArgs" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L140 | neighbors=[_d()]
+- "runtime_library_d_clientbuiltinprop": "ClientBuiltInProp" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L144 | neighbors=[_d()]
+- "runtime_library_d_clientoptiondef": "ClientOptionDef" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L146 | neighbors=[_d()]
 - "runtime_library_d_clientotherops": "ClientOtherOps" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L150 | neighbors=[_d()]
 - "runtime_library_d_columntype": "ColumnType" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L159 | neighbors=[_d()]
 - "runtime_library_d_compute": "Compute" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L196 | neighbors=[_d()]
@@ -50,13 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "runtime_library_d_dynamicclientextensionthisbuiltin": "DynamicClientExtensionThisBuiltin" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L911 | neighbors=[_d()]
 - "runtime_library_d_dynamicmodelextensionargs": "DynamicModelExtensionArgs" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L928 | neighbors=[_d()]
 - "runtime_library_d_dynamicmodelextensionfluentapi": "DynamicModelExtensionFluentApi" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L951 | neighbors=[_d()]
-- "runtime_library_d_dynamicmodelextensionfnresult": "DynamicModelExtensionFnResult" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L959 | neighbors=[_d()]
-- "runtime_library_d_dynamicmodelextensionfnresultbase": "DynamicModelExtensionFnResultBase" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L961 | neighbors=[_d()]
-- "runtime_library_d_dynamicmodelextensionfnresultnull": "DynamicModelExtensionFnResultNull" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L963 | neighbors=[_d()]
-- "runtime_library_d_dynamicmodelextensionoperationfn": "DynamicModelExtensionOperationFn" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L965 | neighbors=[_d()]
-- "runtime_library_d_dynamicmodelextensionthis": "DynamicModelExtensionThis" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L967 | neighbors=[_d()]
-- "runtime_library_d_dynamicqueryextensionargs": "DynamicQueryExtensionArgs" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L980 | neighbors=[_d()]
-- "runtime_library_d_dynamicqueryextensioncb": "DynamicQueryExtensionCb" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L993 | neighbors=[_d()]
 
 ## Instructions
 

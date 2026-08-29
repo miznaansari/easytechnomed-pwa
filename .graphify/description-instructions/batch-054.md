@@ -17,6 +17,12 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "generated_client_index_d_admincountaggregateinputtype": "AdminCountAggregateInputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L10849 | neighbors=[index.d.ts]
+- "generated_client_index_d_admincountaggregateoutputtype": "AdminCountAggregateOutputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L10750 | neighbors=[index.d.ts]
+- "generated_client_index_d_admincountargs": "AdminCountArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L11122 | neighbors=[index.d.ts]
+- "generated_client_index_d_admincountorderbyaggregateinput": "AdminCountOrderByAggregateInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L41025 | neighbors=[index.d.ts]
+- "generated_client_index_d_admincountoutputtype": "AdminCountOutputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L3351 | neighbors=[index.d.ts]
+- "generated_client_index_d_admincountoutputtypeargs": "AdminCountOutputTypeArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L54286 | neighbors=[index.d.ts]
 - "generated_client_index_d_admincountoutputtypecountregistrationsargs": "AdminCountOutputTypeCountRegistrationsArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L3391 | neighbors=[index.d.ts]
 - "generated_client_index_d_admincountoutputtypecountsessionsargs": "AdminCountOutputTypeCountSessionsArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L3377 | neighbors=[index.d.ts]
 - "generated_client_index_d_admincountoutputtypecounttrackingsargs": "AdminCountOutputTypeCountTrackingsArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L3384 | neighbors=[index.d.ts]
@@ -51,12 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "generated_client_index_d_admindefaultargs": "AdminDefaultArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L11906 | neighbors=[index.d.ts]
 - "generated_client_index_d_admindelegate": "AdminDelegate" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L11127 | neighbors=[index.d.ts]
 - "generated_client_index_d_admindeleteargs": "AdminDeleteArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L11788 | neighbors=[index.d.ts]
-- "generated_client_index_d_admindeletemanyargs": "AdminDeleteManyArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L11806 | neighbors=[index.d.ts]
-- "generated_client_index_d_adminfieldrefs": "AdminFieldRefs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L11490 | neighbors=[index.d.ts]
-- "generated_client_index_d_adminfindfirstargs": "AdminFindFirstArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L11558 | neighbors=[index.d.ts]
-- "generated_client_index_d_adminfindfirstorthrowargs": "AdminFindFirstOrThrowArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L11606 | neighbors=[index.d.ts]
-- "generated_client_index_d_adminfindmanyargs": "AdminFindManyArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L11654 | neighbors=[index.d.ts]
-- "generated_client_index_d_adminfinduniqueargs": "AdminFindUniqueArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L11522 | neighbors=[index.d.ts]
 
 ## Instructions
 

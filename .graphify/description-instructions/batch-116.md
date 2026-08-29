@@ -17,6 +17,12 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "generated_client_index_d_usersessionaggregateargs": "UserSessionAggregateArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L8003 | neighbors=[index.d.ts]
+- "generated_client_index_d_usersessionargs": "UserSessionArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L54334 | neighbors=[index.d.ts]
+- "generated_client_index_d_usersessionavgaggregateinputtype": "UserSessionAvgAggregateInputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L7962 | neighbors=[index.d.ts]
+- "generated_client_index_d_usersessionavgaggregateoutputtype": "UserSessionAvgAggregateOutputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L7920 | neighbors=[index.d.ts]
+- "generated_client_index_d_usersessionavgorderbyaggregateinput": "UserSessionAvgOrderByAggregateInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L40899 | neighbors=[index.d.ts]
+- "generated_client_index_d_usersessioncountaggregateinputtype": "UserSessionCountAggregateInputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L7992 | neighbors=[index.d.ts]
 - "generated_client_index_d_usersessioncountaggregateoutputtype": "UserSessionCountAggregateOutputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L7950 | neighbors=[index.d.ts]
 - "generated_client_index_d_usersessioncountargs": "UserSessionCountArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L8163 | neighbors=[index.d.ts]
 - "generated_client_index_d_usersessioncountorderbyaggregateinput": "UserSessionCountOrderByAggregateInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L40889 | neighbors=[index.d.ts]
@@ -51,12 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "generated_client_index_d_usersessionminaggregateoutputtype": "UserSessionMinAggregateOutputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L7930 | neighbors=[index.d.ts]
 - "generated_client_index_d_usersessionminorderbyaggregateinput": "UserSessionMinOrderByAggregateInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L40914 | neighbors=[index.d.ts]
 - "generated_client_index_d_usersessionorderbyrelationaggregateinput": "UserSessionOrderByRelationAggregateInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L40792 | neighbors=[index.d.ts]
-- "generated_client_index_d_usersessionorderbywithaggregationinput": "UserSessionOrderByWithAggregationInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L34878 | neighbors=[index.d.ts]
-- "generated_client_index_d_usersessionorderbywithrelationinput": "UserSessionOrderByWithRelationInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L34853 | neighbors=[index.d.ts]
-- "generated_client_index_d_usersessionpayload": "$UserSessionPayload" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L8144 | neighbors=[index.d.ts]
-- "generated_client_index_d_usersessionscalarfieldenum": "UserSessionScalarFieldEnum" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L33964 | neighbors=[index.d.ts]
-- "generated_client_index_d_usersessionscalarwhereinput": "UserSessionScalarWhereInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L46540 | neighbors=[index.d.ts]
-- "generated_client_index_d_usersessionscalarwherewithaggregatesinput": "UserSessionScalarWhereWithAggregatesInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L34893 | neighbors=[index.d.ts]
 
 ## Instructions
 

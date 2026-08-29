@@ -17,6 +17,12 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "generated_client_index_d_testformulaupdatewithouttestinput": "TestFormulaUpdateWithoutTestInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L53744 | neighbors=[index.d.ts]
+- "generated_client_index_d_testformulaupdatewithoutworkspaceinput": "TestFormulaUpdateWithoutWorkspaceInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L52550 | neighbors=[index.d.ts]
+- "generated_client_index_d_testformulaupdatewithwhereuniquewithoutoutputparameterinput": "TestFormulaUpdateWithWhereUniqueWithoutOutputParameterInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L49436 | neighbors=[index.d.ts]
+- "generated_client_index_d_testformulaupdatewithwhereuniquewithouttestinput": "TestFormulaUpdateWithWhereUniqueWithoutTestInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L48279 | neighbors=[index.d.ts]
+- "generated_client_index_d_testformulaupdatewithwhereuniquewithoutworkspaceinput": "TestFormulaUpdateWithWhereUniqueWithoutWorkspaceInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L46052 | neighbors=[index.d.ts]
+- "generated_client_index_d_testformulaupsertargs": "TestFormulaUpsertArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L30644 | neighbors=[index.d.ts]
 - "generated_client_index_d_testformulaupsertwithwhereuniquewithoutoutputparameterinput": "TestFormulaUpsertWithWhereUniqueWithoutOutputParameterInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L49430 | neighbors=[index.d.ts]
 - "generated_client_index_d_testformulaupsertwithwhereuniquewithouttestinput": "TestFormulaUpsertWithWhereUniqueWithoutTestInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L48273 | neighbors=[index.d.ts]
 - "generated_client_index_d_testformulaupsertwithwhereuniquewithoutworkspaceinput": "TestFormulaUpsertWithWhereUniqueWithoutWorkspaceInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L46046 | neighbors=[index.d.ts]
@@ -51,12 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "generated_client_index_d_testparametercountorderbyaggregateinput": "TestParameterCountOrderByAggregateInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L41999 | neighbors=[index.d.ts]
 - "generated_client_index_d_testparametercountoutputtype": "TestParameterCountOutputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L3645 | neighbors=[index.d.ts]
 - "generated_client_index_d_testparametercountoutputtypeargs": "TestParameterCountOutputTypeArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L54310 | neighbors=[index.d.ts]
-- "generated_client_index_d_testparametercountoutputtypecountresultsargs": "TestParameterCountOutputTypeCountResultsArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L3667 | neighbors=[index.d.ts]
-- "generated_client_index_d_testparametercountoutputtypedefaultargs": "TestParameterCountOutputTypeDefaultArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L3657 | neighbors=[index.d.ts]
-- "generated_client_index_d_testparametercountoutputtypeselect": "TestParameterCountOutputTypeSelect" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L3649 | neighbors=[index.d.ts]
-- "generated_client_index_d_testparametercreateargs": "TestParameterCreateArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L21978 | neighbors=[index.d.ts]
-- "generated_client_index_d_testparametercreateinput": "TestParameterCreateInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L39176 | neighbors=[index.d.ts]
-- "generated_client_index_d_testparametercreatemanyargs": "TestParameterCreateManyArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L21996 | neighbors=[index.d.ts]
 
 ## Instructions
 

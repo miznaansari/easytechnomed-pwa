@@ -17,6 +17,12 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "generated_client_index_d_leadcontactupsertargs": "LeadContactUpsertArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L26769 | neighbors=[index.d.ts]
+- "generated_client_index_d_leadcontactwhereinput": "LeadContactWhereInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L36590 | neighbors=[index.d.ts]
+- "generated_client_index_d_leadcontactwhereuniqueinput": "LeadContactWhereUniqueInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L36617 | neighbors=[index.d.ts]
+- "generated_client_index_d_leadcountaggregateinputtype": "LeadCountAggregateInputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L23167 | neighbors=[index.d.ts]
+- "generated_client_index_d_leadcountaggregateoutputtype": "LeadCountAggregateOutputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L23136 | neighbors=[index.d.ts]
+- "generated_client_index_d_leadcountargs": "LeadCountArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L23317 | neighbors=[index.d.ts]
 - "generated_client_index_d_leadcountorderbyaggregateinput": "LeadCountOrderByAggregateInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L42140 | neighbors=[index.d.ts]
 - "generated_client_index_d_leadcreateargs": "LeadCreateArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L23846 | neighbors=[index.d.ts]
 - "generated_client_index_d_leadcreateinput": "LeadCreateInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L39400 | neighbors=[index.d.ts]
@@ -51,12 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "generated_client_index_d_leadsumaggregateinputtype": "LeadSumAggregateInputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L23149 | neighbors=[index.d.ts]
 - "generated_client_index_d_leadsumaggregateoutputtype": "LeadSumAggregateOutputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L23118 | neighbors=[index.d.ts]
 - "generated_client_index_d_leadsumorderbyaggregateinput": "LeadSumOrderByAggregateInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L42165 | neighbors=[index.d.ts]
-- "generated_client_index_d_leaduncheckedcreateinput": "LeadUncheckedCreateInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L39406 | neighbors=[index.d.ts]
-- "generated_client_index_d_leaduncheckedupdateinput": "LeadUncheckedUpdateInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L39419 | neighbors=[index.d.ts]
-- "generated_client_index_d_leaduncheckedupdatemanyinput": "LeadUncheckedUpdateManyInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L39439 | neighbors=[index.d.ts]
-- "generated_client_index_d_leadupdateargs": "LeadUpdateArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L23871 | neighbors=[index.d.ts]
-- "generated_client_index_d_leadupdateinput": "LeadUpdateInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L39413 | neighbors=[index.d.ts]
-- "generated_client_index_d_leadupdatemanyargs": "LeadUpdateManyArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L23889 | neighbors=[index.d.ts]
 
 ## Instructions
 

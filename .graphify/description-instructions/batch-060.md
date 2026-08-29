@@ -17,6 +17,12 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "generated_client_index_d_adminsessioncreateorconnectwithoutadmininput": "AdminSessionCreateOrConnectWithoutAdminInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L46909 | neighbors=[index.d.ts]
+- "generated_client_index_d_adminsessioncreatewithoutadmininput": "AdminSessionCreateWithoutAdminInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L46892 | neighbors=[index.d.ts]
+- "generated_client_index_d_adminsessiondefaultargs": "AdminSessionDefaultArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L12845 | neighbors=[index.d.ts]
+- "generated_client_index_d_adminsessiondelegate": "AdminSessionDelegate" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L12178 | neighbors=[index.d.ts]
+- "generated_client_index_d_adminsessiondeleteargs": "AdminSessionDeleteArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L12817 | neighbors=[index.d.ts]
+- "generated_client_index_d_adminsessiondeletemanyargs": "AdminSessionDeleteManyArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L12835 | neighbors=[index.d.ts]
 - "generated_client_index_d_adminsessionfieldrefs": "AdminSessionFieldRefs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L12536 | neighbors=[index.d.ts]
 - "generated_client_index_d_adminsessionfindfirstargs": "AdminSessionFindFirstArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L12587 | neighbors=[index.d.ts]
 - "generated_client_index_d_adminsessionfindfirstorthrowargs": "AdminSessionFindFirstOrThrowArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L12635 | neighbors=[index.d.ts]
@@ -51,12 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "generated_client_index_d_adminsessionuncheckedcreatewithoutadmininput": "AdminSessionUncheckedCreateWithoutAdminInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L46900 | neighbors=[index.d.ts]
 - "generated_client_index_d_adminsessionuncheckedupdateinput": "AdminSessionUncheckedUpdateInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L38057 | neighbors=[index.d.ts]
 - "generated_client_index_d_adminsessionuncheckedupdatemanyinput": "AdminSessionUncheckedUpdateManyInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L38085 | neighbors=[index.d.ts]
-- "generated_client_index_d_adminsessionuncheckedupdatemanywithoutadmininput": "AdminSessionUncheckedUpdateManyWithoutAdminInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L52905 | neighbors=[index.d.ts]
-- "generated_client_index_d_adminsessionuncheckedupdatemanywithoutadminnestedinput": "AdminSessionUncheckedUpdateManyWithoutAdminNestedInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L43611 | neighbors=[index.d.ts]
-- "generated_client_index_d_adminsessionuncheckedupdatewithoutadmininput": "AdminSessionUncheckedUpdateWithoutAdminInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L52896 | neighbors=[index.d.ts]
-- "generated_client_index_d_adminsessionupdateargs": "AdminSessionUpdateArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L12755 | neighbors=[index.d.ts]
-- "generated_client_index_d_adminsessionupdateinput": "AdminSessionUpdateInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L38048 | neighbors=[index.d.ts]
-- "generated_client_index_d_adminsessionupdatemanyargs": "AdminSessionUpdateManyArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L12777 | neighbors=[index.d.ts]
 
 ## Instructions
 

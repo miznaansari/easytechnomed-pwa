@@ -17,6 +17,12 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "sync_syncmanager_syncmanager_subscribe": ".subscribe()" | kind=code-symbol | source=lib/offline/sync/syncManager.js:L37 | neighbors=[SyncManager, .notifyState()]
+- "sync_syncmanager_syncmanager_sync": ".sync()" | kind=code-symbol | source=lib/offline/sync/syncManager.js:L546 | neighbors=[SyncManager, .notifyState()]
+- "test_route_parsenullablestring": "parseNullableString()" | kind=code-symbol | source=app/api/n8n/test/route.js:L16 | neighbors=[route.js, POST()]
+- "test_route_post": "POST()" | kind=code-symbol | source=app/api/n8n/test/route.js:L61 | neighbors=[route.js, parseNullableString()]
+- "tests_route_get": "GET()" | kind=code-symbol | source=app/api/tests/route.js:L68 | neighbors=[route.js, serializeTests()]
+- "tests_route_post": "POST()" | kind=code-symbol | source=app/api/tests/route.js:L165 | neighbors=[route.js, serializeSingleTest()]
 - "tests_route_put": "PUT()" | kind=code-symbol | source=app/api/tests/route.js:L265 | neighbors=[route.js, serializeSingleTest()]
 - "tests_route_serializetests": "serializeTests()" | kind=code-symbol | source=app/api/tests/route.js:L6 | neighbors=[route.js, GET()]
 - "ui_alert": "Alert.js" | kind=code-symbol | source=components/ui/Alert.js:L1 | neighbors=[252e194 e, Alert()]
@@ -51,12 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "component_differentialcounttracker_dlc_definitions": "DLC_DEFINITIONS" | kind=code-symbol | source=app/(customer)/(dashboard)/test-report/component/DifferentialCountTracker.jsx:L7 | neighbors=[DifferentialCountTracker.jsx]
 - "component_moneyrecipt_moneyrecipt": "MoneyRecipt()" | kind=code-symbol | source=app/(customer)/(dashboard)/test-report/component/MoneyRecipt.jsx:L42 | neighbors=[MoneyRecipt.jsx]
 - "component_moneyreciptmobile_moneyreciptmobile": "MoneyReciptMobile()" | kind=code-symbol | source=app/(customer)/(dashboard)/test-report/component/MoneyReciptMobile.jsx:L38 | neighbors=[MoneyReciptMobile.jsx]
-- "component_resultentry_resultentry": "ResultEntry()" | kind=code-symbol | source=app/(customer)/(dashboard)/test-report/component/resultEntry.jsx:L65 | neighbors=[resultEntry.jsx]
-- "component_resultentrymobile_resultentrymobile": "ResultEntryMobile()" | kind=code-symbol | source=app/(customer)/(dashboard)/test-report/component/resultEntryMobile.jsx:L49 | neighbors=[resultEntryMobile.jsx]
-- "component_showresult_getreferencerange": "getReferenceRange()" | kind=code-symbol | source=app/(customer)/(dashboard)/test-report/component/showResult.jsx:L39 | neighbors=[showResult.jsx]
-- "component_showresult_showresult": "ShowResult()" | kind=code-symbol | source=app/(customer)/(dashboard)/test-report/component/showResult.jsx:L104 | neighbors=[showResult.jsx]
-- "component_showresultmobile_getreferencerange": "getReferenceRange()" | kind=code-symbol | source=app/(customer)/(dashboard)/test-report/component/showResultMobile.jsx:L25 | neighbors=[showResultMobile.jsx]
-- "component_showresultmobile_showresultmobile": "ShowResultMobile()" | kind=code-symbol | source=app/(customer)/(dashboard)/test-report/component/showResultMobile.jsx:L86 | neighbors=[showResultMobile.jsx]
 
 ## Instructions
 

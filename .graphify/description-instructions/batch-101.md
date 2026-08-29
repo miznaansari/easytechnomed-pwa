@@ -17,6 +17,12 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "generated_client_index_d_testdepartmentcountaggregateoutputtype": "TestDepartmentCountAggregateOutputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L28817 | neighbors=[index.d.ts]
+- "generated_client_index_d_testdepartmentcountargs": "TestDepartmentCountArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L29006 | neighbors=[index.d.ts]
+- "generated_client_index_d_testdepartmentcountorderbyaggregateinput": "TestDepartmentCountOrderByAggregateInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L42418 | neighbors=[index.d.ts]
+- "generated_client_index_d_testdepartmentcountoutputtype": "TestDepartmentCountOutputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L3676 | neighbors=[index.d.ts]
+- "generated_client_index_d_testdepartmentcountoutputtypeargs": "TestDepartmentCountOutputTypeArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L54314 | neighbors=[index.d.ts]
+- "generated_client_index_d_testdepartmentcountoutputtypecounttestsargs": "TestDepartmentCountOutputTypeCountTestsArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L3698 | neighbors=[index.d.ts]
 - "generated_client_index_d_testdepartmentcountoutputtypedefaultargs": "TestDepartmentCountOutputTypeDefaultArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L3688 | neighbors=[index.d.ts]
 - "generated_client_index_d_testdepartmentcountoutputtypeselect": "TestDepartmentCountOutputTypeSelect" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L3680 | neighbors=[index.d.ts]
 - "generated_client_index_d_testdepartmentcreateargs": "TestDepartmentCreateArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L29556 | neighbors=[index.d.ts]
@@ -51,12 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "generated_client_index_d_testdepartmentorderbywithrelationinput": "TestDepartmentOrderByWithRelationInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L36829 | neighbors=[index.d.ts]
 - "generated_client_index_d_testdepartmentpayload": "$TestDepartmentPayload" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L28990 | neighbors=[index.d.ts]
 - "generated_client_index_d_testdepartmentscalarfieldenum": "TestDepartmentScalarFieldEnum" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L34331 | neighbors=[index.d.ts]
-- "generated_client_index_d_testdepartmentscalarwherewithaggregatesinput": "TestDepartmentScalarWhereWithAggregatesInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L36860 | neighbors=[index.d.ts]
-- "generated_client_index_d_testdepartmentselect": "TestDepartmentSelect" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L28968 | neighbors=[index.d.ts]
-- "generated_client_index_d_testdepartmentselectscalar": "TestDepartmentSelectScalar" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L28978 | neighbors=[index.d.ts]
-- "generated_client_index_d_testdepartmentsumaggregateinputtype": "TestDepartmentSumAggregateInputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L28830 | neighbors=[index.d.ts]
-- "generated_client_index_d_testdepartmentsumaggregateoutputtype": "TestDepartmentSumAggregateOutputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L28799 | neighbors=[index.d.ts]
-- "generated_client_index_d_testdepartmentsumorderbyaggregateinput": "TestDepartmentSumOrderByAggregateInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L42443 | neighbors=[index.d.ts]
 
 ## Instructions
 

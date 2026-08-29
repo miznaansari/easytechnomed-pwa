@@ -17,6 +17,12 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "generated_client_index_d_doctorincentiveupdatemanymutationinput": "DoctorIncentiveUpdateManyMutationInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L40107 | neighbors=[index.d.ts]
+- "generated_client_index_d_doctorincentiveupdatemanywithoutdoctornestedinput": "DoctorIncentiveUpdateManyWithoutDoctorNestedInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L43859 | neighbors=[index.d.ts]
+- "generated_client_index_d_doctorincentiveupdatemanywithwherewithoutdoctorinput": "DoctorIncentiveUpdateManyWithWhereWithoutDoctorInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L47910 | neighbors=[index.d.ts]
+- "generated_client_index_d_doctorincentiveupdatewithoutdoctorinput": "DoctorIncentiveUpdateWithoutDoctorInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L53559 | neighbors=[index.d.ts]
+- "generated_client_index_d_doctorincentiveupdatewithwhereuniquewithoutdoctorinput": "DoctorIncentiveUpdateWithWhereUniqueWithoutDoctorInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L47905 | neighbors=[index.d.ts]
+- "generated_client_index_d_doctorincentiveupsertargs": "DoctorIncentiveUpsertArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L32550 | neighbors=[index.d.ts]
 - "generated_client_index_d_doctorincentiveupsertwithwhereuniquewithoutdoctorinput": "DoctorIncentiveUpsertWithWhereUniqueWithoutDoctorInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L47899 | neighbors=[index.d.ts]
 - "generated_client_index_d_doctorincentivewhereinput": "DoctorIncentiveWhereInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L37042 | neighbors=[index.d.ts]
 - "generated_client_index_d_doctorincentivewhereuniqueinput": "DoctorIncentiveWhereUniqueInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L37061 | neighbors=[index.d.ts]
@@ -51,12 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "generated_client_index_d_doctoruncheckedupdateinput": "DoctorUncheckedUpdateInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L38242 | neighbors=[index.d.ts]
 - "generated_client_index_d_doctoruncheckedupdatemanyinput": "DoctorUncheckedUpdateManyInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L38291 | neighbors=[index.d.ts]
 - "generated_client_index_d_doctoruncheckedupdatemanywithoutworkspaceinput": "DoctorUncheckedUpdateManyWithoutWorkspaceInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L52090 | neighbors=[index.d.ts]
-- "generated_client_index_d_doctoruncheckedupdatemanywithoutworkspacenestedinput": "DoctorUncheckedUpdateManyWithoutWorkspaceNestedInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L43049 | neighbors=[index.d.ts]
-- "generated_client_index_d_doctoruncheckedupdatewithoutincentivehistoryinput": "DoctorUncheckedUpdateWithoutIncentiveHistoryInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L51648 | neighbors=[index.d.ts]
-- "generated_client_index_d_doctoruncheckedupdatewithoutregistrationsinput": "DoctorUncheckedUpdateWithoutRegistrationsInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L48651 | neighbors=[index.d.ts]
-- "generated_client_index_d_doctoruncheckedupdatewithoutsecondregistrationsinput": "DoctorUncheckedUpdateWithoutSecondRegistrationsInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L48697 | neighbors=[index.d.ts]
-- "generated_client_index_d_doctoruncheckedupdatewithoutworkspaceinput": "DoctorUncheckedUpdateWithoutWorkspaceInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L52072 | neighbors=[index.d.ts]
-- "generated_client_index_d_doctorupdateargs": "DoctorUpdateArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L15621 | neighbors=[index.d.ts]
 
 ## Instructions
 

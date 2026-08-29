@@ -66,21 +66,63 @@ export default function MoneyRecipt({ open, onClose, selectedReg, onSaveSuccess,
     setLoadingReceipt(true);
     try {
       // 1. Read directly from IndexedDB (0ms latency, works offline & online)
-      const localReg = (selectedReg?.id ? await db.registrations.get(selectedReg.id) : null) || selectedReg;
-      if (localReg) {
-        setSelectedRegistration(localReg);
+      const regId = selectedReg?.id;
+      const [localReg, localPayments] = await Promise.all([
+        regId ? db.registrations.get(regId) : Promise.resolve(null),
+        (regId && db.registrationPayments) ? db.registrationPayments.where("registrationId").equals(regId).toArray() : Promise.resolve([]),
+      ]);
+
+      const baseReg = localReg || selectedReg;
+      if (baseReg) {
+        // Construct complete payments list
+        let combinedPayments = [];
+        if (localPayments && localPayments.length > 0) {
+          combinedPayments = localPayments.map((p) => ({
+            id: p.id,
+            createdAt: p.date || p.createdAt || baseReg.date || new Date().toISOString(),
+            paymentMode: p.mode || p.paymentMode || "Cash",
+            paymentRefNo: p.refNo || p.paymentRefNo || null,
+            amount: parseFloat(p.amount || 0),
+            remark: p.remark || null,
+          }));
+        } else if (Array.isArray(baseReg.payments) && baseReg.payments.length > 0) {
+          combinedPayments = baseReg.payments.map((p) => ({
+            ...p,
+            createdAt: p.createdAt || p.date || baseReg.date || new Date().toISOString(),
+            paymentMode: p.paymentMode || p.mode || "Cash",
+            paymentRefNo: p.paymentRefNo || p.refNo || null,
+            amount: parseFloat(p.amount || 0),
+          }));
+        } else if (parseFloat(baseReg.receivedAmount || 0) > 0) {
+          // If no separate payment chunk rows exist, display the initial payment made at registration
+          combinedPayments = [{
+            id: `initial-${baseReg.id}`,
+            createdAt: baseReg.date || new Date().toISOString(),
+            paymentMode: baseReg.paymentMode || "Cash",
+            paymentRefNo: baseReg.paymentRefNo || null,
+            amount: parseFloat(baseReg.receivedAmount || 0),
+            remark: "Initial Payment (Registration)",
+          }];
+        }
+
+        const mergedReg = {
+          ...baseReg,
+          payments: combinedPayments,
+        };
+
+        setSelectedRegistration(mergedReg);
 
         // Initialize inputs
-        const total = parseFloat(localReg.totalAmount || 0) + parseFloat(localReg.collectionCharge || 0);
-        const discount = parseFloat(localReg.discountAmount || 0);
-        const alreadyPaid = parseFloat(localReg.receivedAmount || 0);
+        const total = parseFloat(mergedReg.totalAmount || 0) + parseFloat(mergedReg.collectionCharge || 0);
+        const discount = parseFloat(mergedReg.discountAmount || 0);
+        const alreadyPaid = parseFloat(mergedReg.receivedAmount || 0);
         const remainingDue = Math.max(0, total - discount - alreadyPaid);
 
         setDiscountInput(discount);
-        setDiscountPercentInput(parseFloat(localReg.discountPercent || 0));
+        setDiscountPercentInput(parseFloat(mergedReg.discountPercent || 0));
         setReceivedInput(remainingDue);
-        setPaymentModeInput(localReg.paymentMode || "Cash");
-        setPaymentRefNoInput(localReg.paymentRefNo || "");
+        setPaymentModeInput(mergedReg.paymentMode || "Cash");
+        setPaymentRefNoInput(mergedReg.paymentRefNo || "");
         setRemarkInput("");
       }
     } catch (err) {
@@ -230,7 +272,8 @@ export default function MoneyRecipt({ open, onClose, selectedReg, onSaveSuccess,
   const handlePrintReceipt = async (reg) => {
     if (!reg) return;
     try {
-      await printBillOffline(reg.id || reg.regNo);
+      const { openOfflineBillPrint } = await import("@/lib/offline/print/openPrint");
+      await openOfflineBillPrint(reg.regNo || reg.id);
     } catch (e) {
       if (typeof navigator !== "undefined" && navigator.onLine) {
         window.open(`/api/print-bill/${reg.id || reg.regNo}`, "_blank");
@@ -367,11 +410,17 @@ export default function MoneyRecipt({ open, onClose, selectedReg, onSaveSuccess,
                       </TableHead>
                       <TableBody>
                         {selectedRegistration.payments && selectedRegistration.payments.length > 0 ? (
-                          selectedRegistration.payments.map((p) => (
-                            <TableRow key={p.id}>
-                              <TableCell>{new Date(p.createdAt).toLocaleString(undefined, { dateStyle: "short", timeStyle: "short" })}</TableCell>
-                              <TableCell>{p.paymentMode} {p.paymentRefNo ? `(${p.paymentRefNo})` : ""}</TableCell>
-                              <TableCell align="right">₹{parseFloat(p.amount).toFixed(2)}</TableCell>
+                          selectedRegistration.payments.map((p, idx) => (
+                            <TableRow key={p.id || idx}>
+                              <TableCell>
+                                {new Date(p.createdAt || p.date || selectedRegistration.date).toLocaleString(undefined, { dateStyle: "short", timeStyle: "short" })}
+                              </TableCell>
+                              <TableCell>
+                                {p.paymentMode || p.mode || "Cash"}
+                                {p.paymentRefNo || p.refNo ? ` (${p.paymentRefNo || p.refNo})` : ""}
+                                {p.remark ? ` • ${p.remark}` : ""}
+                              </TableCell>
+                              <TableCell align="right">₹{parseFloat(p.amount || 0).toFixed(2)}</TableCell>
                             </TableRow>
                           ))
                         ) : (

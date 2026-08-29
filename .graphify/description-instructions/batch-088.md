@@ -17,6 +17,12 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "generated_client_index_d_registrationpaymentdeletemanyargs": "RegistrationPaymentDeleteManyArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L25891 | neighbors=[index.d.ts]
+- "generated_client_index_d_registrationpaymentfieldrefs": "RegistrationPaymentFieldRefs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L25591 | neighbors=[index.d.ts]
+- "generated_client_index_d_registrationpaymentfindfirstargs": "RegistrationPaymentFindFirstArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L25643 | neighbors=[index.d.ts]
+- "generated_client_index_d_registrationpaymentfindfirstorthrowargs": "RegistrationPaymentFindFirstOrThrowArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L25691 | neighbors=[index.d.ts]
+- "generated_client_index_d_registrationpaymentfindmanyargs": "RegistrationPaymentFindManyArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L25739 | neighbors=[index.d.ts]
+- "generated_client_index_d_registrationpaymentfinduniqueargs": "RegistrationPaymentFindUniqueArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L25607 | neighbors=[index.d.ts]
 - "generated_client_index_d_registrationpaymentfinduniqueorthrowargs": "RegistrationPaymentFindUniqueOrThrowArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L25625 | neighbors=[index.d.ts]
 - "generated_client_index_d_registrationpaymentgetpayload": "RegistrationPaymentGetPayload" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L25226 | neighbors=[index.d.ts]
 - "generated_client_index_d_registrationpaymentgroupbyargs": "RegistrationPaymentGroupByArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L25136 | neighbors=[index.d.ts]
@@ -51,12 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "generated_client_index_d_registrationpaymentuncheckedupdatewithoutregistrationinput": "RegistrationPaymentUncheckedUpdateWithoutRegistrationInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L53884 | neighbors=[index.d.ts]
 - "generated_client_index_d_registrationpaymentupdateargs": "RegistrationPaymentUpdateArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L25811 | neighbors=[index.d.ts]
 - "generated_client_index_d_registrationpaymentupdateinput": "RegistrationPaymentUpdateInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L39568 | neighbors=[index.d.ts]
-- "generated_client_index_d_registrationpaymentupdatemanyargs": "RegistrationPaymentUpdateManyArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L25833 | neighbors=[index.d.ts]
-- "generated_client_index_d_registrationpaymentupdatemanymutationinput": "RegistrationPaymentUpdateManyMutationInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L39600 | neighbors=[index.d.ts]
-- "generated_client_index_d_registrationpaymentupdatemanywithoutregistrationnestedinput": "RegistrationPaymentUpdateManyWithoutRegistrationNestedInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L44251 | neighbors=[index.d.ts]
-- "generated_client_index_d_registrationpaymentupdatemanywithwherewithoutregistrationinput": "RegistrationPaymentUpdateManyWithWhereWithoutRegistrationInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L48848 | neighbors=[index.d.ts]
-- "generated_client_index_d_registrationpaymentupdatewithoutregistrationinput": "RegistrationPaymentUpdateWithoutRegistrationInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L53875 | neighbors=[index.d.ts]
-- "generated_client_index_d_registrationpaymentupdatewithwhereuniquewithoutregistrationinput": "RegistrationPaymentUpdateWithWhereUniqueWithoutRegistrationInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L48843 | neighbors=[index.d.ts]
 
 ## Instructions
 

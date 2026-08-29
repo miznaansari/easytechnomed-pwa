@@ -17,6 +17,12 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "id_route_registrationschema": "registrationSchema" | kind=code-symbol | source=app/api/registrations/[id]/route.js:L12 | neighbors=[route.js]
+- "leads_route_post": "POST()" | kind=code-symbol | source=app/api/leads/route.js:L4 | neighbors=[route.js]
+- "lib_auth_signtoken": "signToken()" | kind=code-symbol | source=lib/auth.js:L8 | neighbors=[auth.js]
+- "lib_clientauth_useadminpermissions": "useAdminPermissions()" | kind=code-symbol | source=lib/clientAuth.js:L4 | neighbors=[clientAuth.js]
+- "lib_firebase_auth": "auth" | kind=code-symbol | source=lib/firebase.js:L15 | neighbors=[firebase.js]
+- "lib_firebase_firebaseconfig": "firebaseConfig" | kind=code-symbol | source=lib/firebase.js:L4 | neighbors=[firebase.js]
 - "lib_firebase_googleprovider": "googleProvider" | kind=code-symbol | source=lib/firebase.js:L16 | neighbors=[firebase.js]
 - "lib_formulautils_getreferencerange": "getReferenceRange()" | kind=code-symbol | source=lib/formulaUtils.js:L446 | neighbors=[formulaUtils.js]
 - "lib_mail_sendapprovalemail": "sendApprovalEmail()" | kind=code-symbol | source=lib/mail.js:L54 | neighbors=[mail.js]
@@ -40,23 +46,17 @@ one-sentence description — no prose, no markdown fences.
 - "members_route_patch": "PATCH()" | kind=code-symbol | source=app/api/members/route.js:L74 | neighbors=[route.js]
 - "members_route_post": "POST()" | kind=code-symbol | source=app/api/members/route.js:L34 | neighbors=[route.js]
 - "next_config_nextconfig": "nextConfig" | kind=code-symbol | source=next.config.mjs:L2 | neighbors=[next.config.mjs]
-- "offline_db_appdatabase_clearalldata": ".clearAllData()" | kind=code-symbol | source=lib/offline/db.js:L241 | neighbors=[AppDatabase]
+- "offline_db_appdatabase_clearalldata": ".clearAllData()" | kind=code-symbol | source=lib/offline/db.js:L284 | neighbors=[AppDatabase]
 - "offline_db_appdatabase_constructor": ".constructor()" | kind=code-symbol | source=lib/offline/db.js:L5 | neighbors=[AppDatabase]
-- "offline_db_appdatabase_getallerrorrecords": ".getAllErrorRecords()" | kind=code-symbol | source=lib/offline/db.js:L206 | neighbors=[AppDatabase]
+- "offline_db_appdatabase_getallerrorrecords": ".getAllErrorRecords()" | kind=code-symbol | source=lib/offline/db.js:L249 | neighbors=[AppDatabase]
 - "offline_db_appdatabase_insertoffline": ".insertOffline()" | kind=code-symbol | source=lib/offline/db.js:L48 | neighbors=[AppDatabase]
 - "offline_db_appdatabase_marksynced": ".markSynced()" | kind=code-symbol | source=lib/offline/db.js:L130 | neighbors=[AppDatabase]
 - "offline_db_appdatabase_marksyncerror": ".markSyncError()" | kind=code-symbol | source=lib/offline/db.js:L153 | neighbors=[AppDatabase]
-- "offline_db_db": "db" | kind=code-symbol | source=lib/offline/db.js:L299 | neighbors=[db.js]
+- "offline_db_db": "db" | kind=code-symbol | source=lib/offline/db.js:L342 | neighbors=[db.js]
 - "offline_network_networkmonitor_stopheartbeat": ".stopHeartbeat()" | kind=code-symbol | source=lib/offline/network.js:L90 | neighbors=[NetworkMonitor]
 - "offline_network_networkmonitor_subscribe": ".subscribe()" | kind=code-symbol | source=lib/offline/network.js:L40 | neighbors=[NetworkMonitor]
 - "offline_offlinepdfgenerator_formatdate": "formatDate()" | kind=code-symbol | source=lib/offline/offlinePdfGenerator.js:L108 | neighbors=[offlinePdfGenerator.js]
 - "offline_offlinepdfgenerator_getreferencerange": "getReferenceRange()" | kind=code-symbol | source=lib/offline/offlinePdfGenerator.js:L85 | neighbors=[offlinePdfGenerator.js]
-- "offline_offlinepdfgenerator_wrapplaintextlines": "wrapPlainTextLines()" | kind=code-symbol | source=lib/offline/offlinePdfGenerator.js:L209 | neighbors=[offlinePdfGenerator.js]
-- "offline_offlineprint_printreportoffline": "printReportOffline()" | kind=code-symbol | source=lib/offline/offlinePrint.js:L200 | neighbors=[offlinePrint.js]
-- "offline_reloginmodal_reloginmodal": "ReLoginModal()" | kind=code-symbol | source=components/offline/ReLoginModal.jsx:L31 | neighbors=[ReLoginModal.jsx]
-- "offline_syncindicator_syncindicator": "SyncIndicator()" | kind=code-symbol | source=components/offline/SyncIndicator.jsx:L34 | neighbors=[SyncIndicator.jsx]
-- "offline_syncstatusicon_syncstatusicon": "SyncStatusIcon()" | kind=code-symbol | source=components/offline/SyncStatusIcon.jsx:L13 | neighbors=[SyncStatusIcon.jsx]
-- "offline_timestamps_compareutc": "compareUtc()" | kind=code-symbol | source=lib/offline/timestamps.js:L37 | neighbors=[timestamps.js]
 
 ## Instructions
 

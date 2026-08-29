@@ -17,6 +17,12 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "component_resultentry_resultentry": "ResultEntry()" | kind=code-symbol | source=app/(customer)/(dashboard)/test-report/component/resultEntry.jsx:L65 | neighbors=[resultEntry.jsx]
+- "component_resultentrymobile_resultentrymobile": "ResultEntryMobile()" | kind=code-symbol | source=app/(customer)/(dashboard)/test-report/component/resultEntryMobile.jsx:L49 | neighbors=[resultEntryMobile.jsx]
+- "component_showresult_getreferencerange": "getReferenceRange()" | kind=code-symbol | source=app/(customer)/(dashboard)/test-report/component/showResult.jsx:L39 | neighbors=[showResult.jsx]
+- "component_showresult_showresult": "ShowResult()" | kind=code-symbol | source=app/(customer)/(dashboard)/test-report/component/showResult.jsx:L104 | neighbors=[showResult.jsx]
+- "component_showresultmobile_getreferencerange": "getReferenceRange()" | kind=code-symbol | source=app/(customer)/(dashboard)/test-report/component/showResultMobile.jsx:L25 | neighbors=[showResultMobile.jsx]
+- "component_showresultmobile_showresultmobile": "ShowResultMobile()" | kind=code-symbol | source=app/(customer)/(dashboard)/test-report/component/showResultMobile.jsx:L86 | neighbors=[showResultMobile.jsx]
 - "components_adddoctordrawer_adddoctordrawer": "AddDoctorDrawer()" | kind=code-symbol | source=components/AddDoctorDrawer.js:L28 | neighbors=[AddDoctorDrawer.js]
 - "components_adminlayoutclient_adminlayoutclient": "AdminLayoutClient()" | kind=code-symbol | source=components/AdminLayoutClient.js:L135 | neighbors=[AdminLayoutClient.js]
 - "components_adminlayoutclient_getexpirymessage": "getExpiryMessage()" | kind=code-symbol | source=components/AdminLayoutClient.js:L101 | neighbors=[AdminLayoutClient.js]
@@ -51,12 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "generated_client_edge_prismaclient": "PrismaClient" | kind=code-symbol | source=scratch/generated-client/edge.js:L639 | neighbors=[edge.js]
 - "generated_client_edge_prismaclientknownrequesterror_prismaclientunknownrequesterror_prismaclientrustpanicerror_prismaclientinitializationerror_prismaclientvalidationerror_notfounderror_getprismaclient_sqltag_empty_join_raw_skip_decimal_debug_objectenumvalues_makestrictenum_extensions_warnonce_definedmmfproperty_public_getruntime": "{\n  PrismaClientKnownRequestError,\n  PrismaClientUnknownRequestError,\n  PrismaC…" | kind=code-symbol | source=scratch/generated-client/edge.js:L4 | neighbors=[edge.js]
 - "generated_client_index_browser_decimal_objectenumvalues_makestrictenum_public_getruntime_skip": "{\n  Decimal,\n  objectEnumValues,\n  makeStrictEnum,\n  Public,\n  getRuntime,\n  sk…" | kind=code-symbol | source=scratch/generated-client/index-browser.js:L4 | neighbors=[index-browser.js]
-- "generated_client_index_browser_prisma": "Prisma" | kind=code-symbol | source=scratch/generated-client/index-browser.js:L14 | neighbors=[index-browser.js]
-- "generated_client_index_browser_prismaclient_constructor": ".constructor()" | kind=code-symbol | source=scratch/generated-client/index-browser.js:L608 | neighbors=[PrismaClient]
-- "generated_client_index_config": "config" | kind=code-symbol | source=scratch/generated-client/index.js:L575 | neighbors=[index.js]
-- "generated_client_index_d_admin": "Admin" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L55 | neighbors=[index.d.ts]
-- "generated_client_index_d_admin_addressargs": "Admin$addressArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L11831 | neighbors=[index.d.ts]
-- "generated_client_index_d_admin_registrationsargs": "Admin$registrationsArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L11886 | neighbors=[index.d.ts]
 
 ## Instructions
 

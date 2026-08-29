@@ -17,6 +17,9 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "runtime_edge_getargumentname": "getArgumentName()" | kind=code-symbol | source=scratch/generated-client/runtime/edge.js:L5 | neighbors=[edge.js, bo(), qu(), Uo()]
+- "runtime_edge_getargumentpath": "getArgumentPath()" | kind=code-symbol | source=scratch/generated-client/runtime/edge.js:L5 | neighbors=[edge.js, bo(), qu(), Uo()]
+- "runtime_edge_getcomputedfields": "getComputedFields()" | kind=code-symbol | source=scratch/generated-client/runtime/edge.js:L5 | neighbors=[edge.js, getAllComputedFields(), Gu(), ju()]
 - "runtime_edge_getfieldvalue": "getFieldValue()" | kind=code-symbol | source=scratch/generated-client/runtime/edge.js:L3 | neighbors=[edge.js, getDeepSelectionParent(), getField(), ro()]
 - "runtime_edge_getglobalomit": "getGlobalOmit()" | kind=code-symbol | source=scratch/generated-client/runtime/edge.js:L5 | neighbors=[edge.js, nt(), shouldApplyGlobalOmit(), ju()]
 - "runtime_edge_getname": "_getName()" | kind=code-symbol | source=scratch/generated-client/runtime/edge.js:L4 | neighbors=[edge.js, bo(), constructor(), Do()]
@@ -54,9 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "runtime_edge_yc": "yc()" | kind=code-symbol | source=scratch/generated-client/runtime/edge.js:L6 | neighbors=[edge.js, N(), te(), Ve()]
 - "runtime_edge_yo": "Yo()" | kind=code-symbol | source=scratch/generated-client/runtime/edge.js:L5 | neighbors=[edge.js, dt(), toString(), write()]
 - "runtime_edge_yt": "yt()" | kind=code-symbol | source=scratch/generated-client/runtime/edge.js:L8 | neighbors=[edge.js, extractHostAndApiKey(), ms(), Gr()]
-- "runtime_index_browser_be": "be()" | kind=code-symbol | source=scratch/generated-client/runtime/index-browser.js:L1 | neighbors=[index-browser.js, e(), i(), Re()]
-- "runtime_index_browser_ee": "Ee()" | kind=code-symbol | source=scratch/generated-client/runtime/index-browser.js:L1 | neighbors=[index-browser.js, O(), p(), x()]
-- "runtime_index_browser_j": "j()" | kind=code-symbol | source=scratch/generated-client/runtime/index-browser.js:L1 | neighbors=[index-browser.js, e(), sn(), un()]
 
 ## Instructions
 

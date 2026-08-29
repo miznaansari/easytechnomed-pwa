@@ -17,6 +17,12 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "generated_client_index_d_superadminuncheckedupdatemanyinput": "SuperAdminUncheckedUpdateManyInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L37471 | neighbors=[index.d.ts]
+- "generated_client_index_d_superadminuncheckedupdatewithoutsessionsinput": "SuperAdminUncheckedUpdateWithoutSessionsInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L46351 | neighbors=[index.d.ts]
+- "generated_client_index_d_superadminuncheckedupdatewithouttrackingsinput": "SuperAdminUncheckedUpdateWithoutTrackingsInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L50703 | neighbors=[index.d.ts]
+- "generated_client_index_d_superadminupdateargs": "SuperAdminUpdateArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L5729 | neighbors=[index.d.ts]
+- "generated_client_index_d_superadminupdateinput": "SuperAdminUpdateInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L37433 | neighbors=[index.d.ts]
+- "generated_client_index_d_superadminupdatemanyargs": "SuperAdminUpdateManyArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L5751 | neighbors=[index.d.ts]
 - "generated_client_index_d_superadminupdatemanymutationinput": "SuperAdminUpdateManyMutationInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L37463 | neighbors=[index.d.ts]
 - "generated_client_index_d_superadminupdateonerequiredwithoutsessionsnestedinput": "SuperAdminUpdateOneRequiredWithoutSessionsNestedInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L43265 | neighbors=[index.d.ts]
 - "generated_client_index_d_superadminupdateonewithouttrackingsnestedinput": "SuperAdminUpdateOneWithoutTrackingsNestedInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L44663 | neighbors=[index.d.ts]
@@ -51,12 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "generated_client_index_d_testcountoutputtypecountinterpretationrulesargs": "TestCountOutputTypeCountInterpretationRulesArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L3538 | neighbors=[index.d.ts]
 - "generated_client_index_d_testcountoutputtypecountparametersargs": "TestCountOutputTypeCountParametersArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L3524 | neighbors=[index.d.ts]
 - "generated_client_index_d_testcountoutputtypecountregistrationsargs": "TestCountOutputTypeCountRegistrationsArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L3517 | neighbors=[index.d.ts]
-- "generated_client_index_d_testcountoutputtypedefaultargs": "TestCountOutputTypeDefaultArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L3507 | neighbors=[index.d.ts]
-- "generated_client_index_d_testcountoutputtypeselect": "TestCountOutputTypeSelect" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L3496 | neighbors=[index.d.ts]
-- "generated_client_index_d_testcreateargs": "TestCreateArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L16822 | neighbors=[index.d.ts]
-- "generated_client_index_d_testcreateinput": "TestCreateInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L38307 | neighbors=[index.d.ts]
-- "generated_client_index_d_testcreatemanyargs": "TestCreateManyArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L16840 | neighbors=[index.d.ts]
-- "generated_client_index_d_testcreatemanydepartmentinput": "TestCreateManyDepartmentInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L54163 | neighbors=[index.d.ts]
 
 ## Instructions
 

@@ -17,6 +17,12 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "generated_client_index_d_workspace_testsargs": "Workspace$testsArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L4754 | neighbors=[index.d.ts]
+- "generated_client_index_d_workspace_usersargs": "Workspace$usersArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L4774 | neighbors=[index.d.ts]
+- "generated_client_index_d_workspaceaggregateargs": "WorkspaceAggregateArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L3814 | neighbors=[index.d.ts]
+- "generated_client_index_d_workspaceargs": "WorkspaceArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L54318 | neighbors=[index.d.ts]
+- "generated_client_index_d_workspaceavgaggregateinputtype": "WorkspaceAvgAggregateInputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L3767 | neighbors=[index.d.ts]
+- "generated_client_index_d_workspaceavgaggregateoutputtype": "WorkspaceAvgAggregateOutputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L3719 | neighbors=[index.d.ts]
 - "generated_client_index_d_workspaceavgorderbyaggregateinput": "WorkspaceAvgOrderByAggregateInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L40531 | neighbors=[index.d.ts]
 - "generated_client_index_d_workspacecountaggregateinputtype": "WorkspaceCountAggregateInputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L3801 | neighbors=[index.d.ts]
 - "generated_client_index_d_workspacecountaggregateoutputtype": "WorkspaceCountAggregateOutputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L3753 | neighbors=[index.d.ts]
@@ -51,12 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "generated_client_index_d_workspacecreatenestedonewithoutusersinput": "WorkspaceCreateNestedOneWithoutUsersInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L43279 | neighbors=[index.d.ts]
 - "generated_client_index_d_workspacecreateorconnectwithoutadminsinput": "WorkspaceCreateOrConnectWithoutAdminsInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L46855 | neighbors=[index.d.ts]
 - "generated_client_index_d_workspacecreateorconnectwithoutdoctorsinput": "WorkspaceCreateOrConnectWithoutDoctorsInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L47591 | neighbors=[index.d.ts]
-- "generated_client_index_d_workspacecreateorconnectwithoutinterpretationrulesinput": "WorkspaceCreateOrConnectWithoutInterpretationRulesInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L51227 | neighbors=[index.d.ts]
-- "generated_client_index_d_workspacecreateorconnectwithoutparametersinput": "WorkspaceCreateOrConnectWithoutParametersInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L49240 | neighbors=[index.d.ts]
-- "generated_client_index_d_workspacecreateorconnectwithoutpdfsettinginput": "WorkspaceCreateOrConnectWithoutPdfSettingInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L51707 | neighbors=[index.d.ts]
-- "generated_client_index_d_workspacecreateorconnectwithoutregistrationsinput": "WorkspaceCreateOrConnectWithoutRegistrationsInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L48455 | neighbors=[index.d.ts]
-- "generated_client_index_d_workspacecreateorconnectwithouttestformulasinput": "WorkspaceCreateOrConnectWithoutTestFormulasInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L50833 | neighbors=[index.d.ts]
-- "generated_client_index_d_workspacecreateorconnectwithouttestparametersinput": "WorkspaceCreateOrConnectWithoutTestParametersInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L49503 | neighbors=[index.d.ts]
 
 ## Instructions
 

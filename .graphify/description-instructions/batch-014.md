@@ -17,6 +17,7 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "runtime_library_as": "As()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L21 | neighbors=[library.js, e(), r(), kc(), zc()]
 - "runtime_library_buildqueryerror": "buildQueryError()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L113 | neighbors=[library.js, getExternalAdapterError(), st(), request(), requestBatch()]
 - "runtime_library_d_nulltypesenumvalue": "NullTypesEnumValue" | kind=code-symbol | neighbors=[_d(), AnyNull, DbNull, JsonNull, ObjectEnumValue]
 - "runtime_library_findfield": "findField()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L29 | neighbors=[library.js, id(), nd(), nestSelection(), rd()]
@@ -56,7 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "runtime_react_native_br": "br()" | kind=code-symbol | source=scratch/generated-client/runtime/react-native.js:L8 | neighbors=[react-native.js, ju(), po(), qu(), Sr()]
 - "runtime_react_native_bu": "bu()" | kind=code-symbol | source=scratch/generated-client/runtime/react-native.js:L2 | neighbors=[react-native.js, addErrorMessage(), bo(), markAsError(), io()]
 - "runtime_react_native_de": "de()" | kind=code-symbol | source=scratch/generated-client/runtime/react-native.js:L2 | neighbors=[react-native.js, e(), k(), Dl(), to()]
-- "runtime_react_native_eo": "eo()" | kind=code-symbol | source=scratch/generated-client/runtime/react-native.js:L2 | neighbors=[react-native.js, be(), bn(), addSuggestion(), hasField()]
 
 ## Instructions
 

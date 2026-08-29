@@ -422,26 +422,96 @@ export default function SyncIndicator() {
             </Box>
           )}
 
-          {/* Failed Sync Items (Only when online and non-auth error) */}
+          {/* Failed Sync Items & Resolution Actions */}
           {isCurrentlyOnline && !hasAuthError && syncErrors && syncErrors.length > 0 && (
             <Box sx={{ mb: 2, p: 1.5, bgcolor: "#fef2f2", border: "1px solid #fee2e2", borderRadius: "12px" }}>
-              <Typography variant="caption" sx={{ fontWeight: 800, color: "#991b1b", display: "block", fontSize: "0.75rem" }}>
-                Failed Sync Items:
-              </Typography>
-              <List dense disablePadding sx={{ maxHeight: 90, overflowY: "auto", mt: 0.5 }}>
+              <Box sx={{ display: "flex", justifyContent: "space-between", alignItems: "center", mb: 0.75 }}>
+                <Typography variant="caption" sx={{ fontWeight: 800, color: "#991b1b", display: "block", fontSize: "0.75rem" }}>
+                  Sync Conflicts / Errors ({syncErrors.length}):
+                </Typography>
+                <Button
+                  size="small"
+                  variant="text"
+                  onClick={async () => {
+                    const { syncManager } = await import("@/lib/offline/sync/syncManager");
+                    await syncManager.clearAllErrors();
+                    if (refreshPendingCount) refreshPendingCount();
+                  }}
+                  sx={{
+                    fontSize: "0.65rem",
+                    fontWeight: 700,
+                    color: "#dc2626",
+                    p: 0,
+                    minWidth: "auto",
+                    textTransform: "none",
+                    "&:hover": { textDecoration: "underline", bgcolor: "transparent" }
+                  }}
+                >
+                  Resolve All
+                </Button>
+              </Box>
+
+              <List dense disablePadding sx={{ maxHeight: 110, overflowY: "auto", mb: 1.25 }}>
                 {syncErrors.map((err, idx) => (
-                  <ListItem key={idx} disablePadding sx={{ py: 0.25 }}>
+                  <ListItem key={idx} disablePadding sx={{ py: 0.35, display: "flex", flexDirection: "column", alignItems: "flex-start" }}>
                     <ListItemText
                       primary={err.error || err.message || "Sync failed"}
                       primaryTypographyProps={{
                         fontSize: "0.7rem",
                         color: "#b91c1c",
                         fontWeight: 600,
+                        lineHeight: 1.3,
                       }}
                     />
                   </ListItem>
                 ))}
               </List>
+
+              {/* Action Buttons to Resolve or Retry */}
+              <Box sx={{ display: "flex", gap: 1 }}>
+                <Button
+                  fullWidth
+                  size="small"
+                  variant="outlined"
+                  color="error"
+                  onClick={async () => {
+                    const { syncManager } = await import("@/lib/offline/sync/syncManager");
+                    await syncManager.clearAllErrors();
+                    if (refreshPendingCount) refreshPendingCount();
+                    sync();
+                  }}
+                  sx={{
+                    py: 0.5,
+                    fontSize: "0.7rem",
+                    fontWeight: 700,
+                    borderRadius: "8px",
+                    textTransform: "none",
+                  }}
+                >
+                  Resolve & Retry
+                </Button>
+
+                <Button
+                  fullWidth
+                  size="small"
+                  variant="contained"
+                  color="error"
+                  onClick={async () => {
+                    const { syncManager } = await import("@/lib/offline/sync/syncManager");
+                    await syncManager.clearAllErrors();
+                    if (refreshPendingCount) refreshPendingCount();
+                  }}
+                  sx={{
+                    py: 0.5,
+                    fontSize: "0.7rem",
+                    fontWeight: 700,
+                    borderRadius: "8px",
+                    textTransform: "none",
+                  }}
+                >
+                  Clear Errors
+                </Button>
+              </Box>
             </Box>
           )}
 

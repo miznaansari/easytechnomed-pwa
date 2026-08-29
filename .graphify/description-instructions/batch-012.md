@@ -17,6 +17,7 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "lib_mail": "mail.js" | kind=code-symbol | source=lib/mail.js:L1 | neighbors=[252e194 e, sendApprovalEmail(), sendRejectionEmail(), sendVerificationEmail(), transporter]
 - "members_page": "page.js" | kind=code-symbol | source=app/(customer)/(dashboard)/members/page.js:L1 | neighbors=[252e194 e, 84a8ff2 full indexeddb based, aae6bad fixed, cf2bb98 new, WorkspaceMembersPage()]
 - "offline_network": "network.js" | kind=code-symbol | source=lib/offline/network.js:L1 | neighbors=[2b2534c f, af73a19 fixed, c15ae1e fixed, NetworkMonitor, syncManager.js]
 - "paymentid_route": "route.js" | kind=code-symbol | source=app/api/print-subscription-invoice/[paymentId]/route.js:L1 | neighbors=[252e194 e, formatDate(), formatDateTime(), GET(), numberToWords()]
@@ -56,7 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "runtime_edge_esm_writewithcontents": "writeWithContents()" | kind=code-symbol | source=scratch/generated-client/runtime/edge-esm.js:L3 | neighbors=[edge-esm.js, write(), afterNextNewline(), withIndent(), writeLine()]
 - "runtime_edge_esm_writewithitems": "writeWithItems()" | kind=code-symbol | source=scratch/generated-client/runtime/edge-esm.js:L3 | neighbors=[edge-esm.js, write(), afterNextNewline(), withIndent(), writeLine()]
 - "runtime_edge_esm_xe": "xe()" | kind=code-symbol | source=scratch/generated-client/runtime/edge-esm.js:L1 | neighbors=[edge-esm.js, qt(), shouldApplyGlobalOmit(), uc(), yl()]
-- "runtime_edge_esm_xr": "Xr()" | kind=code-symbol | source=scratch/generated-client/runtime/edge-esm.js:L1 | neighbors=[edge-esm.js, wa(), be(), rn(), ya()]
 
 ## Instructions
 

@@ -17,6 +17,12 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "generated_client_index_d_workspacepdforderbywithaggregationinput": "WorkspacePdfOrderByWithAggregationInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L37211 | neighbors=[index.d.ts]
+- "generated_client_index_d_workspacepdforderbywithrelationinput": "WorkspacePdfOrderByWithRelationInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L37134 | neighbors=[index.d.ts]
+- "generated_client_index_d_workspacepdfpayload": "$WorkspacePdfPayload" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L33122 | neighbors=[index.d.ts]
+- "generated_client_index_d_workspacepdfscalarfieldenum": "WorkspacePdfScalarFieldEnum" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L34411 | neighbors=[index.d.ts]
+- "generated_client_index_d_workspacepdfscalarwherewithaggregatesinput": "WorkspacePdfScalarWhereWithAggregatesInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L37252 | neighbors=[index.d.ts]
+- "generated_client_index_d_workspacepdfselect": "WorkspacePdfSelect" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L33044 | neighbors=[index.d.ts]
 - "generated_client_index_d_workspacepdfselectscalar": "WorkspacePdfSelectScalar" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L33082 | neighbors=[index.d.ts]
 - "generated_client_index_d_workspacepdfsumaggregateinputtype": "WorkspacePdfSumAggregateInputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L32780 | neighbors=[index.d.ts]
 - "generated_client_index_d_workspacepdfsumaggregateoutputtype": "WorkspacePdfSumAggregateOutputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L32642 | neighbors=[index.d.ts]
@@ -51,12 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "generated_client_index_d_workspaceuncheckedcreatewithoutadminsinput": "WorkspaceUncheckedCreateWithoutAdminsInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L46834 | neighbors=[index.d.ts]
 - "generated_client_index_d_workspaceuncheckedcreatewithoutdoctorsinput": "WorkspaceUncheckedCreateWithoutDoctorsInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L47570 | neighbors=[index.d.ts]
 - "generated_client_index_d_workspaceuncheckedcreatewithoutinterpretationrulesinput": "WorkspaceUncheckedCreateWithoutInterpretationRulesInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L51206 | neighbors=[index.d.ts]
-- "generated_client_index_d_workspaceuncheckedcreatewithoutparametersinput": "WorkspaceUncheckedCreateWithoutParametersInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L49219 | neighbors=[index.d.ts]
-- "generated_client_index_d_workspaceuncheckedcreatewithoutpdfsettinginput": "WorkspaceUncheckedCreateWithoutPdfSettingInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L51686 | neighbors=[index.d.ts]
-- "generated_client_index_d_workspaceuncheckedcreatewithoutregistrationsinput": "WorkspaceUncheckedCreateWithoutRegistrationsInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L48434 | neighbors=[index.d.ts]
-- "generated_client_index_d_workspaceuncheckedcreatewithouttestformulasinput": "WorkspaceUncheckedCreateWithoutTestFormulasInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L50812 | neighbors=[index.d.ts]
-- "generated_client_index_d_workspaceuncheckedcreatewithouttestparametersinput": "WorkspaceUncheckedCreateWithoutTestParametersInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L49482 | neighbors=[index.d.ts]
-- "generated_client_index_d_workspaceuncheckedcreatewithouttestsinput": "WorkspaceUncheckedCreateWithoutTestsInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L48003 | neighbors=[index.d.ts]
 
 ## Instructions
 

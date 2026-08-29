@@ -24,9 +24,16 @@ export async function POST(req, { params }) {
     }
 
     const totalBill = parseFloat(existing.totalAmount || 0) + parseFloat(existing.collectionCharge || 0);
-    const discAmtVal = parseFloat(discountAmount || 0);
+    const discAmtVal = discountAmount !== undefined && discountAmount !== null ? parseFloat(discountAmount || 0) : parseFloat(existing.discountAmount || 0);
+    const discPctVal = discountPercent !== undefined && discountPercent !== null ? parseFloat(discountPercent || 0) : parseFloat(existing.discountPercent || 0);
     const netBill = Math.max(0, totalBill - discAmtVal);
-    const currentReceived = parseFloat(existing.receivedAmount || 0);
+
+    // Sum existing payments from database
+    const existingPaymentsSum = await prisma.registrationPayment.aggregate({
+      where: { registrationId: regId },
+      _sum: { amount: true },
+    });
+    const currentReceived = Math.max(parseFloat(existingPaymentsSum._sum.amount || 0), parseFloat(existing.receivedAmount || 0));
     const maxAllowed = Math.max(0, netBill - currentReceived);
     const newReceivedChunk = received ? parseFloat(received) : 0;
 
@@ -35,6 +42,22 @@ export async function POST(req, { params }) {
     }
 
     if (newReceivedChunk > maxAllowed + 0.01) {
+      // Idempotency check: if this payment was already recorded during registration creation or prior sync
+      const matchingPayment = await prisma.registrationPayment.findFirst({
+        where: {
+          registrationId: regId,
+          amount: newReceivedChunk,
+        },
+      });
+
+      if (matchingPayment && currentReceived >= netBill - 0.01) {
+        return NextResponse.json({
+          success: true,
+          message: "Payment already recorded (idempotent).",
+          registration: existing,
+        });
+      }
+
       return NextResponse.json({
         success: false,
         message: `Received amount (₹${newReceivedChunk}) cannot exceed remaining net due amount (₹${maxAllowed.toFixed(2)}).`
@@ -62,21 +85,19 @@ export async function POST(req, { params }) {
       });
 
       const totalReceived = parseFloat(paymentsSum._sum.amount || 0);
-      const totalAmountVal = parseFloat(existing.totalAmount);
-      const discAmtVal = parseFloat(discountAmount || 0);
-      const newDue = Math.max(0, totalAmountVal - discAmtVal - totalReceived);
+      const newDue = Math.max(0, totalBill - discAmtVal - totalReceived);
 
       // 3. Update the main registration record
       const updatedRegistration = await tx.registration.update({
         where: { id: regId },
         data: {
-          discountPercent: discountPercent ? parseFloat(discountPercent) : 0,
+          discountPercent: discPctVal,
           discountAmount: discAmtVal,
           receivedAmount: totalReceived,
           dueAmount: newDue,
-          paymentMode: paymentMode || "Cash",
-          paymentRefNo: paymentRefNo || null,
-          remark: remark || null,
+          paymentMode: paymentMode || existing.paymentMode || "Cash",
+          paymentRefNo: paymentRefNo !== undefined ? paymentRefNo : existing.paymentRefNo,
+          remark: remark || existing.remark,
           status: newDue > 0 ? "Pending" : "Completed",
         },
       });

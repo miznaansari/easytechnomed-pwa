@@ -17,6 +17,12 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "generated_client_index_d_registrationtestuncheckedcreatewithoutregistrationinput": "RegistrationTestUncheckedCreateWithoutRegistrationInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L48568 | neighbors=[index.d.ts]
+- "generated_client_index_d_registrationtestuncheckedcreatewithouttestinput": "RegistrationTestUncheckedCreateWithoutTestInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L47958 | neighbors=[index.d.ts]
+- "generated_client_index_d_registrationtestuncheckedupdateinput": "RegistrationTestUncheckedUpdateInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L38840 | neighbors=[index.d.ts]
+- "generated_client_index_d_registrationtestuncheckedupdatemanyinput": "RegistrationTestUncheckedUpdateManyInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L38886 | neighbors=[index.d.ts]
+- "generated_client_index_d_registrationtestuncheckedupdatemanywithoutregistrationinput": "RegistrationTestUncheckedUpdateManyWithoutRegistrationInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L53934 | neighbors=[index.d.ts]
+- "generated_client_index_d_registrationtestuncheckedupdatemanywithoutregistrationnestedinput": "RegistrationTestUncheckedUpdateManyWithoutRegistrationNestedInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L44307 | neighbors=[index.d.ts]
 - "generated_client_index_d_registrationtestuncheckedupdatemanywithouttestinput": "RegistrationTestUncheckedUpdateManyWithoutTestInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L53665 | neighbors=[index.d.ts]
 - "generated_client_index_d_registrationtestuncheckedupdatemanywithouttestnestedinput": "RegistrationTestUncheckedUpdateManyWithoutTestNestedInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L44067 | neighbors=[index.d.ts]
 - "generated_client_index_d_registrationtestuncheckedupdatewithoutregistrationinput": "RegistrationTestUncheckedUpdateWithoutRegistrationInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L53919 | neighbors=[index.d.ts]
@@ -51,12 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "generated_client_index_d_registrationuncheckedcreatewithouttestsinput": "RegistrationUncheckedCreateWithoutTestsInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L48927 | neighbors=[index.d.ts]
 - "generated_client_index_d_registrationuncheckedcreatewithoutworkspaceinput": "RegistrationUncheckedCreateWithoutWorkspaceInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L45276 | neighbors=[index.d.ts]
 - "generated_client_index_d_registrationuncheckedupdateinput": "RegistrationUncheckedUpdateInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L38622 | neighbors=[index.d.ts]
-- "generated_client_index_d_registrationuncheckedupdatemanyinput": "RegistrationUncheckedUpdateManyInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L38749 | neighbors=[index.d.ts]
-- "generated_client_index_d_registrationuncheckedupdatemanywithoutadmininput": "RegistrationUncheckedUpdateManyWithoutAdminInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L53035 | neighbors=[index.d.ts]
-- "generated_client_index_d_registrationuncheckedupdatemanywithoutadminnestedinput": "RegistrationUncheckedUpdateManyWithoutAdminNestedInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L43639 | neighbors=[index.d.ts]
-- "generated_client_index_d_registrationuncheckedupdatemanywithoutrefbyinput": "RegistrationUncheckedUpdateManyWithoutRefByInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L53386 | neighbors=[index.d.ts]
-- "generated_client_index_d_registrationuncheckedupdatemanywithoutrefbynestedinput": "RegistrationUncheckedUpdateManyWithoutRefByNestedInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L43873 | neighbors=[index.d.ts]
-- "generated_client_index_d_registrationuncheckedupdatemanywithoutsecondrefinput": "RegistrationUncheckedUpdateManyWithoutSecondRefInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L53517 | neighbors=[index.d.ts]
 
 ## Instructions
 

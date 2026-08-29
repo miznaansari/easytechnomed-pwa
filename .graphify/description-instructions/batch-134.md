@@ -17,6 +17,13 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "runtime_library_d_dynamicmodelextensionfnresult": "DynamicModelExtensionFnResult" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L959 | neighbors=[_d()]
+- "runtime_library_d_dynamicmodelextensionfnresultbase": "DynamicModelExtensionFnResultBase" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L961 | neighbors=[_d()]
+- "runtime_library_d_dynamicmodelextensionfnresultnull": "DynamicModelExtensionFnResultNull" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L963 | neighbors=[_d()]
+- "runtime_library_d_dynamicmodelextensionoperationfn": "DynamicModelExtensionOperationFn" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L965 | neighbors=[_d()]
+- "runtime_library_d_dynamicmodelextensionthis": "DynamicModelExtensionThis" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L967 | neighbors=[_d()]
+- "runtime_library_d_dynamicqueryextensionargs": "DynamicQueryExtensionArgs" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L980 | neighbors=[_d()]
+- "runtime_library_d_dynamicqueryextensioncb": "DynamicQueryExtensionCb" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L993 | neighbors=[_d()]
 - "runtime_library_d_dynamicqueryextensioncbargs": "DynamicQueryExtensionCbArgs" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L995 | neighbors=[_d()]
 - "runtime_library_d_dynamicqueryextensioncbargsargs": "DynamicQueryExtensionCbArgsArgs" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L1004 | neighbors=[_d()]
 - "runtime_library_d_dynamicresultextensionargs": "DynamicResultExtensionArgs" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L1007 | neighbors=[_d()]
@@ -50,13 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "runtime_library_d_extendshook": "ExtendsHook" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L1260 | neighbors=[_d()]
 - "runtime_library_d_extensionargs": "ExtensionArgs" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L1294 | neighbors=[_d()]
 - "runtime_library_d_extractglobalomit": "ExtractGlobalOmit" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L1345 | neighbors=[_d()]
-- "runtime_library_d_fetch": "Fetch" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L1351 | neighbors=[_d()]
-- "runtime_library_d_field": "Field" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L702 | neighbors=[_d()]
-- "runtime_library_d_fielddefault": "FieldDefault" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L726 | neighbors=[_d()]
-- "runtime_library_d_fielddefaultscalar": "FieldDefaultScalar" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L730 | neighbors=[_d()]
-- "runtime_library_d_fieldkind": "FieldKind" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L699 | neighbors=[_d()]
-- "runtime_library_d_fieldlocation": "FieldLocation" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L701 | neighbors=[_d()]
-- "runtime_library_d_fieldnamespace": "FieldNamespace" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L700 | neighbors=[_d()]
 
 ## Instructions
 

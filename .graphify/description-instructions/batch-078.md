@@ -17,6 +17,12 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "generated_client_index_d_leaduncheckedcreateinput": "LeadUncheckedCreateInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L39406 | neighbors=[index.d.ts]
+- "generated_client_index_d_leaduncheckedupdateinput": "LeadUncheckedUpdateInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L39419 | neighbors=[index.d.ts]
+- "generated_client_index_d_leaduncheckedupdatemanyinput": "LeadUncheckedUpdateManyInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L39439 | neighbors=[index.d.ts]
+- "generated_client_index_d_leadupdateargs": "LeadUpdateArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L23871 | neighbors=[index.d.ts]
+- "generated_client_index_d_leadupdateinput": "LeadUpdateInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L39413 | neighbors=[index.d.ts]
+- "generated_client_index_d_leadupdatemanyargs": "LeadUpdateManyArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L23889 | neighbors=[index.d.ts]
 - "generated_client_index_d_leadupdatemanymutationinput": "LeadUpdateManyMutationInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L39433 | neighbors=[index.d.ts]
 - "generated_client_index_d_leadupsertargs": "LeadUpsertArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L23903 | neighbors=[index.d.ts]
 - "generated_client_index_d_leadwhereinput": "LeadWhereInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L36377 | neighbors=[index.d.ts]
@@ -51,12 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "generated_client_index_d_nestedintnullablefilter": "NestedIntNullableFilter" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L44963 | neighbors=[index.d.ts]
 - "generated_client_index_d_nestedintnullablewithaggregatesfilter": "NestedIntNullableWithAggregatesFilter" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L45005 | neighbors=[index.d.ts]
 - "generated_client_index_d_nestedintwithaggregatesfilter": "NestedIntWithAggregatesFilter" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L44883 | neighbors=[index.d.ts]
-- "generated_client_index_d_nestedstringfilter": "NestedStringFilter" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L44842 | neighbors=[index.d.ts]
-- "generated_client_index_d_nestedstringnullablefilter": "NestedStringNullableFilter" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L44974 | neighbors=[index.d.ts]
-- "generated_client_index_d_nestedstringnullablewithaggregatesfilter": "NestedStringNullableWithAggregatesFilter" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L44988 | neighbors=[index.d.ts]
-- "generated_client_index_d_nestedstringwithaggregatesfilter": "NestedStringWithAggregatesFilter" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L44910 | neighbors=[index.d.ts]
-- "generated_client_index_d_noexpand": "NoExpand" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L895 | neighbors=[index.d.ts]
-- "generated_client_index_d_not": "Not" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L926 | neighbors=[index.d.ts]
 
 ## Instructions
 

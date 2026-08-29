@@ -17,6 +17,12 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "runtime_index_browser_u": "U()" | kind=code-symbol | source=scratch/generated-client/runtime/index-browser.js:L1 | neighbors=[index-browser.js, F(), O()]
+- "runtime_index_browser_ue": "ue()" | kind=code-symbol | source=scratch/generated-client/runtime/index-browser.js:L1 | neighbors=[index-browser.js, on(), e()]
+- "runtime_index_browser_ve": "Ve()" | kind=code-symbol | source=scratch/generated-client/runtime/index-browser.js:L1 | neighbors=[index-browser.js, F(), ke()]
+- "runtime_index_browser_x": "x()" | kind=code-symbol | source=scratch/generated-client/runtime/index-browser.js:L1 | neighbors=[index-browser.js, B(), Ee()]
+- "runtime_library_append": "append()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L29 | neighbors=[library.js, e(), Ia()]
+- "runtime_library_bu": "Bu()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L6 | neighbors=[library.js, e(), qr()]
 - "runtime_library_buildcapturesettings": "buildCaptureSettings()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L111 | neighbors=[library.js, build(), isEnabled()]
 - "runtime_library_ci": "ci()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L3 | neighbors=[library.js, slice(), oc()]
 - "runtime_library_d_driveradapter": "DriverAdapter" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L875 | neighbors=[_d(), Queryable, ErrorCapturingDriverAdapter]
@@ -51,12 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "runtime_library_nu": "Nu()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L5 | neighbors=[library.js, No(), $u()]
 - "runtime_library_on": "On()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L33 | neighbors=[library.js, qa(), wa()]
 - "runtime_library_pl": "pl()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L111 | neighbors=[library.js, wl(), requestBatch()]
-- "runtime_library_pr": "pr()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L29 | neighbors=[library.js, constructor(), ua()]
-- "runtime_library_prependsymbolat": "prependSymbolAt()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L21 | neighbors=[library.js, mapLines(), wp()]
-- "runtime_library_propagateresponseextensions": "propagateResponseExtensions()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L111 | neighbors=[library.js, createEngineSpan(), forEach()]
-- "runtime_library_qa": "qa()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L31 | neighbors=[library.js, On(), Xe()]
-- "runtime_library_qd": "qd()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L31 | neighbors=[library.js, ji(), Te()]
-- "runtime_library_qr": "qr()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L4 | neighbors=[library.js, Bu(), ya()]
 
 ## Instructions
 

@@ -17,6 +17,12 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "generated_client_index_d_testupsertargs": "TestUpsertArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L16887 | neighbors=[index.d.ts]
+- "generated_client_index_d_testupsertwithoutformulasinput": "TestUpsertWithoutFormulasInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L51032 | neighbors=[index.d.ts]
+- "generated_client_index_d_testupsertwithoutinterpretationrulesinput": "TestUpsertWithoutInterpretationRulesInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L51426 | neighbors=[index.d.ts]
+- "generated_client_index_d_testupsertwithoutparametersinput": "TestUpsertWithoutParametersInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L49837 | neighbors=[index.d.ts]
+- "generated_client_index_d_testupsertwithoutregistrationsinput": "TestUpsertWithoutRegistrationsInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L49135 | neighbors=[index.d.ts]
+- "generated_client_index_d_testupsertwithwhereuniquewithoutdepartmentinput": "TestUpsertWithWhereUniqueWithoutDepartmentInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L50776 | neighbors=[index.d.ts]
 - "generated_client_index_d_testupsertwithwhereuniquewithoutworkspaceinput": "TestUpsertWithWhereUniqueWithoutWorkspaceInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L45866 | neighbors=[index.d.ts]
 - "generated_client_index_d_testwhereinput": "TestWhereInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L35443 | neighbors=[index.d.ts]
 - "generated_client_index_d_testwhereuniqueinput": "TestWhereUniqueInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L35506 | neighbors=[index.d.ts]
@@ -51,12 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "generated_client_index_d_usercreateargs": "UserCreateArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L7742 | neighbors=[index.d.ts]
 - "generated_client_index_d_usercreateinput": "UserCreateInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L37546 | neighbors=[index.d.ts]
 - "generated_client_index_d_usercreatemanyargs": "UserCreateManyArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L7760 | neighbors=[index.d.ts]
-- "generated_client_index_d_usercreatemanyinput": "UserCreateManyInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L37628 | neighbors=[index.d.ts]
-- "generated_client_index_d_usercreatemanyroleinput": "UserCreateManyRoleInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L52730 | neighbors=[index.d.ts]
-- "generated_client_index_d_usercreatemanyroleinputenvelope": "UserCreateManyRoleInputEnvelope" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L46691 | neighbors=[index.d.ts]
-- "generated_client_index_d_usercreatemanyworkspaceinput": "UserCreateManyWorkspaceInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L51870 | neighbors=[index.d.ts]
-- "generated_client_index_d_usercreatemanyworkspaceinputenvelope": "UserCreateManyWorkspaceInputEnvelope" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L45438 | neighbors=[index.d.ts]
-- "generated_client_index_d_usercreatenestedmanywithoutroleinput": "UserCreateNestedManyWithoutRoleInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L43367 | neighbors=[index.d.ts]
 
 ## Instructions
 

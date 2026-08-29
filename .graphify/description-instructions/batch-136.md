@@ -17,6 +17,13 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "runtime_library_d_internalargs": "InternalArgs" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L1782 | neighbors=[_d()]
+- "runtime_library_d_internalrequestparams": "InternalRequestParams" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L1817 | neighbors=[_d()]
+- "runtime_library_d_isolationlevel": "IsolationLevel" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L1842 | neighbors=[_d()]
+- "runtime_library_d_itxclientdenylist": "ITXClientDenyList" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L1854 | neighbors=[_d()]
+- "runtime_library_d_job": "Job" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L1858 | neighbors=[_d()]
+- "runtime_library_d_jsargs": "JsArgs" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L1869 | neighbors=[_d()]
+- "runtime_library_d_jsinputvalue": "JsInputValue" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L1876 | neighbors=[_d()]
 - "runtime_library_d_jsonargumentvalue": "JsonArgumentValue" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L1880 | neighbors=[_d()]
 - "runtime_library_d_jsonarray": "JsonArray" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L1888 | neighbors=[_d()]
 - "runtime_library_d_jsonbatchquery": "JsonBatchQuery" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L1891 | neighbors=[_d()]
@@ -50,13 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "runtime_library_d_metricsoptionscommon": "MetricsOptionsCommon" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L2111 | neighbors=[_d()]
 - "runtime_library_d_metricsoptionsjson": "MetricsOptionsJson" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L2115 | neighbors=[_d()]
 - "runtime_library_d_metricsoptionsprometheus": "MetricsOptionsPrometheus" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L2119 | neighbors=[_d()]
-- "runtime_library_d_middlewareargsmapper": "MiddlewareArgsMapper" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L2123 | neighbors=[_d()]
-- "runtime_library_d_middlewarehandler": "MiddlewareHandler" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L2128 | neighbors=[_d()]
-- "runtime_library_d_model": "Model" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L689 | neighbors=[_d()]
-- "runtime_library_d_modelaction": "ModelAction" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L851 | neighbors=[_d()]
-- "runtime_library_d_modelarg": "ModelArg" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L2136 | neighbors=[_d()]
-- "runtime_library_d_modelargs": "ModelArgs" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L2140 | neighbors=[_d()]
-- "runtime_library_d_modelkey": "ModelKey" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L2146 | neighbors=[_d()]
 
 ## Instructions
 

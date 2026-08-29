@@ -17,6 +17,13 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "runtime_library_d_fetch": "Fetch" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L1351 | neighbors=[_d()]
+- "runtime_library_d_field": "Field" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L702 | neighbors=[_d()]
+- "runtime_library_d_fielddefault": "FieldDefault" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L726 | neighbors=[_d()]
+- "runtime_library_d_fielddefaultscalar": "FieldDefaultScalar" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L730 | neighbors=[_d()]
+- "runtime_library_d_fieldkind": "FieldKind" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L699 | neighbors=[_d()]
+- "runtime_library_d_fieldlocation": "FieldLocation" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L701 | neighbors=[_d()]
+- "runtime_library_d_fieldnamespace": "FieldNamespace" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L700 | neighbors=[_d()]
 - "runtime_library_d_fieldref": "FieldRef" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L1356 | neighbors=[_d()]
 - "runtime_library_d_fieldrefallowtype": "FieldRefAllowType" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L828 | neighbors=[_d()]
 - "runtime_library_d_fieldreftype": "FieldRefType" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L823 | neighbors=[_d()]
@@ -50,13 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "runtime_library_d_instance": "Instance" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L329 | neighbors=[_d()]
 - "runtime_library_d_interactivetransactioninfo": "InteractiveTransactionInfo" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L1767 | neighbors=[_d()]
 - "runtime_library_d_interactivetransactionoptions": "InteractiveTransactionOptions" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L1780 | neighbors=[_d()]
-- "runtime_library_d_internalargs": "InternalArgs" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L1782 | neighbors=[_d()]
-- "runtime_library_d_internalrequestparams": "InternalRequestParams" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L1817 | neighbors=[_d()]
-- "runtime_library_d_isolationlevel": "IsolationLevel" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L1842 | neighbors=[_d()]
-- "runtime_library_d_itxclientdenylist": "ITXClientDenyList" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L1854 | neighbors=[_d()]
-- "runtime_library_d_job": "Job" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L1858 | neighbors=[_d()]
-- "runtime_library_d_jsargs": "JsArgs" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L1869 | neighbors=[_d()]
-- "runtime_library_d_jsinputvalue": "JsInputValue" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L1876 | neighbors=[_d()]
 
 ## Instructions
 

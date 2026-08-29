@@ -17,6 +17,9 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "runtime_index_browser_be": "be()" | kind=code-symbol | source=scratch/generated-client/runtime/index-browser.js:L1 | neighbors=[index-browser.js, e(), i(), Re()]
+- "runtime_index_browser_ee": "Ee()" | kind=code-symbol | source=scratch/generated-client/runtime/index-browser.js:L1 | neighbors=[index-browser.js, O(), p(), x()]
+- "runtime_index_browser_j": "j()" | kind=code-symbol | source=scratch/generated-client/runtime/index-browser.js:L1 | neighbors=[index-browser.js, e(), sn(), un()]
 - "runtime_index_browser_ke": "ke()" | kind=code-symbol | source=scratch/generated-client/runtime/index-browser.js:L1 | neighbors=[index-browser.js, F(), ie(), Ve()]
 - "runtime_index_browser_l": "L()" | kind=code-symbol | source=scratch/generated-client/runtime/index-browser.js:L1 | neighbors=[index-browser.js, e(), p(), mn()]
 - "runtime_index_browser_on": "on()" | kind=code-symbol | source=scratch/generated-client/runtime/index-browser.js:L1 | neighbors=[index-browser.js, ie(), p(), ue()]
@@ -54,9 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "runtime_library_maplines": "mapLines()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L21 | neighbors=[library.js, e(), prependSymbolAt(), wp()]
 - "runtime_library_nestargument": "nestArgument()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L29 | neighbors=[library.js, aa(), e(), od()]
 - "runtime_library_newline": "newLine()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L26 | neighbors=[library.js, indentedCurrentLine(), t(), writeLine()]
-- "runtime_library_nn": "nn()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L21 | neighbors=[library.js, He(), e(), y()]
-- "runtime_library_np": "np()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L21 | neighbors=[library.js, addErrorMessage(), Hs(), markAsError()]
-- "runtime_library_ns": "ns()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L18 | neighbors=[library.js, ac(), rs(), zt()]
 
 ## Instructions
 

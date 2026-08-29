@@ -9,9 +9,6 @@ your JSON answer to the answer file.
 You are documenting nodes in a knowledge graph.
 For each entry below, write ONE concise factual plain-language sentence
 describing what it is or does. Use only the provided context.
-For a code symbol (kind=code-symbol — a function, class, or constant),
-describe what the function/symbol does based on its name, source location
-and neighbors — e.g. "Resolves the configured ontology profile from graphify.yaml.".
 For an entity node (any other kind — e.g. a person, place, event, object),
 describe what the entity is and its role, grounded in its type, its
 relations (neighbors) and the provided citations/evidence — e.g.
@@ -24,6 +21,13 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "commit:repo:github.com-personal/miznaansari/easytechnomed-pwa@44ad6b291634e03f879c81169447c20a2f87c7bc": "44ad6b2 new ui dashboard" | kind=Commit | source=git | neighbors=[main, b95c5bd 3.0.24, 6812ab9 new ui dashboard]
+- "commit:repo:github.com-personal/miznaansari/easytechnomed-pwa@462f542b7ee9e8bc36357c23ab77576e01bc53d9": "462f542 3.0.4" | kind=Commit | source=git | neighbors=[main, a356e41 f, c15ae1e fixed]
+- "commit:repo:github.com-personal/miznaansari/easytechnomed-pwa@48cc7ec32defe0b9c99dc02a05d23b2bfcbc86f7": "48cc7ec 2.0.22" | kind=Commit | source=git | neighbors=[14fa292 f, main, 9f59247 expire token]
+- "commit:repo:github.com-personal/miznaansari/easytechnomed-pwa@5ce0a2ea8942fa32ba4e3e1cffce040572cdebda": "5ce0a2e fixed" | kind=Commit | source=git | neighbors=[main, 9a50d76 3.0.2, c5cbecd 3.0.1]
+- "commit:repo:github.com-personal/miznaansari/easytechnomed-pwa@5ff27349a85485707e8d6ec1dbdf3a9164b29d0c": "5ff2734 2.0.11" | kind=Commit | source=git | neighbors=[main, 4d7570f fixed, aae6bad fixed]
+- "commit:repo:github.com-personal/miznaansari/easytechnomed-pwa@6325ac4601eac2f28c31d96812a3115d32258803": "6325ac4 2.0.20" | kind=Commit | source=git | neighbors=[main, f3857f9 f, d84f15f f]
+- "commit:repo:github.com-personal/miznaansari/easytechnomed-pwa@6adf5501e8593ddd4e13f315ccca1356b6194f3b": "6adf550 3.1.4" | kind=Commit | source=git | neighbors=[6236f60 new update, main, 10501e3 fixed]
 - "commit:repo:github.com-personal/miznaansari/easytechnomed-pwa@713405831eef818366ebb6342eb43cd7340a4a62": "7134058 1.1.29" | kind=Commit | source=git | neighbors=[main, b5ea15f d, d87cf87 d]
 - "commit:repo:github.com-personal/miznaansari/easytechnomed-pwa@720f0160e2a9e5247fee57dd7f67464920beaa7c": "720f016 2.0.13" | kind=Commit | source=git | neighbors=[main, 905ef50 fixed, c070c55 fixed]
 - "commit:repo:github.com-personal/miznaansari/easytechnomed-pwa@7ec66e7df558d9a5ccbcadcf69502606866a22f3": "7ec66e7 3.0.18" | kind=Commit | source=git | neighbors=[main, 2582be7 fixed zoom issue, 8b1f3d8 a]
@@ -57,13 +61,6 @@ one-sentence description — no prose, no markdown fences.
 - "commit:repo:github.com-personal/miznaansari/easytechnomed-pwa@f9a9e52ab881f37b37845b3f25a164a999f6ce02": "f9a9e52 1.1.28" | kind=Commit | source=git | neighbors=[532b740 fixed, main, d87cf87 d]
 - "commit:repo:github.com-personal/miznaansari/easytechnomed-pwa@f9e9bea93a9679482a23f68dc2d2df3c6b3c9c17": "f9e9bea 2.0.8" | kind=Commit | source=git | neighbors=[37dcb32 fixed, main, cea69a2 d]
 - "commit:repo:github.com-personal/miznaansari/easytechnomed-pwa@fae0b0a32e7f1f425fc024c87b3f94a501c8a16c": "fae0b0a graphify added." | kind=Commit | source=git | neighbors=[98ad5ca 2.0.24, main, 14ed805 3.0.0]
-- "component_differentialcounttracker_calculatedifferentialsummary": "calculateDifferentialSummary()" | kind=code-symbol | source=app/(customer)/(dashboard)/test-report/component/DifferentialCountTracker.jsx:L91 | neighbors=[DifferentialCountTracker.jsx, DifferentialHeaderBadge(), validateDifferentialOnSave()]
-- "component_differentialcounttracker_differentialheaderbadge": "DifferentialHeaderBadge()" | kind=code-symbol | source=app/(customer)/(dashboard)/test-report/component/DifferentialCountTracker.jsx:L197 | neighbors=[DifferentialCountTracker.jsx, calculateDifferentialSummary(), isDifferentialHeader()]
-- "component_moneyreciptmobile": "MoneyReciptMobile.jsx" | kind=code-symbol | source=app/(customer)/(dashboard)/test-report/component/MoneyReciptMobile.jsx:L1 | neighbors=[252e194 e, MoneyRecipt.jsx, MoneyReciptMobile()]
-- "component_resultentrymobile": "resultEntryMobile.jsx" | kind=code-symbol | source=app/(customer)/(dashboard)/test-report/component/resultEntryMobile.jsx:L1 | neighbors=[252e194 e, resultEntry.jsx, ResultEntryMobile()]
-- "components_adddoctordrawer": "AddDoctorDrawer.js" | kind=code-symbol | source=components/AddDoctorDrawer.js:L1 | neighbors=[252e194 e, 84a8ff2 full indexeddb based, AddDoctorDrawer()]
-- "components_expiredplanview": "ExpiredPlanView.jsx" | kind=code-symbol | source=components/ExpiredPlanView.jsx:L1 | neighbors=[252e194 e, 6236f60 new update, ExpiredPlanView()]
-- "doctor_summary_route": "route.js" | kind=code-symbol | source=app/api/doctor-summary/route.js:L1 | neighbors=[252e194 e, GET(), serializeData()]
 
 ## Instructions
 

@@ -17,6 +17,13 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "scratch_test_dlc_calc_values2": "values2" | kind=code-symbol | source=scratch/test-dlc-calc.js:L32 | neighbors=[test-dlc-calc.js]
+- "scratch_test_fix_reg_17_main": "main()" | kind=code-symbol | source=scratch/test-fix-reg-17.js:L6 | neighbors=[test-fix-reg-17.js]
+- "scratch_test_fix_reg_17_prisma": "prisma" | kind=code-symbol | source=scratch/test-fix-reg-17.js:L4 | neighbors=[test-fix-reg-17.js]
+- "scratch_test_formula_calc_checkformuladependencies": "checkFormulaDependencies()" | kind=code-symbol | source=scratch/test-formula-calc.js:L87 | neighbors=[test-formula-calc.js]
+- "scratch_test_formula_calc_evaluateexpression": "evaluateExpression()" | kind=code-symbol | source=scratch/test-formula-calc.js:L1 | neighbors=[test-formula-calc.js]
+- "scratch_test_formula_calc_resf": "resF" | kind=code-symbol | source=scratch/test-formula-calc.js:L141 | neighbors=[test-formula-calc.js]
+- "scratch_test_formula_calc_resm": "resM" | kind=code-symbol | source=scratch/test-formula-calc.js:L146 | neighbors=[test-formula-calc.js]
 - "scratch_test_formula_calc_valuesfemale": "valuesFemale" | kind=code-symbol | source=scratch/test-formula-calc.js:L110 | neighbors=[test-formula-calc.js]
 - "scratch_test_formula_calc_valuesmale": "valuesMale" | kind=code-symbol | source=scratch/test-formula-calc.js:L124 | neighbors=[test-formula-calc.js]
 - "scratch_test_formula_run_main": "main()" | kind=code-symbol | source=scratch/test-formula-run.js:L6 | neighbors=[test-formula-run.js]
@@ -50,13 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "scratch_test_user_cbc_result": "result" | kind=code-symbol | source=scratch/test-user-cbc.js:L55 | neighbors=[test-user-cbc.js]
 - "scratch_test_user_cbc_testdefinition": "testDefinition" | kind=code-symbol | source=scratch/test-user-cbc.js:L4 | neighbors=[test-user-cbc.js]
 - "scratch_test_user_lipid_addvaluetovaluesmap": "addValueToValuesMap()" | kind=code-symbol | source=scratch/test-user-lipid.js:L1 | neighbors=[test-user-lipid.js]
-- "scratch_test_user_lipid_checkformuladependencies": "checkFormulaDependencies()" | kind=code-symbol | source=scratch/test-user-lipid.js:L236 | neighbors=[test-user-lipid.js]
-- "scratch_test_user_lipid_evaluatedformulas": "evaluatedFormulas" | kind=code-symbol | source=scratch/test-user-lipid.js:L290 | neighbors=[test-user-lipid.js]
-- "scratch_test_user_lipid_evaluateexpression": "evaluateExpression()" | kind=code-symbol | source=scratch/test-user-lipid.js:L188 | neighbors=[test-user-lipid.js]
-- "scratch_test_user_lipid_formulas": "formulas" | kind=code-symbol | source=scratch/test-user-lipid.js:L263 | neighbors=[test-user-lipid.js]
-- "scratch_test_user_lipid_res": "res" | kind=code-symbol | source=scratch/test-user-lipid.js:L287 | neighbors=[test-user-lipid.js]
-- "scratch_test_user_lipid_typedvalues": "typedValues" | kind=code-symbol | source=scratch/test-user-lipid.js:L273 | neighbors=[test-user-lipid.js]
-- "scratch_test_user_lipid_userparams": "userParams" | kind=code-symbol | source=scratch/test-user-lipid.js:L251 | neighbors=[test-user-lipid.js]
 
 ## Instructions
 

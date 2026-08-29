@@ -17,6 +17,13 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "runtime_wasm_registernewerror": "registerNewError()" | kind=code-symbol | source=scratch/generated-client/runtime/wasm.js:L5 | neighbors=[wasm.js]
+- "runtime_wasm_requestargstomiddlewareargs": "requestArgsToMiddlewareArgs()" | kind=code-symbol | source=scratch/generated-client/runtime/wasm.js:L21 | neighbors=[wasm.js]
+- "runtime_wasm_rl": "rl()" | kind=code-symbol | source=scratch/generated-client/runtime/wasm.js:L26 | neighbors=[wasm.js]
+- "runtime_wasm_rr": "Rr()" | kind=code-symbol | source=scratch/generated-client/runtime/wasm.js:L1 | neighbors=[wasm.js]
+- "runtime_wasm_set": "set()" | kind=code-symbol | source=scratch/generated-client/runtime/wasm.js:L5 | neighbors=[wasm.js]
+- "runtime_wasm_statement": "statement()" | kind=code-symbol | source=scratch/generated-client/runtime/wasm.js:L5 | neighbors=[wasm.js]
+- "runtime_wasm_swap16": "swap16()" | kind=code-symbol | source=scratch/generated-client/runtime/wasm.js:L1 | neighbors=[wasm.js]
 - "runtime_wasm_swap32": "swap32()" | kind=code-symbol | source=scratch/generated-client/runtime/wasm.js:L1 | neighbors=[wasm.js]
 - "runtime_wasm_swap64": "swap64()" | kind=code-symbol | source=scratch/generated-client/runtime/wasm.js:L1 | neighbors=[wasm.js]
 - "runtime_wasm_symbol_tostringtag": "[Symbol.toStringTag]()" | kind=code-symbol | source=scratch/generated-client/runtime/wasm.js:L1 | neighbors=[wasm.js]
@@ -50,13 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "scratch_bootstrap_dates_prisma": "prisma" | kind=code-symbol | source=scratch/bootstrap-dates.js:L2 | neighbors=[bootstrap-dates.js]
 - "scratch_bootstrap_dates_prismaclient": "{ PrismaClient }" | kind=code-symbol | source=scratch/bootstrap-dates.js:L1 | neighbors=[bootstrap-dates.js]
 - "scratch_check_data_main": "main()" | kind=code-symbol | source=scratch/check-data.js:L4 | neighbors=[check-data.js]
-- "scratch_check_data_prisma": "prisma" | kind=code-symbol | source=scratch/check-data.js:L2 | neighbors=[check-data.js]
-- "scratch_check_data_prismaclient": "{ PrismaClient }" | kind=code-symbol | source=scratch/check-data.js:L1 | neighbors=[check-data.js]
-- "scratch_check_formulas_2398_main": "main()" | kind=code-symbol | source=scratch/check-formulas-2398.js:L4 | neighbors=[check-formulas-2398.js]
-- "scratch_check_formulas_2398_prisma": "prisma" | kind=code-symbol | source=scratch/check-formulas-2398.js:L2 | neighbors=[check-formulas-2398.js]
-- "scratch_check_formulas_2398_prismaclient": "{ PrismaClient }" | kind=code-symbol | source=scratch/check-formulas-2398.js:L1 | neighbors=[check-formulas-2398.js]
-- "scratch_check_formulas_main": "main()" | kind=code-symbol | source=scratch/check-formulas.js:L4 | neighbors=[check-formulas.js]
-- "scratch_check_formulas_prisma": "prisma" | kind=code-symbol | source=scratch/check-formulas.js:L2 | neighbors=[check-formulas.js]
 
 ## Instructions
 

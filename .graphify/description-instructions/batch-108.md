@@ -17,6 +17,12 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "generated_client_index_d_testparameterupdateinput": "TestParameterUpdateInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L39221 | neighbors=[index.d.ts]
+- "generated_client_index_d_testparameterupdatemanyargs": "TestParameterUpdateManyArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L22029 | neighbors=[index.d.ts]
+- "generated_client_index_d_testparameterupdatemanymutationinput": "TestParameterUpdateManyMutationInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L39288 | neighbors=[index.d.ts]
+- "generated_client_index_d_testparameterupdatemanywithoutparameternestedinput": "TestParameterUpdateManyWithoutParameterNestedInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L44415 | neighbors=[index.d.ts]
+- "generated_client_index_d_testparameterupdatemanywithouttestnestedinput": "TestParameterUpdateManyWithoutTestNestedInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L44025 | neighbors=[index.d.ts]
+- "generated_client_index_d_testparameterupdatemanywithoutworkspacenestedinput": "TestParameterUpdateManyWithoutWorkspaceNestedInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L42983 | neighbors=[index.d.ts]
 - "generated_client_index_d_testparameterupdatemanywithwherewithoutparameterinput": "TestParameterUpdateManyWithWhereWithoutParameterInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L49425 | neighbors=[index.d.ts]
 - "generated_client_index_d_testparameterupdatemanywithwherewithouttestinput": "TestParameterUpdateManyWithWhereWithoutTestInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L48268 | neighbors=[index.d.ts]
 - "generated_client_index_d_testparameterupdatemanywithwherewithoutworkspaceinput": "TestParameterUpdateManyWithWhereWithoutWorkspaceInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L46016 | neighbors=[index.d.ts]
@@ -51,12 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "generated_client_index_d_testuncheckedcreatenestedmanywithoutworkspaceinput": "TestUncheckedCreateNestedManyWithoutWorkspaceInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L42827 | neighbors=[index.d.ts]
 - "generated_client_index_d_testuncheckedcreatewithoutdepartmentinput": "TestUncheckedCreateWithoutDepartmentInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L50739 | neighbors=[index.d.ts]
 - "generated_client_index_d_testuncheckedcreatewithoutformulasinput": "TestUncheckedCreateWithoutFormulasInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L50864 | neighbors=[index.d.ts]
-- "generated_client_index_d_testuncheckedcreatewithoutinterpretationrulesinput": "TestUncheckedCreateWithoutInterpretationRulesInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L51258 | neighbors=[index.d.ts]
-- "generated_client_index_d_testuncheckedcreatewithoutparametersinput": "TestUncheckedCreateWithoutParametersInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L49647 | neighbors=[index.d.ts]
-- "generated_client_index_d_testuncheckedcreatewithoutregistrationsinput": "TestUncheckedCreateWithoutRegistrationsInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L49003 | neighbors=[index.d.ts]
-- "generated_client_index_d_testuncheckedcreatewithoutworkspaceinput": "TestUncheckedCreateWithoutWorkspaceInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L45357 | neighbors=[index.d.ts]
-- "generated_client_index_d_testuncheckedupdateinput": "TestUncheckedUpdateInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L38389 | neighbors=[index.d.ts]
-- "generated_client_index_d_testuncheckedupdatemanyinput": "TestUncheckedUpdateManyInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L38462 | neighbors=[index.d.ts]
 
 ## Instructions
 

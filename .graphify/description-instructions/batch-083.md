@@ -17,6 +17,12 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "generated_client_index_d_patientresultfinduniqueargs": "PatientResultFindUniqueArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L22796 | neighbors=[index.d.ts]
+- "generated_client_index_d_patientresultfinduniqueorthrowargs": "PatientResultFindUniqueOrThrowArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L22814 | neighbors=[index.d.ts]
+- "generated_client_index_d_patientresultgetpayload": "PatientResultGetPayload" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L22414 | neighbors=[index.d.ts]
+- "generated_client_index_d_patientresultgroupbyargs": "PatientResultGroupByArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L22321 | neighbors=[index.d.ts]
+- "generated_client_index_d_patientresultgroupbyoutputtype": "PatientResultGroupByOutputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L22335 | neighbors=[index.d.ts]
+- "generated_client_index_d_patientresultinclude": "PatientResultInclude" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L22390 | neighbors=[index.d.ts]
 - "generated_client_index_d_patientresultlistrelationfilter": "PatientResultListRelationFilter" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L41501 | neighbors=[index.d.ts]
 - "generated_client_index_d_patientresultmaxaggregateinputtype": "PatientResultMaxAggregateInputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L22226 | neighbors=[index.d.ts]
 - "generated_client_index_d_patientresultmaxaggregateoutputtype": "PatientResultMaxAggregateOutputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L22179 | neighbors=[index.d.ts]
@@ -51,12 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "generated_client_index_d_patientresultuncheckedupdatewithoutregistrationinput": "PatientResultUncheckedUpdateWithoutRegistrationInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L53855 | neighbors=[index.d.ts]
 - "generated_client_index_d_patientresultuncheckedupdatewithouttestparameterinput": "PatientResultUncheckedUpdateWithoutTestParameterInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L54143 | neighbors=[index.d.ts]
 - "generated_client_index_d_patientresultupdateargs": "PatientResultUpdateArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L23000 | neighbors=[index.d.ts]
-- "generated_client_index_d_patientresultupdateinput": "PatientResultUpdateInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L39349 | neighbors=[index.d.ts]
-- "generated_client_index_d_patientresultupdatemanyargs": "PatientResultUpdateManyArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L23022 | neighbors=[index.d.ts]
-- "generated_client_index_d_patientresultupdatemanymutationinput": "PatientResultUpdateManyMutationInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L39381 | neighbors=[index.d.ts]
-- "generated_client_index_d_patientresultupdatemanywithoutregistrationnestedinput": "PatientResultUpdateManyWithoutRegistrationNestedInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L44197 | neighbors=[index.d.ts]
-- "generated_client_index_d_patientresultupdatemanywithouttestparameternestedinput": "PatientResultUpdateManyWithoutTestParameterNestedInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L44541 | neighbors=[index.d.ts]
-- "generated_client_index_d_patientresultupdatemanywithwherewithoutregistrationinput": "PatientResultUpdateManyWithWhereWithoutRegistrationInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L48604 | neighbors=[index.d.ts]
 
 ## Instructions
 

@@ -17,6 +17,12 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "paymentid_route_formatdatetime": "formatDateTime()" | kind=code-symbol | source=app/api/print-subscription-invoice/[paymentId]/route.js:L18 | neighbors=[route.js, GET()]
+- "paymentid_route_numbertowords": "numberToWords()" | kind=code-symbol | source=app/api/print-subscription-invoice/[paymentId]/route.js:L33 | neighbors=[route.js, GET()]
+- "payments_route": "route.js" | kind=code-symbol | source=app/api/settings/payments/route.js:L1 | neighbors=[252e194 e, GET()]
+- "postcss_config": "postcss.config.mjs" | kind=code-symbol | source=postcss.config.mjs:L1 | neighbors=[252e194 e, config]
+- "preview_pdf_route_formatdate": "formatDate()" | kind=code-symbol | source=app/api/settings/preview-pdf/route.js:L13 | neighbors=[route.js, GET()]
+- "preview_pdf_route_get": "GET()" | kind=code-symbol | source=app/api/settings/preview-pdf/route.js:L25 | neighbors=[route.js, formatDate()]
 - "print_billhtmlgenerator_formatdate": "formatDate()" | kind=code-symbol | source=lib/offline/print/billHtmlGenerator.js:L3 | neighbors=[billHtmlGenerator.js, generateOfflineBillHtml()]
 - "print_billhtmlgenerator_numbertowords": "numberToWords()" | kind=code-symbol | source=lib/offline/print/billHtmlGenerator.js:L18 | neighbors=[billHtmlGenerator.js, generateOfflineBillHtml()]
 - "print_qrgenerator_generateqrcodedataurl": "generateQrCodeDataUrl()" | kind=code-symbol | source=lib/offline/print/qrGenerator.js:L50 | neighbors=[qrGenerator.js, test_identity_and_qr.mjs]
@@ -51,12 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "runtime_edge_ds": "ds()" | kind=code-symbol | source=scratch/generated-client/runtime/edge.js:L6 | neighbors=[edge.js, isEmpty()]
 - "runtime_edge_ec": "ec()" | kind=code-symbol | source=scratch/generated-client/runtime/edge.js:L5 | neighbors=[edge.js, Be()]
 - "runtime_edge_enabled": "enabled()" | kind=code-symbol | source=scratch/generated-client/runtime/edge.js:L1 | neighbors=[edge.js, Xa()]
-- "runtime_edge_ep": "ep()" | kind=code-symbol | source=scratch/generated-client/runtime/edge.js:L30 | neighbors=[edge.js, Ua()]
-- "runtime_edge_esm_aa": "Aa()" | kind=code-symbol | source=scratch/generated-client/runtime/edge-esm.js:L1 | neighbors=[edge-esm.js, ba()]
-- "runtime_edge_esm_additem": "addItem()" | kind=code-symbol | source=scratch/generated-client/runtime/edge-esm.js:L3 | neighbors=[edge-esm.js, iu()]
-- "runtime_edge_esm_addmarginsymbol": "addMarginSymbol()" | kind=code-symbol | source=scratch/generated-client/runtime/edge-esm.js:L2 | neighbors=[edge-esm.js, write()]
-- "runtime_edge_esm_bl": "bl()" | kind=code-symbol | source=scratch/generated-client/runtime/edge-esm.js:L1 | neighbors=[edge-esm.js, ne()]
-- "runtime_edge_esm_bs": "bs()" | kind=code-symbol | source=scratch/generated-client/runtime/edge-esm.js:L11 | neighbors=[edge-esm.js, withRetry()]
 
 ## Instructions
 

@@ -33,6 +33,7 @@ import {
   createFilterOptions,
   Tooltip,
   Checkbox,
+  LinearProgress,
 } from "@mui/material";
 import {
   Delete as DeleteIcon,
@@ -68,29 +69,28 @@ const toUtcString = (dateStr) => {
   return isNaN(d.getTime()) ? null : d.toISOString();
 };
 
-// Build a lookup map of Indian state codes to state names
-const indianStatesMap = {};
-try {
-  State.getStatesOfCountry("IN").forEach((s) => {
-    indianStatesMap[s.isoCode] = s.name;
-  });
-} catch (err) {
-  console.error("Failed to load Indian states", err);
-}
-
-// India-focused cities list with their states (e.g. "Noida, Uttar Pradesh")
-let indianCities = [];
-try {
-  indianCities = Array.from(
-    new Set(
-      City.getCitiesOfCountry("IN").map((c) => {
-        const stateName = indianStatesMap[c.stateCode] || c.stateCode;
-        return `${c.name}, ${stateName}`;
-      })
-    )
-  ).sort();
-} catch (err) {
-  console.error("Failed to load Indian cities", err);
+// Lazy getter for Indian cities list (prevents blocking module evaluation on page mount)
+let cachedIndianCities = null;
+function getIndianCities() {
+  if (cachedIndianCities) return cachedIndianCities;
+  try {
+    const indianStatesMap = {};
+    State.getStatesOfCountry("IN").forEach((s) => {
+      indianStatesMap[s.isoCode] = s.name;
+    });
+    cachedIndianCities = Array.from(
+      new Set(
+        City.getCitiesOfCountry("IN").map((c) => {
+          const stateName = indianStatesMap[c.stateCode] || c.stateCode;
+          return `${c.name}, ${stateName}`;
+        })
+      )
+    ).sort();
+  } catch (err) {
+    console.error("Failed to load Indian cities", err);
+    cachedIndianCities = [];
+  }
+  return cachedIndianCities;
 }
 
 export default function RegistrationPage() {
@@ -102,7 +102,8 @@ export default function RegistrationPage() {
   const editId = searchParams.get("edit");
   const [doctors, setDoctors] = useState([]);
   const [tests, setTests] = useState([]);
-  const [loading, setLoading] = useState(true);
+  const [cityOptions, setCityOptions] = useState([]);
+  const [loading, setLoading] = useState(Boolean(editId));
   const [submitting, setSubmitting] = useState(false);
 
   // Form states
@@ -179,6 +180,14 @@ export default function RegistrationPage() {
       const savedWa = localStorage.getItem("registration_send_whatsapp");
       if (savedWa !== null) setSendWhatsapp(savedWa === "true");
     } catch (e) {}
+  }, []);
+
+  // Populate city options in background after initial render so UI appears with 0ms delay
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setCityOptions(getIndianCities());
+    }, 50);
+    return () => clearTimeout(timer);
   }, []);
 
   // Notifications
@@ -879,16 +888,9 @@ _Thank you for choosing us for your health diagnostics!_`;
     }
   };
 
-  if (loading) {
-    return (
-      <Box sx={{ display: "flex", justifyContent: "center", alignItems: "center", minHeight: "60vh" }}>
-        <CircularProgress />
-      </Box>
-    );
-  }
-
   return (
     <Box sx={{ flexGrow: 1 }}>
+      {loading && <LinearProgress sx={{ mb: 2, borderRadius: 1 }} />}
       {/* Header Info */}
       <Box sx={{ display: "flex", flexDirection: { xs: "column", sm: "row" }, justifyContent: "space-between", alignItems: { xs: "flex-start", sm: "center" }, gap: 1, mb: 3 }}>
         <Typography variant="h5" sx={{ fontWeight: 800, color: "primary.main" }}>
@@ -985,7 +987,7 @@ _Thank you for choosing us for your health diagnostics!_`;
                 </Grid>
                 <Grid size={{ xs: 12, sm: 4 }}>
                   <Autocomplete
-                    options={indianCities}
+                    options={cityOptions}
                     freeSolo
                     openOnFocus
                     filterOptions={(options, state) => {

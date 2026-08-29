@@ -17,6 +17,13 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "scratch_test_user_lipid_checkformuladependencies": "checkFormulaDependencies()" | kind=code-symbol | source=scratch/test-user-lipid.js:L236 | neighbors=[test-user-lipid.js]
+- "scratch_test_user_lipid_evaluatedformulas": "evaluatedFormulas" | kind=code-symbol | source=scratch/test-user-lipid.js:L290 | neighbors=[test-user-lipid.js]
+- "scratch_test_user_lipid_evaluateexpression": "evaluateExpression()" | kind=code-symbol | source=scratch/test-user-lipid.js:L188 | neighbors=[test-user-lipid.js]
+- "scratch_test_user_lipid_formulas": "formulas" | kind=code-symbol | source=scratch/test-user-lipid.js:L263 | neighbors=[test-user-lipid.js]
+- "scratch_test_user_lipid_res": "res" | kind=code-symbol | source=scratch/test-user-lipid.js:L287 | neighbors=[test-user-lipid.js]
+- "scratch_test_user_lipid_typedvalues": "typedValues" | kind=code-symbol | source=scratch/test-user-lipid.js:L273 | neighbors=[test-user-lipid.js]
+- "scratch_test_user_lipid_userparams": "userParams" | kind=code-symbol | source=scratch/test-user-lipid.js:L251 | neighbors=[test-user-lipid.js]
 - "scratch_test_user_lipid_valuesmap": "valuesMap" | kind=code-symbol | source=scratch/test-user-lipid.js:L279 | neighbors=[test-user-lipid.js]
 - "scratch_test_whatsapp_url_getregistrationwhatsappurl": "getRegistrationWhatsappUrl()" | kind=code-symbol | source=scratch/test-whatsapp-url.mjs:L1 | neighbors=[test-whatsapp-url.mjs]
 - "scratch_test_whatsapp_url_samplereg": "sampleReg" | kind=code-symbol | source=scratch/test-whatsapp-url.mjs:L29 | neighbors=[test-whatsapp-url.mjs]
@@ -50,13 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "ui_avatar_avatar": "Avatar()" | kind=code-symbol | source=components/ui/Avatar.js:L3 | neighbors=[Avatar.js]
 - "ui_badge_badge": "Badge()" | kind=code-symbol | source=components/ui/Badge.js:L3 | neighbors=[Badge.js]
 - "ui_button_button": "Button()" | kind=code-symbol | source=components/ui/Button.js:L4 | neighbors=[Button.js]
-- "ui_card_card": "Card()" | kind=code-symbol | source=components/ui/Card.js:L3 | neighbors=[Card.js]
-- "ui_card_cardcontent": "CardContent()" | kind=code-symbol | source=components/ui/Card.js:L44 | neighbors=[Card.js]
-- "ui_card_carddescription": "CardDescription()" | kind=code-symbol | source=components/ui/Card.js:L33 | neighbors=[Card.js]
-- "ui_card_cardfooter": "CardFooter()" | kind=code-symbol | source=components/ui/Card.js:L52 | neighbors=[Card.js]
-- "ui_card_cardheader": "CardHeader()" | kind=code-symbol | source=components/ui/Card.js:L14 | neighbors=[Card.js]
-- "ui_card_cardtitle": "CardTitle()" | kind=code-symbol | source=components/ui/Card.js:L22 | neighbors=[Card.js]
-- "ui_dialog_dialog": "Dialog()" | kind=code-symbol | source=components/ui/Dialog.js:L4 | neighbors=[Dialog.js]
 
 ## Instructions
 

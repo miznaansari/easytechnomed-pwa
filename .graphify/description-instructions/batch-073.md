@@ -17,6 +17,12 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "generated_client_index_d_interpretationrulecountorderbyaggregateinput": "InterpretationRuleCountOrderByAggregateInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L42511 | neighbors=[index.d.ts]
+- "generated_client_index_d_interpretationrulecreateargs": "InterpretationRuleCreateArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L31560 | neighbors=[index.d.ts]
+- "generated_client_index_d_interpretationrulecreateinput": "InterpretationRuleCreateInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L40003 | neighbors=[index.d.ts]
+- "generated_client_index_d_interpretationrulecreatemanyargs": "InterpretationRuleCreateManyArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L31578 | neighbors=[index.d.ts]
+- "generated_client_index_d_interpretationrulecreatemanyinput": "InterpretationRuleCreateManyInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L40045 | neighbors=[index.d.ts]
+- "generated_client_index_d_interpretationrulecreatemanyparameterinput": "InterpretationRuleCreateManyParameterInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L53983 | neighbors=[index.d.ts]
 - "generated_client_index_d_interpretationrulecreatemanyparameterinputenvelope": "InterpretationRuleCreateManyParameterInputEnvelope" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L49357 | neighbors=[index.d.ts]
 - "generated_client_index_d_interpretationrulecreatemanytestinput": "InterpretationRuleCreateManyTestInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L53625 | neighbors=[index.d.ts]
 - "generated_client_index_d_interpretationrulecreatemanytestinputenvelope": "InterpretationRuleCreateManyTestInputEnvelope" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L48141 | neighbors=[index.d.ts]
@@ -51,12 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "generated_client_index_d_interpretationrulemaxorderbyaggregateinput": "InterpretationRuleMaxOrderByAggregateInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L42529 | neighbors=[index.d.ts]
 - "generated_client_index_d_interpretationruleminaggregateinputtype": "InterpretationRuleMinAggregateInputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L30800 | neighbors=[index.d.ts]
 - "generated_client_index_d_interpretationruleminaggregateoutputtype": "InterpretationRuleMinAggregateOutputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L30751 | neighbors=[index.d.ts]
-- "generated_client_index_d_interpretationruleminorderbyaggregateinput": "InterpretationRuleMinOrderByAggregateInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L42540 | neighbors=[index.d.ts]
-- "generated_client_index_d_interpretationruleorderbyrelationaggregateinput": "InterpretationRuleOrderByRelationAggregateInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L40515 | neighbors=[index.d.ts]
-- "generated_client_index_d_interpretationruleorderbywithaggregationinput": "InterpretationRuleOrderByWithAggregationInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L37012 | neighbors=[index.d.ts]
-- "generated_client_index_d_interpretationruleorderbywithrelationinput": "InterpretationRuleOrderByWithRelationInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L36981 | neighbors=[index.d.ts]
-- "generated_client_index_d_interpretationrulepayload": "$InterpretationRulePayload" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L30982 | neighbors=[index.d.ts]
-- "generated_client_index_d_interpretationrulescalarfieldenum": "InterpretationRuleScalarFieldEnum" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L34362 | neighbors=[index.d.ts]
 
 ## Instructions
 

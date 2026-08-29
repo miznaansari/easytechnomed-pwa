@@ -1060,7 +1060,8 @@ export default function DoctorSummaryPage() {
                                                 color="primary"
                                                 onClick={async () => {
                                                   try {
-                                                    await printBillOffline(reg.id || reg.regNo);
+                                                    const { openOfflineBillPrint } = await import("@/lib/offline/print/openPrint");
+                                                    await openOfflineBillPrint(reg.regNo || reg.id);
                                                   } catch (e) {
                                                     if (typeof navigator !== "undefined" && navigator.onLine) {
                                                       window.open(`/api/print-bill/${reg.id}`, "_blank");
@@ -1078,7 +1079,8 @@ export default function DoctorSummaryPage() {
                                                 color="success"
                                                 onClick={async () => {
                                                   try {
-                                                    await printReportOffline(reg.regNo || reg.id, { withFrame: true });
+                                                    const { openOfflineReportPrint } = await import("@/lib/offline/print/openPrint");
+                                                    await openOfflineReportPrint(reg.regNo || reg.id, { withFrame: true });
                                                   } catch (e) {
                                                     if (typeof navigator !== "undefined" && navigator.onLine) {
                                                       window.open(`/api/print-report/${reg.regNo}?withFrame=true`, "_blank");

@@ -17,10 +17,13 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "lib_reportsecurity_verifyreporttoken": "verifyReportToken()" | kind=code-symbol | source=lib/reportSecurity.js:L173 | neighbors=[reportSecurity.js, decryptReportToken(), generateReportToken(), test_identity_and_qr.mjs]
+- "lib_saasinvoice": "saasInvoice.js" | kind=code-symbol | source=lib/saasInvoice.js:L1 | neighbors=[252e194 e, decodePaymentUid(), encodePaymentUid(), KEY]
 - "login_page": "page.js" | kind=code-symbol | source=app/(customer)/auth/login/page.js:L1 | neighbors=[252e194 e, LoginPageClient.js, metadata, Page()]
 - "members_route": "route.js" | kind=code-symbol | source=app/api/members/route.js:L1 | neighbors=[252e194 e, GET(), PATCH(), POST()]
 - "offline_offlinepdfgenerator_generatereportpdfoffline": "generateReportPdfOffline()" | kind=code-symbol | source=lib/offline/offlinePdfGenerator.js:L271 | neighbors=[offlinePdfGenerator.js, layoutMarkdownLines(), parseMarkdownTokens(), offlinePrint.js]
 - "offline_registrationidentity": "registrationIdentity.js" | kind=code-symbol | source=lib/offline/registrationIdentity.js:L1 | neighbors=[6c2dfe4 test, db.js, generateNextRegistrationIdentity(), generateRandomSuffix()]
+- "offline_reloginmodal": "ReLoginModal.jsx" | kind=code-symbol | source=components/offline/ReLoginModal.jsx:L1 | neighbors=[6236f60 new update, 78dd976 fixed, 9f59247 expire token, ReLoginModal()]
 - "offline_syncstatusicon": "SyncStatusIcon.jsx" | kind=code-symbol | source=components/offline/SyncStatusIcon.jsx:L1 | neighbors=[2b2534c f, 6fcf015 f, d446d11 fixed code, SyncStatusIcon()]
 - "parameters_route": "route.js" | kind=code-symbol | source=app/api/registrations/[id]/parameters/route.js:L1 | neighbors=[252e194 e, GET(), POST(), serializeRegistration()]
 - "paymentid_route_get": "GET()" | kind=code-symbol | source=app/api/print-subscription-invoice/[paymentId]/route.js:L74 | neighbors=[route.js, formatDate(), formatDateTime(), numberToWords()]
@@ -54,9 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "runtime_edge_esm_getallcomputedfields": "getAllComputedFields()" | kind=code-symbol | source=scratch/generated-client/runtime/edge-esm.js:L5 | neighbors=[edge-esm.js, getOrCreate(), getComputedFields(), os()]
 - "runtime_edge_esm_getargumentname": "getArgumentName()" | kind=code-symbol | source=scratch/generated-client/runtime/edge-esm.js:L5 | neighbors=[edge-esm.js, lo(), qo(), qu()]
 - "runtime_edge_esm_getargumentpath": "getArgumentPath()" | kind=code-symbol | source=scratch/generated-client/runtime/edge-esm.js:L5 | neighbors=[edge-esm.js, lo(), qo(), qu()]
-- "runtime_edge_esm_getcomputedfields": "getComputedFields()" | kind=code-symbol | source=scratch/generated-client/runtime/edge-esm.js:L5 | neighbors=[edge-esm.js, getAllComputedFields(), lu(), u()]
-- "runtime_edge_esm_getfieldvalue": "getFieldValue()" | kind=code-symbol | source=scratch/generated-client/runtime/edge-esm.js:L3 | neighbors=[edge-esm.js, co(), getDeepSelectionParent(), getField()]
-- "runtime_edge_esm_getglobalomit": "getGlobalOmit()" | kind=code-symbol | source=scratch/generated-client/runtime/edge-esm.js:L5 | neighbors=[edge-esm.js, rt(), shouldApplyGlobalOmit(), u()]
 
 ## Instructions
 

@@ -17,6 +17,12 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "generated_client_index_d_userrolegroupbyoutputtype": "UserRoleGroupByOutputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L8994 | neighbors=[index.d.ts]
+- "generated_client_index_d_userroleinclude": "UserRoleInclude" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L9032 | neighbors=[index.d.ts]
+- "generated_client_index_d_userrolemaxaggregateinputtype": "UserRoleMaxAggregateInputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L8897 | neighbors=[index.d.ts]
+- "generated_client_index_d_userrolemaxaggregateoutputtype": "UserRoleMaxAggregateOutputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L8872 | neighbors=[index.d.ts]
+- "generated_client_index_d_userrolemaxorderbyaggregateinput": "UserRoleMaxOrderByAggregateInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L40948 | neighbors=[index.d.ts]
+- "generated_client_index_d_userroleminaggregateinputtype": "UserRoleMinAggregateInputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L8892 | neighbors=[index.d.ts]
 - "generated_client_index_d_userroleminaggregateoutputtype": "UserRoleMinAggregateOutputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L8867 | neighbors=[index.d.ts]
 - "generated_client_index_d_userroleminorderbyaggregateinput": "UserRoleMinOrderByAggregateInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L40953 | neighbors=[index.d.ts]
 - "generated_client_index_d_userroleorderbywithaggregationinput": "UserRoleOrderByWithAggregationInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L34933 | neighbors=[index.d.ts]
@@ -51,12 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "generated_client_index_d_userrolepermissionfindmanyargs": "UserRolePermissionFindManyArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L10494 | neighbors=[index.d.ts]
 - "generated_client_index_d_userrolepermissionfinduniqueargs": "UserRolePermissionFindUniqueArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L10362 | neighbors=[index.d.ts]
 - "generated_client_index_d_userrolepermissionfinduniqueorthrowargs": "UserRolePermissionFindUniqueOrThrowArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L10380 | neighbors=[index.d.ts]
-- "generated_client_index_d_userrolepermissiongetpayload": "UserRolePermissionGetPayload" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L9986 | neighbors=[index.d.ts]
-- "generated_client_index_d_userrolepermissiongroupbyargs": "UserRolePermissionGroupByArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L9916 | neighbors=[index.d.ts]
-- "generated_client_index_d_userrolepermissiongroupbyoutputtype": "UserRolePermissionGroupByOutputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L9930 | neighbors=[index.d.ts]
-- "generated_client_index_d_userrolepermissioninclude": "UserRolePermissionInclude" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L9969 | neighbors=[index.d.ts]
-- "generated_client_index_d_userrolepermissionlistrelationfilter": "UserRolePermissionListRelationFilter" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L40929 | neighbors=[index.d.ts]
-- "generated_client_index_d_userrolepermissionmaxaggregateinputtype": "UserRolePermissionMaxAggregateInputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L9831 | neighbors=[index.d.ts]
 
 ## Instructions
 

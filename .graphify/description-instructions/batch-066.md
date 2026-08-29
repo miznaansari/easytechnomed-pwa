@@ -17,6 +17,12 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "generated_client_index_d_decimaljslike": "DecimalJsLike" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L612 | neighbors=[index.d.ts]
+- "generated_client_index_d_decimalnullablefilter": "DecimalNullableFilter" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L41341 | neighbors=[index.d.ts]
+- "generated_client_index_d_decimalnullablewithaggregatesfilter": "DecimalNullableWithAggregatesFilter" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L41474 | neighbors=[index.d.ts]
+- "generated_client_index_d_decimalwithaggregatesfilter": "DecimalWithAggregatesFilter" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L41325 | neighbors=[index.d.ts]
+- "generated_client_index_d_defaultprismaclient": "DefaultPrismaClient" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L3002 | neighbors=[index.d.ts]
+- "generated_client_index_d_doctor": "Doctor" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L75 | neighbors=[index.d.ts]
 - "generated_client_index_d_doctor_incentivehistoryargs": "Doctor$incentiveHistoryArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L15766 | neighbors=[index.d.ts]
 - "generated_client_index_d_doctor_registrationsargs": "Doctor$registrationsArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L15726 | neighbors=[index.d.ts]
 - "generated_client_index_d_doctor_secondregistrationsargs": "Doctor$secondRegistrationsArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L15746 | neighbors=[index.d.ts]
@@ -51,12 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "generated_client_index_d_doctorcreateorconnectwithoutregistrationsinput": "DoctorCreateOrConnectWithoutRegistrationsInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L48369 | neighbors=[index.d.ts]
 - "generated_client_index_d_doctorcreateorconnectwithoutsecondregistrationsinput": "DoctorCreateOrConnectWithoutSecondRegistrationsInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L48409 | neighbors=[index.d.ts]
 - "generated_client_index_d_doctorcreateorconnectwithoutworkspaceinput": "DoctorCreateOrConnectWithoutWorkspaceInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L45222 | neighbors=[index.d.ts]
-- "generated_client_index_d_doctorcreatewithoutincentivehistoryinput": "DoctorCreateWithoutIncentiveHistoryInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L51580 | neighbors=[index.d.ts]
-- "generated_client_index_d_doctorcreatewithoutregistrationsinput": "DoctorCreateWithoutRegistrationsInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L48334 | neighbors=[index.d.ts]
-- "generated_client_index_d_doctorcreatewithoutsecondregistrationsinput": "DoctorCreateWithoutSecondRegistrationsInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L48374 | neighbors=[index.d.ts]
-- "generated_client_index_d_doctorcreatewithoutworkspaceinput": "DoctorCreateWithoutWorkspaceInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L45187 | neighbors=[index.d.ts]
-- "generated_client_index_d_doctordefaultargs": "DoctorDefaultArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L15786 | neighbors=[index.d.ts]
-- "generated_client_index_d_doctordelegate": "DoctorDelegate" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L15035 | neighbors=[index.d.ts]
 
 ## Instructions
 

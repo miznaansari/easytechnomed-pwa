@@ -17,6 +17,12 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "runtime_react_native_ri": "ri()" | kind=code-symbol | source=scratch/generated-client/runtime/react-native.js:L1 | neighbors=[react-native.js, ha(), Hr()]
+- "runtime_react_native_s": "S()" | kind=code-symbol | source=scratch/generated-client/runtime/react-native.js:L1 | neighbors=[react-native.js, bn(), P()]
+- "runtime_react_native_sa": "Sa()" | kind=code-symbol | source=scratch/generated-client/runtime/react-native.js:L1 | neighbors=[react-native.js, slice(), si()]
+- "runtime_react_native_se": "se()" | kind=code-symbol | source=scratch/generated-client/runtime/react-native.js:L2 | neighbors=[react-native.js, bn(), nu()]
+- "runtime_react_native_setcolor": "setColor()" | kind=code-symbol | source=scratch/generated-client/runtime/react-native.js:L8 | neighbors=[react-native.js, write(), writeEmpty()]
+- "runtime_react_native_shouldapplyglobalomit": "shouldApplyGlobalOmit()" | kind=code-symbol | source=scratch/generated-client/runtime/react-native.js:L10 | neighbors=[react-native.js, getGlobalOmit(), Fe()]
 - "runtime_react_native_si": "si()" | kind=code-symbol | source=scratch/generated-client/runtime/react-native.js:L1 | neighbors=[react-native.js, Sa(), xa()]
 - "runtime_react_native_so": "so()" | kind=code-symbol | source=scratch/generated-client/runtime/react-native.js:L2 | neighbors=[react-native.js, slice(), values()]
 - "runtime_react_native_st": "st()" | kind=code-symbol | source=scratch/generated-client/runtime/react-native.js:L2 | neighbors=[react-native.js, getGlobalOmit(), u()]
@@ -51,12 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "runtime_wasm_io": "io()" | kind=code-symbol | source=scratch/generated-client/runtime/wasm.js:L14 | neighbors=[wasm.js, al(), rt()]
 - "runtime_wasm_isbuffer": "isBuffer()" | kind=code-symbol | source=scratch/generated-client/runtime/wasm.js:L1 | neighbors=[wasm.js, si(), so()]
 - "runtime_wasm_isdecimal": "isDecimal()" | kind=code-symbol | source=scratch/generated-client/runtime/wasm.js:L1 | neighbors=[wasm.js, Qe(), so()]
-- "runtime_wasm_israwaction": "isRawAction()" | kind=code-symbol | source=scratch/generated-client/runtime/wasm.js:L5 | neighbors=[wasm.js, includes(), na()]
-- "runtime_wasm_ka": "ka()" | kind=code-symbol | source=scratch/generated-client/runtime/wasm.js:L6 | neighbors=[wasm.js, concat(), Wr()]
-- "runtime_wasm_li": "li()" | kind=code-symbol | source=scratch/generated-client/runtime/wasm.js:L5 | neighbors=[wasm.js, ai(), Zs()]
-- "runtime_wasm_loadlibrary": "loadLibrary()" | kind=code-symbol | source=scratch/generated-client/runtime/wasm.js:L11 | neighbors=[wasm.js, loadEngine(), Ce()]
-- "runtime_wasm_makerequired": "makeRequired()" | kind=code-symbol | source=scratch/generated-client/runtime/wasm.js:L2 | neighbors=[wasm.js, fs(), _s()]
-- "runtime_wasm_nn": "nn()" | kind=code-symbol | source=scratch/generated-client/runtime/wasm.js:L1 | neighbors=[wasm.js, alloc(), fill()]
 
 ## Instructions
 

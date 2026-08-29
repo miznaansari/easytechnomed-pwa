@@ -17,6 +17,12 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "generated_client_index_d_parameterupsertwithoutinterpretationrulesinput": "ParameterUpsertWithoutInterpretationRulesInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L51490 | neighbors=[index.d.ts]
+- "generated_client_index_d_parameterupsertwithouttestformulasinput": "ParameterUpsertWithoutTestFormulasInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L51096 | neighbors=[index.d.ts]
+- "generated_client_index_d_parameterupsertwithouttestmappingsinput": "ParameterUpsertWithoutTestMappingsInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L49747 | neighbors=[index.d.ts]
+- "generated_client_index_d_parameterupsertwithwhereuniquewithoutworkspaceinput": "ParameterUpsertWithWhereUniqueWithoutWorkspaceInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L45948 | neighbors=[index.d.ts]
+- "generated_client_index_d_parameterwhereinput": "ParameterWhereInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L35948 | neighbors=[index.d.ts]
+- "generated_client_index_d_parameterwhereuniqueinput": "ParameterWhereUniqueInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L36035 | neighbors=[index.d.ts]
 - "generated_client_index_d_parameterworkspaceidnamecompounduniqueinput": "ParameterWorkspaceIdNameCompoundUniqueInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L41805 | neighbors=[index.d.ts]
 - "generated_client_index_d_patchundefined": "PatchUndefined" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L854 | neighbors=[index.d.ts]
 - "generated_client_index_d_patientresult": "PatientResult" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L105 | neighbors=[index.d.ts]
@@ -51,12 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "generated_client_index_d_patientresultfindfirstargs": "PatientResultFindFirstArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L22832 | neighbors=[index.d.ts]
 - "generated_client_index_d_patientresultfindfirstorthrowargs": "PatientResultFindFirstOrThrowArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L22880 | neighbors=[index.d.ts]
 - "generated_client_index_d_patientresultfindmanyargs": "PatientResultFindManyArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L22928 | neighbors=[index.d.ts]
-- "generated_client_index_d_patientresultfinduniqueargs": "PatientResultFindUniqueArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L22796 | neighbors=[index.d.ts]
-- "generated_client_index_d_patientresultfinduniqueorthrowargs": "PatientResultFindUniqueOrThrowArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L22814 | neighbors=[index.d.ts]
-- "generated_client_index_d_patientresultgetpayload": "PatientResultGetPayload" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L22414 | neighbors=[index.d.ts]
-- "generated_client_index_d_patientresultgroupbyargs": "PatientResultGroupByArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L22321 | neighbors=[index.d.ts]
-- "generated_client_index_d_patientresultgroupbyoutputtype": "PatientResultGroupByOutputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L22335 | neighbors=[index.d.ts]
-- "generated_client_index_d_patientresultinclude": "PatientResultInclude" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L22390 | neighbors=[index.d.ts]
 
 ## Instructions
 

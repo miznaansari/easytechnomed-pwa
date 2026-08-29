@@ -17,6 +17,12 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "generated_client_index_d_interpretationruleminorderbyaggregateinput": "InterpretationRuleMinOrderByAggregateInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L42540 | neighbors=[index.d.ts]
+- "generated_client_index_d_interpretationruleorderbyrelationaggregateinput": "InterpretationRuleOrderByRelationAggregateInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L40515 | neighbors=[index.d.ts]
+- "generated_client_index_d_interpretationruleorderbywithaggregationinput": "InterpretationRuleOrderByWithAggregationInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L37012 | neighbors=[index.d.ts]
+- "generated_client_index_d_interpretationruleorderbywithrelationinput": "InterpretationRuleOrderByWithRelationInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L36981 | neighbors=[index.d.ts]
+- "generated_client_index_d_interpretationrulepayload": "$InterpretationRulePayload" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L30982 | neighbors=[index.d.ts]
+- "generated_client_index_d_interpretationrulescalarfieldenum": "InterpretationRuleScalarFieldEnum" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L34362 | neighbors=[index.d.ts]
 - "generated_client_index_d_interpretationrulescalarwhereinput": "InterpretationRuleScalarWhereInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L46095 | neighbors=[index.d.ts]
 - "generated_client_index_d_interpretationrulescalarwherewithaggregatesinput": "InterpretationRuleScalarWhereWithAggregatesInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L37028 | neighbors=[index.d.ts]
 - "generated_client_index_d_interpretationruleselect": "InterpretationRuleSelect" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L30950 | neighbors=[index.d.ts]
@@ -51,12 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "generated_client_index_d_interpretationruleupdatemanywithoutworkspacenestedinput": "InterpretationRuleUpdateManyWithoutWorkspaceNestedInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L43011 | neighbors=[index.d.ts]
 - "generated_client_index_d_interpretationruleupdatemanywithwherewithoutparameterinput": "InterpretationRuleUpdateManyWithWhereWithoutParameterInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L49457 | neighbors=[index.d.ts]
 - "generated_client_index_d_interpretationruleupdatemanywithwherewithouttestinput": "InterpretationRuleUpdateManyWithWhereWithoutTestInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L48300 | neighbors=[index.d.ts]
-- "generated_client_index_d_interpretationruleupdatemanywithwherewithoutworkspaceinput": "InterpretationRuleUpdateManyWithWhereWithoutWorkspaceInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L46090 | neighbors=[index.d.ts]
-- "generated_client_index_d_interpretationruleupdatewithoutparameterinput": "InterpretationRuleUpdateWithoutParameterInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L54095 | neighbors=[index.d.ts]
-- "generated_client_index_d_interpretationruleupdatewithouttestinput": "InterpretationRuleUpdateWithoutTestInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L53782 | neighbors=[index.d.ts]
-- "generated_client_index_d_interpretationruleupdatewithoutworkspaceinput": "InterpretationRuleUpdateWithoutWorkspaceInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L52588 | neighbors=[index.d.ts]
-- "generated_client_index_d_interpretationruleupdatewithwhereuniquewithoutparameterinput": "InterpretationRuleUpdateWithWhereUniqueWithoutParameterInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L49452 | neighbors=[index.d.ts]
-- "generated_client_index_d_interpretationruleupdatewithwhereuniquewithouttestinput": "InterpretationRuleUpdateWithWhereUniqueWithoutTestInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L48295 | neighbors=[index.d.ts]
 
 ## Instructions
 

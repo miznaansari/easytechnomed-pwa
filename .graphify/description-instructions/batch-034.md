@@ -17,6 +17,12 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "runtime_wasm_israwaction": "isRawAction()" | kind=code-symbol | source=scratch/generated-client/runtime/wasm.js:L5 | neighbors=[wasm.js, includes(), na()]
+- "runtime_wasm_ka": "ka()" | kind=code-symbol | source=scratch/generated-client/runtime/wasm.js:L6 | neighbors=[wasm.js, concat(), Wr()]
+- "runtime_wasm_li": "li()" | kind=code-symbol | source=scratch/generated-client/runtime/wasm.js:L5 | neighbors=[wasm.js, ai(), Zs()]
+- "runtime_wasm_loadlibrary": "loadLibrary()" | kind=code-symbol | source=scratch/generated-client/runtime/wasm.js:L11 | neighbors=[wasm.js, loadEngine(), Ce()]
+- "runtime_wasm_makerequired": "makeRequired()" | kind=code-symbol | source=scratch/generated-client/runtime/wasm.js:L2 | neighbors=[wasm.js, fs(), _s()]
+- "runtime_wasm_nn": "nn()" | kind=code-symbol | source=scratch/generated-client/runtime/wasm.js:L1 | neighbors=[wasm.js, alloc(), fill()]
 - "runtime_wasm_on": "on()" | kind=code-symbol | source=scratch/generated-client/runtime/wasm.js:L1 | neighbors=[wasm.js, gr(), toString()]
 - "runtime_wasm_oo": "oo()" | kind=code-symbol | source=scratch/generated-client/runtime/wasm.js:L14 | neighbors=[wasm.js, ao(), toString()]
 - "runtime_wasm_or": "Or()" | kind=code-symbol | source=scratch/generated-client/runtime/wasm.js:L1 | neighbors=[wasm.js, t(), Os()]
@@ -51,12 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "version_versionupdatenotifier": "VersionUpdateNotifier.jsx" | kind=code-symbol | source=components/version/VersionUpdateNotifier.jsx:L1 | neighbors=[6236f60 new update, compareVersions(), VersionUpdateNotifier()]
 - "admin_route": "route.js" | kind=code-symbol | source=app/api/tracking/admin/route.js:L1 | neighbors=[POST(), 252e194 e]
 - "app_robots": "robots.js" | kind=code-symbol | source=app/robots.js:L1 | neighbors=[robots(), 252e194 e]
-- "app_sitemap": "sitemap.js" | kind=code-symbol | source=app/sitemap.js:L1 | neighbors=[sitemap(), 252e194 e]
-- "approvals_route": "route.js" | kind=code-symbol | source=app/api/approvals/route.js:L1 | neighbors=[GET(), 252e194 e]
-- "approve_route": "route.js" | kind=code-symbol | source=app/api/approvals/approve/route.js:L1 | neighbors=[POST(), 252e194 e]
-- "auth_offlineauth_islocalsessionvalid": "isLocalSessionValid()" | kind=code-symbol | source=lib/auth/offlineAuth.js:L100 | neighbors=[offlineAuth.js, getCachedSession()]
-- "by_mobile_route_get": "GET()" | kind=code-symbol | source=app/api/registrations/by-mobile/route.js:L10 | neighbors=[route.js, serializeData()]
-- "by_mobile_route_serializedata": "serializeData()" | kind=code-symbol | source=app/api/registrations/by-mobile/route.js:L6 | neighbors=[route.js, GET()]
 
 ## Instructions
 

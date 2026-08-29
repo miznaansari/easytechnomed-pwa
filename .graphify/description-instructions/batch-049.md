@@ -17,6 +17,12 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "runtime_wasm_subarray": "subarray()" | kind=code-symbol | source=scratch/generated-client/runtime/wasm.js:L1 | neighbors=[wasm.js, slice()]
+- "runtime_wasm_tl": "tl()" | kind=code-symbol | source=scratch/generated-client/runtime/wasm.js:L26 | neighbors=[wasm.js, nt()]
+- "runtime_wasm_tolocalestring": "toLocaleString()" | kind=code-symbol | source=scratch/generated-client/runtime/wasm.js:L1 | neighbors=[wasm.js, toString()]
+- "runtime_wasm_ua": "ua()" | kind=code-symbol | source=scratch/generated-client/runtime/wasm.js:L5 | neighbors=[wasm.js, di()]
+- "runtime_wasm_unindent": "unindent()" | kind=code-symbol | source=scratch/generated-client/runtime/wasm.js:L2 | neighbors=[wasm.js, withIndent()]
+- "runtime_wasm_va": "va()" | kind=code-symbol | source=scratch/generated-client/runtime/wasm.js:L6 | neighbors=[wasm.js, oi()]
 - "runtime_wasm_version": "version()" | kind=code-symbol | source=scratch/generated-client/runtime/wasm.js:L11 | neighbors=[wasm.js, instantiateLibrary()]
 - "runtime_wasm_wa": "wa()" | kind=code-symbol | source=scratch/generated-client/runtime/wasm.js:L6 | neighbors=[wasm.js, tt()]
 - "runtime_wasm_wo": "wo()" | kind=code-symbol | source=scratch/generated-client/runtime/wasm.js:L21 | neighbors=[wasm.js, unpack()]
@@ -47,16 +53,10 @@ one-sentence description — no prose, no markdown fences.
 - "suggestion_route_post": "POST()" | kind=code-symbol | source=app/api/ai/suggestion/route.js:L50 | neighbors=[route.js, callGeminiModels()]
 - "sync_modelregistry_model_registry": "MODEL_REGISTRY" | kind=code-symbol | source=lib/offline/sync/modelRegistry.js:L6 | neighbors=[modelRegistry.js, syncManager.js]
 - "sync_syncmanager_syncmanager_bootstrapinitialdata": ".bootstrapInitialData()" | kind=code-symbol | source=lib/offline/sync/syncManager.js:L136 | neighbors=[SyncManager, .triggerAuthRequired()]
-- "sync_syncmanager_syncmanager_processgetoperations": ".processGetOperations()" | kind=code-symbol | source=lib/offline/sync/syncManager.js:L842 | neighbors=[SyncManager, .triggerAuthRequired()]
-- "sync_syncmanager_syncmanager_processpendingpatientresults": ".processPendingPatientResults()" | kind=code-symbol | source=lib/offline/sync/syncManager.js:L1004 | neighbors=[SyncManager, .triggerAuthRequired()]
+- "sync_syncmanager_syncmanager_processgetoperations": ".processGetOperations()" | kind=code-symbol | source=lib/offline/sync/syncManager.js:L854 | neighbors=[SyncManager, .triggerAuthRequired()]
+- "sync_syncmanager_syncmanager_processpendingpatientresults": ".processPendingPatientResults()" | kind=code-symbol | source=lib/offline/sync/syncManager.js:L1017 | neighbors=[SyncManager, .triggerAuthRequired()]
 - "sync_syncmanager_syncmanager_processpostoperations": ".processPostOperations()" | kind=code-symbol | source=lib/offline/sync/syncManager.js:L675 | neighbors=[SyncManager, .triggerAuthRequired()]
 - "sync_syncmanager_syncmanager_processputoperations": ".processPutOperations()" | kind=code-symbol | source=lib/offline/sync/syncManager.js:L781 | neighbors=[SyncManager, .triggerAuthRequired()]
-- "sync_syncmanager_syncmanager_subscribe": ".subscribe()" | kind=code-symbol | source=lib/offline/sync/syncManager.js:L37 | neighbors=[SyncManager, .notifyState()]
-- "sync_syncmanager_syncmanager_sync": ".sync()" | kind=code-symbol | source=lib/offline/sync/syncManager.js:L546 | neighbors=[SyncManager, .notifyState()]
-- "test_route_parsenullablestring": "parseNullableString()" | kind=code-symbol | source=app/api/n8n/test/route.js:L16 | neighbors=[route.js, POST()]
-- "test_route_post": "POST()" | kind=code-symbol | source=app/api/n8n/test/route.js:L61 | neighbors=[route.js, parseNullableString()]
-- "tests_route_get": "GET()" | kind=code-symbol | source=app/api/tests/route.js:L68 | neighbors=[route.js, serializeTests()]
-- "tests_route_post": "POST()" | kind=code-symbol | source=app/api/tests/route.js:L165 | neighbors=[route.js, serializeSingleTest()]
 
 ## Instructions
 

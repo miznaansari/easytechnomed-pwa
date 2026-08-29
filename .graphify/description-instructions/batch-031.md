@@ -17,6 +17,12 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "runtime_library_pr": "pr()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L29 | neighbors=[library.js, constructor(), ua()]
+- "runtime_library_prependsymbolat": "prependSymbolAt()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L21 | neighbors=[library.js, mapLines(), wp()]
+- "runtime_library_propagateresponseextensions": "propagateResponseExtensions()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L111 | neighbors=[library.js, createEngineSpan(), forEach()]
+- "runtime_library_qa": "qa()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L31 | neighbors=[library.js, On(), Xe()]
+- "runtime_library_qd": "qd()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L31 | neighbors=[library.js, ji(), Te()]
+- "runtime_library_qr": "qr()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L4 | neighbors=[library.js, Bu(), ya()]
 - "runtime_library_qu": "Qu()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L1 | neighbors=[library.js, ei(), ti()]
 - "runtime_library_ra": "ra()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L29 | neighbors=[library.js, id(), values()]
 - "runtime_library_read": "read()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L21 | neighbors=[library.js, fromContent(), wp()]
@@ -51,12 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "runtime_react_native_ao": "Ao()" | kind=code-symbol | source=scratch/generated-client/runtime/react-native.js:L10 | neighbors=[react-native.js, ec(), Pe()]
 - "runtime_react_native_append": "append()" | kind=code-symbol | source=scratch/generated-client/runtime/react-native.js:L10 | neighbors=[react-native.js, e(), rs()]
 - "runtime_react_native_au": "au()" | kind=code-symbol | source=scratch/generated-client/runtime/react-native.js:L2 | neighbors=[react-native.js, toString(), underline()]
-- "runtime_react_native_bt": "Bt()" | kind=code-symbol | source=scratch/generated-client/runtime/react-native.js:L9 | neighbors=[react-native.js, e(), ho()]
-- "runtime_react_native_ca": "Ca()" | kind=code-symbol | source=scratch/generated-client/runtime/react-native.js:L1 | neighbors=[react-native.js, fi(), nr()]
-- "runtime_react_native_createenginespan": "createEngineSpan()" | kind=code-symbol | source=scratch/generated-client/runtime/react-native.js:L69 | neighbors=[react-native.js, getGlobalTracingHelper(), logger()]
-- "runtime_react_native_ea": "Ea()" | kind=code-symbol | source=scratch/generated-client/runtime/react-native.js:L1 | neighbors=[react-native.js, r(), xt()]
-- "runtime_react_native_ec": "ec()" | kind=code-symbol | source=scratch/generated-client/runtime/react-native.js:L10 | neighbors=[react-native.js, Ao(), rt()]
-- "runtime_react_native_emit": "emit()" | kind=code-symbol | source=scratch/generated-client/runtime/react-native.js:L1 | neighbors=[react-native.js, handleAndLogRequestError(), logger()]
 
 ## Instructions
 

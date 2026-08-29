@@ -17,6 +17,12 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "generated_client_index_d_interpretationruleupdatemanywithwherewithoutworkspaceinput": "InterpretationRuleUpdateManyWithWhereWithoutWorkspaceInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L46090 | neighbors=[index.d.ts]
+- "generated_client_index_d_interpretationruleupdatewithoutparameterinput": "InterpretationRuleUpdateWithoutParameterInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L54095 | neighbors=[index.d.ts]
+- "generated_client_index_d_interpretationruleupdatewithouttestinput": "InterpretationRuleUpdateWithoutTestInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L53782 | neighbors=[index.d.ts]
+- "generated_client_index_d_interpretationruleupdatewithoutworkspaceinput": "InterpretationRuleUpdateWithoutWorkspaceInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L52588 | neighbors=[index.d.ts]
+- "generated_client_index_d_interpretationruleupdatewithwhereuniquewithoutparameterinput": "InterpretationRuleUpdateWithWhereUniqueWithoutParameterInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L49452 | neighbors=[index.d.ts]
+- "generated_client_index_d_interpretationruleupdatewithwhereuniquewithouttestinput": "InterpretationRuleUpdateWithWhereUniqueWithoutTestInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L48295 | neighbors=[index.d.ts]
 - "generated_client_index_d_interpretationruleupdatewithwhereuniquewithoutworkspaceinput": "InterpretationRuleUpdateWithWhereUniqueWithoutWorkspaceInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L46085 | neighbors=[index.d.ts]
 - "generated_client_index_d_interpretationruleupsertargs": "InterpretationRuleUpsertArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L31625 | neighbors=[index.d.ts]
 - "generated_client_index_d_interpretationruleupsertwithwhereuniquewithoutparameterinput": "InterpretationRuleUpsertWithWhereUniqueWithoutParameterInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L49446 | neighbors=[index.d.ts]
@@ -51,12 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "generated_client_index_d_leadcontactcountaggregateoutputtype": "LeadContactCountAggregateOutputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L25957 | neighbors=[index.d.ts]
 - "generated_client_index_d_leadcontactcountargs": "LeadContactCountArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L26178 | neighbors=[index.d.ts]
 - "generated_client_index_d_leadcontactcountorderbyaggregateinput": "LeadContactCountOrderByAggregateInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L42273 | neighbors=[index.d.ts]
-- "generated_client_index_d_leadcontactcreateargs": "LeadContactCreateArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L26712 | neighbors=[index.d.ts]
-- "generated_client_index_d_leadcontactcreateinput": "LeadContactCreateInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L39620 | neighbors=[index.d.ts]
-- "generated_client_index_d_leadcontactcreatemanyargs": "LeadContactCreateManyArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L26726 | neighbors=[index.d.ts]
-- "generated_client_index_d_leadcontactcreatemanyinput": "LeadContactCreateManyInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L39666 | neighbors=[index.d.ts]
-- "generated_client_index_d_leadcontactdefaultargs": "LeadContactDefaultArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L26815 | neighbors=[index.d.ts]
-- "generated_client_index_d_leadcontactdelegate": "LeadContactDelegate" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L26183 | neighbors=[index.d.ts]
 
 ## Instructions
 

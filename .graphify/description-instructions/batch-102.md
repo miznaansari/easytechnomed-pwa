@@ -17,6 +17,12 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "generated_client_index_d_testdepartmentscalarwherewithaggregatesinput": "TestDepartmentScalarWhereWithAggregatesInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L36860 | neighbors=[index.d.ts]
+- "generated_client_index_d_testdepartmentselect": "TestDepartmentSelect" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L28968 | neighbors=[index.d.ts]
+- "generated_client_index_d_testdepartmentselectscalar": "TestDepartmentSelectScalar" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L28978 | neighbors=[index.d.ts]
+- "generated_client_index_d_testdepartmentsumaggregateinputtype": "TestDepartmentSumAggregateInputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L28830 | neighbors=[index.d.ts]
+- "generated_client_index_d_testdepartmentsumaggregateoutputtype": "TestDepartmentSumAggregateOutputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L28799 | neighbors=[index.d.ts]
+- "generated_client_index_d_testdepartmentsumorderbyaggregateinput": "TestDepartmentSumOrderByAggregateInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L42443 | neighbors=[index.d.ts]
 - "generated_client_index_d_testdepartmentuncheckedcreateinput": "TestDepartmentUncheckedCreateInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L39868 | neighbors=[index.d.ts]
 - "generated_client_index_d_testdepartmentuncheckedcreatewithouttestsinput": "TestDepartmentUncheckedCreateWithoutTestsInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L47931 | neighbors=[index.d.ts]
 - "generated_client_index_d_testdepartmentuncheckedupdateinput": "TestDepartmentUncheckedUpdateInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L39883 | neighbors=[index.d.ts]
@@ -51,12 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "generated_client_index_d_testformulacountargs": "TestFormulaCountArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L30020 | neighbors=[index.d.ts]
 - "generated_client_index_d_testformulacountorderbyaggregateinput": "TestFormulaCountOrderByAggregateInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L42453 | neighbors=[index.d.ts]
 - "generated_client_index_d_testformulacreateargs": "TestFormulaCreateArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L30579 | neighbors=[index.d.ts]
-- "generated_client_index_d_testformulacreateinput": "TestFormulaCreateInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L39911 | neighbors=[index.d.ts]
-- "generated_client_index_d_testformulacreatemanyargs": "TestFormulaCreateManyArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L30597 | neighbors=[index.d.ts]
-- "generated_client_index_d_testformulacreatemanyinput": "TestFormulaCreateManyInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L39965 | neighbors=[index.d.ts]
-- "generated_client_index_d_testformulacreatemanyoutputparameterinput": "TestFormulaCreateManyOutputParameterInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L53970 | neighbors=[index.d.ts]
-- "generated_client_index_d_testformulacreatemanyoutputparameterinputenvelope": "TestFormulaCreateManyOutputParameterInputEnvelope" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L49328 | neighbors=[index.d.ts]
-- "generated_client_index_d_testformulacreatemanytestinput": "TestFormulaCreateManyTestInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L53612 | neighbors=[index.d.ts]
 
 ## Instructions
 

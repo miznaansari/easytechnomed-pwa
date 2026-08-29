@@ -24,6 +24,7 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "runtime_wasm_transaction": "transaction()" | kind=code-symbol | source=scratch/generated-client/runtime/wasm.js:L11 | neighbors=[wasm.js, getExternalAdapterError(), ja(), parseEngineResponse(), start()]
 - "runtime_wasm_writeline": "writeLine()" | kind=code-symbol | source=scratch/generated-client/runtime/wasm.js:L2 | neighbors=[wasm.js, write(), newLine(), writeWithContents(), writeWithItems()]
 - "runtime_wasm_writeuintbe": "writeUIntBE()" | kind=code-symbol | source=scratch/generated-client/runtime/wasm.js:L1 | neighbors=[wasm.js, writeIntBE(), B(), V(), Y()]
 - "runtime_wasm_writeuintle": "writeUIntLE()" | kind=code-symbol | source=scratch/generated-client/runtime/wasm.js:L1 | neighbors=[wasm.js, writeIntLE(), B(), V(), Y()]
@@ -40,6 +41,7 @@ one-sentence description — no prose, no markdown fences.
 - "commit:repo:github.com-personal/miznaansari/easytechnomed-pwa@37ee548f75528c10f3b6dc026a6c0127527cf9ff": "37ee548 f" | kind=Commit | source=git | neighbors=[1ba5187 2.0.17, main, dad94e1 2.0.18, AdminLayoutClient.js]
 - "commit:repo:github.com-personal/miznaansari/easytechnomed-pwa@3c7e66b6e8b2bb160a8c8250a028cfcc607c94d8": "3c7e66b f" | kind=Commit | source=git | neighbors=[main, 2ef3785 2.0.1, syncManager.js, 3f7f1b4 2.0.0]
 - "commit:repo:github.com-personal/miznaansari/easytechnomed-pwa@66182613cbf1407454f175eca3ebc193d824cf50": "6618261 f" | kind=Commit | source=git | neighbors=[main, e9f3af9 2.0.6, sw.js, a4a950a 2.0.5]
+- "commit:repo:github.com-personal/miznaansari/easytechnomed-pwa@78dd9766836ff1b3213705698b82d1204bdd95d2": "78dd976 fixed" | kind=Commit | source=git | neighbors=[3917c34 3.1.7, main, 74d638d 3.1.9, ReLoginModal.jsx]
 - "commit:repo:github.com-personal/miznaansari/easytechnomed-pwa@8184d3220868fc63d1733f795d71eba6e0d66694": "8184d32 f" | kind=Commit | source=git | neighbors=[main, 124b88b 3.0.13, SyncIndicator.jsx, c41a815 3.0.11]
 - "commit:repo:github.com-personal/miznaansari/easytechnomed-pwa@a356e4110184f7632ae4a93517343d1f4f4f4b4e": "a356e41 f" | kind=Commit | source=git | neighbors=[462f542 3.0.4, main, 005eea6 f, SyncIndicator.jsx]
 - "commit:repo:github.com-personal/miznaansari/easytechnomed-pwa@c15ae1e299fea68996b95acc05fb409a770f9fb0": "c15ae1e fixed" | kind=Commit | source=git | neighbors=[9a50d76 3.0.2, main, 462f542 3.0.4, network.js]
@@ -68,8 +70,6 @@ one-sentence description — no prose, no markdown fences.
 - "lib_formulautils_evaluateexpression": "evaluateExpression()" | kind=code-symbol | source=lib/formulaUtils.js:L332 | neighbors=[formulaEngine.js, formulaUtils.js, calculateAllDependents(), test-formula-verification.mjs]
 - "lib_reportsecurity_decryptreporttoken": "decryptReportToken()" | kind=code-symbol | source=lib/reportSecurity.js:L115 | neighbors=[reportSecurity.js, getKeyRing(), verifyReportToken(), test_identity_and_qr.mjs]
 - "lib_reportsecurity_generatereporttoken": "generateReportToken()" | kind=code-symbol | source=lib/reportSecurity.js:L74 | neighbors=[reportSecurity.js, getKeyRing(), verifyReportToken(), test_identity_and_qr.mjs]
-- "lib_reportsecurity_verifyreporttoken": "verifyReportToken()" | kind=code-symbol | source=lib/reportSecurity.js:L173 | neighbors=[reportSecurity.js, decryptReportToken(), generateReportToken(), test_identity_and_qr.mjs]
-- "lib_saasinvoice": "saasInvoice.js" | kind=code-symbol | source=lib/saasInvoice.js:L1 | neighbors=[252e194 e, decodePaymentUid(), encodePaymentUid(), KEY]
 
 ## Instructions
 

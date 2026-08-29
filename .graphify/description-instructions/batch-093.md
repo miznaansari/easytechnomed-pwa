@@ -17,6 +17,12 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "generated_client_index_d_registrationupdatewithoutworkspaceinput": "RegistrationUpdateWithoutWorkspaceInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L52105 | neighbors=[index.d.ts]
+- "generated_client_index_d_registrationupdatewithwhereuniquewithoutadmininput": "RegistrationUpdateWithWhereUniqueWithoutAdminInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L47231 | neighbors=[index.d.ts]
+- "generated_client_index_d_registrationupdatewithwhereuniquewithoutrefbyinput": "RegistrationUpdateWithWhereUniqueWithoutRefByInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L47873 | neighbors=[index.d.ts]
+- "generated_client_index_d_registrationupdatewithwhereuniquewithoutsecondrefinput": "RegistrationUpdateWithWhereUniqueWithoutSecondRefInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L47889 | neighbors=[index.d.ts]
+- "generated_client_index_d_registrationupdatewithwhereuniquewithoutworkspaceinput": "RegistrationUpdateWithWhereUniqueWithoutWorkspaceInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L45810 | neighbors=[index.d.ts]
+- "generated_client_index_d_registrationupsertargs": "RegistrationUpsertArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L18377 | neighbors=[index.d.ts]
 - "generated_client_index_d_registrationupsertwithoutpaymentsinput": "RegistrationUpsertWithoutPaymentsInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L50425 | neighbors=[index.d.ts]
 - "generated_client_index_d_registrationupsertwithoutresultsinput": "RegistrationUpsertWithoutResultsInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L50043 | neighbors=[index.d.ts]
 - "generated_client_index_d_registrationupsertwithouttestsinput": "RegistrationUpsertWithoutTestsInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L49035 | neighbors=[index.d.ts]
@@ -51,12 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "generated_client_index_d_superadminavgaggregateoutputtype": "SuperAdminAvgAggregateOutputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L4913 | neighbors=[index.d.ts]
 - "generated_client_index_d_superadminavgorderbyaggregateinput": "SuperAdminAvgOrderByAggregateInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L40663 | neighbors=[index.d.ts]
 - "generated_client_index_d_superadmincountaggregateinputtype": "SuperAdminCountAggregateInputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L4976 | neighbors=[index.d.ts]
-- "generated_client_index_d_superadmincountaggregateoutputtype": "SuperAdminCountAggregateOutputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L4939 | neighbors=[index.d.ts]
-- "generated_client_index_d_superadmincountargs": "SuperAdminCountArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L5147 | neighbors=[index.d.ts]
-- "generated_client_index_d_superadmincountorderbyaggregateinput": "SuperAdminCountOrderByAggregateInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L40654 | neighbors=[index.d.ts]
-- "generated_client_index_d_superadmincountoutputtype": "SuperAdminCountOutputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L3240 | neighbors=[index.d.ts]
-- "generated_client_index_d_superadmincountoutputtypeargs": "SuperAdminCountOutputTypeArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L54274 | neighbors=[index.d.ts]
-- "generated_client_index_d_superadmincountoutputtypecountsessionsargs": "SuperAdminCountOutputTypeCountSessionsArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L3264 | neighbors=[index.d.ts]
 
 ## Instructions
 

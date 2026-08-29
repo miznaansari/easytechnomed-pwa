@@ -17,6 +17,13 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "runtime_index_browser_pe": "Pe()" | kind=code-symbol | source=scratch/generated-client/runtime/index-browser.js:L1 | neighbors=[index-browser.js]
+- "runtime_index_browser_pn": "pn()" | kind=code-symbol | source=scratch/generated-client/runtime/index-browser.js:L1 | neighbors=[index-browser.js]
+- "runtime_index_browser_qe": "qe()" | kind=code-symbol | source=scratch/generated-client/runtime/index-browser.js:L1 | neighbors=[index-browser.js]
+- "runtime_index_browser_qn": "qn()" | kind=code-symbol | source=scratch/generated-client/runtime/index-browser.js:L1 | neighbors=[index-browser.js]
+- "runtime_index_browser_tn": "Tn()" | kind=code-symbol | source=scratch/generated-client/runtime/index-browser.js:L1 | neighbors=[index-browser.js]
+- "runtime_index_browser_vn": "vn()" | kind=code-symbol | source=scratch/generated-client/runtime/index-browser.js:L1 | neighbors=[index-browser.js]
+- "runtime_index_browser_wn": "wn()" | kind=code-symbol | source=scratch/generated-client/runtime/index-browser.js:L1 | neighbors=[index-browser.js]
 - "runtime_index_browser_ze": "Ze()" | kind=code-symbol | source=scratch/generated-client/runtime/index-browser.js:L1 | neighbors=[index-browser.js]
 - "runtime_library_ao": "Ao()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L4 | neighbors=[library.js]
 - "runtime_library_apikey": "apiKey()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L111 | neighbors=[library.js]
@@ -50,13 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "runtime_library_d_batchtransactionoptions": "BatchTransactionOptions" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L114 | neighbors=[_d()]
 - "runtime_library_d_binarytargetsenvvalue": "BinaryTargetsEnvValue" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L118 | neighbors=[_d()]
 - "runtime_library_d_call": "Call" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L124 | neighbors=[_d()]
-- "runtime_library_d_callsite": "CallSite" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L128 | neighbors=[_d()]
-- "runtime_library_d_cast": "Cast" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L132 | neighbors=[_d()]
-- "runtime_library_d_client": "Client" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L134 | neighbors=[_d()]
-- "runtime_library_d_clientarg": "ClientArg" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L136 | neighbors=[_d()]
-- "runtime_library_d_clientargs": "ClientArgs" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L140 | neighbors=[_d()]
-- "runtime_library_d_clientbuiltinprop": "ClientBuiltInProp" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L144 | neighbors=[_d()]
-- "runtime_library_d_clientoptiondef": "ClientOptionDef" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L146 | neighbors=[_d()]
 
 ## Instructions
 

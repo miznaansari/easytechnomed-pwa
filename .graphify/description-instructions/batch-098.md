@@ -17,6 +17,12 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "generated_client_index_d_superadmintrackingmaxorderbyaggregateinput": "SuperAdminTrackingMaxOrderByAggregateInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L42388 | neighbors=[index.d.ts]
+- "generated_client_index_d_superadmintrackingminaggregateinputtype": "SuperAdminTrackingMinAggregateInputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L27877 | neighbors=[index.d.ts]
+- "generated_client_index_d_superadmintrackingminaggregateoutputtype": "SuperAdminTrackingMinAggregateOutputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L27827 | neighbors=[index.d.ts]
+- "generated_client_index_d_superadmintrackingminorderbyaggregateinput": "SuperAdminTrackingMinOrderByAggregateInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L42400 | neighbors=[index.d.ts]
+- "generated_client_index_d_superadmintrackingorderbyrelationaggregateinput": "SuperAdminTrackingOrderByRelationAggregateInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L40650 | neighbors=[index.d.ts]
+- "generated_client_index_d_superadmintrackingorderbywithaggregationinput": "SuperAdminTrackingOrderByWithAggregationInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L36786 | neighbors=[index.d.ts]
 - "generated_client_index_d_superadmintrackingorderbywithrelationinput": "SuperAdminTrackingOrderByWithRelationInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L36757 | neighbors=[index.d.ts]
 - "generated_client_index_d_superadmintrackingpayload": "$SuperAdminTrackingPayload" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L28061 | neighbors=[index.d.ts]
 - "generated_client_index_d_superadmintrackingscalarfieldenum": "SuperAdminTrackingScalarFieldEnum" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L34321 | neighbors=[index.d.ts]
@@ -51,12 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "generated_client_index_d_superadminuncheckedcreatewithoutsessionsinput": "SuperAdminUncheckedCreateWithoutSessionsInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L46316 | neighbors=[index.d.ts]
 - "generated_client_index_d_superadminuncheckedcreatewithouttrackingsinput": "SuperAdminUncheckedCreateWithoutTrackingsInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L50668 | neighbors=[index.d.ts]
 - "generated_client_index_d_superadminuncheckedupdateinput": "SuperAdminUncheckedUpdateInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L37443 | neighbors=[index.d.ts]
-- "generated_client_index_d_superadminuncheckedupdatemanyinput": "SuperAdminUncheckedUpdateManyInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L37471 | neighbors=[index.d.ts]
-- "generated_client_index_d_superadminuncheckedupdatewithoutsessionsinput": "SuperAdminUncheckedUpdateWithoutSessionsInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L46351 | neighbors=[index.d.ts]
-- "generated_client_index_d_superadminuncheckedupdatewithouttrackingsinput": "SuperAdminUncheckedUpdateWithoutTrackingsInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L50703 | neighbors=[index.d.ts]
-- "generated_client_index_d_superadminupdateargs": "SuperAdminUpdateArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L5729 | neighbors=[index.d.ts]
-- "generated_client_index_d_superadminupdateinput": "SuperAdminUpdateInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L37433 | neighbors=[index.d.ts]
-- "generated_client_index_d_superadminupdatemanyargs": "SuperAdminUpdateManyArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L5751 | neighbors=[index.d.ts]
 
 ## Instructions
 

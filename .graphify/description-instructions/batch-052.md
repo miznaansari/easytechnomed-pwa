@@ -17,6 +17,12 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "generated_client_index_browser_prisma": "Prisma" | kind=code-symbol | source=scratch/generated-client/index-browser.js:L14 | neighbors=[index-browser.js]
+- "generated_client_index_browser_prismaclient_constructor": ".constructor()" | kind=code-symbol | source=scratch/generated-client/index-browser.js:L608 | neighbors=[PrismaClient]
+- "generated_client_index_config": "config" | kind=code-symbol | source=scratch/generated-client/index.js:L575 | neighbors=[index.js]
+- "generated_client_index_d_admin": "Admin" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L55 | neighbors=[index.d.ts]
+- "generated_client_index_d_admin_addressargs": "Admin$addressArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L11831 | neighbors=[index.d.ts]
+- "generated_client_index_d_admin_registrationsargs": "Admin$registrationsArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L11886 | neighbors=[index.d.ts]
 - "generated_client_index_d_admin_sessionsargs": "Admin$sessionsArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L11846 | neighbors=[index.d.ts]
 - "generated_client_index_d_admin_trackingsargs": "Admin$trackingsArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L11866 | neighbors=[index.d.ts]
 - "generated_client_index_d_admin_workspaceargs": "Admin$workspaceArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L11816 | neighbors=[index.d.ts]
@@ -51,12 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "generated_client_index_d_adminaddressgroupbyargs": "AdminAddressGroupByArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L24162 | neighbors=[index.d.ts]
 - "generated_client_index_d_adminaddressgroupbyoutputtype": "AdminAddressGroupByOutputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L24176 | neighbors=[index.d.ts]
 - "generated_client_index_d_adminaddressinclude": "AdminAddressInclude" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L24242 | neighbors=[index.d.ts]
-- "generated_client_index_d_adminaddressmaxaggregateinputtype": "AdminAddressMaxAggregateInputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L24059 | neighbors=[index.d.ts]
-- "generated_client_index_d_adminaddressmaxaggregateoutputtype": "AdminAddressMaxAggregateOutputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L23998 | neighbors=[index.d.ts]
-- "generated_client_index_d_adminaddressmaxorderbyaggregateinput": "AdminAddressMaxOrderByAggregateInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L42191 | neighbors=[index.d.ts]
-- "generated_client_index_d_adminaddressminaggregateinputtype": "AdminAddressMinAggregateInputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L24044 | neighbors=[index.d.ts]
-- "generated_client_index_d_adminaddressminaggregateoutputtype": "AdminAddressMinAggregateOutputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L23983 | neighbors=[index.d.ts]
-- "generated_client_index_d_adminaddressminorderbyaggregateinput": "AdminAddressMinOrderByAggregateInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L42206 | neighbors=[index.d.ts]
 
 ## Instructions
 
