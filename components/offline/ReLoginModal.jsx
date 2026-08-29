@@ -43,12 +43,9 @@ export default function ReLoginModal({
   const [isLoading, setIsLoading] = useState(false);
   const [errorMessage, setErrorMessage] = useState("");
 
-  // Do not render anything if on root/login page
-  if (isAuthPage) return null;
-
   // Populate email / identifier from cached session when modal opens
   useEffect(() => {
-    if (open) {
+    if (open && !isAuthPage) {
       setErrorMessage("");
       setPassword("");
       getCachedSession()
@@ -62,7 +59,10 @@ export default function ReLoginModal({
         })
         .catch(() => {});
     }
-  }, [open]);
+  }, [open, isAuthPage]);
+
+  // Do not render modal if not open or on auth/root pages
+  if (isAuthPage || !open) return null;
 
   const handleSubmit = async (e) => {
     if (e) e.preventDefault();
