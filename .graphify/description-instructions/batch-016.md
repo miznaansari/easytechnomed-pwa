@@ -1,4 +1,4 @@
-# Node Description Batch 17 of 149
+# Node Description Batch 17 of 150
 
 Graphify is running in assistant/skill mode (no API key). You are the host
 assistant (Claude Code / Codex / Gemini CLI). Read the prompt below and write
@@ -24,6 +24,12 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "runtime_wasm_writeuintbe": "writeUIntBE()" | kind=code-symbol | source=scratch/generated-client/runtime/wasm.js:L1 | neighbors=[wasm.js, writeIntBE(), B(), V(), Y()]
+- "runtime_wasm_writeuintle": "writeUIntLE()" | kind=code-symbol | source=scratch/generated-client/runtime/wasm.js:L1 | neighbors=[wasm.js, writeIntLE(), B(), V(), Y()]
+- "runtime_wasm_writewithcontents": "writeWithContents()" | kind=code-symbol | source=scratch/generated-client/runtime/wasm.js:L3 | neighbors=[wasm.js, write(), afterNextNewline(), withIndent(), writeLine()]
+- "runtime_wasm_writewithitems": "writeWithItems()" | kind=code-symbol | source=scratch/generated-client/runtime/wasm.js:L3 | neighbors=[wasm.js, write(), afterNextNewline(), withIndent(), writeLine()]
+- "runtime_wasm_ye": "Ye()" | kind=code-symbol | source=scratch/generated-client/runtime/wasm.js:L5 | neighbors=[wasm.js, ci(), nl(), oi(), zt()]
+- "scratch_backfill_counters": "scratch-backfill-counters.js" | kind=code-symbol | source=scratch-backfill-counters.js:L1 | neighbors=[252e194 e, generateRandomSuffix(), main(), prisma, { PrismaClient }]
 - "scratch_test_patient_context": "test-patient-context.js" | kind=code-symbol | source=scratch/test-patient-context.js:L1 | neighbors=[252e194 e, addPatientContextToValuesMap(), valuesMap1, valuesMap2, valuesMap3]
 - "scratch_test_user_cbc": "test-user-cbc.js" | kind=code-symbol | source=scratch/test-user-cbc.js:L1 | neighbors=[252e194 e, calculateAllDependents(), inputValues, result, testDefinition]
 - "auth_offlineauth_getcachedsession": "getCachedSession()" | kind=code-symbol | source=lib/auth/offlineAuth.js:L73 | neighbors=[offlineAuth.js, saveAuthenticatedSession(), getOrCreateOfflineSession(), isLocalSessionValid()]
@@ -45,7 +51,6 @@ one-sentence description — no prose, no markdown fences.
 - "context_offlinesynccontext": "OfflineSyncContext.js" | kind=code-symbol | source=context/OfflineSyncContext.js:L1 | neighbors=[2b2534c f, 9f59247 expire token, OfflineSyncContext, useOfflineSync()]
 - "customer_layout": "layout.jsx" | kind=code-symbol | source=app/(customer)/layout.jsx:L1 | neighbors=[252e194 e, 5e3d9ef d, CustomerLayout(), theme]
 - "dashboard_error": "error.js" | kind=code-symbol | source=app/(customer)/(dashboard)/error.js:L1 | neighbors=[5e3d9ef d, cf2bb98 new, eb8b1e5 f, DashboardErrorBoundary()]
-- "dashboard_rangeselector": "RangeSelector.js" | kind=code-symbol | source=app/(customer)/(dashboard)/dashboard/RangeSelector.js:L1 | neighbors=[252e194 e, page.js, DashboardRangeSelector(), quickRanges]
 - "doctors_route_serializedata": "serializeData()" | kind=code-symbol | source=app/api/doctors/route.js:L6 | neighbors=[route.js, GET(), POST(), PUT()]
 - "generated_client_index_browser": "index-browser.js" | kind=code-symbol | source=scratch/generated-client/index-browser.js:L1 | neighbors=[252e194 e, {
   Decimal,
@@ -60,16 +65,11 @@ one-sentence description — no prose, no markdown fences.
 - "lib_firebase": "firebase.js" | kind=code-symbol | source=lib/firebase.js:L1 | neighbors=[252e194 e, auth, firebaseConfig, googleProvider]
 - "lib_formulautils_checkformuladependencies": "checkFormulaDependencies()" | kind=code-symbol | source=lib/formulaUtils.js:L422 | neighbors=[formulaEngine.js, formulaUtils.js, calculateAllDependents(), test-formula-verification.mjs]
 - "lib_formulautils_evaluateexpression": "evaluateExpression()" | kind=code-symbol | source=lib/formulaUtils.js:L332 | neighbors=[formulaEngine.js, formulaUtils.js, calculateAllDependents(), test-formula-verification.mjs]
+- "lib_reportsecurity_decryptreporttoken": "decryptReportToken()" | kind=code-symbol | source=lib/reportSecurity.js:L115 | neighbors=[reportSecurity.js, getKeyRing(), verifyReportToken(), test_identity_and_qr.mjs]
+- "lib_reportsecurity_generatereporttoken": "generateReportToken()" | kind=code-symbol | source=lib/reportSecurity.js:L74 | neighbors=[reportSecurity.js, getKeyRing(), verifyReportToken(), test_identity_and_qr.mjs]
+- "lib_reportsecurity_verifyreporttoken": "verifyReportToken()" | kind=code-symbol | source=lib/reportSecurity.js:L173 | neighbors=[reportSecurity.js, decryptReportToken(), generateReportToken(), test_identity_and_qr.mjs]
 - "lib_saasinvoice": "saasInvoice.js" | kind=code-symbol | source=lib/saasInvoice.js:L1 | neighbors=[252e194 e, decodePaymentUid(), encodePaymentUid(), KEY]
 - "login_page": "page.js" | kind=code-symbol | source=app/(customer)/auth/login/page.js:L1 | neighbors=[252e194 e, LoginPageClient.js, metadata, Page()]
-- "members_route": "route.js" | kind=code-symbol | source=app/api/members/route.js:L1 | neighbors=[252e194 e, GET(), PATCH(), POST()]
-- "offline_offlinepdfgenerator_generatereportpdfoffline": "generateReportPdfOffline()" | kind=code-symbol | source=lib/offline/offlinePdfGenerator.js:L271 | neighbors=[offlinePdfGenerator.js, layoutMarkdownLines(), parseMarkdownTokens(), offlinePrint.js]
-- "offline_syncstatusicon": "SyncStatusIcon.jsx" | kind=code-symbol | source=components/offline/SyncStatusIcon.jsx:L1 | neighbors=[2b2534c f, 6fcf015 f, d446d11 fixed code, SyncStatusIcon()]
-- "parameters_route": "route.js" | kind=code-symbol | source=app/api/registrations/[id]/parameters/route.js:L1 | neighbors=[252e194 e, GET(), POST(), serializeRegistration()]
-- "paymentid_route_get": "GET()" | kind=code-symbol | source=app/api/print-subscription-invoice/[paymentId]/route.js:L74 | neighbors=[route.js, formatDate(), formatDateTime(), numberToWords()]
-- "print_billhtmlgenerator_generateofflinebillhtml": "generateOfflineBillHtml()" | kind=code-symbol | source=lib/offline/print/billHtmlGenerator.js:L60 | neighbors=[billHtmlGenerator.js, formatDate(), numberToWords(), openPrint.js]
-- "print_reportpdfgenerator_generateofflinereportpdf": "generateOfflineReportPdf()" | kind=code-symbol | source=lib/offline/print/reportPdfGenerator.js:L129 | neighbors=[offlinePrint.js, openPrint.js, reportPdfGenerator.js, getReferenceRange()]
-- "prisma_seed_main": "main()" | kind=code-symbol | source=prisma/seed.js:L5 | neighbors=[seed.js, getDepartmentName(), processTestParameters(), seedLimsFormulasAndConfigurations()]
 
 ## Instructions
 

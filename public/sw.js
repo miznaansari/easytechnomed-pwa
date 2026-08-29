@@ -424,3 +424,22 @@ self.addEventListener("fetch", (event) => {
       })
   );
 });
+
+// 5. Message Event: Immediate skipWaiting & cache purge for hard refresh
+self.addEventListener("message", (event) => {
+  if (event.data) {
+    if (event.data.type === "SKIP_WAITING" || event.data.action === "skipWaiting") {
+      console.log("[SW] Received SKIP_WAITING message, activating immediately.");
+      self.skipWaiting();
+    }
+    if (event.data.type === "CLEAR_ALL_CACHES") {
+      console.log("[SW] Received CLEAR_ALL_CACHES message, purging CacheStorage.");
+      event.waitUntil(
+        caches.keys().then((keys) => {
+          return Promise.all(keys.map((key) => caches.delete(key)));
+        })
+      );
+    }
+  }
+});
+

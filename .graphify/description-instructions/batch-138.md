@@ -1,4 +1,4 @@
-# Node Description Batch 139 of 149
+# Node Description Batch 139 of 150
 
 Graphify is running in assistant/skill mode (no API key). You are the host
 assistant (Claude Code / Codex / Gemini CLI). Read the prompt below and write
@@ -17,6 +17,29 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "runtime_library_d_queryengineconfig": "QueryEngineConfig" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L2529 | neighbors=[_d()]
+- "runtime_library_d_queryengineconstructor": "QueryEngineConstructor" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L2541 | neighbors=[_d()]
+- "runtime_library_d_queryengineinstance": "QueryEngineInstance" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L2545 | neighbors=[_d()]
+- "runtime_library_d_queryengineloglevel": "QueryEngineLogLevel" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L2562 | neighbors=[_d()]
+- "runtime_library_d_queryenginerequest": "QueryEngineRequest" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L2564 | neighbors=[_d()]
+- "runtime_library_d_queryengineresult": "QueryEngineResult" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L2569 | neighbors=[_d()]
+- "runtime_library_d_queryenginetelemetry": "QueryEngineTelemetry" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L2574 | neighbors=[_d()]
+- "runtime_library_d_queryevent": "QueryEvent" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L2579 | neighbors=[_d()]
+- "runtime_library_d_queryeventtype": "QueryEventType" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L2587 | neighbors=[_d()]
+- "runtime_library_d_querymiddleware": "QueryMiddleware" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L2589 | neighbors=[_d()]
+- "runtime_library_d_querymiddlewareparams": "QueryMiddlewareParams" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L2591 | neighbors=[_d()]
+- "runtime_library_d_queryoptions": "QueryOptions" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L2603 | neighbors=[_d()]
+- "runtime_library_d_queryoptionscb": "QueryOptionsCb" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L2611 | neighbors=[_d()]
+- "runtime_library_d_queryoptionscbargs": "QueryOptionsCbArgs" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L2613 | neighbors=[_d()]
+- "runtime_library_d_queryoutput": "QueryOutput" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L773 | neighbors=[_d()]
+- "runtime_library_d_rawparameters": "RawParameters" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L2625 | neighbors=[_d()]
+- "runtime_library_d_rawqueryargs": "RawQueryArgs" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L2630 | neighbors=[_d()]
+- "runtime_library_d_rawtaggedvalue": "RawTaggedValue" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L2632 | neighbors=[_d()]
+- "runtime_library_d_rawvalue": "RawValue" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L2640 | neighbors=[_d()]
+- "runtime_library_d_readonlydeep": "ReadonlyDeep" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L2642 | neighbors=[_d()]
+- "runtime_library_d_readonlydeep_2": "ReadonlyDeep_2" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L2646 | neighbors=[_d()]
+- "runtime_library_d_record_2": "Record_2" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L2650 | neighbors=[_d()]
+- "runtime_library_d_renameandnestpayloadkeys": "RenameAndNestPayloadKeys" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L2655 | neighbors=[_d()]
 - "runtime_library_d_requestbatchoptions": "RequestBatchOptions" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L2659 | neighbors=[_d()]
 - "runtime_library_d_requesterror": "RequestError" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L2667 | neighbors=[_d()]
 - "runtime_library_d_requesthandler": "RequestHandler" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L2678 | neighbors=[_d()]
@@ -34,29 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "runtime_library_d_resultargsfieldcompute": "ResultArgsFieldCompute" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L2811 | neighbors=[_d()]
 - "runtime_library_d_resultfielddefinition": "ResultFieldDefinition" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L2813 | neighbors=[_d()]
 - "runtime_library_d_resultset": "ResultSet" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L2820 | neighbors=[_d()]
-- "runtime_library_d_return": "Return" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L2842 | neighbors=[_d()]
-- "runtime_library_d_rounding": "Rounding" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L330 | neighbors=[_d()]
-- "runtime_library_d_runtime": "Runtime" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L2844 | neighbors=[_d()]
-- "runtime_library_d_runtimedatamodel": "RuntimeDataModel" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L2846 | neighbors=[_d()]
-- "runtime_library_d_runtimeenum": "RuntimeEnum" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L2852 | neighbors=[_d()]
-- "runtime_library_d_runtimemodel": "RuntimeModel" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L2854 | neighbors=[_d()]
-- "runtime_library_d_schema": "Schema" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L749 | neighbors=[_d()]
-- "runtime_library_d_schemaarg": "SchemaArg" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L785 | neighbors=[_d()]
-- "runtime_library_d_schemaenum": "SchemaEnum" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L667 | neighbors=[_d()]
-- "runtime_library_d_schemafield": "SchemaField" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L797 | neighbors=[_d()]
-- "runtime_library_d_select": "Select" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L2856 | neighbors=[_d()]
-- "runtime_library_d_selectablepayloadfields": "SelectablePayloadFields" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L2858 | neighbors=[_d()]
-- "runtime_library_d_selectfield": "SelectField" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L2868 | neighbors=[_d()]
-- "runtime_library_d_selection_2": "Selection_2" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L2874 | neighbors=[_d()]
-- "runtime_library_d_serializeparams": "SerializeParams" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L2879 | neighbors=[_d()]
-- "runtime_library_d_skip": "Skip" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L2893 | neighbors=[_d()]
-- "runtime_library_d_sortorder": "SortOrder" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L748 | neighbors=[_d()]
-- "runtime_library_d_span": "Span" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L2909 | neighbors=[_d()]
-- "runtime_library_d_spanattributes": "SpanAttributes" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L3017 | neighbors=[_d()]
-- "runtime_library_d_spanattributevalue": "SpanAttributeValue" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L3022 | neighbors=[_d()]
-- "runtime_library_d_spancallback": "SpanCallback" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L3024 | neighbors=[_d()]
-- "runtime_library_d_spancontext": "SpanContext" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L3030 | neighbors=[_d()]
-- "runtime_library_d_spankind": "SpanKind" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L3078 | neighbors=[_d()]
 
 ## Instructions
 

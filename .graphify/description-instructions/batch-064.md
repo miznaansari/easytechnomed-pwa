@@ -1,4 +1,4 @@
-# Node Description Batch 65 of 149
+# Node Description Batch 65 of 150
 
 Graphify is running in assistant/skill mode (no API key). You are the host
 assistant (Claude Code / Codex / Gemini CLI). Read the prompt below and write
@@ -17,6 +17,26 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "generated_client_index_d_adminupdatewithoutroleinput": "AdminUpdateWithoutRoleInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L53108 | neighbors=[index.d.ts]
+- "generated_client_index_d_adminupdatewithoutsessionsinput": "AdminUpdateWithoutSessionsInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L47316 | neighbors=[index.d.ts]
+- "generated_client_index_d_adminupdatewithouttrackingsinput": "AdminUpdateWithoutTrackingsInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L50600 | neighbors=[index.d.ts]
+- "generated_client_index_d_adminupdatewithoutworkspaceinput": "AdminUpdateWithoutWorkspaceInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L51970 | neighbors=[index.d.ts]
+- "generated_client_index_d_adminupdatewithwhereuniquewithoutroleinput": "AdminUpdateWithWhereUniqueWithoutRoleInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L47469 | neighbors=[index.d.ts]
+- "generated_client_index_d_adminupdatewithwhereuniquewithoutworkspaceinput": "AdminUpdateWithWhereUniqueWithoutWorkspaceInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L45729 | neighbors=[index.d.ts]
+- "generated_client_index_d_adminupsertargs": "AdminUpsertArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L11762 | neighbors=[index.d.ts]
+- "generated_client_index_d_adminupsertwithoutaddressinput": "AdminUpsertWithoutAddressInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L50261 | neighbors=[index.d.ts]
+- "generated_client_index_d_adminupsertwithoutregistrationsinput": "AdminUpsertWithoutRegistrationsInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L48767 | neighbors=[index.d.ts]
+- "generated_client_index_d_adminupsertwithoutsessionsinput": "AdminUpsertWithoutSessionsInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L47305 | neighbors=[index.d.ts]
+- "generated_client_index_d_adminupsertwithouttrackingsinput": "AdminUpsertWithoutTrackingsInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L50589 | neighbors=[index.d.ts]
+- "generated_client_index_d_adminupsertwithwhereuniquewithoutroleinput": "AdminUpsertWithWhereUniqueWithoutRoleInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L47463 | neighbors=[index.d.ts]
+- "generated_client_index_d_adminupsertwithwhereuniquewithoutworkspaceinput": "AdminUpsertWithWhereUniqueWithoutWorkspaceInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L45723 | neighbors=[index.d.ts]
+- "generated_client_index_d_adminwhereinput": "AdminWhereInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L34999 | neighbors=[index.d.ts]
+- "generated_client_index_d_adminwhereuniqueinput": "AdminWhereUniqueInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L35068 | neighbors=[index.d.ts]
+- "generated_client_index_d_aggregateadmin": "AggregateAdmin" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L10672 | neighbors=[index.d.ts]
+- "generated_client_index_d_aggregateadminaddress": "AggregateAdminAddress" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L23961 | neighbors=[index.d.ts]
+- "generated_client_index_d_aggregateadminrole": "AggregateAdminRole" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L12861 | neighbors=[index.d.ts]
+- "generated_client_index_d_aggregateadminrolepermission": "AggregateAdminRolePermission" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L13809 | neighbors=[index.d.ts]
+- "generated_client_index_d_aggregateadminsession": "AggregateAdminSession" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L11922 | neighbors=[index.d.ts]
 - "generated_client_index_d_aggregateadmintracking": "AggregateAdminTracking" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L26827 | neighbors=[index.d.ts]
 - "generated_client_index_d_aggregatedoctor": "AggregateDoctor" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L14704 | neighbors=[index.d.ts]
 - "generated_client_index_d_aggregatedoctorincentive": "AggregateDoctorIncentive" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L31710 | neighbors=[index.d.ts]
@@ -37,26 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "generated_client_index_d_aggregatetestparameter": "AggregateTestParameter" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L21008 | neighbors=[index.d.ts]
 - "generated_client_index_d_aggregateuser": "AggregateUser" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L6814 | neighbors=[index.d.ts]
 - "generated_client_index_d_aggregateuserrole": "AggregateUserRole" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L8851 | neighbors=[index.d.ts]
-- "generated_client_index_d_aggregateuserrolepermission": "AggregateUserRolePermission" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L9777 | neighbors=[index.d.ts]
-- "generated_client_index_d_aggregateusersession": "AggregateUserSession" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L7912 | neighbors=[index.d.ts]
-- "generated_client_index_d_aggregateworkspace": "AggregateWorkspace" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L3711 | neighbors=[index.d.ts]
-- "generated_client_index_d_aggregateworkspacepdf": "AggregateWorkspacePdf" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L32620 | neighbors=[index.d.ts]
-- "generated_client_index_d_anynull": "AnyNull" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L691 | neighbors=[index.d.ts]
-- "generated_client_index_d_at": "At" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L877 | neighbors=[index.d.ts]
-- "generated_client_index_d_atbasic": "AtBasic" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L874 | neighbors=[index.d.ts]
-- "generated_client_index_d_atleast": "AtLeast" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L898 | neighbors=[index.d.ts]
-- "generated_client_index_d_atloose": "AtLoose" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L876 | neighbors=[index.d.ts]
-- "generated_client_index_d_atstrict": "AtStrict" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L875 | neighbors=[index.d.ts]
-- "generated_client_index_d_batchpayload": "BatchPayload" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L54436 | neighbors=[index.d.ts]
-- "generated_client_index_d_boolean": "Boolean" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L914 | neighbors=[index.d.ts]
-- "generated_client_index_d_booleanfieldrefinput": "BooleanFieldRefInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L34452 | neighbors=[index.d.ts]
-- "generated_client_index_d_boolfieldupdateoperationsinput": "BoolFieldUpdateOperationsInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L42879 | neighbors=[index.d.ts]
-- "generated_client_index_d_boolfilter": "BoolFilter" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L40392 | neighbors=[index.d.ts]
-- "generated_client_index_d_boolwithaggregatesfilter": "BoolWithAggregatesFilter" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L40598 | neighbors=[index.d.ts]
-- "generated_client_index_d_cast": "Cast" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L954 | neighbors=[index.d.ts]
-- "generated_client_index_d_computeraw": "ComputeRaw" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L882 | neighbors=[index.d.ts]
-- "generated_client_index_d_datasource": "Datasource" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L3124 | neighbors=[index.d.ts]
-- "generated_client_index_d_datasources": "Datasources" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L1049 | neighbors=[index.d.ts]
 
 ## Instructions
 

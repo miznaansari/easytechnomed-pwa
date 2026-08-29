@@ -1,4 +1,4 @@
-# Node Description Batch 148 of 149
+# Node Description Batch 148 of 150
 
 Graphify is running in assistant/skill mode (no API key). You are the host
 assistant (Claude Code / Codex / Gemini CLI). Read the prompt below and write
@@ -17,6 +17,30 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "scratch_test_formula_verification_overrides1": "overrides1" | kind=code-symbol | source=scratch/test-formula-verification.mjs:L44 | neighbors=[test-formula-verification.mjs]
+- "scratch_test_formula_verification_overrides2": "overrides2" | kind=code-symbol | source=scratch/test-formula-verification.mjs:L58 | neighbors=[test-formula-verification.mjs]
+- "scratch_test_formula_verification_result1": "result1" | kind=code-symbol | source=scratch/test-formula-verification.mjs:L45 | neighbors=[test-formula-verification.mjs]
+- "scratch_test_formula_verification_result2": "result2" | kind=code-symbol | source=scratch/test-formula-verification.mjs:L59 | neighbors=[test-formula-verification.mjs]
+- "scratch_test_formula_verification_testdef": "testDef" | kind=code-symbol | source=scratch/test-formula-verification.mjs:L4 | neighbors=[test-formula-verification.mjs]
+- "scratch_test_formula_verification_values1": "values1" | kind=code-symbol | source=scratch/test-formula-verification.mjs:L43 | neighbors=[test-formula-verification.mjs]
+- "scratch_test_formula_verification_values2": "values2" | kind=code-symbol | source=scratch/test-formula-verification.mjs:L57 | neighbors=[test-formula-verification.mjs]
+- "scratch_test_identity_and_qr_runtests": "runTests()" | kind=code-symbol | source=scratch/test_identity_and_qr.mjs:L5 | neighbors=[test_identity_and_qr.mjs]
+- "scratch_test_patient_context_addpatientcontexttovaluesmap": "addPatientContextToValuesMap()" | kind=code-symbol | source=scratch/test-patient-context.js:L1 | neighbors=[test-patient-context.js]
+- "scratch_test_patient_context_valuesmap1": "valuesMap1" | kind=code-symbol | source=scratch/test-patient-context.js:L52 | neighbors=[test-patient-context.js]
+- "scratch_test_patient_context_valuesmap2": "valuesMap2" | kind=code-symbol | source=scratch/test-patient-context.js:L56 | neighbors=[test-patient-context.js]
+- "scratch_test_patient_context_valuesmap3": "valuesMap3" | kind=code-symbol | source=scratch/test-patient-context.js:L60 | neighbors=[test-patient-context.js]
+- "scratch_test_pdf_customization_runtests": "runTests()" | kind=code-symbol | source=scratch/test-pdf-customization.mjs:L11 | neighbors=[test-pdf-customization.mjs]
+- "scratch_test_prisma_main": "main()" | kind=code-symbol | source=scratch/test-prisma.js:L4 | neighbors=[test-prisma.js]
+- "scratch_test_prisma_prisma": "prisma" | kind=code-symbol | source=scratch/test-prisma.js:L2 | neighbors=[test-prisma.js]
+- "scratch_test_prisma_prismaclient": "{ PrismaClient }" | kind=code-symbol | source=scratch/test-prisma.js:L1 | neighbors=[test-prisma.js]
+- "scratch_test_reg_15_main": "main()" | kind=code-symbol | source=scratch/test-reg-15.js:L4 | neighbors=[test-reg-15.js]
+- "scratch_test_reg_17_addvaluetovaluesmap": "addValueToValuesMap()" | kind=code-symbol | source=scratch/test-reg-17.js:L1 | neighbors=[test-reg-17.js]
+- "scratch_test_reg_17_checkformuladependencies": "checkFormulaDependencies()" | kind=code-symbol | source=scratch/test-reg-17.js:L313 | neighbors=[test-reg-17.js]
+- "scratch_test_reg_17_evaluateexpression": "evaluateExpression()" | kind=code-symbol | source=scratch/test-reg-17.js:L256 | neighbors=[test-reg-17.js]
+- "scratch_test_reg_17_inputvalues": "inputValues" | kind=code-symbol | source=scratch/test-reg-17.js:L367 | neighbors=[test-reg-17.js]
+- "scratch_test_reg_17_regpayload": "regPayload" | kind=code-symbol | source=scratch/test-reg-17.js:L328 | neighbors=[test-reg-17.js]
+- "scratch_test_reg_17_valuesmap": "valuesMap" | kind=code-symbol | source=scratch/test-reg-17.js:L379 | neighbors=[test-reg-17.js]
+- "scratch_test_report_security_runsecuritytests": "runSecurityTests()" | kind=code-symbol | source=scratch/test-report-security.mjs:L3 | neighbors=[test-report-security.mjs]
 - "scratch_test_sync_bootstrap_verifybackendendpoints": "verifyBackendEndpoints()" | kind=code-symbol | source=scratch/test-sync-bootstrap.mjs:L3 | neighbors=[test-sync-bootstrap.mjs]
 - "scratch_test_user_cbc_inputvalues": "inputValues" | kind=code-symbol | source=scratch/test-user-cbc.js:L43 | neighbors=[test-user-cbc.js]
 - "scratch_test_user_cbc_result": "result" | kind=code-symbol | source=scratch/test-user-cbc.js:L55 | neighbors=[test-user-cbc.js]
@@ -33,30 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "scratch_test_whatsapp_url_getregistrationwhatsappurl": "getRegistrationWhatsappUrl()" | kind=code-symbol | source=scratch/test-whatsapp-url.mjs:L1 | neighbors=[test-whatsapp-url.mjs]
 - "scratch_test_whatsapp_url_samplereg": "sampleReg" | kind=code-symbol | source=scratch/test-whatsapp-url.mjs:L29 | neighbors=[test-whatsapp-url.mjs]
 - "scratch_test_whatsapp_url_url": "url" | kind=code-symbol | source=scratch/test-whatsapp-url.mjs:L40 | neighbors=[test-whatsapp-url.mjs]
-- "scratch_trigger_sync_main": "main()" | kind=code-symbol | source=scratch/trigger-sync.js:L4 | neighbors=[trigger-sync.js]
-- "scratch_trigger_sync_prisma": "prisma" | kind=code-symbol | source=scratch/trigger-sync.js:L2 | neighbors=[trigger-sync.js]
-- "scratch_trigger_sync_prismaclient": "{ PrismaClient }" | kind=code-symbol | source=scratch/trigger-sync.js:L1 | neighbors=[trigger-sync.js]
-- "settings_page_settingscontent": "SettingsContent()" | kind=code-symbol | source=app/(customer)/(dashboard)/settings/page.js:L28 | neighbors=[page.js]
-- "settings_page_settingspage": "SettingsPage()" | kind=code-symbol | source=app/(customer)/(dashboard)/settings/page.js:L298 | neighbors=[page.js]
-- "settings_route_get": "GET()" | kind=code-symbol | source=app/api/settings/route.js:L5 | neighbors=[route.js]
-- "settings_route_post": "POST()" | kind=code-symbol | source=app/api/settings/route.js:L36 | neighbors=[route.js]
-- "sync_route_post": "POST()" | kind=code-symbol | source=app/api/offline/sync/route.js:L5 | neighbors=[route.js]
-- "sync_syncmanager_model_sync_priority": "MODEL_SYNC_PRIORITY" | kind=code-symbol | source=lib/offline/sync/syncManager.js:L7 | neighbors=[syncManager.js]
-- "sync_syncmanager_syncmanager_buildsyncpayload": ".buildSyncPayload()" | kind=code-symbol | source=lib/offline/sync/syncManager.js:L91 | neighbors=[SyncManager]
-- "sync_syncmanager_syncmanager_constructor": ".constructor()" | kind=code-symbol | source=lib/offline/sync/syncManager.js:L23 | neighbors=[SyncManager]
-- "test_report_page_activemenubuttonstyle": "activeMenuButtonStyle" | kind=code-symbol | source=app/(customer)/(dashboard)/test-report/page.js:L135 | neighbors=[page.js]
-- "test_report_page_dangermenubuttonstyle": "dangerMenuButtonStyle" | kind=code-symbol | source=app/(customer)/(dashboard)/test-report/page.js:L152 | neighbors=[page.js]
-- "test_report_page_exportcolumns": "exportColumns" | kind=code-symbol | source=app/(customer)/(dashboard)/test-report/page.js:L266 | neighbors=[page.js]
-- "test_report_page_getpaymentchip": "getPaymentChip()" | kind=code-symbol | source=app/(customer)/(dashboard)/test-report/page.js:L174 | neighbors=[page.js]
-- "test_report_page_gettestchip": "getTestChip()" | kind=code-symbol | source=app/(customer)/(dashboard)/test-report/page.js:L230 | neighbors=[page.js]
-- "test_report_page_menubuttonstyle": "menuButtonStyle" | kind=code-symbol | source=app/(customer)/(dashboard)/test-report/page.js:L103 | neighbors=[page.js]
-- "test_report_page_testreportpage": "TestReportPage()" | kind=code-symbol | source=app/(customer)/(dashboard)/test-report/page.js:L293 | neighbors=[page.js]
-- "test_route_get": "GET()" | kind=code-symbol | source=app/api/n8n/test/route.js:L49 | neighbors=[route.js]
-- "test_route_parsenullablefloat": "parseNullableFloat()" | kind=code-symbol | source=app/api/n8n/test/route.js:L5 | neighbors=[route.js]
-- "test_route_parsenullableoptions": "parseNullableOptions()" | kind=code-symbol | source=app/api/n8n/test/route.js:L33 | neighbors=[route.js]
-- "tests_page_settingstestspage": "SettingsTestsPage()" | kind=code-symbol | source=app/(customer)/(dashboard)/settings/tests/page.js:L7 | neighbors=[page.js]
-- "tests_route_delete": "DELETE()" | kind=code-symbol | source=app/api/tests/route.js:L379 | neighbors=[route.js]
-- "tests_testsclient_common_lab_units": "COMMON_LAB_UNITS" | kind=code-symbol | source=app/(customer)/(dashboard)/settings/tests/testsClient.jsx:L50 | neighbors=[testsClient.jsx]
 
 ## Instructions
 

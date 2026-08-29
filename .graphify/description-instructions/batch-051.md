@@ -1,4 +1,4 @@
-# Node Description Batch 52 of 149
+# Node Description Batch 52 of 150
 
 Graphify is running in assistant/skill mode (no API key). You are the host
 assistant (Claude Code / Codex / Gemini CLI). Read the prompt below and write
@@ -17,6 +17,26 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "components_expiredplanview_expiredplanview": "ExpiredPlanView()" | kind=code-symbol | source=components/ExpiredPlanView.jsx:L30 | neighbors=[ExpiredPlanView.jsx]
+- "components_pwaregister_pwaregister": "PWARegister()" | kind=code-symbol | source=components/PWARegister.js:L6 | neighbors=[PWARegister.js]
+- "components_toastprovider_toastprovider": "ToastProvider()" | kind=code-symbol | source=components/ToastProvider.js:L5 | neighbors=[ToastProvider.js]
+- "contact_route_post": "POST()" | kind=code-symbol | source=app/api/contact/route.js:L4 | neighbors=[route.js]
+- "context_offlinesynccontext_offlinesynccontext": "OfflineSyncContext" | kind=code-symbol | source=context/OfflineSyncContext.js:L5 | neighbors=[OfflineSyncContext.js]
+- "context_offlinesynccontext_useofflinesync": "useOfflineSync()" | kind=code-symbol | source=context/OfflineSyncContext.js:L20 | neighbors=[OfflineSyncContext.js]
+- "context_trackingcontext_generatesessionid": "generateSessionId()" | kind=code-symbol | source=app/context/TrackingContext.js:L8 | neighbors=[TrackingContext.js]
+- "context_trackingcontext_trackingcontext": "TrackingContext" | kind=code-symbol | source=app/context/TrackingContext.js:L6 | neighbors=[TrackingContext.js]
+- "context_trackingcontext_trackingprovider": "TrackingProvider()" | kind=code-symbol | source=app/context/TrackingContext.js:L12 | neighbors=[TrackingContext.js]
+- "context_trackingcontext_usetracking": "useTracking()" | kind=code-symbol | source=app/context/TrackingContext.js:L258 | neighbors=[TrackingContext.js]
+- "customer_layout_customerlayout": "CustomerLayout()" | kind=code-symbol | source=app/(customer)/layout.jsx:L64 | neighbors=[layout.jsx]
+- "customer_layout_theme": "theme" | kind=code-symbol | source=app/(customer)/layout.jsx:L8 | neighbors=[layout.jsx]
+- "customer_page_metadata": "metadata" | kind=code-symbol | source=app/(customer)/page.jsx:L3 | neighbors=[page.jsx]
+- "customer_page_rootpage": "RootPage()" | kind=code-symbol | source=app/(customer)/page.jsx:L8 | neighbors=[page.jsx]
+- "dashboard_dashboardcharts_customtooltip": "CustomTooltip()" | kind=code-symbol | source=app/(customer)/(dashboard)/dashboard/DashboardCharts.js:L18 | neighbors=[DashboardCharts.js]
+- "dashboard_error_dashboarderrorboundary": "DashboardErrorBoundary()" | kind=code-symbol | source=app/(customer)/(dashboard)/error.js:L8 | neighbors=[error.js]
+- "dashboard_layout_admindashboardlayout": "AdminDashboardLayout()" | kind=code-symbol | source=app/(customer)/(dashboard)/layout.js:L7 | neighbors=[layout.js]
+- "dashboard_page_admindashboardpage": "AdminDashboardPage()" | kind=code-symbol | source=app/(customer)/(dashboard)/dashboard/page.js:L789 | neighbors=[page.js]
+- "dashboard_page_dashboardcontent": "DashboardContent()" | kind=code-symbol | source=app/(customer)/(dashboard)/dashboard/page.js:L40 | neighbors=[page.js]
+- "dashboard_rangeselector_dashboardrangeselector": "DashboardRangeSelector()" | kind=code-symbol | source=app/(customer)/(dashboard)/dashboard/RangeSelector.js:L18 | neighbors=[RangeSelector.js]
 - "dashboard_rangeselector_quickranges": "quickRanges" | kind=code-symbol | source=app/(customer)/(dashboard)/dashboard/RangeSelector.js:L8 | neighbors=[RangeSelector.js]
 - "doctor_summary_page_doctorsummarypage": "DoctorSummaryPage()" | kind=code-symbol | source=app/(customer)/(dashboard)/doctor-summary/page.js:L61 | neighbors=[page.js]
 - "doctors_route_delete": "DELETE()" | kind=code-symbol | source=app/api/doctors/route.js:L170 | neighbors=[route.js]
@@ -37,26 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "generated_client_index_d_admin_trackingsargs": "Admin$trackingsArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L11866 | neighbors=[index.d.ts]
 - "generated_client_index_d_admin_workspaceargs": "Admin$workspaceArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L11816 | neighbors=[index.d.ts]
 - "generated_client_index_d_adminaddress": "AdminAddress" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L115 | neighbors=[index.d.ts]
-- "generated_client_index_d_adminaddressaggregateargs": "AdminAddressAggregateArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L24090 | neighbors=[index.d.ts]
-- "generated_client_index_d_adminaddressargs": "AdminAddressArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L54394 | neighbors=[index.d.ts]
-- "generated_client_index_d_adminaddressavgaggregateinputtype": "AdminAddressAvgAggregateInputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L24030 | neighbors=[index.d.ts]
-- "generated_client_index_d_adminaddressavgaggregateoutputtype": "AdminAddressAvgAggregateOutputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L23969 | neighbors=[index.d.ts]
-- "generated_client_index_d_adminaddressavgorderbyaggregateinput": "AdminAddressAvgOrderByAggregateInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L42184 | neighbors=[index.d.ts]
-- "generated_client_index_d_adminaddresscountaggregateinputtype": "AdminAddressCountAggregateInputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L24074 | neighbors=[index.d.ts]
-- "generated_client_index_d_adminaddresscountaggregateoutputtype": "AdminAddressCountAggregateOutputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L24013 | neighbors=[index.d.ts]
-- "generated_client_index_d_adminaddresscountargs": "AdminAddressCountArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L24270 | neighbors=[index.d.ts]
-- "generated_client_index_d_adminaddresscountorderbyaggregateinput": "AdminAddressCountOrderByAggregateInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L42169 | neighbors=[index.d.ts]
-- "generated_client_index_d_adminaddresscreateargs": "AdminAddressCreateArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L24828 | neighbors=[index.d.ts]
-- "generated_client_index_d_adminaddresscreateinput": "AdminAddressCreateInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L39446 | neighbors=[index.d.ts]
-- "generated_client_index_d_adminaddresscreatemanyargs": "AdminAddressCreateManyArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L24846 | neighbors=[index.d.ts]
-- "generated_client_index_d_adminaddresscreatemanyinput": "AdminAddressCreateManyInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L39504 | neighbors=[index.d.ts]
-- "generated_client_index_d_adminaddresscreatenestedonewithoutadmininput": "AdminAddressCreateNestedOneWithoutAdminInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L43477 | neighbors=[index.d.ts]
-- "generated_client_index_d_adminaddresscreateorconnectwithoutadmininput": "AdminAddressCreateOrConnectWithoutAdminInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L46887 | neighbors=[index.d.ts]
-- "generated_client_index_d_adminaddresscreatewithoutadmininput": "AdminAddressCreateWithoutAdminInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L46860 | neighbors=[index.d.ts]
-- "generated_client_index_d_adminaddressdefaultargs": "AdminAddressDefaultArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L24947 | neighbors=[index.d.ts]
-- "generated_client_index_d_adminaddressdelegate": "AdminAddressDelegate" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L24275 | neighbors=[index.d.ts]
-- "generated_client_index_d_adminaddressdeleteargs": "AdminAddressDeleteArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L24919 | neighbors=[index.d.ts]
-- "generated_client_index_d_adminaddressdeletemanyargs": "AdminAddressDeleteManyArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L24937 | neighbors=[index.d.ts]
 
 ## Instructions
 

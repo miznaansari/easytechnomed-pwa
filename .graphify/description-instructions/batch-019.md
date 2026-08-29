@@ -1,4 +1,4 @@
-# Node Description Batch 20 of 149
+# Node Description Batch 20 of 150
 
 Graphify is running in assistant/skill mode (no API key). You are the host
 assistant (Claude Code / Codex / Gemini CLI). Read the prompt below and write
@@ -17,6 +17,16 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "runtime_edge_getglobalomit": "getGlobalOmit()" | kind=code-symbol | source=scratch/generated-client/runtime/edge.js:L5 | neighbors=[edge.js, nt(), shouldApplyGlobalOmit(), ju()]
+- "runtime_edge_getname": "_getName()" | kind=code-symbol | source=scratch/generated-client/runtime/edge.js:L4 | neighbors=[edge.js, bo(), constructor(), Do()]
+- "runtime_edge_handleandlogrequesterror": "handleAndLogRequestError()" | kind=code-symbol | source=scratch/generated-client/runtime/edge.js:L20 | neighbors=[edge.js, emit(), handleRequestError(), request()]
+- "runtime_edge_hl": "hl()" | kind=code-symbol | source=scratch/generated-client/runtime/edge.js:L1 | neighbors=[edge.js, e(), toString(), Tr()]
+- "runtime_edge_hs": "hs()" | kind=code-symbol | source=scratch/generated-client/runtime/edge.js:L6 | neighbors=[edge.js, getAllQueryCallbacks(), gs(), isEmpty()]
+- "runtime_edge_isempty": "isEmpty()" | kind=code-symbol | source=scratch/generated-client/runtime/edge.js:L3 | neighbors=[edge.js, bu(), ds(), hs()]
+- "runtime_edge_isenabled": "isEnabled()" | kind=code-symbol | source=scratch/generated-client/runtime/edge.js:L20 | neighbors=[edge.js, build(), buildCaptureSettings(), getGlobalTracingHelper()]
+- "runtime_edge_it": "it()" | kind=code-symbol | source=scratch/generated-client/runtime/edge.js:L1 | neighbors=[edge.js, bo(), ht(), qs()]
+- "runtime_edge_jr": "jr()" | kind=code-symbol | source=scratch/generated-client/runtime/edge.js:L6 | neighbors=[edge.js, e(), ps(), xo()]
+- "runtime_edge_ko": "ko()" | kind=code-symbol | source=scratch/generated-client/runtime/edge.js:L5 | neighbors=[edge.js, Do(), dt(), addField()]
 - "runtime_edge_l": "l()" | kind=code-symbol | source=scratch/generated-client/runtime/edge.js:L1 | neighbors=[edge.js, ai(), a(), O()]
 - "runtime_edge_ms": "ms()" | kind=code-symbol | source=scratch/generated-client/runtime/edge.js:L6 | neighbors=[edge.js, Rt(), xc(), yt()]
 - "runtime_edge_mu": "mu()" | kind=code-symbol | source=scratch/generated-client/runtime/edge.js:L2 | neighbors=[edge.js, du(), addSuggestion(), hasField()]
@@ -47,16 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "runtime_index_browser_ee": "Ee()" | kind=code-symbol | source=scratch/generated-client/runtime/index-browser.js:L1 | neighbors=[index-browser.js, O(), p(), x()]
 - "runtime_index_browser_j": "j()" | kind=code-symbol | source=scratch/generated-client/runtime/index-browser.js:L1 | neighbors=[index-browser.js, e(), sn(), un()]
 - "runtime_index_browser_ke": "ke()" | kind=code-symbol | source=scratch/generated-client/runtime/index-browser.js:L1 | neighbors=[index-browser.js, F(), ie(), Ve()]
-- "runtime_index_browser_l": "L()" | kind=code-symbol | source=scratch/generated-client/runtime/index-browser.js:L1 | neighbors=[index-browser.js, e(), p(), mn()]
-- "runtime_index_browser_on": "on()" | kind=code-symbol | source=scratch/generated-client/runtime/index-browser.js:L1 | neighbors=[index-browser.js, ie(), p(), ue()]
-- "runtime_index_browser_se": "se()" | kind=code-symbol | source=scratch/generated-client/runtime/index-browser.js:L1 | neighbors=[index-browser.js, B(), e(), p()]
-- "runtime_index_browser_un": "un()" | kind=code-symbol | source=scratch/generated-client/runtime/index-browser.js:L1 | neighbors=[index-browser.js, e(), fe(), j()]
-- "runtime_library_addfield": "addField()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L27 | neighbors=[library.js, Fp(), qp(), zs()]
-- "runtime_library_afternextnewline": "afterNextNewline()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L26 | neighbors=[library.js, write(), writeWithContents(), writeWithItems()]
-- "runtime_library_build": "build()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L111 | neighbors=[library.js, buildCaptureSettings(), getTraceParent(), isEnabled()]
-- "runtime_library_createenginespan": "createEngineSpan()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L121 | neighbors=[library.js, getGlobalTracingHelper(), logger(), propagateResponseExtensions()]
-- "runtime_library_ct": "ct()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L111 | neighbors=[library.js, r(), to(), um()]
-- "runtime_library_d_queryable": "Queryable" | kind=code-symbol | neighbors=[_d(), DriverAdapter, Transaction, TransactionContext]
 
 ## Instructions
 

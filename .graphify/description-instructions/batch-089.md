@@ -1,4 +1,4 @@
-# Node Description Batch 90 of 149
+# Node Description Batch 90 of 150
 
 Graphify is running in assistant/skill mode (no API key). You are the host
 assistant (Claude Code / Codex / Gemini CLI). Read the prompt below and write
@@ -17,6 +17,26 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "generated_client_index_d_registrationrelationfilter": "RegistrationRelationFilter" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L41717 | neighbors=[index.d.ts]
+- "generated_client_index_d_registrationscalarfieldenum": "RegistrationScalarFieldEnum" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L34135 | neighbors=[index.d.ts]
+- "generated_client_index_d_registrationscalarwhereinput": "RegistrationScalarWhereInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L45820 | neighbors=[index.d.ts]
+- "generated_client_index_d_registrationscalarwherewithaggregatesinput": "RegistrationScalarWhereWithAggregatesInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L35801 | neighbors=[index.d.ts]
+- "generated_client_index_d_registrationselect": "RegistrationSelect" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L17556 | neighbors=[index.d.ts]
+- "generated_client_index_d_registrationselectscalar": "RegistrationSelectScalar" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L17608 | neighbors=[index.d.ts]
+- "generated_client_index_d_registrationsumaggregateinputtype": "RegistrationSumAggregateInputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L17260 | neighbors=[index.d.ts]
+- "generated_client_index_d_registrationsumaggregateoutputtype": "RegistrationSumAggregateOutputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L17093 | neighbors=[index.d.ts]
+- "generated_client_index_d_registrationsumorderbyaggregateinput": "RegistrationSumOrderByAggregateInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L41683 | neighbors=[index.d.ts]
+- "generated_client_index_d_registrationtest": "RegistrationTest" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L90 | neighbors=[index.d.ts]
+- "generated_client_index_d_registrationtestaggregateargs": "RegistrationTestAggregateArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L18702 | neighbors=[index.d.ts]
+- "generated_client_index_d_registrationtestargs": "RegistrationTestArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L54374 | neighbors=[index.d.ts]
+- "generated_client_index_d_registrationtestavgaggregateinputtype": "RegistrationTestAvgAggregateInputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L18639 | neighbors=[index.d.ts]
+- "generated_client_index_d_registrationtestavgaggregateoutputtype": "RegistrationTestAvgAggregateOutputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L18575 | neighbors=[index.d.ts]
+- "generated_client_index_d_registrationtestavgorderbyaggregateinput": "RegistrationTestAvgOrderByAggregateInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L41748 | neighbors=[index.d.ts]
+- "generated_client_index_d_registrationtestcountaggregateinputtype": "RegistrationTestCountAggregateInputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L18685 | neighbors=[index.d.ts]
+- "generated_client_index_d_registrationtestcountaggregateoutputtype": "RegistrationTestCountAggregateOutputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L18621 | neighbors=[index.d.ts]
+- "generated_client_index_d_registrationtestcountargs": "RegistrationTestCountArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L18889 | neighbors=[index.d.ts]
+- "generated_client_index_d_registrationtestcountorderbyaggregateinput": "RegistrationTestCountOrderByAggregateInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L41732 | neighbors=[index.d.ts]
+- "generated_client_index_d_registrationtestcreateargs": "RegistrationTestCreateArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L19449 | neighbors=[index.d.ts]
 - "generated_client_index_d_registrationtestcreateinput": "RegistrationTestCreateInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L38792 | neighbors=[index.d.ts]
 - "generated_client_index_d_registrationtestcreatemanyargs": "RegistrationTestCreateManyArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L19467 | neighbors=[index.d.ts]
 - "generated_client_index_d_registrationtestcreatemanyinput": "RegistrationTestCreateManyInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L38856 | neighbors=[index.d.ts]
@@ -37,26 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "generated_client_index_d_registrationtestfieldrefs": "RegistrationTestFieldRefs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L19253 | neighbors=[index.d.ts]
 - "generated_client_index_d_registrationtestfindfirstargs": "RegistrationTestFindFirstArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L19310 | neighbors=[index.d.ts]
 - "generated_client_index_d_registrationtestfindfirstorthrowargs": "RegistrationTestFindFirstOrThrowArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L19358 | neighbors=[index.d.ts]
-- "generated_client_index_d_registrationtestfindmanyargs": "RegistrationTestFindManyArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L19406 | neighbors=[index.d.ts]
-- "generated_client_index_d_registrationtestfinduniqueargs": "RegistrationTestFindUniqueArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L19274 | neighbors=[index.d.ts]
-- "generated_client_index_d_registrationtestfinduniqueorthrowargs": "RegistrationTestFindUniqueOrThrowArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L19292 | neighbors=[index.d.ts]
-- "generated_client_index_d_registrationtestgetpayload": "RegistrationTestGetPayload" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L18887 | neighbors=[index.d.ts]
-- "generated_client_index_d_registrationtestgroupbyargs": "RegistrationTestGroupByArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L18774 | neighbors=[index.d.ts]
-- "generated_client_index_d_registrationtestgroupbyoutputtype": "RegistrationTestGroupByOutputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L18788 | neighbors=[index.d.ts]
-- "generated_client_index_d_registrationtestinclude": "RegistrationTestInclude" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L18858 | neighbors=[index.d.ts]
-- "generated_client_index_d_registrationtestlistrelationfilter": "RegistrationTestListRelationFilter" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L41357 | neighbors=[index.d.ts]
-- "generated_client_index_d_registrationtestmaxaggregateinputtype": "RegistrationTestMaxAggregateInputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L18669 | neighbors=[index.d.ts]
-- "generated_client_index_d_registrationtestmaxaggregateoutputtype": "RegistrationTestMaxAggregateOutputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L18605 | neighbors=[index.d.ts]
-- "generated_client_index_d_registrationtestmaxorderbyaggregateinput": "RegistrationTestMaxOrderByAggregateInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L41755 | neighbors=[index.d.ts]
-- "generated_client_index_d_registrationtestminaggregateinputtype": "RegistrationTestMinAggregateInputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L18653 | neighbors=[index.d.ts]
-- "generated_client_index_d_registrationtestminaggregateoutputtype": "RegistrationTestMinAggregateOutputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L18589 | neighbors=[index.d.ts]
-- "generated_client_index_d_registrationtestminorderbyaggregateinput": "RegistrationTestMinOrderByAggregateInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L41771 | neighbors=[index.d.ts]
-- "generated_client_index_d_registrationtestorderbyrelationaggregateinput": "RegistrationTestOrderByRelationAggregateInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L41363 | neighbors=[index.d.ts]
-- "generated_client_index_d_registrationtestorderbywithaggregationinput": "RegistrationTestOrderByWithAggregationInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L35908 | neighbors=[index.d.ts]
-- "generated_client_index_d_registrationtestorderbywithrelationinput": "RegistrationTestOrderByWithRelationInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L35868 | neighbors=[index.d.ts]
-- "generated_client_index_d_registrationtestpayload": "$RegistrationTestPayload" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L18863 | neighbors=[index.d.ts]
-- "generated_client_index_d_registrationtestregistrationidtestidcompounduniqueinput": "RegistrationTestRegistrationIdTestIdCompoundUniqueInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L41727 | neighbors=[index.d.ts]
-- "generated_client_index_d_registrationtestscalarfieldenum": "RegistrationTestScalarFieldEnum" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L34154 | neighbors=[index.d.ts]
 
 ## Instructions
 

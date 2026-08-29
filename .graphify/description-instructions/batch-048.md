@@ -1,4 +1,4 @@
-# Node Description Batch 49 of 149
+# Node Description Batch 49 of 150
 
 Graphify is running in assistant/skill mode (no API key). You are the host
 assistant (Claude Code / Codex / Gemini CLI). Read the prompt below and write
@@ -17,6 +17,26 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "runtime_wasm_gettraceparent": "getTraceParent()" | kind=code-symbol | source=scratch/generated-client/runtime/wasm.js:L21 | neighbors=[wasm.js, getGlobalTracingHelper()]
+- "runtime_wasm_go": "go()" | kind=code-symbol | source=scratch/generated-client/runtime/wasm.js:L21 | neighbors=[wasm.js, includes()]
+- "runtime_wasm_hi": "hi()" | kind=code-symbol | source=scratch/generated-client/runtime/wasm.js:L5 | neighbors=[wasm.js, wt()]
+- "runtime_wasm_indent": "indent()" | kind=code-symbol | source=scratch/generated-client/runtime/wasm.js:L2 | neighbors=[wasm.js, withIndent()]
+- "runtime_wasm_inspect": "inspect()" | kind=code-symbol | source=scratch/generated-client/runtime/wasm.js:L1 | neighbors=[wasm.js, toString()]
+- "runtime_wasm_ir": "Ir()" | kind=code-symbol | source=scratch/generated-client/runtime/wasm.js:L4 | neighbors=[wasm.js, ya()]
+- "runtime_wasm_isenabled": "isEnabled()" | kind=code-symbol | source=scratch/generated-client/runtime/wasm.js:L21 | neighbors=[wasm.js, getGlobalTracingHelper()]
+- "runtime_wasm_isencoding": "isEncoding()" | kind=code-symbol | source=scratch/generated-client/runtime/wasm.js:L1 | neighbors=[wasm.js, includes()]
+- "runtime_wasm_ja": "ja()" | kind=code-symbol | source=scratch/generated-client/runtime/wasm.js:L12 | neighbors=[wasm.js, transaction()]
+- "runtime_wasm_ji": "ji()" | kind=code-symbol | source=scratch/generated-client/runtime/wasm.js:L6 | neighbors=[wasm.js, qi()]
+- "runtime_wasm_json": "json()" | kind=code-symbol | source=scratch/generated-client/runtime/wasm.js:L5 | neighbors=[wasm.js, metrics()]
+- "runtime_wasm_lastindexof": "lastIndexOf()" | kind=code-symbol | source=scratch/generated-client/runtime/wasm.js:L1 | neighbors=[wasm.js, indexOf()]
+- "runtime_wasm_le": "le()" | kind=code-symbol | source=scratch/generated-client/runtime/wasm.js:L1 | neighbors=[wasm.js, from()]
+- "runtime_wasm_ma": "Ma()" | kind=code-symbol | source=scratch/generated-client/runtime/wasm.js:L6 | neighbors=[wasm.js, includes()]
+- "runtime_wasm_mapqueryengineresult": "mapQueryEngineResult()" | kind=code-symbol | source=scratch/generated-client/runtime/wasm.js:L21 | neighbors=[wasm.js, unpack()]
+- "runtime_wasm_mr": "mr()" | kind=code-symbol | source=scratch/generated-client/runtime/wasm.js:L21 | neighbors=[wasm.js, ya()]
+- "runtime_wasm_parseiniterror": "parseInitError()" | kind=code-symbol | source=scratch/generated-client/runtime/wasm.js:L11 | neighbors=[wasm.js, loadEngine()]
+- "runtime_wasm_parserequesterror": "parseRequestError()" | kind=code-symbol | source=scratch/generated-client/runtime/wasm.js:L11 | neighbors=[wasm.js, request()]
+- "runtime_wasm_prometheus": "prometheus()" | kind=code-symbol | source=scratch/generated-client/runtime/wasm.js:L5 | neighbors=[wasm.js, metrics()]
+- "runtime_wasm_qa": "Qa()" | kind=code-symbol | source=scratch/generated-client/runtime/wasm.js:L14 | neighbors=[wasm.js, so()]
 - "runtime_wasm_qt": "qt()" | kind=code-symbol | source=scratch/generated-client/runtime/wasm.js:L1 | neighbors=[wasm.js, getExternalAdapterError()]
 - "runtime_wasm_random": "random()" | kind=code-symbol | source=scratch/generated-client/runtime/wasm.js:L1 | neighbors=[wasm.js, slice()]
 - "runtime_wasm_removefield": "removeField()" | kind=code-symbol | source=scratch/generated-client/runtime/wasm.js:L3 | neighbors=[wasm.js, _s()]
@@ -37,26 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "runtime_wasm_wa": "wa()" | kind=code-symbol | source=scratch/generated-client/runtime/wasm.js:L6 | neighbors=[wasm.js, tt()]
 - "runtime_wasm_wo": "wo()" | kind=code-symbol | source=scratch/generated-client/runtime/wasm.js:L21 | neighbors=[wasm.js, unpack()]
 - "runtime_wasm_writeintbe": "writeIntBE()" | kind=code-symbol | source=scratch/generated-client/runtime/wasm.js:L1 | neighbors=[wasm.js, writeUIntBE()]
-- "runtime_wasm_writeintle": "writeIntLE()" | kind=code-symbol | source=scratch/generated-client/runtime/wasm.js:L1 | neighbors=[wasm.js, writeUIntLE()]
-- "runtime_wasm_writejoined": "writeJoined()" | kind=code-symbol | source=scratch/generated-client/runtime/wasm.js:L2 | neighbors=[wasm.js, write()]
-- "runtime_wasm_xa": "xa()" | kind=code-symbol | source=scratch/generated-client/runtime/wasm.js:L6 | neighbors=[wasm.js, si()]
-- "runtime_wasm_xi": "xi()" | kind=code-symbol | source=scratch/generated-client/runtime/wasm.js:L5 | neighbors=[wasm.js, fill()]
-- "runtime_wasm_xn": "Xn()" | kind=code-symbol | source=scratch/generated-client/runtime/wasm.js:L4 | neighbors=[wasm.js, dt()]
-- "runtime_wasm_xo": "xo()" | kind=code-symbol | source=scratch/generated-client/runtime/wasm.js:L21 | neighbors=[wasm.js, za()]
-- "runtime_wasm_yo": "Yo()" | kind=code-symbol | source=scratch/generated-client/runtime/wasm.js:L1 | neighbors=[wasm.js, from()]
-- "runtime_wasm_zs": "Zs()" | kind=code-symbol | source=scratch/generated-client/runtime/wasm.js:L5 | neighbors=[wasm.js, li()]
-- "samples_route_get": "GET()" | kind=code-symbol | source=app/api/registrations/[id]/samples/route.js:L10 | neighbors=[route.js, serializeData()]
-- "samples_route_serializedata": "serializeData()" | kind=code-symbol | source=app/api/registrations/[id]/samples/route.js:L6 | neighbors=[route.js, GET()]
-- "scratch_backfill_counters_generaterandomsuffix": "generateRandomSuffix()" | kind=code-symbol | source=scratch-backfill-counters.js:L4 | neighbors=[scratch-backfill-counters.js, main()]
-- "scratch_backfill_counters_main": "main()" | kind=code-symbol | source=scratch-backfill-counters.js:L13 | neighbors=[scratch-backfill-counters.js, generateRandomSuffix()]
-- "scratch_check_reg_14": "check-reg-14.js" | kind=code-symbol | source=scratch/check-reg-14.js:L1 | neighbors=[252e194 e, main()]
-- "scratch_check_reg_22": "check-reg-22.js" | kind=code-symbol | source=scratch/check-reg-22.js:L1 | neighbors=[252e194 e, main()]
-- "scratch_test_calc_checkformuladependencies": "checkFormulaDependencies()" | kind=code-symbol | source=scratch/test-calc.js:L64 | neighbors=[test-calc.js, calculateAllDependents()]
-- "scratch_test_calc_evaluateexpression": "evaluateExpression()" | kind=code-symbol | source=scratch/test-calc.js:L21 | neighbors=[test-calc.js, calculateAllDependents()]
-- "scratch_test_calc_export_calculatedifferentialsummary": "calculateDifferentialSummary()" | kind=code-symbol | source=scratch/test-calc-export.js:L67 | neighbors=[test-calc-export.js, test-dlc-calc.js]
-- "scratch_test_db": "test-db.mjs" | kind=code-symbol | source=scratch/test-db.mjs:L1 | neighbors=[252e194 e, main()]
-- "scratch_test_report_security": "test-report-security.mjs" | kind=code-symbol | source=scratch/test-report-security.mjs:L1 | neighbors=[252e194 e, runSecurityTests()]
-- "scratch_test_sync_bootstrap": "test-sync-bootstrap.mjs" | kind=code-symbol | source=scratch/test-sync-bootstrap.mjs:L1 | neighbors=[7d8c494 fxed, verifyBackendEndpoints()]
 
 ## Instructions
 

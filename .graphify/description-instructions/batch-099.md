@@ -1,4 +1,4 @@
-# Node Description Batch 100 of 149
+# Node Description Batch 100 of 150
 
 Graphify is running in assistant/skill mode (no API key). You are the host
 assistant (Claude Code / Codex / Gemini CLI). Read the prompt below and write
@@ -17,6 +17,26 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "generated_client_index_d_superadminupdatetoonewithwherewithouttrackingsinput": "SuperAdminUpdateToOneWithWhereWithoutTrackingsInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L50689 | neighbors=[index.d.ts]
+- "generated_client_index_d_superadminupdatewithoutsessionsinput": "SuperAdminUpdateWithoutSessionsInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L46342 | neighbors=[index.d.ts]
+- "generated_client_index_d_superadminupdatewithouttrackingsinput": "SuperAdminUpdateWithoutTrackingsInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L50694 | neighbors=[index.d.ts]
+- "generated_client_index_d_superadminupsertargs": "SuperAdminUpsertArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L5765 | neighbors=[index.d.ts]
+- "generated_client_index_d_superadminupsertwithoutsessionsinput": "SuperAdminUpsertWithoutSessionsInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L46331 | neighbors=[index.d.ts]
+- "generated_client_index_d_superadminupsertwithouttrackingsinput": "SuperAdminUpsertWithoutTrackingsInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L50683 | neighbors=[index.d.ts]
+- "generated_client_index_d_superadminwhereinput": "SuperAdminWhereInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L34584 | neighbors=[index.d.ts]
+- "generated_client_index_d_superadminwhereuniqueinput": "SuperAdminWhereUniqueInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L34609 | neighbors=[index.d.ts]
+- "generated_client_index_d_test": "Test" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L80 | neighbors=[index.d.ts]
+- "generated_client_index_d_test_departmentargs": "Test$departmentArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L16941 | neighbors=[index.d.ts]
+- "generated_client_index_d_test_formulasargs": "Test$formulasArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L17011 | neighbors=[index.d.ts]
+- "generated_client_index_d_test_interpretationrulesargs": "Test$interpretationRulesArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L17031 | neighbors=[index.d.ts]
+- "generated_client_index_d_test_parametersargs": "Test$parametersArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L16991 | neighbors=[index.d.ts]
+- "generated_client_index_d_test_registrationsargs": "Test$registrationsArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L16956 | neighbors=[index.d.ts]
+- "generated_client_index_d_test_workspaceargs": "Test$workspaceArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L16976 | neighbors=[index.d.ts]
+- "generated_client_index_d_testaggregateargs": "TestAggregateArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L16017 | neighbors=[index.d.ts]
+- "generated_client_index_d_testargs": "TestArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L54366 | neighbors=[index.d.ts]
+- "generated_client_index_d_testavgaggregateinputtype": "TestAvgAggregateInputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L15914 | neighbors=[index.d.ts]
+- "generated_client_index_d_testavgaggregateoutputtype": "TestAvgAggregateOutputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L15810 | neighbors=[index.d.ts]
+- "generated_client_index_d_testavgorderbyaggregateinput": "TestAvgOrderByAggregateInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L41396 | neighbors=[index.d.ts]
 - "generated_client_index_d_testcountaggregateinputtype": "TestCountAggregateInputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L15992 | neighbors=[index.d.ts]
 - "generated_client_index_d_testcountaggregateoutputtype": "TestCountAggregateOutputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L15888 | neighbors=[index.d.ts]
 - "generated_client_index_d_testcountargs": "TestCountArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L16250 | neighbors=[index.d.ts]
@@ -37,26 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "generated_client_index_d_testcreatemanyinput": "TestCreateManyInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L38417 | neighbors=[index.d.ts]
 - "generated_client_index_d_testcreatemanyworkspaceinput": "TestCreateManyWorkspaceInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L51847 | neighbors=[index.d.ts]
 - "generated_client_index_d_testcreatemanyworkspaceinputenvelope": "TestCreateManyWorkspaceInputEnvelope" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L45389 | neighbors=[index.d.ts]
-- "generated_client_index_d_testcreatenestedmanywithoutdepartmentinput": "TestCreateNestedManyWithoutDepartmentInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L44673 | neighbors=[index.d.ts]
-- "generated_client_index_d_testcreatenestedmanywithoutworkspaceinput": "TestCreateNestedManyWithoutWorkspaceInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L42758 | neighbors=[index.d.ts]
-- "generated_client_index_d_testcreatenestedonewithoutformulasinput": "TestCreateNestedOneWithoutFormulasInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L44721 | neighbors=[index.d.ts]
-- "generated_client_index_d_testcreatenestedonewithoutinterpretationrulesinput": "TestCreateNestedOneWithoutInterpretationRulesInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L44765 | neighbors=[index.d.ts]
-- "generated_client_index_d_testcreatenestedonewithoutparametersinput": "TestCreateNestedOneWithoutParametersInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L44518 | neighbors=[index.d.ts]
-- "generated_client_index_d_testcreatenestedonewithoutregistrationsinput": "TestCreateNestedOneWithoutRegistrationsInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L44327 | neighbors=[index.d.ts]
-- "generated_client_index_d_testcreateorconnectwithoutdepartmentinput": "TestCreateOrConnectWithoutDepartmentInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L50766 | neighbors=[index.d.ts]
-- "generated_client_index_d_testcreateorconnectwithoutformulasinput": "TestCreateOrConnectWithoutFormulasInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L50891 | neighbors=[index.d.ts]
-- "generated_client_index_d_testcreateorconnectwithoutinterpretationrulesinput": "TestCreateOrConnectWithoutInterpretationRulesInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L51285 | neighbors=[index.d.ts]
-- "generated_client_index_d_testcreateorconnectwithoutparametersinput": "TestCreateOrConnectWithoutParametersInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L49674 | neighbors=[index.d.ts]
-- "generated_client_index_d_testcreateorconnectwithoutregistrationsinput": "TestCreateOrConnectWithoutRegistrationsInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L49030 | neighbors=[index.d.ts]
-- "generated_client_index_d_testcreateorconnectwithoutworkspaceinput": "TestCreateOrConnectWithoutWorkspaceInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L45384 | neighbors=[index.d.ts]
-- "generated_client_index_d_testcreatewithoutdepartmentinput": "TestCreateWithoutDepartmentInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L50713 | neighbors=[index.d.ts]
-- "generated_client_index_d_testcreatewithoutformulasinput": "TestCreateWithoutFormulasInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L50838 | neighbors=[index.d.ts]
-- "generated_client_index_d_testcreatewithoutinterpretationrulesinput": "TestCreateWithoutInterpretationRulesInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L51232 | neighbors=[index.d.ts]
-- "generated_client_index_d_testcreatewithoutparametersinput": "TestCreateWithoutParametersInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L49621 | neighbors=[index.d.ts]
-- "generated_client_index_d_testcreatewithoutregistrationsinput": "TestCreateWithoutRegistrationsInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L48977 | neighbors=[index.d.ts]
-- "generated_client_index_d_testcreatewithoutworkspaceinput": "TestCreateWithoutWorkspaceInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L45331 | neighbors=[index.d.ts]
-- "generated_client_index_d_testdefaultargs": "TestDefaultArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L17051 | neighbors=[index.d.ts]
-- "generated_client_index_d_testdelegate": "TestDelegate" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L16255 | neighbors=[index.d.ts]
 
 ## Instructions
 

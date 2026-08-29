@@ -1,4 +1,4 @@
-# Node Description Batch 14 of 149
+# Node Description Batch 14 of 150
 
 Graphify is running in assistant/skill mode (no API key). You are the host
 assistant (Claude Code / Codex / Gemini CLI). Read the prompt below and write
@@ -17,6 +17,12 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "runtime_edge_esm_ya": "ya()" | kind=code-symbol | source=scratch/generated-client/runtime/edge-esm.js:L1 | neighbors=[edge-esm.js, si(), de(), li(), Xr()]
+- "runtime_edge_eu": "eu()" | kind=code-symbol | source=scratch/generated-client/runtime/edge.js:L1 | neighbors=[edge.js, addErrorMessage(), addSuggestion(), O(), removeAllFields()]
+- "runtime_edge_fc": "Fc()" | kind=code-symbol | source=scratch/generated-client/runtime/edge.js:L12 | neighbors=[edge.js, _c(), Qe(), text(), ks()]
+- "runtime_edge_fi": "fi()" | kind=code-symbol | source=scratch/generated-client/runtime/edge.js:L1 | neighbors=[edge.js, de(), nn(), vi(), Ta()]
+- "runtime_edge_getselectionparent": "getSelectionParent()" | kind=code-symbol | source=scratch/generated-client/runtime/edge.js:L3 | neighbors=[edge.js, getDeepSelectionParent(), asObject(), getField(), getSubSelectionValue()]
+- "runtime_edge_ke": "ke()" | kind=code-symbol | source=scratch/generated-client/runtime/edge.js:L1 | neighbors=[edge.js, kt(), O(), xr(), Y()]
 - "runtime_edge_ln": "ln()" | kind=code-symbol | source=scratch/generated-client/runtime/edge.js:L1 | neighbors=[edge.js, Aa(), gi(), Ia(), ql()]
 - "runtime_edge_me": "me()" | kind=code-symbol | source=scratch/generated-client/runtime/edge.js:L1 | neighbors=[edge.js, fo(), Oe(), Y(), vn()]
 - "runtime_edge_mo": "mo()" | kind=code-symbol | source=scratch/generated-client/runtime/edge.js:L1 | neighbors=[edge.js, jl(), e(), r(), vl()]
@@ -51,12 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "runtime_library_an": "an()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L21 | neighbors=[library.js, e(), ka(), Rc(), vc()]
 - "runtime_library_as": "As()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L21 | neighbors=[library.js, e(), r(), kc(), zc()]
 - "runtime_library_buildqueryerror": "buildQueryError()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L113 | neighbors=[library.js, getExternalAdapterError(), st(), request(), requestBatch()]
-- "runtime_library_d_nulltypesenumvalue": "NullTypesEnumValue" | kind=code-symbol | neighbors=[_d(), AnyNull, DbNull, JsonNull, ObjectEnumValue]
-- "runtime_library_findfield": "findField()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L29 | neighbors=[library.js, id(), nd(), nestSelection(), rd()]
-- "runtime_library_getexternaladaptererror": "getExternalAdapterError()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L113 | neighbors=[library.js, buildQueryError(), consumeError(), Yr(), transaction()]
-- "runtime_library_getselectionparent": "getSelectionParent()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L27 | neighbors=[library.js, getDeepSelectionParent(), asObject(), getField(), getSubSelectionValue()]
-- "runtime_library_handlerequesterror": "handleRequestError()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L121 | neighbors=[library.js, handleAndLogRequestError(), sanitizeMessage(), Tt(), wn()]
-- "runtime_library_ja": "Ja()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L45 | neighbors=[library.js, Dn(), kn(), Xe(), za()]
 
 ## Instructions
 

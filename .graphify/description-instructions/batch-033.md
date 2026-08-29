@@ -1,4 +1,4 @@
-# Node Description Batch 34 of 149
+# Node Description Batch 34 of 150
 
 Graphify is running in assistant/skill mode (no API key). You are the host
 assistant (Claude Code / Codex / Gemini CLI). Read the prompt below and write
@@ -17,6 +17,23 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "runtime_react_native_ur": "ur()" | kind=code-symbol | source=scratch/generated-client/runtime/react-native.js:L2 | neighbors=[react-native.js, bn(), Rl()]
+- "runtime_react_native_ut": "ut()" | kind=code-symbol | source=scratch/generated-client/runtime/react-native.js:L7 | neighbors=[react-native.js, handleRequestError(), Sr()]
+- "runtime_react_native_vc": "Vc()" | kind=code-symbol | source=scratch/generated-client/runtime/react-native.js:L12 | neighbors=[react-native.js, $n(), Pe()]
+- "runtime_react_native_wn": "wn()" | kind=code-symbol | source=scratch/generated-client/runtime/react-native.js:L2 | neighbors=[react-native.js, Rl(), slice()]
+- "runtime_react_native_xo": "xo()" | kind=code-symbol | source=scratch/generated-client/runtime/react-native.js:L9 | neighbors=[react-native.js, to(), jc()]
+- "runtime_react_native_xu": "Xu()" | kind=code-symbol | source=scratch/generated-client/runtime/react-native.js:L10 | neighbors=[react-native.js, to(), addItem()]
+- "runtime_react_native_z": "Z()" | kind=code-symbol | source=scratch/generated-client/runtime/react-native.js:L2 | neighbors=[react-native.js, be(), Yn()]
+- "runtime_wasm_allocunsafe": "allocUnsafe()" | kind=code-symbol | source=scratch/generated-client/runtime/wasm.js:L1 | neighbors=[wasm.js, alloc(), from()]
+- "runtime_wasm_append": "append()" | kind=code-symbol | source=scratch/generated-client/runtime/wasm.js:L5 | neighbors=[wasm.js, e(), ni()]
+- "runtime_wasm_at": "at()" | kind=code-symbol | source=scratch/generated-client/runtime/wasm.js:L1 | neighbors=[wasm.js, ds(), to()]
+- "runtime_wasm_bi": "bi()" | kind=code-symbol | source=scratch/generated-client/runtime/wasm.js:L5 | neighbors=[wasm.js, isEmpty(), sr()]
+- "runtime_wasm_copy": "copy()" | kind=code-symbol | source=scratch/generated-client/runtime/wasm.js:L1 | neighbors=[wasm.js, V(), write()]
+- "runtime_wasm_createenginespan": "createEngineSpan()" | kind=code-symbol | source=scratch/generated-client/runtime/wasm.js:L21 | neighbors=[wasm.js, getGlobalTracingHelper(), logger()]
+- "runtime_wasm_da": "da()" | kind=code-symbol | source=scratch/generated-client/runtime/wasm.js:L5 | neighbors=[wasm.js, H(), Ie()]
+- "runtime_wasm_dt": "dt()" | kind=code-symbol | source=scratch/generated-client/runtime/wasm.js:L4 | neighbors=[wasm.js, e(), Xn()]
+- "runtime_wasm_emit": "emit()" | kind=code-symbol | source=scratch/generated-client/runtime/wasm.js:L1 | neighbors=[wasm.js, handleAndLogRequestError(), logger()]
+- "runtime_wasm_es": "es()" | kind=code-symbol | source=scratch/generated-client/runtime/wasm.js:L1 | neighbors=[wasm.js, be(), from()]
 - "runtime_wasm_getallclientextensions": "getAllClientExtensions()" | kind=code-symbol | source=scratch/generated-client/runtime/wasm.js:L5 | neighbors=[wasm.js, get(), tt()]
 - "runtime_wasm_getallmodelextensions": "getAllModelExtensions()" | kind=code-symbol | source=scratch/generated-client/runtime/wasm.js:L5 | neighbors=[wasm.js, getOrCreate(), Wr()]
 - "runtime_wasm_getallquerycallbacks": "getAllQueryCallbacks()" | kind=code-symbol | source=scratch/generated-client/runtime/wasm.js:L5 | neighbors=[wasm.js, getOrCreate(), qi()]
@@ -40,23 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "runtime_wasm_pa": "Pa()" | kind=code-symbol | source=scratch/generated-client/runtime/wasm.js:L6 | neighbors=[wasm.js, oi(), tt()]
 - "runtime_wasm_pe": "Pe()" | kind=code-symbol | source=scratch/generated-client/runtime/wasm.js:L1 | neighbors=[wasm.js, ae(), ke()]
 - "runtime_wasm_removeallfields": "removeAllFields()" | kind=code-symbol | source=scratch/generated-client/runtime/wasm.js:L3 | neighbors=[wasm.js, ds(), _s()]
-- "runtime_wasm_reverse": "reverse()" | kind=code-symbol | source=scratch/generated-client/runtime/wasm.js:L1 | neighbors=[wasm.js, mn(), un()]
-- "runtime_wasm_setcolor": "setColor()" | kind=code-symbol | source=scratch/generated-client/runtime/wasm.js:L3 | neighbors=[wasm.js, write(), writeEmpty()]
-- "runtime_wasm_shouldapplyglobalomit": "shouldApplyGlobalOmit()" | kind=code-symbol | source=scratch/generated-client/runtime/wasm.js:L5 | neighbors=[wasm.js, getGlobalOmit(), be()]
-- "runtime_wasm_sn": "sn()" | kind=code-symbol | source=scratch/generated-client/runtime/wasm.js:L1 | neighbors=[wasm.js, indexOf(), slice()]
-- "runtime_wasm_ss": "Ss()" | kind=code-symbol | source=scratch/generated-client/runtime/wasm.js:L2 | neighbors=[wasm.js, as(), concat()]
-- "runtime_wasm_to": "to()" | kind=code-symbol | source=scratch/generated-client/runtime/wasm.js:L12 | neighbors=[wasm.js, at(), Ce()]
-- "runtime_wasm_ve": "Ve()" | kind=code-symbol | source=scratch/generated-client/runtime/wasm.js:L1 | neighbors=[wasm.js, getGlobalOmit(), ls()]
-- "runtime_wasm_vt": "vt()" | kind=code-symbol | source=scratch/generated-client/runtime/wasm.js:L5 | neighbors=[wasm.js, tt(), Wr()]
-- "runtime_wasm_wt": "wt()" | kind=code-symbol | source=scratch/generated-client/runtime/wasm.js:L5 | neighbors=[wasm.js, constructor(), hi()]
-- "runtime_wasm_xs": "Xs()" | kind=code-symbol | source=scratch/generated-client/runtime/wasm.js:L5 | neighbors=[wasm.js, si(), addItem()]
-- "runtime_wasm_ya": "ya()" | kind=code-symbol | source=scratch/generated-client/runtime/wasm.js:L5 | neighbors=[wasm.js, Ir(), mr()]
-- "runtime_wasm_za": "za()" | kind=code-symbol | source=scratch/generated-client/runtime/wasm.js:L21 | neighbors=[wasm.js, be(), xo()]
-- "scratch_test_calc_calculatealldependents": "calculateAllDependents()" | kind=code-symbol | source=scratch/test-calc.js:L76 | neighbors=[test-calc.js, checkFormulaDependencies(), evaluateExpression()]
-- "scratch_test_calc_export": "test-calc-export.js" | kind=code-symbol | source=scratch/test-calc-export.js:L1 | neighbors=[252e194 e, calculateDifferentialSummary(), DLC_DEFINITIONS]
-- "scratch_test_reg_15": "test-reg-15.js" | kind=code-symbol | source=scratch/test-reg-15.js:L1 | neighbors=[252e194 e, runFormulaEngine(), main()]
-- "seed_parameters_route": "route.js" | kind=code-symbol | source=app/api/seed-parameters/route.js:L1 | neighbors=[252e194 e, GET(), processTestParameters()]
-- "settings_route": "route.js" | kind=code-symbol | source=app/api/settings/route.js:L1 | neighbors=[252e194 e, GET(), POST()]
 
 ## Instructions
 

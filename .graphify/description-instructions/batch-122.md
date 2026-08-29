@@ -1,4 +1,4 @@
-# Node Description Batch 123 of 149
+# Node Description Batch 123 of 150
 
 Graphify is running in assistant/skill mode (no API key). You are the host
 assistant (Claude Code / Codex / Gemini CLI). Read the prompt below and write
@@ -17,6 +17,26 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "generated_client_index_d_workspacepdfuncheckedcreateinput": "WorkspacePdfUncheckedCreateInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L40154 | neighbors=[index.d.ts]
+- "generated_client_index_d_workspacepdfuncheckedcreatenestedonewithoutworkspaceinput": "WorkspacePdfUncheckedCreateNestedOneWithoutWorkspaceInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L42869 | neighbors=[index.d.ts]
+- "generated_client_index_d_workspacepdfuncheckedcreatewithoutworkspaceinput": "WorkspacePdfUncheckedCreateWithoutWorkspaceInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L45683 | neighbors=[index.d.ts]
+- "generated_client_index_d_workspacepdfuncheckedupdateinput": "WorkspacePdfUncheckedUpdateInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L40225 | neighbors=[index.d.ts]
+- "generated_client_index_d_workspacepdfuncheckedupdatemanyinput": "WorkspacePdfUncheckedUpdateManyInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L40331 | neighbors=[index.d.ts]
+- "generated_client_index_d_workspacepdfuncheckedupdateonewithoutworkspacenestedinput": "WorkspacePdfUncheckedUpdateOneWithoutWorkspaceNestedInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L43161 | neighbors=[index.d.ts]
+- "generated_client_index_d_workspacepdfuncheckedupdatewithoutworkspaceinput": "WorkspacePdfUncheckedUpdateWithoutWorkspaceInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L46154 | neighbors=[index.d.ts]
+- "generated_client_index_d_workspacepdfupdateargs": "WorkspacePdfUpdateArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L33775 | neighbors=[index.d.ts]
+- "generated_client_index_d_workspacepdfupdateinput": "WorkspacePdfUpdateInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L40190 | neighbors=[index.d.ts]
+- "generated_client_index_d_workspacepdfupdatemanyargs": "WorkspacePdfUpdateManyArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L33797 | neighbors=[index.d.ts]
+- "generated_client_index_d_workspacepdfupdatemanymutationinput": "WorkspacePdfUpdateManyMutationInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L40297 | neighbors=[index.d.ts]
+- "generated_client_index_d_workspacepdfupdateonewithoutworkspacenestedinput": "WorkspacePdfUpdateOneWithoutWorkspaceNestedInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L43025 | neighbors=[index.d.ts]
+- "generated_client_index_d_workspacepdfupdatetoonewithwherewithoutworkspaceinput": "WorkspacePdfUpdateToOneWithWhereWithoutWorkspaceInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L46115 | neighbors=[index.d.ts]
+- "generated_client_index_d_workspacepdfupdatewithoutworkspaceinput": "WorkspacePdfUpdateWithoutWorkspaceInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L46120 | neighbors=[index.d.ts]
+- "generated_client_index_d_workspacepdfupsertargs": "WorkspacePdfUpsertArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L33811 | neighbors=[index.d.ts]
+- "generated_client_index_d_workspacepdfupsertwithoutworkspaceinput": "WorkspacePdfUpsertWithoutWorkspaceInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L46109 | neighbors=[index.d.ts]
+- "generated_client_index_d_workspacepdfwhereinput": "WorkspacePdfWhereInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L37094 | neighbors=[index.d.ts]
+- "generated_client_index_d_workspacepdfwhereuniqueinput": "WorkspacePdfWhereUniqueInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L37171 | neighbors=[index.d.ts]
+- "generated_client_index_d_workspacerelationfilter": "WorkspaceRelationFilter" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L42596 | neighbors=[index.d.ts]
+- "generated_client_index_d_workspacescalarfieldenum": "WorkspaceScalarFieldEnum" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L33903 | neighbors=[index.d.ts]
 - "generated_client_index_d_workspacescalarwherewithaggregatesinput": "WorkspaceScalarWhereWithAggregatesInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L34569 | neighbors=[index.d.ts]
 - "generated_client_index_d_workspaceselect": "WorkspaceSelect" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L3931 | neighbors=[index.d.ts]
 - "generated_client_index_d_workspaceselectscalar": "WorkspaceSelectScalar" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L3955 | neighbors=[index.d.ts]
@@ -37,26 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "generated_client_index_d_workspaceuncheckedupdateinput": "WorkspaceUncheckedUpdateInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L37355 | neighbors=[index.d.ts]
 - "generated_client_index_d_workspaceuncheckedupdatemanyinput": "WorkspaceUncheckedUpdateManyInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L37400 | neighbors=[index.d.ts]
 - "generated_client_index_d_workspaceuncheckedupdatewithoutadminsinput": "WorkspaceUncheckedUpdateWithoutAdminsInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L47106 | neighbors=[index.d.ts]
-- "generated_client_index_d_workspaceuncheckedupdatewithoutdoctorsinput": "WorkspaceUncheckedUpdateWithoutDoctorsInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L47846 | neighbors=[index.d.ts]
-- "generated_client_index_d_workspaceuncheckedupdatewithoutinterpretationrulesinput": "WorkspaceUncheckedUpdateWithoutInterpretationRulesInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L51405 | neighbors=[index.d.ts]
-- "generated_client_index_d_workspaceuncheckedupdatewithoutparametersinput": "WorkspaceUncheckedUpdateWithoutParametersInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L49393 | neighbors=[index.d.ts]
-- "generated_client_index_d_workspaceuncheckedupdatewithoutpdfsettinginput": "WorkspaceUncheckedUpdateWithoutPdfSettingInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L51743 | neighbors=[index.d.ts]
-- "generated_client_index_d_workspaceuncheckedupdatewithoutregistrationsinput": "WorkspaceUncheckedUpdateWithoutRegistrationsInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L48746 | neighbors=[index.d.ts]
-- "generated_client_index_d_workspaceuncheckedupdatewithouttestformulasinput": "WorkspaceUncheckedUpdateWithoutTestFormulasInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L51011 | neighbors=[index.d.ts]
-- "generated_client_index_d_workspaceuncheckedupdatewithouttestparametersinput": "WorkspaceUncheckedUpdateWithoutTestParametersInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L49710 | neighbors=[index.d.ts]
-- "generated_client_index_d_workspaceuncheckedupdatewithouttestsinput": "WorkspaceUncheckedUpdateWithoutTestsInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L48236 | neighbors=[index.d.ts]
-- "generated_client_index_d_workspaceuncheckedupdatewithoutusersinput": "WorkspaceUncheckedUpdateWithoutUsersInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L46503 | neighbors=[index.d.ts]
-- "generated_client_index_d_workspaceupdateargs": "WorkspaceUpdateArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L4604 | neighbors=[index.d.ts]
-- "generated_client_index_d_workspaceupdateinput": "WorkspaceUpdateInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L37334 | neighbors=[index.d.ts]
-- "generated_client_index_d_workspaceupdatemanyargs": "WorkspaceUpdateManyArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L4626 | neighbors=[index.d.ts]
-- "generated_client_index_d_workspaceupdatemanymutationinput": "WorkspaceUpdateManyMutationInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L37389 | neighbors=[index.d.ts]
-- "generated_client_index_d_workspaceupdateonerequiredwithoutpdfsettingnestedinput": "WorkspaceUpdateOneRequiredWithoutPdfSettingNestedInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L44823 | neighbors=[index.d.ts]
-- "generated_client_index_d_workspaceupdateonewithoutadminsnestedinput": "WorkspaceUpdateOneWithoutAdminsNestedInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L43539 | neighbors=[index.d.ts]
-- "generated_client_index_d_workspaceupdateonewithoutdoctorsnestedinput": "WorkspaceUpdateOneWithoutDoctorsNestedInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L43821 | neighbors=[index.d.ts]
-- "generated_client_index_d_workspaceupdateonewithoutinterpretationrulesnestedinput": "WorkspaceUpdateOneWithoutInterpretationRulesNestedInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L44777 | neighbors=[index.d.ts]
-- "generated_client_index_d_workspaceupdateonewithoutparametersnestedinput": "WorkspaceUpdateOneWithoutParametersNestedInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L44405 | neighbors=[index.d.ts]
-- "generated_client_index_d_workspaceupdateonewithoutregistrationsnestedinput": "WorkspaceUpdateOneWithoutRegistrationsNestedInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L44231 | neighbors=[index.d.ts]
-- "generated_client_index_d_workspaceupdateonewithouttestformulasnestedinput": "WorkspaceUpdateOneWithoutTestFormulasNestedInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L44733 | neighbors=[index.d.ts]
 
 ## Instructions
 

@@ -1,4 +1,4 @@
-# Node Description Batch 77 of 149
+# Node Description Batch 77 of 150
 
 Graphify is running in assistant/skill mode (no API key). You are the host
 assistant (Claude Code / Codex / Gemini CLI). Read the prompt below and write
@@ -17,6 +17,26 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "generated_client_index_d_leadcontactfindfirstorthrowargs": "LeadContactFindFirstOrThrowArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L26629 | neighbors=[index.d.ts]
+- "generated_client_index_d_leadcontactfindmanyargs": "LeadContactFindManyArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L26673 | neighbors=[index.d.ts]
+- "generated_client_index_d_leadcontactfinduniqueargs": "LeadContactFindUniqueArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L26557 | neighbors=[index.d.ts]
+- "generated_client_index_d_leadcontactfinduniqueorthrowargs": "LeadContactFindUniqueOrThrowArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L26571 | neighbors=[index.d.ts]
+- "generated_client_index_d_leadcontactgetpayload": "LeadContactGetPayload" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L26176 | neighbors=[index.d.ts]
+- "generated_client_index_d_leadcontactgroupbyargs": "LeadContactGroupByArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L26088 | neighbors=[index.d.ts]
+- "generated_client_index_d_leadcontactgroupbyoutputtype": "LeadContactGroupByOutputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L26102 | neighbors=[index.d.ts]
+- "generated_client_index_d_leadcontactmaxaggregateinputtype": "LeadContactMaxAggregateInputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L25991 | neighbors=[index.d.ts]
+- "generated_client_index_d_leadcontactmaxaggregateoutputtype": "LeadContactMaxAggregateOutputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L25945 | neighbors=[index.d.ts]
+- "generated_client_index_d_leadcontactmaxorderbyaggregateinput": "LeadContactMaxOrderByAggregateInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L42289 | neighbors=[index.d.ts]
+- "generated_client_index_d_leadcontactminaggregateinputtype": "LeadContactMinAggregateInputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L25979 | neighbors=[index.d.ts]
+- "generated_client_index_d_leadcontactminaggregateoutputtype": "LeadContactMinAggregateOutputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L25933 | neighbors=[index.d.ts]
+- "generated_client_index_d_leadcontactminorderbyaggregateinput": "LeadContactMinOrderByAggregateInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L42301 | neighbors=[index.d.ts]
+- "generated_client_index_d_leadcontactorderbywithaggregationinput": "LeadContactOrderByWithAggregationInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L36632 | neighbors=[index.d.ts]
+- "generated_client_index_d_leadcontactorderbywithrelationinput": "LeadContactOrderByWithRelationInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L36605 | neighbors=[index.d.ts]
+- "generated_client_index_d_leadcontactpayload": "$LeadContactPayload" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L26159 | neighbors=[index.d.ts]
+- "generated_client_index_d_leadcontactscalarfieldenum": "LeadContactScalarFieldEnum" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L34291 | neighbors=[index.d.ts]
+- "generated_client_index_d_leadcontactscalarwherewithaggregatesinput": "LeadContactScalarWhereWithAggregatesInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L36649 | neighbors=[index.d.ts]
+- "generated_client_index_d_leadcontactselect": "LeadContactSelect" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L26133 | neighbors=[index.d.ts]
+- "generated_client_index_d_leadcontactselectscalar": "LeadContactSelectScalar" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L26146 | neighbors=[index.d.ts]
 - "generated_client_index_d_leadcontactsumaggregateinputtype": "LeadContactSumAggregateInputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L25975 | neighbors=[index.d.ts]
 - "generated_client_index_d_leadcontactsumaggregateoutputtype": "LeadContactSumAggregateOutputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L25929 | neighbors=[index.d.ts]
 - "generated_client_index_d_leadcontactsumorderbyaggregateinput": "LeadContactSumOrderByAggregateInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L42313 | neighbors=[index.d.ts]
@@ -37,26 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "generated_client_index_d_leadcreateargs": "LeadCreateArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L23846 | neighbors=[index.d.ts]
 - "generated_client_index_d_leadcreateinput": "LeadCreateInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L39400 | neighbors=[index.d.ts]
 - "generated_client_index_d_leadcreatemanyargs": "LeadCreateManyArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L23860 | neighbors=[index.d.ts]
-- "generated_client_index_d_leadcreatemanyinput": "LeadCreateManyInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L39426 | neighbors=[index.d.ts]
-- "generated_client_index_d_leaddefaultargs": "LeadDefaultArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L23949 | neighbors=[index.d.ts]
-- "generated_client_index_d_leaddelegate": "LeadDelegate" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L23322 | neighbors=[index.d.ts]
-- "generated_client_index_d_leaddeleteargs": "LeadDeleteArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L23925 | neighbors=[index.d.ts]
-- "generated_client_index_d_leaddeletemanyargs": "LeadDeleteManyArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L23939 | neighbors=[index.d.ts]
-- "generated_client_index_d_leadfieldrefs": "LeadFieldRefs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L23679 | neighbors=[index.d.ts]
-- "generated_client_index_d_leadfindfirstargs": "LeadFindFirstArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L23719 | neighbors=[index.d.ts]
-- "generated_client_index_d_leadfindfirstorthrowargs": "LeadFindFirstOrThrowArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L23763 | neighbors=[index.d.ts]
-- "generated_client_index_d_leadfindmanyargs": "LeadFindManyArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L23807 | neighbors=[index.d.ts]
-- "generated_client_index_d_leadfinduniqueargs": "LeadFindUniqueArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L23691 | neighbors=[index.d.ts]
-- "generated_client_index_d_leadfinduniqueorthrowargs": "LeadFindUniqueOrThrowArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L23705 | neighbors=[index.d.ts]
-- "generated_client_index_d_leadgetpayload": "LeadGetPayload" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L23315 | neighbors=[index.d.ts]
-- "generated_client_index_d_leadgroupbyargs": "LeadGroupByArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L23247 | neighbors=[index.d.ts]
-- "generated_client_index_d_leadgroupbyoutputtype": "LeadGroupByOutputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L23261 | neighbors=[index.d.ts]
-- "generated_client_index_d_leadmaxaggregateinputtype": "LeadMaxAggregateInputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L23160 | neighbors=[index.d.ts]
-- "generated_client_index_d_leadmaxaggregateoutputtype": "LeadMaxAggregateOutputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L23129 | neighbors=[index.d.ts]
-- "generated_client_index_d_leadmaxorderbyaggregateinput": "LeadMaxOrderByAggregateInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L42151 | neighbors=[index.d.ts]
-- "generated_client_index_d_leadminaggregateinputtype": "LeadMinAggregateInputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L23153 | neighbors=[index.d.ts]
-- "generated_client_index_d_leadminaggregateoutputtype": "LeadMinAggregateOutputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L23122 | neighbors=[index.d.ts]
-- "generated_client_index_d_leadminorderbyaggregateinput": "LeadMinOrderByAggregateInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L42158 | neighbors=[index.d.ts]
 
 ## Instructions
 

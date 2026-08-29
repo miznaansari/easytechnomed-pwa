@@ -1,4 +1,4 @@
-# Node Description Batch 121 of 149
+# Node Description Batch 121 of 150
 
 Graphify is running in assistant/skill mode (no API key). You are the host
 assistant (Claude Code / Codex / Gemini CLI). Read the prompt below and write
@@ -17,6 +17,26 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "generated_client_index_d_workspacecreatewithoutinterpretationrulesinput": "WorkspaceCreateWithoutInterpretationRulesInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L51186 | neighbors=[index.d.ts]
+- "generated_client_index_d_workspacecreatewithoutparametersinput": "WorkspaceCreateWithoutParametersInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L49199 | neighbors=[index.d.ts]
+- "generated_client_index_d_workspacecreatewithoutpdfsettinginput": "WorkspaceCreateWithoutPdfSettingInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L51666 | neighbors=[index.d.ts]
+- "generated_client_index_d_workspacecreatewithoutregistrationsinput": "WorkspaceCreateWithoutRegistrationsInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L48414 | neighbors=[index.d.ts]
+- "generated_client_index_d_workspacecreatewithouttestformulasinput": "WorkspaceCreateWithoutTestFormulasInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L50792 | neighbors=[index.d.ts]
+- "generated_client_index_d_workspacecreatewithouttestparametersinput": "WorkspaceCreateWithoutTestParametersInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L49462 | neighbors=[index.d.ts]
+- "generated_client_index_d_workspacecreatewithouttestsinput": "WorkspaceCreateWithoutTestsInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L47983 | neighbors=[index.d.ts]
+- "generated_client_index_d_workspacecreatewithoutusersinput": "WorkspaceCreateWithoutUsersInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L46377 | neighbors=[index.d.ts]
+- "generated_client_index_d_workspacedefaultargs": "WorkspaceDefaultArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L4889 | neighbors=[index.d.ts]
+- "generated_client_index_d_workspacedelegate": "WorkspaceDelegate" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L4016 | neighbors=[index.d.ts]
+- "generated_client_index_d_workspacedeleteargs": "WorkspaceDeleteArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L4666 | neighbors=[index.d.ts]
+- "generated_client_index_d_workspacedeletemanyargs": "WorkspaceDeleteManyArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L4684 | neighbors=[index.d.ts]
+- "generated_client_index_d_workspacefieldrefs": "WorkspaceFieldRefs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L4383 | neighbors=[index.d.ts]
+- "generated_client_index_d_workspacefindfirstargs": "WorkspaceFindFirstArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L4436 | neighbors=[index.d.ts]
+- "generated_client_index_d_workspacefindfirstorthrowargs": "WorkspaceFindFirstOrThrowArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L4484 | neighbors=[index.d.ts]
+- "generated_client_index_d_workspacefindmanyargs": "WorkspaceFindManyArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L4532 | neighbors=[index.d.ts]
+- "generated_client_index_d_workspacefinduniqueargs": "WorkspaceFindUniqueArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L4400 | neighbors=[index.d.ts]
+- "generated_client_index_d_workspacefinduniqueorthrowargs": "WorkspaceFindUniqueOrThrowArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L4418 | neighbors=[index.d.ts]
+- "generated_client_index_d_workspacegetpayload": "WorkspaceGetPayload" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L4009 | neighbors=[index.d.ts]
+- "generated_client_index_d_workspacegroupbyargs": "WorkspaceGroupByArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L3886 | neighbors=[index.d.ts]
 - "generated_client_index_d_workspacegroupbyoutputtype": "WorkspaceGroupByOutputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L3900 | neighbors=[index.d.ts]
 - "generated_client_index_d_workspaceinclude": "WorkspaceInclude" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L3967 | neighbors=[index.d.ts]
 - "generated_client_index_d_workspacemaxaggregateinputtype": "WorkspaceMaxAggregateInputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L3789 | neighbors=[index.d.ts]
@@ -37,26 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "generated_client_index_d_workspacepdfavgorderbyaggregateinput": "WorkspacePdfAvgOrderByAggregateInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L42637 | neighbors=[index.d.ts]
 - "generated_client_index_d_workspacepdfcountaggregateinputtype": "WorkspacePdfCountAggregateInputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L32866 | neighbors=[index.d.ts]
 - "generated_client_index_d_workspacepdfcountaggregateoutputtype": "WorkspacePdfCountAggregateOutputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L32728 | neighbors=[index.d.ts]
-- "generated_client_index_d_workspacepdfcountargs": "WorkspacePdfCountArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L33167 | neighbors=[index.d.ts]
-- "generated_client_index_d_workspacepdfcountorderbyaggregateinput": "WorkspacePdfCountOrderByAggregateInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L42601 | neighbors=[index.d.ts]
-- "generated_client_index_d_workspacepdfcreateargs": "WorkspacePdfCreateArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L33746 | neighbors=[index.d.ts]
-- "generated_client_index_d_workspacepdfcreateinput": "WorkspacePdfCreateInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L40119 | neighbors=[index.d.ts]
-- "generated_client_index_d_workspacepdfcreatemanyargs": "WorkspacePdfCreateManyArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L33764 | neighbors=[index.d.ts]
-- "generated_client_index_d_workspacepdfcreatemanyinput": "WorkspacePdfCreateManyInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L40261 | neighbors=[index.d.ts]
-- "generated_client_index_d_workspacepdfcreatenestedonewithoutworkspaceinput": "WorkspacePdfCreateNestedOneWithoutWorkspaceInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L42800 | neighbors=[index.d.ts]
-- "generated_client_index_d_workspacepdfcreateorconnectwithoutworkspaceinput": "WorkspacePdfCreateOrConnectWithoutWorkspaceInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L45718 | neighbors=[index.d.ts]
-- "generated_client_index_d_workspacepdfcreatewithoutworkspaceinput": "WorkspacePdfCreateWithoutWorkspaceInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L45649 | neighbors=[index.d.ts]
-- "generated_client_index_d_workspacepdfdefaultargs": "WorkspacePdfDefaultArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L33865 | neighbors=[index.d.ts]
-- "generated_client_index_d_workspacepdfdelegate": "WorkspacePdfDelegate" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L33172 | neighbors=[index.d.ts]
-- "generated_client_index_d_workspacepdfdeleteargs": "WorkspacePdfDeleteArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L33837 | neighbors=[index.d.ts]
-- "generated_client_index_d_workspacepdfdeletemanyargs": "WorkspacePdfDeleteManyArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L33855 | neighbors=[index.d.ts]
-- "generated_client_index_d_workspacepdffieldrefs": "WorkspacePdfFieldRefs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L33530 | neighbors=[index.d.ts]
-- "generated_client_index_d_workspacepdffindfirstargs": "WorkspacePdfFindFirstArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L33607 | neighbors=[index.d.ts]
-- "generated_client_index_d_workspacepdffindfirstorthrowargs": "WorkspacePdfFindFirstOrThrowArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L33655 | neighbors=[index.d.ts]
-- "generated_client_index_d_workspacepdffindmanyargs": "WorkspacePdfFindManyArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L33703 | neighbors=[index.d.ts]
-- "generated_client_index_d_workspacepdffinduniqueargs": "WorkspacePdfFindUniqueArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L33571 | neighbors=[index.d.ts]
-- "generated_client_index_d_workspacepdffinduniqueorthrowargs": "WorkspacePdfFindUniqueOrThrowArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L33589 | neighbors=[index.d.ts]
-- "generated_client_index_d_workspacepdfgetpayload": "WorkspacePdfGetPayload" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L33165 | neighbors=[index.d.ts]
 
 ## Instructions
 

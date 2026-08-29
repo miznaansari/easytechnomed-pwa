@@ -1,4 +1,4 @@
-# Node Description Batch 25 of 149
+# Node Description Batch 25 of 150
 
 Graphify is running in assistant/skill mode (no API key). You are the host
 assistant (Claude Code / Codex / Gemini CLI). Read the prompt below and write
@@ -24,6 +24,16 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "scratch_inspect_kft": "inspect-kft.js" | kind=code-symbol | source=scratch/inspect-kft.js:L1 | neighbors=[252e194 e, main(), prisma, { PrismaClient }]
+- "scratch_sync_expiry_to_workspace": "sync-expiry-to-workspace.js" | kind=code-symbol | source=scratch/sync-expiry-to-workspace.js:L1 | neighbors=[252e194 e, main(), prisma, { PrismaClient }]
+- "scratch_sync_kft_formulas": "sync-kft-formulas.js" | kind=code-symbol | source=scratch/sync-kft-formulas.js:L1 | neighbors=[252e194 e, main(), prisma, { PrismaClient }]
+- "scratch_test_fix_reg_17": "test-fix-reg-17.js" | kind=code-symbol | source=scratch/test-fix-reg-17.js:L1 | neighbors=[252e194 e, runFormulaEngine(), main(), prisma]
+- "scratch_test_formula_run": "test-formula-run.js" | kind=code-symbol | source=scratch/test-formula-run.js:L1 | neighbors=[252e194 e, runFormulaEngine(), main(), prisma]
+- "scratch_test_prisma": "test-prisma.js" | kind=code-symbol | source=scratch/test-prisma.js:L1 | neighbors=[252e194 e, main(), prisma, { PrismaClient }]
+- "scratch_test_whatsapp_url": "test-whatsapp-url.mjs" | kind=code-symbol | source=scratch/test-whatsapp-url.mjs:L1 | neighbors=[252e194 e, getRegistrationWhatsappUrl(), sampleReg, url]
+- "scratch_trigger_sync": "trigger-sync.js" | kind=code-symbol | source=scratch/trigger-sync.js:L1 | neighbors=[252e194 e, main(), prisma, { PrismaClient }]
+- "ui_button": "Button.js" | kind=code-symbol | source=components/ui/Button.js:L1 | neighbors=[252e194 e, Button(), Loader.js, Loader()]
+- "ui_input": "Input.js" | kind=code-symbol | source=components/ui/Input.js:L1 | neighbors=[252e194 e, 2582be7 fixed zoom issue, a712d0e ios issue pwa, Input]
 - "userapprove_page": "page.js" | kind=code-symbol | source=app/(customer)/(dashboard)/userApprove/page.js:L1 | neighbors=[252e194 e, aae6bad fixed, AdminUserApprovePage(), UserApproveTable.js]
 - "address_route": "route.js" | kind=code-symbol | source=app/api/settings/address/route.js:L1 | neighbors=[GET(), POST(), 252e194 e]
 - "auth_offlineauth_getorcreateofflinesession": "getOrCreateOfflineSession()" | kind=code-symbol | source=lib/auth/offlineAuth.js:L51 | neighbors=[offlineAuth.js, getCachedSession(), saveAuthenticatedSession()]
@@ -45,6 +55,7 @@ one-sentence description — no prose, no markdown fences.
 - "commit:repo:github.com-personal/miznaansari/easytechnomed-pwa@3e84241fb483afc52ec34d972453dd2e97bb3c61": "3e84241 3.0.7" | kind=Commit | source=git | neighbors=[main, 2daebb8 f, c6b79b3 f]
 - "commit:repo:github.com-personal/miznaansari/easytechnomed-pwa@3f7f1b43875414ebdec1c6b147ae0a582a83e374": "3f7f1b4 2.0.0" | kind=Commit | source=git | neighbors=[main, 3c7e66b f, 53ca5c1 stable version 1]
 - "commit:repo:github.com-personal/miznaansari/easytechnomed-pwa@42773a17f7fafb1a10eb65d51c6d58114960246b": "42773a1 1.1.31" | kind=Commit | source=git | neighbors=[main, 91c4f7a feat: complete offline support …, a4caf17 fix: ensure Service Worker only…]
+- "commit:repo:github.com-personal/miznaansari/easytechnomed-pwa@44ad6b291634e03f879c81169447c20a2f87c7bc": "44ad6b2 new ui dashboard" | kind=Commit | source=git | neighbors=[main, b95c5bd 3.0.24, 6812ab9 new ui dashboard]
 - "commit:repo:github.com-personal/miznaansari/easytechnomed-pwa@462f542b7ee9e8bc36357c23ab77576e01bc53d9": "462f542 3.0.4" | kind=Commit | source=git | neighbors=[main, a356e41 f, c15ae1e fixed]
 - "commit:repo:github.com-personal/miznaansari/easytechnomed-pwa@48cc7ec32defe0b9c99dc02a05d23b2bfcbc86f7": "48cc7ec 2.0.22" | kind=Commit | source=git | neighbors=[14fa292 f, main, 9f59247 expire token]
 - "commit:repo:github.com-personal/miznaansari/easytechnomed-pwa@5ce0a2ea8942fa32ba4e3e1cffce040572cdebda": "5ce0a2e fixed" | kind=Commit | source=git | neighbors=[main, 9a50d76 3.0.2, c5cbecd 3.0.1]
@@ -53,17 +64,6 @@ one-sentence description — no prose, no markdown fences.
 - "commit:repo:github.com-personal/miznaansari/easytechnomed-pwa@713405831eef818366ebb6342eb43cd7340a4a62": "7134058 1.1.29" | kind=Commit | source=git | neighbors=[main, b5ea15f d, d87cf87 d]
 - "commit:repo:github.com-personal/miznaansari/easytechnomed-pwa@720f0160e2a9e5247fee57dd7f67464920beaa7c": "720f016 2.0.13" | kind=Commit | source=git | neighbors=[main, 905ef50 fixed, c070c55 fixed]
 - "commit:repo:github.com-personal/miznaansari/easytechnomed-pwa@7ec66e7df558d9a5ccbcadcf69502606866a22f3": "7ec66e7 3.0.18" | kind=Commit | source=git | neighbors=[main, 2582be7 fixed zoom issue, 8b1f3d8 a]
-- "commit:repo:github.com-personal/miznaansari/easytechnomed-pwa@7ec76baa937c381ba6859cd5d0cfe2bb9a34815d": "7ec76ba 2.0.12" | kind=Commit | source=git | neighbors=[4d7570f fixed, main, c070c55 fixed]
-- "commit:repo:github.com-personal/miznaansari/easytechnomed-pwa@7fcf80494a27d4ec2c960aafbecce7822f0a3df5": "7fcf804 1.1.30" | kind=Commit | source=git | neighbors=[main, a4caf17 fix: ensure Service Worker only…, b5ea15f d]
-- "commit:repo:github.com-personal/miznaansari/easytechnomed-pwa@8065d22d01c683faaa33c19410974d6979d7d1fe": "8065d22 3.0.8" | kind=Commit | source=git | neighbors=[2daebb8 f, main, 165f057 f]
-- "commit:repo:github.com-personal/miznaansari/easytechnomed-pwa@84807f47cf682325bf74a7f044ba8c9dcc1c4fbd": "84807f4 1.1.27" | kind=Commit | source=git | neighbors=[56f4d63 f, main, 532b740 fixed]
-- "commit:repo:github.com-personal/miznaansari/easytechnomed-pwa@98ad5ca697f0155858c84f94f0a8f7df6f8c5fd6": "98ad5ca 2.0.24" | kind=Commit | source=git | neighbors=[main, fae0b0a graphify added., d446d11 fixed code]
-- "commit:repo:github.com-personal/miznaansari/easytechnomed-pwa@9a50d76fdc96edbbcfaff30fb952ad24910efa0a": "9a50d76 3.0.2" | kind=Commit | source=git | neighbors=[5ce0a2e fixed, main, c15ae1e fixed]
-- "commit:repo:github.com-personal/miznaansari/easytechnomed-pwa@9deec8fd0983a64980479366856db84bed70a63a": "9deec8f 2.0.4" | kind=Commit | source=git | neighbors=[main, fafa3d9 f, b0c8bf9 full indexeddb based]
-- "commit:repo:github.com-personal/miznaansari/easytechnomed-pwa@a09f0a95766b6fcc8df3cba0f15a47bb4f277805": "a09f0a9 3.0.21" | kind=Commit | source=git | neighbors=[main, 47b2032 ios issue pwa, a712d0e ios issue pwa]
-- "commit:repo:github.com-personal/miznaansari/easytechnomed-pwa@a14c9b8bbea1748bf13611f038dce324604c0733": "a14c9b8 2.0.14" | kind=Commit | source=git | neighbors=[905ef50 fixed, main, cb86968 fixed]
-- "commit:repo:github.com-personal/miznaansari/easytechnomed-pwa@a4a950af85ecefcfc811d8b22f2b61546a488fe8": "a4a950a 2.0.5" | kind=Commit | source=git | neighbors=[main, 6618261 f, fafa3d9 f]
-- "commit:repo:github.com-personal/miznaansari/easytechnomed-pwa@c41a815a6ea80961049650bc3fc80593b5c83810": "c41a815 3.0.11" | kind=Commit | source=git | neighbors=[b5dedb0 f, main, 8184d32 f]
 
 ## Instructions
 

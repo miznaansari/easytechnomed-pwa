@@ -1,4 +1,4 @@
-# Node Description Batch 146 of 149
+# Node Description Batch 146 of 150
 
 Graphify is running in assistant/skill mode (no API key). You are the host
 assistant (Claude Code / Codex / Gemini CLI). Read the prompt below and write
@@ -17,6 +17,29 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "runtime_wasm_te": "Te()" | kind=code-symbol | source=scratch/generated-client/runtime/wasm.js:L6 | neighbors=[wasm.js]
+- "runtime_wasm_text": "text()" | kind=code-symbol | source=scratch/generated-client/runtime/wasm.js:L5 | neighbors=[wasm.js]
+- "runtime_wasm_tn": "tn()" | kind=code-symbol | source=scratch/generated-client/runtime/wasm.js:L21 | neighbors=[wasm.js]
+- "runtime_wasm_tographqlinputtype": "_toGraphQLInputType()" | kind=code-symbol | source=scratch/generated-client/runtime/wasm.js:L4 | neighbors=[wasm.js]
+- "runtime_wasm_ts": "ts()" | kind=code-symbol | source=scratch/generated-client/runtime/wasm.js:L1 | neighbors=[wasm.js]
+- "runtime_wasm_ur": "ur()" | kind=code-symbol | source=scratch/generated-client/runtime/wasm.js:L14 | neighbors=[wasm.js]
+- "runtime_wasm_use": "use()" | kind=code-symbol | source=scratch/generated-client/runtime/wasm.js:L21 | neighbors=[wasm.js]
+- "runtime_wasm_vr": "Vr()" | kind=code-symbol | source=scratch/generated-client/runtime/wasm.js:L5 | neighbors=[wasm.js]
+- "runtime_wasm_wi": "Wi()" | kind=code-symbol | source=scratch/generated-client/runtime/wasm.js:L6 | neighbors=[wasm.js]
+- "runtime_wasm_wn": "Wn()" | kind=code-symbol | source=scratch/generated-client/runtime/wasm.js:L2 | neighbors=[wasm.js]
+- "runtime_wasm_xr": "Xr()" | kind=code-symbol | source=scratch/generated-client/runtime/wasm.js:L21 | neighbors=[wasm.js]
+- "runtime_wasm_yi": "yi()" | kind=code-symbol | source=scratch/generated-client/runtime/wasm.js:L5 | neighbors=[wasm.js]
+- "runtime_wasm_ys": "ys()" | kind=code-symbol | source=scratch/generated-client/runtime/wasm.js:L1 | neighbors=[wasm.js]
+- "runtime_wasm_zi": "zi()" | kind=code-symbol | source=scratch/generated-client/runtime/wasm.js:L6 | neighbors=[wasm.js]
+- "runtime_wasm_zn": "Zn()" | kind=code-symbol | source=scratch/generated-client/runtime/wasm.js:L4 | neighbors=[wasm.js]
+- "runtime_wasm_zr": "zr()" | kind=code-symbol | source=scratch/generated-client/runtime/wasm.js:L14 | neighbors=[wasm.js]
+- "samples_route_post": "POST()" | kind=code-symbol | source=app/api/registrations/[id]/samples/route.js:L38 | neighbors=[route.js]
+- "scratch_backfill_counters_prisma": "prisma" | kind=code-symbol | source=scratch-backfill-counters.js:L2 | neighbors=[scratch-backfill-counters.js]
+- "scratch_backfill_counters_prismaclient": "{ PrismaClient }" | kind=code-symbol | source=scratch-backfill-counters.js:L1 | neighbors=[scratch-backfill-counters.js]
+- "scratch_backfill_incentives_main": "main()" | kind=code-symbol | source=scratch-backfill-incentives.js:L4 | neighbors=[scratch-backfill-incentives.js]
+- "scratch_backfill_incentives_prisma": "prisma" | kind=code-symbol | source=scratch-backfill-incentives.js:L2 | neighbors=[scratch-backfill-incentives.js]
+- "scratch_backfill_incentives_prismaclient": "{ PrismaClient }" | kind=code-symbol | source=scratch-backfill-incentives.js:L1 | neighbors=[scratch-backfill-incentives.js]
+- "scratch_backfill_main": "main()" | kind=code-symbol | source=scratch-backfill.js:L4 | neighbors=[scratch-backfill.js]
 - "scratch_backfill_prisma": "prisma" | kind=code-symbol | source=scratch-backfill.js:L2 | neighbors=[scratch-backfill.js]
 - "scratch_backfill_prismaclient": "{ PrismaClient }" | kind=code-symbol | source=scratch-backfill.js:L1 | neighbors=[scratch-backfill.js]
 - "scratch_bootstrap_dates_main": "main()" | kind=code-symbol | source=scratch/bootstrap-dates.js:L4 | neighbors=[bootstrap-dates.js]
@@ -34,29 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "scratch_check_kft_all_main": "main()" | kind=code-symbol | source=scratch/check-kft-all.js:L4 | neighbors=[check-kft-all.js]
 - "scratch_check_kft_all_prisma": "prisma" | kind=code-symbol | source=scratch/check-kft-all.js:L2 | neighbors=[check-kft-all.js]
 - "scratch_check_kft_all_prismaclient": "{ PrismaClient }" | kind=code-symbol | source=scratch/check-kft-all.js:L1 | neighbors=[check-kft-all.js]
-- "scratch_check_reg_14_main": "main()" | kind=code-symbol | source=scratch/check-reg-14.js:L3 | neighbors=[check-reg-14.js]
-- "scratch_check_reg_17_main": "main()" | kind=code-symbol | source=scratch/check-reg-17.js:L6 | neighbors=[check-reg-17.js]
-- "scratch_check_reg_17_prisma": "prisma" | kind=code-symbol | source=scratch/check-reg-17.js:L4 | neighbors=[check-reg-17.js]
-- "scratch_check_reg_22_main": "main()" | kind=code-symbol | source=scratch/check-reg-22.js:L3 | neighbors=[check-reg-22.js]
-- "scratch_cleanup_cbc_main": "main()" | kind=code-symbol | source=scratch/cleanup-cbc.js:L4 | neighbors=[cleanup-cbc.js]
-- "scratch_cleanup_cbc_prisma": "prisma" | kind=code-symbol | source=scratch/cleanup-cbc.js:L2 | neighbors=[cleanup-cbc.js]
-- "scratch_cleanup_cbc_prismaclient": "{ PrismaClient }" | kind=code-symbol | source=scratch/cleanup-cbc.js:L1 | neighbors=[cleanup-cbc.js]
-- "scratch_inspect_cbc_main": "main()" | kind=code-symbol | source=scratch/inspect-cbc.js:L4 | neighbors=[inspect-cbc.js]
-- "scratch_inspect_cbc_prisma": "prisma" | kind=code-symbol | source=scratch/inspect-cbc.js:L2 | neighbors=[inspect-cbc.js]
-- "scratch_inspect_cbc_prismaclient": "{ PrismaClient }" | kind=code-symbol | source=scratch/inspect-cbc.js:L1 | neighbors=[inspect-cbc.js]
-- "scratch_inspect_kft_main": "main()" | kind=code-symbol | source=scratch/inspect-kft.js:L4 | neighbors=[inspect-kft.js]
-- "scratch_inspect_kft_prisma": "prisma" | kind=code-symbol | source=scratch/inspect-kft.js:L2 | neighbors=[inspect-kft.js]
-- "scratch_inspect_kft_prismaclient": "{ PrismaClient }" | kind=code-symbol | source=scratch/inspect-kft.js:L1 | neighbors=[inspect-kft.js]
-- "scratch_sync_expiry_to_workspace_main": "main()" | kind=code-symbol | source=scratch/sync-expiry-to-workspace.js:L4 | neighbors=[sync-expiry-to-workspace.js]
-- "scratch_sync_expiry_to_workspace_prisma": "prisma" | kind=code-symbol | source=scratch/sync-expiry-to-workspace.js:L2 | neighbors=[sync-expiry-to-workspace.js]
-- "scratch_sync_expiry_to_workspace_prismaclient": "{ PrismaClient }" | kind=code-symbol | source=scratch/sync-expiry-to-workspace.js:L1 | neighbors=[sync-expiry-to-workspace.js]
-- "scratch_sync_kft_formulas_main": "main()" | kind=code-symbol | source=scratch/sync-kft-formulas.js:L7 | neighbors=[sync-kft-formulas.js]
-- "scratch_sync_kft_formulas_prisma": "prisma" | kind=code-symbol | source=scratch/sync-kft-formulas.js:L2 | neighbors=[sync-kft-formulas.js]
-- "scratch_sync_kft_formulas_prismaclient": "{ PrismaClient }" | kind=code-symbol | source=scratch/sync-kft-formulas.js:L1 | neighbors=[sync-kft-formulas.js]
-- "scratch_test_calc_export_dlc_definitions": "DLC_DEFINITIONS" | kind=code-symbol | source=scratch/test-calc-export.js:L1 | neighbors=[test-calc-export.js]
-- "scratch_test_calc_initialvalues": "initialValues" | kind=code-symbol | source=scratch/test-calc.js:L189 | neighbors=[test-calc.js]
-- "scratch_test_calc_overrides": "overrides" | kind=code-symbol | source=scratch/test-calc.js:L190 | neighbors=[test-calc.js]
-- "scratch_test_calc_result": "result" | kind=code-symbol | source=scratch/test-calc.js:L191 | neighbors=[test-calc.js]
 
 ## Instructions
 

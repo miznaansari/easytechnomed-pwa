@@ -1,4 +1,4 @@
-# Node Description Batch 133 of 149
+# Node Description Batch 133 of 150
 
 Graphify is running in assistant/skill mode (no API key). You are the host
 assistant (Claude Code / Codex / Gemini CLI). Read the prompt below and write
@@ -17,6 +17,29 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "runtime_library_ba": "Ba()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L31 | neighbors=[library.js]
+- "runtime_library_bc": "Bc()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L21 | neighbors=[library.js]
+- "runtime_library_bo": "bo()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L3 | neighbors=[library.js]
+- "runtime_library_c": "_c()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L21 | neighbors=[library.js]
+- "runtime_library_ca": "ca()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L29 | neighbors=[library.js]
+- "runtime_library_ce": "Ce()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L29 | neighbors=[library.js]
+- "runtime_library_cs": "Cs()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L21 | neighbors=[library.js]
+- "runtime_library_cu": "Cu()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L3 | neighbors=[library.js]
+- "runtime_library_d_accelerateengineconfig": "AccelerateEngineConfig" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L6 | neighbors=[_d()]
+- "runtime_library_d_action": "Action" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L24 | neighbors=[_d()]
+- "runtime_library_d_activeconnectortype": "ActiveConnectorType" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L26 | neighbors=[_d()]
+- "runtime_library_d_aggregate": "Aggregate" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L28 | neighbors=[_d()]
+- "runtime_library_d_allmodelstostringindex": "AllModelsToStringIndex" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L30 | neighbors=[_d()]
+- "runtime_library_d_applyomit": "ApplyOmit" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L41 | neighbors=[_d()]
+- "runtime_library_d_args": "Args" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L45 | neighbors=[_d()]
+- "runtime_library_d_args_3": "Args_3" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L57 | neighbors=[_d()]
+- "runtime_library_d_argtype": "ArgType" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L64 | neighbors=[_d()]
+- "runtime_library_d_attributes": "Attributes" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L71 | neighbors=[_d()]
+- "runtime_library_d_attributevalue": "AttributeValue" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L80 | neighbors=[_d()]
+- "runtime_library_d_basedmmf": "BaseDMMF" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L82 | neighbors=[_d()]
+- "runtime_library_d_batchargs": "BatchArgs" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L86 | neighbors=[_d()]
+- "runtime_library_d_batchinternalparams": "BatchInternalParams" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L93 | neighbors=[_d()]
+- "runtime_library_d_batchquery": "BatchQuery" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L98 | neighbors=[_d()]
 - "runtime_library_d_batchqueryengineresult": "BatchQueryEngineResult" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L104 | neighbors=[_d()]
 - "runtime_library_d_batchqueryoptionscb": "BatchQueryOptionsCb" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L106 | neighbors=[_d()]
 - "runtime_library_d_batchqueryoptionscbargs": "BatchQueryOptionsCbArgs" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L108 | neighbors=[_d()]
@@ -34,29 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "runtime_library_d_columntype": "ColumnType" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L159 | neighbors=[_d()]
 - "runtime_library_d_compute": "Compute" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L196 | neighbors=[_d()]
 - "runtime_library_d_computedeep": "ComputeDeep" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L200 | neighbors=[_d()]
-- "runtime_library_d_computedfield": "ComputedField" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L204 | neighbors=[_d()]
-- "runtime_library_d_computedfieldsmap": "ComputedFieldsMap" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L210 | neighbors=[_d()]
-- "runtime_library_d_config": "Config" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L335 | neighbors=[_d()]
-- "runtime_library_d_connectioninfo": "ConnectionInfo" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L214 | neighbors=[_d()]
-- "runtime_library_d_connectortype": "ConnectorType" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L219 | neighbors=[_d()]
-- "runtime_library_d_constructor": "Constructor" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L328 | neighbors=[_d()]
-- "runtime_library_d_context": "Context" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L221 | neighbors=[_d()]
-- "runtime_library_d_context_2": "Context_2" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L245 | neighbors=[_d()]
-- "runtime_library_d_count": "Count" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L265 | neighbors=[_d()]
-- "runtime_library_d_customdataproxyfetch": "CustomDataProxyFetch" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L269 | neighbors=[_d()]
-- "runtime_library_d_dataloader": "DataLoader" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L271 | neighbors=[_d()]
-- "runtime_library_d_dataloaderoptions": "DataLoaderOptions" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L283 | neighbors=[_d()]
-- "runtime_library_d_datamodel": "Datamodel" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L675 | neighbors=[_d()]
-- "runtime_library_d_datamodelenum": "DatamodelEnum" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L661 | neighbors=[_d()]
-- "runtime_library_d_datasource": "Datasource" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L290 | neighbors=[_d()]
-- "runtime_library_d_datasources": "Datasources" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L294 | neighbors=[_d()]
-- "runtime_library_d_decimal": "Decimal" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L348 | neighbors=[_d()]
-- "runtime_library_d_decimaljslike": "DecimalJsLike" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L599 | neighbors=[_d()]
-- "runtime_library_d_defaultargs": "DefaultArgs" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L606 | neighbors=[_d()]
-- "runtime_library_d_defaultselection": "DefaultSelection" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L608 | neighbors=[_d()]
-- "runtime_library_d_deprecation": "Deprecation" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L806 | neighbors=[_d()]
-- "runtime_library_d_devtypemapdef": "DevTypeMapDef" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L624 | neighbors=[_d()]
-- "runtime_library_d_devtypemapfndef": "DevTypeMapFnDef" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L638 | neighbors=[_d()]
 
 ## Instructions
 

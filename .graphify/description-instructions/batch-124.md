@@ -1,4 +1,4 @@
-# Node Description Batch 125 of 149
+# Node Description Batch 125 of 150
 
 Graphify is running in assistant/skill mode (no API key). You are the host
 assistant (Claude Code / Codex / Gemini CLI). Read the prompt below and write
@@ -17,6 +17,26 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "generated_client_index_d_workspaceupdatewithouttestparametersinput": "WorkspaceUpdateWithoutTestParametersInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L49690 | neighbors=[index.d.ts]
+- "generated_client_index_d_workspaceupdatewithouttestsinput": "WorkspaceUpdateWithoutTestsInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L48216 | neighbors=[index.d.ts]
+- "generated_client_index_d_workspaceupdatewithoutusersinput": "WorkspaceUpdateWithoutUsersInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L46483 | neighbors=[index.d.ts]
+- "generated_client_index_d_workspaceupsertargs": "WorkspaceUpsertArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L4640 | neighbors=[index.d.ts]
+- "generated_client_index_d_workspaceupsertwithoutadminsinput": "WorkspaceUpsertWithoutAdminsInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L47075 | neighbors=[index.d.ts]
+- "generated_client_index_d_workspaceupsertwithoutdoctorsinput": "WorkspaceUpsertWithoutDoctorsInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L47815 | neighbors=[index.d.ts]
+- "generated_client_index_d_workspaceupsertwithoutinterpretationrulesinput": "WorkspaceUpsertWithoutInterpretationRulesInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L51374 | neighbors=[index.d.ts]
+- "generated_client_index_d_workspaceupsertwithoutparametersinput": "WorkspaceUpsertWithoutParametersInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L49362 | neighbors=[index.d.ts]
+- "generated_client_index_d_workspaceupsertwithoutpdfsettinginput": "WorkspaceUpsertWithoutPdfSettingInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L51712 | neighbors=[index.d.ts]
+- "generated_client_index_d_workspaceupsertwithoutregistrationsinput": "WorkspaceUpsertWithoutRegistrationsInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L48715 | neighbors=[index.d.ts]
+- "generated_client_index_d_workspaceupsertwithouttestformulasinput": "WorkspaceUpsertWithoutTestFormulasInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L50980 | neighbors=[index.d.ts]
+- "generated_client_index_d_workspaceupsertwithouttestparametersinput": "WorkspaceUpsertWithoutTestParametersInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L49679 | neighbors=[index.d.ts]
+- "generated_client_index_d_workspaceupsertwithouttestsinput": "WorkspaceUpsertWithoutTestsInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L48205 | neighbors=[index.d.ts]
+- "generated_client_index_d_workspaceupsertwithoutusersinput": "WorkspaceUpsertWithoutUsersInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L46472 | neighbors=[index.d.ts]
+- "generated_client_index_d_workspacewhereinput": "WorkspaceWhereInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L34480 | neighbors=[index.d.ts]
+- "generated_client_index_d_workspacewhereuniqueinput": "WorkspaceWhereUniqueInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L34527 | neighbors=[index.d.ts]
+- "generated_client_index_d_xor": "XOR" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L795 | neighbors=[index.d.ts]
+- "generated_client_index_fs": "fs" | kind=code-symbol | source=scratch/generated-client/index.js:L625 | neighbors=[index.js]
+- "generated_client_index_path": "path" | kind=code-symbol | source=scratch/generated-client/index.js:L82 | neighbors=[index.js]
+- "generated_client_index_prisma": "Prisma" | kind=code-symbol | source=scratch/generated-client/index.js:L29 | neighbors=[index.js]
 - "generated_client_index_prismaclient": "PrismaClient" | kind=code-symbol | source=scratch/generated-client/index.js:L654 | neighbors=[index.js]
 - "generated_client_index_prismaclientknownrequesterror_prismaclientunknownrequesterror_prismaclientrustpanicerror_prismaclientinitializationerror_prismaclientvalidationerror_notfounderror_getprismaclient_sqltag_empty_join_raw_skip_decimal_debug_objectenumvalues_makestrictenum_extensions_warnonce_definedmmfproperty_public_getruntime": "{\n  PrismaClientKnownRequestError,\n  PrismaClientUnknownRequestError,\n  PrismaC…" | kind=code-symbol | source=scratch/generated-client/index.js:L4 | neighbors=[index.js]
 - "generated_client_index_warnenvconflicts": "{ warnEnvConflicts }" | kind=code-symbol | source=scratch/generated-client/index.js:L647 | neighbors=[index.js]
@@ -37,26 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "lib_formulautils_getreferencerange": "getReferenceRange()" | kind=code-symbol | source=lib/formulaUtils.js:L446 | neighbors=[formulaUtils.js]
 - "lib_mail_sendapprovalemail": "sendApprovalEmail()" | kind=code-symbol | source=lib/mail.js:L54 | neighbors=[mail.js]
 - "lib_mail_sendrejectionemail": "sendRejectionEmail()" | kind=code-symbol | source=lib/mail.js:L87 | neighbors=[mail.js]
-- "lib_mail_sendverificationemail": "sendVerificationEmail()" | kind=code-symbol | source=lib/mail.js:L19 | neighbors=[mail.js]
-- "lib_mail_transporter": "transporter" | kind=code-symbol | source=lib/mail.js:L8 | neighbors=[mail.js]
-- "lib_r2_s3client": "s3Client" | kind=code-symbol | source=lib/r2.js:L3 | neighbors=[r2.js]
-- "lib_r2_uploadfiletor2": "uploadFileToR2()" | kind=code-symbol | source=lib/r2.js:L13 | neighbors=[r2.js]
-- "lib_saasinvoice_decodepaymentuid": "decodePaymentUid()" | kind=code-symbol | source=lib/saasInvoice.js:L46 | neighbors=[saasInvoice.js]
-- "lib_saasinvoice_encodepaymentuid": "encodePaymentUid()" | kind=code-symbol | source=lib/saasInvoice.js:L16 | neighbors=[saasInvoice.js]
-- "lib_saasinvoice_key": "KEY" | kind=code-symbol | source=lib/saasInvoice.js:L7 | neighbors=[saasInvoice.js]
-- "login_loginpageclient_loginschema": "loginSchema" | kind=code-symbol | source=app/(customer)/auth/login/LoginPageClient.js:L17 | neighbors=[LoginPageClient.js]
-- "login_page_metadata": "metadata" | kind=code-symbol | source=app/(customer)/auth/login/page.js:L3 | neighbors=[page.js]
-- "login_page_page": "Page()" | kind=code-symbol | source=app/(customer)/auth/login/page.js:L11 | neighbors=[page.js]
-- "login_route_post": "POST()" | kind=code-symbol | source=app/api/authas/login/route.js:L9 | neighbors=[route.js]
-- "logout_redirect_route_get": "GET()" | kind=code-symbol | source=app/api/auth/logout-redirect/route.js:L4 | neighbors=[route.js]
-- "logout_route_post": "POST()" | kind=code-symbol | source=app/api/authas/logout/route.js:L5 | neighbors=[route.js]
-- "members_page_workspacememberspage": "WorkspaceMembersPage()" | kind=code-symbol | source=app/(customer)/(dashboard)/members/page.js:L36 | neighbors=[page.js]
-- "members_route_get": "GET()" | kind=code-symbol | source=app/api/members/route.js:L6 | neighbors=[route.js]
-- "members_route_patch": "PATCH()" | kind=code-symbol | source=app/api/members/route.js:L74 | neighbors=[route.js]
-- "members_route_post": "POST()" | kind=code-symbol | source=app/api/members/route.js:L34 | neighbors=[route.js]
-- "next_config_nextconfig": "nextConfig" | kind=code-symbol | source=next.config.mjs:L2 | neighbors=[next.config.mjs]
-- "offline_db_appdatabase_constructor": ".constructor()" | kind=code-symbol | source=lib/offline/db.js:L5 | neighbors=[AppDatabase]
-- "offline_db_appdatabase_getallerrorrecords": ".getAllErrorRecords()" | kind=code-symbol | source=lib/offline/db.js:L205 | neighbors=[AppDatabase]
 
 ## Instructions
 

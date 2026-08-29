@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState, useEffect } from "react";
+import { usePathname } from "next/navigation";
 import {
   Dialog,
   DialogTitle,
@@ -33,11 +34,17 @@ export default function ReLoginModal({
   onLoginSuccess,
   pendingCount = 0,
 }) {
+  const pathname = usePathname();
+  const isAuthPage = pathname === "/" || pathname?.startsWith("/auth") || pathname?.startsWith("/adminstration/login");
+
   const [identifier, setIdentifier] = useState("");
   const [password, setPassword] = useState("");
   const [showPassword, setShowPassword] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
   const [errorMessage, setErrorMessage] = useState("");
+
+  // Do not render anything if on root/login page
+  if (isAuthPage) return null;
 
   // Populate email / identifier from cached session when modal opens
   useEffect(() => {

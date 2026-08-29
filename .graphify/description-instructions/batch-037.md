@@ -1,4 +1,4 @@
-# Node Description Batch 38 of 149
+# Node Description Batch 38 of 150
 
 Graphify is running in assistant/skill mode (no API key). You are the host
 assistant (Claude Code / Codex / Gemini CLI). Read the prompt below and write
@@ -17,6 +17,26 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "print_reportpdfgenerator_isoutofrange": "isOutOfRange()" | kind=code-symbol | source=lib/offline/print/reportPdfGenerator.js:L75 | neighbors=[reportPdfGenerator.js, isQualitativeAbnormal()]
+- "print_reportpdfgenerator_isqualitativeabnormal": "isQualitativeAbnormal()" | kind=code-symbol | source=lib/offline/print/reportPdfGenerator.js:L12 | neighbors=[reportPdfGenerator.js, isOutOfRange()]
+- "prisma_process_dynamic_parameters_main": "main()" | kind=code-symbol | source=prisma/process-dynamic-parameters.js:L142 | neighbors=[process-dynamic-parameters.js, processTestParameters()]
+- "prisma_process_dynamic_parameters_processtestparameters": "processTestParameters()" | kind=code-symbol | source=prisma/process-dynamic-parameters.js:L4 | neighbors=[process-dynamic-parameters.js, main()]
+- "prisma_seed_getdepartmentname": "getDepartmentName()" | kind=code-symbol | source=prisma/seed.js:L413 | neighbors=[seed.js, main()]
+- "prisma_seed_processtestparameters": "processTestParameters()" | kind=code-symbol | source=prisma/seed.js:L282 | neighbors=[seed.js, main()]
+- "prisma_seed_seedlimsformulasandconfigurations": "seedLimsFormulasAndConfigurations()" | kind=code-symbol | source=prisma/seed.js:L534 | neighbors=[seed.js, main()]
+- "q_route": "route.js" | kind=code-symbol | source=app/(printReport)/q/route.js:L1 | neighbors=[6c2dfe4 test, GET()]
+- "register_route": "route.js" | kind=code-symbol | source=app/api/authas/register/route.js:L1 | neighbors=[252e194 e, POST()]
+- "registrationid_route_formatdate": "formatDate()" | kind=code-symbol | source=app/api/print-report/[registrationId]/route.js:L81 | neighbors=[route.js, GET()]
+- "registrationid_route_getreferencerange": "getReferenceRange()" | kind=code-symbol | source=app/api/print-report/[registrationId]/route.js:L58 | neighbors=[route.js, GET()]
+- "registrationid_route_isoutofrange": "isOutOfRange()" | kind=code-symbol | source=app/api/print-report/[registrationId]/route.js:L46 | neighbors=[route.js, isQualitativeAbnormal()]
+- "registrationid_route_isqualitativeabnormal": "isQualitativeAbnormal()" | kind=code-symbol | source=app/api/print-report/[registrationId]/route.js:L16 | neighbors=[route.js, isOutOfRange()]
+- "registrationid_route_numbertowords": "numberToWords()" | kind=code-symbol | source=app/api/print-bill/[registrationId]/route.js:L21 | neighbors=[route.js, GET()]
+- "registrations_route_get": "GET()" | kind=code-symbol | source=app/api/registrations/route.js:L57 | neighbors=[route.js, serializeData()]
+- "registrations_route_post": "POST()" | kind=code-symbol | source=app/api/registrations/route.js:L116 | neighbors=[route.js, serializeData()]
+- "reject_route": "route.js" | kind=code-symbol | source=app/api/approvals/reject/route.js:L1 | neighbors=[252e194 e, POST()]
+- "results_route_post": "POST()" | kind=code-symbol | source=app/api/registrations/[id]/results/route.js:L6 | neighbors=[route.js, PUT()]
+- "results_route_put": "PUT()" | kind=code-symbol | source=app/api/registrations/[id]/results/route.js:L108 | neighbors=[route.js, POST()]
+- "roles_route": "route.js" | kind=code-symbol | source=app/api/roles/route.js:L1 | neighbors=[252e194 e, GET()]
 - "runtime_edge_additem": "addItem()" | kind=code-symbol | source=scratch/generated-client/runtime/edge.js:L3 | neighbors=[edge.js, Lu()]
 - "runtime_edge_addmarginsymbol": "addMarginSymbol()" | kind=code-symbol | source=scratch/generated-client/runtime/edge.js:L2 | neighbors=[edge.js, write()]
 - "runtime_edge_ba": "Ba()" | kind=code-symbol | source=scratch/generated-client/runtime/edge.js:L1 | neighbors=[edge.js, Sa()]
@@ -37,26 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "runtime_edge_esm_cc": "Cc()" | kind=code-symbol | source=scratch/generated-client/runtime/edge-esm.js:L11 | neighbors=[edge-esm.js, vs()]
 - "runtime_edge_esm_cn": "Cn()" | kind=code-symbol | source=scratch/generated-client/runtime/edge-esm.js:L5 | neighbors=[edge-esm.js, Ut()]
 - "runtime_edge_esm_cs": "cs()" | kind=code-symbol | source=scratch/generated-client/runtime/edge-esm.js:L6 | neighbors=[edge-esm.js, ps()]
-- "runtime_edge_esm_ct": "Ct()" | kind=code-symbol | source=scratch/generated-client/runtime/edge-esm.js:L1 | neighbors=[edge-esm.js, ss()]
-- "runtime_edge_esm_di": "di()" | kind=code-symbol | source=scratch/generated-client/runtime/edge-esm.js:L1 | neighbors=[edge-esm.js, yi()]
-- "runtime_edge_esm_el": "el()" | kind=code-symbol | source=scratch/generated-client/runtime/edge-esm.js:L1 | neighbors=[edge-esm.js, ce()]
-- "runtime_edge_esm_empty": "empty()" | kind=code-symbol | source=scratch/generated-client/runtime/edge-esm.js:L5 | neighbors=[edge-esm.js, e()]
-- "runtime_edge_esm_enabled": "enabled()" | kind=code-symbol | source=scratch/generated-client/runtime/edge-esm.js:L1 | neighbors=[edge-esm.js, ga()]
-- "runtime_edge_esm_eo": "eo()" | kind=code-symbol | source=scratch/generated-client/runtime/edge-esm.js:L1 | neighbors=[edge-esm.js, mo()]
-- "runtime_edge_esm_es": "Es()" | kind=code-symbol | source=scratch/generated-client/runtime/edge-esm.js:L8 | neighbors=[edge-esm.js, qn()]
-- "runtime_edge_esm_et": "Et()" | kind=code-symbol | source=scratch/generated-client/runtime/edge-esm.js:L13 | neighbors=[edge-esm.js, ks()]
-- "runtime_edge_esm_extracthostandapikey": "extractHostAndApiKey()" | kind=code-symbol | source=scratch/generated-client/runtime/edge-esm.js:L12 | neighbors=[edge-esm.js, get()]
-- "runtime_edge_esm_fl": "fl()" | kind=code-symbol | source=scratch/generated-client/runtime/edge-esm.js:L1 | neighbors=[edge-esm.js, co()]
-- "runtime_edge_esm_getactivecontext": "getActiveContext()" | kind=code-symbol | source=scratch/generated-client/runtime/edge-esm.js:L20 | neighbors=[edge-esm.js, getGlobalTracingHelper()]
-- "runtime_edge_esm_getallbatchquerycallbacks": "getAllBatchQueryCallbacks()" | kind=code-symbol | source=scratch/generated-client/runtime/edge-esm.js:L5 | neighbors=[edge-esm.js, get()]
-- "runtime_edge_esm_getcurrentlinelength": "getCurrentLineLength()" | kind=code-symbol | source=scratch/generated-client/runtime/edge-esm.js:L3 | neighbors=[edge-esm.js, write()]
-- "runtime_edge_esm_getfields": "getFields()" | kind=code-symbol | source=scratch/generated-client/runtime/edge-esm.js:L3 | neighbors=[edge-esm.js, vu()]
-- "runtime_edge_esm_getnamespace": "_getNamespace()" | kind=code-symbol | source=scratch/generated-client/runtime/edge-esm.js:L4 | neighbors=[edge-esm.js, constructor()]
-- "runtime_edge_esm_getoutputtypedescription": "getOutputTypeDescription()" | kind=code-symbol | source=scratch/generated-client/runtime/edge-esm.js:L5 | neighbors=[edge-esm.js, fu()]
-- "runtime_edge_esm_getprintwidth": "getPrintWidth()" | kind=code-symbol | source=scratch/generated-client/runtime/edge-esm.js:L3 | neighbors=[edge-esm.js, values()]
-- "runtime_edge_esm_h": "h()" | kind=code-symbol | source=scratch/generated-client/runtime/edge-esm.js:L1 | neighbors=[edge-esm.js, v()]
-- "runtime_edge_esm_handleerror": "handleError()" | kind=code-symbol | source=scratch/generated-client/runtime/edge-esm.js:L12 | neighbors=[edge-esm.js, uploadSchema()]
-- "runtime_edge_esm_hn": "hn()" | kind=code-symbol | source=scratch/generated-client/runtime/edge-esm.js:L1 | neighbors=[edge-esm.js, ul()]
 
 ## Instructions
 

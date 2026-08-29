@@ -1,4 +1,4 @@
-# Node Description Batch 6 of 149
+# Node Description Batch 6 of 150
 
 Graphify is running in assistant/skill mode (no API key). You are the host
 assistant (Claude Code / Codex / Gemini CLI). Read the prompt below and write
@@ -12,18 +12,15 @@ describing what it is or does. Use only the provided context.
 For a code symbol (kind=code-symbol — a function, class, or constant),
 describe what the function/symbol does based on its name, source location
 and neighbors — e.g. "Resolves the configured ontology profile from graphify.yaml.".
-For an entity node (any other kind — e.g. a person, place, event, object),
-describe what the entity is and its role, grounded in its type, its
-relations (neighbors) and the provided citations/evidence — e.g.
-"Lady Carfax, a wealthy heiress who disappears en route to Lausanne.".
-Ground entity descriptions in the citations/evidence when present; do not
-speculate beyond the context, so a node with no supporting context may be
-left out of the reply.
 Write every description in English (en). Do not switch languages.
 No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "runtime_edge_hasfield": "hasField()" | kind=code-symbol | source=scratch/generated-client/runtime/edge.js:L3 | neighbors=[edge.js, Ao(), du(), getField(), mu(), nu()]
+- "runtime_edge_ou": "ou()" | kind=code-symbol | source=scratch/generated-client/runtime/edge.js:L1 | neighbors=[edge.js, addErrorMessage(), asObject(), getDeepFieldValue(), getDeepSubSelectionValue(), Pe()]
+- "runtime_edge_pi": "pi()" | kind=code-symbol | source=scratch/generated-client/runtime/edge.js:L1 | neighbors=[edge.js, Aa(), Ca(), de(), mi(), Ta()]
+- "runtime_edge_qu": "qu()" | kind=code-symbol | source=scratch/generated-client/runtime/edge.js:L5 | neighbors=[edge.js, no(), getArgumentName(), getArgumentPath(), getSelectionPath(), nestArgument()]
 - "runtime_edge_r": "r()" | kind=code-symbol | source=scratch/generated-client/runtime/edge.js:L1 | neighbors=[edge.js, Aa(), getOrCreate(), mo(), Qe(), us()]
 - "runtime_edge_throwvalidationerror": "throwValidationError()" | kind=code-symbol | source=scratch/generated-client/runtime/edge.js:L5 | neighbors=[edge.js, bo(), In(), ju(), qu(), Fr()]
 - "runtime_edge_yu": "yu()" | kind=code-symbol | source=scratch/generated-client/runtime/edge.js:L3 | neighbors=[edge.js, Ar(), addErrorMessage(), addSuggestion(), getDeepSelectionParent(), getField()]
@@ -60,10 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "runtime_wasm_qs": "qs()" | kind=code-symbol | source=scratch/generated-client/runtime/wasm.js:L4 | neighbors=[wasm.js, addErrorMessage(), asObject(), getDeepField(), getDeepSubSelectionValue(), getField()]
 - "runtime_wasm_throwvalidationerror": "throwValidationError()" | kind=code-symbol | source=scratch/generated-client/runtime/wasm.js:L5 | neighbors=[wasm.js, aa(), di(), Dr(), fi(), ia()]
 - "runtime_wasm_ti": "ti()" | kind=code-symbol | source=scratch/generated-client/runtime/wasm.js:L4 | neighbors=[wasm.js, Ns(), asObject(), getDeepSubSelectionValue(), getField(), getFieldValue()]
-- "runtime_wasm_values": "values()" | kind=code-symbol | source=scratch/generated-client/runtime/wasm.js:L5 | neighbors=[wasm.js, as(), ci(), getPrintWidth(), ui(), unpack()]
-- "sync_modelregistry": "modelRegistry.js" | kind=code-symbol | source=lib/offline/sync/modelRegistry.js:L1 | neighbors=[2b2534c f, 56f4d63 f, 7d8c494 fxed, 84a8ff2 full indexeddb based, d446d11 fixed code, f3857f9 f]
-- "tests_route": "route.js" | kind=code-symbol | source=app/api/tests/route.js:L1 | neighbors=[252e194 e, 7d8c494 fxed, DELETE(), GET(), POST(), PUT()]
-- "commit:repo:github.com-personal/miznaansari/easytechnomed-pwa@2582be7e5cb0ce4ac0f6544d7b325a2fc7cc8f2a": "2582be7 fixed zoom issue" | kind=Commit | source=git | neighbors=[layout.js, main, 20dc303 3.0.19, LoginPageClient.js, RegisterPageClient.js, Input.js]
 
 ## Instructions
 

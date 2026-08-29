@@ -1,4 +1,4 @@
-# Node Description Batch 21 of 149
+# Node Description Batch 21 of 150
 
 Graphify is running in assistant/skill mode (no API key). You are the host
 assistant (Claude Code / Codex / Gemini CLI). Read the prompt below and write
@@ -17,6 +17,16 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "runtime_index_browser_l": "L()" | kind=code-symbol | source=scratch/generated-client/runtime/index-browser.js:L1 | neighbors=[index-browser.js, e(), p(), mn()]
+- "runtime_index_browser_on": "on()" | kind=code-symbol | source=scratch/generated-client/runtime/index-browser.js:L1 | neighbors=[index-browser.js, ie(), p(), ue()]
+- "runtime_index_browser_se": "se()" | kind=code-symbol | source=scratch/generated-client/runtime/index-browser.js:L1 | neighbors=[index-browser.js, B(), e(), p()]
+- "runtime_index_browser_un": "un()" | kind=code-symbol | source=scratch/generated-client/runtime/index-browser.js:L1 | neighbors=[index-browser.js, e(), fe(), j()]
+- "runtime_library_addfield": "addField()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L27 | neighbors=[library.js, Fp(), qp(), zs()]
+- "runtime_library_afternextnewline": "afterNextNewline()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L26 | neighbors=[library.js, write(), writeWithContents(), writeWithItems()]
+- "runtime_library_build": "build()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L111 | neighbors=[library.js, buildCaptureSettings(), getTraceParent(), isEnabled()]
+- "runtime_library_createenginespan": "createEngineSpan()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L121 | neighbors=[library.js, getGlobalTracingHelper(), logger(), propagateResponseExtensions()]
+- "runtime_library_ct": "ct()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L111 | neighbors=[library.js, r(), to(), um()]
+- "runtime_library_d_queryable": "Queryable" | kind=code-symbol | neighbors=[_d(), DriverAdapter, Transaction, TransactionContext]
 - "runtime_library_ea": "ea()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L29 | neighbors=[library.js, Lt(), t(), ta()]
 - "runtime_library_et": "Et()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L21 | neighbors=[library.js, e(), Rc(), vc()]
 - "runtime_library_getallcomputedfields": "getAllComputedFields()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L29 | neighbors=[library.js, getOrCreate(), getComputedFields(), Oa()]
@@ -47,16 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "runtime_library_np": "np()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L21 | neighbors=[library.js, addErrorMessage(), Hs(), markAsError()]
 - "runtime_library_ns": "ns()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L18 | neighbors=[library.js, ac(), rs(), zt()]
 - "runtime_library_oc": "oc()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L3 | neighbors=[library.js, ci(), forEach(), ic()]
-- "runtime_library_ot": "Ot()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L29 | neighbors=[library.js, ha(), om(), wn()]
-- "runtime_library_pt": "Pt()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L21 | neighbors=[library.js, Br(), sa(), xl()]
-- "runtime_library_rc": "Rc()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L21 | neighbors=[library.js, an(), e(), Et()]
-- "runtime_library_requestinternal": "requestInternal()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L111 | neighbors=[library.js, request(), requestBatch(), withRetry()]
-- "runtime_library_rl": "rl()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L66 | neighbors=[library.js, Lo(), So(), tl()]
-- "runtime_library_ss": "Ss()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L21 | neighbors=[library.js, e(), Es(), Tc()]
-- "runtime_library_ta": "ta()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L29 | neighbors=[library.js, ea(), Te(), Yp()]
-- "runtime_library_tm": "tm()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L110 | neighbors=[library.js, or(), text(), values()]
-- "runtime_library_underline": "underline()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L27 | neighbors=[library.js, vp(), write(), writeEmpty()]
-- "runtime_library_wa": "wa()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L31 | neighbors=[library.js, On(), t(), Xe()]
 
 ## Instructions
 

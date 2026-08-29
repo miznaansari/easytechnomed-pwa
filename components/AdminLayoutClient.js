@@ -45,6 +45,7 @@ import {
 } from "@mui/icons-material";
 import SyncIndicator from "@/components/offline/SyncIndicator";
 import UnsyncedLogoutModal from "@/components/offline/UnsyncedLogoutModal";
+import VersionUpdateNotifier from "@/components/version/VersionUpdateNotifier";
 import { useSync } from "@/hooks/useSync";
 import { saveAuthenticatedSession, clearLocalSession } from "@/lib/auth/offlineAuth";
 
@@ -863,6 +864,9 @@ export default function AdminLayoutClient({ admin: initialAdmin, children }) {
             pendingCount={pendingCount}
             isSyncing={isSyncing}
           />
+
+          {/* Automated App Version Update & Hard Refresh Notifier */}
+          <VersionUpdateNotifier />
         </Box>
       </ThemeProvider>
     </TrackingProvider>

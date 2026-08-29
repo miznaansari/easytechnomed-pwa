@@ -1,4 +1,4 @@
-# Node Description Batch 108 of 149
+# Node Description Batch 108 of 150
 
 Graphify is running in assistant/skill mode (no API key). You are the host
 assistant (Claude Code / Codex / Gemini CLI). Read the prompt below and write
@@ -17,6 +17,26 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "generated_client_index_d_testparameterrelationfilter": "TestParameterRelationFilter" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L42085 | neighbors=[index.d.ts]
+- "generated_client_index_d_testparameterscalarfieldenum": "TestParameterScalarFieldEnum" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L34220 | neighbors=[index.d.ts]
+- "generated_client_index_d_testparameterscalarwhereinput": "TestParameterScalarWhereInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L46021 | neighbors=[index.d.ts]
+- "generated_client_index_d_testparameterscalarwherewithaggregatesinput": "TestParameterScalarWhereWithAggregatesInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L36276 | neighbors=[index.d.ts]
+- "generated_client_index_d_testparameterselect": "TestParameterSelect" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L21318 | neighbors=[index.d.ts]
+- "generated_client_index_d_testparameterselectscalar": "TestParameterSelectScalar" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L21346 | neighbors=[index.d.ts]
+- "generated_client_index_d_testparametersumaggregateinputtype": "TestParameterSumAggregateInputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L21114 | neighbors=[index.d.ts]
+- "generated_client_index_d_testparametersumaggregateoutputtype": "TestParameterSumAggregateOutputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L21026 | neighbors=[index.d.ts]
+- "generated_client_index_d_testparametersumorderbyaggregateinput": "TestParameterSumOrderByAggregateInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L42075 | neighbors=[index.d.ts]
+- "generated_client_index_d_testparameteruncheckedcreateinput": "TestParameterUncheckedCreateInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L39198 | neighbors=[index.d.ts]
+- "generated_client_index_d_testparameteruncheckedcreatenestedmanywithoutparameterinput": "TestParameterUncheckedCreateNestedManyWithoutParameterInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L44376 | neighbors=[index.d.ts]
+- "generated_client_index_d_testparameteruncheckedcreatenestedmanywithouttestinput": "TestParameterUncheckedCreateNestedManyWithoutTestInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L43962 | neighbors=[index.d.ts]
+- "generated_client_index_d_testparameteruncheckedcreatenestedmanywithoutworkspaceinput": "TestParameterUncheckedCreateNestedManyWithoutWorkspaceInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L42848 | neighbors=[index.d.ts]
+- "generated_client_index_d_testparameteruncheckedcreatewithoutparameterinput": "TestParameterUncheckedCreateWithoutParameterInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L49266 | neighbors=[index.d.ts]
+- "generated_client_index_d_testparameteruncheckedcreatewithoutresultsinput": "TestParameterUncheckedCreateWithoutResultsInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L50016 | neighbors=[index.d.ts]
+- "generated_client_index_d_testparameteruncheckedcreatewithouttestinput": "TestParameterUncheckedCreateWithoutTestInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L48050 | neighbors=[index.d.ts]
+- "generated_client_index_d_testparameteruncheckedcreatewithoutworkspaceinput": "TestParameterUncheckedCreateWithoutWorkspaceInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L45553 | neighbors=[index.d.ts]
+- "generated_client_index_d_testparameteruncheckedupdateinput": "TestParameterUncheckedUpdateInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L39243 | neighbors=[index.d.ts]
+- "generated_client_index_d_testparameteruncheckedupdatemanyinput": "TestParameterUncheckedUpdateManyInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L39306 | neighbors=[index.d.ts]
+- "generated_client_index_d_testparameteruncheckedupdatemanywithoutparameterinput": "TestParameterUncheckedUpdateManyWithoutParameterInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L54036 | neighbors=[index.d.ts]
 - "generated_client_index_d_testparameteruncheckedupdatemanywithoutparameternestedinput": "TestParameterUncheckedUpdateManyWithoutParameterNestedInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L44457 | neighbors=[index.d.ts]
 - "generated_client_index_d_testparameteruncheckedupdatemanywithouttestinput": "TestParameterUncheckedUpdateManyWithoutTestInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L53723 | neighbors=[index.d.ts]
 - "generated_client_index_d_testparameteruncheckedupdatemanywithouttestnestedinput": "TestParameterUncheckedUpdateManyWithoutTestNestedInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L44081 | neighbors=[index.d.ts]
@@ -37,26 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "generated_client_index_d_testparameterupdatemanywithwherewithouttestinput": "TestParameterUpdateManyWithWhereWithoutTestInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L48268 | neighbors=[index.d.ts]
 - "generated_client_index_d_testparameterupdatemanywithwherewithoutworkspaceinput": "TestParameterUpdateManyWithWhereWithoutWorkspaceInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L46016 | neighbors=[index.d.ts]
 - "generated_client_index_d_testparameterupdateonerequiredwithoutresultsnestedinput": "TestParameterUpdateOneRequiredWithoutResultsNestedInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L44605 | neighbors=[index.d.ts]
-- "generated_client_index_d_testparameterupdatetoonewithwherewithoutresultsinput": "TestParameterUpdateToOneWithWhereWithoutResultsInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L50149 | neighbors=[index.d.ts]
-- "generated_client_index_d_testparameterupdatewithoutparameterinput": "TestParameterUpdateWithoutParameterInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L53993 | neighbors=[index.d.ts]
-- "generated_client_index_d_testparameterupdatewithoutresultsinput": "TestParameterUpdateWithoutResultsInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L50154 | neighbors=[index.d.ts]
-- "generated_client_index_d_testparameterupdatewithouttestinput": "TestParameterUpdateWithoutTestInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L53680 | neighbors=[index.d.ts]
-- "generated_client_index_d_testparameterupdatewithoutworkspaceinput": "TestParameterUpdateWithoutWorkspaceInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L52486 | neighbors=[index.d.ts]
-- "generated_client_index_d_testparameterupdatewithwhereuniquewithoutparameterinput": "TestParameterUpdateWithWhereUniqueWithoutParameterInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L49420 | neighbors=[index.d.ts]
-- "generated_client_index_d_testparameterupdatewithwhereuniquewithouttestinput": "TestParameterUpdateWithWhereUniqueWithoutTestInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L48263 | neighbors=[index.d.ts]
-- "generated_client_index_d_testparameterupdatewithwhereuniquewithoutworkspaceinput": "TestParameterUpdateWithWhereUniqueWithoutWorkspaceInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L46011 | neighbors=[index.d.ts]
-- "generated_client_index_d_testparameterupsertargs": "TestParameterUpsertArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L22043 | neighbors=[index.d.ts]
-- "generated_client_index_d_testparameterupsertwithoutresultsinput": "TestParameterUpsertWithoutResultsInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L50143 | neighbors=[index.d.ts]
-- "generated_client_index_d_testparameterupsertwithwhereuniquewithoutparameterinput": "TestParameterUpsertWithWhereUniqueWithoutParameterInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L49414 | neighbors=[index.d.ts]
-- "generated_client_index_d_testparameterupsertwithwhereuniquewithouttestinput": "TestParameterUpsertWithWhereUniqueWithoutTestInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L48257 | neighbors=[index.d.ts]
-- "generated_client_index_d_testparameterupsertwithwhereuniquewithoutworkspaceinput": "TestParameterUpsertWithWhereUniqueWithoutWorkspaceInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L46005 | neighbors=[index.d.ts]
-- "generated_client_index_d_testparameterwhereinput": "TestParameterWhereInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L36165 | neighbors=[index.d.ts]
-- "generated_client_index_d_testparameterwhereuniqueinput": "TestParameterWhereUniqueInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L36220 | neighbors=[index.d.ts]
-- "generated_client_index_d_testpayload": "$TestPayload" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L16212 | neighbors=[index.d.ts]
-- "generated_client_index_d_testrelationfilter": "TestRelationFilter" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L41722 | neighbors=[index.d.ts]
-- "generated_client_index_d_testscalarfieldenum": "TestScalarFieldEnum" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L34089 | neighbors=[index.d.ts]
-- "generated_client_index_d_testscalarwhereinput": "TestScalarWhereInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L45882 | neighbors=[index.d.ts]
-- "generated_client_index_d_testscalarwherewithaggregatesinput": "TestScalarWhereWithAggregatesInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L35569 | neighbors=[index.d.ts]
 
 ## Instructions
 

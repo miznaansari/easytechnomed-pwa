@@ -1,4 +1,4 @@
-# Node Description Batch 5 of 149
+# Node Description Batch 5 of 150
 
 Graphify is running in assistant/skill mode (no API key). You are the host
 assistant (Claude Code / Codex / Gemini CLI). Read the prompt below and write
@@ -24,6 +24,10 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "runtime_edge_esm_vu": "vu()" | kind=code-symbol | source=scratch/generated-client/runtime/edge-esm.js:L4 | neighbors=[edge-esm.js, Tr(), addErrorMessage(), asObject(), getDeepFieldValue(), getDeepSubSelectionValue()]
+- "runtime_edge_getdeepfieldvalue": "getDeepFieldValue()" | kind=code-symbol | source=scratch/generated-client/runtime/edge.js:L3 | neighbors=[edge.js, Au(), cu(), getDeepField(), ku(), ou()]
+- "runtime_edge_ht": "ht()" | kind=code-symbol | source=scratch/generated-client/runtime/edge.js:L6 | neighbors=[edge.js, ac(), ic(), it(), ot(), Pe()]
+- "runtime_edge_ku": "ku()" | kind=code-symbol | source=scratch/generated-client/runtime/edge.js:L4 | neighbors=[edge.js, Ar(), addErrorMessage(), asObject(), getDeepFieldValue(), getDeepSubSelectionValue()]
 - "runtime_index_browser_e": "e()" | kind=code-symbol | source=scratch/generated-client/runtime/index-browser.js:L1 | neighbors=[index-browser.js, be(), Ae(), L(), j(), se()]
 - "runtime_index_browser_p": "p()" | kind=code-symbol | source=scratch/generated-client/runtime/index-browser.js:L1 | neighbors=[index-browser.js, B(), Ee(), jn(), L(), Nn()]
 - "runtime_library_addsuggestion": "addSuggestion()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L27 | neighbors=[library.js, dp(), Fp(), jp(), ks(), op()]
@@ -47,11 +51,11 @@ one-sentence description — no prose, no markdown fences.
 - "settings_page": "page.js" | kind=code-symbol | source=app/(customer)/(dashboard)/settings/page.js:L1 | neighbors=[252e194 e, 7d8c494 fxed, 84a8ff2 full indexeddb based, cf2bb98 new, paymentsClient.jsx, pdfClient.jsx]
 - "commit:repo:github.com-personal/miznaansari/easytechnomed-pwa@56f4d63de7f588eafda68878782538c1659db650": "56f4d63 f" | kind=Commit | source=git | neighbors=[main, 84807f4 1.1.27, page.js, modelRegistry.js, syncManager.js, page.js]
 - "component_resultentry": "resultEntry.jsx" | kind=code-symbol | source=app/(customer)/(dashboard)/test-report/component/resultEntry.jsx:L1 | neighbors=[252e194 e, 2b2534c f, 7d8c494 fxed, 84a8ff2 full indexeddb based, 9f59247 expire token, ResultEntry()]
+- "dashboard_dashboardcharts": "DashboardCharts.js" | kind=code-symbol | source=app/(customer)/(dashboard)/dashboard/DashboardCharts.js:L1 | neighbors=[252e194 e, 6812ab9 new ui dashboard, CustomTooltip(), DepartmentDistributionChart(), RegistrationChart(), page.js]
 - "lib_formulautils_calculatealldependents": "calculateAllDependents()" | kind=code-symbol | source=lib/formulaUtils.js:L680 | neighbors=[formulaEngine.js, formulaUtils.js, addPatientContextToValuesMap(), addValueToValuesMap(), checkFormulaDependencies(), evaluateExpression()]
 - "offline_timestamps": "timestamps.js" | kind=code-symbol | source=lib/offline/timestamps.js:L1 | neighbors=[2b2534c f, db.js, compareUtc(), formatLocalDisplay(), getUtcIsoNow(), isServerNewer()]
-- "print_reportpdfgenerator": "reportPdfGenerator.js" | kind=code-symbol | source=lib/offline/print/reportPdfGenerator.js:L1 | neighbors=[8b1f3d8 a, offlinePrint.js, openPrint.js, formatDate(), generateOfflineReportPdf(), getReferenceRange()]
 - "prisma_seed": "seed.js" | kind=code-symbol | source=prisma/seed.js:L1 | neighbors=[252e194 e, bcrypt, getDepartmentName(), main(), prisma, { PrismaClient }]
-- "registrations_route": "route.js" | kind=code-symbol | source=app/api/registrations/route.js:L1 | neighbors=[252e194 e, 7d8c494 fxed, d446d11 fixed code, generateRandomSuffix(), GET(), POST()]
+- "registrationid_route": "route.js" | kind=code-symbol | source=app/api/print-report/[registrationId]/route.js:L1 | neighbors=[252e194 e, 6c2dfe4 test, formatDate(), GET(), getReferenceRange(), isOutOfRange()]
 - "runtime_edge_esm_gt": "Gt()" | kind=code-symbol | source=scratch/generated-client/runtime/edge-esm.js:L6 | neighbors=[edge-esm.js, Ee(), gc(), getAllClientExtensions(), jt(), qn()]
 - "runtime_edge_esm_hc": "hc()" | kind=code-symbol | source=scratch/generated-client/runtime/edge-esm.js:L6 | neighbors=[edge-esm.js, addErrorMessage(), getDeepField(), getDeepFieldValue(), getField(), kr()]
 - "runtime_edge_esm_hu": "hu()" | kind=code-symbol | source=scratch/generated-client/runtime/edge-esm.js:L4 | neighbors=[edge-esm.js, addErrorMessage(), asObject(), Au(), getDeepSubSelectionValue(), getField()]
@@ -60,10 +64,6 @@ one-sentence description — no prose, no markdown fences.
 - "runtime_edge_esm_throwvalidationerror": "throwValidationError()" | kind=code-symbol | source=scratch/generated-client/runtime/edge-esm.js:L5 | neighbors=[edge-esm.js, An(), fu(), lo(), mu(), qo()]
 - "runtime_edge_esm_uu": "uu()" | kind=code-symbol | source=scratch/generated-client/runtime/edge-esm.js:L3 | neighbors=[edge-esm.js, Tr(), addErrorMessage(), addSuggestion(), getDeepSelectionParent(), getField()]
 - "runtime_edge_gu": "Gu()" | kind=code-symbol | source=scratch/generated-client/runtime/edge.js:L5 | neighbors=[edge.js, findField(), getComputedFields(), In(), nestSelection(), Vt()]
-- "runtime_edge_hasfield": "hasField()" | kind=code-symbol | source=scratch/generated-client/runtime/edge.js:L3 | neighbors=[edge.js, Ao(), du(), getField(), mu(), nu()]
-- "runtime_edge_ou": "ou()" | kind=code-symbol | source=scratch/generated-client/runtime/edge.js:L1 | neighbors=[edge.js, addErrorMessage(), asObject(), getDeepFieldValue(), getDeepSubSelectionValue(), Pe()]
-- "runtime_edge_pi": "pi()" | kind=code-symbol | source=scratch/generated-client/runtime/edge.js:L1 | neighbors=[edge.js, Aa(), Ca(), de(), mi(), Ta()]
-- "runtime_edge_qu": "qu()" | kind=code-symbol | source=scratch/generated-client/runtime/edge.js:L5 | neighbors=[edge.js, no(), getArgumentName(), getArgumentPath(), getSelectionPath(), nestArgument()]
 
 ## Instructions
 

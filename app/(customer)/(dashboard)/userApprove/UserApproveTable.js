@@ -11,6 +11,7 @@ import { Button } from "@/components/ui/Button";
 import { Badge } from "@/components/ui/Badge";
 import { Input } from "@/components/ui/Input";
 import { Avatar } from "@/components/ui/Avatar";
+import { clearLocalSession } from "@/lib/auth/offlineAuth";
 
 export default function UserApproveTable({ initialUsers = [], roles = [] }) {
   const router = useRouter();
@@ -23,11 +24,13 @@ export default function UserApproveTable({ initialUsers = [], roles = [] }) {
   const [isPending, startTransition] = useTransition();
 
   const handleLogout = async () => {
-    const res = await fetch("/api/auth/logout", { method: "POST" }).then((r) => r.json());
-    if (res.success) {
+    try {
+      await clearLocalSession();
+      const res = await fetch("/api/auth/logout", { method: "POST" }).then((r) => r.json()).catch(() => ({}));
       toast.success("Logged out successfully");
-      router.push(res.redirect);
-      router.refresh();
+      window.location.href = res?.redirect || "/";
+    } catch (err) {
+      window.location.href = "/";
     }
   };
 

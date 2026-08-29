@@ -1,4 +1,4 @@
-# Node Description Batch 3 of 149
+# Node Description Batch 3 of 150
 
 Graphify is running in assistant/skill mode (no API key). You are the host
 assistant (Claude Code / Codex / Gemini CLI). Read the prompt below and write
@@ -24,6 +24,8 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "runtime_edge_esm_fu": "fu()" | kind=code-symbol | source=scratch/generated-client/runtime/edge-esm.js:L4 | neighbors=[edge-esm.js, addErrorMessage(), An(), findField(), getOutputTypeDescription(), getSelectionPath()]
+- "runtime_edge_esm_markaserror": "markAsError()" | kind=code-symbol | source=scratch/generated-client/runtime/edge-esm.js:L3 | neighbors=[edge-esm.js, bu(), Eu(), fu(), gu(), hc()]
 - "runtime_edge_esm_qo": "qo()" | kind=code-symbol | source=scratch/generated-client/runtime/edge-esm.js:L5 | neighbors=[edge-esm.js, lo(), getArgumentName(), getArgumentPath(), getSelectionPath(), isPreviewFeatureOn()]
 - "runtime_edge_esm_tostring": "toString()" | kind=code-symbol | source=scratch/generated-client/runtime/edge-esm.js:L2 | neighbors=[edge-esm.js, ds(), kr(), ll(), lo(), ms()]
 - "runtime_edge_esm_wu": "wu()" | kind=code-symbol | source=scratch/generated-client/runtime/edge-esm.js:L4 | neighbors=[edge-esm.js, Tr(), addErrorMessage(), addField(), addSuggestion(), asObject()]
@@ -42,9 +44,10 @@ one-sentence description — no prose, no markdown fences.
 - "commit:repo:github.com-personal/miznaansari/easytechnomed-pwa@aae6bad9dc767cb5f6d4cb87cdfc1f43f4fc71f4": "aae6bad fixed" | kind=Commit | source=git | neighbors=[1064f6b 2.0.10, page.js, main, 5ff2734 2.0.11, MoneyRecipt.jsx, showResult.jsx]
 - "commit:repo:github.com-personal/miznaansari/easytechnomed-pwa@d446d113d3b863e73edd5a9a002bfcb601b249d8": "d446d11 fixed code" | kind=Commit | source=git | neighbors=[main, route.js, 98ad5ca 2.0.24, route.js, SyncIndicator.jsx, SyncStatusIcon.jsx]
 - "component_moneyrecipt": "MoneyRecipt.jsx" | kind=code-symbol | source=app/(customer)/(dashboard)/test-report/component/MoneyRecipt.jsx:L1 | neighbors=[252e194 e, 532b740 fixed, 53ca5c1 stable version 1, 84a8ff2 full indexeddb based, 8b1f3d8 a, aae6bad fixed]
-- "dashboard_page": "page.js" | kind=code-symbol | source=app/(customer)/(dashboard)/dashboard/page.js:L1 | neighbors=[252e194 e, 9e25c19 f, cf2bb98 new, DashboardCharts.js, DepartmentDistributionChart(), RegistrationChart()]
 - "generated_client_index": "index.js" | kind=code-symbol | source=scratch/generated-client/index.js:L1 | neighbors=[252e194 e, default.d.ts, config, fs, path, Prisma]
+- "offline_db_appdatabase": "AppDatabase" | kind=code-symbol | source=lib/offline/db.js:L4 | neighbors=[db.js, .clearAllData(), .constructor(), .deleteOffline(), .getAllErrorRecords(), .getAllPendingRecords()]
 - "offline_syncindicator": "SyncIndicator.jsx" | kind=code-symbol | source=components/offline/SyncIndicator.jsx:L1 | neighbors=[2b2534c f, 8184d32 f, 9f59247 expire token, a356e41 f, af73a19 fixed, b5dedb0 f]
+- "print_reportpdfgenerator": "reportPdfGenerator.js" | kind=code-symbol | source=lib/offline/print/reportPdfGenerator.js:L1 | neighbors=[6c2dfe4 test, 8b1f3d8 a, offlinePrint.js, openPrint.js, qrGenerator.js, generateQrCodePngBytes()]
 - "runtime_edge_esm_lo": "lo()" | kind=code-symbol | source=scratch/generated-client/runtime/edge-esm.js:L1 | neighbors=[edge-esm.js, getArgumentName(), getArgumentPath(), _getName(), getSelectionPath(), nt()]
 - "runtime_edge_o": "O()" | kind=code-symbol | source=scratch/generated-client/runtime/edge.js:L1 | neighbors=[edge.js, ce(), eu(), Il(), ke(), l()]
 - "runtime_library_t": "t()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L21 | neighbors=[library.js, ea(), newLine(), otherwise(), runInChildSpan(), wa()]
@@ -54,16 +57,13 @@ one-sentence description — no prose, no markdown fences.
 - "runtime_wasm_si": "si()" | kind=code-symbol | source=scratch/generated-client/runtime/wasm.js:L5 | neighbors=[wasm.js, oi(), Bt(), _getName(), isBuffer(), ni()]
 - "runtime_wasm_v": "V()" | kind=code-symbol | source=scratch/generated-client/runtime/wasm.js:L1 | neighbors=[wasm.js, compare(), copy(), fill(), readIntBE(), readIntLE()]
 - "scratch_test_formula_verification": "test-formula-verification.mjs" | kind=code-symbol | source=scratch/test-formula-verification.mjs:L1 | neighbors=[252e194 e, calculateAllDependents(), checkFormulaDependencies(), evaluateExpression(), overrides1, overrides2]
+- "tests_testsclient": "testsClient.jsx" | kind=code-symbol | source=app/(customer)/(dashboard)/settings/tests/testsClient.jsx:L1 | neighbors=[252e194 e, 56f4d63 f, 6c2dfe4 test, 7d8c494 fxed, 84a8ff2 full indexeddb based, 9e25c19 f]
 - "commit:repo:github.com-personal/miznaansari/easytechnomed-pwa@9f59247de8e17ece3b64548107440d0473aa2d43": "9f59247 expire token" | kind=Commit | source=git | neighbors=[48cc7ec 2.0.22, main, eacdd5b 2.0.23, resultEntry.jsx, OfflineSyncContext.js, useSync.js]
 - "component_showresultmobile": "showResultMobile.jsx" | kind=code-symbol | source=app/(customer)/(dashboard)/test-report/component/showResultMobile.jsx:L1 | neighbors=[252e194 e, 532b740 fixed, 53ca5c1 stable version 1, 8b1f3d8 a, aae6bad fixed, showResult.jsx]
 - "doctor_summary_page": "page.js" | kind=code-symbol | source=app/(customer)/(dashboard)/doctor-summary/page.js:L1 | neighbors=[252e194 e, 2b2534c f, 532b740 fixed, 53ca5c1 stable version 1, 6fcf015 f, 7d8c494 fxed]
-- "offline_db_appdatabase": "AppDatabase" | kind=code-symbol | source=lib/offline/db.js:L4 | neighbors=[db.js, .constructor(), .deleteOffline(), .getAllErrorRecords(), .getAllPendingRecords(), .getPendingCount()]
+- "offline_db": "db.js" | kind=code-symbol | source=lib/offline/db.js:L1 | neighbors=[2b2534c f, 84a8ff2 full indexeddb based, AppDatabase, db, timestamps.js, getUtcIsoNow()]
 - "runtime_edge_addsuggestion": "addSuggestion()" | kind=code-symbol | source=scratch/generated-client/runtime/edge.js:L3 | neighbors=[edge.js, Ao(), Au(), du(), eu(), mu()]
 - "runtime_edge_ar": "Ar()" | kind=code-symbol | source=scratch/generated-client/runtime/edge.js:L3 | neighbors=[edge.js, Au(), bo(), hu(), ku(), Su()]
-- "runtime_edge_esm_addsuggestion": "addSuggestion()" | kind=code-symbol | source=scratch/generated-client/runtime/edge-esm.js:L3 | neighbors=[edge-esm.js, Ao(), Au(), cu(), mu(), pu()]
-- "runtime_edge_esm_co": "co()" | kind=code-symbol | source=scratch/generated-client/runtime/edge-esm.js:L1 | neighbors=[edge-esm.js, asObject(), e(), getDeepSubSelectionValue(), getField(), getFieldValue()]
-- "runtime_edge_esm_get": "get()" | kind=code-symbol | source=scratch/generated-client/runtime/edge-esm.js:L5 | neighbors=[edge-esm.js, constructor(), extractHostAndApiKey(), getAllBatchQueryCallbacks(), getAllClientExtensions(), getOrCreate()]
-- "runtime_edge_esm_o": "O()" | kind=code-symbol | source=scratch/generated-client/runtime/edge-esm.js:L1 | neighbors=[edge-esm.js, ce(), Er(), gn(), ke(), kl()]
 
 ## Instructions
 

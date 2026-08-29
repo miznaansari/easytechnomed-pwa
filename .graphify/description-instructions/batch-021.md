@@ -1,4 +1,4 @@
-# Node Description Batch 22 of 149
+# Node Description Batch 22 of 150
 
 Graphify is running in assistant/skill mode (no API key). You are the host
 assistant (Claude Code / Codex / Gemini CLI). Read the prompt below and write
@@ -17,6 +17,16 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "runtime_library_ot": "Ot()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L29 | neighbors=[library.js, ha(), om(), wn()]
+- "runtime_library_pt": "Pt()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L21 | neighbors=[library.js, Br(), sa(), xl()]
+- "runtime_library_rc": "Rc()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L21 | neighbors=[library.js, an(), e(), Et()]
+- "runtime_library_requestinternal": "requestInternal()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L111 | neighbors=[library.js, request(), requestBatch(), withRetry()]
+- "runtime_library_rl": "rl()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L66 | neighbors=[library.js, Lo(), So(), tl()]
+- "runtime_library_ss": "Ss()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L21 | neighbors=[library.js, e(), Es(), Tc()]
+- "runtime_library_ta": "ta()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L29 | neighbors=[library.js, ea(), Te(), Yp()]
+- "runtime_library_tm": "tm()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L110 | neighbors=[library.js, or(), text(), values()]
+- "runtime_library_underline": "underline()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L27 | neighbors=[library.js, vp(), write(), writeEmpty()]
+- "runtime_library_wa": "wa()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L31 | neighbors=[library.js, On(), t(), Xe()]
 - "runtime_library_we": "we()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L21 | neighbors=[library.js, Si(), K(), slice()]
 - "runtime_library_withretry": "withRetry()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L111 | neighbors=[library.js, requestInternal(), transaction(), nl()]
 - "runtime_library_writeempty": "writeEmpty()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L27 | neighbors=[library.js, write(), setColor(), underline()]
@@ -47,16 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "runtime_react_native_io": "io()" | kind=code-symbol | source=scratch/generated-client/runtime/react-native.js:L2 | neighbors=[react-native.js, highlight(), An(), bu()]
 - "runtime_react_native_isempty": "isEmpty()" | kind=code-symbol | source=scratch/generated-client/runtime/react-native.js:L8 | neighbors=[react-native.js, nu(), os(), us()]
 - "runtime_react_native_it": "it()" | kind=code-symbol | source=scratch/generated-client/runtime/react-native.js:L2 | neighbors=[react-native.js, Al(), e(), Sl()]
-- "runtime_react_native_loadengine": "loadEngine()" | kind=code-symbol | source=scratch/generated-client/runtime/react-native.js:L60 | neighbors=[react-native.js, instantiateLibrary(), loadLibrary(), parseInitError()]
-- "runtime_react_native_lt": "lt()" | kind=code-symbol | source=scratch/generated-client/runtime/react-native.js:L2 | neighbors=[react-native.js, fo(), to(), Zt()]
-- "runtime_react_native_lu": "lu()" | kind=code-symbol | source=scratch/generated-client/runtime/react-native.js:L2 | neighbors=[react-native.js, addErrorMessage(), addSuggestion(), removeAllFields()]
-- "runtime_react_native_maplineat": "mapLineAt()" | kind=code-symbol | source=scratch/generated-client/runtime/react-native.js:L2 | neighbors=[react-native.js, e(), r(), pu()]
-- "runtime_react_native_maplines": "mapLines()" | kind=code-symbol | source=scratch/generated-client/runtime/react-native.js:L2 | neighbors=[react-native.js, e(), prependSymbolAt(), pu()]
-- "runtime_react_native_nestargument": "nestArgument()" | kind=code-symbol | source=scratch/generated-client/runtime/react-native.js:L10 | neighbors=[react-native.js, lc(), Mo(), e()]
-- "runtime_react_native_ns": "ns()" | kind=code-symbol | source=scratch/generated-client/runtime/react-native.js:L12 | neighbors=[react-native.js, Ae(), getAllComputedFields(), values()]
-- "runtime_react_native_p": "P()" | kind=code-symbol | source=scratch/generated-client/runtime/react-native.js:L1 | neighbors=[react-native.js, h(), S(), Yn()]
-- "runtime_react_native_ps": "ps()" | kind=code-symbol | source=scratch/generated-client/runtime/react-native.js:L12 | neighbors=[react-native.js, bs(), r(), vs()]
-- "runtime_react_native_qo": "Qo()" | kind=code-symbol | source=scratch/generated-client/runtime/react-native.js:L11 | neighbors=[react-native.js, getLocation(), kc(), xc()]
 
 ## Instructions
 

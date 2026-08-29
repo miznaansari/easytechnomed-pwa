@@ -1,4 +1,4 @@
-# Node Description Batch 83 of 149
+# Node Description Batch 83 of 150
 
 Graphify is running in assistant/skill mode (no API key). You are the host
 assistant (Claude Code / Codex / Gemini CLI). Read the prompt below and write
@@ -17,6 +17,26 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "generated_client_index_d_patientresultargs": "PatientResultArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L54386 | neighbors=[index.d.ts]
+- "generated_client_index_d_patientresultavgaggregateinputtype": "PatientResultAvgAggregateInputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L22203 | neighbors=[index.d.ts]
+- "generated_client_index_d_patientresultavgaggregateoutputtype": "PatientResultAvgAggregateOutputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L22156 | neighbors=[index.d.ts]
+- "generated_client_index_d_patientresultavgorderbyaggregateinput": "PatientResultAvgOrderByAggregateInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L42106 | neighbors=[index.d.ts]
+- "generated_client_index_d_patientresultcountaggregateinputtype": "PatientResultCountAggregateInputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L22237 | neighbors=[index.d.ts]
+- "generated_client_index_d_patientresultcountaggregateoutputtype": "PatientResultCountAggregateOutputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L22190 | neighbors=[index.d.ts]
+- "generated_client_index_d_patientresultcountargs": "PatientResultCountArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L22416 | neighbors=[index.d.ts]
+- "generated_client_index_d_patientresultcountorderbyaggregateinput": "PatientResultCountOrderByAggregateInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L42095 | neighbors=[index.d.ts]
+- "generated_client_index_d_patientresultcreateargs": "PatientResultCreateArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L22971 | neighbors=[index.d.ts]
+- "generated_client_index_d_patientresultcreateinput": "PatientResultCreateInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L39328 | neighbors=[index.d.ts]
+- "generated_client_index_d_patientresultcreatemanyargs": "PatientResultCreateManyArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L22989 | neighbors=[index.d.ts]
+- "generated_client_index_d_patientresultcreatemanyinput": "PatientResultCreateManyInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L39370 | neighbors=[index.d.ts]
+- "generated_client_index_d_patientresultcreatemanyregistrationinput": "PatientResultCreateManyRegistrationInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L53811 | neighbors=[index.d.ts]
+- "generated_client_index_d_patientresultcreatemanyregistrationinputenvelope": "PatientResultCreateManyRegistrationInputEnvelope" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L48329 | neighbors=[index.d.ts]
+- "generated_client_index_d_patientresultcreatemanytestparameterinput": "PatientResultCreateManyTestParameterInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L54124 | neighbors=[index.d.ts]
+- "generated_client_index_d_patientresultcreatemanytestparameterinputenvelope": "PatientResultCreateManyTestParameterInputEnvelope" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L49532 | neighbors=[index.d.ts]
+- "generated_client_index_d_patientresultcreatenestedmanywithoutregistrationinput": "PatientResultCreateNestedManyWithoutRegistrationInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L44123 | neighbors=[index.d.ts]
+- "generated_client_index_d_patientresultcreatenestedmanywithouttestparameterinput": "PatientResultCreateNestedManyWithoutTestParameterInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L44505 | neighbors=[index.d.ts]
+- "generated_client_index_d_patientresultcreateorconnectwithoutregistrationinput": "PatientResultCreateOrConnectWithoutRegistrationInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L48324 | neighbors=[index.d.ts]
+- "generated_client_index_d_patientresultcreateorconnectwithouttestparameterinput": "PatientResultCreateOrConnectWithoutTestParameterInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L49527 | neighbors=[index.d.ts]
 - "generated_client_index_d_patientresultcreatewithoutregistrationinput": "PatientResultCreateWithoutRegistrationInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L48305 | neighbors=[index.d.ts]
 - "generated_client_index_d_patientresultcreatewithouttestparameterinput": "PatientResultCreateWithoutTestParameterInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L49508 | neighbors=[index.d.ts]
 - "generated_client_index_d_patientresultdefaultargs": "PatientResultDefaultArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L23090 | neighbors=[index.d.ts]
@@ -37,26 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "generated_client_index_d_patientresultmaxaggregateinputtype": "PatientResultMaxAggregateInputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L22226 | neighbors=[index.d.ts]
 - "generated_client_index_d_patientresultmaxaggregateoutputtype": "PatientResultMaxAggregateOutputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L22179 | neighbors=[index.d.ts]
 - "generated_client_index_d_patientresultmaxorderbyaggregateinput": "PatientResultMaxOrderByAggregateInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L42112 | neighbors=[index.d.ts]
-- "generated_client_index_d_patientresultminaggregateinputtype": "PatientResultMinAggregateInputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L22215 | neighbors=[index.d.ts]
-- "generated_client_index_d_patientresultminaggregateoutputtype": "PatientResultMinAggregateOutputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L22168 | neighbors=[index.d.ts]
-- "generated_client_index_d_patientresultminorderbyaggregateinput": "PatientResultMinOrderByAggregateInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L42123 | neighbors=[index.d.ts]
-- "generated_client_index_d_patientresultorderbyrelationaggregateinput": "PatientResultOrderByRelationAggregateInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L41523 | neighbors=[index.d.ts]
-- "generated_client_index_d_patientresultorderbywithaggregationinput": "PatientResultOrderByWithAggregationInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L36347 | neighbors=[index.d.ts]
-- "generated_client_index_d_patientresultorderbywithrelationinput": "PatientResultOrderByWithRelationInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L36317 | neighbors=[index.d.ts]
-- "generated_client_index_d_patientresultpayload": "$PatientResultPayload" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L22395 | neighbors=[index.d.ts]
-- "generated_client_index_d_patientresultregistrationidtestparameteridcompounduniqueinput": "PatientResultRegistrationIdTestParameterIdCompoundUniqueInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L42090 | neighbors=[index.d.ts]
-- "generated_client_index_d_patientresultscalarfieldenum": "PatientResultScalarFieldEnum" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L34234 | neighbors=[index.d.ts]
-- "generated_client_index_d_patientresultscalarwhereinput": "PatientResultScalarWhereInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L48609 | neighbors=[index.d.ts]
-- "generated_client_index_d_patientresultscalarwherewithaggregatesinput": "PatientResultScalarWhereWithAggregatesInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L36363 | neighbors=[index.d.ts]
-- "generated_client_index_d_patientresultselect": "PatientResultSelect" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L22365 | neighbors=[index.d.ts]
-- "generated_client_index_d_patientresultselectscalar": "PatientResultSelectScalar" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L22379 | neighbors=[index.d.ts]
-- "generated_client_index_d_patientresultsumaggregateinputtype": "PatientResultSumAggregateInputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L22209 | neighbors=[index.d.ts]
-- "generated_client_index_d_patientresultsumaggregateoutputtype": "PatientResultSumAggregateOutputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L22162 | neighbors=[index.d.ts]
-- "generated_client_index_d_patientresultsumorderbyaggregateinput": "PatientResultSumOrderByAggregateInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L42134 | neighbors=[index.d.ts]
-- "generated_client_index_d_patientresultuncheckedcreateinput": "PatientResultUncheckedCreateInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L39338 | neighbors=[index.d.ts]
-- "generated_client_index_d_patientresultuncheckedcreatenestedmanywithoutregistrationinput": "PatientResultUncheckedCreateNestedManyWithoutRegistrationInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L44168 | neighbors=[index.d.ts]
-- "generated_client_index_d_patientresultuncheckedcreatenestedmanywithouttestparameterinput": "PatientResultUncheckedCreateNestedManyWithoutTestParameterInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L44524 | neighbors=[index.d.ts]
-- "generated_client_index_d_patientresultuncheckedcreatewithoutregistrationinput": "PatientResultUncheckedCreateWithoutRegistrationInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L48314 | neighbors=[index.d.ts]
 
 ## Instructions
 

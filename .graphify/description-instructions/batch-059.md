@@ -1,4 +1,4 @@
-# Node Description Batch 60 of 149
+# Node Description Batch 60 of 150
 
 Graphify is running in assistant/skill mode (no API key). You are the host
 assistant (Claude Code / Codex / Gemini CLI). Read the prompt below and write
@@ -17,6 +17,26 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "generated_client_index_d_adminroleupdatetoonewithwherewithoutpermissionsinput": "AdminRoleUpdateToOneWithWhereWithoutPermissionsInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L47530 | neighbors=[index.d.ts]
+- "generated_client_index_d_adminroleupdatewithoutadminsinput": "AdminRoleUpdateWithoutAdminsInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L47060 | neighbors=[index.d.ts]
+- "generated_client_index_d_adminroleupdatewithoutpermissionsinput": "AdminRoleUpdateWithoutPermissionsInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L47535 | neighbors=[index.d.ts]
+- "generated_client_index_d_adminroleupsertargs": "AdminRoleUpsertArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L13699 | neighbors=[index.d.ts]
+- "generated_client_index_d_adminroleupsertwithoutadminsinput": "AdminRoleUpsertWithoutAdminsInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L47049 | neighbors=[index.d.ts]
+- "generated_client_index_d_adminroleupsertwithoutpermissionsinput": "AdminRoleUpsertWithoutPermissionsInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L47524 | neighbors=[index.d.ts]
+- "generated_client_index_d_adminrolewhereinput": "AdminRoleWhereInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L35233 | neighbors=[index.d.ts]
+- "generated_client_index_d_adminrolewhereuniqueinput": "AdminRoleWhereUniqueInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L35254 | neighbors=[index.d.ts]
+- "generated_client_index_d_adminscalarfieldenum": "AdminScalarFieldEnum" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L34011 | neighbors=[index.d.ts]
+- "generated_client_index_d_adminscalarwhereinput": "AdminScalarWhereInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L45739 | neighbors=[index.d.ts]
+- "generated_client_index_d_adminscalarwherewithaggregatesinput": "AdminScalarWhereWithAggregatesInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L35136 | neighbors=[index.d.ts]
+- "generated_client_index_d_adminselect": "AdminSelect" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L11009 | neighbors=[index.d.ts]
+- "generated_client_index_d_adminselectscalar": "AdminSelectScalar" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L11044 | neighbors=[index.d.ts]
+- "generated_client_index_d_adminsession": "AdminSession" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L60 | neighbors=[index.d.ts]
+- "generated_client_index_d_adminsessionaggregateargs": "AdminSessionAggregateArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L12013 | neighbors=[index.d.ts]
+- "generated_client_index_d_adminsessionargs": "AdminSessionArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L54350 | neighbors=[index.d.ts]
+- "generated_client_index_d_adminsessionavgaggregateinputtype": "AdminSessionAvgAggregateInputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L11972 | neighbors=[index.d.ts]
+- "generated_client_index_d_adminsessionavgaggregateoutputtype": "AdminSessionAvgAggregateOutputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L11930 | neighbors=[index.d.ts]
+- "generated_client_index_d_adminsessionavgorderbyaggregateinput": "AdminSessionAvgOrderByAggregateInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L41137 | neighbors=[index.d.ts]
+- "generated_client_index_d_adminsessioncountaggregateinputtype": "AdminSessionCountAggregateInputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L12002 | neighbors=[index.d.ts]
 - "generated_client_index_d_adminsessioncountaggregateoutputtype": "AdminSessionCountAggregateOutputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L11960 | neighbors=[index.d.ts]
 - "generated_client_index_d_adminsessioncountargs": "AdminSessionCountArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L12173 | neighbors=[index.d.ts]
 - "generated_client_index_d_adminsessioncountorderbyaggregateinput": "AdminSessionCountOrderByAggregateInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L41127 | neighbors=[index.d.ts]
@@ -37,26 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "generated_client_index_d_adminsessionfindfirstargs": "AdminSessionFindFirstArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L12587 | neighbors=[index.d.ts]
 - "generated_client_index_d_adminsessionfindfirstorthrowargs": "AdminSessionFindFirstOrThrowArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L12635 | neighbors=[index.d.ts]
 - "generated_client_index_d_adminsessionfindmanyargs": "AdminSessionFindManyArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L12683 | neighbors=[index.d.ts]
-- "generated_client_index_d_adminsessionfinduniqueargs": "AdminSessionFindUniqueArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L12551 | neighbors=[index.d.ts]
-- "generated_client_index_d_adminsessionfinduniqueorthrowargs": "AdminSessionFindUniqueOrThrowArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L12569 | neighbors=[index.d.ts]
-- "generated_client_index_d_adminsessiongetpayload": "AdminSessionGetPayload" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L12171 | neighbors=[index.d.ts]
-- "generated_client_index_d_adminsessiongroupbyargs": "AdminSessionGroupByArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L12085 | neighbors=[index.d.ts]
-- "generated_client_index_d_adminsessiongroupbyoutputtype": "AdminSessionGroupByOutputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L12099 | neighbors=[index.d.ts]
-- "generated_client_index_d_adminsessioninclude": "AdminSessionInclude" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L12150 | neighbors=[index.d.ts]
-- "generated_client_index_d_adminsessionlistrelationfilter": "AdminSessionListRelationFilter" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L41005 | neighbors=[index.d.ts]
-- "generated_client_index_d_adminsessionmaxaggregateinputtype": "AdminSessionMaxAggregateInputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L11992 | neighbors=[index.d.ts]
-- "generated_client_index_d_adminsessionmaxaggregateoutputtype": "AdminSessionMaxAggregateOutputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L11950 | neighbors=[index.d.ts]
-- "generated_client_index_d_adminsessionmaxorderbyaggregateinput": "AdminSessionMaxOrderByAggregateInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L41142 | neighbors=[index.d.ts]
-- "generated_client_index_d_adminsessionminaggregateinputtype": "AdminSessionMinAggregateInputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L11982 | neighbors=[index.d.ts]
-- "generated_client_index_d_adminsessionminaggregateoutputtype": "AdminSessionMinAggregateOutputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L11940 | neighbors=[index.d.ts]
-- "generated_client_index_d_adminsessionminorderbyaggregateinput": "AdminSessionMinOrderByAggregateInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L41152 | neighbors=[index.d.ts]
-- "generated_client_index_d_adminsessionorderbyrelationaggregateinput": "AdminSessionOrderByRelationAggregateInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L41017 | neighbors=[index.d.ts]
-- "generated_client_index_d_adminsessionorderbywithaggregationinput": "AdminSessionOrderByWithAggregationInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L35205 | neighbors=[index.d.ts]
-- "generated_client_index_d_adminsessionorderbywithrelationinput": "AdminSessionOrderByWithRelationInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L35180 | neighbors=[index.d.ts]
-- "generated_client_index_d_adminsessionpayload": "$AdminSessionPayload" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L12154 | neighbors=[index.d.ts]
-- "generated_client_index_d_adminsessionscalarfieldenum": "AdminSessionScalarFieldEnum" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L34024 | neighbors=[index.d.ts]
-- "generated_client_index_d_adminsessionscalarwhereinput": "AdminSessionScalarWhereInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L47181 | neighbors=[index.d.ts]
-- "generated_client_index_d_adminsessionscalarwherewithaggregatesinput": "AdminSessionScalarWhereWithAggregatesInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L35220 | neighbors=[index.d.ts]
 
 ## Instructions
 

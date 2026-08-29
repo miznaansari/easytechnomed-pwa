@@ -25,6 +25,7 @@ import {
   VerifiedUser as SecurityIcon
 } from "@mui/icons-material";
 import { useRouter } from "next/navigation";
+import { clearLocalSession } from "@/lib/auth/offlineAuth";
 
 export default function ExpiredPlanView({ admin }) {
   const router = useRouter();
@@ -83,10 +84,15 @@ export default function ExpiredPlanView({ admin }) {
   const handleLogout = async () => {
     setIsLoggingOut(true);
     try {
-      await fetch("/api/auth/logout", { method: "POST" });
-      router.push("/auth/login");
+      await clearLocalSession();
+      try {
+        await fetch("/api/auth/logout", { method: "POST" });
+      } catch (e) {
+        console.warn("[ExpiredPlanView] Server logout error:", e);
+      }
+      window.location.href = "/auth/login";
     } catch (err) {
-      console.error(err);
+      console.error("[ExpiredPlanView] Logout error:", err);
       window.location.href = "/auth/login";
     }
   };

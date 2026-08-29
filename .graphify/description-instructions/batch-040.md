@@ -1,4 +1,4 @@
-# Node Description Batch 41 of 149
+# Node Description Batch 41 of 150
 
 Graphify is running in assistant/skill mode (no API key). You are the host
 assistant (Claude Code / Codex / Gemini CLI). Read the prompt below and write
@@ -17,6 +17,26 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "runtime_edge_getprintwidth": "getPrintWidth()" | kind=code-symbol | source=scratch/generated-client/runtime/edge.js:L3 | neighbors=[edge.js, values()]
+- "runtime_edge_gr": "Gr()" | kind=code-symbol | source=scratch/generated-client/runtime/edge.js:L8 | neighbors=[edge.js, yt()]
+- "runtime_edge_gs": "gs()" | kind=code-symbol | source=scratch/generated-client/runtime/edge.js:L6 | neighbors=[edge.js, hs()]
+- "runtime_edge_h": "h()" | kind=code-symbol | source=scratch/generated-client/runtime/edge.js:L1 | neighbors=[edge.js, v()]
+- "runtime_edge_handleerror": "handleError()" | kind=code-symbol | source=scratch/generated-client/runtime/edge.js:L12 | neighbors=[edge.js, uploadSchema()]
+- "runtime_edge_he": "He()" | kind=code-symbol | source=scratch/generated-client/runtime/edge.js:L20 | neighbors=[edge.js, zs()]
+- "runtime_edge_ia": "Ia()" | kind=code-symbol | source=scratch/generated-client/runtime/edge.js:L1 | neighbors=[edge.js, ln()]
+- "runtime_edge_ic": "ic()" | kind=code-symbol | source=scratch/generated-client/runtime/edge.js:L6 | neighbors=[edge.js, ht()]
+- "runtime_edge_il": "Il()" | kind=code-symbol | source=scratch/generated-client/runtime/edge.js:L1 | neighbors=[edge.js, O()]
+- "runtime_edge_indent": "indent()" | kind=code-symbol | source=scratch/generated-client/runtime/edge.js:L2 | neighbors=[edge.js, withIndent()]
+- "runtime_edge_ir": "ir()" | kind=code-symbol | source=scratch/generated-client/runtime/edge.js:L11 | neighbors=[edge.js, bt()]
+- "runtime_edge_israwaction": "isRawAction()" | kind=code-symbol | source=scratch/generated-client/runtime/edge.js:L5 | neighbors=[edge.js, vu()]
+- "runtime_edge_ja": "ja()" | kind=code-symbol | source=scratch/generated-client/runtime/edge.js:L1 | neighbors=[edge.js, ka()]
+- "runtime_edge_jl": "jl()" | kind=code-symbol | source=scratch/generated-client/runtime/edge.js:L1 | neighbors=[edge.js, mo()]
+- "runtime_edge_json": "json()" | kind=code-symbol | source=scratch/generated-client/runtime/edge.js:L5 | neighbors=[edge.js, metrics()]
+- "runtime_edge_kc": "kc()" | kind=code-symbol | source=scratch/generated-client/runtime/edge.js:L12 | neighbors=[edge.js, kn()]
+- "runtime_edge_kr": "Kr()" | kind=code-symbol | source=scratch/generated-client/runtime/edge.js:L20 | neighbors=[edge.js, jc()]
+- "runtime_edge_la": "La()" | kind=code-symbol | source=scratch/generated-client/runtime/edge.js:L1 | neighbors=[edge.js, Sa()]
+- "runtime_edge_lc": "lc()" | kind=code-symbol | source=scratch/generated-client/runtime/edge.js:L6 | neighbors=[edge.js, ts()]
+- "runtime_edge_ma": "Ma()" | kind=code-symbol | source=scratch/generated-client/runtime/edge.js:L1 | neighbors=[edge.js, mr()]
 - "runtime_edge_mapqueryengineresult": "mapQueryEngineResult()" | kind=code-symbol | source=scratch/generated-client/runtime/edge.js:L20 | neighbors=[edge.js, unpack()]
 - "runtime_edge_na": "Na()" | kind=code-symbol | source=scratch/generated-client/runtime/edge.js:L1 | neighbors=[edge.js, Sa()]
 - "runtime_edge_ni": "ni()" | kind=code-symbol | source=scratch/generated-client/runtime/edge.js:L20 | neighbors=[edge.js, ks()]
@@ -37,26 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "runtime_edge_ss": "ss()" | kind=code-symbol | source=scratch/generated-client/runtime/edge.js:L6 | neighbors=[edge.js, dc()]
 - "runtime_edge_start": "start()" | kind=code-symbol | source=scratch/generated-client/runtime/edge.js:L12 | neighbors=[edge.js, url()]
 - "runtime_edge_transaction": "transaction()" | kind=code-symbol | source=scratch/generated-client/runtime/edge.js:L12 | neighbors=[edge.js, withRetry()]
-- "runtime_edge_unindent": "unindent()" | kind=code-symbol | source=scratch/generated-client/runtime/edge.js:L2 | neighbors=[edge.js, withIndent()]
-- "runtime_edge_url": "url()" | kind=code-symbol | source=scratch/generated-client/runtime/edge.js:L12 | neighbors=[edge.js, start()]
-- "runtime_edge_uu": "uu()" | kind=code-symbol | source=scratch/generated-client/runtime/edge.js:L1 | neighbors=[edge.js, st()]
-- "runtime_edge_vl": "vl()" | kind=code-symbol | source=scratch/generated-client/runtime/edge.js:L1 | neighbors=[edge.js, mo()]
-- "runtime_edge_vo": "Vo()" | kind=code-symbol | source=scratch/generated-client/runtime/edge.js:L5 | neighbors=[edge.js, Ut()]
-- "runtime_edge_vr": "vr()" | kind=code-symbol | source=scratch/generated-client/runtime/edge.js:L1 | neighbors=[edge.js, yl()]
-- "runtime_edge_writejoined": "writeJoined()" | kind=code-symbol | source=scratch/generated-client/runtime/edge.js:L2 | neighbors=[edge.js, write()]
-- "runtime_edge_ws": "ws()" | kind=code-symbol | source=scratch/generated-client/runtime/edge.js:L6 | neighbors=[edge.js, r()]
-- "runtime_edge_xa": "Xa()" | kind=code-symbol | source=scratch/generated-client/runtime/edge.js:L1 | neighbors=[edge.js, enabled()]
-- "runtime_edge_xc": "xc()" | kind=code-symbol | source=scratch/generated-client/runtime/edge.js:L6 | neighbors=[edge.js, ms()]
-- "runtime_edge_xs": "Xs()" | kind=code-symbol | source=scratch/generated-client/runtime/edge.js:L20 | neighbors=[edge.js, handleRequestError()]
-- "runtime_edge_yn": "yn()" | kind=code-symbol | source=scratch/generated-client/runtime/edge.js:L1 | neighbors=[edge.js, fu()]
-- "runtime_edge_ys": "ys()" | kind=code-symbol | source=scratch/generated-client/runtime/edge.js:L6 | neighbors=[edge.js, constructor()]
-- "runtime_index_browser_ae": "Ae()" | kind=code-symbol | source=scratch/generated-client/runtime/index-browser.js:L1 | neighbors=[index-browser.js, e()]
-- "runtime_index_browser_d_anynull": "AnyNull" | kind=code-symbol | source=scratch/generated-client/runtime/index-browser.d.ts:L1 | neighbors=[index-browser.d.ts, NullTypesEnumValue]
-- "runtime_index_browser_d_dbnull": "DbNull" | kind=code-symbol | source=scratch/generated-client/runtime/index-browser.d.ts:L16 | neighbors=[index-browser.d.ts, NullTypesEnumValue]
-- "runtime_index_browser_d_jsonnull": "JsonNull" | kind=code-symbol | source=scratch/generated-client/runtime/index-browser.d.ts:L298 | neighbors=[index-browser.d.ts, NullTypesEnumValue]
-- "runtime_index_browser_getname": "_getName()" | kind=code-symbol | source=scratch/generated-client/runtime/index-browser.js:L1 | neighbors=[index-browser.js, constructor()]
-- "runtime_index_browser_getnamespace": "_getNamespace()" | kind=code-symbol | source=scratch/generated-client/runtime/index-browser.js:L1 | neighbors=[index-browser.js, constructor()]
-- "runtime_index_browser_i": "i()" | kind=code-symbol | source=scratch/generated-client/runtime/index-browser.js:L1 | neighbors=[index-browser.js, be()]
 
 ## Instructions
 

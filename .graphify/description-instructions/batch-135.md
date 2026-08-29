@@ -1,4 +1,4 @@
-# Node Description Batch 136 of 149
+# Node Description Batch 136 of 150
 
 Graphify is running in assistant/skill mode (no API key). You are the host
 assistant (Claude Code / Codex / Gemini CLI). Read the prompt below and write
@@ -17,6 +17,29 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "runtime_library_d_fn": "Fn" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L1365 | neighbors=[_d()]
+- "runtime_library_d_generatorconfig": "GeneratorConfig" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L1370 | neighbors=[_d()]
+- "runtime_library_d_getaggregateresult": "GetAggregateResult" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L1393 | neighbors=[_d()]
+- "runtime_library_d_getbatchresult": "GetBatchResult" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L1401 | neighbors=[_d()]
+- "runtime_library_d_getcountresult": "GetCountResult" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L1405 | neighbors=[_d()]
+- "runtime_library_d_getfindresult": "GetFindResult" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L1411 | neighbors=[_d()]
+- "runtime_library_d_getgroupbyresult": "GetGroupByResult" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L1425 | neighbors=[_d()]
+- "runtime_library_d_getomit": "GetOmit" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L1435 | neighbors=[_d()]
+- "runtime_library_d_getpayloadresult": "GetPayloadResult" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L1439 | neighbors=[_d()]
+- "runtime_library_d_getpayloadresultextensionkeys": "GetPayloadResultExtensionKeys" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L1441 | neighbors=[_d()]
+- "runtime_library_d_getpayloadresultextensionobject": "GetPayloadResultExtensionObject" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L1443 | neighbors=[_d()]
+- "runtime_library_d_getprismaclientconfig": "GetPrismaClientConfig" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L1593 | neighbors=[_d()]
+- "runtime_library_d_getresult": "GetResult" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L1666 | neighbors=[_d()]
+- "runtime_library_d_getruntimeoutput": "GetRuntimeOutput" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L1695 | neighbors=[_d()]
+- "runtime_library_d_getselect": "GetSelect" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L1701 | neighbors=[_d()]
+- "runtime_library_d_globalomitoptions": "GlobalOmitOptions" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L1705 | neighbors=[_d()]
+- "runtime_library_d_handleerrorparams": "HandleErrorParams" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L1711 | neighbors=[_d()]
+- "runtime_library_d_hrtime": "HrTime" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L1733 | neighbors=[_d()]
+- "runtime_library_d_index": "Index" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L731 | neighbors=[_d()]
+- "runtime_library_d_indexfield": "IndexField" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L742 | neighbors=[_d()]
+- "runtime_library_d_indextype": "IndexType" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L741 | neighbors=[_d()]
+- "runtime_library_d_inputjsonarray": "InputJsonArray" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L1739 | neighbors=[_d()]
+- "runtime_library_d_inputjsonobject": "InputJsonObject" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L1746 | neighbors=[_d()]
 - "runtime_library_d_inputjsonvalue": "InputJsonValue" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L1763 | neighbors=[_d()]
 - "runtime_library_d_inputtype": "InputType" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L811 | neighbors=[_d()]
 - "runtime_library_d_inputtyperef": "InputTypeRef" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L784 | neighbors=[_d()]
@@ -34,29 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "runtime_library_d_jsonarray": "JsonArray" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L1888 | neighbors=[_d()]
 - "runtime_library_d_jsonbatchquery": "JsonBatchQuery" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L1891 | neighbors=[_d()]
 - "runtime_library_d_jsonconvertible": "JsonConvertible" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L1898 | neighbors=[_d()]
-- "runtime_library_d_jsonfieldselection": "JsonFieldSelection" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L1902 | neighbors=[_d()]
-- "runtime_library_d_jsonobject": "JsonObject" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L1915 | neighbors=[_d()]
-- "runtime_library_d_jsonquery": "JsonQuery" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L1919 | neighbors=[_d()]
-- "runtime_library_d_jsonqueryaction": "JsonQueryAction" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L1925 | neighbors=[_d()]
-- "runtime_library_d_jsonselectionset": "JsonSelectionSet" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L1927 | neighbors=[_d()]
-- "runtime_library_d_jsonvalue": "JsonValue" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L1938 | neighbors=[_d()]
-- "runtime_library_d_jsoutputvalue": "JsOutputValue" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L1940 | neighbors=[_d()]
-- "runtime_library_d_jspromise": "JsPromise" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L1944 | neighbors=[_d()]
-- "runtime_library_d_knownerrorparams": "KnownErrorParams" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L1946 | neighbors=[_d()]
-- "runtime_library_d_link": "Link" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L1968 | neighbors=[_d()]
-- "runtime_library_d_loadedenv": "LoadedEnv" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L1977 | neighbors=[_d()]
-- "runtime_library_d_locationinfile": "LocationInFile" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L1984 | neighbors=[_d()]
-- "runtime_library_d_logdefinition": "LogDefinition" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L1990 | neighbors=[_d()]
-- "runtime_library_d_logemitter": "LogEmitter" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L2001 | neighbors=[_d()]
-- "runtime_library_d_logevent": "LogEvent" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L2007 | neighbors=[_d()]
-- "runtime_library_d_logeventtype": "LogEventType" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L2013 | neighbors=[_d()]
-- "runtime_library_d_loglevel": "LogLevel" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L2015 | neighbors=[_d()]
-- "runtime_library_d_mappings": "Mappings" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L650 | neighbors=[_d()]
-- "runtime_library_d_mergedextensionslist": "MergedExtensionsList" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L2047 | neighbors=[_d()]
-- "runtime_library_d_mergeextargs": "MergeExtArgs" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L2061 | neighbors=[_d()]
-- "runtime_library_d_metric": "Metric" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L2063 | neighbors=[_d()]
-- "runtime_library_d_metrichistogram": "MetricHistogram" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L2070 | neighbors=[_d()]
-- "runtime_library_d_metrichistogrambucket": "MetricHistogramBucket" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L2076 | neighbors=[_d()]
 
 ## Instructions
 

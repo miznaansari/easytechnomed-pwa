@@ -1,4 +1,4 @@
-# Node Description Batch 116 of 149
+# Node Description Batch 116 of 150
 
 Graphify is running in assistant/skill mode (no API key). You are the host
 assistant (Claude Code / Codex / Gemini CLI). Read the prompt below and write
@@ -17,6 +17,26 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "generated_client_index_d_userrolesumaggregateoutputtype": "UserRoleSumAggregateOutputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L8863 | neighbors=[index.d.ts]
+- "generated_client_index_d_userrolesumorderbyaggregateinput": "UserRoleSumOrderByAggregateInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L40958 | neighbors=[index.d.ts]
+- "generated_client_index_d_userroleuncheckedcreateinput": "UserRoleUncheckedCreateInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L37757 | neighbors=[index.d.ts]
+- "generated_client_index_d_userroleuncheckedcreatewithoutpermissionsinput": "UserRoleUncheckedCreateWithoutPermissionsInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L46761 | neighbors=[index.d.ts]
+- "generated_client_index_d_userroleuncheckedcreatewithoutusersinput": "UserRoleUncheckedCreateWithoutUsersInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L46366 | neighbors=[index.d.ts]
+- "generated_client_index_d_userroleuncheckedupdateinput": "UserRoleUncheckedUpdateInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L37770 | neighbors=[index.d.ts]
+- "generated_client_index_d_userroleuncheckedupdatemanyinput": "UserRoleUncheckedUpdateManyInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L37786 | neighbors=[index.d.ts]
+- "generated_client_index_d_userroleuncheckedupdatewithoutpermissionsinput": "UserRoleUncheckedUpdateWithoutPermissionsInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L46788 | neighbors=[index.d.ts]
+- "generated_client_index_d_userroleuncheckedupdatewithoutusersinput": "UserRoleUncheckedUpdateWithoutUsersInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L46466 | neighbors=[index.d.ts]
+- "generated_client_index_d_userroleupdateargs": "UserRoleUpdateArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L9631 | neighbors=[index.d.ts]
+- "generated_client_index_d_userroleupdateinput": "UserRoleUpdateInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L37764 | neighbors=[index.d.ts]
+- "generated_client_index_d_userroleupdatemanyargs": "UserRoleUpdateManyArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L9653 | neighbors=[index.d.ts]
+- "generated_client_index_d_userroleupdatemanymutationinput": "UserRoleUpdateManyMutationInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L37782 | neighbors=[index.d.ts]
+- "generated_client_index_d_userroleupdateonerequiredwithoutpermissionsnestedinput": "UserRoleUpdateOneRequiredWithoutPermissionsNestedInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L43457 | neighbors=[index.d.ts]
+- "generated_client_index_d_userroleupdateonerequiredwithoutusersnestedinput": "UserRoleUpdateOneRequiredWithoutUsersNestedInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L43299 | neighbors=[index.d.ts]
+- "generated_client_index_d_userroleupdatetoonewithwherewithoutpermissionsinput": "UserRoleUpdateToOneWithWhereWithoutPermissionsInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L46778 | neighbors=[index.d.ts]
+- "generated_client_index_d_userroleupdatetoonewithwherewithoutusersinput": "UserRoleUpdateToOneWithWhereWithoutUsersInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L46456 | neighbors=[index.d.ts]
+- "generated_client_index_d_userroleupdatewithoutpermissionsinput": "UserRoleUpdateWithoutPermissionsInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L46783 | neighbors=[index.d.ts]
+- "generated_client_index_d_userroleupdatewithoutusersinput": "UserRoleUpdateWithoutUsersInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L46461 | neighbors=[index.d.ts]
+- "generated_client_index_d_userroleupsertargs": "UserRoleUpsertArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L9667 | neighbors=[index.d.ts]
 - "generated_client_index_d_userroleupsertwithoutpermissionsinput": "UserRoleUpsertWithoutPermissionsInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L46772 | neighbors=[index.d.ts]
 - "generated_client_index_d_userroleupsertwithoutusersinput": "UserRoleUpsertWithoutUsersInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L46450 | neighbors=[index.d.ts]
 - "generated_client_index_d_userrolewhereinput": "UserRoleWhereInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L34906 | neighbors=[index.d.ts]
@@ -37,26 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "generated_client_index_d_usersessioncountargs": "UserSessionCountArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L8163 | neighbors=[index.d.ts]
 - "generated_client_index_d_usersessioncountorderbyaggregateinput": "UserSessionCountOrderByAggregateInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L40889 | neighbors=[index.d.ts]
 - "generated_client_index_d_usersessioncreateargs": "UserSessionCreateArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L8716 | neighbors=[index.d.ts]
-- "generated_client_index_d_usersessioncreateinput": "UserSessionCreateInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L37685 | neighbors=[index.d.ts]
-- "generated_client_index_d_usersessioncreatemanyargs": "UserSessionCreateManyArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L8734 | neighbors=[index.d.ts]
-- "generated_client_index_d_usersessioncreatemanyinput": "UserSessionCreateManyInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L37723 | neighbors=[index.d.ts]
-- "generated_client_index_d_usersessioncreatemanyuserinput": "UserSessionCreateManyUserInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L52695 | neighbors=[index.d.ts]
-- "generated_client_index_d_usersessioncreatemanyuserinputenvelope": "UserSessionCreateManyUserInputEnvelope" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L46445 | neighbors=[index.d.ts]
-- "generated_client_index_d_usersessioncreatenestedmanywithoutuserinput": "UserSessionCreateNestedManyWithoutUserInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L43285 | neighbors=[index.d.ts]
-- "generated_client_index_d_usersessioncreateorconnectwithoutuserinput": "UserSessionCreateOrConnectWithoutUserInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L46440 | neighbors=[index.d.ts]
-- "generated_client_index_d_usersessioncreatewithoutuserinput": "UserSessionCreateWithoutUserInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L46423 | neighbors=[index.d.ts]
-- "generated_client_index_d_usersessiondefaultargs": "UserSessionDefaultArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L8835 | neighbors=[index.d.ts]
-- "generated_client_index_d_usersessiondelegate": "UserSessionDelegate" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L8168 | neighbors=[index.d.ts]
-- "generated_client_index_d_usersessiondeleteargs": "UserSessionDeleteArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L8807 | neighbors=[index.d.ts]
-- "generated_client_index_d_usersessiondeletemanyargs": "UserSessionDeleteManyArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L8825 | neighbors=[index.d.ts]
-- "generated_client_index_d_usersessionfieldrefs": "UserSessionFieldRefs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L8526 | neighbors=[index.d.ts]
-- "generated_client_index_d_usersessionfindfirstargs": "UserSessionFindFirstArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L8577 | neighbors=[index.d.ts]
-- "generated_client_index_d_usersessionfindfirstorthrowargs": "UserSessionFindFirstOrThrowArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L8625 | neighbors=[index.d.ts]
-- "generated_client_index_d_usersessionfindmanyargs": "UserSessionFindManyArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L8673 | neighbors=[index.d.ts]
-- "generated_client_index_d_usersessionfinduniqueargs": "UserSessionFindUniqueArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L8541 | neighbors=[index.d.ts]
-- "generated_client_index_d_usersessionfinduniqueorthrowargs": "UserSessionFindUniqueOrThrowArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L8559 | neighbors=[index.d.ts]
-- "generated_client_index_d_usersessiongetpayload": "UserSessionGetPayload" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L8161 | neighbors=[index.d.ts]
-- "generated_client_index_d_usersessiongroupbyargs": "UserSessionGroupByArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L8075 | neighbors=[index.d.ts]
 
 ## Instructions
 

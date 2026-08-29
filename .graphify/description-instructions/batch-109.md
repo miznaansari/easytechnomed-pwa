@@ -1,4 +1,4 @@
-# Node Description Batch 110 of 149
+# Node Description Batch 110 of 150
 
 Graphify is running in assistant/skill mode (no API key). You are the host
 assistant (Claude Code / Codex / Gemini CLI). Read the prompt below and write
@@ -17,6 +17,26 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "generated_client_index_d_testuncheckedupdatewithoutdepartmentinput": "TestUncheckedUpdateWithoutDepartmentInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L54212 | neighbors=[index.d.ts]
+- "generated_client_index_d_testuncheckedupdatewithoutformulasinput": "TestUncheckedUpdateWithoutFormulasInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L51069 | neighbors=[index.d.ts]
+- "generated_client_index_d_testuncheckedupdatewithoutinterpretationrulesinput": "TestUncheckedUpdateWithoutInterpretationRulesInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L51463 | neighbors=[index.d.ts]
+- "generated_client_index_d_testuncheckedupdatewithoutparametersinput": "TestUncheckedUpdateWithoutParametersInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L49874 | neighbors=[index.d.ts]
+- "generated_client_index_d_testuncheckedupdatewithoutregistrationsinput": "TestUncheckedUpdateWithoutRegistrationsInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L49172 | neighbors=[index.d.ts]
+- "generated_client_index_d_testuncheckedupdatewithoutworkspaceinput": "TestUncheckedUpdateWithoutWorkspaceInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L52262 | neighbors=[index.d.ts]
+- "generated_client_index_d_testupdateargs": "TestUpdateArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L16851 | neighbors=[index.d.ts]
+- "generated_client_index_d_testupdateinput": "TestUpdateInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L38362 | neighbors=[index.d.ts]
+- "generated_client_index_d_testupdatemanyargs": "TestUpdateManyArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L16873 | neighbors=[index.d.ts]
+- "generated_client_index_d_testupdatemanymutationinput": "TestUpdateManyMutationInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L38441 | neighbors=[index.d.ts]
+- "generated_client_index_d_testupdatemanywithoutdepartmentnestedinput": "TestUpdateManyWithoutDepartmentNestedInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L44687 | neighbors=[index.d.ts]
+- "generated_client_index_d_testupdatemanywithoutworkspacenestedinput": "TestUpdateManyWithoutWorkspaceNestedInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L42941 | neighbors=[index.d.ts]
+- "generated_client_index_d_testupdatemanywithwherewithoutdepartmentinput": "TestUpdateManyWithWhereWithoutDepartmentInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L50787 | neighbors=[index.d.ts]
+- "generated_client_index_d_testupdatemanywithwherewithoutworkspaceinput": "TestUpdateManyWithWhereWithoutWorkspaceInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L45877 | neighbors=[index.d.ts]
+- "generated_client_index_d_testupdateonerequiredwithoutformulasnestedinput": "TestUpdateOneRequiredWithoutFormulasNestedInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L44743 | neighbors=[index.d.ts]
+- "generated_client_index_d_testupdateonerequiredwithoutinterpretationrulesnestedinput": "TestUpdateOneRequiredWithoutInterpretationRulesNestedInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L44787 | neighbors=[index.d.ts]
+- "generated_client_index_d_testupdateonerequiredwithoutparametersnestedinput": "TestUpdateOneRequiredWithoutParametersNestedInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L44563 | neighbors=[index.d.ts]
+- "generated_client_index_d_testupdateonerequiredwithoutregistrationsnestedinput": "TestUpdateOneRequiredWithoutRegistrationsNestedInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L44341 | neighbors=[index.d.ts]
+- "generated_client_index_d_testupdatetoonewithwherewithoutformulasinput": "TestUpdateToOneWithWhereWithoutFormulasInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L51038 | neighbors=[index.d.ts]
+- "generated_client_index_d_testupdatetoonewithwherewithoutinterpretationrulesinput": "TestUpdateToOneWithWhereWithoutInterpretationRulesInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L51432 | neighbors=[index.d.ts]
 - "generated_client_index_d_testupdatetoonewithwherewithoutparametersinput": "TestUpdateToOneWithWhereWithoutParametersInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L49843 | neighbors=[index.d.ts]
 - "generated_client_index_d_testupdatetoonewithwherewithoutregistrationsinput": "TestUpdateToOneWithWhereWithoutRegistrationsInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L49141 | neighbors=[index.d.ts]
 - "generated_client_index_d_testupdatewithoutdepartmentinput": "TestUpdateWithoutDepartmentInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L54186 | neighbors=[index.d.ts]
@@ -37,26 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "generated_client_index_d_testwhereinput": "TestWhereInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L35443 | neighbors=[index.d.ts]
 - "generated_client_index_d_testwhereuniqueinput": "TestWhereUniqueInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L35506 | neighbors=[index.d.ts]
 - "generated_client_index_d_testworkspaceidcodecompounduniqueinput": "TestWorkspaceIdCodeCompoundUniqueInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L41367 | neighbors=[index.d.ts]
-- "generated_client_index_d_transactionclient": "TransactionClient" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L3122 | neighbors=[index.d.ts]
-- "generated_client_index_d_transactionisolationlevel": "TransactionIsolationLevel" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L33888 | neighbors=[index.d.ts]
-- "generated_client_index_d_true": "True" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L919 | neighbors=[index.d.ts]
-- "generated_client_index_d_truekeys": "TrueKeys" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L756 | neighbors=[index.d.ts]
-- "generated_client_index_d_truthykeys": "TruthyKeys" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L752 | neighbors=[index.d.ts]
-- "generated_client_index_d_tupletounion": "_TupleToUnion" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L994 | neighbors=[index.d.ts]
-- "generated_client_index_d_typemap": "TypeMap" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L1057 | neighbors=[index.d.ts]
-- "generated_client_index_d_typemapcb": "TypeMapCb" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L1053 | neighbors=[index.d.ts]
-- "generated_client_index_d_unenumerate": "UnEnumerate" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L821 | neighbors=[index.d.ts]
-- "generated_client_index_d_union": "Union" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L852 | neighbors=[index.d.ts]
-- "generated_client_index_d_user": "User" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L35 | neighbors=[index.d.ts]
-- "generated_client_index_d_user_sessionsargs": "User$sessionsArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L7876 | neighbors=[index.d.ts]
-- "generated_client_index_d_user_workspaceargs": "User$workspaceArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L7861 | neighbors=[index.d.ts]
-- "generated_client_index_d_useraggregateargs": "UserAggregateArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L6969 | neighbors=[index.d.ts]
-- "generated_client_index_d_userargs": "UserArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L54330 | neighbors=[index.d.ts]
-- "generated_client_index_d_useravgaggregateinputtype": "UserAvgAggregateInputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L6896 | neighbors=[index.d.ts]
-- "generated_client_index_d_useravgaggregateoutputtype": "UserAvgAggregateOutputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L6822 | neighbors=[index.d.ts]
-- "generated_client_index_d_useravgorderbyaggregateinput": "UserAvgOrderByAggregateInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L40816 | neighbors=[index.d.ts]
-- "generated_client_index_d_usercountaggregateinputtype": "UserCountAggregateInputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L6948 | neighbors=[index.d.ts]
-- "generated_client_index_d_usercountaggregateoutputtype": "UserCountAggregateOutputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L6874 | neighbors=[index.d.ts]
 
 ## Instructions
 

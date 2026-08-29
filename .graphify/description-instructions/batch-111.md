@@ -1,4 +1,4 @@
-# Node Description Batch 112 of 149
+# Node Description Batch 112 of 150
 
 Graphify is running in assistant/skill mode (no API key). You are the host
 assistant (Claude Code / Codex / Gemini CLI). Read the prompt below and write
@@ -17,6 +17,26 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "generated_client_index_d_usercreateorconnectwithoutworkspaceinput": "UserCreateOrConnectWithoutWorkspaceInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L45433 | neighbors=[index.d.ts]
+- "generated_client_index_d_usercreatewithoutroleinput": "UserCreateWithoutRoleInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L46647 | neighbors=[index.d.ts]
+- "generated_client_index_d_usercreatewithoutsessionsinput": "UserCreateWithoutSessionsInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L46553 | neighbors=[index.d.ts]
+- "generated_client_index_d_usercreatewithoutworkspaceinput": "UserCreateWithoutWorkspaceInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L45394 | neighbors=[index.d.ts]
+- "generated_client_index_d_userdefaultargs": "UserDefaultArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L7896 | neighbors=[index.d.ts]
+- "generated_client_index_d_userdelegate": "UserDelegate" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L7182 | neighbors=[index.d.ts]
+- "generated_client_index_d_userdeleteargs": "UserDeleteArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L7833 | neighbors=[index.d.ts]
+- "generated_client_index_d_userdeletemanyargs": "UserDeleteManyArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L7851 | neighbors=[index.d.ts]
+- "generated_client_index_d_userfieldrefs": "UserFieldRefs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L7542 | neighbors=[index.d.ts]
+- "generated_client_index_d_userfindfirstargs": "UserFindFirstArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L7603 | neighbors=[index.d.ts]
+- "generated_client_index_d_userfindfirstorthrowargs": "UserFindFirstOrThrowArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L7651 | neighbors=[index.d.ts]
+- "generated_client_index_d_userfindmanyargs": "UserFindManyArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L7699 | neighbors=[index.d.ts]
+- "generated_client_index_d_userfinduniqueargs": "UserFindUniqueArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L7567 | neighbors=[index.d.ts]
+- "generated_client_index_d_userfinduniqueorthrowargs": "UserFindUniqueOrThrowArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L7585 | neighbors=[index.d.ts]
+- "generated_client_index_d_usergetpayload": "UserGetPayload" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L7175 | neighbors=[index.d.ts]
+- "generated_client_index_d_usergroupbyargs": "UserGroupByArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L7041 | neighbors=[index.d.ts]
+- "generated_client_index_d_usergroupbyoutputtype": "UserGroupByOutputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L7055 | neighbors=[index.d.ts]
+- "generated_client_index_d_userinclude": "UserInclude" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L7139 | neighbors=[index.d.ts]
+- "generated_client_index_d_userlistrelationfilter": "UserListRelationFilter" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L40443 | neighbors=[index.d.ts]
+- "generated_client_index_d_usermaxaggregateinputtype": "UserMaxAggregateInputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L6928 | neighbors=[index.d.ts]
 - "generated_client_index_d_usermaxaggregateoutputtype": "UserMaxAggregateOutputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L6854 | neighbors=[index.d.ts]
 - "generated_client_index_d_usermaxorderbyaggregateinput": "UserMaxOrderByAggregateInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L40822 | neighbors=[index.d.ts]
 - "generated_client_index_d_userminaggregateinputtype": "UserMinAggregateInputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L6908 | neighbors=[index.d.ts]
@@ -37,26 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "generated_client_index_d_userroleavgorderbyaggregateinput": "UserRoleAvgOrderByAggregateInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L40944 | neighbors=[index.d.ts]
 - "generated_client_index_d_userrolecountaggregateinputtype": "UserRoleCountAggregateInputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L8902 | neighbors=[index.d.ts]
 - "generated_client_index_d_userrolecountaggregateoutputtype": "UserRoleCountAggregateOutputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L8877 | neighbors=[index.d.ts]
-- "generated_client_index_d_userrolecountargs": "UserRoleCountArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L9053 | neighbors=[index.d.ts]
-- "generated_client_index_d_userrolecountorderbyaggregateinput": "UserRoleCountOrderByAggregateInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L40939 | neighbors=[index.d.ts]
-- "generated_client_index_d_userrolecountoutputtype": "UserRoleCountOutputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L3311 | neighbors=[index.d.ts]
-- "generated_client_index_d_userrolecountoutputtypeargs": "UserRoleCountOutputTypeArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L54282 | neighbors=[index.d.ts]
-- "generated_client_index_d_userrolecountoutputtypecountpermissionsargs": "UserRoleCountOutputTypeCountPermissionsArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L3342 | neighbors=[index.d.ts]
-- "generated_client_index_d_userrolecountoutputtypecountusersargs": "UserRoleCountOutputTypeCountUsersArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L3335 | neighbors=[index.d.ts]
-- "generated_client_index_d_userrolecountoutputtypedefaultargs": "UserRoleCountOutputTypeDefaultArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L3325 | neighbors=[index.d.ts]
-- "generated_client_index_d_userrolecountoutputtypeselect": "UserRoleCountOutputTypeSelect" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L3316 | neighbors=[index.d.ts]
-- "generated_client_index_d_userrolecreateargs": "UserRoleCreateArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L9602 | neighbors=[index.d.ts]
-- "generated_client_index_d_userrolecreateinput": "UserRoleCreateInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L37751 | neighbors=[index.d.ts]
-- "generated_client_index_d_userrolecreatemanyargs": "UserRoleCreateManyArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L9620 | neighbors=[index.d.ts]
-- "generated_client_index_d_userrolecreatemanyinput": "UserRoleCreateManyInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L37777 | neighbors=[index.d.ts]
-- "generated_client_index_d_userrolecreatenestedonewithoutpermissionsinput": "UserRoleCreateNestedOneWithoutPermissionsInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L43451 | neighbors=[index.d.ts]
-- "generated_client_index_d_userrolecreatenestedonewithoutusersinput": "UserRoleCreateNestedOneWithoutUsersInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L43273 | neighbors=[index.d.ts]
-- "generated_client_index_d_userrolecreateorconnectwithoutpermissionsinput": "UserRoleCreateOrConnectWithoutPermissionsInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L46767 | neighbors=[index.d.ts]
-- "generated_client_index_d_userrolecreateorconnectwithoutusersinput": "UserRoleCreateOrConnectWithoutUsersInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L46372 | neighbors=[index.d.ts]
-- "generated_client_index_d_userrolecreatewithoutpermissionsinput": "UserRoleCreateWithoutPermissionsInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L46756 | neighbors=[index.d.ts]
-- "generated_client_index_d_userrolecreatewithoutusersinput": "UserRoleCreateWithoutUsersInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L46361 | neighbors=[index.d.ts]
-- "generated_client_index_d_userroledefaultargs": "UserRoleDefaultArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L9761 | neighbors=[index.d.ts]
-- "generated_client_index_d_userroledelegate": "UserRoleDelegate" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L9058 | neighbors=[index.d.ts]
 
 ## Instructions
 

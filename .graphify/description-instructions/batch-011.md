@@ -1,4 +1,4 @@
-# Node Description Batch 12 of 149
+# Node Description Batch 12 of 150
 
 Graphify is running in assistant/skill mode (no API key). You are the host
 assistant (Claude Code / Codex / Gemini CLI). Read the prompt below and write
@@ -26,6 +26,10 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "runtime_wasm_gr": "gr()" | kind=code-symbol | source=scratch/generated-client/runtime/wasm.js:L1 | neighbors=[wasm.js, byteLength(), from(), on(), slice(), write()] | lang=en
+- "runtime_wasm_ht": "Ht()" | kind=code-symbol | source=scratch/generated-client/runtime/wasm.js:L5 | neighbors=[wasm.js, renderAllMessages(), toString(), write(), nl(), zt()] | lang=en
+- "runtime_wasm_indexof": "indexOf()" | kind=code-symbol | source=scratch/generated-client/runtime/wasm.js:L1 | neighbors=[wasm.js, F(), includes(), from(), lastIndexOf(), sn()] | lang=en
+- "runtime_wasm_na": "na()" | kind=code-symbol | source=scratch/generated-client/runtime/wasm.js:L5 | neighbors=[wasm.js, ia(), isPreviewFeatureOn(), isRawAction(), oa(), ra()] | lang=en
 - "runtime_wasm_parseengineresponse": "parseEngineResponse()" | kind=code-symbol | source=scratch/generated-client/runtime/wasm.js:L11 | neighbors=[wasm.js, logger(), metrics(), request(), requestBatch(), transaction()] | lang=en
 - "runtime_wasm_pt": "pt()" | kind=code-symbol | source=scratch/generated-client/runtime/wasm.js:L4 | neighbors=[wasm.js, Bs(), fs(), Is(), _s(), ti()] | lang=en
 - "runtime_wasm_qi": "qi()" | kind=code-symbol | source=scratch/generated-client/runtime/wasm.js:L6 | neighbors=[wasm.js, de(), getAllQueryCallbacks(), isEmpty(), ji(), sr()] | lang=en
@@ -43,6 +47,7 @@ one-sentence description — no prose, no markdown fences.
 - "commit:repo:github.com-personal/miznaansari/easytechnomed-pwa@37dcb32f78d04df212ec59d53db20e631fe28445": "37dcb32 fixed" | kind=Commit | source=git | neighbors=[manifest.js, main, f9e9bea 2.0.8, AdminLayoutClient.js, ec70d21 2.0.7] | lang=en
 - "commit:repo:github.com-personal/miznaansari/easytechnomed-pwa@47b203242f9b38ab41626f6c5e7a4bab998b6664": "47b2032 ios issue pwa" | kind=Commit | source=git | neighbors=[layout.js, main, 9d71afc 3.0.22, sw.js, a09f0a9 3.0.21] | lang=en
 - "commit:repo:github.com-personal/miznaansari/easytechnomed-pwa@4ba60cc54091accaf3a5e235ffb096bfc635a7c2": "4ba60cc fixed" | kind=Commit | source=git | neighbors=[manifest.js, main, ec70d21 2.0.7, LoginPageClient.js, e9f3af9 2.0.6] | lang=en
+- "commit:repo:github.com-personal/miznaansari/easytechnomed-pwa@67434f223f7b1252ab6060c933993a8931b9cceb": "67434f2 payment issue only" | kind=Commit | source=git | neighbors=[main, e01658c 3.1.0, modelRegistry.js, syncManager.js, a3fc29c 3.0.25] | lang=en
 - "commit:repo:github.com-personal/miznaansari/easytechnomed-pwa@91c4f7af40a2d44bc187b24e524af3343a1bcd2b": "91c4f7a feat: complete offline support for all routes in (customer)/(dashboard)" | kind=Commit | source=git | neighbors=[42773a1 1.1.31, main, e710341 1.1.32, sw.js, syncManager.js] | lang=en
 - "commit:repo:github.com-personal/miznaansari/easytechnomed-pwa@a409645460f2c4149bc071edaf14308a60d4a49d": "a409645 fix: resolve Chrome reload loop and ensure robust offline App Shell loa…" | kind=Commit | source=git | neighbors=[main, 026962b 1.1.33, sw.js, syncManager.js, e710341 1.1.32] | lang=en
 - "commit:repo:github.com-personal/miznaansari/easytechnomed-pwa@a4caf17584a6cf627f136cd64750c4d8b931fd34": "a4caf17 fix: ensure Service Worker only returns text/html on navigation and iso…" | kind=Commit | source=git | neighbors=[7fcf804 1.1.30, main, 42773a1 1.1.31, sw.js, syncManager.js] | lang=en
@@ -55,17 +60,12 @@ one-sentence description — no prose, no markdown fences.
 - "context_trackingcontext": "TrackingContext.js" | kind=code-symbol | source=app/context/TrackingContext.js:L1 | neighbors=[252e194 e, generateSessionId(), TrackingContext, TrackingProvider(), useTracking()] | lang=en
 - "customer_page": "page.jsx" | kind=code-symbol | source=app/(customer)/page.jsx:L1 | neighbors=[252e194 e, 5e3d9ef d, metadata, RootPage(), LoginPageClient.js] | lang=en
 - "dashboard_layout": "layout.js" | kind=code-symbol | source=app/(customer)/(dashboard)/layout.js:L1 | neighbors=[252e194 e, 5e3d9ef d, bcee6c8 fi, cfa3879 f, AdminDashboardLayout()] | lang=en
+- "dashboard_rangeselector": "RangeSelector.js" | kind=code-symbol | source=app/(customer)/(dashboard)/dashboard/RangeSelector.js:L1 | neighbors=[252e194 e, 6812ab9 new ui dashboard, page.js, DashboardRangeSelector(), quickRanges] | lang=en
 - "lib_auth_verifytoken": "verifyToken()" | kind=code-symbol | source=lib/auth.js:L12 | neighbors=[auth.js, requireAdmin(), requireSuperAdmin(), requireUser(), verifySuperAdminAPI()] | lang=en
 - "lib_clientauth": "clientAuth.js" | kind=code-symbol | source=lib/clientAuth.js:L1 | neighbors=[252e194 e, 4d7570f fixed, 84a8ff2 full indexeddb based, cf2bb98 new, useAdminPermissions()] | lang=en
 - "lib_formulaengine_runformulaengine": "runFormulaEngine()" | kind=code-symbol | source=lib/formulaEngine.js:L33 | neighbors=[formulaEngine.js, check-reg-17.js, test-fix-reg-17.js, test-formula-run.js, test-reg-15.js] | lang=en
 - "lib_mail": "mail.js" | kind=code-symbol | source=lib/mail.js:L1 | neighbors=[252e194 e, sendApprovalEmail(), sendRejectionEmail(), sendVerificationEmail(), transporter] | lang=en
 - "members_page": "page.js" | kind=code-symbol | source=app/(customer)/(dashboard)/members/page.js:L1 | neighbors=[252e194 e, 84a8ff2 full indexeddb based, aae6bad fixed, cf2bb98 new, WorkspaceMembersPage()] | lang=en
-- "offline_network": "network.js" | kind=code-symbol | source=lib/offline/network.js:L1 | neighbors=[2b2534c f, af73a19 fixed, c15ae1e fixed, NetworkMonitor, syncManager.js] | lang=en
-- "paymentid_route": "route.js" | kind=code-symbol | source=app/api/print-subscription-invoice/[paymentId]/route.js:L1 | neighbors=[252e194 e, formatDate(), formatDateTime(), GET(), numberToWords()] | lang=en
-- "print_billhtmlgenerator": "billHtmlGenerator.js" | kind=code-symbol | source=lib/offline/print/billHtmlGenerator.js:L1 | neighbors=[8b1f3d8 a, formatDate(), generateOfflineBillHtml(), numberToWords(), openPrint.js] | lang=en
-- "prisma_process_dynamic_parameters": "process-dynamic-parameters.js" | kind=code-symbol | source=prisma/process-dynamic-parameters.js:L1 | neighbors=[252e194 e, main(), prisma, { PrismaClient }, processTestParameters()] | lang=en
-- "register_registerpageclient": "RegisterPageClient.js" | kind=code-symbol | source=app/(customer)/auth/register/RegisterPageClient.js:L1 | neighbors=[252e194 e, 2582be7 fixed zoom issue, page.js, CustomerRegisterPage(), registerSchema] | lang=en
-- "runtime_edge_ao": "Ao()" | kind=code-symbol | source=scratch/generated-client/runtime/edge.js:L4 | neighbors=[edge.js, addSuggestion(), hasField(), bu(), pu()] | lang=en
 
 ## Instructions
 

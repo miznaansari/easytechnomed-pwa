@@ -1,4 +1,4 @@
-# Node Description Batch 37 of 149
+# Node Description Batch 37 of 150
 
 Graphify is running in assistant/skill mode (no API key). You are the host
 assistant (Claude Code / Codex / Gemini CLI). Read the prompt below and write
@@ -17,10 +17,28 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "lib_pdftheme_getfontfamilydefinitions": "getFontFamilyDefinitions()" | kind=code-symbol | source=lib/pdfTheme.js:L30 | neighbors=[pdfTheme.js, test-pdf-customization.mjs]
+- "lib_pdftheme_hextorgb": "hexToRgb()" | kind=code-symbol | source=lib/pdfTheme.js:L6 | neighbors=[pdfTheme.js, test-pdf-customization.mjs]
+- "lib_pdftheme_pdf_theme_presets": "PDF_THEME_PRESETS" | kind=code-symbol | source=lib/pdfTheme.js:L114 | neighbors=[pdfTheme.js, test-pdf-customization.mjs]
+- "login_loginpageclient_customerloginpage": "CustomerLoginPage()" | kind=code-symbol | source=app/(customer)/auth/login/LoginPageClient.js:L31 | neighbors=[LoginPageClient.js, isLikelyMobile()]
+- "login_loginpageclient_islikelymobile": "isLikelyMobile()" | kind=code-symbol | source=app/(customer)/auth/login/LoginPageClient.js:L15 | neighbors=[LoginPageClient.js, CustomerLoginPage()]
+- "login_route": "route.js" | kind=code-symbol | source=app/api/authas/login/route.js:L1 | neighbors=[252e194 e, POST()]
+- "next_config": "next.config.mjs" | kind=code-symbol | source=next.config.mjs:L1 | neighbors=[252e194 e, nextConfig]
+- "offline_db_appdatabase_deleteoffline": ".deleteOffline()" | kind=code-symbol | source=lib/offline/db.js:L105 | neighbors=[AppDatabase, .updateOffline()]
+- "offline_db_appdatabase_getallpendingrecords": ".getAllPendingRecords()" | kind=code-symbol | source=lib/offline/db.js:L168 | neighbors=[AppDatabase, .getPendingCount()]
+- "offline_db_appdatabase_getpendingcount": ".getPendingCount()" | kind=code-symbol | source=lib/offline/db.js:L197 | neighbors=[AppDatabase, .getAllPendingRecords()]
+- "offline_db_appdatabase_updateoffline": ".updateOffline()" | kind=code-symbol | source=lib/offline/db.js:L74 | neighbors=[AppDatabase, .deleteOffline()]
+- "offline_network_networkmonitor_checkconnection": ".checkConnection()" | kind=code-symbol | source=lib/offline/network.js:L52 | neighbors=[NetworkMonitor, .handleStatusChange()]
+- "offline_network_networkmonitor_constructor": ".constructor()" | kind=code-symbol | source=lib/offline/network.js:L7 | neighbors=[NetworkMonitor, .startHeartbeat()]
+- "offline_network_networkmonitor_notifylisteners": ".notifyListeners()" | kind=code-symbol | source=lib/offline/network.js:L25 | neighbors=[NetworkMonitor, .handleStatusChange()]
+- "offline_network_networkmonitor_startheartbeat": ".startHeartbeat()" | kind=code-symbol | source=lib/offline/network.js:L81 | neighbors=[NetworkMonitor, .constructor()]
+- "offline_offlinepdfgenerator_isoutofrange": "isOutOfRange()" | kind=code-symbol | source=lib/offline/offlinePdfGenerator.js:L73 | neighbors=[offlinePdfGenerator.js, isQualitativeAbnormal()]
+- "offline_offlinepdfgenerator_isqualitativeabnormal": "isQualitativeAbnormal()" | kind=code-symbol | source=lib/offline/offlinePdfGenerator.js:L10 | neighbors=[offlinePdfGenerator.js, isOutOfRange()]
 - "offline_offlinepdfgenerator_layoutmarkdownlines": "layoutMarkdownLines()" | kind=code-symbol | source=lib/offline/offlinePdfGenerator.js:L164 | neighbors=[offlinePdfGenerator.js, generateReportPdfOffline()]
 - "offline_offlinepdfgenerator_parsemarkdowntokens": "parseMarkdownTokens()" | kind=code-symbol | source=lib/offline/offlinePdfGenerator.js:L126 | neighbors=[offlinePdfGenerator.js, generateReportPdfOffline()]
 - "offline_offlineprint_formatdate": "formatDate()" | kind=code-symbol | source=lib/offline/offlinePrint.js:L4 | neighbors=[offlinePrint.js, printBillOffline()]
 - "offline_offlineprint_numbertowords": "numberToWords()" | kind=code-symbol | source=lib/offline/offlinePrint.js:L17 | neighbors=[offlinePrint.js, printBillOffline()]
+- "offline_registrationidentity_generatenextregistrationidentity": "generateNextRegistrationIdentity()" | kind=code-symbol | source=lib/offline/registrationIdentity.js:L32 | neighbors=[registrationIdentity.js, generateRandomSuffix()]
 - "offline_reloginmodal": "ReLoginModal.jsx" | kind=code-symbol | source=components/offline/ReLoginModal.jsx:L1 | neighbors=[9f59247 expire token, ReLoginModal()]
 - "offline_timestamps_isservernewer": "isServerNewer()" | kind=code-symbol | source=lib/offline/timestamps.js:L49 | neighbors=[timestamps.js, syncManager.js]
 - "offline_timestamps_toutciso": "toUtcIso()" | kind=code-symbol | source=lib/offline/timestamps.js:L20 | neighbors=[timestamps.js, syncManager.js]
@@ -37,26 +55,8 @@ one-sentence description — no prose, no markdown fences.
 - "preview_pdf_route_get": "GET()" | kind=code-symbol | source=app/api/settings/preview-pdf/route.js:L25 | neighbors=[route.js, formatDate()]
 - "print_billhtmlgenerator_formatdate": "formatDate()" | kind=code-symbol | source=lib/offline/print/billHtmlGenerator.js:L3 | neighbors=[billHtmlGenerator.js, generateOfflineBillHtml()]
 - "print_billhtmlgenerator_numbertowords": "numberToWords()" | kind=code-symbol | source=lib/offline/print/billHtmlGenerator.js:L18 | neighbors=[billHtmlGenerator.js, generateOfflineBillHtml()]
-- "print_reportpdfgenerator_getreferencerange": "getReferenceRange()" | kind=code-symbol | source=lib/offline/print/reportPdfGenerator.js:L85 | neighbors=[reportPdfGenerator.js, generateOfflineReportPdf()]
-- "print_reportpdfgenerator_isoutofrange": "isOutOfRange()" | kind=code-symbol | source=lib/offline/print/reportPdfGenerator.js:L73 | neighbors=[reportPdfGenerator.js, isQualitativeAbnormal()]
-- "print_reportpdfgenerator_isqualitativeabnormal": "isQualitativeAbnormal()" | kind=code-symbol | source=lib/offline/print/reportPdfGenerator.js:L10 | neighbors=[reportPdfGenerator.js, isOutOfRange()]
-- "prisma_process_dynamic_parameters_main": "main()" | kind=code-symbol | source=prisma/process-dynamic-parameters.js:L142 | neighbors=[process-dynamic-parameters.js, processTestParameters()]
-- "prisma_process_dynamic_parameters_processtestparameters": "processTestParameters()" | kind=code-symbol | source=prisma/process-dynamic-parameters.js:L4 | neighbors=[process-dynamic-parameters.js, main()]
-- "prisma_seed_getdepartmentname": "getDepartmentName()" | kind=code-symbol | source=prisma/seed.js:L413 | neighbors=[seed.js, main()]
-- "prisma_seed_processtestparameters": "processTestParameters()" | kind=code-symbol | source=prisma/seed.js:L282 | neighbors=[seed.js, main()]
-- "prisma_seed_seedlimsformulasandconfigurations": "seedLimsFormulasAndConfigurations()" | kind=code-symbol | source=prisma/seed.js:L534 | neighbors=[seed.js, main()]
-- "register_route": "route.js" | kind=code-symbol | source=app/api/authas/register/route.js:L1 | neighbors=[252e194 e, POST()]
-- "registrationid_route_formatdate": "formatDate()" | kind=code-symbol | source=app/api/print-report/[registrationId]/route.js:L79 | neighbors=[route.js, GET()]
-- "registrationid_route_getreferencerange": "getReferenceRange()" | kind=code-symbol | source=app/api/print-report/[registrationId]/route.js:L56 | neighbors=[route.js, GET()]
-- "registrationid_route_isoutofrange": "isOutOfRange()" | kind=code-symbol | source=app/api/print-report/[registrationId]/route.js:L44 | neighbors=[route.js, isQualitativeAbnormal()]
-- "registrationid_route_isqualitativeabnormal": "isQualitativeAbnormal()" | kind=code-symbol | source=app/api/print-report/[registrationId]/route.js:L14 | neighbors=[route.js, isOutOfRange()]
-- "registrationid_route_numbertowords": "numberToWords()" | kind=code-symbol | source=app/api/print-bill/[registrationId]/route.js:L19 | neighbors=[route.js, GET()]
-- "registrations_route_get": "GET()" | kind=code-symbol | source=app/api/registrations/route.js:L51 | neighbors=[route.js, serializeData()]
-- "registrations_route_post": "POST()" | kind=code-symbol | source=app/api/registrations/route.js:L110 | neighbors=[route.js, serializeData()]
-- "reject_route": "route.js" | kind=code-symbol | source=app/api/approvals/reject/route.js:L1 | neighbors=[252e194 e, POST()]
-- "results_route_post": "POST()" | kind=code-symbol | source=app/api/registrations/[id]/results/route.js:L6 | neighbors=[route.js, PUT()]
-- "results_route_put": "PUT()" | kind=code-symbol | source=app/api/registrations/[id]/results/route.js:L108 | neighbors=[route.js, POST()]
-- "roles_route": "route.js" | kind=code-symbol | source=app/api/roles/route.js:L1 | neighbors=[252e194 e, GET()]
+- "print_qrgenerator_generateqrcodedataurl": "generateQrCodeDataUrl()" | kind=code-symbol | source=lib/offline/print/qrGenerator.js:L50 | neighbors=[qrGenerator.js, test_identity_and_qr.mjs]
+- "print_reportpdfgenerator_getreferencerange": "getReferenceRange()" | kind=code-symbol | source=lib/offline/print/reportPdfGenerator.js:L87 | neighbors=[reportPdfGenerator.js, generateOfflineReportPdf()]
 
 ## Instructions
 

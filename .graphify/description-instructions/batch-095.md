@@ -1,4 +1,4 @@
-# Node Description Batch 96 of 149
+# Node Description Batch 96 of 150
 
 Graphify is running in assistant/skill mode (no API key). You are the host
 assistant (Claude Code / Codex / Gemini CLI). Read the prompt below and write
@@ -17,6 +17,26 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "generated_client_index_d_superadminsessionargs": "SuperAdminSessionArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L54326 | neighbors=[index.d.ts]
+- "generated_client_index_d_superadminsessionavgaggregateinputtype": "SuperAdminSessionAvgAggregateInputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L5925 | neighbors=[index.d.ts]
+- "generated_client_index_d_superadminsessionavgaggregateoutputtype": "SuperAdminSessionAvgAggregateOutputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L5883 | neighbors=[index.d.ts]
+- "generated_client_index_d_superadminsessionavgorderbyaggregateinput": "SuperAdminSessionAvgOrderByAggregateInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L40718 | neighbors=[index.d.ts]
+- "generated_client_index_d_superadminsessioncountaggregateinputtype": "SuperAdminSessionCountAggregateInputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L5955 | neighbors=[index.d.ts]
+- "generated_client_index_d_superadminsessioncountaggregateoutputtype": "SuperAdminSessionCountAggregateOutputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L5913 | neighbors=[index.d.ts]
+- "generated_client_index_d_superadminsessioncountargs": "SuperAdminSessionCountArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L6126 | neighbors=[index.d.ts]
+- "generated_client_index_d_superadminsessioncountorderbyaggregateinput": "SuperAdminSessionCountOrderByAggregateInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L40708 | neighbors=[index.d.ts]
+- "generated_client_index_d_superadminsessioncreateargs": "SuperAdminSessionCreateArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L6679 | neighbors=[index.d.ts]
+- "generated_client_index_d_superadminsessioncreateinput": "SuperAdminSessionCreateInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L37480 | neighbors=[index.d.ts]
+- "generated_client_index_d_superadminsessioncreatemanyargs": "SuperAdminSessionCreateManyArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L6697 | neighbors=[index.d.ts]
+- "generated_client_index_d_superadminsessioncreatemanyinput": "SuperAdminSessionCreateManyInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L37518 | neighbors=[index.d.ts]
+- "generated_client_index_d_superadminsessioncreatemanysuperadmininput": "SuperAdminSessionCreateManySuperAdminInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L52617 | neighbors=[index.d.ts]
+- "generated_client_index_d_superadminsessioncreatemanysuperadmininputenvelope": "SuperAdminSessionCreateManySuperAdminInputEnvelope" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L46211 | neighbors=[index.d.ts]
+- "generated_client_index_d_superadminsessioncreatenestedmanywithoutsuperadmininput": "SuperAdminSessionCreateNestedManyWithoutSuperAdminInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L43171 | neighbors=[index.d.ts]
+- "generated_client_index_d_superadminsessioncreateorconnectwithoutsuperadmininput": "SuperAdminSessionCreateOrConnectWithoutSuperAdminInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L46206 | neighbors=[index.d.ts]
+- "generated_client_index_d_superadminsessioncreatewithoutsuperadmininput": "SuperAdminSessionCreateWithoutSuperAdminInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L46189 | neighbors=[index.d.ts]
+- "generated_client_index_d_superadminsessiondefaultargs": "SuperAdminSessionDefaultArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L6798 | neighbors=[index.d.ts]
+- "generated_client_index_d_superadminsessiondelegate": "SuperAdminSessionDelegate" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L6131 | neighbors=[index.d.ts]
+- "generated_client_index_d_superadminsessiondeleteargs": "SuperAdminSessionDeleteArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L6770 | neighbors=[index.d.ts]
 - "generated_client_index_d_superadminsessiondeletemanyargs": "SuperAdminSessionDeleteManyArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L6788 | neighbors=[index.d.ts]
 - "generated_client_index_d_superadminsessionfieldrefs": "SuperAdminSessionFieldRefs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L6489 | neighbors=[index.d.ts]
 - "generated_client_index_d_superadminsessionfindfirstargs": "SuperAdminSessionFindFirstArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L6540 | neighbors=[index.d.ts]
@@ -37,26 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "generated_client_index_d_superadminsessionminorderbyaggregateinput": "SuperAdminSessionMinOrderByAggregateInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L40733 | neighbors=[index.d.ts]
 - "generated_client_index_d_superadminsessionorderbyrelationaggregateinput": "SuperAdminSessionOrderByRelationAggregateInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L40646 | neighbors=[index.d.ts]
 - "generated_client_index_d_superadminsessionorderbywithaggregationinput": "SuperAdminSessionOrderByWithAggregationInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L34688 | neighbors=[index.d.ts]
-- "generated_client_index_d_superadminsessionorderbywithrelationinput": "SuperAdminSessionOrderByWithRelationInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L34663 | neighbors=[index.d.ts]
-- "generated_client_index_d_superadminsessionpayload": "$SuperAdminSessionPayload" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L6107 | neighbors=[index.d.ts]
-- "generated_client_index_d_superadminsessionscalarfieldenum": "SuperAdminSessionScalarFieldEnum" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L33928 | neighbors=[index.d.ts]
-- "generated_client_index_d_superadminsessionscalarwhereinput": "SuperAdminSessionScalarWhereInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L46263 | neighbors=[index.d.ts]
-- "generated_client_index_d_superadminsessionscalarwherewithaggregatesinput": "SuperAdminSessionScalarWhereWithAggregatesInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L34703 | neighbors=[index.d.ts]
-- "generated_client_index_d_superadminsessionselect": "SuperAdminSessionSelect" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L6081 | neighbors=[index.d.ts]
-- "generated_client_index_d_superadminsessionselectscalar": "SuperAdminSessionSelectScalar" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L6093 | neighbors=[index.d.ts]
-- "generated_client_index_d_superadminsessionsumaggregateinputtype": "SuperAdminSessionSumAggregateInputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L5930 | neighbors=[index.d.ts]
-- "generated_client_index_d_superadminsessionsumaggregateoutputtype": "SuperAdminSessionSumAggregateOutputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L5888 | neighbors=[index.d.ts]
-- "generated_client_index_d_superadminsessionsumorderbyaggregateinput": "SuperAdminSessionSumOrderByAggregateInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L40743 | neighbors=[index.d.ts]
-- "generated_client_index_d_superadminsessionuncheckedcreateinput": "SuperAdminSessionUncheckedCreateInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L37489 | neighbors=[index.d.ts]
-- "generated_client_index_d_superadminsessionuncheckedcreatenestedmanywithoutsuperadmininput": "SuperAdminSessionUncheckedCreateNestedManyWithoutSuperAdminInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L43185 | neighbors=[index.d.ts]
-- "generated_client_index_d_superadminsessionuncheckedcreatewithoutsuperadmininput": "SuperAdminSessionUncheckedCreateWithoutSuperAdminInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L46197 | neighbors=[index.d.ts]
-- "generated_client_index_d_superadminsessionuncheckedupdateinput": "SuperAdminSessionUncheckedUpdateInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L37508 | neighbors=[index.d.ts]
-- "generated_client_index_d_superadminsessionuncheckedupdatemanyinput": "SuperAdminSessionUncheckedUpdateManyInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L37536 | neighbors=[index.d.ts]
-- "generated_client_index_d_superadminsessionuncheckedupdatemanywithoutsuperadmininput": "SuperAdminSessionUncheckedUpdateManyWithoutSuperAdminInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L52654 | neighbors=[index.d.ts]
-- "generated_client_index_d_superadminsessionuncheckedupdatemanywithoutsuperadminnestedinput": "SuperAdminSessionUncheckedUpdateManyWithoutSuperAdminNestedInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L43227 | neighbors=[index.d.ts]
-- "generated_client_index_d_superadminsessionuncheckedupdatewithoutsuperadmininput": "SuperAdminSessionUncheckedUpdateWithoutSuperAdminInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L52645 | neighbors=[index.d.ts]
-- "generated_client_index_d_superadminsessionupdateargs": "SuperAdminSessionUpdateArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L6708 | neighbors=[index.d.ts]
-- "generated_client_index_d_superadminsessionupdateinput": "SuperAdminSessionUpdateInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L37499 | neighbors=[index.d.ts]
 
 ## Instructions
 

@@ -1,4 +1,4 @@
-# Node Description Batch 56 of 149
+# Node Description Batch 56 of 150
 
 Graphify is running in assistant/skill mode (no API key). You are the host
 assistant (Claude Code / Codex / Gemini CLI). Read the prompt below and write
@@ -17,6 +17,26 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "generated_client_index_d_admininclude": "AdminInclude" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L11071 | neighbors=[index.d.ts]
+- "generated_client_index_d_adminlistrelationfilter": "AdminListRelationFilter" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L40419 | neighbors=[index.d.ts]
+- "generated_client_index_d_adminmaxaggregateinputtype": "AdminMaxAggregateInputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L10822 | neighbors=[index.d.ts]
+- "generated_client_index_d_adminmaxaggregateoutputtype": "AdminMaxAggregateOutputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L10723 | neighbors=[index.d.ts]
+- "generated_client_index_d_adminmaxorderbyaggregateinput": "AdminMaxOrderByAggregateInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L41060 | neighbors=[index.d.ts]
+- "generated_client_index_d_adminminaggregateinputtype": "AdminMinAggregateInputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L10795 | neighbors=[index.d.ts]
+- "generated_client_index_d_adminminaggregateoutputtype": "AdminMinAggregateOutputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L10696 | neighbors=[index.d.ts]
+- "generated_client_index_d_adminminorderbyaggregateinput": "AdminMinOrderByAggregateInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L41087 | neighbors=[index.d.ts]
+- "generated_client_index_d_adminnullablerelationfilter": "AdminNullableRelationFilter" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L41512 | neighbors=[index.d.ts]
+- "generated_client_index_d_adminorderbyrelationaggregateinput": "AdminOrderByRelationAggregateInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L40483 | neighbors=[index.d.ts]
+- "generated_client_index_d_adminorderbywithaggregationinput": "AdminOrderByWithAggregationInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L35104 | neighbors=[index.d.ts]
+- "generated_client_index_d_adminorderbywithrelationinput": "AdminOrderByWithRelationInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L35035 | neighbors=[index.d.ts]
+- "generated_client_index_d_adminpayload": "$AdminPayload" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L11081 | neighbors=[index.d.ts]
+- "generated_client_index_d_adminrelationfilter": "AdminRelationFilter" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L41122 | neighbors=[index.d.ts]
+- "generated_client_index_d_adminrole": "AdminRole" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L65 | neighbors=[index.d.ts]
+- "generated_client_index_d_adminrole_adminsargs": "AdminRole$adminsArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L13753 | neighbors=[index.d.ts]
+- "generated_client_index_d_adminrole_permissionsargs": "AdminRole$permissionsArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L13773 | neighbors=[index.d.ts]
+- "generated_client_index_d_adminroleaggregateargs": "AdminRoleAggregateArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L12930 | neighbors=[index.d.ts]
+- "generated_client_index_d_adminroleargs": "AdminRoleArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L54354 | neighbors=[index.d.ts]
+- "generated_client_index_d_adminroleavgaggregateinputtype": "AdminRoleAvgAggregateInputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L12900 | neighbors=[index.d.ts]
 - "generated_client_index_d_adminroleavgaggregateoutputtype": "AdminRoleAvgAggregateOutputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L12869 | neighbors=[index.d.ts]
 - "generated_client_index_d_adminroleavgorderbyaggregateinput": "AdminRoleAvgOrderByAggregateInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L41184 | neighbors=[index.d.ts]
 - "generated_client_index_d_adminrolecountaggregateinputtype": "AdminRoleCountAggregateInputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L12922 | neighbors=[index.d.ts]
@@ -37,26 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "generated_client_index_d_adminrolecreatenestedonewithoutpermissionsinput": "AdminRoleCreateNestedOneWithoutPermissionsInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L43751 | neighbors=[index.d.ts]
 - "generated_client_index_d_adminrolecreateorconnectwithoutadminsinput": "AdminRoleCreateOrConnectWithoutAdminsInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L46809 | neighbors=[index.d.ts]
 - "generated_client_index_d_adminrolecreateorconnectwithoutpermissionsinput": "AdminRoleCreateOrConnectWithoutPermissionsInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L47519 | neighbors=[index.d.ts]
-- "generated_client_index_d_adminrolecreatewithoutadminsinput": "AdminRoleCreateWithoutAdminsInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L46794 | neighbors=[index.d.ts]
-- "generated_client_index_d_adminrolecreatewithoutpermissionsinput": "AdminRoleCreateWithoutPermissionsInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L47504 | neighbors=[index.d.ts]
-- "generated_client_index_d_adminroledefaultargs": "AdminRoleDefaultArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L13793 | neighbors=[index.d.ts]
-- "generated_client_index_d_adminroledelegate": "AdminRoleDelegate" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L13088 | neighbors=[index.d.ts]
-- "generated_client_index_d_adminroledeleteargs": "AdminRoleDeleteArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L13725 | neighbors=[index.d.ts]
-- "generated_client_index_d_adminroledeletemanyargs": "AdminRoleDeleteManyArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L13743 | neighbors=[index.d.ts]
-- "generated_client_index_d_adminrolefieldrefs": "AdminRoleFieldRefs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L13447 | neighbors=[index.d.ts]
-- "generated_client_index_d_adminrolefindfirstargs": "AdminRoleFindFirstArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L13495 | neighbors=[index.d.ts]
-- "generated_client_index_d_adminrolefindfirstorthrowargs": "AdminRoleFindFirstOrThrowArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L13543 | neighbors=[index.d.ts]
-- "generated_client_index_d_adminrolefindmanyargs": "AdminRoleFindManyArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L13591 | neighbors=[index.d.ts]
-- "generated_client_index_d_adminrolefinduniqueargs": "AdminRoleFindUniqueArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L13459 | neighbors=[index.d.ts]
-- "generated_client_index_d_adminrolefinduniqueorthrowargs": "AdminRoleFindUniqueOrThrowArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L13477 | neighbors=[index.d.ts]
-- "generated_client_index_d_adminrolegetpayload": "AdminRoleGetPayload" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L13081 | neighbors=[index.d.ts]
-- "generated_client_index_d_adminrolegroupbyargs": "AdminRoleGroupByArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L13002 | neighbors=[index.d.ts]
-- "generated_client_index_d_adminrolegroupbyoutputtype": "AdminRoleGroupByOutputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L13016 | neighbors=[index.d.ts]
-- "generated_client_index_d_adminroleinclude": "AdminRoleInclude" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L13060 | neighbors=[index.d.ts]
-- "generated_client_index_d_adminrolemaxaggregateinputtype": "AdminRoleMaxAggregateInputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L12915 | neighbors=[index.d.ts]
-- "generated_client_index_d_adminrolemaxaggregateoutputtype": "AdminRoleMaxAggregateOutputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L12884 | neighbors=[index.d.ts]
-- "generated_client_index_d_adminrolemaxorderbyaggregateinput": "AdminRoleMaxOrderByAggregateInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L41188 | neighbors=[index.d.ts]
-- "generated_client_index_d_adminroleminaggregateinputtype": "AdminRoleMinAggregateInputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L12908 | neighbors=[index.d.ts]
 
 ## Instructions
 

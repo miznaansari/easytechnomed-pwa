@@ -1,4 +1,4 @@
-# Node Description Batch 19 of 149
+# Node Description Batch 19 of 150
 
 Graphify is running in assistant/skill mode (no API key). You are the host
 assistant (Claude Code / Codex / Gemini CLI). Read the prompt below and write
@@ -17,6 +17,16 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "runtime_edge_esm_gu": "gu()" | kind=code-symbol | source=scratch/generated-client/runtime/edge-esm.js:L4 | neighbors=[edge-esm.js, addErrorMessage(), markAsError(), Tr()]
+- "runtime_edge_esm_handleandlogrequesterror": "handleAndLogRequestError()" | kind=code-symbol | source=scratch/generated-client/runtime/edge-esm.js:L20 | neighbors=[edge-esm.js, emit(), handleRequestError(), request()]
+- "runtime_edge_esm_io": "Io()" | kind=code-symbol | source=scratch/generated-client/runtime/edge-esm.js:L5 | neighbors=[edge-esm.js, addField(), Oo(), Pt()]
+- "runtime_edge_esm_isempty": "isEmpty()" | kind=code-symbol | source=scratch/generated-client/runtime/edge-esm.js:L3 | neighbors=[edge-esm.js, as(), du(), ps()]
+- "runtime_edge_esm_isenabled": "isEnabled()" | kind=code-symbol | source=scratch/generated-client/runtime/edge-esm.js:L20 | neighbors=[edge-esm.js, build(), buildCaptureSettings(), getGlobalTracingHelper()]
+- "runtime_edge_esm_ko": "ko()" | kind=code-symbol | source=scratch/generated-client/runtime/edge-esm.js:L5 | neighbors=[edge-esm.js, Do(), nc(), rc()]
+- "runtime_edge_esm_mo": "mo()" | kind=code-symbol | source=scratch/generated-client/runtime/edge-esm.js:L1 | neighbors=[edge-esm.js, ce(), eo(), values()]
+- "runtime_edge_esm_ms": "ms()" | kind=code-symbol | source=scratch/generated-client/runtime/edge-esm.js:L6 | neighbors=[edge-esm.js, nt(), r(), toString()]
+- "runtime_edge_esm_nestargument": "nestArgument()" | kind=code-symbol | source=scratch/generated-client/runtime/edge-esm.js:L5 | neighbors=[edge-esm.js, e(), qo(), qu()]
+- "runtime_edge_esm_nt": "nt()" | kind=code-symbol | source=scratch/generated-client/runtime/edge-esm.js:L1 | neighbors=[edge-esm.js, lo(), ms(), qt()]
 - "runtime_edge_esm_nu": "nu()" | kind=code-symbol | source=scratch/generated-client/runtime/edge-esm.js:L2 | neighbors=[edge-esm.js, isPreviewFeatureOn(), isRawAction(), ru()]
 - "runtime_edge_esm_on": "on()" | kind=code-symbol | source=scratch/generated-client/runtime/edge-esm.js:L1 | neighbors=[edge-esm.js, ci(), wa(), xa()]
 - "runtime_edge_esm_po": "po()" | kind=code-symbol | source=scratch/generated-client/runtime/edge-esm.js:L1 | neighbors=[edge-esm.js, me(), Dt(), yn()]
@@ -47,16 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "runtime_edge_getargumentpath": "getArgumentPath()" | kind=code-symbol | source=scratch/generated-client/runtime/edge.js:L5 | neighbors=[edge.js, bo(), qu(), Uo()]
 - "runtime_edge_getcomputedfields": "getComputedFields()" | kind=code-symbol | source=scratch/generated-client/runtime/edge.js:L5 | neighbors=[edge.js, getAllComputedFields(), Gu(), ju()]
 - "runtime_edge_getfieldvalue": "getFieldValue()" | kind=code-symbol | source=scratch/generated-client/runtime/edge.js:L3 | neighbors=[edge.js, getDeepSelectionParent(), getField(), ro()]
-- "runtime_edge_getglobalomit": "getGlobalOmit()" | kind=code-symbol | source=scratch/generated-client/runtime/edge.js:L5 | neighbors=[edge.js, nt(), shouldApplyGlobalOmit(), ju()]
-- "runtime_edge_getname": "_getName()" | kind=code-symbol | source=scratch/generated-client/runtime/edge.js:L4 | neighbors=[edge.js, bo(), constructor(), Do()]
-- "runtime_edge_handleandlogrequesterror": "handleAndLogRequestError()" | kind=code-symbol | source=scratch/generated-client/runtime/edge.js:L20 | neighbors=[edge.js, emit(), handleRequestError(), request()]
-- "runtime_edge_hl": "hl()" | kind=code-symbol | source=scratch/generated-client/runtime/edge.js:L1 | neighbors=[edge.js, e(), toString(), Tr()]
-- "runtime_edge_hs": "hs()" | kind=code-symbol | source=scratch/generated-client/runtime/edge.js:L6 | neighbors=[edge.js, getAllQueryCallbacks(), gs(), isEmpty()]
-- "runtime_edge_isempty": "isEmpty()" | kind=code-symbol | source=scratch/generated-client/runtime/edge.js:L3 | neighbors=[edge.js, bu(), ds(), hs()]
-- "runtime_edge_isenabled": "isEnabled()" | kind=code-symbol | source=scratch/generated-client/runtime/edge.js:L20 | neighbors=[edge.js, build(), buildCaptureSettings(), getGlobalTracingHelper()]
-- "runtime_edge_it": "it()" | kind=code-symbol | source=scratch/generated-client/runtime/edge.js:L1 | neighbors=[edge.js, bo(), ht(), qs()]
-- "runtime_edge_jr": "jr()" | kind=code-symbol | source=scratch/generated-client/runtime/edge.js:L6 | neighbors=[edge.js, e(), ps(), xo()]
-- "runtime_edge_ko": "ko()" | kind=code-symbol | source=scratch/generated-client/runtime/edge.js:L5 | neighbors=[edge.js, Do(), dt(), addField()]
 
 ## Instructions
 

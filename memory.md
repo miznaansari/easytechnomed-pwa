@@ -2,7 +2,7 @@
 
 ## 1. Project Overview
 - **Name**: EasyTechnoMed PWA / LIMS (Laboratory Information Management System)
-- **Current Version**: `v3.0.26`
+- **Current Version**: `v3.1.3`
 - **Framework**: Next.js (App Router), React 19, Material-UI (MUI v7), Dexie.js (v4.4+), Prisma ORM, MySQL, pdf-lib, qrcode.
 
 
@@ -106,6 +106,9 @@
 
 | Version | Date | Key Changes & Milestones |
 | :--- | :--- | :--- |
+| `v3.1.3` | 2026-08-30 | Suppressed "Session Expired" / `ReLoginModal` popup on root `/` and auth routes: Added `usePathname` route guards in `OfflineProvider.jsx` and `ReLoginModal.jsx`; Prevented background sync bootstrap attempts when unauthenticated on public landing/login pages; Fixed MUI icon import in `VersionUpdateNotifier.jsx`. |
+| `v3.1.2` | 2026-08-30 | Database-Driven App Version Tracking, "What's New" Changelog Display & PWA Hard Refresh: Added `AppVersion` model in MySQL Prisma + `appVersions` Dexie store; Implemented `/api/version` endpoint with auto-seeding; Built `<VersionUpdateNotifier />` client modal displaying update highlights ("Naya kya aaya" list) and one-click "Hard Refresh & Update Now" button with complete CacheStorage and ServiceWorker cache purge (`SKIP_WAITING` + `CLEAR_ALL_CACHES`). |
+| `v3.1.1` | 2026-08-29 | Complete client-side storage & IndexedDB purge on user logout: Added `db.clearAllData()` in `lib/offline/db.js` clearing all 17+ Dexie tables (`workspaces`, `admins`, `doctors`, `tests`, `parameters`, `registrations`, `patientResults`, `workspacePdf`, etc.); Updated `clearLocalSession()` in `lib/auth/offlineAuth.js` to execute full IndexedDB wipe, `sessionStorage.clear()`, and `localStorage.clear()` (retaining only `etm_logged_out: 1`); Integrated in `AdminLayoutClient`, `ExpiredPlanView`, `UserApproveTable`, and `UnsyncedLogoutModal`. |
 | `v3.0.23` | 2026-08-29 | Integrated latest high-performance Dashboard UI design from `pathlab` into `new/components`; Updated Header Bar with minimal direct styling & button RangeSelector, 4 Core Metric cards (Total Patients, Pending Tests with warning badge, Completed Tests, Collections with due balance badge), Patient Volume BarChart, Test Department Split Donut + progress bar breakdown, and Recent Activity Breakdown table with 0ms IndexedDB offline-first calculation. |
 | `v3.0.21` | 2026-08-28 | Fixed iOS Safari WebKit error *"The response served by the ServiceWorker has a redirect"* by sanitizing all redirected fetch/cache responses in `public/sw.js` (v11); Fully optimized `site.webmanifest`, `manifest.json`, and `app/layout.js` with `apple-touch-icon.png` (180x180), `startupImage`, and Apple PWA standalone headers. |
 | `v3.0.20` | 2026-08-28 | Fixed iOS Safari Service Worker registration in `PWARegister.js` for instant hydration (`document.readyState`), added persistent storage grant request (`navigator.storage.persist()`), and added web app manifest metadata in `layout.js` & `manifest.json`. |

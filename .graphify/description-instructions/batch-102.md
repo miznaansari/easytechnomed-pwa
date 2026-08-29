@@ -1,4 +1,4 @@
-# Node Description Batch 103 of 149
+# Node Description Batch 103 of 150
 
 Graphify is running in assistant/skill mode (no API key). You are the host
 assistant (Claude Code / Codex / Gemini CLI). Read the prompt below and write
@@ -17,6 +17,26 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "generated_client_index_d_testdepartmentuncheckedupdatewithouttestsinput": "TestDepartmentUncheckedUpdateWithoutTestsInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L48163 | neighbors=[index.d.ts]
+- "generated_client_index_d_testdepartmentupdateargs": "TestDepartmentUpdateArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L29585 | neighbors=[index.d.ts]
+- "generated_client_index_d_testdepartmentupdateinput": "TestDepartmentUpdateInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L39876 | neighbors=[index.d.ts]
+- "generated_client_index_d_testdepartmentupdatemanyargs": "TestDepartmentUpdateManyArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L29607 | neighbors=[index.d.ts]
+- "generated_client_index_d_testdepartmentupdatemanymutationinput": "TestDepartmentUpdateManyMutationInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L39898 | neighbors=[index.d.ts]
+- "generated_client_index_d_testdepartmentupdateonewithouttestsnestedinput": "TestDepartmentUpdateOneWithoutTestsNestedInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L43991 | neighbors=[index.d.ts]
+- "generated_client_index_d_testdepartmentupdatetoonewithwherewithouttestsinput": "TestDepartmentUpdateToOneWithWhereWithoutTestsInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L48152 | neighbors=[index.d.ts]
+- "generated_client_index_d_testdepartmentupdatewithouttestsinput": "TestDepartmentUpdateWithoutTestsInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L48157 | neighbors=[index.d.ts]
+- "generated_client_index_d_testdepartmentupsertargs": "TestDepartmentUpsertArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L29621 | neighbors=[index.d.ts]
+- "generated_client_index_d_testdepartmentupsertwithouttestsinput": "TestDepartmentUpsertWithoutTestsInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L48146 | neighbors=[index.d.ts]
+- "generated_client_index_d_testdepartmentwhereinput": "TestDepartmentWhereInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L36818 | neighbors=[index.d.ts]
+- "generated_client_index_d_testdepartmentwhereuniqueinput": "TestDepartmentWhereUniqueInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L36837 | neighbors=[index.d.ts]
+- "generated_client_index_d_testfieldrefs": "TestFieldRefs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L16618 | neighbors=[index.d.ts]
+- "generated_client_index_d_testfindfirstargs": "TestFindFirstArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L16683 | neighbors=[index.d.ts]
+- "generated_client_index_d_testfindfirstorthrowargs": "TestFindFirstOrThrowArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L16731 | neighbors=[index.d.ts]
+- "generated_client_index_d_testfindmanyargs": "TestFindManyArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L16779 | neighbors=[index.d.ts]
+- "generated_client_index_d_testfinduniqueargs": "TestFindUniqueArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L16647 | neighbors=[index.d.ts]
+- "generated_client_index_d_testfinduniqueorthrowargs": "TestFindUniqueOrThrowArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L16665 | neighbors=[index.d.ts]
+- "generated_client_index_d_testformula": "TestFormula" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L145 | neighbors=[index.d.ts]
+- "generated_client_index_d_testformula_workspaceargs": "TestFormula$workspaceArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L30698 | neighbors=[index.d.ts]
 - "generated_client_index_d_testformulaaggregateargs": "TestFormulaAggregateArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L29838 | neighbors=[index.d.ts]
 - "generated_client_index_d_testformulaargs": "TestFormulaArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L54418 | neighbors=[index.d.ts]
 - "generated_client_index_d_testformulaavgaggregateinputtype": "TestFormulaAvgAggregateInputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L29779 | neighbors=[index.d.ts]
@@ -37,26 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "generated_client_index_d_testformulacreatemanyworkspaceinput": "TestFormulaCreateManyWorkspaceInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L51947 | neighbors=[index.d.ts]
 - "generated_client_index_d_testformulacreatemanyworkspaceinputenvelope": "TestFormulaCreateManyWorkspaceInputEnvelope" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L45615 | neighbors=[index.d.ts]
 - "generated_client_index_d_testformulacreatenestedmanywithoutoutputparameterinput": "TestFormulaCreateNestedManyWithoutOutputParameterInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L44362 | neighbors=[index.d.ts]
-- "generated_client_index_d_testformulacreatenestedmanywithouttestinput": "TestFormulaCreateNestedManyWithoutTestInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L43941 | neighbors=[index.d.ts]
-- "generated_client_index_d_testformulacreatenestedmanywithoutworkspaceinput": "TestFormulaCreateNestedManyWithoutWorkspaceInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L42786 | neighbors=[index.d.ts]
-- "generated_client_index_d_testformulacreateorconnectwithoutoutputparameterinput": "TestFormulaCreateOrConnectWithoutOutputParameterInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L49323 | neighbors=[index.d.ts]
-- "generated_client_index_d_testformulacreateorconnectwithouttestinput": "TestFormulaCreateOrConnectWithoutTestInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L48107 | neighbors=[index.d.ts]
-- "generated_client_index_d_testformulacreateorconnectwithoutworkspaceinput": "TestFormulaCreateOrConnectWithoutWorkspaceInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L45610 | neighbors=[index.d.ts]
-- "generated_client_index_d_testformulacreatewithoutoutputparameterinput": "TestFormulaCreateWithoutOutputParameterInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L49298 | neighbors=[index.d.ts]
-- "generated_client_index_d_testformulacreatewithouttestinput": "TestFormulaCreateWithoutTestInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L48082 | neighbors=[index.d.ts]
-- "generated_client_index_d_testformulacreatewithoutworkspaceinput": "TestFormulaCreateWithoutWorkspaceInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L45585 | neighbors=[index.d.ts]
-- "generated_client_index_d_testformuladefaultargs": "TestFormulaDefaultArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L30713 | neighbors=[index.d.ts]
-- "generated_client_index_d_testformuladelegate": "TestFormulaDelegate" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L30025 | neighbors=[index.d.ts]
-- "generated_client_index_d_testformuladeleteargs": "TestFormulaDeleteArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L30670 | neighbors=[index.d.ts]
-- "generated_client_index_d_testformuladeletemanyargs": "TestFormulaDeleteManyArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L30688 | neighbors=[index.d.ts]
-- "generated_client_index_d_testformulafieldrefs": "TestFormulaFieldRefs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L30385 | neighbors=[index.d.ts]
-- "generated_client_index_d_testformulafindfirstargs": "TestFormulaFindFirstArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L30440 | neighbors=[index.d.ts]
-- "generated_client_index_d_testformulafindfirstorthrowargs": "TestFormulaFindFirstOrThrowArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L30488 | neighbors=[index.d.ts]
-- "generated_client_index_d_testformulafindmanyargs": "TestFormulaFindManyArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L30536 | neighbors=[index.d.ts]
-- "generated_client_index_d_testformulafinduniqueargs": "TestFormulaFindUniqueArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L30404 | neighbors=[index.d.ts]
-- "generated_client_index_d_testformulafinduniqueorthrowargs": "TestFormulaFindUniqueOrThrowArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L30422 | neighbors=[index.d.ts]
-- "generated_client_index_d_testformulagetpayload": "TestFormulaGetPayload" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L30018 | neighbors=[index.d.ts]
-- "generated_client_index_d_testformulagroupbyargs": "TestFormulaGroupByArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L29910 | neighbors=[index.d.ts]
 
 ## Instructions
 

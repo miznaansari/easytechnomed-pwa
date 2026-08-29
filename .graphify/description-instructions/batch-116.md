@@ -1,4 +1,4 @@
-# Node Description Batch 117 of 149
+# Node Description Batch 117 of 150
 
 Graphify is running in assistant/skill mode (no API key). You are the host
 assistant (Claude Code / Codex / Gemini CLI). Read the prompt below and write
@@ -17,6 +17,26 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "generated_client_index_d_usersessioncreateinput": "UserSessionCreateInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L37685 | neighbors=[index.d.ts]
+- "generated_client_index_d_usersessioncreatemanyargs": "UserSessionCreateManyArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L8734 | neighbors=[index.d.ts]
+- "generated_client_index_d_usersessioncreatemanyinput": "UserSessionCreateManyInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L37723 | neighbors=[index.d.ts]
+- "generated_client_index_d_usersessioncreatemanyuserinput": "UserSessionCreateManyUserInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L52695 | neighbors=[index.d.ts]
+- "generated_client_index_d_usersessioncreatemanyuserinputenvelope": "UserSessionCreateManyUserInputEnvelope" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L46445 | neighbors=[index.d.ts]
+- "generated_client_index_d_usersessioncreatenestedmanywithoutuserinput": "UserSessionCreateNestedManyWithoutUserInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L43285 | neighbors=[index.d.ts]
+- "generated_client_index_d_usersessioncreateorconnectwithoutuserinput": "UserSessionCreateOrConnectWithoutUserInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L46440 | neighbors=[index.d.ts]
+- "generated_client_index_d_usersessioncreatewithoutuserinput": "UserSessionCreateWithoutUserInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L46423 | neighbors=[index.d.ts]
+- "generated_client_index_d_usersessiondefaultargs": "UserSessionDefaultArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L8835 | neighbors=[index.d.ts]
+- "generated_client_index_d_usersessiondelegate": "UserSessionDelegate" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L8168 | neighbors=[index.d.ts]
+- "generated_client_index_d_usersessiondeleteargs": "UserSessionDeleteArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L8807 | neighbors=[index.d.ts]
+- "generated_client_index_d_usersessiondeletemanyargs": "UserSessionDeleteManyArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L8825 | neighbors=[index.d.ts]
+- "generated_client_index_d_usersessionfieldrefs": "UserSessionFieldRefs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L8526 | neighbors=[index.d.ts]
+- "generated_client_index_d_usersessionfindfirstargs": "UserSessionFindFirstArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L8577 | neighbors=[index.d.ts]
+- "generated_client_index_d_usersessionfindfirstorthrowargs": "UserSessionFindFirstOrThrowArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L8625 | neighbors=[index.d.ts]
+- "generated_client_index_d_usersessionfindmanyargs": "UserSessionFindManyArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L8673 | neighbors=[index.d.ts]
+- "generated_client_index_d_usersessionfinduniqueargs": "UserSessionFindUniqueArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L8541 | neighbors=[index.d.ts]
+- "generated_client_index_d_usersessionfinduniqueorthrowargs": "UserSessionFindUniqueOrThrowArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L8559 | neighbors=[index.d.ts]
+- "generated_client_index_d_usersessiongetpayload": "UserSessionGetPayload" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L8161 | neighbors=[index.d.ts]
+- "generated_client_index_d_usersessiongroupbyargs": "UserSessionGroupByArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L8075 | neighbors=[index.d.ts]
 - "generated_client_index_d_usersessiongroupbyoutputtype": "UserSessionGroupByOutputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L8089 | neighbors=[index.d.ts]
 - "generated_client_index_d_usersessioninclude": "UserSessionInclude" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L8140 | neighbors=[index.d.ts]
 - "generated_client_index_d_usersessionlistrelationfilter": "UserSessionListRelationFilter" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L40786 | neighbors=[index.d.ts]
@@ -37,26 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "generated_client_index_d_usersessionselectscalar": "UserSessionSelectScalar" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L8130 | neighbors=[index.d.ts]
 - "generated_client_index_d_usersessionsumaggregateinputtype": "UserSessionSumAggregateInputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L7967 | neighbors=[index.d.ts]
 - "generated_client_index_d_usersessionsumaggregateoutputtype": "UserSessionSumAggregateOutputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L7925 | neighbors=[index.d.ts]
-- "generated_client_index_d_usersessionsumorderbyaggregateinput": "UserSessionSumOrderByAggregateInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L40924 | neighbors=[index.d.ts]
-- "generated_client_index_d_usersessionuncheckedcreateinput": "UserSessionUncheckedCreateInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L37694 | neighbors=[index.d.ts]
-- "generated_client_index_d_usersessionuncheckedcreatenestedmanywithoutuserinput": "UserSessionUncheckedCreateNestedManyWithoutUserInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L43292 | neighbors=[index.d.ts]
-- "generated_client_index_d_usersessionuncheckedcreatewithoutuserinput": "UserSessionUncheckedCreateWithoutUserInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L46431 | neighbors=[index.d.ts]
-- "generated_client_index_d_usersessionuncheckedupdateinput": "UserSessionUncheckedUpdateInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L37713 | neighbors=[index.d.ts]
-- "generated_client_index_d_usersessionuncheckedupdatemanyinput": "UserSessionUncheckedUpdateManyInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L37741 | neighbors=[index.d.ts]
-- "generated_client_index_d_usersessionuncheckedupdatemanywithoutuserinput": "UserSessionUncheckedUpdateManyWithoutUserInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L52721 | neighbors=[index.d.ts]
-- "generated_client_index_d_usersessionuncheckedupdatemanywithoutusernestedinput": "UserSessionUncheckedUpdateManyWithoutUserNestedInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L43339 | neighbors=[index.d.ts]
-- "generated_client_index_d_usersessionuncheckedupdatewithoutuserinput": "UserSessionUncheckedUpdateWithoutUserInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L52712 | neighbors=[index.d.ts]
-- "generated_client_index_d_usersessionupdateargs": "UserSessionUpdateArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L8745 | neighbors=[index.d.ts]
-- "generated_client_index_d_usersessionupdateinput": "UserSessionUpdateInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L37704 | neighbors=[index.d.ts]
-- "generated_client_index_d_usersessionupdatemanyargs": "UserSessionUpdateManyArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L8767 | neighbors=[index.d.ts]
-- "generated_client_index_d_usersessionupdatemanymutationinput": "UserSessionUpdateManyMutationInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L37733 | neighbors=[index.d.ts]
-- "generated_client_index_d_usersessionupdatemanywithoutusernestedinput": "UserSessionUpdateManyWithoutUserNestedInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L43317 | neighbors=[index.d.ts]
-- "generated_client_index_d_usersessionupdatemanywithwherewithoutuserinput": "UserSessionUpdateManyWithWhereWithoutUserInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L46535 | neighbors=[index.d.ts]
-- "generated_client_index_d_usersessionupdatewithoutuserinput": "UserSessionUpdateWithoutUserInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L52704 | neighbors=[index.d.ts]
-- "generated_client_index_d_usersessionupdatewithwhereuniquewithoutuserinput": "UserSessionUpdateWithWhereUniqueWithoutUserInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L46530 | neighbors=[index.d.ts]
-- "generated_client_index_d_usersessionupsertargs": "UserSessionUpsertArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L8781 | neighbors=[index.d.ts]
-- "generated_client_index_d_usersessionupsertwithwhereuniquewithoutuserinput": "UserSessionUpsertWithWhereUniqueWithoutUserInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L46524 | neighbors=[index.d.ts]
-- "generated_client_index_d_usersessionwhereinput": "UserSessionWhereInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L34839 | neighbors=[index.d.ts]
 
 ## Instructions
 

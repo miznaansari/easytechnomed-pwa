@@ -1,4 +1,4 @@
-# Node Description Batch 149 of 149
+# Node Description Batch 149 of 150
 
 Graphify is running in assistant/skill mode (no API key). You are the host
 assistant (Claude Code / Codex / Gemini CLI). Read the prompt below and write
@@ -17,6 +17,30 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "scratch_trigger_sync_main": "main()" | kind=code-symbol | source=scratch/trigger-sync.js:L4 | neighbors=[trigger-sync.js]
+- "scratch_trigger_sync_prisma": "prisma" | kind=code-symbol | source=scratch/trigger-sync.js:L2 | neighbors=[trigger-sync.js]
+- "scratch_trigger_sync_prismaclient": "{ PrismaClient }" | kind=code-symbol | source=scratch/trigger-sync.js:L1 | neighbors=[trigger-sync.js]
+- "settings_page_settingscontent": "SettingsContent()" | kind=code-symbol | source=app/(customer)/(dashboard)/settings/page.js:L28 | neighbors=[page.js]
+- "settings_page_settingspage": "SettingsPage()" | kind=code-symbol | source=app/(customer)/(dashboard)/settings/page.js:L298 | neighbors=[page.js]
+- "settings_route_get": "GET()" | kind=code-symbol | source=app/api/settings/route.js:L5 | neighbors=[route.js]
+- "settings_route_post": "POST()" | kind=code-symbol | source=app/api/settings/route.js:L36 | neighbors=[route.js]
+- "sync_route_post": "POST()" | kind=code-symbol | source=app/api/offline/sync/route.js:L5 | neighbors=[route.js]
+- "sync_syncmanager_model_sync_priority": "MODEL_SYNC_PRIORITY" | kind=code-symbol | source=lib/offline/sync/syncManager.js:L7 | neighbors=[syncManager.js]
+- "sync_syncmanager_syncmanager_buildsyncpayload": ".buildSyncPayload()" | kind=code-symbol | source=lib/offline/sync/syncManager.js:L91 | neighbors=[SyncManager]
+- "sync_syncmanager_syncmanager_constructor": ".constructor()" | kind=code-symbol | source=lib/offline/sync/syncManager.js:L23 | neighbors=[SyncManager]
+- "test_report_page_activemenubuttonstyle": "activeMenuButtonStyle" | kind=code-symbol | source=app/(customer)/(dashboard)/test-report/page.js:L135 | neighbors=[page.js]
+- "test_report_page_dangermenubuttonstyle": "dangerMenuButtonStyle" | kind=code-symbol | source=app/(customer)/(dashboard)/test-report/page.js:L152 | neighbors=[page.js]
+- "test_report_page_exportcolumns": "exportColumns" | kind=code-symbol | source=app/(customer)/(dashboard)/test-report/page.js:L266 | neighbors=[page.js]
+- "test_report_page_getpaymentchip": "getPaymentChip()" | kind=code-symbol | source=app/(customer)/(dashboard)/test-report/page.js:L174 | neighbors=[page.js]
+- "test_report_page_gettestchip": "getTestChip()" | kind=code-symbol | source=app/(customer)/(dashboard)/test-report/page.js:L230 | neighbors=[page.js]
+- "test_report_page_menubuttonstyle": "menuButtonStyle" | kind=code-symbol | source=app/(customer)/(dashboard)/test-report/page.js:L103 | neighbors=[page.js]
+- "test_report_page_testreportpage": "TestReportPage()" | kind=code-symbol | source=app/(customer)/(dashboard)/test-report/page.js:L293 | neighbors=[page.js]
+- "test_route_get": "GET()" | kind=code-symbol | source=app/api/n8n/test/route.js:L49 | neighbors=[route.js]
+- "test_route_parsenullablefloat": "parseNullableFloat()" | kind=code-symbol | source=app/api/n8n/test/route.js:L5 | neighbors=[route.js]
+- "test_route_parsenullableoptions": "parseNullableOptions()" | kind=code-symbol | source=app/api/n8n/test/route.js:L33 | neighbors=[route.js]
+- "tests_page_settingstestspage": "SettingsTestsPage()" | kind=code-symbol | source=app/(customer)/(dashboard)/settings/tests/page.js:L7 | neighbors=[page.js]
+- "tests_route_delete": "DELETE()" | kind=code-symbol | source=app/api/tests/route.js:L379 | neighbors=[route.js]
+- "tests_testsclient_common_lab_units": "COMMON_LAB_UNITS" | kind=code-symbol | source=app/(customer)/(dashboard)/settings/tests/testsClient.jsx:L50 | neighbors=[testsClient.jsx]
 - "tests_testsclient_testsclient": "TestsClient()" | kind=code-symbol | source=app/(customer)/(dashboard)/settings/tests/testsClient.jsx:L81 | neighbors=[testsClient.jsx]
 - "ui_alert_alert": "Alert()" | kind=code-symbol | source=components/ui/Alert.js:L4 | neighbors=[Alert.js]
 - "ui_avatar_avatar": "Avatar()" | kind=code-symbol | source=components/ui/Avatar.js:L3 | neighbors=[Avatar.js]
@@ -33,18 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "ui_dropdown_dropdownitem": "DropdownItem()" | kind=code-symbol | source=components/ui/Dropdown.js:L45 | neighbors=[Dropdown.js]
 - "ui_input_input": "Input" | kind=code-symbol | source=components/ui/Input.js:L3 | neighbors=[Input.js]
 - "ui_label_label": "Label()" | kind=code-symbol | source=components/ui/Label.js:L3 | neighbors=[Label.js]
-- "ui_skeleton_skeleton": "Skeleton()" | kind=code-symbol | source=components/ui/Skeleton.js:L3 | neighbors=[Skeleton.js]
-- "ui_table_table": "Table()" | kind=code-symbol | source=components/ui/Table.js:L3 | neighbors=[Table.js]
-- "ui_table_tablebody": "TableBody()" | kind=code-symbol | source=components/ui/Table.js:L21 | neighbors=[Table.js]
-- "ui_table_tablecell": "TableCell()" | kind=code-symbol | source=components/ui/Table.js:L51 | neighbors=[Table.js]
-- "ui_table_tablehead": "TableHead()" | kind=code-symbol | source=components/ui/Table.js:L29 | neighbors=[Table.js]
-- "ui_table_tableheader": "TableHeader()" | kind=code-symbol | source=components/ui/Table.js:L13 | neighbors=[Table.js]
-- "ui_table_tablerow": "TableRow()" | kind=code-symbol | source=components/ui/Table.js:L40 | neighbors=[Table.js]
-- "upload_frame_route_post": "POST()" | kind=code-symbol | source=app/api/settings/upload-frame/route.js:L5 | neighbors=[route.js]
-- "userapprove_page_adminuserapprovepage": "AdminUserApprovePage()" | kind=code-symbol | source=app/(customer)/(dashboard)/userApprove/page.js:L8 | neighbors=[page.js]
-- "userapprove_userapprovetable_userapprovetable": "UserApproveTable()" | kind=code-symbol | source=app/(customer)/(dashboard)/userApprove/UserApproveTable.js:L15 | neighbors=[UserApproveTable.js]
-- "utils_debounce_debounce": "debounce()" | kind=code-symbol | source=app/utils/debounce.js:L1 | neighbors=[debounce.js]
-- "verify_email_route_get": "GET()" | kind=code-symbol | source=app/api/authas/verify-email/route.js:L4 | neighbors=[route.js]
 
 ## Instructions
 

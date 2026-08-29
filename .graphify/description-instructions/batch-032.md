@@ -1,4 +1,4 @@
-# Node Description Batch 33 of 149
+# Node Description Batch 33 of 150
 
 Graphify is running in assistant/skill mode (no API key). You are the host
 assistant (Claude Code / Codex / Gemini CLI). Read the prompt below and write
@@ -17,6 +17,23 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "runtime_react_native_getlocation": "getLocation()" | kind=code-symbol | source=scratch/generated-client/runtime/react-native.js:L12 | neighbors=[react-native.js, Qo(), pu()]
+- "runtime_react_native_getsubselectionvalue": "getSubSelectionValue()" | kind=code-symbol | source=scratch/generated-client/runtime/react-native.js:L8 | neighbors=[react-native.js, getDeepSubSelectionValue(), getSelectionParent()]
+- "runtime_react_native_gr": "gr()" | kind=code-symbol | source=scratch/generated-client/runtime/react-native.js:L2 | neighbors=[react-native.js, Al(), Sl()]
+- "runtime_react_native_ha": "ha()" | kind=code-symbol | source=scratch/generated-client/runtime/react-native.js:L1 | neighbors=[react-native.js, Oe(), ri()]
+- "runtime_react_native_ht": "Ht()" | kind=code-symbol | source=scratch/generated-client/runtime/react-native.js:L10 | neighbors=[react-native.js, $n(), Yt()]
+- "runtime_react_native_is": "is()" | kind=code-symbol | source=scratch/generated-client/runtime/react-native.js:L12 | neighbors=[react-native.js, Te(), r()]
+- "runtime_react_native_jc": "jc()" | kind=code-symbol | source=scratch/generated-client/runtime/react-native.js:L12 | neighbors=[react-native.js, He(), xo()]
+- "runtime_react_native_jt": "Jt()" | kind=code-symbol | source=scratch/generated-client/runtime/react-native.js:L10 | neighbors=[react-native.js, constructor(), _o()]
+- "runtime_react_native_kc": "kc()" | kind=code-symbol | source=scratch/generated-client/runtime/react-native.js:L12 | neighbors=[react-native.js, He(), Qo()]
+- "runtime_react_native_kr": "Kr()" | kind=code-symbol | source=scratch/generated-client/runtime/react-native.js:L1 | neighbors=[react-native.js, ii(), Pa()]
+- "runtime_react_native_ks": "ks()" | kind=code-symbol | source=scratch/generated-client/runtime/react-native.js:L62 | neighbors=[react-native.js, Ms(), toString()]
+- "runtime_react_native_l": "l()" | kind=code-symbol | source=scratch/generated-client/runtime/react-native.js:L1 | neighbors=[react-native.js, a(), Yn()]
+- "runtime_react_native_ma": "Ma()" | kind=code-symbol | source=scratch/generated-client/runtime/react-native.js:L1 | neighbors=[react-native.js, slice(), xa()]
+- "runtime_react_native_makerequired": "makeRequired()" | kind=code-symbol | source=scratch/generated-client/runtime/react-native.js:L7 | neighbors=[react-native.js, du(), uu()]
+- "runtime_react_native_ms": "Ms()" | kind=code-symbol | source=scratch/generated-client/runtime/react-native.js:L62 | neighbors=[react-native.js, Fs(), ks()]
+- "runtime_react_native_mt": "Mt()" | kind=code-symbol | source=scratch/generated-client/runtime/react-native.js:L2 | neighbors=[react-native.js, As(), ml()]
+- "runtime_react_native_newline": "newLine()" | kind=code-symbol | source=scratch/generated-client/runtime/react-native.js:L7 | neighbors=[react-native.js, indentedCurrentLine(), writeLine()]
 - "runtime_react_native_ni": "ni()" | kind=code-symbol | source=scratch/generated-client/runtime/react-native.js:L1 | neighbors=[react-native.js, ti(), wa()]
 - "runtime_react_native_nt": "Nt()" | kind=code-symbol | source=scratch/generated-client/runtime/react-native.js:L2 | neighbors=[react-native.js, be(), Yn()]
 - "runtime_react_native_pa": "Pa()" | kind=code-symbol | source=scratch/generated-client/runtime/react-native.js:L1 | neighbors=[react-native.js, Kr(), nr()]
@@ -40,23 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "runtime_react_native_ta": "Ta()" | kind=code-symbol | source=scratch/generated-client/runtime/react-native.js:L1 | neighbors=[react-native.js, Na(), nr()]
 - "runtime_react_native_tt": "Tt()" | kind=code-symbol | source=scratch/generated-client/runtime/react-native.js:L1 | neighbors=[react-native.js, Ia(), et()]
 - "runtime_react_native_ui": "ui()" | kind=code-symbol | source=scratch/generated-client/runtime/react-native.js:L1 | neighbors=[react-native.js, ci(), pi()]
-- "runtime_react_native_ur": "ur()" | kind=code-symbol | source=scratch/generated-client/runtime/react-native.js:L2 | neighbors=[react-native.js, bn(), Rl()]
-- "runtime_react_native_ut": "ut()" | kind=code-symbol | source=scratch/generated-client/runtime/react-native.js:L7 | neighbors=[react-native.js, handleRequestError(), Sr()]
-- "runtime_react_native_vc": "Vc()" | kind=code-symbol | source=scratch/generated-client/runtime/react-native.js:L12 | neighbors=[react-native.js, $n(), Pe()]
-- "runtime_react_native_wn": "wn()" | kind=code-symbol | source=scratch/generated-client/runtime/react-native.js:L2 | neighbors=[react-native.js, Rl(), slice()]
-- "runtime_react_native_xo": "xo()" | kind=code-symbol | source=scratch/generated-client/runtime/react-native.js:L9 | neighbors=[react-native.js, to(), jc()]
-- "runtime_react_native_xu": "Xu()" | kind=code-symbol | source=scratch/generated-client/runtime/react-native.js:L10 | neighbors=[react-native.js, to(), addItem()]
-- "runtime_react_native_z": "Z()" | kind=code-symbol | source=scratch/generated-client/runtime/react-native.js:L2 | neighbors=[react-native.js, be(), Yn()]
-- "runtime_wasm_allocunsafe": "allocUnsafe()" | kind=code-symbol | source=scratch/generated-client/runtime/wasm.js:L1 | neighbors=[wasm.js, alloc(), from()]
-- "runtime_wasm_append": "append()" | kind=code-symbol | source=scratch/generated-client/runtime/wasm.js:L5 | neighbors=[wasm.js, e(), ni()]
-- "runtime_wasm_at": "at()" | kind=code-symbol | source=scratch/generated-client/runtime/wasm.js:L1 | neighbors=[wasm.js, ds(), to()]
-- "runtime_wasm_bi": "bi()" | kind=code-symbol | source=scratch/generated-client/runtime/wasm.js:L5 | neighbors=[wasm.js, isEmpty(), sr()]
-- "runtime_wasm_copy": "copy()" | kind=code-symbol | source=scratch/generated-client/runtime/wasm.js:L1 | neighbors=[wasm.js, V(), write()]
-- "runtime_wasm_createenginespan": "createEngineSpan()" | kind=code-symbol | source=scratch/generated-client/runtime/wasm.js:L21 | neighbors=[wasm.js, getGlobalTracingHelper(), logger()]
-- "runtime_wasm_da": "da()" | kind=code-symbol | source=scratch/generated-client/runtime/wasm.js:L5 | neighbors=[wasm.js, H(), Ie()]
-- "runtime_wasm_dt": "dt()" | kind=code-symbol | source=scratch/generated-client/runtime/wasm.js:L4 | neighbors=[wasm.js, e(), Xn()]
-- "runtime_wasm_emit": "emit()" | kind=code-symbol | source=scratch/generated-client/runtime/wasm.js:L1 | neighbors=[wasm.js, handleAndLogRequestError(), logger()]
-- "runtime_wasm_es": "es()" | kind=code-symbol | source=scratch/generated-client/runtime/wasm.js:L1 | neighbors=[wasm.js, be(), from()]
 
 ## Instructions
 

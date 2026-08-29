@@ -1,4 +1,4 @@
-# Node Description Batch 1 of 149
+# Node Description Batch 1 of 150
 
 Graphify is running in assistant/skill mode (no API key). You are the host
 assistant (Claude Code / Codex / Gemini CLI). Read the prompt below and write
@@ -34,7 +34,7 @@ one-sentence description — no prose, no markdown fences.
 - "commit:repo:github.com-personal/miznaansari/easytechnomed-pwa@252e1949649a4b918845164b67b7f3a1b8bd2eac": "252e194 e" | kind=Commit | source=git | neighbors=[page.js, route.js, route.js, layout.js, manifest.js, robots.js]
 - "branch:repo:github.com-personal/miznaansari/easytechnomed-pwa#main": "main" | kind=Branch | source=git | neighbors=[005eea6 f, 026962b 1.1.33, 05ff307 2.0.3, 0afb0ac 2.0.19, 1064f6b 2.0.10, 124b88b 3.0.13]
 - "runtime_index_browser": "index-browser.js" | kind=code-symbol | source=scratch/generated-client/runtime/index-browser.js:L1 | neighbors=[252e194 e, index-browser.js, Ae(), an(), B(), be()]
-- "sync_syncmanager": "syncManager.js" | kind=code-symbol | source=lib/offline/sync/syncManager.js:L1 | neighbors=[2b2534c f, 3c7e66b f, 532b740 fixed, 53ca5c1 stable version 1, 56f4d63 f, 6fcf015 f]
+- "sync_syncmanager": "syncManager.js" | kind=code-symbol | source=lib/offline/sync/syncManager.js:L1 | neighbors=[2b2534c f, 3c7e66b f, 532b740 fixed, 53ca5c1 stable version 1, 56f4d63 f, 67434f2 payment issue only]
 - "commit:repo:github.com-personal/miznaansari/easytechnomed-pwa@2b2534c66dc236ef0208c34f31b23931a4d37dad": "2b2534c f" | kind=Commit | source=git | neighbors=[252e194 e, layout.js, offlineAuth.js, main, 7d8c494 fxed, resultEntry.jsx]
 - "public_sw": "sw.js" | kind=code-symbol | source=public/sw.js:L1 | neighbors=[252e194 e, 2b2534c f, 47b2032 ios issue pwa, 532b740 fixed, 53ca5c1 stable version 1, 5e3d9ef d]
 - "runtime_library_e": "e()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L3 | neighbors=[library.js, an(), append(), As(), Bu(), slice()]
@@ -63,7 +63,7 @@ one-sentence description — no prose, no markdown fences.
 - "runtime_react_native_adderrormessage": "addErrorMessage()" | kind=code-symbol | source=scratch/generated-client/runtime/react-native.js:L9 | neighbors=[react-native.js, bu(), du(), gu(), hp(), iu()]
 - "runtime_wasm_adderrormessage": "addErrorMessage()" | kind=code-symbol | source=scratch/generated-client/runtime/wasm.js:L4 | neighbors=[wasm.js, Bs(), ds(), fs(), gs(), Is()]
 - "runtime_wasm_tostring": "toString()" | kind=code-symbol | source=scratch/generated-client/runtime/wasm.js:L1 | neighbors=[wasm.js, Bt(), ci(), cs(), di(), Ht()]
-- "login_loginpageclient": "LoginPageClient.js" | kind=code-symbol | source=app/(customer)/auth/login/LoginPageClient.js:L1 | neighbors=[14fa292 f, 165f057 f, 252e194 e, 2582be7 fixed zoom issue, 2b2534c f, 4ba60cc fixed]
+- "commit:repo:github.com-personal/miznaansari/easytechnomed-pwa@6c2dfe4ada1ffe3affaf9043ca1214772090fa14": "6c2dfe4 test" | kind=Commit | source=git | neighbors=[main, a3fc29c 3.0.25, reportSecurity.js, registrationIdentity.js, qrGenerator.js, reportPdfGenerator.js]
 
 ## Instructions
 

@@ -1,4 +1,4 @@
-# Node Description Batch 134 of 149
+# Node Description Batch 134 of 150
 
 Graphify is running in assistant/skill mode (no API key). You are the host
 assistant (Claude Code / Codex / Gemini CLI). Read the prompt below and write
@@ -17,6 +17,29 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "runtime_library_d_computedfield": "ComputedField" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L204 | neighbors=[_d()]
+- "runtime_library_d_computedfieldsmap": "ComputedFieldsMap" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L210 | neighbors=[_d()]
+- "runtime_library_d_config": "Config" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L335 | neighbors=[_d()]
+- "runtime_library_d_connectioninfo": "ConnectionInfo" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L214 | neighbors=[_d()]
+- "runtime_library_d_connectortype": "ConnectorType" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L219 | neighbors=[_d()]
+- "runtime_library_d_constructor": "Constructor" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L328 | neighbors=[_d()]
+- "runtime_library_d_context": "Context" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L221 | neighbors=[_d()]
+- "runtime_library_d_context_2": "Context_2" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L245 | neighbors=[_d()]
+- "runtime_library_d_count": "Count" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L265 | neighbors=[_d()]
+- "runtime_library_d_customdataproxyfetch": "CustomDataProxyFetch" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L269 | neighbors=[_d()]
+- "runtime_library_d_dataloader": "DataLoader" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L271 | neighbors=[_d()]
+- "runtime_library_d_dataloaderoptions": "DataLoaderOptions" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L283 | neighbors=[_d()]
+- "runtime_library_d_datamodel": "Datamodel" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L675 | neighbors=[_d()]
+- "runtime_library_d_datamodelenum": "DatamodelEnum" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L661 | neighbors=[_d()]
+- "runtime_library_d_datasource": "Datasource" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L290 | neighbors=[_d()]
+- "runtime_library_d_datasources": "Datasources" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L294 | neighbors=[_d()]
+- "runtime_library_d_decimal": "Decimal" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L348 | neighbors=[_d()]
+- "runtime_library_d_decimaljslike": "DecimalJsLike" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L599 | neighbors=[_d()]
+- "runtime_library_d_defaultargs": "DefaultArgs" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L606 | neighbors=[_d()]
+- "runtime_library_d_defaultselection": "DefaultSelection" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L608 | neighbors=[_d()]
+- "runtime_library_d_deprecation": "Deprecation" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L806 | neighbors=[_d()]
+- "runtime_library_d_devtypemapdef": "DevTypeMapDef" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L624 | neighbors=[_d()]
+- "runtime_library_d_devtypemapfndef": "DevTypeMapFnDef" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L638 | neighbors=[_d()]
 - "runtime_library_d_document": "Document" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L645 | neighbors=[_d()]
 - "runtime_library_d_dynamicclientextensionargs": "DynamicClientExtensionArgs" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L887 | neighbors=[_d()]
 - "runtime_library_d_dynamicclientextensionthis": "DynamicClientExtensionThis" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L897 | neighbors=[_d()]
@@ -34,29 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "runtime_library_d_dynamicqueryextensioncbargsargs": "DynamicQueryExtensionCbArgsArgs" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L1004 | neighbors=[_d()]
 - "runtime_library_d_dynamicresultextensionargs": "DynamicResultExtensionArgs" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L1007 | neighbors=[_d()]
 - "runtime_library_d_dynamicresultextensiondata": "DynamicResultExtensionData" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L1016 | neighbors=[_d()]
-- "runtime_library_d_dynamicresultextensionneeds": "DynamicResultExtensionNeeds" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L1020 | neighbors=[_d()]
-- "runtime_library_d_emptytounknown": "EmptyToUnknown" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L1031 | neighbors=[_d()]
-- "runtime_library_d_engine": "Engine" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L1033 | neighbors=[_d()]
-- "runtime_library_d_engineconfig": "EngineConfig" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L1050 | neighbors=[_d()]
-- "runtime_library_d_engineevent": "EngineEvent" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L1125 | neighbors=[_d()]
-- "runtime_library_d_engineeventtype": "EngineEventType" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L1127 | neighbors=[_d()]
-- "runtime_library_d_engineprotocol": "EngineProtocol" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L1129 | neighbors=[_d()]
-- "runtime_library_d_enginespan": "EngineSpan" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L1131 | neighbors=[_d()]
-- "runtime_library_d_enginespanevent": "EngineSpanEvent" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L1147 | neighbors=[_d()]
-- "runtime_library_d_enginespankind": "EngineSpanKind" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L1152 | neighbors=[_d()]
-- "runtime_library_d_enumvalue": "EnumValue" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L671 | neighbors=[_d()]
-- "runtime_library_d_envpaths": "EnvPaths" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L1154 | neighbors=[_d()]
-- "runtime_library_d_envvalue": "EnvValue" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L1159 | neighbors=[_d()]
-- "runtime_library_d_equals": "Equals" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L1164 | neighbors=[_d()]
-- "runtime_library_d_error_2": "Error_2" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L1166 | neighbors=[_d()]
-- "runtime_library_d_errorformat": "ErrorFormat" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L1198 | neighbors=[_d()]
-- "runtime_library_d_errorrecord": "ErrorRecord" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L1200 | neighbors=[_d()]
-- "runtime_library_d_errorregistry": "ErrorRegistry" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L1204 | neighbors=[_d()]
-- "runtime_library_d_eventcallback": "EventCallback" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L1212 | neighbors=[_d()]
-- "runtime_library_d_exact": "Exact" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L1214 | neighbors=[_d()]
-- "runtime_library_d_exception": "Exception" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L1223 | neighbors=[_d()]
-- "runtime_library_d_exceptionwithcode": "ExceptionWithCode" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L1225 | neighbors=[_d()]
-- "runtime_library_d_exceptionwithmessage": "ExceptionWithMessage" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L1232 | neighbors=[_d()]
 
 ## Instructions
 

@@ -1,4 +1,4 @@
-# Node Description Batch 18 of 149
+# Node Description Batch 18 of 150
 
 Graphify is running in assistant/skill mode (no API key). You are the host
 assistant (Claude Code / Codex / Gemini CLI). Read the prompt below and write
@@ -17,8 +17,18 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "members_route": "route.js" | kind=code-symbol | source=app/api/members/route.js:L1 | neighbors=[252e194 e, GET(), PATCH(), POST()]
+- "offline_offlinepdfgenerator_generatereportpdfoffline": "generateReportPdfOffline()" | kind=code-symbol | source=lib/offline/offlinePdfGenerator.js:L271 | neighbors=[offlinePdfGenerator.js, layoutMarkdownLines(), parseMarkdownTokens(), offlinePrint.js]
+- "offline_registrationidentity": "registrationIdentity.js" | kind=code-symbol | source=lib/offline/registrationIdentity.js:L1 | neighbors=[6c2dfe4 test, db.js, generateNextRegistrationIdentity(), generateRandomSuffix()]
+- "offline_syncstatusicon": "SyncStatusIcon.jsx" | kind=code-symbol | source=components/offline/SyncStatusIcon.jsx:L1 | neighbors=[2b2534c f, 6fcf015 f, d446d11 fixed code, SyncStatusIcon()]
+- "parameters_route": "route.js" | kind=code-symbol | source=app/api/registrations/[id]/parameters/route.js:L1 | neighbors=[252e194 e, GET(), POST(), serializeRegistration()]
+- "paymentid_route_get": "GET()" | kind=code-symbol | source=app/api/print-subscription-invoice/[paymentId]/route.js:L74 | neighbors=[route.js, formatDate(), formatDateTime(), numberToWords()]
+- "print_billhtmlgenerator_generateofflinebillhtml": "generateOfflineBillHtml()" | kind=code-symbol | source=lib/offline/print/billHtmlGenerator.js:L60 | neighbors=[billHtmlGenerator.js, formatDate(), numberToWords(), openPrint.js]
+- "print_qrgenerator": "qrGenerator.js" | kind=code-symbol | source=lib/offline/print/qrGenerator.js:L1 | neighbors=[6c2dfe4 test, generateQrCodeDataUrl(), generateQrCodePngBytes(), reportPdfGenerator.js]
+- "print_reportpdfgenerator_generateofflinereportpdf": "generateOfflineReportPdf()" | kind=code-symbol | source=lib/offline/print/reportPdfGenerator.js:L131 | neighbors=[offlinePrint.js, openPrint.js, reportPdfGenerator.js, getReferenceRange()]
+- "prisma_seed_main": "main()" | kind=code-symbol | source=prisma/seed.js:L5 | neighbors=[seed.js, getDepartmentName(), processTestParameters(), seedLimsFormulasAndConfigurations()]
 - "register_page": "page.js" | kind=code-symbol | source=app/(customer)/auth/register/page.js:L1 | neighbors=[252e194 e, metadata, Page(), RegisterPageClient.js]
-- "registrationid_route_get": "GET()" | kind=code-symbol | source=app/api/print-report/[registrationId]/route.js:L94 | neighbors=[route.js, formatDate(), getReferenceRange(), numberToWords()]
+- "registrationid_route_get": "GET()" | kind=code-symbol | source=app/api/print-report/[registrationId]/route.js:L96 | neighbors=[route.js, formatDate(), getReferenceRange(), numberToWords()]
 - "results_route": "route.js" | kind=code-symbol | source=app/api/registrations/[id]/results/route.js:L1 | neighbors=[252e194 e, d446d11 fixed code, POST(), PUT()]
 - "runtime_edge_addfield": "addField()" | kind=code-symbol | source=scratch/generated-client/runtime/edge.js:L3 | neighbors=[edge.js, Au(), ko(), xu()]
 - "runtime_edge_afternextnewline": "afterNextNewline()" | kind=code-symbol | source=scratch/generated-client/runtime/edge.js:L2 | neighbors=[edge.js, write(), writeWithContents(), writeWithItems()]
@@ -47,16 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "runtime_edge_esm_getfieldvalue": "getFieldValue()" | kind=code-symbol | source=scratch/generated-client/runtime/edge-esm.js:L3 | neighbors=[edge-esm.js, co(), getDeepSelectionParent(), getField()]
 - "runtime_edge_esm_getglobalomit": "getGlobalOmit()" | kind=code-symbol | source=scratch/generated-client/runtime/edge-esm.js:L5 | neighbors=[edge-esm.js, rt(), shouldApplyGlobalOmit(), u()]
 - "runtime_edge_esm_getname": "_getName()" | kind=code-symbol | source=scratch/generated-client/runtime/edge-esm.js:L4 | neighbors=[edge-esm.js, constructor(), lo(), Oo()]
-- "runtime_edge_esm_gu": "gu()" | kind=code-symbol | source=scratch/generated-client/runtime/edge-esm.js:L4 | neighbors=[edge-esm.js, addErrorMessage(), markAsError(), Tr()]
-- "runtime_edge_esm_handleandlogrequesterror": "handleAndLogRequestError()" | kind=code-symbol | source=scratch/generated-client/runtime/edge-esm.js:L20 | neighbors=[edge-esm.js, emit(), handleRequestError(), request()]
-- "runtime_edge_esm_io": "Io()" | kind=code-symbol | source=scratch/generated-client/runtime/edge-esm.js:L5 | neighbors=[edge-esm.js, addField(), Oo(), Pt()]
-- "runtime_edge_esm_isempty": "isEmpty()" | kind=code-symbol | source=scratch/generated-client/runtime/edge-esm.js:L3 | neighbors=[edge-esm.js, as(), du(), ps()]
-- "runtime_edge_esm_isenabled": "isEnabled()" | kind=code-symbol | source=scratch/generated-client/runtime/edge-esm.js:L20 | neighbors=[edge-esm.js, build(), buildCaptureSettings(), getGlobalTracingHelper()]
-- "runtime_edge_esm_ko": "ko()" | kind=code-symbol | source=scratch/generated-client/runtime/edge-esm.js:L5 | neighbors=[edge-esm.js, Do(), nc(), rc()]
-- "runtime_edge_esm_mo": "mo()" | kind=code-symbol | source=scratch/generated-client/runtime/edge-esm.js:L1 | neighbors=[edge-esm.js, ce(), eo(), values()]
-- "runtime_edge_esm_ms": "ms()" | kind=code-symbol | source=scratch/generated-client/runtime/edge-esm.js:L6 | neighbors=[edge-esm.js, nt(), r(), toString()]
-- "runtime_edge_esm_nestargument": "nestArgument()" | kind=code-symbol | source=scratch/generated-client/runtime/edge-esm.js:L5 | neighbors=[edge-esm.js, e(), qo(), qu()]
-- "runtime_edge_esm_nt": "nt()" | kind=code-symbol | source=scratch/generated-client/runtime/edge-esm.js:L1 | neighbors=[edge-esm.js, lo(), ms(), qt()]
 
 ## Instructions
 

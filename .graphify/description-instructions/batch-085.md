@@ -1,4 +1,4 @@
-# Node Description Batch 86 of 149
+# Node Description Batch 86 of 150
 
 Graphify is running in assistant/skill mode (no API key). You are the host
 assistant (Claude Code / Codex / Gemini CLI). Read the prompt below and write
@@ -17,6 +17,26 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "generated_client_index_d_prismapromise": "PrismaPromise" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L13 | neighbors=[index.d.ts]
+- "generated_client_index_d_prismaversion": "PrismaVersion" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L636 | neighbors=[index.d.ts]
+- "generated_client_index_d_promisereturntype": "PromiseReturnType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L736 | neighbors=[index.d.ts]
+- "generated_client_index_d_promisetype": "PromiseType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L731 | neighbors=[index.d.ts]
+- "generated_client_index_d_queryevent": "QueryEvent" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L3059 | neighbors=[index.d.ts]
+- "generated_client_index_d_record": "_Record" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L890 | neighbors=[index.d.ts]
+- "generated_client_index_d_registration": "Registration" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L85 | neighbors=[index.d.ts]
+- "generated_client_index_d_registration_adminargs": "Registration$adminArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L18496 | neighbors=[index.d.ts]
+- "generated_client_index_d_registration_paymentsargs": "Registration$paymentsArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L18511 | neighbors=[index.d.ts]
+- "generated_client_index_d_registration_refbyargs": "Registration$refByArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L18451 | neighbors=[index.d.ts]
+- "generated_client_index_d_registration_resultsargs": "Registration$resultsArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L18431 | neighbors=[index.d.ts]
+- "generated_client_index_d_registration_secondrefargs": "Registration$secondRefArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L18466 | neighbors=[index.d.ts]
+- "generated_client_index_d_registration_testsargs": "Registration$testsArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L18531 | neighbors=[index.d.ts]
+- "generated_client_index_d_registration_workspaceargs": "Registration$workspaceArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L18481 | neighbors=[index.d.ts]
+- "generated_client_index_d_registrationaggregateargs": "RegistrationAggregateArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L17408 | neighbors=[index.d.ts]
+- "generated_client_index_d_registrationargs": "RegistrationArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L54370 | neighbors=[index.d.ts]
+- "generated_client_index_d_registrationavgaggregateinputtype": "RegistrationAvgAggregateInputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L17242 | neighbors=[index.d.ts]
+- "generated_client_index_d_registrationavgaggregateoutputtype": "RegistrationAvgAggregateOutputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L17075 | neighbors=[index.d.ts]
+- "generated_client_index_d_registrationavgorderbyaggregateinput": "RegistrationAvgOrderByAggregateInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L41579 | neighbors=[index.d.ts]
+- "generated_client_index_d_registrationcountaggregateinputtype": "RegistrationCountAggregateInputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L17364 | neighbors=[index.d.ts]
 - "generated_client_index_d_registrationcountaggregateoutputtype": "RegistrationCountAggregateOutputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L17197 | neighbors=[index.d.ts]
 - "generated_client_index_d_registrationcountargs": "RegistrationCountArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L17720 | neighbors=[index.d.ts]
 - "generated_client_index_d_registrationcountorderbyaggregateinput": "RegistrationCountOrderByAggregateInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L41536 | neighbors=[index.d.ts]
@@ -37,26 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "generated_client_index_d_registrationcreatemanyrefbyinputenvelope": "RegistrationCreateManyRefByInputEnvelope" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L47690 | neighbors=[index.d.ts]
 - "generated_client_index_d_registrationcreatemanysecondrefinput": "RegistrationCreateManySecondRefInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L53249 | neighbors=[index.d.ts]
 - "generated_client_index_d_registrationcreatemanysecondrefinputenvelope": "RegistrationCreateManySecondRefInputEnvelope" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L47789 | neighbors=[index.d.ts]
-- "generated_client_index_d_registrationcreatemanyworkspaceinput": "RegistrationCreateManyWorkspaceInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L51805 | neighbors=[index.d.ts]
-- "generated_client_index_d_registrationcreatemanyworkspaceinputenvelope": "RegistrationCreateManyWorkspaceInputEnvelope" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L45326 | neighbors=[index.d.ts]
-- "generated_client_index_d_registrationcreatenestedmanywithoutadmininput": "RegistrationCreateNestedManyWithoutAdminInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L43497 | neighbors=[index.d.ts]
-- "generated_client_index_d_registrationcreatenestedmanywithoutrefbyinput": "RegistrationCreateNestedManyWithoutRefByInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L43771 | neighbors=[index.d.ts]
-- "generated_client_index_d_registrationcreatenestedmanywithoutsecondrefinput": "RegistrationCreateNestedManyWithoutSecondRefInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L43778 | neighbors=[index.d.ts]
-- "generated_client_index_d_registrationcreatenestedmanywithoutworkspaceinput": "RegistrationCreateNestedManyWithoutWorkspaceInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L42751 | neighbors=[index.d.ts]
-- "generated_client_index_d_registrationcreatenestedonewithoutpaymentsinput": "RegistrationCreateNestedOneWithoutPaymentsInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L44627 | neighbors=[index.d.ts]
-- "generated_client_index_d_registrationcreatenestedonewithoutresultsinput": "RegistrationCreateNestedOneWithoutResultsInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L44585 | neighbors=[index.d.ts]
-- "generated_client_index_d_registrationcreatenestedonewithouttestsinput": "RegistrationCreateNestedOneWithoutTestsInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L44321 | neighbors=[index.d.ts]
-- "generated_client_index_d_registrationcreateorconnectwithoutadmininput": "RegistrationCreateOrConnectWithoutAdminInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L47039 | neighbors=[index.d.ts]
-- "generated_client_index_d_registrationcreateorconnectwithoutpaymentsinput": "RegistrationCreateOrConnectWithoutPaymentsInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L50420 | neighbors=[index.d.ts]
-- "generated_client_index_d_registrationcreateorconnectwithoutrefbyinput": "RegistrationCreateOrConnectWithoutRefByInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L47685 | neighbors=[index.d.ts]
-- "generated_client_index_d_registrationcreateorconnectwithoutresultsinput": "RegistrationCreateOrConnectWithoutResultsInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L49990 | neighbors=[index.d.ts]
-- "generated_client_index_d_registrationcreateorconnectwithoutsecondrefinput": "RegistrationCreateOrConnectWithoutSecondRefInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L47784 | neighbors=[index.d.ts]
-- "generated_client_index_d_registrationcreateorconnectwithouttestsinput": "RegistrationCreateOrConnectWithoutTestsInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L48972 | neighbors=[index.d.ts]
-- "generated_client_index_d_registrationcreateorconnectwithoutworkspaceinput": "RegistrationCreateOrConnectWithoutWorkspaceInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L45321 | neighbors=[index.d.ts]
-- "generated_client_index_d_registrationcreatewithoutadmininput": "RegistrationCreateWithoutAdminInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L46950 | neighbors=[index.d.ts]
-- "generated_client_index_d_registrationcreatewithoutpaymentsinput": "RegistrationCreateWithoutPaymentsInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L50331 | neighbors=[index.d.ts]
-- "generated_client_index_d_registrationcreatewithoutrefbyinput": "RegistrationCreateWithoutRefByInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L47596 | neighbors=[index.d.ts]
-- "generated_client_index_d_registrationcreatewithoutresultsinput": "RegistrationCreateWithoutResultsInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L49901 | neighbors=[index.d.ts]
 
 ## Instructions
 

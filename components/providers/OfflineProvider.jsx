@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState, useEffect, useCallback, useRef } from "react";
+import { usePathname } from "next/navigation";
 import { OfflineSyncContext } from "@/context/OfflineSyncContext";
 import { networkMonitor } from "@/lib/offline/network";
 import { syncManager } from "@/lib/offline/sync/syncManager";
@@ -8,6 +9,9 @@ import db from "@/lib/offline/db";
 import ReLoginModal from "@/components/offline/ReLoginModal";
 
 export default function OfflineProvider({ children }) {
+  const pathname = usePathname();
+  const isAuthPage = pathname === "/" || pathname?.startsWith("/auth") || pathname?.startsWith("/adminstration/login");
+
   const [isOnline, setIsOnline] = useState(() => typeof navigator !== "undefined" ? navigator.onLine : true);
   const [syncStatus, setSyncStatus] = useState("idle");
   const [pendingCount, setPendingCount] = useState(0);
@@ -52,13 +56,13 @@ export default function OfflineProvider({ children }) {
     } else {
       setSyncStatus("error");
       setSyncErrors(result.errors || []);
-      if (result.isAuthError) {
+      if (result.isAuthError && !isAuthPage) {
         setIsAuthRequired(true);
         setIsAuthModalOpen(true);
       }
     }
     return result;
-  }, [refreshPendingCount]);
+  }, [isAuthPage, refreshPendingCount]);
 
 
   const debounceTimerRef = useRef(null);
@@ -94,6 +98,7 @@ export default function OfflineProvider({ children }) {
     };
 
     const handleAuthRequired = (e) => {
+      if (isAuthPage) return;
       console.warn("[OfflineProvider] Auth required event caught:", e?.detail);
       setIsAuthRequired(true);
       setIsAuthModalOpen(true);
@@ -123,7 +128,7 @@ export default function OfflineProvider({ children }) {
       window.removeEventListener("easytechnomed:auth-required", handleAuthRequired);
       unsubscribeNetwork();
     };
-  }, [debouncedTriggerSync, refreshPendingCount]);
+  }, [debouncedTriggerSync, isAuthPage, refreshPendingCount]);
 
   // SyncManager subscription
   useEffect(() => {
@@ -136,7 +141,7 @@ export default function OfflineProvider({ children }) {
         setSyncStatus("error");
         setSyncErrors(syncState.syncErrors);
         const hasAuthErr = syncState.syncErrors.some((e) => e.isAuthError || e.status === 401);
-        if (hasAuthErr) {
+        if (hasAuthErr && !isAuthPage) {
           setIsAuthRequired(true);
         }
       } else if (syncState.lastSyncTime) {
@@ -147,12 +152,14 @@ export default function OfflineProvider({ children }) {
     });
 
     return () => unsubscribeSync();
-  }, []);
+  }, [isAuthPage]);
 
   // Initial check: if user has not completed initial sync and is online, bootstrap via Promise.all
   useEffect(() => {
     async function checkAndBootstrap() {
       if (typeof window === "undefined" || !navigator.onLine) return;
+      if (isAuthPage || localStorage.getItem("etm_logged_out") === "1") return;
+
       try {
         const isInitialSynced = localStorage.getItem("isInitialSynced");
         if (isInitialSynced !== "1") {
@@ -168,7 +175,7 @@ export default function OfflineProvider({ children }) {
       }
     }
     checkAndBootstrap();
-  }, [refreshPendingCount]);
+  }, [isAuthPage, refreshPendingCount]);
 
   // Periodic auto-sync loop: every 30 seconds check server updates & pending records when online
   useEffect(() => {
@@ -176,6 +183,8 @@ export default function OfflineProvider({ children }) {
 
     const interval = setInterval(async () => {
       if (typeof window === "undefined") return;
+      if (isAuthPage || localStorage.getItem("etm_logged_out") === "1") return;
+
       if (typeof navigator !== "undefined" && navigator.onLine && !syncManager.isSyncing) {
         const isInitialSynced = localStorage.getItem("isInitialSynced");
         // Only run incremental sync after initial sync is complete
@@ -186,7 +195,7 @@ export default function OfflineProvider({ children }) {
     }, 30000);
 
     return () => clearInterval(interval);
-  }, [refreshPendingCount, triggerSync]);
+  }, [isAuthPage, refreshPendingCount, triggerSync]);
 
   const handleLoginSuccess = async () => {
     setIsAuthRequired(false);
@@ -204,7 +213,9 @@ export default function OfflineProvider({ children }) {
     hasUnsyncedChanges: pendingCount > 0,
     isAuthRequired,
     isAuthModalOpen,
-    openAuthModal: () => setIsAuthModalOpen(true),
+    openAuthModal: () => {
+      if (!isAuthPage) setIsAuthModalOpen(true);
+    },
     closeAuthModal: () => setIsAuthModalOpen(false),
     triggerSync,
     refreshPendingCount,
@@ -214,7 +225,7 @@ export default function OfflineProvider({ children }) {
     <OfflineSyncContext.Provider value={value}>
       {children}
       <ReLoginModal
-        open={isAuthModalOpen}
+        open={isAuthModalOpen && !isAuthPage}
         onClose={() => setIsAuthModalOpen(false)}
         onLoginSuccess={handleLoginSuccess}
         pendingCount={pendingCount}

@@ -1,4 +1,4 @@
-# Node Description Batch 13 of 149
+# Node Description Batch 13 of 150
 
 Graphify is running in assistant/skill mode (no API key). You are the host
 assistant (Claude Code / Codex / Gemini CLI). Read the prompt below and write
@@ -17,6 +17,12 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "offline_network": "network.js" | kind=code-symbol | source=lib/offline/network.js:L1 | neighbors=[2b2534c f, af73a19 fixed, c15ae1e fixed, NetworkMonitor, syncManager.js]
+- "paymentid_route": "route.js" | kind=code-symbol | source=app/api/print-subscription-invoice/[paymentId]/route.js:L1 | neighbors=[252e194 e, formatDate(), formatDateTime(), GET(), numberToWords()]
+- "print_billhtmlgenerator": "billHtmlGenerator.js" | kind=code-symbol | source=lib/offline/print/billHtmlGenerator.js:L1 | neighbors=[8b1f3d8 a, formatDate(), generateOfflineBillHtml(), numberToWords(), openPrint.js]
+- "prisma_process_dynamic_parameters": "process-dynamic-parameters.js" | kind=code-symbol | source=prisma/process-dynamic-parameters.js:L1 | neighbors=[252e194 e, main(), prisma, { PrismaClient }, processTestParameters()]
+- "register_registerpageclient": "RegisterPageClient.js" | kind=code-symbol | source=app/(customer)/auth/register/RegisterPageClient.js:L1 | neighbors=[252e194 e, 2582be7 fixed zoom issue, page.js, CustomerRegisterPage(), registerSchema]
+- "runtime_edge_ao": "Ao()" | kind=code-symbol | source=scratch/generated-client/runtime/edge.js:L4 | neighbors=[edge.js, addSuggestion(), hasField(), bu(), pu()]
 - "runtime_edge_ca": "Ca()" | kind=code-symbol | source=scratch/generated-client/runtime/edge.js:L1 | neighbors=[edge.js, de(), mi(), rn(), pi()]
 - "runtime_edge_ce": "ce()" | kind=code-symbol | source=scratch/generated-client/runtime/edge.js:L1 | neighbors=[edge.js, e(), O(), go(), rl()]
 - "runtime_edge_cs": "cs()" | kind=code-symbol | source=scratch/generated-client/runtime/edge.js:L6 | neighbors=[edge.js, bc(), getAllComputedFields(), gt(), values()]
@@ -51,12 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "runtime_edge_esm_xe": "xe()" | kind=code-symbol | source=scratch/generated-client/runtime/edge-esm.js:L1 | neighbors=[edge-esm.js, qt(), shouldApplyGlobalOmit(), uc(), yl()]
 - "runtime_edge_esm_xr": "Xr()" | kind=code-symbol | source=scratch/generated-client/runtime/edge-esm.js:L1 | neighbors=[edge-esm.js, wa(), be(), rn(), ya()]
 - "runtime_edge_esm_y": "Y()" | kind=code-symbol | source=scratch/generated-client/runtime/edge-esm.js:L1 | neighbors=[edge-esm.js, gn(), ke(), me(), Oe()]
-- "runtime_edge_esm_ya": "ya()" | kind=code-symbol | source=scratch/generated-client/runtime/edge-esm.js:L1 | neighbors=[edge-esm.js, si(), de(), li(), Xr()]
-- "runtime_edge_eu": "eu()" | kind=code-symbol | source=scratch/generated-client/runtime/edge.js:L1 | neighbors=[edge.js, addErrorMessage(), addSuggestion(), O(), removeAllFields()]
-- "runtime_edge_fc": "Fc()" | kind=code-symbol | source=scratch/generated-client/runtime/edge.js:L12 | neighbors=[edge.js, _c(), Qe(), text(), ks()]
-- "runtime_edge_fi": "fi()" | kind=code-symbol | source=scratch/generated-client/runtime/edge.js:L1 | neighbors=[edge.js, de(), nn(), vi(), Ta()]
-- "runtime_edge_getselectionparent": "getSelectionParent()" | kind=code-symbol | source=scratch/generated-client/runtime/edge.js:L3 | neighbors=[edge.js, getDeepSelectionParent(), asObject(), getField(), getSubSelectionValue()]
-- "runtime_edge_ke": "ke()" | kind=code-symbol | source=scratch/generated-client/runtime/edge.js:L1 | neighbors=[edge.js, kt(), O(), xr(), Y()]
 
 ## Instructions
 

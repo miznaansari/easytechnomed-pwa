@@ -1,4 +1,4 @@
-# Node Description Batch 111 of 149
+# Node Description Batch 111 of 150
 
 Graphify is running in assistant/skill mode (no API key). You are the host
 assistant (Claude Code / Codex / Gemini CLI). Read the prompt below and write
@@ -17,6 +17,26 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "generated_client_index_d_transactionclient": "TransactionClient" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L3122 | neighbors=[index.d.ts]
+- "generated_client_index_d_transactionisolationlevel": "TransactionIsolationLevel" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L33888 | neighbors=[index.d.ts]
+- "generated_client_index_d_true": "True" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L919 | neighbors=[index.d.ts]
+- "generated_client_index_d_truekeys": "TrueKeys" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L756 | neighbors=[index.d.ts]
+- "generated_client_index_d_truthykeys": "TruthyKeys" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L752 | neighbors=[index.d.ts]
+- "generated_client_index_d_tupletounion": "_TupleToUnion" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L994 | neighbors=[index.d.ts]
+- "generated_client_index_d_typemap": "TypeMap" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L1057 | neighbors=[index.d.ts]
+- "generated_client_index_d_typemapcb": "TypeMapCb" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L1053 | neighbors=[index.d.ts]
+- "generated_client_index_d_unenumerate": "UnEnumerate" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L821 | neighbors=[index.d.ts]
+- "generated_client_index_d_union": "Union" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L852 | neighbors=[index.d.ts]
+- "generated_client_index_d_user": "User" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L35 | neighbors=[index.d.ts]
+- "generated_client_index_d_user_sessionsargs": "User$sessionsArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L7876 | neighbors=[index.d.ts]
+- "generated_client_index_d_user_workspaceargs": "User$workspaceArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L7861 | neighbors=[index.d.ts]
+- "generated_client_index_d_useraggregateargs": "UserAggregateArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L6969 | neighbors=[index.d.ts]
+- "generated_client_index_d_userargs": "UserArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L54330 | neighbors=[index.d.ts]
+- "generated_client_index_d_useravgaggregateinputtype": "UserAvgAggregateInputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L6896 | neighbors=[index.d.ts]
+- "generated_client_index_d_useravgaggregateoutputtype": "UserAvgAggregateOutputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L6822 | neighbors=[index.d.ts]
+- "generated_client_index_d_useravgorderbyaggregateinput": "UserAvgOrderByAggregateInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L40816 | neighbors=[index.d.ts]
+- "generated_client_index_d_usercountaggregateinputtype": "UserCountAggregateInputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L6948 | neighbors=[index.d.ts]
+- "generated_client_index_d_usercountaggregateoutputtype": "UserCountAggregateOutputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L6874 | neighbors=[index.d.ts]
 - "generated_client_index_d_usercountargs": "UserCountArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L7177 | neighbors=[index.d.ts]
 - "generated_client_index_d_usercountorderbyaggregateinput": "UserCountOrderByAggregateInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L40796 | neighbors=[index.d.ts]
 - "generated_client_index_d_usercountoutputtype": "UserCountOutputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L3280 | neighbors=[index.d.ts]
@@ -37,26 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "generated_client_index_d_usercreatenestedonewithoutsessionsinput": "UserCreateNestedOneWithoutSessionsInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L43353 | neighbors=[index.d.ts]
 - "generated_client_index_d_usercreateorconnectwithoutroleinput": "UserCreateOrConnectWithoutRoleInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L46686 | neighbors=[index.d.ts]
 - "generated_client_index_d_usercreateorconnectwithoutsessionsinput": "UserCreateOrConnectWithoutSessionsInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L46592 | neighbors=[index.d.ts]
-- "generated_client_index_d_usercreateorconnectwithoutworkspaceinput": "UserCreateOrConnectWithoutWorkspaceInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L45433 | neighbors=[index.d.ts]
-- "generated_client_index_d_usercreatewithoutroleinput": "UserCreateWithoutRoleInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L46647 | neighbors=[index.d.ts]
-- "generated_client_index_d_usercreatewithoutsessionsinput": "UserCreateWithoutSessionsInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L46553 | neighbors=[index.d.ts]
-- "generated_client_index_d_usercreatewithoutworkspaceinput": "UserCreateWithoutWorkspaceInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L45394 | neighbors=[index.d.ts]
-- "generated_client_index_d_userdefaultargs": "UserDefaultArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L7896 | neighbors=[index.d.ts]
-- "generated_client_index_d_userdelegate": "UserDelegate" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L7182 | neighbors=[index.d.ts]
-- "generated_client_index_d_userdeleteargs": "UserDeleteArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L7833 | neighbors=[index.d.ts]
-- "generated_client_index_d_userdeletemanyargs": "UserDeleteManyArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L7851 | neighbors=[index.d.ts]
-- "generated_client_index_d_userfieldrefs": "UserFieldRefs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L7542 | neighbors=[index.d.ts]
-- "generated_client_index_d_userfindfirstargs": "UserFindFirstArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L7603 | neighbors=[index.d.ts]
-- "generated_client_index_d_userfindfirstorthrowargs": "UserFindFirstOrThrowArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L7651 | neighbors=[index.d.ts]
-- "generated_client_index_d_userfindmanyargs": "UserFindManyArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L7699 | neighbors=[index.d.ts]
-- "generated_client_index_d_userfinduniqueargs": "UserFindUniqueArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L7567 | neighbors=[index.d.ts]
-- "generated_client_index_d_userfinduniqueorthrowargs": "UserFindUniqueOrThrowArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L7585 | neighbors=[index.d.ts]
-- "generated_client_index_d_usergetpayload": "UserGetPayload" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L7175 | neighbors=[index.d.ts]
-- "generated_client_index_d_usergroupbyargs": "UserGroupByArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L7041 | neighbors=[index.d.ts]
-- "generated_client_index_d_usergroupbyoutputtype": "UserGroupByOutputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L7055 | neighbors=[index.d.ts]
-- "generated_client_index_d_userinclude": "UserInclude" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L7139 | neighbors=[index.d.ts]
-- "generated_client_index_d_userlistrelationfilter": "UserListRelationFilter" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L40443 | neighbors=[index.d.ts]
-- "generated_client_index_d_usermaxaggregateinputtype": "UserMaxAggregateInputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L6928 | neighbors=[index.d.ts]
 
 ## Instructions
 

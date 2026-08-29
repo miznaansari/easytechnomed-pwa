@@ -1,4 +1,4 @@
-# Node Description Batch 43 of 149
+# Node Description Batch 43 of 150
 
 Graphify is running in assistant/skill mode (no API key). You are the host
 assistant (Claude Code / Codex / Gemini CLI). Read the prompt below and write
@@ -17,6 +17,26 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "runtime_library_cd": "Cd()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L31 | neighbors=[library.js, ya()]
+- "runtime_library_cm": "cm()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L111 | neighbors=[library.js, um()]
+- "runtime_library_cn": "Cn()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L29 | neighbors=[library.js, va()]
+- "runtime_library_consumeerror": "consumeError()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L29 | neighbors=[library.js, getExternalAdapterError()]
+- "runtime_library_cp": "cp()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L21 | neighbors=[library.js, y()]
+- "runtime_library_d_anynull": "AnyNull" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L38 | neighbors=[_d(), NullTypesEnumValue]
+- "runtime_library_d_dbnull": "DbNull" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L298 | neighbors=[_d(), NullTypesEnumValue]
+- "runtime_library_d_errorcapturingdriveradapter": "ErrorCapturingDriverAdapter" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L1194 | neighbors=[_d(), DriverAdapter]
+- "runtime_library_d_jsonnull": "JsonNull" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L1907 | neighbors=[_d(), NullTypesEnumValue]
+- "runtime_library_d_notfounderror": "NotFoundError" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L2196 | neighbors=[_d(), PrismaClientKnownRequestError]
+- "runtime_library_d_prismaclientunknownrequesterror": "PrismaClientUnknownRequestError" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L2394 | neighbors=[_d(), ErrorWithBatchIndex]
+- "runtime_library_d_transaction": "Transaction" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L3228 | neighbors=[_d(), Queryable]
+- "runtime_library_d_transactioncontext": "TransactionContext" | kind=code-symbol | source=scratch/generated-client/runtime/library.d.ts:L3252 | neighbors=[_d(), Queryable]
+- "runtime_library_da": "da()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L29 | neighbors=[library.js, isEmpty()]
+- "runtime_library_dd": "dd()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L29 | neighbors=[library.js, Se()]
+- "runtime_library_dl": "Dl()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L121 | neighbors=[library.js, fo()]
+- "runtime_library_dm": "dm()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L111 | neighbors=[library.js, pm()]
+- "runtime_library_do": "Do()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L5 | neighbors=[library.js, $u()]
+- "runtime_library_ei": "ei()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L1 | neighbors=[library.js, Qu()]
+- "runtime_library_el": "El()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L114 | neighbors=[library.js, jt()]
 - "runtime_library_enabled": "enabled()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L3 | neighbors=[library.js, Ru()]
 - "runtime_library_ep": "ep()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L21 | neighbors=[library.js, ie()]
 - "runtime_library_es": "Es()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L21 | neighbors=[library.js, Ss()]
@@ -37,26 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "runtime_library_getprintwidth": "getPrintWidth()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L27 | neighbors=[library.js, values()]
 - "runtime_library_gl": "Gl()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L126 | neighbors=[library.js, r()]
 - "runtime_library_gm": "gm()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L111 | neighbors=[library.js, logger()]
-- "runtime_library_handleerror": "handleError()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L111 | neighbors=[library.js, uploadSchema()]
-- "runtime_library_hi": "hi()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L18 | neighbors=[library.js, kd()]
-- "runtime_library_hl": "hl()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L113 | neighbors=[library.js, Yt()]
-- "runtime_library_hm": "hm()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L113 | neighbors=[library.js, transaction()]
-- "runtime_library_hp": "hp()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L21 | neighbors=[library.js, _s()]
-- "runtime_library_ii": "ii()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L6 | neighbors=[library.js, ui()]
-- "runtime_library_il": "il()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L110 | neighbors=[library.js, constructor()]
-- "runtime_library_in": "In()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L33 | neighbors=[library.js, loadLibrary()]
-- "runtime_library_indent": "indent()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L26 | neighbors=[library.js, withIndent()]
-- "runtime_library_israwaction": "isRawAction()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L29 | neighbors=[library.js, td()]
-- "runtime_library_iu": "Iu()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L4 | neighbors=[library.js, pe()]
-- "runtime_library_j": "j()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L4 | neighbors=[library.js, pe()]
-- "runtime_library_json": "json()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L29 | neighbors=[library.js, metrics()]
-- "runtime_library_jt": "jt()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L114 | neighbors=[library.js, El()]
-- "runtime_library_ju": "ju()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L5 | neighbors=[library.js, Mo()]
-- "runtime_library_kc": "kc()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L21 | neighbors=[library.js, As()]
-- "runtime_library_la": "la()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L29 | neighbors=[library.js, Fi()]
-- "runtime_library_lc": "lc()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L18 | neighbors=[library.js, Yt()]
-- "runtime_library_lineat": "lineAt()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L21 | neighbors=[library.js, wp()]
-- "runtime_library_ll": "Ll()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L121 | neighbors=[library.js, vm()]
 
 ## Instructions
 

@@ -1,4 +1,4 @@
-# Node Description Batch 73 of 149
+# Node Description Batch 73 of 150
 
 Graphify is running in assistant/skill mode (no API key). You are the host
 assistant (Claude Code / Codex / Gemini CLI). Read the prompt below and write
@@ -17,6 +17,26 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "generated_client_index_d_gettestdepartmentaggregatetype": "GetTestDepartmentAggregateType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L28917 | neighbors=[index.d.ts]
+- "generated_client_index_d_gettestdepartmentgroupbypayload": "GetTestDepartmentGroupByPayload" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L28954 | neighbors=[index.d.ts]
+- "generated_client_index_d_gettestformulaaggregatetype": "GetTestFormulaAggregateType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L29899 | neighbors=[index.d.ts]
+- "generated_client_index_d_gettestformulagroupbypayload": "GetTestFormulaGroupByPayload" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L29943 | neighbors=[index.d.ts]
+- "generated_client_index_d_gettestgroupbypayload": "GetTestGroupByPayload" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L16132 | neighbors=[index.d.ts]
+- "generated_client_index_d_gettestparameteraggregatetype": "GetTestParameterAggregateType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L21252 | neighbors=[index.d.ts]
+- "generated_client_index_d_gettestparametergroupbypayload": "GetTestParameterGroupByPayload" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L21304 | neighbors=[index.d.ts]
+- "generated_client_index_d_getuseraggregatetype": "GetUserAggregateType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L7030 | neighbors=[index.d.ts]
+- "generated_client_index_d_getusergroupbypayload": "GetUserGroupByPayload" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L7080 | neighbors=[index.d.ts]
+- "generated_client_index_d_getuserroleaggregatetype": "GetUserRoleAggregateType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L8969 | neighbors=[index.d.ts]
+- "generated_client_index_d_getuserrolegroupbypayload": "GetUserRoleGroupByPayload" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L9004 | neighbors=[index.d.ts]
+- "generated_client_index_d_getuserrolepermissionaggregatetype": "GetUserRolePermissionAggregateType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L9905 | neighbors=[index.d.ts]
+- "generated_client_index_d_getuserrolepermissiongroupbypayload": "GetUserRolePermissionGroupByPayload" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L9941 | neighbors=[index.d.ts]
+- "generated_client_index_d_getusersessionaggregatetype": "GetUserSessionAggregateType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L8064 | neighbors=[index.d.ts]
+- "generated_client_index_d_getusersessiongroupbypayload": "GetUserSessionGroupByPayload" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L8104 | neighbors=[index.d.ts]
+- "generated_client_index_d_getworkspaceaggregatetype": "GetWorkspaceAggregateType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L3875 | neighbors=[index.d.ts]
+- "generated_client_index_d_getworkspacegroupbypayload": "GetWorkspaceGroupByPayload" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L3917 | neighbors=[index.d.ts]
+- "generated_client_index_d_getworkspacepdfaggregatetype": "GetWorkspacePdfAggregateType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L32964 | neighbors=[index.d.ts]
+- "generated_client_index_d_getworkspacepdfgroupbypayload": "GetWorkspacePdfGroupByPayload" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L33030 | neighbors=[index.d.ts]
+- "generated_client_index_d_has": "Has" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L937 | neighbors=[index.d.ts]
 - "generated_client_index_d_interpretationrule": "InterpretationRule" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L150 | neighbors=[index.d.ts]
 - "generated_client_index_d_interpretationrule_workspaceargs": "InterpretationRule$workspaceArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L31679 | neighbors=[index.d.ts]
 - "generated_client_index_d_interpretationruleaggregateargs": "InterpretationRuleAggregateArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L30834 | neighbors=[index.d.ts]
@@ -37,26 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "generated_client_index_d_interpretationrulecreatemanytestinput": "InterpretationRuleCreateManyTestInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L53625 | neighbors=[index.d.ts]
 - "generated_client_index_d_interpretationrulecreatemanytestinputenvelope": "InterpretationRuleCreateManyTestInputEnvelope" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L48141 | neighbors=[index.d.ts]
 - "generated_client_index_d_interpretationrulecreatemanyworkspaceinput": "InterpretationRuleCreateManyWorkspaceInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L51960 | neighbors=[index.d.ts]
-- "generated_client_index_d_interpretationrulecreatemanyworkspaceinputenvelope": "InterpretationRuleCreateManyWorkspaceInputEnvelope" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L45644 | neighbors=[index.d.ts]
-- "generated_client_index_d_interpretationrulecreatenestedmanywithoutparameterinput": "InterpretationRuleCreateNestedManyWithoutParameterInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L44369 | neighbors=[index.d.ts]
-- "generated_client_index_d_interpretationrulecreatenestedmanywithouttestinput": "InterpretationRuleCreateNestedManyWithoutTestInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L43948 | neighbors=[index.d.ts]
-- "generated_client_index_d_interpretationrulecreatenestedmanywithoutworkspaceinput": "InterpretationRuleCreateNestedManyWithoutWorkspaceInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L42793 | neighbors=[index.d.ts]
-- "generated_client_index_d_interpretationrulecreateorconnectwithoutparameterinput": "InterpretationRuleCreateOrConnectWithoutParameterInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L49352 | neighbors=[index.d.ts]
-- "generated_client_index_d_interpretationrulecreateorconnectwithouttestinput": "InterpretationRuleCreateOrConnectWithoutTestInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L48136 | neighbors=[index.d.ts]
-- "generated_client_index_d_interpretationrulecreateorconnectwithoutworkspaceinput": "InterpretationRuleCreateOrConnectWithoutWorkspaceInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L45639 | neighbors=[index.d.ts]
-- "generated_client_index_d_interpretationrulecreatewithoutparameterinput": "InterpretationRuleCreateWithoutParameterInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L49333 | neighbors=[index.d.ts]
-- "generated_client_index_d_interpretationrulecreatewithouttestinput": "InterpretationRuleCreateWithoutTestInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L48117 | neighbors=[index.d.ts]
-- "generated_client_index_d_interpretationrulecreatewithoutworkspaceinput": "InterpretationRuleCreateWithoutWorkspaceInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L45620 | neighbors=[index.d.ts]
-- "generated_client_index_d_interpretationruledefaultargs": "InterpretationRuleDefaultArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L31694 | neighbors=[index.d.ts]
-- "generated_client_index_d_interpretationruledelegate": "InterpretationRuleDelegate" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L31009 | neighbors=[index.d.ts]
-- "generated_client_index_d_interpretationruledeleteargs": "InterpretationRuleDeleteArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L31651 | neighbors=[index.d.ts]
-- "generated_client_index_d_interpretationruledeletemanyargs": "InterpretationRuleDeleteManyArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L31669 | neighbors=[index.d.ts]
-- "generated_client_index_d_interpretationrulefieldrefs": "InterpretationRuleFieldRefs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L31369 | neighbors=[index.d.ts]
-- "generated_client_index_d_interpretationrulefindfirstargs": "InterpretationRuleFindFirstArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L31421 | neighbors=[index.d.ts]
-- "generated_client_index_d_interpretationrulefindfirstorthrowargs": "InterpretationRuleFindFirstOrThrowArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L31469 | neighbors=[index.d.ts]
-- "generated_client_index_d_interpretationrulefindmanyargs": "InterpretationRuleFindManyArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L31517 | neighbors=[index.d.ts]
-- "generated_client_index_d_interpretationrulefinduniqueargs": "InterpretationRuleFindUniqueArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L31385 | neighbors=[index.d.ts]
-- "generated_client_index_d_interpretationrulefinduniqueorthrowargs": "InterpretationRuleFindUniqueOrThrowArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L31403 | neighbors=[index.d.ts]
 
 ## Instructions
 

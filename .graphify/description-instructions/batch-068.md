@@ -1,4 +1,4 @@
-# Node Description Batch 69 of 149
+# Node Description Batch 69 of 150
 
 Graphify is running in assistant/skill mode (no API key). You are the host
 assistant (Claude Code / Codex / Gemini CLI). Read the prompt below and write
@@ -17,6 +17,26 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "generated_client_index_d_doctorincentivelistrelationfilter": "DoctorIncentiveListRelationFilter" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L41250 | neighbors=[index.d.ts]
+- "generated_client_index_d_doctorincentivemaxaggregateinputtype": "DoctorIncentiveMaxAggregateInputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L31772 | neighbors=[index.d.ts]
+- "generated_client_index_d_doctorincentivemaxaggregateoutputtype": "DoctorIncentiveMaxAggregateOutputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L31737 | neighbors=[index.d.ts]
+- "generated_client_index_d_doctorincentivemaxorderbyaggregateinput": "DoctorIncentiveMaxOrderByAggregateInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L42576 | neighbors=[index.d.ts]
+- "generated_client_index_d_doctorincentiveminaggregateinputtype": "DoctorIncentiveMinAggregateInputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L31765 | neighbors=[index.d.ts]
+- "generated_client_index_d_doctorincentiveminaggregateoutputtype": "DoctorIncentiveMinAggregateOutputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L31730 | neighbors=[index.d.ts]
+- "generated_client_index_d_doctorincentiveminorderbyaggregateinput": "DoctorIncentiveMinOrderByAggregateInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L42583 | neighbors=[index.d.ts]
+- "generated_client_index_d_doctorincentiveorderbyrelationaggregateinput": "DoctorIncentiveOrderByRelationAggregateInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L41256 | neighbors=[index.d.ts]
+- "generated_client_index_d_doctorincentiveorderbywithaggregationinput": "DoctorIncentiveOrderByWithAggregationInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L37072 | neighbors=[index.d.ts]
+- "generated_client_index_d_doctorincentiveorderbywithrelationinput": "DoctorIncentiveOrderByWithRelationInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L37053 | neighbors=[index.d.ts]
+- "generated_client_index_d_doctorincentivepayload": "$DoctorIncentivePayload" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L31919 | neighbors=[index.d.ts]
+- "generated_client_index_d_doctorincentivescalarfieldenum": "DoctorIncentiveScalarFieldEnum" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L34372 | neighbors=[index.d.ts]
+- "generated_client_index_d_doctorincentivescalarwhereinput": "DoctorIncentiveScalarWhereInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L47915 | neighbors=[index.d.ts]
+- "generated_client_index_d_doctorincentivescalarwherewithaggregatesinput": "DoctorIncentiveScalarWhereWithAggregatesInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L37084 | neighbors=[index.d.ts]
+- "generated_client_index_d_doctorincentiveselect": "DoctorIncentiveSelect" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L31899 | neighbors=[index.d.ts]
+- "generated_client_index_d_doctorincentiveselectscalar": "DoctorIncentiveSelectScalar" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L31908 | neighbors=[index.d.ts]
+- "generated_client_index_d_doctorincentivesumaggregateinputtype": "DoctorIncentiveSumAggregateInputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L31759 | neighbors=[index.d.ts]
+- "generated_client_index_d_doctorincentivesumaggregateoutputtype": "DoctorIncentiveSumAggregateOutputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L31724 | neighbors=[index.d.ts]
+- "generated_client_index_d_doctorincentivesumorderbyaggregateinput": "DoctorIncentiveSumOrderByAggregateInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L42590 | neighbors=[index.d.ts]
+- "generated_client_index_d_doctorincentiveuncheckedcreateinput": "DoctorIncentiveUncheckedCreateInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L40080 | neighbors=[index.d.ts]
 - "generated_client_index_d_doctorincentiveuncheckedcreatenestedmanywithoutdoctorinput": "DoctorIncentiveUncheckedCreateNestedManyWithoutDoctorInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L43806 | neighbors=[index.d.ts]
 - "generated_client_index_d_doctorincentiveuncheckedcreatewithoutdoctorinput": "DoctorIncentiveUncheckedCreateWithoutDoctorInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L47799 | neighbors=[index.d.ts]
 - "generated_client_index_d_doctorincentiveuncheckedupdateinput": "DoctorIncentiveUncheckedUpdateInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L40093 | neighbors=[index.d.ts]
@@ -37,26 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "generated_client_index_d_doctorincentivewhereinput": "DoctorIncentiveWhereInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L37042 | neighbors=[index.d.ts]
 - "generated_client_index_d_doctorincentivewhereuniqueinput": "DoctorIncentiveWhereUniqueInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L37061 | neighbors=[index.d.ts]
 - "generated_client_index_d_doctorinclude": "DoctorInclude" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L14994 | neighbors=[index.d.ts]
-- "generated_client_index_d_doctorlistrelationfilter": "DoctorListRelationFilter" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L40425 | neighbors=[index.d.ts]
-- "generated_client_index_d_doctormaxaggregateinputtype": "DoctorMaxAggregateInputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L14802 | neighbors=[index.d.ts]
-- "generated_client_index_d_doctormaxaggregateoutputtype": "DoctorMaxAggregateOutputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L14740 | neighbors=[index.d.ts]
-- "generated_client_index_d_doctormaxorderbyaggregateinput": "DoctorMaxOrderByAggregateInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L41287 | neighbors=[index.d.ts]
-- "generated_client_index_d_doctorminaggregateinputtype": "DoctorMinAggregateInputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L14786 | neighbors=[index.d.ts]
-- "generated_client_index_d_doctorminaggregateoutputtype": "DoctorMinAggregateOutputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L14724 | neighbors=[index.d.ts]
-- "generated_client_index_d_doctorminorderbyaggregateinput": "DoctorMinOrderByAggregateInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L41303 | neighbors=[index.d.ts]
-- "generated_client_index_d_doctornullablerelationfilter": "DoctorNullableRelationFilter" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L41507 | neighbors=[index.d.ts]
-- "generated_client_index_d_doctororderbyrelationaggregateinput": "DoctorOrderByRelationAggregateInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L40487 | neighbors=[index.d.ts]
-- "generated_client_index_d_doctororderbywithaggregationinput": "DoctorOrderByWithAggregationInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L35403 | neighbors=[index.d.ts]
-- "generated_client_index_d_doctororderbywithrelationinput": "DoctorOrderByWithRelationInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L35359 | neighbors=[index.d.ts]
-- "generated_client_index_d_doctorpayload": "$DoctorPayload" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L15002 | neighbors=[index.d.ts]
-- "generated_client_index_d_doctorrelationfilter": "DoctorRelationFilter" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L42558 | neighbors=[index.d.ts]
-- "generated_client_index_d_doctorscalarfieldenum": "DoctorScalarFieldEnum" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L34062 | neighbors=[index.d.ts]
-- "generated_client_index_d_doctorscalarwhereinput": "DoctorScalarWhereInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L45785 | neighbors=[index.d.ts]
-- "generated_client_index_d_doctorscalarwherewithaggregatesinput": "DoctorScalarWhereWithAggregatesInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L35424 | neighbors=[index.d.ts]
-- "generated_client_index_d_doctorselect": "DoctorSelect" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L14956 | neighbors=[index.d.ts]
-- "generated_client_index_d_doctorselectscalar": "DoctorSelectScalar" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L14978 | neighbors=[index.d.ts]
-- "generated_client_index_d_doctorsumaggregateinputtype": "DoctorSumAggregateInputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L14780 | neighbors=[index.d.ts]
-- "generated_client_index_d_doctorsumaggregateoutputtype": "DoctorSumAggregateOutputType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L14718 | neighbors=[index.d.ts]
 
 ## Instructions
 

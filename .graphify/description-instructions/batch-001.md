@@ -1,4 +1,4 @@
-# Node Description Batch 2 of 149
+# Node Description Batch 2 of 150
 
 Graphify is running in assistant/skill mode (no API key). You are the host
 assistant (Claude Code / Codex / Gemini CLI). Read the prompt below and write
@@ -24,6 +24,7 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "login_loginpageclient": "LoginPageClient.js" | kind=code-symbol | source=app/(customer)/auth/login/LoginPageClient.js:L1 | neighbors=[14fa292 f, 165f057 f, 252e194 e, 2582be7 fixed zoom issue, 2b2534c f, 4ba60cc fixed]
 - "runtime_edge_esm_tr": "Tr()" | kind=code-symbol | source=scratch/generated-client/runtime/edge-esm.js:L3 | neighbors=[edge-esm.js, Dr(), bu(), cu(), Eu(), fu()]
 - "runtime_library_sa": "sa()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L29 | neighbors=[library.js, aa(), od(), ad(), getArgumentName(), getArgumentPath()]
 - "runtime_wasm_from": "from()" | kind=code-symbol | source=scratch/generated-client/runtime/wasm.js:L1 | neighbors=[wasm.js, allocUnsafe(), allocUnsafeSlow(), construct(), di(), es()]
@@ -40,6 +41,7 @@ one-sentence description — no prose, no markdown fences.
 - "component_showresult": "showResult.jsx" | kind=code-symbol | source=app/(customer)/(dashboard)/test-report/component/showResult.jsx:L1 | neighbors=[252e194 e, 532b740 fixed, 53ca5c1 stable version 1, 84a8ff2 full indexeddb based, 8b1f3d8 a, aae6bad fixed]
 - "components_adminlayoutclient": "AdminLayoutClient.js" | kind=code-symbol | source=components/AdminLayoutClient.js:L1 | neighbors=[252e194 e, 2b2534c f, 2daebb8 f, 37dcb32 fixed, 37ee548 f, 5e3d9ef d]
 - "offline_offlinepdfgenerator": "offlinePdfGenerator.js" | kind=code-symbol | source=lib/offline/offlinePdfGenerator.js:L1 | neighbors=[8b1f3d8 a, 905ef50 fixed, f3857f9 f, db.js, formatDate(), generateReportPdfOffline()]
+- "registration_page": "page.js" | kind=code-symbol | source=app/(customer)/(dashboard)/registration/page.js:L1 | neighbors=[252e194 e, 2b2534c f, 56f4d63 f, 6c2dfe4 test, 7d8c494 fxed, 84a8ff2 full indexeddb based]
 - "runtime_edge_cu": "cu()" | kind=code-symbol | source=scratch/generated-client/runtime/edge.js:L1 | neighbors=[edge.js, addErrorMessage(), asObject(), getDeepField(), getDeepFieldValue(), getDeepSubSelectionValue()]
 - "runtime_edge_esm_getdeepsubselectionvalue": "getDeepSubSelectionValue()" | kind=code-symbol | source=scratch/generated-client/runtime/edge-esm.js:L3 | neighbors=[edge-esm.js, bu(), co(), cu(), Eu(), getSubSelectionValue()]
 - "runtime_edge_esm_getfield": "getField()" | kind=code-symbol | source=scratch/generated-client/runtime/edge-esm.js:L3 | neighbors=[edge-esm.js, co(), cu(), getDeepField(), getFieldValue(), getSelectionParent()]
@@ -57,13 +59,11 @@ one-sentence description — no prose, no markdown fences.
 - "runtime_wasm_ia": "ia()" | kind=code-symbol | source=scratch/generated-client/runtime/wasm.js:L5 | neighbors=[wasm.js, concat(), de(), Dr(), findField(), getOutputTypeDescription()]
 - "runtime_wasm_s": "_s()" | kind=code-symbol | source=scratch/generated-client/runtime/wasm.js:L4 | neighbors=[wasm.js, ls(), addErrorMessage(), addField(), addSuggestion(), asObject()]
 - "commit:repo:github.com-personal/miznaansari/easytechnomed-pwa@9e25c1933a8413be5301515ae9f6999f5e5fc01f": "9e25c19 f" | kind=Commit | source=git | neighbors=[offlineAuth.js, main, 0afb0ac 2.0.19, AdminLayoutClient.js, page.js, LoginPageClient.js]
+- "dashboard_page": "page.js" | kind=code-symbol | source=app/(customer)/(dashboard)/dashboard/page.js:L1 | neighbors=[252e194 e, 6812ab9 new ui dashboard, 9e25c19 f, cf2bb98 new, DashboardCharts.js, DepartmentDistributionChart()]
 - "lib_formulaengine": "formulaEngine.js" | kind=code-symbol | source=lib/formulaEngine.js:L1 | neighbors=[252e194 e, runFormulaEngine(), addPatientContextToValuesMap(), addValueToValuesMap(), calculateAllDependents(), checkFormulaDependencies()]
 - "lib_formulautils": "formulaUtils.js" | kind=code-symbol | source=lib/formulaUtils.js:L1 | neighbors=[252e194 e, addPatientContextToValuesMap(), addValueToValuesMap(), calculateAllDependents(), checkFormulaDependencies(), determineFlag()]
-- "registration_page": "page.js" | kind=code-symbol | source=app/(customer)/(dashboard)/registration/page.js:L1 | neighbors=[252e194 e, 2b2534c f, 56f4d63 f, 7d8c494 fxed, 84a8ff2 full indexeddb based, 9e25c19 f]
 - "runtime_edge_au": "Au()" | kind=code-symbol | source=scratch/generated-client/runtime/edge.js:L4 | neighbors=[edge.js, Ar(), addErrorMessage(), addField(), addSuggestion(), asObject()]
 - "runtime_edge_esm_cu": "cu()" | kind=code-symbol | source=scratch/generated-client/runtime/edge-esm.js:L4 | neighbors=[edge-esm.js, addErrorMessage(), addSuggestion(), asObject(), du(), getDeepSubSelectionValue()]
-- "runtime_edge_esm_fu": "fu()" | kind=code-symbol | source=scratch/generated-client/runtime/edge-esm.js:L4 | neighbors=[edge-esm.js, addErrorMessage(), An(), findField(), getOutputTypeDescription(), getSelectionPath()]
-- "runtime_edge_esm_markaserror": "markAsError()" | kind=code-symbol | source=scratch/generated-client/runtime/edge-esm.js:L3 | neighbors=[edge-esm.js, bu(), Eu(), fu(), gu(), hc()]
 
 ## Instructions
 

@@ -68,11 +68,11 @@ export default function UnsyncedLogoutModal({
 
       <DialogContent sx={{ py: 1.5 }}>
         <Typography variant="body2" sx={{ color: "text.secondary", lineHeight: 1.6 }}>
-          You have <strong>{pendingCount} unsynchronized changes</strong> stored locally in your browser.
-          Logging out may interrupt background synchronization or cause unsubmitted records to remain on this device.
+          You have <strong>{pendingCount} unsynchronized change{pendingCount === 1 ? "" : "s"}</strong> stored locally in your browser.
+          Logging out will completely wipe local IndexedDB data, cached sessions, and local storage. Any unsaved changes that have not been synced to the server will be lost.
         </Typography>
         <Typography variant="body2" sx={{ color: "text.primary", fontWeight: 600, mt: 1.5 }}>
-          Please synchronize your data before logging out, or confirm if you wish to proceed anyway.
+          We strongly recommend syncing your data before logging out.
         </Typography>
       </DialogContent>
 

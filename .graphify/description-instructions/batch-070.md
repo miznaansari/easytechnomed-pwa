@@ -1,4 +1,4 @@
-# Node Description Batch 71 of 149
+# Node Description Batch 71 of 150
 
 Graphify is running in assistant/skill mode (no API key). You are the host
 assistant (Claude Code / Codex / Gemini CLI). Read the prompt below and write
@@ -17,6 +17,26 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "generated_client_index_d_doctorupdatemanywithwherewithoutworkspaceinput": "DoctorUpdateManyWithWhereWithoutWorkspaceInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L45780 | neighbors=[index.d.ts]
+- "generated_client_index_d_doctorupdateonerequiredwithoutincentivehistorynestedinput": "DoctorUpdateOneRequiredWithoutIncentiveHistoryNestedInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L44809 | neighbors=[index.d.ts]
+- "generated_client_index_d_doctorupdateonewithoutregistrationsnestedinput": "DoctorUpdateOneWithoutRegistrationsNestedInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L44211 | neighbors=[index.d.ts]
+- "generated_client_index_d_doctorupdateonewithoutsecondregistrationsnestedinput": "DoctorUpdateOneWithoutSecondRegistrationsNestedInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L44221 | neighbors=[index.d.ts]
+- "generated_client_index_d_doctorupdatetoonewithwherewithoutincentivehistoryinput": "DoctorUpdateToOneWithWhereWithoutIncentiveHistoryInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L51626 | neighbors=[index.d.ts]
+- "generated_client_index_d_doctorupdatetoonewithwherewithoutregistrationsinput": "DoctorUpdateToOneWithWhereWithoutRegistrationsInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L48629 | neighbors=[index.d.ts]
+- "generated_client_index_d_doctorupdatetoonewithwherewithoutsecondregistrationsinput": "DoctorUpdateToOneWithWhereWithoutSecondRegistrationsInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L48675 | neighbors=[index.d.ts]
+- "generated_client_index_d_doctorupdatewithoutincentivehistoryinput": "DoctorUpdateWithoutIncentiveHistoryInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L51631 | neighbors=[index.d.ts]
+- "generated_client_index_d_doctorupdatewithoutregistrationsinput": "DoctorUpdateWithoutRegistrationsInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L48634 | neighbors=[index.d.ts]
+- "generated_client_index_d_doctorupdatewithoutsecondregistrationsinput": "DoctorUpdateWithoutSecondRegistrationsInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L48680 | neighbors=[index.d.ts]
+- "generated_client_index_d_doctorupdatewithoutworkspaceinput": "DoctorUpdateWithoutWorkspaceInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L52055 | neighbors=[index.d.ts]
+- "generated_client_index_d_doctorupdatewithwhereuniquewithoutworkspaceinput": "DoctorUpdateWithWhereUniqueWithoutWorkspaceInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L45775 | neighbors=[index.d.ts]
+- "generated_client_index_d_doctorupsertargs": "DoctorUpsertArgs" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L15657 | neighbors=[index.d.ts]
+- "generated_client_index_d_doctorupsertwithoutincentivehistoryinput": "DoctorUpsertWithoutIncentiveHistoryInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L51620 | neighbors=[index.d.ts]
+- "generated_client_index_d_doctorupsertwithoutregistrationsinput": "DoctorUpsertWithoutRegistrationsInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L48623 | neighbors=[index.d.ts]
+- "generated_client_index_d_doctorupsertwithoutsecondregistrationsinput": "DoctorUpsertWithoutSecondRegistrationsInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L48669 | neighbors=[index.d.ts]
+- "generated_client_index_d_doctorupsertwithwhereuniquewithoutworkspaceinput": "DoctorUpsertWithWhereUniqueWithoutWorkspaceInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L45769 | neighbors=[index.d.ts]
+- "generated_client_index_d_doctorwhereinput": "DoctorWhereInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L35336 | neighbors=[index.d.ts]
+- "generated_client_index_d_doctorwhereuniqueinput": "DoctorWhereUniqueInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L35379 | neighbors=[index.d.ts]
+- "generated_client_index_d_doctorworkspaceidcodecompounduniqueinput": "DoctorWorkspaceIdCodeCompoundUniqueInput" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L41260 | neighbors=[index.d.ts]
 - "generated_client_index_d_either": "__Either" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L827 | neighbors=[index.d.ts]
 - "generated_client_index_d_eitherloose": "EitherLoose" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L835 | neighbors=[index.d.ts]
 - "generated_client_index_d_eitherstrict": "EitherStrict" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L833 | neighbors=[index.d.ts]
@@ -37,26 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "generated_client_index_d_getadminaddressaggregatetype": "GetAdminAddressAggregateType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L24151 | neighbors=[index.d.ts]
 - "generated_client_index_d_getadminaddressgroupbypayload": "GetAdminAddressGroupByPayload" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L24196 | neighbors=[index.d.ts]
 - "generated_client_index_d_getadminaggregatetype": "GetAdminAggregateType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L10938 | neighbors=[index.d.ts]
-- "generated_client_index_d_getadmingroupbypayload": "GetAdminGroupByPayload" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L10995 | neighbors=[index.d.ts]
-- "generated_client_index_d_getadminroleaggregatetype": "GetAdminRoleAggregateType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L12991 | neighbors=[index.d.ts]
-- "generated_client_index_d_getadminrolegroupbypayload": "GetAdminRoleGroupByPayload" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L13028 | neighbors=[index.d.ts]
-- "generated_client_index_d_getadminrolepermissionaggregatetype": "GetAdminRolePermissionAggregateType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L13937 | neighbors=[index.d.ts]
-- "generated_client_index_d_getadminrolepermissiongroupbypayload": "GetAdminRolePermissionGroupByPayload" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L13973 | neighbors=[index.d.ts]
-- "generated_client_index_d_getadminsessionaggregatetype": "GetAdminSessionAggregateType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L12074 | neighbors=[index.d.ts]
-- "generated_client_index_d_getadminsessiongroupbypayload": "GetAdminSessionGroupByPayload" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L12114 | neighbors=[index.d.ts]
-- "generated_client_index_d_getadmintrackingaggregatetype": "GetAdminTrackingAggregateType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L26995 | neighbors=[index.d.ts]
-- "generated_client_index_d_getadmintrackinggroupbypayload": "GetAdminTrackingGroupByPayload" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L27037 | neighbors=[index.d.ts]
-- "generated_client_index_d_getdoctoraggregatetype": "GetDoctorAggregateType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L14896 | neighbors=[index.d.ts]
-- "generated_client_index_d_getdoctorgroupbypayload": "GetDoctorGroupByPayload" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L14942 | neighbors=[index.d.ts]
-- "generated_client_index_d_getdoctorincentiveaggregatetype": "GetDoctorIncentiveAggregateType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L31848 | neighbors=[index.d.ts]
-- "generated_client_index_d_getdoctorincentivegroupbypayload": "GetDoctorIncentiveGroupByPayload" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L31885 | neighbors=[index.d.ts]
-- "generated_client_index_d_getevents": "GetEvents" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L3055 | neighbors=[index.d.ts]
-- "generated_client_index_d_gethavingfields": "GetHavingFields" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L975 | neighbors=[index.d.ts]
-- "generated_client_index_d_getinterpretationruleaggregatetype": "GetInterpretationRuleAggregateType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L30895 | neighbors=[index.d.ts]
-- "generated_client_index_d_getinterpretationrulegroupbypayload": "GetInterpretationRuleGroupByPayload" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L30936 | neighbors=[index.d.ts]
-- "generated_client_index_d_getleadaggregatetype": "GetLeadAggregateType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L23236 | neighbors=[index.d.ts]
-- "generated_client_index_d_getleadcontactaggregatetype": "GetLeadContactAggregateType" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L26077 | neighbors=[index.d.ts]
-- "generated_client_index_d_getleadcontactgroupbypayload": "GetLeadContactGroupByPayload" | kind=code-symbol | source=scratch/generated-client/index.d.ts:L26119 | neighbors=[index.d.ts]
 
 ## Instructions
 

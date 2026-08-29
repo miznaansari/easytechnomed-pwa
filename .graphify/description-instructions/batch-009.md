@@ -1,4 +1,4 @@
-# Node Description Batch 10 of 149
+# Node Description Batch 10 of 150
 
 Graphify is running in assistant/skill mode (no API key). You are the host
 assistant (Claude Code / Codex / Gemini CLI). Read the prompt below and write
@@ -17,6 +17,10 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "runtime_edge_esm_ispreviewfeatureon": "isPreviewFeatureOn()" | kind=code-symbol | source=scratch/generated-client/runtime/edge-esm.js:L5 | neighbors=[edge-esm.js, An(), mu(), nu(), qo(), Ut()]
+- "runtime_edge_esm_kr": "kr()" | kind=code-symbol | source=scratch/generated-client/runtime/edge-esm.js:L5 | neighbors=[edge-esm.js, Dr(), hc(), renderAllMessages(), toString(), write()]
+- "runtime_edge_esm_kt": "kt()" | kind=code-symbol | source=scratch/generated-client/runtime/edge-esm.js:L4 | neighbors=[edge-esm.js, co(), mu(), uu(), wu(), yu()]
+- "runtime_edge_esm_nestselection": "nestSelection()" | kind=code-symbol | source=scratch/generated-client/runtime/edge-esm.js:L5 | neighbors=[edge-esm.js, fu(), lu(), e(), findField(), u()]
 - "runtime_edge_esm_ut": "Ut()" | kind=code-symbol | source=scratch/generated-client/runtime/edge-esm.js:L5 | neighbors=[edge-esm.js, Cn(), fu(), lu(), isPreviewFeatureOn(), qo()]
 - "runtime_edge_esm_wa": "wa()" | kind=code-symbol | source=scratch/generated-client/runtime/edge-esm.js:L1 | neighbors=[edge-esm.js, si(), be(), on(), rn(), Xr()]
 - "runtime_edge_esm_withindent": "withIndent()" | kind=code-symbol | source=scratch/generated-client/runtime/edge-esm.js:L2 | neighbors=[edge-esm.js, indent(), unindent(), write(), writeWithContents(), writeWithItems()]
@@ -53,10 +57,6 @@ one-sentence description — no prose, no markdown fences.
 - "runtime_library_ispreviewfeatureon": "isPreviewFeatureOn()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L29 | neighbors=[library.js, aa(), ed(), I(), mr(), td()]
 - "runtime_library_ji": "ji()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L29 | neighbors=[library.js, getAllModelExtensions(), gr(), qd(), Se(), Vd()]
 - "runtime_library_mo": "Mo()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L5 | neighbors=[library.js, ju(), Lo(), Vu(), nt(), Yn()]
-- "runtime_library_nestselection": "nestSelection()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L29 | neighbors=[library.js, id(), nd(), e(), findField(), rd()]
-- "runtime_library_oa": "Oa()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L31 | neighbors=[library.js, Gd(), getAllComputedFields(), Se(), Ud(), values()]
-- "runtime_library_otherwise": "otherwise()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L4 | neighbors=[library.js, Fu(), Mu(), t(), ui(), Vu()]
-- "runtime_library_parseengineresponse": "parseEngineResponse()" | kind=code-symbol | source=scratch/generated-client/runtime/library.js:L112 | neighbors=[library.js, logger(), metrics(), request(), requestBatch(), transaction()]
 
 ## Instructions
 

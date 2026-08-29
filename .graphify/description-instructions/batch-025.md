@@ -1,4 +1,4 @@
-# Node Description Batch 26 of 149
+# Node Description Batch 26 of 150
 
 Graphify is running in assistant/skill mode (no API key). You are the host
 assistant (Claude Code / Codex / Gemini CLI). Read the prompt below and write
@@ -24,6 +24,20 @@ No marketing language.
 Respond ONLY with a JSON object mapping each node id (as a string) to its
 one-sentence description — no prose, no markdown fences.
 
+- "commit:repo:github.com-personal/miznaansari/easytechnomed-pwa@7ec76baa937c381ba6859cd5d0cfe2bb9a34815d": "7ec76ba 2.0.12" | kind=Commit | source=git | neighbors=[4d7570f fixed, main, c070c55 fixed]
+- "commit:repo:github.com-personal/miznaansari/easytechnomed-pwa@7fcf80494a27d4ec2c960aafbecce7822f0a3df5": "7fcf804 1.1.30" | kind=Commit | source=git | neighbors=[main, a4caf17 fix: ensure Service Worker only…, b5ea15f d]
+- "commit:repo:github.com-personal/miznaansari/easytechnomed-pwa@8065d22d01c683faaa33c19410974d6979d7d1fe": "8065d22 3.0.8" | kind=Commit | source=git | neighbors=[2daebb8 f, main, 165f057 f]
+- "commit:repo:github.com-personal/miznaansari/easytechnomed-pwa@84807f47cf682325bf74a7f044ba8c9dcc1c4fbd": "84807f4 1.1.27" | kind=Commit | source=git | neighbors=[56f4d63 f, main, 532b740 fixed]
+- "commit:repo:github.com-personal/miznaansari/easytechnomed-pwa@98ad5ca697f0155858c84f94f0a8f7df6f8c5fd6": "98ad5ca 2.0.24" | kind=Commit | source=git | neighbors=[main, fae0b0a graphify added., d446d11 fixed code]
+- "commit:repo:github.com-personal/miznaansari/easytechnomed-pwa@9a50d76fdc96edbbcfaff30fb952ad24910efa0a": "9a50d76 3.0.2" | kind=Commit | source=git | neighbors=[5ce0a2e fixed, main, c15ae1e fixed]
+- "commit:repo:github.com-personal/miznaansari/easytechnomed-pwa@9d71afcc23862c5fffbd639f60476f1ad073ffc7": "9d71afc 3.0.22" | kind=Commit | source=git | neighbors=[47b2032 ios issue pwa, main, 6812ab9 new ui dashboard]
+- "commit:repo:github.com-personal/miznaansari/easytechnomed-pwa@9deec8fd0983a64980479366856db84bed70a63a": "9deec8f 2.0.4" | kind=Commit | source=git | neighbors=[main, fafa3d9 f, b0c8bf9 full indexeddb based]
+- "commit:repo:github.com-personal/miznaansari/easytechnomed-pwa@a09f0a95766b6fcc8df3cba0f15a47bb4f277805": "a09f0a9 3.0.21" | kind=Commit | source=git | neighbors=[main, 47b2032 ios issue pwa, a712d0e ios issue pwa]
+- "commit:repo:github.com-personal/miznaansari/easytechnomed-pwa@a14c9b8bbea1748bf13611f038dce324604c0733": "a14c9b8 2.0.14" | kind=Commit | source=git | neighbors=[905ef50 fixed, main, cb86968 fixed]
+- "commit:repo:github.com-personal/miznaansari/easytechnomed-pwa@a3fc29c71d3e49a1c2ab30c25c1bf8449f363d1c": "a3fc29c 3.0.25" | kind=Commit | source=git | neighbors=[6c2dfe4 test, main, 67434f2 payment issue only]
+- "commit:repo:github.com-personal/miznaansari/easytechnomed-pwa@a4a950af85ecefcfc811d8b22f2b61546a488fe8": "a4a950a 2.0.5" | kind=Commit | source=git | neighbors=[main, 6618261 f, fafa3d9 f]
+- "commit:repo:github.com-personal/miznaansari/easytechnomed-pwa@b95c5bd71d1cfe3e148c4fdaea214fd71d458e81": "b95c5bd 3.0.24" | kind=Commit | source=git | neighbors=[44ad6b2 new ui dashboard, main, 6c2dfe4 test]
+- "commit:repo:github.com-personal/miznaansari/easytechnomed-pwa@c41a815a6ea80961049650bc3fc80593b5c83810": "c41a815 3.0.11" | kind=Commit | source=git | neighbors=[b5dedb0 f, main, 8184d32 f]
 - "commit:repo:github.com-personal/miznaansari/easytechnomed-pwa@c5cbecd35dab9843171e92af854db27d4a2695d8": "c5cbecd 3.0.1" | kind=Commit | source=git | neighbors=[af73a19 fixed, main, 5ce0a2e fixed]
 - "commit:repo:github.com-personal/miznaansari/easytechnomed-pwa@c82cfd75cd7430b8abc8461383578f5995fa86e1": "c82cfd7 3.0.10" | kind=Commit | source=git | neighbors=[165f057 f, main, b5dedb0 f]
 - "commit:repo:github.com-personal/miznaansari/easytechnomed-pwa@cc4c42700f90d3aaec33239797a4bf165ff759d3": "cc4c427 1.1.26" | kind=Commit | source=git | neighbors=[6fcf015 f, main, 56f4d63 f]
@@ -50,20 +64,6 @@ one-sentence description — no prose, no markdown fences.
 - "lib_formulautils_addpatientcontexttovaluesmap": "addPatientContextToValuesMap()" | kind=code-symbol | source=lib/formulaUtils.js:L278 | neighbors=[formulaEngine.js, formulaUtils.js, calculateAllDependents()]
 - "lib_formulautils_addvaluetovaluesmap": "addValueToValuesMap()" | kind=code-symbol | source=lib/formulaUtils.js:L10 | neighbors=[formulaEngine.js, formulaUtils.js, calculateAllDependents()]
 - "lib_formulautils_isoutofrange": "isOutOfRange()" | kind=code-symbol | source=lib/formulaUtils.js:L550 | neighbors=[formulaEngine.js, formulaUtils.js, isQualitativeAbnormal()]
-- "lib_formulautils_isqualitativeabnormal": "isQualitativeAbnormal()" | kind=code-symbol | source=lib/formulaUtils.js:L517 | neighbors=[formulaEngine.js, formulaUtils.js, isOutOfRange()]
-- "lib_r2": "r2.js" | kind=code-symbol | source=lib/r2.js:L1 | neighbors=[252e194 e, s3Client, uploadFileToR2()]
-- "logout_redirect_route": "route.js" | kind=code-symbol | source=app/api/auth/logout-redirect/route.js:L1 | neighbors=[252e194 e, 5e3d9ef d, GET()]
-- "logout_route": "route.js" | kind=code-symbol | source=app/api/authas/logout/route.js:L1 | neighbors=[252e194 e, 5e3d9ef d, POST()]
-- "offline_network_networkmonitor_handlestatuschange": ".handleStatusChange()" | kind=code-symbol | source=lib/offline/network.js:L17 | neighbors=[NetworkMonitor, .checkConnection(), .notifyListeners()]
-- "offline_offlineprint_printbilloffline": "printBillOffline()" | kind=code-symbol | source=lib/offline/offlinePrint.js:L57 | neighbors=[offlinePrint.js, formatDate(), numberToWords()]
-- "offline_timestamps_getutcisonow": "getUtcIsoNow()" | kind=code-symbol | source=lib/offline/timestamps.js:L10 | neighbors=[db.js, timestamps.js, syncManager.js]
-- "payments_page": "page.js" | kind=code-symbol | source=app/(customer)/(dashboard)/settings/payments/page.js:L1 | neighbors=[252e194 e, SettingsPaymentsPage(), paymentsClient.jsx]
-- "pdf_page": "page.js" | kind=code-symbol | source=app/(customer)/(dashboard)/settings/pdf/page.js:L1 | neighbors=[252e194 e, SettingsPdfPage(), pdfClient.jsx]
-- "preview_pdf_route": "route.js" | kind=code-symbol | source=app/api/settings/preview-pdf/route.js:L1 | neighbors=[252e194 e, formatDate(), GET()]
-- "profile_route": "route.js" | kind=code-symbol | source=app/api/profile/route.js:L1 | neighbors=[252e194 e, GET(), PUT()]
-- "registrations_route_serializedata": "serializeData()" | kind=code-symbol | source=app/api/registrations/route.js:L7 | neighbors=[route.js, GET(), POST()]
-- "runtime_edge_a": "a()" | kind=code-symbol | source=scratch/generated-client/runtime/edge.js:L1 | neighbors=[edge.js, g(), l()]
-- "runtime_edge_ac": "ac()" | kind=code-symbol | source=scratch/generated-client/runtime/edge.js:L6 | neighbors=[edge.js, ht(), ts()]
 
 ## Instructions
 
