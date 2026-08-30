@@ -162,7 +162,7 @@ export default function ResultEntry({ open, onClose, selectedReg, onSaveSuccess,
 
         const values = {};
         const overrides = new Set();
-        
+
         // Query local patientResults from Dexie
         const localResults = await db.patientResults
           .filter((r) => r.registrationId === selectedReg.id)
@@ -228,6 +228,14 @@ export default function ResultEntry({ open, onClose, selectedReg, onSaveSuccess,
     if (!resultRegDetails?.id) return;
     if (!canWrite) return;
 
+    // If finalizing/completing, cancel any pending auto-save debounce timers immediately
+    if (!isDraft) {
+      if (debounceTimerRef.current) {
+        clearTimeout(debounceTimerRef.current);
+        debounceTimerRef.current = null;
+      }
+    }
+
     // Cancel any previous in-flight draft save before starting a new save
     if (draftAbortControllerRef.current) {
       draftAbortControllerRef.current.abort();
@@ -285,11 +293,27 @@ export default function ResultEntry({ open, onClose, selectedReg, onSaveSuccess,
         }
       }
 
-      const newStatus = isDraft ? (resultRegDetails.status || "Pending") : "Completed";
+      // Check current registration record directly from DB to prevent stale state regression
+      const currentDbReg = await db.registrations.get(resultRegDetails.id);
+      let newStatus;
+      if (!isDraft) {
+        newStatus = "Completed";
+      } else {
+        // If drafting / auto-saving:
+        // If DB or current state is already "Completed", STAY "Completed"!
+        // NEVER revert a completed report back to "Pending" during auto-save!
+        newStatus = (currentDbReg?.status === "Completed" || resultRegDetails.status === "Completed")
+          ? "Completed"
+          : (currentDbReg?.status || resultRegDetails.status || "Pending");
+      }
+
       await db.updateOffline("registrations", resultRegDetails.id, {
         remark: reportNotes,
         status: newStatus,
       });
+
+      // Update in-memory state so subsequent auto-saves know it is Completed
+      setResultRegDetails((prev) => (prev ? { ...prev, status: newStatus, remark: reportNotes } : prev));
 
       const now = new Date();
       const timeStr = now.toLocaleTimeString([], { hour: "2-digit", minute: "2-digit", second: "2-digit" });
@@ -307,7 +331,7 @@ export default function ResultEntry({ open, onClose, selectedReg, onSaveSuccess,
 
       // 2. Trigger background auto-sync ONLY on manual explicit saves, not on silent auto-draft typing
       if (!isSilent && typeof navigator !== "undefined" && navigator.onLine) {
-        import("@/lib/offline/sync/syncManager").then(({ syncManager }) => syncManager.sync()).catch(() => {});
+        import("@/lib/offline/sync/syncManager").then(({ syncManager }) => syncManager.sync()).catch(() => { });
       }
       return;
     } catch (err) {
@@ -341,9 +365,32 @@ export default function ResultEntry({ open, onClose, selectedReg, onSaveSuccess,
             });
           }
         }
+
+        const currentDbReg = await db.registrations.get(resultRegDetails.id);
+        let fallbackStatus;
+        if (!isDraft) {
+          fallbackStatus = "Completed";
+        } else {
+          fallbackStatus = (currentDbReg?.status === "Completed" || resultRegDetails.status === "Completed")
+            ? "Completed"
+            : (currentDbReg?.status || resultRegDetails.status || "Pending");
+        }
+
+        await db.updateOffline("registrations", resultRegDetails.id, {
+          remark: reportNotes,
+          status: fallbackStatus,
+        });
+
+        setResultRegDetails((prev) => (prev ? { ...prev, status: fallbackStatus, remark: reportNotes } : prev));
         setAutoSaveStatus("saved");
-        if (!isSilent) {
-          showToast("Network error: Results saved locally (Offline).", "warning");
+
+        if (!isDraft) {
+          showToast("Results saved and completed locally (Offline)!", "success");
+          setIsSaved(true);
+          if (onSaveSuccess) onSaveSuccess();
+        } else if (!isSilent) {
+          showToast("Draft saved locally (Offline).", "info");
+          if (onSaveSuccess) onSaveSuccess();
         }
       } catch (dbErr) {
         if (isSilent) {
@@ -603,7 +650,7 @@ export default function ResultEntry({ open, onClose, selectedReg, onSaveSuccess,
 
         // Background sync if online
         if (typeof navigator !== "undefined" && navigator.onLine) {
-          import("@/lib/offline/sync/syncManager").then(({ syncManager }) => syncManager.sync()).catch(() => {});
+          import("@/lib/offline/sync/syncManager").then(({ syncManager }) => syncManager.sync()).catch(() => { });
         }
       }
     } catch (err) {
