@@ -45,7 +45,7 @@ function DashboardContent() {
   const [loading, setLoading] = useState(true);
   const [adminProfile, setAdminProfile] = useState({ name: "User", workspaceName: "Diagnostic Laboratory" });
 
-  const { hasPermission, role } = useAdminPermissions();
+  const { hasPermission, role, permissions = [] } = useAdminPermissions();
 
   // Dashboard Aggregated States
   const [stats, setStats] = useState({
@@ -67,31 +67,34 @@ function DashboardContent() {
 
   // Role permissions check
   useEffect(() => {
-    if (role && Object.keys(role).length > 0) {
-      const roleNameUpper = role?.name?.toUpperCase() || "";
-      const isSuperRole = roleNameUpper === "ADMIN" || roleNameUpper === "OWNER";
-      const hasAllPermission = role?.permissions?.some(p => p.permission?.toUpperCase() === "ALL") || false;
-      const userPerms = role?.permissions?.map(p => p.permission) || [];
-      const hasDashboardView = isSuperRole || hasAllPermission || userPerms.includes("DASHBOARD_VIEW") || (hasPermission && hasPermission("DASHBOARD_VIEW"));
+    if (role) {
+      const roleNameUpper = typeof role === "string" ? role.toUpperCase() : (role?.name?.toUpperCase() || "");
+      const isSuperRole = roleNameUpper === "ADMIN" || roleNameUpper === "OWNER" || roleNameUpper === "SUPERADMIN" || roleNameUpper === "";
+      if (isSuperRole) return; // Full admin access, no redirect needed
+
+      const rolePerms = Array.isArray(role?.permissions)
+        ? role.permissions.map((p) => (typeof p === "string" ? p : p.permission))
+        : (Array.isArray(permissions) ? permissions : []);
+
+      const hasAllPermission = rolePerms.some((p) => String(p).toUpperCase() === "ALL" || p === "*");
+      const hasDashboardView = isSuperRole || hasAllPermission || rolePerms.includes("DASHBOARD_VIEW") || (typeof hasPermission === "function" && hasPermission("DASHBOARD_VIEW"));
 
       if (!hasDashboardView) {
-        if (userPerms.includes("REGISTRATION_READ") || userPerms.includes("REGISTRATION_WRITE")) {
+        if (rolePerms.includes("REGISTRATION_READ") || rolePerms.includes("REGISTRATION_WRITE")) {
           router.push("/registration");
-        } else if (userPerms.includes("DOCTOR_READ") || userPerms.includes("DOCTOR_WRITE")) {
+        } else if (rolePerms.includes("DOCTOR_READ") || rolePerms.includes("DOCTOR_WRITE")) {
           router.push("/doctor-summary");
-        } else if (userPerms.includes("MEMBER_READ") || userPerms.includes("MEMBER_WRITE")) {
+        } else if (rolePerms.includes("MEMBER_READ") || rolePerms.includes("MEMBER_WRITE")) {
           router.push("/members");
         } else if (
-          userPerms.includes("SETTINGS_READ") || userPerms.includes("SETTINGS_WRITE") ||
-          userPerms.includes("TEST_READ") || userPerms.includes("TEST_WRITE")
+          rolePerms.includes("SETTINGS_READ") || rolePerms.includes("SETTINGS_WRITE") ||
+          rolePerms.includes("TEST_READ") || rolePerms.includes("TEST_WRITE")
         ) {
           router.push("/settings");
-        } else {
-          router.push("/auth/login?error=unauthorized");
         }
       }
     }
-  }, [role, hasPermission, router]);
+  }, [role, permissions, hasPermission, router]);
 
   // Sync range state if url search params change
   useEffect(() => {

@@ -2,7 +2,7 @@
 
 ## 1. Project Overview
 - **Name**: EasyTechnoMed PWA / LIMS (Laboratory Information Management System)
-- **Current Version**: `v3.1.21`
+- **Current Version**: `v3.1.26`
 - **Framework**: Next.js (App Router), React 19, Material-UI (MUI v7), Dexie.js (v4.4+), Prisma ORM, MySQL, pdf-lib, qrcode.
 
 
@@ -106,6 +106,11 @@
 
 | Version | Date | Key Changes & Milestones |
 | :--- | :--- | :--- |
+| `v3.1.26` | 2026-08-30 | Fix ReferenceError for Dexie db in `AdminLayoutClient.js`: Added missing `import db from "@/lib/offline/db"` for local admin hydration and missing data verification. |
+| `v3.1.25` | 2026-08-30 | Graceful IndexedDB Missing Data Recovery & Non-blocking In-App Re-Login: Built automatic background data restoration in `AdminLayoutClient.js`; If IndexedDB records are missing and user is online, triggers silent background bootstrap without full page reloads; If offline and local data is missing, displays a non-blocking `DataMissingWarning` alert and `ReLoginModal` enabling 1-click credential re-authentication and sync recovery without infinite reload loops. |
+| `v3.1.24` | 2026-08-30 | Fix ReferenceError for permissions destructuring in `dashboard/page.js`: Destructured `{ hasPermission, role, permissions = [] }` from `useAdminPermissions()`. |
+| `v3.1.23` | 2026-08-30 | Resolved Infinite Redirect Loop on Dashboard & Root: Fixed permissions check in `dashboard/page.js` where string-based `role: "Admin"` was incorrectly parsed as an empty object causing false `hasDashboardView = false` unauthorized redirect bounce back to login; Explicitly whitelisted super roles (`Admin`, `Owner`) without redirect interference. |
+| `v3.1.22` | 2026-08-30 | PWA Install Prompt on Login with Device-Specific Guides: Built `components/pwa/PWAInstallModal.jsx` that automatically triggers when a user logs in (via `pwa_show_install_on_login` flag in `LoginPageClient.js`); Checks standalone display mode and NEVER prompts if PWA is already installed; Provides simple, visual instructions tailored for iOS (Safari Share -> Add to Home Screen), Android (Direct Install App CTA), and Windows/Mac Desktop (Native Desktop Install CTA); Added manual "Install App" triggers in top bar and profile menu for browser sessions. |
 | `v3.1.21` | 2026-08-30 | Customer Auth Modernization & Forgot Password Integration: Upgraded `app/(customer)/auth` to the latest UI from `pathlab`; Integrated modal-based Forgot Password flow in `LoginPageClient.js` connected to `/api/auth/forgot-password`; Added dedicated secure password reset page `/auth/reset-password` (`ResetPasswordClient.js`) and API `/api/auth/reset-password`; Updated `RegisterPageClient.js` with modern MUI inputs and 5-day trial header; Configured EasyTechnoMed branded reset emails in `lib/mail.js` while maintaining offline-first session caching and sync bootstrap. |
 | `v3.1.18` | 2026-08-30 | Fixed Bill PDF Bottom Layout & Vector Barcode: Replaced the fixed grey box with true Code 39 vector barcode lines drawn in `billPdfGenerator.js`; Fixed text clipping on registration number; Perfectly centered QR code captions and balanced the Authorized Signatory section across the footer. |
 | `v3.1.17` | 2026-08-30 | Native PDF Format for Money Receipt & Bill Print: Built `generateOfflineBillPdf()` with `pdf-lib` in `lib/offline/print/billPdfGenerator.js`; Bills and Money Receipts now generate and open as genuine `application/pdf` binary documents in the browser's built-in PDF viewer with zoom, download, and print controls matching the medical test report PDF experience. |

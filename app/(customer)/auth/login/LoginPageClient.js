@@ -92,7 +92,10 @@ export default function CustomerLoginPage() {
       }).then((r) => r.json());
 
       if (res.success) {
-        if (typeof window !== "undefined") localStorage.removeItem("etm_logged_out");
+        if (typeof window !== "undefined") {
+          localStorage.removeItem("etm_logged_out");
+          localStorage.setItem("pwa_show_install_on_login", "1");
+        }
         toast.loading("Synchronizing laboratory database...", { id: "login-sync" });
         try {
           const { syncManager } = await import("@/lib/offline/sync/syncManager");

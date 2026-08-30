@@ -28,7 +28,8 @@ import {
   createTheme,
   CssBaseline,
   Popper,
-  Paper
+  Paper,
+  CircularProgress
 } from "@mui/material";
 import {
   Menu as MenuIcon,
@@ -41,11 +42,17 @@ import {
   Logout as LogoutIcon,
   Person as PersonIcon,
   Settings as SettingsIcon,
-  People as PeopleIcon
+  People as PeopleIcon,
+  GetApp as InstallAppIcon,
+  WarningAmber as WarningIcon,
+  Refresh as RefreshIcon
 } from "@mui/icons-material";
 import SyncIndicator from "@/components/offline/SyncIndicator";
 import UnsyncedLogoutModal from "@/components/offline/UnsyncedLogoutModal";
 import VersionUpdateNotifier from "@/components/version/VersionUpdateNotifier";
+import PWAInstallModal, { getDeviceInfo } from "@/components/pwa/PWAInstallModal";
+import ReLoginModal from "@/components/offline/ReLoginModal";
+import db from "@/lib/offline/db";
 import { useSync } from "@/hooks/useSync";
 import { saveAuthenticatedSession, clearLocalSession } from "@/lib/auth/offlineAuth";
 
@@ -141,11 +148,44 @@ export default function AdminLayoutClient({ admin: initialAdmin, children }) {
   const [hoverAnchorEl, setHoverAnchorEl] = useState(null);
   const [hoveredItem, setHoveredItem] = useState(null);
   const [unsyncedModalOpen, setUnsyncedModalOpen] = useState(false);
+  const [pwaModalOpen, setPwaModalOpen] = useState(false);
+  const [reLoginOpen, setReLoginOpen] = useState(false);
+  const [dataMissingWarning, setDataMissingWarning] = useState(false);
+  const [isRecoveringData, setIsRecoveringData] = useState(false);
+  const [isStandalone, setIsStandalone] = useState(false);
   const hoverTimeoutRef = React.useRef(null);
 
   const { pendingCount, sync, isSyncing } = useSync();
 
   useEffect(() => {
+    if (typeof window !== "undefined") {
+      const { isStandalone: standalone } = getDeviceInfo();
+      setIsStandalone(standalone);
+    }
+  }, []);
+
+  const handleManualDataFetch = async () => {
+    setIsRecoveringData(true);
+    try {
+      const { syncManager } = await import("@/lib/offline/sync/syncManager");
+      const res = await syncManager.bootstrapInitialData();
+      if (res?.success) {
+        const refreshedAdmin = (await db.admins.toArray())?.[0];
+        if (refreshedAdmin) {
+          setAdmin(refreshedAdmin);
+          sessionStorage.setItem("admin_profile", JSON.stringify(refreshedAdmin));
+        }
+        setDataMissingWarning(false);
+      }
+    } catch (err) {
+      console.warn("[AdminLayout] Manual data restore error:", err);
+    } finally {
+      setIsRecoveringData(false);
+    }
+  };
+
+  useEffect(() => {
+    let isMounted = true;
     async function hydrateAdmin() {
       if (initialAdmin) {
         setAdmin(initialAdmin);
@@ -155,20 +195,64 @@ export default function AdminLayoutClient({ admin: initialAdmin, children }) {
       try {
         const cached = sessionStorage.getItem("admin_profile");
         if (cached) {
-          setAdmin(JSON.parse(cached));
-          return;
+          try {
+            const parsed = JSON.parse(cached);
+            if (parsed && isMounted) {
+              setAdmin(parsed);
+              return;
+            }
+          } catch {}
         }
-        const [cachedAdmins, cachedSession] = await Promise.all([
+
+        const [cachedAdmins, cachedSession, testsCount] = await Promise.all([
           db.admins.toArray(),
           db.offlineSession.get(1),
+          db.tests.count(),
         ]);
         const local = cachedAdmins?.[0] || cachedSession?.admin;
-        if (local) {
+        if (local && isMounted) {
           setAdmin(local);
         }
-      } catch { }
+
+        // Check if IndexedDB is missing critical records
+        const isDataMissing = !local || testsCount === 0;
+        if (isDataMissing) {
+          if (typeof navigator !== "undefined" && navigator.onLine) {
+            // User is online -> fetch & restore IndexedDB in background without reloading
+            try {
+              const { syncManager } = await import("@/lib/offline/sync/syncManager");
+              const res = await syncManager.bootstrapInitialData();
+              if (res?.success && isMounted) {
+                const refreshedAdmin = (await db.admins.toArray())?.[0];
+                if (refreshedAdmin) {
+                  setAdmin(refreshedAdmin);
+                  sessionStorage.setItem("admin_profile", JSON.stringify(refreshedAdmin));
+                }
+                setDataMissingWarning(false);
+              }
+            } catch (syncErr) {
+              console.warn("[AdminLayout] Background data fetch failed:", syncErr);
+              if (isMounted && !local) {
+                setDataMissingWarning(true);
+              }
+            }
+          } else {
+            // User is offline and local data is missing
+            if (isMounted && !local) {
+              setDataMissingWarning(true);
+            }
+          }
+        } else {
+          if (isMounted) setDataMissingWarning(false);
+        }
+      } catch (err) {
+        console.warn("[AdminLayout] Hydration error:", err);
+      }
     }
     hydrateAdmin();
+    return () => {
+      isMounted = false;
+    };
   }, [initialAdmin]);
 
   const handleItemHover = (event, item) => {
@@ -665,8 +749,33 @@ export default function AdminLayoutClient({ admin: initialAdmin, children }) {
                 </Typography>
               </Box>
 
-              {/* Right Side Actions: Sync Indicator + Profile Dropdown */}
+              {/* Right Side Actions: Install App (if in browser) + Sync Indicator + Profile Dropdown */}
               <Box sx={{ display: "flex", alignItems: "center", gap: 1.5 }}>
+                {!isStandalone && (
+                  <Button
+                    size="small"
+                    variant="outlined"
+                    startIcon={<InstallAppIcon sx={{ fontSize: "1rem !important" }} />}
+                    onClick={() => setPwaModalOpen(true)}
+                    sx={{
+                      display: { xs: "none", sm: "inline-flex" },
+                      borderRadius: "8px",
+                      fontSize: "0.75rem",
+                      fontWeight: 700,
+                      py: 0.4,
+                      px: 1.2,
+                      borderColor: "rgba(15, 118, 110, 0.3)",
+                      color: "primary.main",
+                      bgcolor: "rgba(15, 118, 110, 0.03)",
+                      "&:hover": {
+                        borderColor: "primary.main",
+                        bgcolor: "rgba(15, 118, 110, 0.08)",
+                      },
+                    }}
+                  >
+                    Install App
+                  </Button>
+                )}
                 <SyncIndicator />
                 <Box>
                   <Button
@@ -708,6 +817,18 @@ export default function AdminLayoutClient({ admin: initialAdmin, children }) {
                       </Typography>
                     </Box>
                     <Divider />
+                    {!isStandalone && (
+                      <MenuItem
+                        onClick={() => {
+                          handleProfileMenuClose();
+                          setPwaModalOpen(true);
+                        }}
+                        sx={{ py: 1.2, color: "primary.main", gap: 1 }}
+                      >
+                        <InstallAppIcon fontSize="small" />
+                        Install App (PWA)
+                      </MenuItem>
+                    )}
                     <MenuItem onClick={handleLogout} sx={{ py: 1.2, color: "error.main", gap: 1 }}>
                       <LogoutIcon fontSize="small" />
                       Logout
@@ -867,6 +988,88 @@ export default function AdminLayoutClient({ admin: initialAdmin, children }) {
 
           {/* Automated App Version Update & Hard Refresh Notifier */}
           <VersionUpdateNotifier />
+
+          {/* PWA Install Prompt Modal on Login & Manual Action */}
+          <PWAInstallModal forceOpen={pwaModalOpen} onClose={() => setPwaModalOpen(false)} />
+
+          {/* Missing IndexedDB Data Recovery Alert (Non-blocking & Zero Reloads) */}
+          {dataMissingWarning && (
+            <Box
+              sx={{
+                position: "fixed",
+                bottom: 24,
+                right: 24,
+                zIndex: 1400,
+                maxWidth: 420,
+                p: 2.2,
+                bgcolor: "#ffffff",
+                borderRadius: "16px",
+                border: "1.5px solid #f59e0b",
+                boxShadow: "0 20px 30px -10px rgba(245, 158, 11, 0.25), 0 4px 6px -2px rgba(0, 0, 0, 0.05)",
+                fontFamily: "var(--font-outfit), sans-serif",
+              }}
+            >
+              <Box sx={{ display: "flex", alignItems: "flex-start", gap: 1.5, mb: 1.5 }}>
+                <WarningIcon sx={{ color: "#d97706", fontSize: 26, mt: 0.2 }} />
+                <Box>
+                  <Typography variant="subtitle2" sx={{ fontWeight: 800, color: "#92400e", fontSize: "0.9rem" }}>
+                    Local Data Unsynchronized
+                  </Typography>
+                  <Typography variant="body2" sx={{ fontSize: "0.8rem", color: "#78350f", lineHeight: 1.4, mt: 0.3 }}>
+                    Local database records were not found on this device. If you cleared browser cache or logged in recently, please sync or log in again.
+                  </Typography>
+                </Box>
+              </Box>
+              <Box sx={{ display: "flex", justifyContent: "flex-end", gap: 1 }}>
+                <Button
+                  size="small"
+                  variant="outlined"
+                  onClick={() => setReLoginOpen(true)}
+                  sx={{
+                    fontSize: "0.75rem",
+                    fontWeight: 700,
+                    borderColor: "#d97706",
+                    color: "#92400e",
+                    borderRadius: "8px",
+                    "&:hover": { borderColor: "#b45309", bgcolor: "rgba(245, 158, 11, 0.08)" },
+                  }}
+                >
+                  Log In Again
+                </Button>
+                <Button
+                  size="small"
+                  variant="contained"
+                  disabled={isRecoveringData}
+                  startIcon={isRecoveringData ? <CircularProgress size={14} color="inherit" /> : <RefreshIcon />}
+                  onClick={handleManualDataFetch}
+                  sx={{
+                    fontSize: "0.75rem",
+                    fontWeight: 700,
+                    bgcolor: "#d97706",
+                    color: "#ffffff",
+                    borderRadius: "8px",
+                    "&:hover": { bgcolor: "#b45309" },
+                  }}
+                >
+                  {isRecoveringData ? "Syncing..." : "Sync Records"}
+                </Button>
+              </Box>
+            </Box>
+          )}
+
+          {/* Seamless In-App Re-Login Modal */}
+          <ReLoginModal
+            open={reLoginOpen}
+            onClose={() => setReLoginOpen(false)}
+            onLoginSuccess={async () => {
+              setReLoginOpen(false);
+              setDataMissingWarning(false);
+              const { syncManager } = await import("@/lib/offline/sync/syncManager");
+              await syncManager.bootstrapInitialData();
+              const refreshedAdmin = (await db.admins.toArray())?.[0];
+              if (refreshedAdmin) setAdmin(refreshedAdmin);
+            }}
+          />
         </Box>
       </ThemeProvider>
     </TrackingProvider>
