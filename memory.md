@@ -2,7 +2,7 @@
 
 ## 1. Project Overview
 - **Name**: EasyTechnoMed PWA / LIMS (Laboratory Information Management System)
-- **Current Version**: `v3.1.26`
+- **Current Version**: `v3.1.27`
 - **Framework**: Next.js (App Router), React 19, Material-UI (MUI v7), Dexie.js (v4.4+), Prisma ORM, MySQL, pdf-lib, qrcode.
 
 
@@ -106,6 +106,7 @@
 
 | Version | Date | Key Changes & Milestones |
 | :--- | :--- | :--- |
+| `v3.1.27` | 2026-08-30 | Fix Mobile Drawer Multi-Tap Issue: Removed fragile `isClosing` transition locks in `AdminLayoutClient.js` that previously caused the mobile hamburger menu icon (3-lines) to require 2-3 clicks; Enabled instant 1st-tap drawer open/close reactivity with automatic route-change auto-close. |
 | `v3.1.26` | 2026-08-30 | Fix ReferenceError for Dexie db in `AdminLayoutClient.js`: Added missing `import db from "@/lib/offline/db"` for local admin hydration and missing data verification. |
 | `v3.1.25` | 2026-08-30 | Graceful IndexedDB Missing Data Recovery & Non-blocking In-App Re-Login: Built automatic background data restoration in `AdminLayoutClient.js`; If IndexedDB records are missing and user is online, triggers silent background bootstrap without full page reloads; If offline and local data is missing, displays a non-blocking `DataMissingWarning` alert and `ReLoginModal` enabling 1-click credential re-authentication and sync recovery without infinite reload loops. |
 | `v3.1.24` | 2026-08-30 | Fix ReferenceError for permissions destructuring in `dashboard/page.js`: Destructured `{ hasPermission, role, permissions = [] }` from `useAdminPermissions()`. |

@@ -143,7 +143,6 @@ export default function AdminLayoutClient({ admin: initialAdmin, children }) {
   const [admin, setAdmin] = useState(initialAdmin || null);
   const [mobileOpen, setMobileOpen] = useState(false);
   const [desktopOpen, setDesktopOpen] = useState(true);
-  const [isClosing, setIsClosing] = useState(false);
   const [anchorEl, setAnchorEl] = useState(null);
   const [hoverAnchorEl, setHoverAnchorEl] = useState(null);
   const [hoveredItem, setHoveredItem] = useState(null);
@@ -318,22 +317,23 @@ export default function AdminLayoutClient({ admin: initialAdmin, children }) {
   const currentDrawerWidth = isMdUp ? (desktopOpen ? drawerWidth : 72) : drawerWidth;
   const isDrawerExpanded = isMdUp ? desktopOpen : true;
 
+  // Auto-close mobile drawer whenever route changes
+  useEffect(() => {
+    setMobileOpen(false);
+  }, [pathname]);
+
   const handleDrawerClose = () => {
-    setIsClosing(true);
     setMobileOpen(false);
   };
 
-  const handleDrawerTransitionEnd = () => {
-    setIsClosing(false);
-  };
-
-  const handleDrawerToggle = () => {
+  const handleDrawerToggle = (e) => {
+    if (e && typeof e.stopPropagation === "function") {
+      e.stopPropagation();
+    }
     if (isMdUp) {
-      setDesktopOpen(!desktopOpen);
+      setDesktopOpen((prev) => !prev);
     } else {
-      if (!isClosing) {
-        setMobileOpen(!mobileOpen);
-      }
+      setMobileOpen((prev) => !prev);
     }
   };
 
@@ -856,7 +856,6 @@ export default function AdminLayoutClient({ admin: initialAdmin, children }) {
             <Drawer
               variant="temporary"
               open={mobileOpen}
-              onTransitionEnd={handleDrawerTransitionEnd}
               onClose={handleDrawerClose}
               ModalProps={{
                 keepMounted: true, // Better open performance on mobile.
