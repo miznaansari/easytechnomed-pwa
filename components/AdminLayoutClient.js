@@ -330,10 +330,11 @@ export default function AdminLayoutClient({ admin: initialAdmin, children }) {
     if (e && typeof e.stopPropagation === "function") {
       e.stopPropagation();
     }
-    if (isMdUp) {
-      setDesktopOpen((prev) => !prev);
-    } else {
+    const isMobile = typeof window !== "undefined" ? window.innerWidth < 900 : !isMdUp;
+    if (isMobile) {
       setMobileOpen((prev) => !prev);
+    } else {
+      setDesktopOpen((prev) => !prev);
     }
   };
 
@@ -733,16 +734,24 @@ export default function AdminLayoutClient({ admin: initialAdmin, children }) {
               }),
             }}
           >
-            <Toolbar sx={{ justifyContent: "space-between", px: 3 }}>
+            <Toolbar sx={{ justifyContent: "space-between", px: { xs: 1.5, sm: 3 } }}>
               <Box sx={{ display: "flex", alignItems: "center" }}>
                 <IconButton
                   color="inherit"
                   aria-label="open drawer"
                   edge="start"
                   onClick={handleDrawerToggle}
-                  sx={{ mr: 2 }}
+                  sx={{
+                    mr: { xs: 1, sm: 2 },
+                    p: 1,
+                    minWidth: 44,
+                    minHeight: 44,
+                    touchAction: "manipulation",
+                    WebkitTapHighlightColor: "transparent",
+                    cursor: "pointer",
+                  }}
                 >
-                  <MenuIcon />
+                  <MenuIcon sx={{ fontSize: { xs: "1.65rem", sm: "1.75rem" } }} />
                 </IconButton>
                 <Typography variant="h6" noWrap component="div" sx={{ fontWeight: 700, fontSize: "1.1rem" }}>
                   {getPageTitle()}
@@ -857,12 +866,25 @@ export default function AdminLayoutClient({ admin: initialAdmin, children }) {
               variant="temporary"
               open={mobileOpen}
               onClose={handleDrawerClose}
+              disableAutoFocus
+              disableRestoreFocus
+              disableEnforceFocus
               ModalProps={{
-                keepMounted: true, // Better open performance on mobile.
+                keepMounted: true,
+                disableRestoreFocus: true,
+                disableAutoFocus: true,
+                disableEnforceFocus: true,
               }}
               sx={{
                 display: { xs: "block", md: "none" },
-                "& .MuiDrawer-paper": { boxSizing: "border-box", width: drawerWidth, borderRight: "1px solid", borderColor: "divider" },
+                zIndex: (theme) => theme.zIndex.drawer + 2,
+                "& .MuiDrawer-paper": {
+                  boxSizing: "border-box",
+                  width: drawerWidth,
+                  borderRight: "1px solid",
+                  borderColor: "divider",
+                  touchAction: "pan-y",
+                },
               }}
             >
               {drawerContent}
