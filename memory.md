@@ -2,7 +2,7 @@
 
 ## 1. Project Overview
 - **Name**: EasyTechnoMed PWA / LIMS (Laboratory Information Management System)
-- **Current Version**: `v3.1.29`
+- **Current Version**: `v3.1.30`
 - **Framework**: Next.js (App Router), React 19, Material-UI (MUI v7), Dexie.js (v4.4+), Prisma ORM, MySQL, pdf-lib, qrcode.
 
 
@@ -106,6 +106,7 @@
 
 | Version | Date | Key Changes & Milestones |
 | :--- | :--- | :--- |
+| `v3.1.30` | 2026-08-30 | Fix Premature "Completed" Registration Status & Desktop/Mobile Drawer Click Sync: Corrected default registration status in `registration/page.js` to always remain `"Pending"` regardless of whether the patient paid the full amount; Synchronized MUI media query evaluation with `{ noSsr: true }` and client screen width (`window.innerWidth >= 900`) in `AdminLayoutClient.js` for instant 1-click drawer toggle on both desktop & mobile. |
 | `v3.1.29` | 2026-08-30 | Fix First-Load Drawer Opening Delay: Added `prevPathnameRef` guard in `AdminLayoutClient.js` to prevent the route change `useEffect` from triggering on initial mount and resetting `mobileOpen` back to `false` during the first user tap. |
 | `v3.1.28` | 2026-08-30 | Fix Mobile Drawer 1-Tap Opening: Disabled MUI modal restore focus and auto-focus traps (`disableRestoreFocus`, `disableAutoFocus`, `disableEnforceFocus`) that intercepted initial mobile tap events; Expanded touch target area (`minWidth: 44, minHeight: 44, touchAction: manipulation`) and added direct `window.innerWidth < 900` fallback detection for instant 100% 1-tap mobile drawer response. |
 | `v3.1.27` | 2026-08-30 | Fix Mobile Drawer Multi-Tap Issue: Removed fragile `isClosing` transition locks in `AdminLayoutClient.js` that previously caused the mobile hamburger menu icon (3-lines) to require 2-3 clicks; Enabled instant 1st-tap drawer open/close reactivity with automatic route-change auto-close. |

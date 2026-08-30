@@ -710,7 +710,7 @@ _Thank you for choosing us for your health diagnostics!_`;
         workspaceId: wsId,
         adminId: adminId,
         date: editId && existingRecord?.date ? existingRecord.date : new Date().toISOString(),
-        status: payload.dueAmount > 0 ? "Pending" : "Completed",
+        status: editId && existingRecord?.status ? existingRecord.status : (payload.status || "Pending"),
       };
 
       let savedRecord;

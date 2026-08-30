@@ -312,7 +312,7 @@ export default function AdminLayoutClient({ admin: initialAdmin, children }) {
     });
   }, [router]);
 
-  const isMdUp = useMediaQuery(theme.breakpoints.up("md"));
+  const isMdUp = useMediaQuery(theme.breakpoints.up("md"), { noSsr: true });
 
   const currentDrawerWidth = isMdUp ? (desktopOpen ? drawerWidth : 72) : drawerWidth;
   const isDrawerExpanded = isMdUp ? desktopOpen : true;
@@ -335,11 +335,11 @@ export default function AdminLayoutClient({ admin: initialAdmin, children }) {
     if (e && typeof e.stopPropagation === "function") {
       e.stopPropagation();
     }
-    const isMobile = typeof window !== "undefined" ? window.innerWidth < 900 : !isMdUp;
-    if (isMobile) {
-      setMobileOpen((prev) => !prev);
-    } else {
+    const isDesktop = typeof window !== "undefined" ? window.innerWidth >= 900 : isMdUp;
+    if (isDesktop) {
       setDesktopOpen((prev) => !prev);
+    } else {
+      setMobileOpen((prev) => !prev);
     }
   };
 
