@@ -317,9 +317,14 @@ export default function AdminLayoutClient({ admin: initialAdmin, children }) {
   const currentDrawerWidth = isMdUp ? (desktopOpen ? drawerWidth : 72) : drawerWidth;
   const isDrawerExpanded = isMdUp ? desktopOpen : true;
 
-  // Auto-close mobile drawer whenever route changes
+  const prevPathnameRef = React.useRef(pathname);
+
+  // Auto-close mobile drawer ONLY on actual subsequent route transitions
   useEffect(() => {
-    setMobileOpen(false);
+    if (prevPathnameRef.current !== pathname) {
+      prevPathnameRef.current = pathname;
+      setMobileOpen(false);
+    }
   }, [pathname]);
 
   const handleDrawerClose = () => {
