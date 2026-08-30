@@ -1,4 +1,4 @@
-const CACHE_NAME = "easytechnomed-pwa-v11";
+const CACHE_NAME = "easytechnomed-pwa-v12";
 const OFFLINE_URL = "/offline.html";
 
 // Core routes and critical static assets to pre-cache on install
@@ -116,7 +116,7 @@ self.addEventListener("install", (event) => {
                     const rscAssets = extractAssetsFromHtml(rscText);
                     rscAssets.forEach((a) => extractedAssets.add(a));
                   }
-                } catch {}
+                } catch { }
               }
             } catch (err) {
               console.warn(`[Service Worker] Pre-cache failed for: ${route}`, err);
@@ -135,7 +135,7 @@ self.addEventListener("install", (event) => {
                   : aRes;
                 await cache.put(assetUrl, cleanAsset);
               }
-            } catch {}
+            } catch { }
           })
         );
       })
@@ -204,7 +204,7 @@ self.addEventListener("fetch", (event) => {
             caches.open(CACHE_NAME).then((cache) => {
               cache.put(event.request, cleanRes1);
               cache.put(`${url.pathname}?_rsc=1`, cleanRes2);
-            }).catch(() => {});
+            }).catch(() => { });
             return new Response(bodyText, {
               status: 200,
               headers: { "Content-Type": "text/x-component" },
@@ -287,8 +287,8 @@ self.addEventListener("fetch", (event) => {
             });
 
             const cache = await caches.open(CACHE_NAME);
-            cache.put(event.request, cleanRedirectResponse.clone()).catch(() => {});
-            cache.put(url.pathname, cleanRedirectResponse.clone()).catch(() => {});
+            cache.put(event.request, cleanRedirectResponse.clone()).catch(() => { });
+            cache.put(url.pathname, cleanRedirectResponse.clone()).catch(() => { });
             return cleanRedirectResponse;
           }
 
@@ -297,7 +297,7 @@ self.addEventListener("fetch", (event) => {
             caches.open(CACHE_NAME).then((cache) => {
               cache.put(event.request, clone);
               cache.put(url.pathname, clone.clone());
-            }).catch(() => {});
+            }).catch(() => { });
           }
           return networkResponse;
         } catch {
@@ -381,7 +381,7 @@ self.addEventListener("fetch", (event) => {
                   cache.put(event.request, clone);
                 }
               })
-              .catch(() => {});
+              .catch(() => { });
           }
           return sanitizeResponse(cachedResponse);
         }

@@ -200,7 +200,7 @@ export default function AdminLayoutClient({ admin: initialAdmin, children }) {
               setAdmin(parsed);
               return;
             }
-          } catch {}
+          } catch { }
         }
 
         const [cachedAdmins, cachedSession, testsCount] = await Promise.all([
